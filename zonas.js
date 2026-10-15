@@ -1,0 +1,38 @@
+// Barrios con coordenadas aproximadas (centro del barrio) para que el
+// asistente entienda frases como "estoy en Gràcia". Los municipios se
+// calculan a partir de las propias parroquias.
+window.MISAS_BARRIOS = {
+  "ciutat vella": [41.3825, 2.1770], "barri gòtic": [41.3833, 2.1767], "gòtic": [41.3833, 2.1767],
+  "born": [41.3851, 2.1823], "la ribera": [41.3851, 2.1823], "raval": [41.3797, 2.1682],
+  "barceloneta": [41.3807, 2.1894], "sant pere": [41.3880, 2.1780],
+  "eixample": [41.3925, 2.1620], "dreta de l'eixample": [41.3950, 2.1700], "esquerra de l'eixample": [41.3850, 2.1550],
+  "sant antoni": [41.3780, 2.1600], "sagrada família": [41.4036, 2.1744], "fort pienc": [41.3960, 2.1820],
+  "passeig de gràcia": [41.3925, 2.1650], "plaza catalunya": [41.3870, 2.1700], "plaça catalunya": [41.3870, 2.1700],
+  "sants": [41.3750, 2.1350], "hostafrancs": [41.3750, 2.1450], "la bordeta": [41.3690, 2.1370],
+  "poble sec": [41.3730, 2.1620], "poble-sec": [41.3730, 2.1620], "montjuïc": [41.3640, 2.1590], "zona franca": [41.3560, 2.1350], "la marina": [41.3560, 2.1350],
+  "les corts": [41.3850, 2.1300], "pedralbes": [41.3900, 2.1120], "la maternitat": [41.3810, 2.1200],
+  "sarrià": [41.4000, 2.1220], "sant gervasi": [41.4010, 2.1400], "bonanova": [41.4060, 2.1300],
+  "tres torres": [41.3970, 2.1300], "galvany": [41.3970, 2.1460], "putxet": [41.4070, 2.1440],
+  "vallvidrera": [41.4150, 2.1050], "les planes": [41.4250, 2.0950], "tibidabo": [41.4220, 2.1190],
+  "gràcia": [41.4030, 2.1560], "vila de gràcia": [41.4030, 2.1560], "vallcarca": [41.4140, 2.1440],
+  "el coll": [41.4180, 2.1480], "camp d'en grassot": [41.4060, 2.1650], "la salut": [41.4120, 2.1530],
+  "horta": [41.4300, 2.1600], "guinardó": [41.4180, 2.1700], "baix guinardó": [41.4110, 2.1730],
+  "carmel": [41.4220, 2.1560], "el carmel": [41.4220, 2.1560], "vall d'hebron": [41.4300, 2.1450],
+  "la teixonera": [41.4230, 2.1480], "montbau": [41.4330, 2.1440], "sant genís": [41.4290, 2.1370], "la clota": [41.4270, 2.1530],
+  "nou barris": [41.4400, 2.1770], "vilapicina": [41.4300, 2.1750], "porta": [41.4330, 2.1780],
+  "turó de la peira": [41.4330, 2.1680], "guineueta": [41.4400, 2.1700], "la guineueta": [41.4400, 2.1700],
+  "prosperitat": [41.4420, 2.1800], "verdun": [41.4440, 2.1760], "roquetes": [41.4480, 2.1730],
+  "trinitat nova": [41.4490, 2.1840], "trinitat vella": [41.4500, 2.1920], "ciutat meridiana": [41.4610, 2.1750],
+  "vallbona": [41.4570, 2.1820], "torre baró": [41.4590, 2.1760], "canyelles": [41.4440, 2.1660], "can peguera": [41.4350, 2.1660],
+  "sant andreu": [41.4350, 2.1900], "sagrera": [41.4220, 2.1880], "la sagrera": [41.4220, 2.1880],
+  "navas": [41.4160, 2.1860], "congrés": [41.4250, 2.1810], "bon pastor": [41.4360, 2.2050], "baró de viver": [41.4440, 2.1990],
+  "sant martí": [41.4100, 2.2000], "clot": [41.4100, 2.1880], "el clot": [41.4100, 2.1880], "camp de l'arpa": [41.4130, 2.1800],
+  "poblenou": [41.4030, 2.2000], "vila olímpica": [41.3900, 2.1970], "diagonal mar": [41.4100, 2.2150],
+  "besòs": [41.4160, 2.2120], "la verneda": [41.4220, 2.2000], "la pau": [41.4200, 2.2080], "provençals": [41.4150, 2.2000],
+  "bellvitge": [41.3570, 2.1110], "collblanc": [41.3740, 2.1210], "la torrassa": [41.3700, 2.1220],
+  "gornal": [41.3550, 2.1220], "la florida": [41.3680, 2.1060], "can serra": [41.3650, 2.1020],
+  "pubilla cases": [41.3720, 2.1070], "sanfeliu": [41.3680, 2.0990],
+  "llefià": [41.4420, 2.2150], "sant roc": [41.4440, 2.2120], "el gorg": [41.4400, 2.2290],
+  "casagemes": [41.4470, 2.2440], "dalt de la vila": [41.4510, 2.2480], "pomar": [41.4680, 2.2280], "la morera": [41.4620, 2.2330],
+  "ocata": [41.4790, 2.3230], "la cisa": [41.4970, 2.3510]
+};

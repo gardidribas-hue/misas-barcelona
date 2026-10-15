@@ -1,0 +1,2038 @@
+[
+ {
+  "slug": "mare-de-deu-de-la-medalla-miraculosa",
+  "url": "https://esglesia.barcelona/parroquies/mare-de-deu-de-la-medalla-miraculosa/",
+  "name": "Mare de Déu de la Medalla Miraculosa",
+  "address": "Consell de Cent, 110-118",
+  "postal_code": "08015",
+  "municipality": "Barcelona",
+  "phone": "93 423 46 76",
+  "email": "mdmedalla31@arqbcn.org",
+  "web": "www.medallamiraculosa.org",
+  "arxiprestat": "Sant Josep Oriol",
+  "comunitat_pastoral": null,
+  "lat": 41.3808729,
+  "lng": 2.1523151,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "11:00",
+    "lang": "ca-es",
+    "note": ""
+   },
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "20:00",
+    "lang": "ca-es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "11:00",
+    "lang": "ca-es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:00",
+    "lang": "ca-es",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "10:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "13:00",
+    "lang": "es",
+    "note": "Misa familiar"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "19:00",
+    "lang": "es",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "start": "19:00",
+    "end": "20:00",
+    "note": "Exposición del Santísimo"
+   },
+   {
+    "days": [
+     "thu"
+    ],
+    "start": "20:30",
+    "end": "00:00",
+    "note": "Tercer jueves de mes, Adoración Nocturna (excepto agosto)"
+   }
+  ],
+  "confessions_text": "15 min antes de la misa; o a petición a los sacerdotes",
+  "adoration_text": "Exposición L-V 19:00-20:00; Adoración Nocturna 3er jueves de mes 20:30-24:00 (excepto agosto)",
+  "masses_text": "Laborables 11:00 y 20:00 (bilingüe); sábados y vísperas 11:00 y 19:00 (bilingüe); domingos y festivos 10:00, 12:00, 13:00 (castellano, misa familiar) y 19:00 (castellano)",
+  "other": "Rosario laborables 19:30, sáb y dom 18:30; Escuela de Oración 1er viernes 21:15; grupo de alabanza y adoración sáb 20:00-21:15",
+  "status": "ok"
+ },
+ {
+  "slug": "mare-de-deu-de-lesperanca",
+  "url": "https://esglesia.barcelona/parroquies/mare-de-deu-de-lesperanca/",
+  "name": "Mare de Déu de l'Esperança",
+  "address": "Pl. Veracruz, s/n",
+  "postal_code": "08030",
+  "municipality": "Barcelona",
+  "phone": "93 345 56 61",
+  "email": "mdesperanca23@arqbcn.cat",
+  "web": null,
+  "arxiprestat": "Sta. Coloma de Gramenet",
+  "comunitat_pastoral": null,
+  "lat": 41.4465428,
+  "lng": 2.200726,
+  "masses": [
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "11:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "tue",
+     "wed",
+     "thu"
+    ],
+    "time": "10:00",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Domingos y festivos 11:00; laborables (excepto lunes y viernes) 10:00",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "mare-de-deu-de-fatima",
+  "url": "https://esglesia.barcelona/parroquies/mare-de-deu-de-fatima/",
+  "name": "Mare de Déu de Fàtima",
+  "address": "C/ Aneto, 19",
+  "postal_code": "08042",
+  "municipality": "Barcelona",
+  "phone": "93 429 39 42",
+  "email": "parroquiafatimabarcelona@gmail.com",
+  "web": "marededeudefatima.parroquias.net",
+  "arxiprestat": null,
+  "comunitat_pastoral": null,
+  "lat": 41.4320954,
+  "lng": 2.1710379,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri",
+     "sat"
+    ],
+    "time": "10:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "19:30",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:30",
+    "lang": "es",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "10:30",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "13:15",
+    "lang": "es",
+    "note": "Misa de jóvenes (septiembre a junio)"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "19:30",
+    "lang": "es",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Diario y vísperas 10:00 y 19:30 (castellano); festivos 10:30 (catalán), 12:00, 13:15 (jóvenes, sept-junio) y 19:30 (castellano)",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "mare-de-deu-de-betlem",
+  "url": "https://esglesia.barcelona/parroquies/mare-de-deu-de-betlem/",
+  "name": "Mare de Déu de Betlem",
+  "address": "C/ Xuclà, 2",
+  "postal_code": "08001",
+  "municipality": "Barcelona",
+  "phone": "93 318 38 23",
+  "email": "mdbetlem15@arqbcn.cat",
+  "web": null,
+  "arxiprestat": "Rambla - Poble Sec",
+  "comunitat_pastoral": null,
+  "lat": 41.3829888,
+  "lng": 2.1709033,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "09:00",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "11:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "13:00",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "20:00",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "11:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "13:00",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:00",
+    "lang": "es",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "20:00",
+    "lang": "ca",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "09:30",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "11:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:00",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "13:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "19:00",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "20:00",
+    "lang": "es",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "L-V 9:00 (cat), 11:00 (cast), 13:00 (cat), 20:00 (cat); sábados y vísperas 11:00 (cast), 13:00 (cat), 19:00 (cast), 20:00 (cat); festivos 9:30 (cat), 11:00 (cast), 12:00 (cat), 13:00 (cast), 19:00 (cat), 20:00 (cast)",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "immaculat-cor-de-maria",
+  "url": "https://esglesia.barcelona/parroquies/immaculat-cor-de-maria/",
+  "name": "Immaculat Cor de Maria",
+  "address": "C/ Sant Antoni Maria Claret, 45",
+  "postal_code": "08025",
+  "municipality": "Barcelona",
+  "phone": "93 458 60 76",
+  "email": "immaculatcor5@arqbcn.org",
+  "web": "www.cordemariasanttomas.org",
+  "arxiprestat": "Sagrada Família",
+  "comunitat_pastoral": null,
+  "lat": 41.4054575,
+  "lng": 2.1664854,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "08:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "09:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "20:00",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "09:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "11:45",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "13:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "20:00",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri",
+     "sat",
+     "sun"
+    ],
+    "start": "19:30",
+    "end": "20:00",
+    "note": "diario"
+   }
+  ],
+  "adoration": [],
+  "confessions_text": "Diario 19:30-20:00; domingos y festivos antes de las misas; 3 celebraciones penitenciales comunitarias al año",
+  "adoration_text": "",
+  "masses_text": "L-V 8:00; sábado 9:00 y 20:00 (vísperas); domingos y festivos 9:00, 11:45, 13:00 (castellano) y 20:00. La misa del lunes 20:00 se ofrece por los difuntos recientes (agrupación algo ambigua en la web)",
+  "other": "Bautizos comunitarios 2º y 4º domingo 17:00",
+  "status": "ok"
+ },
+ {
+  "slug": "immaculada-concepcio-i-sant-lorenzo-ruiz-personal",
+  "url": "https://esglesia.barcelona/parroquies/immaculada-concepcio-i-sant-lorenzo-ruiz-personal/",
+  "name": "Immaculada Concepció i Sant Lorenzo Ruiz (Personal)",
+  "address": "Pl. Sant Agustí, 2",
+  "postal_code": "08001",
+  "municipality": "Barcelona",
+  "phone": "93 412 47 83",
+  "email": null,
+  "web": null,
+  "arxiprestat": null,
+  "comunitat_pastoral": null,
+  "lat": 41.3804546,
+  "lng": 2.1718897,
+  "masses": [
+   {
+    "days": [
+     "wed"
+    ],
+    "time": "20:30",
+    "lang": "other",
+    "note": "tagalo"
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "20:30",
+    "lang": "other",
+    "note": "tagalo; primer sábado de mes"
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "10:00",
+    "lang": "en",
+    "note": "primer domingo de mes"
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "10:00",
+    "lang": "other",
+    "note": "tagalo; resto de domingos"
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "18:00",
+    "lang": "en",
+    "note": "primer domingo de mes"
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "18:00",
+    "lang": "other",
+    "note": "tagalo; resto de domingos"
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Parroquia personal filipina. Miércoles 20:30 (tagalo); primer sábado de mes 20:30 (tagalo); domingos 10:00 y 18:00 (tagalo; el primer domingo de mes en inglés)",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "hospital-clinic-provincial",
+  "url": "https://esglesia.barcelona/parroquies/hospital-clinic-provincial/",
+  "name": "Hospital Clínic Provincial",
+  "address": "Villarroel, 170",
+  "postal_code": "08036",
+  "municipality": "Barcelona",
+  "phone": "93 227 54 00",
+  "email": null,
+  "web": null,
+  "arxiprestat": null,
+  "comunitat_pastoral": null,
+  "lat": 41.3892144,
+  "lng": 2.1518042,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "11:00",
+    "lang": "ca-es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "20:00",
+    "lang": "ca-es",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "11:00",
+    "lang": "es",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Laborables 11:00 (bilingüe); vísperas 20:00 (bilingüe); domingos y festivos 11:00 (castellano)",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "esperit-sant",
+  "url": "https://esglesia.barcelona/parroquies/esperit-sant/",
+  "name": "Esperit Sant",
+  "address": "C/ Travessera de Gràcia, 401",
+  "postal_code": "08025",
+  "municipality": "Barcelona",
+  "phone": "934 357 370",
+  "email": "pq_esperitsant4@terra.es",
+  "web": "www.parroquiaesperitsant.org",
+  "arxiprestat": "Sagrada Família",
+  "comunitat_pastoral": null,
+  "lat": 41.4097517,
+  "lng": 2.1710138,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "08:30",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "20:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "20:00",
+    "lang": "es",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "09:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "19:30",
+    "lang": "ca-es",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Laborables 8:30 (catalán) y 20:00 (castellano); vísperas 20:00 (castellano); festivos 9:00 y 12:00 (castellano), 19:30 (bilingüe)",
+  "other": "Iglesia abierta 7:45-12:00 y 18:00-20:45; grupo de Adoración Nocturna",
+  "status": "ok"
+ },
+ {
+  "slug": "esglesia-romanica-del-poble-espanyol",
+  "url": "https://esglesia.barcelona/parroquies/esglesia-romanica-del-poble-espanyol/",
+  "name": "Església Romànica del Poble Espanyol",
+  "address": "C/ Marquès de Comillas, s/n",
+  "postal_code": "08004",
+  "municipality": "Barcelona",
+  "phone": "93 325 78 66",
+  "email": null,
+  "web": null,
+  "arxiprestat": null,
+  "comunitat_pastoral": null,
+  "lat": 41.36908368207052,
+  "lng": 2.150251280145312,
+  "masses": [],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "",
+  "other": "Despacho martes y jueves 17:00-19:00",
+  "status": "no_schedule"
+ },
+ {
+  "slug": "el-bon-pastor",
+  "url": "https://esglesia.barcelona/parroquies/el-bon-pastor/",
+  "name": "El Bon Pastor",
+  "address": "Pg. Enric Sanchis, 2 (cantonada C/ Estadella, 63)",
+  "postal_code": "08030",
+  "municipality": "Barcelona",
+  "phone": "93 313 58 89",
+  "email": "elbonpastor1@arqbcn.org",
+  "web": "facebook.com/parroquiabonpastor",
+  "arxiprestat": "Sant Andreu",
+  "comunitat_pastoral": null,
+  "lat": 41.4325576,
+  "lng": 2.2056071,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "wed"
+    ],
+    "time": "12:00",
+    "lang": "ca-es",
+    "note": ""
+   },
+   {
+    "days": [
+     "tue",
+     "thu",
+     "fri"
+    ],
+    "time": "19:30",
+    "lang": "ca-es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:30",
+    "lang": "ca-es",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "11:00",
+    "lang": "ca-es",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Lunes y miércoles 12:00; martes, jueves, viernes y sábado 19:30; domingo 11:00. Todas bilingües",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "crist-rei",
+  "url": "https://esglesia.barcelona/parroquies/crist-rei/",
+  "name": "Crist Rei",
+  "address": "C/ Martí i Molins, 45",
+  "postal_code": "08027",
+  "municipality": "Barcelona",
+  "phone": "93 352 46 59",
+  "email": "cristrei3@arqbcn.org",
+  "web": "www.cristrei.cat",
+  "arxiprestat": "Sant Andreu",
+  "comunitat_pastoral": null,
+  "lat": 41.4237071,
+  "lng": 2.187919,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "fri"
+    ],
+    "time": "19:30",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "tue",
+     "wed",
+     "thu"
+    ],
+    "time": "19:30",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:30",
+    "lang": "ca",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "10:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "12:30",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "19:30",
+    "lang": "ca-es",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [
+   {
+    "days": [
+     "fri"
+    ],
+    "start": "20:00",
+    "end": "20:30",
+    "note": "Exposición eucarística"
+   }
+  ],
+  "confessions_text": "Antes de las misas y siempre que se pida en la sacristía",
+  "adoration_text": "Viernes 20:00-20:30",
+  "masses_text": "L-S 19:30 (lunes, viernes y sábado en catalán; martes a jueves en castellano); domingo 10:00 (castellano), 12:30 (catalán), 19:30 (bilingüe)",
+  "other": "Rosario L-V 18:30; Vía Crucis viernes de Cuaresma 20:00; iglesia abierta 10:00-13:00 y 18:00-20:30",
+  "status": "ok"
+ },
+ {
+  "slug": "crist-redemptor",
+  "url": "https://esglesia.barcelona/parroquies/crist-redemptor/",
+  "name": "Crist Redemptor",
+  "address": "Av. Mare de Déu de Montserrat, 34",
+  "postal_code": "08024",
+  "municipality": "Barcelona",
+  "phone": "93 284 18 10",
+  "email": "cristredemptor224@arqbcn.cat",
+  "web": null,
+  "arxiprestat": "Guinardó",
+  "comunitat_pastoral": null,
+  "lat": 41.4139862,
+  "lng": 2.1623906,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "18:30",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "18:30",
+    "lang": "ca",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "11:30",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "19:30",
+    "lang": "es",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "30 min antes de las misas",
+  "adoration_text": "",
+  "masses_text": "L-V 18:30 (catalán); sábados 18:30 (catalán); domingos 11:30 (catalán) y 19:30 (castellano)",
+  "other": "Iglesia abierta: lun 16-20; mar-vie 10-14 y 16-20; sáb 19:45-21; dom 10:30-12:30 y 19-20:30",
+  "status": "ok"
+ },
+ {
+  "slug": "corpus-christi",
+  "url": "https://esglesia.barcelona/parroquies/corpus-christi/",
+  "name": "Corpus Christi",
+  "address": "C/ Bailèn, 175",
+  "postal_code": "08037",
+  "municipality": "Barcelona",
+  "phone": "93 457 21 11",
+  "email": "jsanzgr@gmail.com",
+  "web": null,
+  "arxiprestat": "Gràcia",
+  "comunitat_pastoral": null,
+  "lat": 41.4009779,
+  "lng": 2.1652068,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "09:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "19:30",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "20:00",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "10:30",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "13:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "20:45",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Laborables 9:00 (castellano) y 19:30; vísperas 20:00; domingos y festivos 10:30, 12:00 (castellano), 13:00 y 20:45",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "santa-maria",
+  "url": "https://esglesia.barcelona/parroquies/santa-maria/",
+  "name": "Santa Maria",
+  "address": "C/ Dalt, 47",
+  "postal_code": "08911",
+  "municipality": "Badalona",
+  "phone": "93 384 58 04",
+  "email": "santamaria301@arqbcn.org",
+  "web": null,
+  "arxiprestat": "Badalona",
+  "comunitat_pastoral": null,
+  "lat": 41.4527883,
+  "lng": 2.2460412,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "08:30",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "20:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "20:00",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "09:00",
+    "lang": "",
+    "note": "retransmitida por FM 102 los domingos"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "11:30",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "19:00",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Laborables 8:30 y 20:00; vísperas 20:00; festivos 9:00, 11:30 y 19:00",
+  "other": "Móvil 626 33 97 99",
+  "status": "ok"
+ },
+ {
+  "slug": "santa-clara",
+  "url": "https://esglesia.barcelona/parroquies/santa-clara/",
+  "name": "Santa Clara",
+  "address": "Montseny, 1-3",
+  "postal_code": "08915",
+  "municipality": "Badalona",
+  "phone": "93 395 35 54",
+  "email": null,
+  "web": null,
+  "arxiprestat": "Badalona",
+  "comunitat_pastoral": null,
+  "lat": 41.4621994,
+  "lng": 2.2463257,
+  "masses": [
+   {
+    "days": [
+     "thu"
+    ],
+    "time": "19:00",
+    "lang": "",
+    "note": "web: 'Feiners 19:00h Dijous' (ambiguo)"
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:00",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "11:00",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Laborables 19:00 (la web indica 'Dijous', posiblemente solo jueves); vísperas de festivo 19:00; domingos y festivos 11:00",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "sant-sebastia",
+  "url": "https://esglesia.barcelona/parroquies/sant-sebastia/",
+  "name": "Sant Sebastià",
+  "address": "Av. Terrassa, s/n",
+  "postal_code": "08915",
+  "municipality": "Badalona",
+  "phone": "93 395 41 54",
+  "email": "psantsebastia@gmail.com",
+  "web": "www.psantsebastia.org",
+  "arxiprestat": null,
+  "comunitat_pastoral": null,
+  "lat": 41.4669701,
+  "lng": 2.2490371,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "19:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:00",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "10:30",
+    "lang": "",
+    "note": "primer sábado de mes (Milicia de la Inmaculada)"
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "12:00",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [
+   {
+    "days": [
+     "thu"
+    ],
+    "start": "17:00",
+    "end": "19:00",
+    "note": "Exposición y oración de sanación, termina con misa"
+   }
+  ],
+  "confessions_text": "",
+  "adoration_text": "Capilla de adoración perpetua; jueves 17:00-19:00 exposición; también tras la misa del 1er y 2º sábado de mes",
+  "masses_text": "Diaria 19:00; sábado 19:00; domingo 12:00; 1er sábado de mes 10:30 (Milicia de la Inmaculada); 2º sábado misa votiva del Espíritu Santo 19:00",
+  "other": "Rosario media hora antes de la misa diaria (18:30); bautizos domingos 13:00",
+  "status": "ok"
+ },
+ {
+  "slug": "sant-roc",
+  "url": "https://esglesia.barcelona/parroquies/sant-roc/",
+  "name": "Sant Roc",
+  "address": "Av. Maresme, 139-141",
+  "postal_code": "08918",
+  "municipality": "Badalona",
+  "phone": "93 387 31 48",
+  "email": "parroquiasantroc@hotmail.com",
+  "web": null,
+  "arxiprestat": "Badalona Sud",
+  "comunitat_pastoral": null,
+  "lat": 41.4349469,
+  "lng": 2.2236555,
+  "masses": [
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "10:30",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Solo domingo 10:30",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "sant-pau",
+  "url": "https://esglesia.barcelona/parroquies/sant-pau/",
+  "name": "Sant Pau",
+  "address": "Llefià, 1-7",
+  "postal_code": "08912",
+  "municipality": "Badalona",
+  "phone": "93 460 78 75",
+  "email": "stpaubdn@hotmail.com",
+  "web": null,
+  "arxiprestat": "Badalona Sud",
+  "comunitat_pastoral": null,
+  "lat": 41.44594,
+  "lng": 2.23604,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "08:30",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:30",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "11:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:00",
+    "lang": "ca",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "L-V 8:30; sábados y vísperas 19:30; domingos y festivos 11:00 (castellano) y 12:00 (catalán)",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "sant-josep",
+  "url": "https://esglesia.barcelona/parroquies/sant-josep/",
+  "name": "Sant Josep",
+  "address": "Enric Borràs, 65-69",
+  "postal_code": "08912",
+  "municipality": "Badalona",
+  "phone": "93 384 37 15",
+  "email": "santjosep292@arqbcn.org",
+  "web": "www.santjosepbadalona.cat",
+  "arxiprestat": "Badalona",
+  "comunitat_pastoral": null,
+  "lat": 41.4456954,
+  "lng": 2.2453823,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri",
+     "sat"
+    ],
+    "time": "11:00",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "20:00",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "20:00",
+    "lang": "ca",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "09:00",
+    "lang": "ca",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "11:00",
+    "lang": "ca",
+    "note": "misa familiar con niños"
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "12:30",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "20:00",
+    "lang": "ca",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Cada día 11:00 y 20:00; domingos 9:00, 11:00 (familiar), 12:30 (castellano) y 20:00; el resto en catalán",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "sant-jaume-apostol",
+  "url": "https://esglesia.barcelona/parroquies/sant-jaume-apostol/",
+  "name": "Sant Jaume Apòstol",
+  "address": "Marquès de Montroig, 130",
+  "postal_code": "08913",
+  "municipality": "Badalona",
+  "phone": "93 461 09 44",
+  "email": "a8027730@xtec.cat",
+  "web": "parroquia-sant-jaume.blogspot.com.es",
+  "arxiprestat": "Badalona Sud",
+  "comunitat_pastoral": null,
+  "lat": 41.4393184,
+  "lng": 2.2321327,
+  "masses": [
+   {
+    "days": [
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "19:30",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:30",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "12:00",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Martes a sábado 19:30; domingo 12:00; lunes 19:30 celebración de la Palabra (no misa)",
+  "other": "Lunes 19:30 celebración de la Palabra",
+  "status": "ok"
+ },
+ {
+  "slug": "sant-francesc-dassis",
+  "url": "https://esglesia.barcelona/parroquies/sant-francesc-dassis/",
+  "name": "Sant Francesc d'Assís",
+  "address": "Tramuntana, 14-16",
+  "postal_code": "08917",
+  "municipality": "Badalona",
+  "phone": "934658797",
+  "email": "santfrancesc290@arqbcn.org",
+  "web": "www.parroquiabufala.cat",
+  "arxiprestat": "Badalona",
+  "comunitat_pastoral": null,
+  "lat": 41.4572563,
+  "lng": 2.2374514,
+  "masses": [
+   {
+    "days": [
+     "wed"
+    ],
+    "time": "20:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:00",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri",
+     "sat",
+     "sun"
+    ],
+    "time": "10:00",
+    "lang": "ca-es",
+    "note": "Roca i Pi"
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Domingos y festivos 12:00; miércoles 20:00; vísperas 19:00; en Roca i Pi cada día 10:00 (bilingüe); funerales a convenir",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "mare-de-deu-del-roser",
+  "url": "https://esglesia.barcelona/parroquies/mare-de-deu-del-roser/",
+  "name": "Mare de Déu del Roser",
+  "address": "Av. Lloreda, 102",
+  "postal_code": "08917",
+  "municipality": "Badalona",
+  "phone": "93 383 99 51",
+  "email": "mdroser284@arqbcn.org",
+  "web": "marededeudelroserbadalona.jimdo.com",
+  "arxiprestat": "Badalona Sud",
+  "comunitat_pastoral": null,
+  "lat": 41.4521936,
+  "lng": 2.2284824,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "09:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "20:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "10:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "20:00",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Laborables 9:00 y 20:00; domingos y festivos 10:00, 12:00 y 20:00 (la web pone '10:00h - 12:00h')",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "sant-antoni-de-padua",
+  "url": "https://esglesia.barcelona/parroquies/sant-antoni-de-padua/",
+  "name": "Sant Antoni de Pàdua",
+  "address": "Rda. Sant Antoni, 67-71",
+  "postal_code": "08913",
+  "municipality": "Badalona",
+  "phone": "93 387 79 47",
+  "email": "jcalvisc@arqbcn.org",
+  "web": null,
+  "arxiprestat": "Badalona Sud",
+  "comunitat_pastoral": null,
+  "lat": 41.440254,
+  "lng": 2.2160197,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "19:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:00",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "09:00",
+    "lang": "es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:00",
+    "lang": "ca-es",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "19:00",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Invierno: laborables 19:00 (castellano); vísperas 19:00; festivos 9:00 (castellano), 12:00 (bilingüe), 19:00. Verano: laborables, vísperas y festivos 20:00",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "mare-de-deu-de-montserrat",
+  "url": "https://esglesia.barcelona/parroquies/mare-de-deu-de-montserrat/",
+  "name": "Mare de Déu de Montserrat",
+  "address": "Cuba, s/n",
+  "postal_code": "08917",
+  "municipality": "Badalona",
+  "phone": "93 383 71 08",
+  "email": "mdmontserrat282@arqbcn.org",
+  "web": "parroquiamontserratbadalona.org",
+  "arxiprestat": "Badalona",
+  "comunitat_pastoral": null,
+  "lat": 41.4513413,
+  "lng": 2.2377688,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "19:30",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:30",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "09:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun"
+    ],
+    "time": "12:00",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [
+   {
+    "days": [
+     "thu"
+    ],
+    "start": "18:00",
+    "end": "19:00",
+    "note": "primer jueves de mes"
+   }
+  ],
+  "confessions_text": "",
+  "adoration_text": "Exposición del Santísimo el primer jueves de mes 18:00-19:00",
+  "masses_text": "Laborables 19:30; sábados y vísperas 19:30; domingos 9:00 y 12:00",
+  "other": "Rosario diario 19:00; móvil 658 43 32 27; despacho C/ Selva 17 (93 387 04 98)",
+  "status": "ok"
+ },
+ {
+  "slug": "mare-de-deu-de-lourdes",
+  "url": "https://esglesia.barcelona/parroquies/mare-de-deu-de-lourdes/",
+  "name": "Mare de Déu de Lourdes",
+  "address": "Sant Bru, 87",
+  "postal_code": "08911",
+  "municipality": "Badalona",
+  "phone": "93 389 15 41",
+  "email": "mdlourdes281@arqbcn.org",
+  "web": null,
+  "arxiprestat": "Badalona",
+  "comunitat_pastoral": null,
+  "lat": 41.4541527,
+  "lng": 2.2525217,
+  "masses": [
+   {
+    "days": [
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "19:30",
+    "lang": "",
+    "note": "web: 'Feiners 19:30, excepte dilluns'"
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:30",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "11:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:30",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Laborables 19:30 excepto lunes; vísperas 19:30; festivos 11:00 y 12:30",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "mare-de-deu-de-la-salut",
+  "url": "https://esglesia.barcelona/parroquies/mare-de-deu-de-la-salut/",
+  "name": "Mare de Déu de la Salut",
+  "address": "Pg. Salut, 38",
+  "postal_code": "08914",
+  "municipality": "Badalona",
+  "phone": "93 383 33 52",
+  "email": "mdsalut283@arqbcn.cat",
+  "web": "mare-de-deu-de-la-salut-de-badalona.blogspot.com.es",
+  "arxiprestat": "Badalona Sud - St. Adrià de Besòs",
+  "comunitat_pastoral": null,
+  "lat": 41.4405658,
+  "lng": 2.2272775,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "19:30",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "19:30",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "09:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "19:30",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Laborables 19:30; sábados y vísperas 19:30; domingos y festivos 9:00, 12:00 y 19:30",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "sant-julia",
+  "url": "https://esglesia.barcelona/parroquies/sant-julia/",
+  "name": "Sant Julià",
+  "address": "Pl. Església, 1",
+  "postal_code": "08310",
+  "municipality": "Argentona",
+  "phone": "641 45 06 27",
+  "email": "santjulia275@arqbcn.cat",
+  "web": "arxiprestatdemataro.org/parroquies-i-esglesies/item/parroquia-de-sant-julia.html",
+  "arxiprestat": "Mataró",
+  "comunitat_pastoral": null,
+  "lat": 41.55378,
+  "lng": 2.4012699,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "19:30",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "20:00",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "09:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:00",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "20:00",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "L-V 19:30; sábados 20:00; domingos y festivos 9:00, 12:00 y 20:00",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "sant-feliu",
+  "url": "https://esglesia.barcelona/parroquies/sant-feliu/",
+  "name": "Sant Feliu",
+  "address": "Pl. Ajuntament, 13",
+  "postal_code": "08328",
+  "municipality": "Alella",
+  "phone": "93 555 23 91",
+  "email": "santfeliu271@arqbcn.cat",
+  "web": "esglesiadalella.org",
+  "arxiprestat": "La Cisa",
+  "comunitat_pastoral": null,
+  "lat": 41.4936398,
+  "lng": 2.295169,
+  "masses": [
+   {
+    "days": [
+     "mon",
+     "tue",
+     "wed",
+     "thu",
+     "fri"
+    ],
+    "time": "09:30",
+    "lang": "",
+    "note": ""
+   },
+   {
+    "days": [
+     "sat"
+    ],
+    "time": "20:00",
+    "lang": "",
+    "note": "vigília"
+   },
+   {
+    "days": [
+     "sun",
+     "hol"
+    ],
+    "time": "12:00",
+    "lang": "",
+    "note": ""
+   }
+  ],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "Laborables 9:30; sábados y vísperas 20:00; domingos y festivos 12:00",
+  "other": "",
+  "status": "ok"
+ },
+ {
+  "slug": "sant-andreu",
+  "url": "https://esglesia.barcelona/parroquies/sant-andreu/",
+  "name": "Sant Andreu",
+  "address": "Carrer Turó de l'Home, 41 (correspondencia: Sant Antoni, 2)",
+  "postal_code": "08319",
+  "municipality": "Dosrius",
+  "phone": "93 791 90 33",
+  "email": "santiscle391@arqbcn.catabrilfigtelefonica.net",
+  "web": "arxiprestatdemataro.org/parroquies-i-esglesies/item/sant-andreu-d-alfar-dosrius.html",
+  "arxiprestat": "Mataró",
+  "comunitat_pastoral": null,
+  "lat": 41.623808,
+  "lng": 2.4355919,
+  "masses": [],
+  "confessions": [],
+  "adoration": [],
+  "confessions_text": "",
+  "adoration_text": "",
+  "masses_text": "",
+  "other": "Email en la web aparece malformado (verbatim)",
+  "status": "no_schedule"
+ }
+]

@@ -1,0 +1,306 @@
+{
+ "_source": "https://esglesia.barcelona/wp-content/uploads/2025/07/Principis-rectors-definicio-i-mapa-CPast-i-Arxiprestats-amb-decret.pdf",
+ "Barcelona Centre": {
+  "Santa Maria del Mar": [
+   "santa-maria-del-mar-basilica",
+   "sant-pere-de-les-puelles",
+   "sant-miquel-del-port"
+  ],
+  "Barri Gòtic": [
+   "catedral-basilica-de-barcelona",
+   "santa-maria-del-pi-basilica",
+   "sants-just-i-pastor-basilica",
+   "mare-de-deu-de-la-merce-i-sant-miquel-arcangel-basilica",
+   "santa-anna"
+  ],
+  "Poble-sec": [
+   "santa-madrona",
+   "sant-pere-claver",
+   "mare-de-deu-de-lourdes-2",
+   "sant-salvador-dhorta"
+  ],
+  "Raval": [
+   "sant-pere-nolasc",
+   "mare-de-deu-del-carme",
+   "sant-pau-2",
+   "sant-agusti",
+   "mare-de-deu-de-betlem"
+  ],
+  "Sant Josep Oriol": [
+   "sant-josep-oriol-basilica",
+   "mare-de-deu-de-la-medalla-miraculosa",
+   "preciosissima-sang-de-nostre-senyor-jesucrist",
+   "sant-domenec-guzman"
+  ],
+  "Esquerra de l'Eixample": [
+   "sant-eugeni-i-papa",
+   "mare-de-deu-del-pilar",
+   "maria-mitjancera-de-totes-les-gracies",
+   "sant-llorenc"
+  ],
+  "Puríssima Concepció": [
+   "purissima-concepcio",
+   "mare-de-deu-dels-angels",
+   "sant-ramon-de-penyafort",
+   "sant-francesc-de-sales"
+  ],
+  "Sagrada Família": [
+   "sagrada-familia",
+   "immaculat-cor-de-maria",
+   "sant-tomas-daquino",
+   "sant-oleguer-bisbe",
+   "mare-de-deu-del-roser-2",
+   "esperit-sant",
+   "sant-ignasi-de-loiola",
+   "mare-de-deu-de-montserrat-2"
+  ]
+ },
+ "Barcelona Nord": {
+  "Gràcia Oest": [
+   "verge-de-gracia-i-sant-josep",
+   "sant-jordi",
+   "santa-teresa-de-linfant-jesus"
+  ],
+  "Gràcia Nord": [
+   "sant-carles-borromeu",
+   "sant-miquel-dels-sants",
+   "mare-de-deu-de-la-salut-2",
+   "crist-redemptor"
+  ],
+  "Vila de Gràcia": [
+   "sant-joan-de-gracia",
+   "corpus-christi",
+   "santa-maria-de-gracia"
+  ],
+  "Vilapicina": [
+   "santa-eulalia-de-vilapicina",
+   "sant-esteve",
+   "sant-pius-x",
+   "mare-de-deu-de-fatima",
+   "santa-isabel-darago-i-sant-joaquim"
+  ],
+  "La Guineueta": [
+   "sant-rafael",
+   "sant-mateu",
+   "sant-narcis"
+  ],
+  "Horta": [
+   "sant-joan-dhorta",
+   "sant-marcel",
+   "sant-francesc-xavier",
+   "sant-antoni-de-padua-2"
+  ],
+  "Carmel": [
+   "mare-de-deu-de-mont-carmel",
+   "mare-de-deu-del-coll",
+   "santa-teresa-de-jesus"
+  ],
+  "Vall d'Hebron": [
+   "sant-crist",
+   "sant-jeroni",
+   "verge-de-natzaret",
+   "sant-genis-dels-agudells",
+   "sant-cebria"
+  ]
+ },
+ "Barcelona Oest": {
+  "Sant Gervasi": [
+   "sants-gervasi-i-protasi-mare-de-deu-de-la-bonanova",
+   "santa-cecilia",
+   "verge-de-la-pau",
+   "sant-gregori-taumaturg",
+   "santa-agnes",
+   "santa-joaquima-de-vedruna",
+   "sant-ildefons",
+   "mare-de-deu-de-nuria"
+  ],
+  "Les Corts - Sants": [
+   "santa-tecla",
+   "sant-joan-m-vianney",
+   "santa-maria-del-remei"
+  ],
+  "Sarrià - Pedralbes": [
+   "sant-ot",
+   "maria-auxiliadora",
+   "maria-reina",
+   "sant-vicenc"
+  ],
+  "Sarrià - Collserola": [
+   "sant-joan-de-la-creu",
+   "parroquia-de-la-mare-de-deu-de-la-salut",
+   "santa-maria-de-vallvidrera",
+   "sagrat-cor-de-jesus-del-tibidabo-basilica"
+  ]
+ },
+ "Barcelona Est": {
+  "Poblenou": [
+   "santa-maria-del-taulat-i-sant-bernat-calbo",
+   "sant-francesc-dassis-2",
+   "sant-francesc-de-paola",
+   "sant-felix",
+   "sagrat-cor-de-jesus",
+   "sant-pancrac"
+  ],
+  "Besòs": [
+   "sant-pauli-de-nola",
+   "sant-ambros",
+   "sant-pere-ermengol",
+   "santes-juliana-i-semproniana",
+   "mare-de-deu-de-les-neus"
+  ],
+  "Provençals": [
+   "sant-marti-de-provencals",
+   "santissim-sagrament",
+   "sant-lluis-gonzaga",
+   "sant-joan-davila"
+  ],
+  "Clot": [
+   "sant-josep-de-calassanc",
+   "sant-marti-del-clot",
+   "sant-joan-bosco"
+  ],
+  "Sant Andreu": [
+   "sant-andreu-2",
+   "sant-pacia",
+   "el-bon-pastor",
+   "crist-rei",
+   "sant-joan-de-mata",
+   "sant-josep-manyanet"
+  ],
+  "Roquetes - Via Júlia": [
+   "santa-engracia",
+   "sant-sebastia-2",
+   "sant-josep-obrer",
+   "santa-maria-magdalena"
+  ],
+  "Vallbona - Meridiana": [
+   "santissima-trinitat",
+   "sant-bernat-de-claravall",
+   "santa-bernardeta",
+   "sant-marc"
+  ]
+ },
+ "Llobregat": {
+  "Sants Sud": [
+   "santa-maria-de-sants",
+   "sant-medir",
+   "sant-angel-custodi",
+   "santa-dorotea",
+   "mare-de-deu-dels-dolors"
+  ],
+  "La Marina": [
+   "mare-de-deu-de-port",
+   "sant-bartomeu",
+   "sant-cristofor"
+  ],
+  "Pla del Llobregat": [
+   "mare-de-deu-de-bellvitge",
+   "santa-maria-de-gornal",
+   "sant-joan-evangelista",
+   "santa-eulalia-de-merida",
+   "sant-josep-2",
+   "santa-eulalia-de-provencana",
+   "sant-isidre"
+  ],
+  "Collblanc": [
+   "sant-ramon-nonat",
+   "sant-albert-magne",
+   "mare-de-deu-dels-desemparats",
+   "mare-de-deu-de-la-llum",
+   "sant-benet",
+   "santa-gemma-galgani",
+   "sant-enric-dosso",
+   "sant-antoni-de-padua-3"
+  ],
+  "Cornellà": [
+   "sant-ildefons-2",
+   "verge-del-pilar",
+   "sant-miquel-arcangel",
+   "santa-maria-3",
+   "sant-jaume-2",
+   "immaculada-concepcio",
+   "mare-de-deu-del-carme-2"
+  ]
+ },
+ "Barcelonès": {
+  "Badalona Sud 1": [
+   "mare-de-deu-de-la-salut",
+   "sant-antoni-de-padua",
+   "sant-jaume-apostol",
+   "mare-de-deu-del-roser",
+   "sant-pau"
+  ],
+  "Badalona Sud 2": [
+   "sant-adria",
+   "sant-joan-baptista",
+   "sant-roc"
+  ],
+  "Badalona Centre": [
+   "santa-maria",
+   "sant-josep",
+   "mare-de-deu-de-montserrat",
+   "mare-de-deu-de-lourdes"
+  ],
+  "Badalona Nord": [
+   "sant-francesc-dassis",
+   "santa-clara",
+   "sant-crist-2",
+   "sant-sebastia",
+   "sant-joan",
+   "sant-cebria-tiana"
+  ],
+  "Santa Coloma de Gramenet": [
+   "mare-de-deu-de-lesperanca",
+   "santa-coloma",
+   "sant-josep-oriol",
+   "sant-miquel-arcangel-2",
+   "santa-rosa",
+   "santa-maria-5",
+   "sant-joaquim",
+   "sant-jaume-apostol-2",
+   "sant-joan-baptista-2"
+  ]
+ },
+ "Maresme": {
+  "Masnou": [
+   "sant-pere",
+   "mare-de-deu-del-pilar-2",
+   "sant-feliu",
+   "sant-marti"
+  ],
+  "Premià": [
+   "sant-cristofol",
+   "santa-maria-4",
+   "sant-pere-2"
+  ],
+  "Vilassar": [
+   "sant-joan-2",
+   "sant-genis",
+   "santa-creu",
+   "sant-feliu-2"
+  ],
+  "Argentona": [
+   "sant-julia",
+   "sant-andreu-3",
+   "sant-iscle-i-santa-victoria",
+   "sant-andreu",
+   "sant-esteve-2"
+  ],
+  "Mataró 1": [
+   "santa-maria-basilica",
+   "sant-josep-3",
+   "mare-de-deu-de-montserrat-3"
+  ],
+  "Mataró 2": [
+   "maria-auxiliadora-2",
+   "sagrada-familia-2",
+   "mare-de-deu-de-lesperanca-2",
+   "sant-simo-i-sant-pau"
+  ],
+  "Sant Andreu de Llavaneres": [
+   "sant-andreu-4",
+   "sant-vicenc-2",
+   "santa-maria-2"
+  ]
+ }
+}

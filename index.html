@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Misas Barcelona</title>
+<meta name="description" content="Encuentra misas, confesiones y adoración eucarística en las parroquias de la Archidiócesis de Barcelona.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M11 2h2v4h4v2h-4v3.2l6 3.3V22h-5v-4a2 2 0 0 0-4 0v4H5v-7.5l6-3.3V8H7V6h4z" fill="currentColor"/></svg>
+    <span>Misas Barcelona</span>
+  </div>
+  <button id="chatToggle" class="btn primary" type="button">💬 Pregúntame</button>
+</header>
+
+<main class="layout">
+  <aside class="sidebar" id="sidebar">
+    <section class="filters" aria-label="Filtros">
+      <div class="seg" role="radiogroup" aria-label="Qué buscas">
+        <button type="button" data-kind="mass" class="on">Misa</button>
+        <button type="button" data-kind="confession">Confesión</button>
+        <button type="button" data-kind="adoration">Adoración</button>
+      </div>
+
+      <div class="row">
+        <label>Día
+          <select id="fDay"></select>
+        </label>
+        <label>Desde
+          <select id="fFrom"></select>
+        </label>
+        <label>Hasta
+          <select id="fTo"></select>
+        </label>
+      </div>
+      <div class="chips" id="quickTimes">
+        <button type="button" data-from="now">Desde ahora</button>
+        <button type="button" data-from="07:00" data-to="12:59">Mañana</button>
+        <button type="button" data-from="13:00" data-to="16:59">Mediodía</button>
+        <button type="button" data-from="17:00" data-to="20:00">17–20 h</button>
+        <button type="button" data-from="20:00" data-to="23:59">Noche</button>
+        <button type="button" data-from="00:00" data-to="23:59">Todo el día</button>
+      </div>
+
+      <details class="more" id="zoneBox" open>
+        <summary>Zona e idioma</summary>
+        <label>Arciprestazgo
+          <select id="fArx"><option value="">Todos</option></select>
+        </label>
+        <label>Comunidad pastoral
+          <select id="fCom"><option value="">Todas</option></select>
+        </label>
+        <label>Municipio
+          <select id="fMun"><option value="">Todos</option></select>
+        </label>
+        <label>Idioma
+          <select id="fLang">
+            <option value="">Cualquiera</option>
+            <option value="ca">Catalán</option>
+            <option value="es">Castellano</option>
+            <option value="other">Otros idiomas</option>
+          </select>
+        </label>
+      </details>
+
+      <div class="row">
+        <input id="fText" type="search" placeholder="Buscar parroquia o calle…" aria-label="Buscar parroquia o calle">
+        <button id="nearMe" class="btn" type="button" title="Ordenar por cercanía">📍 Cerca de mí</button>
+      </div>
+      <button id="reset" class="link" type="button">Quitar filtros</button>
+    </section>
+
+    <div class="summary" id="summary" aria-live="polite"></div>
+    <ol class="results" id="results"></ol>
+    <section class="detail" id="detail" hidden></section>
+
+    <footer class="foot">
+      Datos de la <a href="https://esglesia.barcelona/parroquia/" target="_blank" rel="noopener">web del Arzobispado de Barcelona</a>.
+      Los horarios pueden cambiar: confírmalos con la parroquia. <span id="genDate"></span>
+    </footer>
+  </aside>
+
+  <div class="mapwrap"><div id="map" aria-label="Mapa de parroquias"></div></div>
+</main>
+
+<section class="chat" id="chat" hidden aria-label="Asistente">
+  <header>
+    <strong>Asistente de misas</strong>
+    <button id="chatClose" class="icon" type="button" aria-label="Cerrar">✕</button>
+  </header>
+  <div class="msgs" id="msgs"></div>
+  <form id="chatForm" autocomplete="off">
+    <input id="chatInput" placeholder="Ej.: Estoy en Gràcia, misa entre las 17 y las 20" aria-label="Escribe tu pregunta">
+    <button class="btn primary" type="submit">Enviar</button>
+  </form>
+</section>
+
+<script src="config.js"></script>
+<script src="data/parroquias.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="zonas.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
