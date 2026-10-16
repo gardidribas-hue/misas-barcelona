@@ -25,7 +25,8 @@ cd web-misas && python3 -m http.server 8000   # y abre http://localhost:8000
 
 ## Funciones
 
-- Mapa con zoom de todas las parroquias (OpenStreetMap por defecto, Google Maps si pones la clave).
+- Pantalla de inicio tipo chat: escribes lo que buscas (con ideas de ejemplo en gris) y aparecen los resultados con el mapa.
+- Mapa vectorial moderno (MapLibre con el estilo Positron de OpenFreeMap, gratis y sin clave). Si pones una clave de Google Maps en `config.js`, se usa Google Maps.
 - Filtros: misa / confesión / adoración, día (hoy, mañana, día de la semana, domingo y festivos),
   franja horaria (por ejemplo 17:00 a 20:00), arciprestazgo, comunidad pastoral, municipio, idioma y texto.
 - "Cerca de mí": ordena por distancia usando la ubicación del móvil.
@@ -43,7 +44,7 @@ cd web-misas && python3 -m http.server 8000   # y abre http://localhost:8000
 5. Pon la clave y el Map ID en `config.js`.
 
 Google da un crédito mensual gratuito que suele cubrir una web de este tamaño, pero pide tarjeta.
-Sin clave, la web usa OpenStreetMap, que es gratis. El botón "Cómo llegar" abre Google Maps en ambos casos.
+Sin clave, la web usa el mapa vectorial de OpenFreeMap, que es gratis. El botón "Cómo llegar" abre Google Maps en ambos casos.
 
 ## De dónde salen los datos
 
