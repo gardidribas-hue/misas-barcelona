@@ -59,12 +59,12 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .top { height: var(--top); flex: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-inline: max(22px, env(safe-area-inset-left, 0px)) max(22px, env(safe-area-inset-right, 0px)); color: var(--backdrop-ink); }
 .brand { border: 0; background: none; padding: 0; cursor: pointer; font: 400 28px/1 var(--display); white-space: nowrap; color: var(--backdrop-ink); }
 /* Logotipo: «Misas» | ARCHIDIÓCESIS DE / Barcelona, separados por un filete fino */
-.brand { display: inline-flex; align-items: center; gap: 14px; font-size: 38px; }
+.brand { display: inline-flex; align-items: last baseline; gap: 14px; font-size: 40px; }
 .brand .b-main { line-height: 1; padding-bottom: .06em; }
-.brand .b-stack { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; text-align: left; gap: 5px; padding-left: 14px; border-left: 1px solid color-mix(in srgb, var(--backdrop-ink) 22%, transparent); }
+.brand .b-stack { display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; text-align: left; gap: 1px; padding-left: 14px; border-left: 1px solid color-mix(in srgb, var(--backdrop-ink) 22%, transparent); }
 .brand em { color: var(--accent); }
 .brand .b-arch { color: var(--gold); font: 700 10.5px/1 var(--ui); letter-spacing: .2em; text-transform: uppercase; }
-.brand .b-city { font-size: 24px; line-height: .95; }
+.brand .b-city { font-size: 32px; line-height: .9; }
 .tabs { display: flex; gap: 2px; background: rgba(255,255,255,.08); border-radius: 999px; padding: 4px; }
 .tabs button { border: 0; background: none; border-radius: 999px; padding: 7px 16px; font-weight: 700; font-size: 14px; color: var(--backdrop-muted); cursor: pointer; transition: background .25s var(--ease), color .25s var(--ease); }
 .tabs button:hover { color: var(--backdrop-ink); }
@@ -223,10 +223,10 @@ h1 em { color: var(--accent-strong); }
 /* ---------- Móvil ---------- */
 @media (max-width: 860px) {
   :root { --top: 64px; --radius: 24px; --gap: 10px; }
-  .brand { font-size: 27px; gap: 9px; }
-  .brand .b-stack { padding-left: 9px; gap: 4px; }
+  .brand { font-size: 28px; gap: 9px; }
+  .brand .b-stack { padding-left: 9px; gap: 1px; }
   .brand .b-arch { font-size: 7.5px; letter-spacing: .14em; }
-  .brand .b-city { font-size: 17px; }
+  .brand .b-city { font-size: 22px; }
   .tabs button { padding: 6px 11px; }
   .stage[data-mode="home"] { grid-template-columns: 1fr; grid-template-rows: auto 46vh; overflow-y: auto; }
   .stage[data-mode="home"] .chatcol { min-height: auto; overflow: visible; }
