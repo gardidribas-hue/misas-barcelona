@@ -12,6 +12,7 @@ Archidiócesis de Barcelona, con mapa, filtros y un asistente tipo chat.
 | `zonas.js` | Barrios con coordenadas aproximadas para el asistente |
 | `data/parroquias.json` / `.js` | Datos de las parroquias que usa la web |
 | `data/comunitats_pastorals.json` | Las 43 comunidades pastorales y 7 arciprestazgos (decreto de 2025) |
+| `data/geo/` y `data/geo.js` | Límites de municipios y de los distritos de Barcelona (fuentes en `data/geo/FONTS.md`) |
 | `data/raw/` | Datos extraídos ficha a ficha de la web del Arzobispado |
 | `scripts/build_data.py` | Une `data/raw/` + comunidades y genera `data/parroquias.*` |
 
@@ -25,15 +26,12 @@ cd web-misas && python3 -m http.server 8000   # y abre http://localhost:8000
 
 ## Funciones
 
-- Pantalla de inicio tipo chat: escribes lo que buscas (con ideas de ejemplo en gris) y aparecen los resultados con el mapa.
-- Mapa vectorial moderno (MapLibre con el estilo Positron de OpenFreeMap, gratis y sin clave). Si pones una clave de Google Maps en `config.js`, se usa Google Maps.
-- Filtros: misa / confesión / adoración, día (hoy, mañana, día de la semana, domingo y festivos),
-  franja horaria (por ejemplo 17:00 a 20:00), arciprestazgo, comunidad pastoral, municipio, idioma y texto.
+- Una sola pantalla con tres vistas: **Inicio** (chat y mapa juntos), **Chat** (solo la conversación) y **Mapa** (mapa con filtros y lista).
+- Chat: escribes lo que buscas (con ideas de ejemplo en gris) y responde con las parroquias que encajan; «Ver en el mapa» las lleva al mapa.
+- Mapa vectorial moderno y gratuito (MapLibre con el estilo Liberty de OpenFreeMap, actualizado cada semana desde OpenStreetMap). Con una clave de Google Maps en `config.js` se usa Google Maps.
+- Filtros: misa / confesión / adoración, día, franja horaria, municipio, idioma y texto. En Barcelona se puede elegir distrito: se marca en rojo translúcido en el mapa, y también se puede pulsar el distrito en el propio mapa.
 - "Cerca de mí": ordena por distancia usando la ubicación del móvil.
-- Ficha de cada parroquia: horarios, confesiones, adoración, teléfono, web, botón "Cómo llegar" (Google Maps).
-- Asistente: entiende frases como «Estoy en Gràcia y quiero misa entre las 17 y las 20»,
-  «Confesiones el sábado por la mañana en Badalona», «missa diumenge a la tarda a Sants».
-  Funciona en el propio navegador, sin coste ni servidor.
+- Ficha de cada parroquia: horarios, confesiones, adoración, teléfono, web y "Cómo llegar" (Google Maps).
 
 ## Google Maps
 

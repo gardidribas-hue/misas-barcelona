@@ -1,24 +1,25 @@
-/* Misas Barcelona: inicio tipo chat, resultados con mapa y filtros. */
+/* Misas Barcelona: chat, mapa y filtros en una misma pantalla. */
 (function () {
   "use strict";
 
   const CFG = window.MISAS_CONFIG || {};
   const DATA = (window.MISAS_DATA && window.MISAS_DATA.parroquias) || [];
+  const GEO = window.MISAS_GEO || { municipios: [], distritos: {} };
   const BARRIOS = window.MISAS_BARRIOS || {};
   const DAY_CODES = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
   const DAY_NAMES = { mon: "lunes", tue: "martes", wed: "miércoles", thu: "jueves", fri: "viernes", sat: "sábado", sun: "domingo" };
   const DAY_SHORT = { mon: "L", tue: "M", wed: "X", thu: "J", fri: "V", sat: "S", sun: "D", hol: "F" };
-  const KIND = { mass: "misa", confession: "confesión", adoration: "adoración" };
   const KIND_PL = { mass: "misas", confession: "confesiones", adoration: "adoración" };
   const LANG = { ca: "cat", es: "cast", "ca-es": "cat/cast", en: "en", fr: "fr", de: "de", it: "it", pl: "pl", other: "otro" };
   const IDEAS = [
     "Estoy en Gràcia y quiero ir a misa entre las 17 y las 20",
     "Misa el domingo por la mañana en Sarrià",
     "Confesiones el sábado en Badalona",
-    "Adoración hoy cerca de mí",
+    "Adoración hoy en el Eixample",
     "Missa en català demà al vespre a Sants",
-    "Misa ahora cerca de la Sagrada Família"
+    "Misa ahora cerca de mí"
   ];
+  const HINTS = ["Misa ahora cerca de mí", "Gràcia, entre las 17 y las 20", "Confesiones el sábado", "Adoración en el Eixample", "Domingo por la mañana en Sarrià", "Missa en català a Sants"];
 
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -26,6 +27,7 @@
   const toMin = (t) => { const [h, m] = t.split(":").map(Number); return h * 60 + (m || 0); };
   const fmt = (m) => `${String(Math.floor(m / 60)).padStart(2, "0")}:${String(m % 60).padStart(2, "0")}`;
   const km = (d) => d == null ? "" : d < 1 ? `${Math.round(d * 100) * 10} m` : `${d.toFixed(1).replace(".", ",")} km`;
+  const title = (s) => s.replace(/(^|[\s-])(\S)/g, (m, a, c) => a + c.toUpperCase());
 
   // ---------- Hora de Barcelona ----------
   function nowBcn() {
@@ -38,8 +40,8 @@
   const resolvedDay = (d) => d === "today" ? nowBcn().day : d === "tomorrow" ? nextDay(nowBcn().day) : d;
 
   // ---------- Búsqueda ----------
-  const BLANK = { kind: "mass", day: "today", from: 0, to: 1439, arx: "", com: "", mun: "", lang: "", text: "" };
-  const state = Object.assign({}, BLANK, { origin: null, user: null, selected: null, results: [] });
+  const BLANK = { kind: "mass", day: "today", from: 0, to: 1439, mun: "", dist: "", lang: "", text: "" };
+  const state = Object.assign({}, BLANK, { origin: null, user: null, results: [], mode: "home" });
 
   const eventsOf = (p, k) => k === "mass" ? p.masses : k === "confession" ? p.confessions : p.adoration;
   function dayMatch(ev, day) {
@@ -70,11 +72,10 @@
     return { hits, soft };
   }
   function zoneMatch(p, f) {
-    if (f.arx && p.arxiprestat !== f.arx) return false;
-    if (f.com && p.comunitat !== f.com) return false;
-    if (f.mun && p.municipality !== f.mun) return false;
+    if (f.mun && p.municipio !== f.mun) return false;
+    if (f.dist && p.distrito !== f.dist) return false;
     if (f.text) {
-      const hay = norm([p.name, p.address, p.municipality, p.comunitat].join(" "));
+      const hay = norm([p.name, p.address, p.municipio, p.distrito].join(" "));
       if (!norm(f.text).split(/\s+/).every((w) => hay.includes(w))) return false;
     }
     return true;
@@ -96,6 +97,13 @@
     return out;
   }
 
+  // ---------- Áreas (municipios y distritos) ----------
+  const areaOf = (mun, dist) => {
+    if (dist) return (GEO.distritos[mun] || []).find((d) => d.name === dist) || null;
+    if (mun) return GEO.municipios.find((m) => m.name === mun) || null;
+    return null;
+  };
+
   // ---------- Lenguaje natural ----------
   const WEEKDAYS = [
     ["mon", /\b(lunes|dilluns)\b/], ["tue", /\b(martes|dimarts)\b/], ["wed", /\b(miercoles|dimecres)\b/],
@@ -110,19 +118,17 @@
   }
   const zoneIndex = (() => {
     const items = [], add = (key, z) => { const k = norm(key).trim(); if (k.length >= 3) items.push([k, z]); };
-    const muns = new Map();
-    for (const p of DATA) if (p.municipality && p.lat != null) {
-      const k = p.municipality.replace(/\s*\(.*\)/, "");
-      if (!muns.has(k)) muns.set(k, []);
-      muns.get(k).push([p.lat, p.lng]);
+    for (const m of GEO.municipios) {
+      if (m.name === "Barcelona") continue;
+      add(m.name, { type: "mun", name: m.name });
+      const short = m.name.replace(/^(l'|el |la |les )/i, "").replace(/ de (llobregat|besos|besòs|gramenet|mar|dalt|montalt)$/i, "");
+      if (short !== m.name && short.length > 4) add(short, { type: "mun", name: m.name });
     }
-    for (const [name, pts] of muns) {
-      const c = [pts.reduce((s, x) => s + x[0], 0) / pts.length, pts.reduce((s, x) => s + x[1], 0) / pts.length];
-      if (name !== "Barcelona") add(name, { type: "mun", name, center: c });
-      const short = name.replace(/^(l'|el |la |les )/i, "").replace(/ de (llobregat|besos|besòs|gramenet|mar|dalt)$/i, "");
-      if (short !== name && short.length > 4) add(short, { type: "mun", name, center: c });
+    add("hospitalet", { type: "mun", name: "L'Hospitalet de Llobregat" });
+    for (const d of GEO.distritos.Barcelona || []) {
+      add(d.name, { type: "dist", name: d.name, mun: "Barcelona" });
+      for (const part of d.name.split("-")) if (part.length > 4 && !BARRIOS[norm(part)]) add(part, { type: "dist", name: d.name, mun: "Barcelona" });
     }
-    for (const com of new Set(DATA.map((p) => p.comunitat))) if (!/^Sin /.test(com)) add(com, { type: "com", name: com });
     for (const [name, c] of Object.entries(BARRIOS)) add(name, { type: "barrio", name, center: c });
     for (const p of DATA) {
       const n = norm(p.name).replace(/^parroquia (de |de la )?/, "").replace(/,.*$/, "").replace(/\(.*\)/, "").trim();
@@ -174,7 +180,10 @@
     return { f, zone: near ? null : findZone(q), near };
   }
 
-  // ---------- Mapa: MapLibre (vectorial) o Google Maps si hay clave ----------
+  // ---------- Mapa: MapLibre (vectorial, gratis) o Google Maps si hay clave ----------
+  const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  const EMPTY = { type: "FeatureCollection", features: [] };
+  const toFC = (areas) => ({ type: "FeatureCollection", features: areas.map((a) => ({ type: "Feature", properties: { name: a.name }, geometry: a.geometry })) });
   const MapView = { markers: new Map(), ready: false };
 
   function pinEl(p) {
@@ -183,13 +192,37 @@
     el.addEventListener("click", (e) => { e.stopPropagation(); openDetail(p.id, false); });
     return el;
   }
+  function boundsOf(geoms) {
+    let w = 180, s = 90, e = -180, n = -90;
+    for (const g of geoms) for (const poly of g.coordinates) for (const c of poly[0]) {
+      w = Math.min(w, c[0]); e = Math.max(e, c[0]); s = Math.min(s, c[1]); n = Math.max(n, c[1]);
+    }
+    return [[w, s], [e, n]];
+  }
 
   function initMapLibre() {
-    const map = new maplibregl.Map({
-      container: "map", style: CFG.mapStyle, center: [CFG.center[1], CFG.center[0]], zoom: CFG.zoom,
-      attributionControl: { compact: true }, cooperativeGestures: false
-    });
+    const map = new maplibregl.Map({ container: "map", style: CFG.mapStyle, center: [CFG.center[1], CFG.center[0]], zoom: CFG.zoom, attributionControl: { compact: true } });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+    let loaded = false, pending = [];
+    const whenLoaded = (fn) => loaded ? fn() : pending.push(fn);
+    map.on("load", () => {
+      map.addSource("outlines", { type: "geojson", data: EMPTY });
+      map.addSource("area", { type: "geojson", data: EMPTY });
+      map.addLayer({ id: "outlines-fill", type: "fill", source: "outlines", paint: { "fill-color": css("--area-line"), "fill-opacity": ["case", ["boolean", ["feature-state", "hover"], false], 0.14, 0.02] } });
+      map.addLayer({ id: "outlines-line", type: "line", source: "outlines", paint: { "line-color": css("--area-line"), "line-width": 1, "line-opacity": 0.55, "line-dasharray": [2, 2] } });
+      map.addLayer({ id: "area-fill", type: "fill", source: "area", paint: { "fill-color": css("--area-line"), "fill-opacity": 0.26 } });
+      map.addLayer({ id: "area-line", type: "line", source: "area", paint: { "line-color": css("--area-line"), "line-width": 2.5 } });
+      let hover = null;
+      map.on("mousemove", "outlines-fill", (e) => {
+        map.getCanvas().style.cursor = "pointer";
+        const id = e.features[0].id;
+        if (hover !== null && hover !== id) map.setFeatureState({ source: "outlines", id: hover }, { hover: false });
+        hover = id; map.setFeatureState({ source: "outlines", id }, { hover: true });
+      });
+      map.on("mouseleave", "outlines-fill", () => { map.getCanvas().style.cursor = ""; if (hover !== null) map.setFeatureState({ source: "outlines", id: hover }, { hover: false }); hover = null; });
+      map.on("click", "outlines-fill", (e) => MapView.onAreaClick && MapView.onAreaClick(e.features[0].properties.name));
+      loaded = true; pending.forEach((fn) => fn()); pending = [];
+    });
     let me = null;
     Object.assign(MapView, {
       setMarkers(list) {
@@ -202,11 +235,20 @@
       },
       highlight(id) {
         for (const [pid, mk] of MapView.markers) {
-          const el = mk.getElement(), p = DATA.find((x) => x.id === pid);
-          const on = pid === id;
+          const el = mk.getElement(), on = pid === id;
           el.classList.toggle("on", on);
-          el.textContent = on ? p.name : "";
+          el.textContent = on ? DATA.find((x) => x.id === pid).name : "";
         }
+      },
+      setArea(area, outlines) {
+        whenLoaded(() => {
+          const fc = toFC(outlines || []);
+          fc.features.forEach((f, i) => { f.id = i + 1; });
+          map.getSource("outlines").setData(fc);
+          map.getSource("area").setData(area ? toFC([area]) : EMPTY);
+        });
+        if (area) map.fitBounds(boundsOf([area.geometry]), { padding: 50, maxZoom: 15, duration: 700 });
+        else if (outlines && outlines.length) map.fitBounds(boundsOf(outlines.map((o) => o.geometry)), { padding: 40, duration: 700 });
       },
       focus(p) { if (p.lat != null) map.easeTo({ center: [p.lng, p.lat], zoom: Math.max(map.getZoom(), 15), duration: 600 }); },
       fit(list, origin) {
@@ -214,7 +256,7 @@
         if (origin) pts.push([origin[1], origin[0]]);
         if (!pts.length) return;
         const b = pts.reduce((bb, c) => bb.extend(c), new maplibregl.LngLatBounds(pts[0], pts[0]));
-        map.fitBounds(b, { padding: 60, maxZoom: 15, duration: 600 });
+        map.fitBounds(b, { padding: 70, maxZoom: 15, duration: 600 });
       },
       showUser(ll) {
         if (me) me.remove();
@@ -234,6 +276,14 @@
       document.head.appendChild(s);
     }).then(() => {
       const map = new google.maps.Map($("map"), { center: { lat: CFG.center[0], lng: CFG.center[1] }, zoom: CFG.zoom, mapId: CFG.googleMapId || "DEMO_MAP_ID", streetViewControl: false, mapTypeControl: false, fullscreenControl: false });
+      const line = css("--area-line");
+      const outlines = new google.maps.Data({ map }), area = new google.maps.Data({ map });
+      outlines.setStyle({ fillColor: line, fillOpacity: 0.03, strokeColor: line, strokeOpacity: 0.6, strokeWeight: 1, clickable: true });
+      area.setStyle({ fillColor: line, fillOpacity: 0.26, strokeColor: line, strokeWeight: 2.5, clickable: false });
+      outlines.addListener("mouseover", (e) => outlines.overrideStyle(e.feature, { fillOpacity: 0.14 }));
+      outlines.addListener("mouseout", () => outlines.revertStyle());
+      outlines.addListener("click", (e) => MapView.onAreaClick && MapView.onAreaClick(e.feature.getProperty("name")));
+      const gBounds = (geoms) => { const [[w, s], [e, n]] = boundsOf(geoms); return { west: w, south: s, east: e, north: n }; };
       let me = null;
       Object.assign(MapView, {
         setMarkers(list) {
@@ -252,12 +302,18 @@
             mk.zIndex = on ? 10 : null;
           }
         },
+        setArea(a, outs) {
+          outlines.forEach((f) => outlines.remove(f)); area.forEach((f) => area.remove(f));
+          if (outs && outs.length) outlines.addGeoJson(toFC(outs));
+          if (a) { area.addGeoJson(toFC([a])); map.fitBounds(gBounds([a.geometry]), 50); }
+          else if (outs && outs.length) map.fitBounds(gBounds(outs.map((o) => o.geometry)), 40);
+        },
         focus(p) { if (p.lat != null) { map.panTo({ lat: p.lat, lng: p.lng }); if (map.getZoom() < 15) map.setZoom(15); } },
         fit(list, origin) {
           const b = new google.maps.LatLngBounds(); let n = 0;
           for (const p of list) if (p.lat != null) { b.extend({ lat: p.lat, lng: p.lng }); n++; }
           if (origin) { b.extend({ lat: origin[0], lng: origin[1] }); n++; }
-          if (n === 1) { map.setCenter(b.getCenter()); map.setZoom(15); } else if (n) map.fitBounds(b, 60);
+          if (n === 1) { map.setCenter(b.getCenter()); map.setZoom(15); } else if (n) map.fitBounds(b, 70);
         },
         showUser(ll) {
           if (me) me.map = null;
@@ -269,124 +325,126 @@
     });
   }
 
-  async function ensureMap() {
-    if (MapView.ready) { MapView.resize(); return; }
-    MapView.ready = true;
+  async function initMap() {
     try {
       if (CFG.googleMapsApiKey) await initGoogle(); else initMapLibre();
     } catch (e) {
       console.warn("Google Maps no disponible; uso el mapa vectorial", e);
       initMapLibre();
     }
+    MapView.ready = true;
+    MapView.onAreaClick = (name) => { state.dist = name; state.origin = null; setMode("map"); applyFilters(); };
   }
 
-  // ---------- Vistas ----------
-  function showResults() {
-    document.body.classList.remove("is-home");
-    document.body.classList.add("is-results");
-    return ensureMap();
+  // ---------- Modos ----------
+  function setMode(mode) {
+    state.mode = mode;
+    $("stage").dataset.mode = mode;
+    document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.go === mode));
+    requestAnimationFrame(() => MapView.resize && MapView.resize());
+    if (mode === "chat") setTimeout(() => $("chatInput").focus(), 50);
   }
-  function showHome() {
-    document.body.classList.add("is-home");
-    document.body.classList.remove("is-results");
-    $("homeInput").value = ""; autosize($("homeInput")); $("homeInput").focus();
+
+  // ---------- Pintar resultados ----------
+  function timesHtml(r, kind, day) {
+    if (r.soft) return `<span class="t note">confesión antes de misa o a petición</span>` + r.hits.map((h) => `<span class="t hit">${h.start}</span>`).join("");
+    const hit = new Set(r.hits);
+    return (eventsOf(r.p, kind) || []).filter((ev) => dayMatch(ev, day))
+      .map((ev) => `<span class="t ${hit.has(ev) ? "hit" : ""}">${ev.start}${ev.end ? "–" + ev.end : ""}${ev.lang ? `<small>${LANG[ev.lang] || ev.lang}</small>` : ""}</span>`).join("");
+  }
+  function cardHtml(r, kind, day) {
+    const p = r.p;
+    const where = p.municipio === "Barcelona" ? p.distrito : p.municipio;
+    return `<li class="card" data-id="${esc(p.id)}" tabindex="0">
+      <span class="name">${esc(p.name)}</span>
+      <span class="dist">${km(r.d)}</span>
+      <span class="where">${esc(where || p.address || "")}</span>
+      <span class="times">${timesHtml(r, kind, day)}</span>
+    </li>`;
   }
 
   function describe(f, zone, near) {
     const day = resolvedDay(f.day);
     const dayTxt = f.day === "today" ? "hoy" : f.day === "tomorrow" ? "mañana" : f.day === "any" ? "cualquier día" : day === "sun" ? "el domingo o festivo" : `el ${DAY_NAMES[day]}`;
     const t = f.from === 0 && f.to >= 1439 ? "" : f.to >= 1439 ? `, desde las ${fmt(f.from)}` : f.from === 0 ? `, antes de las ${fmt(f.to)}` : `, de ${fmt(f.from)} a ${fmt(f.to)}`;
-    const where = near ? " cerca de ti" : zone ? ` cerca de ${zone.name.replace(/(^|[\s-])(\S)/g, (m, a, c) => a + c.toUpperCase())}` : f.com ? ` en ${f.com}` : f.mun ? ` en ${f.mun}` : "";
+    const where = near ? " cerca de ti" : zone && zone.type === "barrio" ? ` cerca de ${title(zone.name)}` : f.dist ? ` en ${f.dist}` : f.mun ? ` en ${f.mun}` : zone ? ` cerca de ${zone.name}` : "";
     return `<strong>${KIND_PL[f.kind][0].toUpperCase() + KIND_PL[f.kind].slice(1)}</strong> ${dayTxt}${t}<em>${esc(where)}</em>`;
   }
 
-  function timesHtml(r, kind) {
-    const day = resolvedDay(state.day);
-    if (r.soft) return `<span class="t note">confesión antes de misa o a petición</span>` + r.hits.map((h) => `<span class="t hit">${h.start}</span>`).join("");
-    const hit = new Set(r.hits);
-    return (eventsOf(r.p, kind) || []).filter((ev) => dayMatch(ev, day))
-      .map((ev) => `<span class="t ${hit.has(ev) ? "hit" : ""}">${ev.start}${ev.end ? "–" + ev.end : ""}${ev.lang ? `<small>${LANG[ev.lang] || ev.lang}</small>` : ""}</span>`).join("");
-  }
-
-  function cardHtml(r, kind) {
-    const p = r.p;
-    return `<li class="card" data-id="${esc(p.id)}" tabindex="0">
-      <span class="name">${esc(p.name)}</span>
-      <span class="dist">${km(r.d)}</span>
-      <span class="where">${esc([p.municipality !== "Barcelona" ? p.municipality : "", p.comunitat && !/^Sin /.test(p.comunitat) ? p.comunitat : ""].filter(Boolean).join(" · ") || p.address || "")}</span>
-      <span class="times">${timesHtml(r, kind)}</span>
-    </li>`;
-  }
-
-  // Un turno de conversación: pregunta + respuesta con tarjetas.
-  function addTurn(question, res, f, zone, near) {
-    const thread = $("thread");
-    if (question) {
-      const q = document.createElement("div");
-      q.className = "q"; q.textContent = question;
-      thread.appendChild(q);
-    }
-    const a = document.createElement("div");
-    a.className = "a";
-    const shown = 8;
-    const list = res.slice(0, shown);
-    a.innerHTML = res.length
-      ? `<div class="head">${describe(f, zone, near)}</div>
-         <div class="meta">${res.length} ${res.length === 1 ? "parroquia" : "parroquias"}${zone || near ? ", ordenadas por cercanía" : ", ordenadas por hora"}</div>
-         <ul class="cards">${list.map((r) => cardHtml(r, f.kind)).join("")}</ul>
-         ${res.length > shown ? `<button type="button" class="ghost small more">Ver ${Math.min(res.length - shown, 20)} más</button>` : ""}`
-      : `<div class="head">${describe(f, zone, near)}</div><p class="empty">No he encontrado nada. Prueba con otra hora («por la tarde»), otro día o una zona más amplia.</p>`;
-    thread.appendChild(a);
-    const more = a.querySelector(".more");
-    if (more) {
-      let n = shown;
-      more.onclick = () => {
-        const next = res.slice(n, n + 20); n += next.length;
-        a.querySelector(".cards").insertAdjacentHTML("beforeend", next.map((r) => cardHtml(r, f.kind)).join(""));
-        if (n >= res.length) more.remove(); else more.textContent = `Ver ${Math.min(res.length - n, 20)} más`;
-      };
-    }
-    a.scrollIntoView({ block: "start", behavior: "smooth" });
-  }
-
-  function runSearch(f, origin, question, zone, near) {
-    Object.assign(state, f, { origin });
-    state.selected = null;
-    let res = search(state, origin);
-    if (origin && !f.com && !f.mun) {
+  function computeResults(f, origin) {
+    let res = search(f, origin);
+    if (origin && !f.mun && !f.dist) {
       const close = res.filter((r) => r.d != null && r.d <= 2.5);
       res = close.length >= 3 ? close : res.filter((r) => r.d != null && r.d <= 7);
     }
-    state.results = res;
-    closeDetail();
+    return res;
+  }
+
+  // Lleva unos filtros al mapa y a la lista lateral.
+  function showOnMap(f, origin, res, fit = true) {
+    Object.assign(state, f, { origin, results: res });
     syncControls();
-    addTurn(question, res, f, zone, near);
-    if (MapView.setMarkers) {
-      const ps = res.map((r) => r.p);
-      MapView.setMarkers(ps);
-      MapView.fit(ps.slice(0, origin ? 8 : ps.length), origin);
-    }
+    renderList();
+    if (!MapView.setMarkers) return;
+    const ps = res.map((r) => r.p);
+    MapView.setMarkers(ps);
+    const area = areaOf(state.dist ? "Barcelona" : state.mun, state.dist);
+    const outlines = state.mun === "Barcelona" || state.dist ? GEO.distritos.Barcelona : null;
+    MapView.setArea(area, outlines);
+    if (fit && !area && !outlines) MapView.fit(ps.slice(0, origin ? 10 : ps.length), origin);
+    const lbl = $("mapLabel");
+    lbl.innerHTML = state.dist ? `Distrito <em>${esc(state.dist)}</em>` : state.mun ? `<em>${esc(state.mun)}</em>` : "";
+  }
+
+  function renderList() {
+    const res = state.results, day = resolvedDay(state.day);
+    $("summary").innerHTML = `<strong>${res.length}</strong> ${res.length === 1 ? "parroquia" : "parroquias"} · ${describe(state, null, false).replace(/<\/?strong>/g, "")}`;
+    $("list").innerHTML = res.length ? res.slice(0, 300).map((r) => cardHtml(r, state.kind, day)).join("")
+      : `<li class="empty">No hay resultados. Amplía la franja horaria o quita algún filtro.</li>`;
+  }
+
+  // ---------- Chat ----------
+  function addTurn(question, res, f, zone, near, origin) {
+    const thread = $("thread");
+    $("stage").classList.add("has-thread");
+    const q = document.createElement("div"); q.className = "q"; q.textContent = question; thread.appendChild(q);
+    const a = document.createElement("div"); a.className = "a";
+    const day = resolvedDay(f.day), shown = 6;
+    a.innerHTML = res.length
+      ? `<div class="head">${describe(f, zone, near)}</div>
+         <div class="meta">${res.length} ${res.length === 1 ? "parroquia" : "parroquias"}${origin ? ", de la más cercana a la más lejana" : ", por orden de hora"}</div>
+         <ul class="cards">${res.slice(0, shown).map((r) => cardHtml(r, f.kind, day)).join("")}</ul>
+         <div class="row"><button type="button" class="pill accent see-map">Ver ${res.length > shown ? `las ${res.length} ` : ""}en el mapa</button></div>`
+      : `<div class="head">${describe(f, zone, near)}</div><p class="empty">No he encontrado nada. Prueba con otra hora («por la tarde»), otro día o una zona más amplia.</p>`;
+    thread.appendChild(a);
+    const btn = a.querySelector(".see-map");
+    if (btn) btn.onclick = () => { setMode("map"); closeDetail(); showOnMap(f, origin, res); };
+    a.querySelectorAll(".card").forEach((c) => c.onclick = () => { setMode("map"); showOnMap(f, origin, res); openDetail(c.dataset.id); });
+    q.scrollIntoView({ block: "start", behavior: "smooth" });
   }
 
   async function ask(text) {
     text = text.trim();
     if (!text) return;
-    await showResults();
+    setMode("chat");
     const { f, zone, near } = parseQuery(text);
     let origin = null;
     if (near) {
       try { origin = await locate(); }
       catch (e) {
+        $("stage").classList.add("has-thread");
         const q = document.createElement("div"); q.className = "q"; q.textContent = text; $("thread").appendChild(q);
         const a = document.createElement("div"); a.className = "a";
-        a.innerHTML = `<p class="empty">No puedo saber dónde estás. Dime el barrio o el municipio, por ejemplo: «estoy en Sants».</p>`;
+        a.innerHTML = `<p class="empty">No puedo saber dónde estás. Dime el barrio, el distrito o el municipio, por ejemplo: «estoy en Sants».</p>`;
         $("thread").appendChild(a); return;
       }
     }
-    if (zone && zone.type === "com") f.com = zone.name;
-    else if (zone && zone.center) origin = zone.center;
+    if (zone && zone.type === "dist") { f.mun = zone.mun; f.dist = zone.name; }
     else if (zone && zone.type === "mun") f.mun = zone.name;
-    runSearch(f, origin, text, zone, near);
+    else if (zone && zone.center) origin = zone.center;
+    const res = computeResults(f, origin);
+    addTurn(text, res, f, zone, near, origin);
+    showOnMap(f, origin, res); // el mapa queda preparado por si el usuario cambia de vista
   }
 
   function locate() {
@@ -418,18 +476,18 @@
   function openDetail(id, focus = true) {
     const p = DATA.find((x) => x.id === id);
     if (!p) return;
-    state.selected = id;
-    document.querySelectorAll(".card").forEach((c) => c.classList.toggle("sel", c.dataset.id === id));
+    if (state.mode !== "map") setMode("map");
+    document.querySelectorAll("#list .card").forEach((c) => c.classList.toggle("sel", c.dataset.id === id));
     if (MapView.highlight) {
       if (!MapView.markers.has(id)) MapView.setMarkers(state.results.map((r) => r.p).concat([p]));
       MapView.highlight(id);
     }
-    const dest = p.lat != null ? `${p.lat},${p.lng}` : encodeURIComponent(`${p.name}, ${p.address || ""}, ${p.municipality || ""}`);
+    const dest = p.lat != null ? `${p.lat},${p.lng}` : encodeURIComponent(`${p.name}, ${p.address || ""}, ${p.municipio || ""}`);
     const box = $("detail");
     box.innerHTML = `
-      <button type="button" class="ghost small back" id="closeDetail">← Volver</button>
+      <button type="button" class="pill" id="closeDetail" style="align-self:flex-start">← Volver a la lista</button>
       <h2>${esc(p.name)}</h2>
-      <p class="addr">${esc([p.address, p.municipality].filter(Boolean).join(", "))}<em>${esc(!/^Sin /.test(p.comunitat) ? `Comunidad pastoral ${p.comunitat} · ${p.arxiprestat}` : p.arxiprestat)}</em></p>
+      <p class="addr">${esc([p.address, p.municipio].filter(Boolean).join(", "))}<em>${esc(p.distrito ? `Distrito ${p.distrito}` : "")}${p.distrito && !/^Sin /.test(p.comunitat) ? " · " : ""}${esc(!/^Sin /.test(p.comunitat) ? `Comunidad pastoral ${p.comunitat}` : "")}</em></p>
       <div class="actions">
         <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=${dest}">Cómo llegar</a>
         ${p.phone ? `<a class="btn" href="tel:${esc(p.phone.replace(/\s/g, ""))}">${esc(p.phone)}</a>` : ""}
@@ -442,15 +500,16 @@
       ${p.confessions.length || p.confessions_text ? `<h3>Confesiones</h3>${schedule(p.confessions)}${p.confessions_text ? `<p class="note">${esc(p.confessions_text)}</p>` : ""}` : ""}
       ${p.adoration.length || p.adoration_text ? `<h3>Adoración eucarística</h3>${schedule(p.adoration)}${p.adoration_text ? `<p class="note">${esc(p.adoration_text)}</p>` : ""}` : ""}
       ${p.other ? `<h3>Otras celebraciones</h3><p class="note">${esc(p.other)}</p>` : ""}`;
-    box.hidden = false; $("thread").hidden = true;
-    box.scrollTop = 0;
+    box.hidden = false;
+    $("filters").hidden = true; $("summary").hidden = true; $("list").hidden = true;
+    $("side").scrollTop = 0;
     $("closeDetail").onclick = closeDetail;
     if (focus && MapView.focus) MapView.focus(p);
   }
   function closeDetail() {
-    $("detail").hidden = true; $("thread").hidden = false;
+    $("detail").hidden = true;
+    $("filters").hidden = false; $("summary").hidden = false; $("list").hidden = false;
     if (MapView.highlight) MapView.highlight(null);
-    state.selected = null;
   }
 
   // ---------- Filtros ----------
@@ -461,73 +520,66 @@
     const hours = []; for (let h = 0; h < 24; h++) for (const m of [0, 30]) hours.push(h * 60 + m);
     $("fFrom").innerHTML = hours.map((m) => `<option value="${m}">${fmt(m)}</option>`).join("");
     $("fTo").innerHTML = hours.map((m) => `<option value="${m + 29}">${fmt(m + 29)}</option>`).join("");
-    $("fArx").innerHTML = `<option value="">Todos</option>` + [...new Set(DATA.map((p) => p.arxiprestat))].sort().map((a) => `<option>${esc(a)}</option>`).join("");
-    $("fMun").innerHTML = `<option value="">Todos</option>` + [...new Set(DATA.map((p) => p.municipality).filter(Boolean))].sort((a, b) => a.localeCompare(b, "ca")).map((a) => `<option>${esc(a)}</option>`).join("");
-    fillComs();
-  }
-  function fillComs() {
-    const coms = [...new Set(DATA.filter((p) => !state.arx || p.arxiprestat === state.arx).map((p) => p.comunitat))].sort();
-    $("fCom").innerHTML = `<option value="">Todas</option>` + coms.map((a) => `<option>${esc(a)}</option>`).join("");
-    if (!coms.includes(state.com)) state.com = "";
-    $("fCom").value = state.com;
+    const counts = {};
+    for (const p of DATA) counts[p.municipio] = (counts[p.municipio] || 0) + 1;
+    $("fMun").innerHTML = `<option value="">Todos los municipios</option>` + Object.keys(counts).filter(Boolean).sort((a, b) => a.localeCompare(b, "ca"))
+      .map((m) => `<option value="${esc(m)}">${esc(m)}${GEO.distritos[m] ? " · por distritos" : ""} (${counts[m]})</option>`).join("");
+    const dists = GEO.distritos.Barcelona || [];
+    $("distChips").innerHTML = `<button type="button" data-dist="">Toda Barcelona</button>` + dists.map((d) => `<button type="button" data-dist="${esc(d.name)}">${esc(d.name)}</button>`).join("");
   }
   function syncControls() {
     document.querySelectorAll(".seg button").forEach((b) => b.classList.toggle("on", b.dataset.kind === state.kind));
     $("fDay").value = state.day;
     $("fFrom").value = String(state.from - (state.from % 30));
     $("fTo").value = String(Math.min(1439, state.to - (state.to % 30) + 29));
-    $("fArx").value = state.arx; fillComs();
     $("fMun").value = state.mun; $("fLang").value = state.lang; $("fText").value = state.text;
+    const hasDist = !!GEO.distritos[state.mun];
+    $("districts").hidden = !hasDist;
+    document.querySelectorAll("#distChips button").forEach((b) => b.classList.toggle("on", b.dataset.dist === state.dist));
   }
-  function fromFilters() {
-    const f = { kind: state.kind, day: state.day, from: state.from, to: state.to, arx: state.arx, com: state.com, mun: state.mun, lang: state.lang, text: state.text };
-    $("thread").innerHTML = "";
-    runSearch(f, state.origin, null, null, false);
+  function applyFilters() {
+    if (state.dist && !state.mun) state.mun = "Barcelona";
+    const f = { kind: state.kind, day: state.day, from: state.from, to: state.to, mun: state.mun, dist: state.dist, lang: state.lang, text: state.text };
+    closeDetail();
+    showOnMap(f, state.origin, computeResults(f, state.origin));
   }
 
   // ---------- Arranque ----------
   function autosize(t) { t.style.height = "auto"; t.style.height = Math.min(t.scrollHeight, 160) + "px"; }
 
-  function rotatePlaceholder(el) {
-    let i = 0;
-    const set = () => { el.placeholder = IDEAS[i % IDEAS.length] + "…"; i++; };
-    set();
-    return setInterval(() => { if (!el.value) set(); }, 3500);
-  }
-
   function bind() {
     $("parishCount").textContent = DATA.length;
     $("ideas").innerHTML = IDEAS.slice(0, 4).map((s) => `<li><button type="button">${esc(s)}</button></li>`).join("");
     $("ideas").onclick = (e) => { const b = e.target.closest("button"); if (b) ask(b.textContent); };
-    rotatePlaceholder($("homeInput"));
-    $("chatInput").placeholder = "Pregunta otra cosa…";
+    const input = $("chatInput");
+    let i = 0;
+    const setPh = () => { input.placeholder = ($("stage").classList.contains("has-thread") ? "Pregunta otra cosa… " : "") + HINTS[i++ % HINTS.length]; };
+    setPh(); setInterval(() => { if (!input.value) setPh(); }, 3500);
+    input.addEventListener("input", () => autosize(input));
+    input.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("chatForm").requestSubmit(); } });
+    $("chatForm").addEventListener("submit", (e) => { e.preventDefault(); const v = input.value; input.value = ""; autosize(input); ask(v); });
 
-    const wire = (form, input) => {
-      input.addEventListener("input", () => autosize(input));
-      input.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); } });
-      form.addEventListener("submit", (e) => { e.preventDefault(); const v = input.value; input.value = ""; autosize(input); ask(v); });
-    };
-    wire($("homeForm"), $("homeInput"));
-    wire($("chatForm"), $("chatInput"));
-
-    $("nearNow").onclick = () => ask("Misa ahora cerca de mí");
-    $("openMap").onclick = async () => { await showResults(); $("thread").innerHTML = ""; runSearch(Object.assign({}, BLANK, { from: nowBcn().min }), null, null, null, false); };
-    $("goHome").onclick = showHome;
-    $("filtersBtn").onclick = () => {
-      const open = $("filters").hidden;
-      $("filters").hidden = !open; $("filtersBtn").setAttribute("aria-expanded", String(open));
-    };
-    document.querySelectorAll(".seg button").forEach((b) => b.onclick = () => { state.kind = b.dataset.kind; fromFilters(); });
-    const on = (id, key, num) => $(id).onchange = (e) => { state[key] = num ? Number(e.target.value) : e.target.value; if (key === "arx") fillComs(); fromFilters(); };
-    on("fDay", "day"); on("fFrom", "from", true); on("fTo", "to", true); on("fArx", "arx"); on("fCom", "com"); on("fMun", "mun"); on("fLang", "lang");
-    let t; $("fText").oninput = (e) => { clearTimeout(t); t = setTimeout(() => { state.text = e.target.value.trim(); fromFilters(); }, 250); };
-    $("reset").onclick = () => { Object.assign(state, BLANK, { origin: null }); fromFilters(); };
+    document.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => setMode(b.dataset.go)));
+    document.querySelectorAll(".seg button").forEach((b) => b.onclick = () => { state.kind = b.dataset.kind; if (state.mode === "home") setMode("map"); applyFilters(); });
+    const on = (id, key, num) => $(id).onchange = (e) => { state[key] = num ? Number(e.target.value) : e.target.value; applyFilters(); };
+    on("fDay", "day"); on("fFrom", "from", true); on("fTo", "to", true); on("fLang", "lang");
+    $("fMun").onchange = (e) => { state.mun = e.target.value; state.dist = ""; state.origin = null; applyFilters(); };
+    $("distChips").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; state.dist = b.dataset.dist; state.origin = null; applyFilters(); };
+    let t; $("fText").oninput = (e) => { clearTimeout(t); t = setTimeout(() => { state.text = e.target.value.trim(); applyFilters(); }, 250); };
+    $("reset").onclick = () => { Object.assign(state, BLANK, { origin: null }); applyFilters(); };
     const pick = (e) => { const c = e.target.closest(".card"); if (c) openDetail(c.dataset.id); };
-    $("thread").addEventListener("click", pick);
-    $("thread").addEventListener("keydown", (e) => { if (e.key === "Enter") pick(e); });
+    $("list").addEventListener("click", pick);
+    $("list").addEventListener("keydown", (e) => { if (e.key === "Enter") pick(e); });
   }
 
-  fillSelects();
-  bind();
-  window.MisasApp = { parseQuery, search, ask, DATA };
+  async function start() {
+    fillSelects();
+    bind();
+    await initMap();
+    // Vista inicial: misas de hoy desde ahora en el mapa.
+    const f = Object.assign({}, BLANK, { from: nowBcn().min });
+    showOnMap(f, null, computeResults(f, null));
+  }
+  window.MisasApp = { parseQuery, search, ask, setMode, state, DATA };
+  start();
 })();

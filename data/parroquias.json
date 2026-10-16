@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-15",
+  "generated": "2026-10-16",
   "source": "https://esglesia.barcelona/parroquia/",
   "count": 211
  },
@@ -148,7 +148,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "mare-de-deu-de-la-merce-i-sant-miquel-arcangel-basilica",
@@ -229,7 +231,9 @@
    "confessions_text": "Todos los días, solicitándolo en la sacristía si no hay sacerdote en el confesonario.",
    "adoration_text": "Exposición del Santísimo los jueves 17:30-19:00.",
    "other": "Despacho: lunes a viernes 10:00-13:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "santa-anna",
@@ -334,7 +338,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Iglesia abierta laborables 11-19 h. Despacho miércoles 18-20 h.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "santa-maria-del-pi-basilica",
@@ -378,7 +384,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Archicofradía de la Sang.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "sants-just-i-pastor-basilica",
@@ -409,7 +417,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "mare-de-deu-del-pilar",
@@ -466,7 +476,9 @@
    "confessions_text": "",
    "adoration_text": "Rosario y exposición del Santísimo (sin horario indicado).",
    "other": "Rosario con exposición del Santísimo (sin horario). Despacho: lunes, miércoles y viernes 18:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "maria-mitjancera-de-totes-les-gracies",
@@ -564,7 +576,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Iglesia abierta laborables 7:30-21:00. Despacho: martes 12:00-13:30 y viernes 18:00-19:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sant-eugeni-i-papa",
@@ -636,7 +650,9 @@
    "confessions_text": "Durante las misas",
    "adoration_text": "Exposición del Santísimo listada como actividad, sin horario",
    "other": "Rosario, Vísperas, Vía Crucis (sin horario)",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sant-llorenc",
@@ -701,7 +717,9 @@
    "confessions_text": "Sábado 19:00-19:30, domingo 12:00-13:00, y antes o después de misa cuando convenga.",
    "adoration_text": "",
    "other": "Despacho martes y jueves 18:00-19:15.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "mare-de-deu-de-lourdes-2",
@@ -747,7 +765,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: martes 17:00-19:00 en Santa Madrona (c/ Tapioles, 10).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "sant-pere-claver",
@@ -785,7 +805,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho martes 17:00-19:00 en Santa Madrona (c/ Tapioles, 10).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "sant-salvador-dhorta",
@@ -815,7 +837,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho martes 17:00-19:00 en Santa Madrona (c/ Tapioles, 10). Centre obert de la Fundació Pere Tarrés.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "santa-madrona",
@@ -860,7 +884,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "purissima-concepcio",
@@ -1006,7 +1032,9 @@
    "confessions_text": "",
    "adoration_text": "Adoración diurna (sin horario indicado).",
    "other": "Rosario diario; oración nocturna/vespertina; Vía Crucis en Cuaresma; meses de María, Sagrado Corazón y Rosario.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "mare-de-deu-dels-angels",
@@ -1114,7 +1142,9 @@
    "confessions_text": "Laborables y festivos antes y después de las misas; sábados a partir de las 18:30.",
    "adoration_text": "Primer viernes de mes 20:00: exposición solemne del Santísimo y bendición.",
    "other": "Oración vespertina con Rosario, letanías y Salve lunes a viernes 19:10. Legión de María viernes 17:45.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sant-francesc-de-sales",
@@ -1162,7 +1192,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sant-ramon-de-penyafort",
@@ -1265,7 +1297,9 @@
    "confessions_text": "No hay horario habitual; celebración penitencial el Martes Santo.",
    "adoration_text": "Solo vela eucarística el Jueves Santo.",
    "other": "Templo abierto laborables 9-20 h, sábados 11-21 h, domingos 11-14 y 18-21 h. Despacho rector lunes y miércoles 18-19 h.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "mare-de-deu-de-betlem",
@@ -1411,7 +1445,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "mare-de-deu-del-carme",
@@ -1458,7 +1494,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: lunes, martes y jueves 9:00-14:00; martes y miércoles 16:00-19:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "sant-agusti",
@@ -1560,7 +1598,9 @@
    "confessions_text": "",
    "adoration_text": "Jueves 18:00; también los viernes (sin hora)",
    "other": "Novena del Perpetuo Socorro miércoles 19:30",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "sant-pau-2",
@@ -1599,7 +1639,9 @@
    "confessions_text": "Antes de las misas.",
    "adoration_text": "",
    "other": "Despacho martes 17:00-19:00. Fiestas patronales 25 de enero y 16 de octubre (Sant Galderic).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "sant-pere-nolasc",
@@ -1692,7 +1734,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho lunes y miércoles 19:00-20:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "esperit-sant",
@@ -1770,7 +1814,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Iglesia abierta 7:45-12:00 y 18:00-20:45; grupo de Adoración Nocturna",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "immaculat-cor-de-maria",
@@ -1861,7 +1907,9 @@
    "confessions_text": "Diario 19:30-20:00; domingos y festivos antes de las misas; 3 celebraciones penitenciales comunitarias al año",
    "adoration_text": "",
    "other": "Bautizos comunitarios 2º y 4º domingo 17:00",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Gràcia"
   },
   {
    "id": "mare-de-deu-de-montserrat-2",
@@ -1916,7 +1964,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: lunes y miércoles 19:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "mare-de-deu-del-roser-2",
@@ -2008,7 +2058,9 @@
    "confessions_text": "Media hora antes de cada misa.",
    "adoration_text": "",
    "other": "Bautismos el cuarto domingo de mes. Despacho: lunes y miércoles 18:00-19:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sagrada-familia",
@@ -2103,7 +2155,9 @@
    "confessions_text": "Antes de las misas y siempre que haya sacerdote disponible.",
    "adoration_text": "",
    "other": "Rosario lunes a viernes y domingos 19:15. Escuela de oración viernes 21:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sant-ignasi-de-loiola",
@@ -2183,7 +2237,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Rosario diario 19:15; oración Taizé el primer viernes de mes",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sant-oleguer-bisbe",
@@ -2251,7 +2307,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho lunes y jueves 17:30-19:30. Correo alternativo: parroquiasantoleguerbisbe@gmail.com.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sant-tomas-daquino",
@@ -2312,7 +2370,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho martes 18:00-20:00. Parroquia confiada a los Claretianos.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Gràcia"
   },
   {
    "id": "mare-de-deu-de-la-medalla-miraculosa",
@@ -2425,7 +2485,9 @@
    "confessions_text": "15 min antes de la misa; o a petición a los sacerdotes",
    "adoration_text": "Exposición L-V 19:00-20:00; Adoración Nocturna 3er jueves de mes 20:30-24:00 (excepto agosto)",
    "other": "Rosario laborables 19:30, sáb y dom 18:30; Escuela de Oración 1er viernes 21:15; grupo de alabanza y adoración sáb 20:00-21:15",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "preciosissima-sang-de-nostre-senyor-jesucrist",
@@ -2484,7 +2546,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: jueves 18:00-19:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sant-domenec-guzman",
@@ -2543,7 +2607,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sant-josep-oriol-basilica",
@@ -2606,7 +2672,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sant-miquel-del-port",
@@ -2693,7 +2761,9 @@
    "confessions_text": "Jueves 12:00-13:00 o a cualquier hora pidiendo cita.",
    "adoration_text": "Jueves 10:30-13:00; 2º y 4º jueves también 20:00-21:00.",
    "other": "Liturgia de la Palabra lunes 10:00 (catalán). Despacho con cita previa (WhatsApp 606 092 108, santmiqueldelport@gmail.com).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "sant-pere-de-les-puelles",
@@ -2765,7 +2835,9 @@
    "confessions_text": "Lunes y viernes 18:30-19:00 y siempre que se solicite.",
    "adoration_text": "Exposición del Santísimo los jueves a las 18:00.",
    "other": "Rosario lunes a viernes 18:30; formación de adultos martes 20:00; estudio bíblico sábados 12:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "santa-maria-del-mar-basilica",
@@ -2816,7 +2888,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Grupo bíblico 1.er y 3.er viernes de mes 18:00 (C/ Canvis Vells, 1).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "mare-de-deu-de-les-neus",
@@ -2854,7 +2928,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho miércoles 18:30-19:30",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Sant Adrià de Besòs",
+   "distrito": null
   },
   {
    "id": "sant-ambros",
@@ -2919,7 +2995,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "sant-pauli-de-nola",
@@ -2979,7 +3057,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho lunes 18:00-19:30. Tel. residencia 93 314 26 60.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "sant-pere-ermengol",
@@ -3011,7 +3091,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho jueves 18:00-18:45.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "santes-juliana-i-semproniana",
@@ -3066,7 +3148,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Sant Adrià de Besòs",
+   "distrito": null
   },
   {
    "id": "sant-joan-bosco",
@@ -3154,7 +3238,9 @@
    "confessions_text": "Todos los días, una hora antes de las misas",
    "adoration_text": "Jueves 19:30",
    "other": "Rosario lunes a viernes 18:30; oración Taizé; oración de jóvenes",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Andreu"
   },
   {
    "id": "sant-josep-de-calassanc",
@@ -3208,7 +3294,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho lunes, miércoles y viernes 18:30-20:30. Parroquia de los Escolapios.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "sant-marti-del-clot",
@@ -3273,7 +3361,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho lunes, miércoles y viernes 18:30-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "sagrat-cor-de-jesus",
@@ -3296,7 +3386,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "no_schedule"
+   "status": "no_schedule",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "sant-francesc-dassis-2",
@@ -3360,7 +3452,9 @@
    "confessions_text": "Media hora antes de misa y durante la adoración (invierno); en verano solo media hora antes de misa",
    "adoration_text": "Viernes de 17:30 hasta la misa de 20:00 (no en verano)",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "sant-francesc-de-paola",
@@ -3400,7 +3494,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "sant-felix",
@@ -3452,7 +3548,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "sant-pancrac",
@@ -3491,7 +3589,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho martes 18:00-19:30. Web arxiprestat: esglesiapoblenou.cat.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "santa-maria-del-taulat-i-sant-bernat-calbo",
@@ -3561,7 +3661,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "sant-joan-davila",
@@ -3608,7 +3710,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "sant-lluis-gonzaga",
@@ -3670,7 +3774,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Eucaristía de las Comunidades Neocatecumenales sábados 21:15. Despacho miércoles y viernes 18:30-19:30. Tel. residencia 93 314 45 21.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "sant-marti-de-provencals",
@@ -3719,7 +3825,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "santissim-sagrament",
@@ -3766,7 +3874,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Martí"
   },
   {
    "id": "sant-josep-obrer",
@@ -3798,7 +3908,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho en la parroquia de Santa Engràcia (pl. Santa Engràcia 1), miércoles y viernes 18-20 h, excepto agosto.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "sant-sebastia-2",
@@ -3836,7 +3948,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho en la parroquia de Santa Engràcia (pl. Sta. Engràcia 1), miércoles y viernes 18:00-20:00, excepto agosto.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "santa-engracia",
@@ -3878,7 +3992,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "santa-maria-magdalena",
@@ -3917,7 +4033,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "crist-rei",
@@ -3996,7 +4114,9 @@
    "confessions_text": "Antes de las misas y siempre que se pida en la sacristía",
    "adoration_text": "Viernes 20:00-20:30",
    "other": "Rosario L-V 18:30; Vía Crucis viernes de Cuaresma 20:00; iglesia abierta 10:00-13:00 y 18:00-20:30",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Andreu"
   },
   {
    "id": "el-bon-pastor",
@@ -4052,7 +4172,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Andreu"
   },
   {
    "id": "sant-andreu-2",
@@ -4100,7 +4222,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Andreu"
   },
   {
    "id": "sant-joan-de-mata",
@@ -4159,7 +4283,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Andreu"
   },
   {
    "id": "sant-josep-manyanet",
@@ -4234,7 +4360,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho martes y viernes 18:00-19:45.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Andreu"
   },
   {
    "id": "sant-pacia",
@@ -4299,7 +4427,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho lunes y jueves 18:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Andreu"
   },
   {
    "id": "sant-bernat-de-claravall",
@@ -4347,7 +4477,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "sant-marc",
@@ -4379,7 +4511,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Bautizos domingo 11:00. Catequesis martes 17:00-18:00 y despacho martes y jueves 17:00-18:00 en la Capilla de Sant Lluc (Av. Vallbona, 5).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "santa-bernardeta",
@@ -4411,7 +4545,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Catequesis martes 17:00-18:00 y despacho martes y jueves 17:00-18:00 en la Capilla de Sant Lluc (Av. Vallbona, 5, Torre Baró); bautizos domingo 12:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "santissima-trinitat",
@@ -4459,7 +4595,9 @@
    "confessions_text": "",
    "adoration_text": "Jueves 17:30.",
    "other": "Rosario de lunes a sábado 18:30; estudio del Evangelio lunes 19:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Andreu"
   },
   {
    "id": "mare-de-deu-de-mont-carmel",
@@ -4509,7 +4647,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: miércoles 18:00-19:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "mare-de-deu-del-coll",
@@ -4573,7 +4713,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: martes y jueves 19:00-21:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Gràcia"
   },
   {
    "id": "santa-teresa-de-jesus",
@@ -4625,7 +4767,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "crist-redemptor",
@@ -4682,7 +4826,9 @@
    "confessions_text": "30 min antes de las misas",
    "adoration_text": "",
    "other": "Iglesia abierta: lun 16-20; mar-vie 10-14 y 16-20; sáb 19:45-21; dom 10:30-12:30 y 19-20:30",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "mare-de-deu-de-la-salut-2",
@@ -4744,7 +4890,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho compartido (Sant Miquel dels Sants, Mare de Déu de la Salut, Sant Carles Borromeo) en C/ Sors 30, lunes y miércoles 18:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Gràcia"
   },
   {
    "id": "sant-carles-borromeu",
@@ -4785,7 +4933,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Vísperas domingos 19:00",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Gràcia"
   },
   {
    "id": "sant-miquel-dels-sants",
@@ -4856,7 +5006,9 @@
    "confessions_text": "",
    "adoration_text": "Jueves 20:30-21:30.",
    "other": "Templo abierto 8:30-14:00 y 17:00-20:45. Despacho lunes y miércoles 18-20 h. Correo alternativo: eldespatxdegracia@gmail.com.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Gràcia"
   },
   {
    "id": "sant-jordi",
@@ -4943,7 +5095,9 @@
    "confessions_text": "1 hora antes de cada misa y a petición; celebraciones penitenciales comunitarias en Adviento, Cuaresma y antes de Primera Comunión",
    "adoration_text": "Adoración nocturna el primer viernes de mes de 20:30 a 9:00; adoración diaria 19:00-20:00 con rosario a las 19:30 (excepto martes y domingo)",
    "other": "Rosario 19:30; Vía Crucis viernes de Cuaresma 19:30; taller de oración primer viernes 20:30; Cuarenta Horas en Pascua",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Gràcia"
   },
   {
    "id": "santa-teresa-de-linfant-jesus",
@@ -5040,7 +5194,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Gràcia"
   },
   {
    "id": "verge-de-gracia-i-sant-josep",
@@ -5131,7 +5287,9 @@
    "confessions_text": "Sábado de 19:00 a 20:00, domingo de 11:15 a 12:00 y cuando se pida.",
    "adoration_text": "",
    "other": "Grupo de oración y Legión de María (sin horario publicado).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Gràcia"
   },
   {
    "id": "sant-antoni-de-padua-2",
@@ -5187,7 +5345,9 @@
    "confessions_text": "Se ofrecen confesiones (sin horario publicado).",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "sant-francesc-xavier",
@@ -5252,7 +5412,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "sant-joan-dhorta",
@@ -5309,7 +5471,9 @@
    "confessions_text": "Confesiones listadas entre las actividades, sin horario",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "sant-marcel",
@@ -5368,7 +5532,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Oración de Taizé el primer sábado a las 21:00 y los viernes a las 21:00 (excepto víspera del primer sábado). Fiesta patronal 16 de enero.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "sant-mateu",
@@ -5433,7 +5599,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho martes y jueves 18:30-19:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "sant-narcis",
@@ -5481,7 +5649,9 @@
    "confessions_text": "",
    "adoration_text": "Jueves 17:30 (verano 18:30).",
    "other": "Rosario lunes a sábado 18:15 (verano 19:15). Despacho jueves 17:00-19:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "sant-rafael",
@@ -5556,7 +5726,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho lunes y miércoles 18:30-20:00. Residencia: Pg. Fabra i Puig 468.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "sant-cebria",
@@ -5604,7 +5776,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "sant-crist",
@@ -5660,7 +5834,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "sant-genis-dels-agudells",
@@ -5691,7 +5867,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "sant-jeroni",
@@ -5748,7 +5926,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "verge-de-natzaret",
@@ -5827,7 +6007,9 @@
    "confessions_text": "",
    "adoration_text": "Exposición del Santísimo jueves 19:00-19:45.",
    "other": "Rosario lunes a viernes 19:00. Despacho: lunes a viernes 20:00-21:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "corpus-christi",
@@ -5908,7 +6090,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Gràcia"
   },
   {
    "id": "sant-joan-de-gracia",
@@ -5976,7 +6160,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Gràcia"
   },
   {
    "id": "santa-maria-de-gracia",
@@ -6075,7 +6261,9 @@
    "confessions_text": "Cada día media hora antes de las misas; domingos antes de las misas.",
    "adoration_text": "Jueves de 8:45 a 19:30; lunes a viernes de 18:00 a 19:30.",
    "other": "Rosario todos los días a las 18:15.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Gràcia"
   },
   {
    "id": "mare-de-deu-de-fatima",
@@ -6163,7 +6351,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "sant-esteve",
@@ -6217,7 +6407,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "sant-pius-x",
@@ -6309,7 +6501,9 @@
    "confessions_text": "Cada día antes de las misas.",
    "adoration_text": "Jueves 18:00-20:00.",
    "other": "Rosario diario 19:30; coronilla de la Divina Misericordia viernes 19:00; oración Medjugorje primer sábado 18:00-19:30; Vía Crucis viernes de Cuaresma 18:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Andreu"
   },
   {
    "id": "santa-eulalia-de-vilapicina",
@@ -6407,7 +6601,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Nou Barris"
   },
   {
    "id": "santa-isabel-darago-i-sant-joaquim",
@@ -6493,7 +6689,9 @@
    "confessions_text": "",
    "adoration_text": "Hora Santa el 3.er miércoles de mes a las 18:30.",
    "other": "Rosario cada día a las 19:30; grupo de Taizé, taller de oración.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "sant-joan-m-vianney",
@@ -6572,7 +6770,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Oración el primer viernes de mes; Vetlla del temple del Dijous",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "santa-maria-del-remei",
@@ -6651,7 +6851,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Les Corts"
   },
   {
    "id": "santa-tecla",
@@ -6793,7 +6995,9 @@
    "confessions_text": "Miércoles de 10:00 a 13:00 y sábados de 17:30 a 18:30.",
    "adoration_text": "Hora Santa los miércoles de 19:00 a 20:00; Adoración Nocturna el segundo sábado de cada mes.",
    "other": "Rosario lunes a viernes 19:30, sábado y domingo 18:30. Templo abierto todo el día.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Les Corts"
   },
   {
    "id": "mare-de-deu-de-nuria",
@@ -6892,7 +7096,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Legión de María miércoles tarde. Despacho: martes 18:00-19:30, jueves 10:00-11:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "sant-gregori-taumaturg",
@@ -6973,7 +7179,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "sant-ildefons",
@@ -7042,7 +7250,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "santa-agnes",
@@ -7094,7 +7304,9 @@
    "confessions_text": "",
    "adoration_text": "Todos los días lectivos del curso escolar de 19:00 a 20:00; jóvenes lunes 21:00-22:00; adultos jueves 21:00-22:00",
    "other": "Email publicado malformado (santaagnes193@arqbcn.orgdespatxsantaagnes.com). Despacho mar y jue 18:00-20:00.",
-   "status": "no_schedule"
+   "status": "no_schedule",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "santa-cecilia",
@@ -7162,7 +7374,9 @@
    "confessions_text": "Lunes a viernes, media hora antes de la misa y a horas convenidas.",
    "adoration_text": "",
    "other": "Despacho: martes 11:00-12:00 y jueves 17:45-18:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "santa-joaquima-de-vedruna",
@@ -7244,7 +7458,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "sants-gervasi-i-protasi-mare-de-deu-de-la-bonanova",
@@ -7365,7 +7581,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "verge-de-la-pau",
@@ -7464,7 +7682,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "sagrat-cor-de-jesus-del-tibidabo-basilica",
@@ -7487,7 +7707,9 @@
    "confessions_text": "",
    "adoration_text": "Capilla de Adoración Perpetua (desde 1966): adoradores diurnos (una hora al mes, a elección) y nocturnos (una noche al mes; autobús a las 22:30). Info: 93 417 56 86.",
    "other": "Primer viernes de mes: Rosario, Vísperas y Bendición antes de la Misa de Expiación. Despacho: lunes, martes y jueves 18:30-20:00.",
-   "status": "no_schedule"
+   "status": "no_schedule",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "sant-joan-de-la-creu",
@@ -7524,7 +7746,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "santa-maria-de-vallvidrera",
@@ -7555,7 +7779,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "parroquia-de-la-mare-de-deu-de-la-salut",
@@ -7585,7 +7811,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho parroquial jueves 20:00-21:00",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "maria-auxiliadora",
@@ -7608,7 +7836,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "no_schedule"
+   "status": "no_schedule",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "maria-reina",
@@ -7676,7 +7906,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: miércoles 18:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Les Corts"
   },
   {
    "id": "sant-ot",
@@ -7757,7 +7989,9 @@
    "confessions_text": "Antes de las misas y siempre que haya sacerdote disponible.",
    "adoration_text": "",
    "other": "Despacho lunes y miércoles 17:30-19:30 (entrada por c/ Eduardo Conde, 1).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "sant-vicenc",
@@ -7853,7 +8087,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho lunes, miércoles y viernes 17:30-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "mare-de-deu-de-lourdes",
@@ -7908,7 +8144,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "mare-de-deu-de-montserrat",
@@ -7970,7 +8208,9 @@
    "confessions_text": "",
    "adoration_text": "Exposición del Santísimo el primer jueves de mes 18:00-19:00",
    "other": "Rosario diario 19:00; móvil 658 43 32 27; despacho C/ Selva 17 (93 387 04 98)",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "sant-josep",
@@ -8054,7 +8294,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "santa-maria",
@@ -8127,7 +8369,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Móvil 626 33 97 99",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "sant-cebria-tiana",
@@ -8184,7 +8428,9 @@
    "confessions_text": "",
    "adoration_text": "Hora Santa los jueves de 18:00 a 19:00, seguida de la Eucaristía",
    "other": "Enlace de arciprestazgo: esglesiabadalona.org",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Tiana",
+   "distrito": null
   },
   {
    "id": "sant-crist-2",
@@ -8215,7 +8461,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho viernes 19:00-20:00",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "sant-francesc-dassis",
@@ -8273,7 +8521,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "sant-joan",
@@ -8311,7 +8561,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho viernes 19:00-20:00",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Montgat",
+   "distrito": null
   },
   {
    "id": "sant-sebastia",
@@ -8374,7 +8626,9 @@
    "confessions_text": "",
    "adoration_text": "Capilla de adoración perpetua; jueves 17:00-19:00 exposición; también tras la misa del 1er y 2º sábado de mes",
    "other": "Rosario media hora antes de la misa diaria (18:30); bautizos domingos 13:00",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "santa-clara",
@@ -8419,7 +8673,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "mare-de-deu-de-la-salut",
@@ -8481,7 +8737,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "mare-de-deu-del-roser",
@@ -8546,7 +8804,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "sant-antoni-de-padua",
@@ -8611,7 +8871,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "sant-jaume-apostol",
@@ -8657,7 +8919,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Lunes 19:30 celebración de la Palabra",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "sant-pau",
@@ -8714,7 +8978,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "sant-adria",
@@ -8798,7 +9064,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Sant Adrià de Besòs",
+   "distrito": null
   },
   {
    "id": "sant-joan-baptista",
@@ -8843,7 +9111,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho martes y jueves 18:00-20:00",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Sant Adrià de Besòs",
+   "distrito": null
   },
   {
    "id": "sant-roc",
@@ -8873,7 +9143,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Badalona",
+   "distrito": null
   },
   {
    "id": "mare-de-deu-de-lesperanca",
@@ -8912,7 +9184,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sant Andreu"
   },
   {
    "id": "sant-jaume-apostol-2",
@@ -8949,7 +9223,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Santa Coloma de Gramenet",
+   "distrito": null
   },
   {
    "id": "sant-joan-baptista-2",
@@ -9006,7 +9282,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Teléfono rectoría 93 468 17 87",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Santa Coloma de Gramenet",
+   "distrito": null
   },
   {
    "id": "sant-joaquim",
@@ -9044,7 +9322,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho martes 18:00-19:30; domingos 10:00-11:00 en Sant Jaume Apòstol",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Santa Coloma de Gramenet",
+   "distrito": null
   },
   {
    "id": "sant-josep-oriol",
@@ -9108,7 +9388,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Móvil 632905072",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Santa Coloma de Gramenet",
+   "distrito": null
   },
   {
    "id": "sant-miquel-arcangel-2",
@@ -9152,7 +9434,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Santa Coloma de Gramenet",
+   "distrito": null
   },
   {
    "id": "santa-coloma",
@@ -9200,7 +9484,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Santa Coloma de Gramenet",
+   "distrito": null
   },
   {
    "id": "santa-maria-5",
@@ -9244,7 +9530,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Santa Coloma de Gramenet",
+   "distrito": null
   },
   {
    "id": "santa-rosa",
@@ -9295,7 +9583,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Santa Coloma de Gramenet",
+   "distrito": null
   },
   {
    "id": "mare-de-deu-de-la-llum",
@@ -9399,7 +9689,9 @@
    "confessions_text": "",
    "adoration_text": "Exposición del Santísimo lunes a sábado 7:10-7:50 y domingo 8:10-9:15. Adoración con alabanza jueves 20:30-21:30.",
    "other": "Vísperas con exposición del Santísimo el tercer domingo de mes a las 18:00 (grupo de oración de adultos). Despacho: lunes, miércoles y viernes 19:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "mare-de-deu-dels-desemparats",
@@ -9538,7 +9830,9 @@
    "confessions_text": "Siempre que se soliciten, y 15 minutos antes y durante las misas.",
    "adoration_text": "Jueves 18:00-19:00; primer viernes de mes 20:30-22:00; segundo sábado de mes 20:45-22:00.",
    "other": "Laudes diarias 7:55. Vísperas laborables 19:45. Rosario 8:45 y 18:15. Despacho: viernes 18:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "sant-albert-magne",
@@ -9561,7 +9855,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "no_schedule"
+   "status": "no_schedule",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "sant-antoni-de-padua-3",
@@ -9593,7 +9889,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho en Sant Enric d'Ossó (C/ Pere Pelegrí, 13, L'Hospitalet): lunes y jueves 18:00-19:30 (julio y agosto solo lunes).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Esplugues de Llobregat",
+   "distrito": null
   },
   {
    "id": "sant-benet",
@@ -9616,7 +9914,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho parroquial: lunes 16:00-20:00.",
-   "status": "no_schedule"
+   "status": "no_schedule",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "sant-enric-dosso",
@@ -9672,7 +9972,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho parroquial: lunes y jueves 18:00-19:30 (julio y agosto solo lunes).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "sant-ramon-nonat",
@@ -9754,7 +10056,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Bautizos 2º domingo 10:30 y 4º domingo 10:30 y 17:00. Despacho miércoles y viernes 18:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Les Corts"
   },
   {
    "id": "santa-gemma-galgani",
@@ -9801,7 +10105,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho parroquial en Sant Enric d'Ossó (C/ Pere Pelegrí, 13): lunes y jueves 18:00-19:30 (julio y agosto solo lunes).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "immaculada-concepcio",
@@ -9857,7 +10163,9 @@
    "confessions_text": "Antes de cada misa.",
    "adoration_text": "Jueves 19:30; primer viernes de mes 19:30.",
    "other": "Rosario de lunes a viernes 19:30 y domingo 11:30. Despacho: jueves 20:30-21:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "mare-de-deu-del-carme-2",
@@ -9895,7 +10203,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho lunes y jueves 20:00-21:30",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Sant Joan Despí",
+   "distrito": null
   },
   {
    "id": "verge-del-pilar",
@@ -9942,7 +10252,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: martes y jueves 18:00-20:00 excepto vísperas. Lunes 20:00 celebración de la Palabra.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Cornellà de Llobregat",
+   "distrito": null
   },
   {
    "id": "sant-ildefons-2",
@@ -10001,7 +10313,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: miércoles y viernes 18:00-20:00 (excepto vísperas).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Cornellà de Llobregat",
+   "distrito": null
   },
   {
    "id": "sant-jaume-2",
@@ -10048,7 +10362,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: martes 17:00-19:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Cornellà de Llobregat",
+   "distrito": null
   },
   {
    "id": "sant-miquel-arcangel",
@@ -10116,7 +10432,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Rosario (Hermandad Ntra. Sra. del Rocío) el sábado anterior al último domingo de mes a las 19:00. Despacho: miércoles y viernes 18:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Cornellà de Llobregat",
+   "distrito": null
   },
   {
    "id": "santa-maria-3",
@@ -10172,7 +10490,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Rosario los viernes 21:00 (según agenda semanal antigua). Bautizos 2º y 4º domingo desde 16:30. Despacho: lunes a viernes 18:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Cornellà de Llobregat",
+   "distrito": null
   },
   {
    "id": "mare-de-deu-de-port",
@@ -10219,7 +10539,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: viernes 17:30-18:45.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "sant-bartomeu",
@@ -10271,7 +10593,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "sant-cristofor",
@@ -10326,7 +10650,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "mare-de-deu-de-bellvitge",
@@ -10365,7 +10691,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: en verano llamar al 699 69 28 63.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "sant-isidre",
@@ -10443,7 +10771,9 @@
    "confessions_text": "30 minutos antes de cada misa y siempre que se pida.",
    "adoration_text": "Jueves (jornada eucarística): exposición tras la misa de 10:00, adoración todo el día, bendición y reserva 18:45.",
    "other": "Rosario de lunes a domingo 18:15. Vía Crucis los viernes de Cuaresma 19:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "sant-joan-evangelista",
@@ -10483,7 +10813,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho parroquial: martes y jueves 18:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "sant-josep-2",
@@ -10569,7 +10901,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho interparroquial: C/ Barcelona, 104, tel. 93 337 47 75, josepeulalia462@gmail.com (en julio, miércoles 18:00-20:00).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "santa-eulalia-de-merida",
@@ -10652,7 +10986,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Móvil 608494530",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "santa-eulalia-de-provencana",
@@ -10701,7 +11037,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "santa-maria-de-gornal",
@@ -10738,7 +11076,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho parroquial: martes y jueves 18:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "L'Hospitalet de Llobregat",
+   "distrito": null
   },
   {
    "id": "mare-de-deu-dels-dolors",
@@ -10792,7 +11132,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: martes 18:00-19:30 (no en agosto).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "sant-medir",
@@ -10840,7 +11182,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho lunes y jueves 18:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "sant-angel-custodi",
@@ -10902,7 +11246,9 @@
    "confessions_text": "A horas convenidas.",
    "adoration_text": "Capilla del Santísimo abierta lunes a sábado 8:00-13:00 y 17:00-19:00; oración comunitaria con exposición el primer viernes de mes 19:00-20:00.",
    "other": "Despacho martes y jueves 17:00-19:00 (otra sección indica lunes 18-20 y jueves 18-18:45).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "santa-dorotea",
@@ -10940,7 +11286,9 @@
    "confessions_text": "",
    "adoration_text": "Capilla del Santísimo (C/ Vilardell, 50) abierta de lunes a sábado de 8:00 a 13:00 y de 17:00 a 19:00.",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "santa-maria-de-sants",
@@ -10997,7 +11345,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "sant-andreu",
@@ -11020,7 +11370,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Email en la web aparece malformado (verbatim)",
-   "status": "no_schedule"
+   "status": "no_schedule",
+   "municipio": "Dosrius",
+   "distrito": null
   },
   {
    "id": "sant-andreu-3",
@@ -11051,7 +11403,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Òrrius",
+   "distrito": null
   },
   {
    "id": "sant-esteve-2",
@@ -11083,7 +11437,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Dosrius",
+   "distrito": null
   },
   {
    "id": "sant-iscle-i-santa-victoria",
@@ -11131,7 +11487,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho parroquial: sábado 11:00-12:00. Rectoría: C/ Sant Antoni, 9.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Dosrius",
+   "distrito": null
   },
   {
    "id": "sant-julia",
@@ -11193,7 +11551,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Argentona",
+   "distrito": null
   },
   {
    "id": "mare-de-deu-del-pilar-2",
@@ -11302,7 +11662,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho parroquial (en Sant Pere): lunes 20:00-21:00 y miércoles 17:00-18:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "El Masnou",
+   "distrito": null
   },
   {
    "id": "sant-feliu",
@@ -11350,7 +11712,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Alella",
+   "distrito": null
   },
   {
    "id": "sant-marti",
@@ -11398,7 +11762,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho jueves 17:30-19:00",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Teià",
+   "distrito": null
   },
   {
    "id": "sant-pere",
@@ -11462,7 +11828,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho parroquial: martes 12:00-13:00; miércoles y viernes 18:00-19:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "El Masnou",
+   "distrito": null
   },
   {
    "id": "mare-de-deu-de-montserrat-3",
@@ -11493,7 +11861,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Mataró",
+   "distrito": null
   },
   {
    "id": "sant-josep-3",
@@ -11564,7 +11934,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho parroquial: jueves 18:00-20:00 en el Casal de Sant Josep.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Mataró",
+   "distrito": null
   },
   {
    "id": "santa-maria-basilica",
@@ -11619,7 +11991,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho conjunto de las parroquias de Mataró Mar: lunes y miércoles 17:00-19:00",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Mataró",
+   "distrito": null
   },
   {
    "id": "mare-de-deu-de-lesperanca-2",
@@ -11665,7 +12039,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Grupo de oración de la Renovación Carismática martes 19:00-21:00 en la capilla del Santísimo; oración comunitaria (Grup de Pregària i Missió) casi siempre el último viernes de mes a las 19:30. Despacho en la parroquia de Sant Simó i Sant Pau.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Mataró",
+   "distrito": null
   },
   {
    "id": "maria-auxiliadora-2",
@@ -11727,7 +12103,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho parroquial: martes y viernes 18:30-20:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Mataró",
+   "distrito": null
   },
   {
    "id": "sagrada-familia-2",
@@ -11775,7 +12153,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho parroquial con cita previa por correo.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Mataró",
+   "distrito": null
   },
   {
    "id": "sant-simo-i-sant-pau",
@@ -11820,7 +12200,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho martes 19:00-20:30",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Mataró",
+   "distrito": null
   },
   {
    "id": "sant-cristofol",
@@ -11868,7 +12250,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Rosario y vísperas a las 19:00. Email publicado con varias direcciones mezcladas.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Premià de Mar",
+   "distrito": null
   },
   {
    "id": "sant-pere-2",
@@ -11908,7 +12292,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Email publicado malformado (santpere583@arqbcn.catsantperedepremiaya.com).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Premià de Dalt",
+   "distrito": null
   },
   {
    "id": "santa-maria-4",
@@ -11963,7 +12349,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "El campo de código postal de la web dice 08338, pero la dirección indica 08330.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Premià de Mar",
+   "distrito": null
   },
   {
    "id": "sant-andreu-4",
@@ -12031,7 +12419,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Sant Andreu de Llavaneres",
+   "distrito": null
   },
   {
    "id": "sant-vicenc-2",
@@ -12086,7 +12476,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Sant Vicenç de Montalt",
+   "distrito": null
   },
   {
    "id": "santa-maria-2",
@@ -12135,7 +12527,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: lunes y miércoles 18:00-20:00 en la rectoría de Sant Andreu de Llavaneres.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Caldes d'Estrac",
+   "distrito": null
   },
   {
    "id": "sant-feliu-2",
@@ -12191,7 +12585,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: jueves 17:00-20:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Cabrera de Mar",
+   "distrito": null
   },
   {
    "id": "sant-genis",
@@ -12244,7 +12640,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Vilassar de Dalt",
+   "distrito": null
   },
   {
    "id": "sant-joan-2",
@@ -12301,7 +12699,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Email publicado malformado (santjoan784@arqbcn.catdespatxsantjoanvdmgmail.com).",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Vilassar de Mar",
+   "distrito": null
   },
   {
    "id": "santa-creu",
@@ -12353,7 +12753,9 @@
    "confessions_text": "Antes de las misas.",
    "adoration_text": "Jueves 18:00.",
    "other": "Despacho en Vilassar de Dalt (Pl. de la República, 9): lunes 18:00-19:00; WhatsApp 623 054 900.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Cabrils",
+   "distrito": null
   },
   {
    "id": "esglesia-romanica-del-poble-espanyol",
@@ -12376,7 +12778,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho martes y jueves 17:00-19:00",
-   "status": "no_schedule"
+   "status": "no_schedule",
+   "municipio": "Barcelona",
+   "distrito": "Sants-Montjuïc"
   },
   {
    "id": "hospital-clinic-provincial",
@@ -12427,7 +12831,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "ciutat-sanitaria-vall-dhebron",
@@ -12462,7 +12868,9 @@
    "confessions_text": "",
    "adoration_text": "Capilla con el Santísimo abierta todo el día hasta las 21:00",
    "other": "Capellanía hospitalaria; urgencias 24h. Móvil 638 688 197",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Horta-Guinardó"
   },
   {
    "id": "immaculada-concepcio-i-sant-lorenzo-ruiz-personal",
@@ -12534,7 +12942,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "parroquia-castrense-de-placa-personal",
@@ -12566,7 +12976,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: martes a viernes 9:00-13:00.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "mare-de-deu-de-lourdes-personal",
@@ -12598,7 +13010,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "Despacho: miércoles 18:00-19:30.",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   },
   {
    "id": "sant-albert-magne-personal",
@@ -12630,7 +13044,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sant-ferran",
@@ -12670,7 +13086,9 @@
    "confessions_text": "Siempre que se pida, antes o después de la Eucaristía",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Eixample"
   },
   {
    "id": "sant-josep-santa-monica",
@@ -12719,7 +13137,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "ok"
+   "status": "ok",
+   "municipio": "Barcelona",
+   "distrito": "Ciutat Vella"
   },
   {
    "id": "santa-creu-dolorde",
@@ -12742,7 +13162,9 @@
    "confessions_text": "",
    "adoration_text": "",
    "other": "",
-   "status": "no_schedule"
+   "status": "no_schedule",
+   "municipio": "Barcelona",
+   "distrito": "Sarrià-Sant Gervasi"
   }
  ]
 }
