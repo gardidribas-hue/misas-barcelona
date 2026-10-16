@@ -337,12 +337,24 @@
   }
 
   // ---------- Modos ----------
+  const calm = () => window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   function setMode(mode) {
-    state.mode = mode;
-    $("stage").dataset.mode = mode;
-    document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.go === mode));
-    requestAnimationFrame(() => MapView.resize && MapView.resize());
-    if (mode === "chat") setTimeout(() => $("chatInput").focus(), 50);
+    if (state.mode === mode && $("stage").dataset.mode === mode) return;
+    const apply = () => {
+      state.mode = mode;
+      $("stage").dataset.mode = mode;
+      document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.go === mode));
+      MapView.resize && MapView.resize();
+    };
+    // Transición suave entre vistas (las ventanas se mueven y cambian de tamaño).
+    if (document.startViewTransition && !calm()) {
+      const t = document.startViewTransition(apply);
+      t.finished.then(() => MapView.resize && MapView.resize()).catch(() => {});
+    } else {
+      apply();
+      requestAnimationFrame(() => MapView.resize && MapView.resize());
+    }
+    if (mode === "chat") setTimeout(() => $("chatInput").focus({ preventScroll: true }), 80);
   }
 
   // ---------- Pintar resultados ----------
@@ -404,23 +416,51 @@
   }
 
   // ---------- Chat ----------
-  function addTurn(question, res, f, zone, near, origin) {
+  const wait = (ms) => new Promise((r) => setTimeout(r, calm() ? 0 : ms));
+  const THINK = {
+    mass: ["Buscando misas…", "Mirando horarios…"],
+    confession: ["Buscando confesiones…", "Mirando horarios…"],
+    adoration: ["Buscando adoración…", "Mirando horarios…"],
+  };
+  function scrollChat() {
+    const sc = $("chatScroll");
+    sc.scrollTo({ top: sc.scrollHeight, behavior: calm() ? "auto" : "smooth" });
+  }
+  // Pregunta del usuario y un indicador de "pensando"; devuelve el contenedor de la respuesta.
+  function startTurn(question, kind) {
     const thread = $("thread");
     $("stage").classList.add("has-thread");
     const q = document.createElement("div"); q.className = "q"; q.textContent = question; thread.appendChild(q);
-    const a = document.createElement("div"); a.className = "a";
+    const a = document.createElement("div"); a.className = "a pending";
+    const lines = THINK[kind] || THINK.mass;
+    a.innerHTML = `<div class="thinking"><span class="dots"><i></i><i></i><i></i></span><span class="say">${lines[0]}</span></div>`;
+    thread.appendChild(a);
+    let k = 0;
+    a._timer = setInterval(() => { const s = a.querySelector(".say"); if (s) s.textContent = lines[++k % lines.length]; }, 900);
+    requestAnimationFrame(scrollChat);
+    return a;
+  }
+  async function finishTurn(a, html) {
+    await wait(650 + Math.random() * 350);
+    clearInterval(a._timer);
+    a.classList.remove("pending");
+    a.innerHTML = html;
+    a.querySelectorAll(".cards .card").forEach((c, i) => c.style.setProperty("--i", i));
+    const row = a.querySelector(".row"); if (row) row.style.setProperty("--n", a.querySelectorAll(".cards .card").length);
+    // Acompaña el despliegue de la respuesta con el scroll.
+    scrollChat(); setTimeout(scrollChat, 350); setTimeout(scrollChat, 800);
+  }
+  async function addTurn(a, res, f, zone, near, origin) {
     const day = resolvedDay(f.day), shown = 6;
-    a.innerHTML = res.length
+    await finishTurn(a, res.length
       ? `<div class="head">${describe(f, zone, near)}</div>
          <div class="meta">${res.length} ${res.length === 1 ? "parroquia" : "parroquias"}${origin ? ", de la más cercana a la más lejana" : ", por orden de hora"}</div>
          <ul class="cards">${res.slice(0, shown).map((r) => cardHtml(r, f.kind, day)).join("")}</ul>
          <div class="row"><button type="button" class="pill accent see-map">Ver ${res.length > shown ? `las ${res.length} ` : ""}en el mapa</button></div>`
-      : `<div class="head">${describe(f, zone, near)}</div><p class="empty">No he encontrado nada. Prueba con otra hora («por la tarde»), otro día o una zona más amplia.</p>`;
-    thread.appendChild(a);
+      : `<div class="head">${describe(f, zone, near)}</div><p class="empty">No he encontrado nada. Prueba con otra hora («por la tarde»), otro día o una zona más amplia.</p>`);
     const btn = a.querySelector(".see-map");
-    if (btn) btn.onclick = () => { setMode("map"); closeDetail(); showOnMap(f, origin, res); };
-    a.querySelectorAll(".card").forEach((c) => c.onclick = () => { setMode("map"); showOnMap(f, origin, res); openDetail(c.dataset.id); });
-    q.scrollIntoView({ block: "start", behavior: "smooth" });
+    if (btn) btn.onclick = () => { showOnMap(f, origin, res); closeDetail(); setMode("map"); };
+    a.querySelectorAll(".card").forEach((c) => c.onclick = () => { showOnMap(f, origin, res); setMode("map"); openDetail(c.dataset.id); });
   }
 
   async function ask(text) {
@@ -428,23 +468,21 @@
     if (!text) return;
     setMode("chat");
     const { f, zone, near } = parseQuery(text);
+    const a = startTurn(text, f.kind);
     let origin = null;
     if (near) {
       try { origin = await locate(); }
       catch (e) {
-        $("stage").classList.add("has-thread");
-        const q = document.createElement("div"); q.className = "q"; q.textContent = text; $("thread").appendChild(q);
-        const a = document.createElement("div"); a.className = "a";
-        a.innerHTML = `<p class="empty">No puedo saber dónde estás. Dime el barrio, el distrito o el municipio, por ejemplo: «estoy en Sants».</p>`;
-        $("thread").appendChild(a); return;
+        await finishTurn(a, `<p class="empty">No puedo saber dónde estás. Dime el barrio, el distrito o el municipio, por ejemplo: «estoy en Sants».</p>`);
+        return;
       }
     }
     if (zone && zone.type === "dist") { f.mun = zone.mun; f.dist = zone.name; }
     else if (zone && zone.type === "mun") f.mun = zone.name;
     else if (zone && zone.center) origin = zone.center;
     const res = computeResults(f, origin);
-    addTurn(text, res, f, zone, near, origin);
     showOnMap(f, origin, res); // el mapa queda preparado por si el usuario cambia de vista
+    await addTurn(a, res, f, zone, near, origin);
   }
 
   function locate() {
