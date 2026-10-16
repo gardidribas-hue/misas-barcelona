@@ -345,6 +345,7 @@
       $("stage").dataset.mode = mode;
       document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.go === mode));
       MapView.resize && MapView.resize();
+      if (state.pendingFit && mode !== "chat") refit();
     };
     // Transición suave entre vistas (las ventanas se mueven y cambian de tamaño).
     if (document.startViewTransition && !calm()) {
@@ -403,9 +404,20 @@
     const area = areaOf(state.dist ? "Barcelona" : state.mun, state.dist);
     const outlines = state.mun === "Barcelona" || state.dist ? GEO.distritos.Barcelona : null;
     MapView.setArea(area, outlines);
-    if (fit && !area && !outlines) MapView.fit(ps.slice(0, origin ? 10 : ps.length), origin);
+    if (fit) {
+      // Si el mapa está oculto (vista de chat), el encuadre se hace al mostrarlo.
+      if ($("map").offsetWidth) refit(); else state.pendingFit = true;
+    }
     const lbl = $("mapLabel");
     lbl.innerHTML = state.dist ? `Distrito <em>${esc(state.dist)}</em>` : state.mun ? `<em>${esc(state.mun)}</em>` : "";
+  }
+
+  function refit() {
+    state.pendingFit = false;
+    if (!MapView.fit) return;
+    const area = areaOf(state.dist ? "Barcelona" : state.mun, state.dist);
+    if (area || state.mun === "Barcelona") { MapView.setArea(area, state.mun === "Barcelona" || state.dist ? GEO.distritos.Barcelona : null); return; }
+    MapView.fit(state.results.map((r) => r.p).slice(0, state.origin ? 10 : state.results.length), state.origin);
   }
 
   function renderList() {
@@ -429,9 +441,10 @@
   // Pregunta del usuario y un indicador de "pensando"; devuelve el contenedor de la respuesta.
   function startTurn(question, kind) {
     const thread = $("thread");
+    foldPrevious();
     $("stage").classList.add("has-thread");
     const q = document.createElement("div"); q.className = "q"; q.textContent = question; thread.appendChild(q);
-    const a = document.createElement("div"); a.className = "a pending";
+    const a = document.createElement("div"); a.className = "a pending"; a.dataset.kind = kind;
     const lines = THINK[kind] || THINK.mass;
     a.innerHTML = `<div class="thinking"><span class="dots"><i></i><i></i><i></i></span><span class="say">${lines[0]}</span></div>`;
     thread.appendChild(a);
@@ -450,14 +463,43 @@
     // Acompaña el despliegue de la respuesta con el scroll.
     scrollChat(); setTimeout(scrollChat, 350); setTimeout(scrollChat, 800);
   }
+  // Muestra dos resultados con un difuminado; «Ver más» despliega el resto.
+  const PEEK = 2;
+  const CHEV = `<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  function setFold(a, open) {
+    const fold = a.querySelector(".fold"); if (!fold) return;
+    const ul = fold.querySelector(".cards"), cards = ul.querySelectorAll(".card"), btn = a.querySelector(".more");
+    const peek = cards[PEEK] ? cards[PEEK].offsetTop - ul.offsetTop + 44 : ul.scrollHeight;
+    ul.style.maxHeight = (open ? ul.scrollHeight : peek) + "px";
+    fold.classList.toggle("closed", !open);
+    if (btn) {
+      btn.setAttribute("aria-expanded", open);
+      btn.innerHTML = (open ? "Ver menos" : `Ver ${cards.length - PEEK} más`) + CHEV;
+    }
+    if (open) setTimeout(() => { if (!fold.classList.contains("closed")) ul.style.maxHeight = "none"; }, 520);
+  }
+  function foldPrevious() {
+    document.querySelectorAll("#thread .q").forEach((q) => q.classList.add("old"));
+    document.querySelectorAll("#thread .a .fold").forEach((fold) => {
+      const a = fold.closest(".a"), ul = fold.querySelector(".cards");
+      if (fold.classList.contains("closed")) return;
+      ul.style.maxHeight = ul.scrollHeight + "px"; ul.offsetHeight; // parte de la altura actual para animar
+      setFold(a, false);
+    });
+  }
   async function addTurn(a, res, f, zone, near, origin) {
     const day = resolvedDay(f.day), shown = 6;
     await finishTurn(a, res.length
       ? `<div class="head">${describe(f, zone, near)}</div>
          <div class="meta">${res.length} ${res.length === 1 ? "parroquia" : "parroquias"}${origin ? ", de la más cercana a la más lejana" : ", por orden de hora"}</div>
-         <ul class="cards">${res.slice(0, shown).map((r) => cardHtml(r, f.kind, day)).join("")}</ul>
+         <div class="fold"><ul class="cards">${res.slice(0, shown).map((r) => cardHtml(r, f.kind, day)).join("")}</ul></div>
+         ${Math.min(res.length, shown) > PEEK ? `<button type="button" class="more" aria-expanded="false"></button>` : ""}
          <div class="row"><button type="button" class="pill accent see-map">Ver ${res.length > shown ? `las ${res.length} ` : ""}en el mapa</button></div>`
       : `<div class="head">${describe(f, zone, near)}</div><p class="empty">No he encontrado nada. Prueba con otra hora («por la tarde»), otro día o una zona más amplia.</p>`);
+    if (a.querySelector(".more")) {
+      setFold(a, false);
+      a.querySelector(".more").onclick = () => setFold(a, a.querySelector(".fold").classList.contains("closed"));
+    }
     const btn = a.querySelector(".see-map");
     if (btn) btn.onclick = () => { showOnMap(f, origin, res); closeDetail(); setMode("map"); };
     a.querySelectorAll(".card").forEach((c) => c.onclick = () => { showOnMap(f, origin, res); setMode("map"); openDetail(c.dataset.id); });
@@ -567,6 +609,7 @@
   }
   function syncControls() {
     document.querySelectorAll(".seg button").forEach((b) => b.classList.toggle("on", b.dataset.kind === state.kind));
+    document.querySelector(".mapcol").dataset.kind = state.kind;
     $("fDay").value = state.day;
     $("fFrom").value = String(state.from - (state.from % 30));
     $("fTo").value = String(Math.min(1439, state.to - (state.to % 30) + 29));

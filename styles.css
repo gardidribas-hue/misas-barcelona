@@ -236,3 +236,37 @@ h1 em { color: var(--accent-strong); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
 }
+
+/* ---------- Colores por tipo: misa rojo pastel, confesión morado, adoración dorado ---------- */
+[data-kind="confession"] {
+  --accent: #cdb8ee; --accent-strong: #7f5cb8; --accent-soft: #efe7fb; --accent-ink: #2f1f4d;
+  --hit: #ded1f6; --hit-ink: #2f1f4d;
+}
+[data-kind="adoration"] {
+  --accent: #edd38f; --accent-strong: #a67b17; --accent-soft: #f9f0d6; --accent-ink: #4a3608;
+  --hit: #f4e2aa; --hit-ink: #4a3608;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) [data-kind="confession"] { --accent: #bea6e9; --accent-strong: #cfbaf3; --accent-soft: #2e2640; --accent-ink: #22153a; --hit: #46385f; --hit-ink: #f2eaff; }
+  :root:not([data-theme="light"]) [data-kind="adoration"] { --accent: #e3c478; --accent-strong: #ecd290; --accent-soft: #3a3020; --accent-ink: #33270a; --hit: #5a4920; --hit-ink: #fff3d6; }
+}
+:root[data-theme="dark"] [data-kind="confession"] { --accent: #bea6e9; --accent-strong: #cfbaf3; --accent-soft: #2e2640; --accent-ink: #22153a; --hit: #46385f; --hit-ink: #f2eaff; }
+:root[data-theme="dark"] [data-kind="adoration"] { --accent: #e3c478; --accent-strong: #ecd290; --accent-soft: #3a3020; --accent-ink: #33270a; --hit: #5a4920; --hit-ink: #fff3d6; }
+.pin.me { box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent-strong) 25%, transparent); }
+
+/* ---------- Respuestas plegadas: dos resultados, difuminado y «Ver más» ---------- */
+.fold { position: relative; }
+.fold .cards { overflow: hidden; transition: max-height .5s var(--ease); }
+.fold::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 84px; pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--bg) 88%);
+  -webkit-backdrop-filter: blur(2.5px); backdrop-filter: blur(2.5px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 60%); mask-image: linear-gradient(to bottom, transparent, #000 60%);
+  opacity: 0; transition: opacity .35s var(--ease);
+}
+.fold.closed::after { opacity: 1; }
+.more { align-self: flex-start; border: 0; background: none; padding: 4px 2px; cursor: pointer; font-weight: 700; font-size: 15px; color: var(--accent-strong); display: inline-flex; align-items: center; gap: 6px; }
+.more svg { transition: transform .35s var(--ease); }
+.more[aria-expanded="true"] svg { transform: rotate(180deg); }
+.q.old { opacity: .7; }
+.q, .a { transition: opacity .35s var(--ease); }
