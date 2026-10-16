@@ -58,13 +58,13 @@ button, input, select, textarea { font: inherit; color: inherit; }
 /* ---------- Barra superior (sobre el fondo oscuro) ---------- */
 .top { height: var(--top); flex: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-inline: max(22px, env(safe-area-inset-left, 0px)) max(22px, env(safe-area-inset-right, 0px)); color: var(--backdrop-ink); }
 .brand { border: 0; background: none; padding: 0; cursor: pointer; font: 400 28px/1 var(--display); white-space: nowrap; color: var(--backdrop-ink); }
-.brand { display: inline-flex; align-items: stretch; gap: 10px; font-size: 26px; }
-/* «Misas» ocupa la altura de las dos líneas: arriba con «Archidiócesis de», abajo con «Barcelona». */
-.brand .b-main { font-size: 2.3em; line-height: .7; display: flex; align-items: flex-end; padding-bottom: .045em; }
-.brand .b-stack { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; gap: .3em; }
+/* Logotipo: «Misas» | ARCHIDIÓCESIS DE / Barcelona, separados por un filete fino */
+.brand { display: inline-flex; align-items: center; gap: 14px; font-size: 38px; }
+.brand .b-main { line-height: 1; padding-bottom: .06em; }
+.brand .b-stack { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; text-align: left; gap: 5px; padding-left: 14px; border-left: 1px solid color-mix(in srgb, var(--backdrop-ink) 22%, transparent); }
 .brand em { color: var(--accent); }
-.brand .b-arch { color: var(--gold); font-size: .62em; line-height: 1; letter-spacing: .03em; }
-.brand .b-city { font-size: 1.15em; line-height: .8; }
+.brand .b-arch { color: var(--gold); font: 700 10.5px/1 var(--ui); letter-spacing: .2em; text-transform: uppercase; }
+.brand .b-city { font-size: 24px; line-height: .95; }
 .tabs { display: flex; gap: 2px; background: rgba(255,255,255,.08); border-radius: 999px; padding: 4px; }
 .tabs button { border: 0; background: none; border-radius: 999px; padding: 7px 16px; font-weight: 700; font-size: 14px; color: var(--backdrop-muted); cursor: pointer; transition: background .25s var(--ease), color .25s var(--ease); }
 .tabs button:hover { color: var(--backdrop-ink); }
@@ -223,7 +223,10 @@ h1 em { color: var(--accent-strong); }
 /* ---------- Móvil ---------- */
 @media (max-width: 860px) {
   :root { --top: 64px; --radius: 24px; --gap: 10px; }
-  .brand { font-size: 17px; gap: 7px; }
+  .brand { font-size: 27px; gap: 9px; }
+  .brand .b-stack { padding-left: 9px; gap: 4px; }
+  .brand .b-arch { font-size: 7.5px; letter-spacing: .14em; }
+  .brand .b-city { font-size: 17px; }
   .tabs button { padding: 6px 11px; }
   .stage[data-mode="home"] { grid-template-columns: 1fr; grid-template-rows: auto 46vh; overflow-y: auto; }
   .stage[data-mode="home"] .chatcol { min-height: auto; overflow: visible; }
