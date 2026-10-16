@@ -270,3 +270,16 @@ h1 em { color: var(--accent-strong); }
 .more[aria-expanded="true"] svg { transform: rotate(180deg); }
 .q.old { opacity: .7; }
 .q, .a { transition: opacity .35s var(--ease); }
+
+/* Zona seleccionada y tinte del fondo según el tipo */
+[data-kind="confession"] { --area-line: #9a7bd3; }
+[data-kind="adoration"] { --area-line: #d3a63a; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) [data-kind="confession"] { --area-line: #bea6e9; }
+  :root:not([data-theme="light"]) [data-kind="adoration"] { --area-line: #e3c478; }
+}
+:root[data-theme="dark"] [data-kind="confession"] { --area-line: #bea6e9; }
+:root[data-theme="dark"] [data-kind="adoration"] { --area-line: #e3c478; }
+body { transition: background-color .6s var(--ease); }
+body[data-tone="confession"] { background: color-mix(in srgb, var(--backdrop) 90%, #8a6cc4); }
+body[data-tone="adoration"] { background: color-mix(in srgb, var(--backdrop) 90%, #c99a2e); }

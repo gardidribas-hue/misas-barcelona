@@ -181,7 +181,7 @@
   }
 
   // ---------- Mapa: MapLibre (vectorial, gratis) o Google Maps si hay clave ----------
-  const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  const css = (name) => getComputedStyle(document.querySelector(".mapcol")).getPropertyValue(name).trim();
   const EMPTY = { type: "FeatureCollection", features: [] };
   const toFC = (areas) => ({ type: "FeatureCollection", features: areas.map((a) => ({ type: "Feature", properties: { name: a.name }, geometry: a.geometry })) });
   const MapView = { markers: new Map(), ready: false };
@@ -212,6 +212,11 @@
       map.addLayer({ id: "outlines-line", type: "line", source: "outlines", paint: { "line-color": css("--area-line"), "line-width": 1, "line-opacity": 0.55, "line-dasharray": [2, 2] } });
       map.addLayer({ id: "area-fill", type: "fill", source: "area", paint: { "fill-color": css("--area-line"), "fill-opacity": 0.26 } });
       map.addLayer({ id: "area-line", type: "line", source: "area", paint: { "line-color": css("--area-line"), "line-width": 2.5 } });
+      MapView.recolor = () => {
+        const c = css("--area-line");
+        ["outlines-fill", "area-fill"].forEach((id) => map.setPaintProperty(id, "fill-color", c));
+        ["outlines-line", "area-line"].forEach((id) => map.setPaintProperty(id, "line-color", c));
+      };
       let hover = null;
       map.on("mousemove", "outlines-fill", (e) => {
         map.getCanvas().style.cursor = "pointer";
@@ -276,10 +281,13 @@
       document.head.appendChild(s);
     }).then(() => {
       const map = new google.maps.Map($("map"), { center: { lat: CFG.center[0], lng: CFG.center[1] }, zoom: CFG.zoom, mapId: CFG.googleMapId || "DEMO_MAP_ID", streetViewControl: false, mapTypeControl: false, fullscreenControl: false });
-      const line = css("--area-line");
       const outlines = new google.maps.Data({ map }), area = new google.maps.Data({ map });
-      outlines.setStyle({ fillColor: line, fillOpacity: 0.03, strokeColor: line, strokeOpacity: 0.6, strokeWeight: 1, clickable: true });
-      area.setStyle({ fillColor: line, fillOpacity: 0.26, strokeColor: line, strokeWeight: 2.5, clickable: false });
+      MapView.recolor = () => {
+        const line = css("--area-line");
+        outlines.setStyle({ fillColor: line, fillOpacity: 0.03, strokeColor: line, strokeOpacity: 0.6, strokeWeight: 1, clickable: true });
+        area.setStyle({ fillColor: line, fillOpacity: 0.26, strokeColor: line, strokeWeight: 2.5, clickable: false });
+      };
+      MapView.recolor();
       outlines.addListener("mouseover", (e) => outlines.overrideStyle(e.feature, { fillOpacity: 0.14 }));
       outlines.addListener("mouseout", () => outlines.revertStyle());
       outlines.addListener("click", (e) => MapView.onAreaClick && MapView.onAreaClick(e.feature.getProperty("name")));
@@ -609,7 +617,11 @@
   }
   function syncControls() {
     document.querySelectorAll(".seg button").forEach((b) => b.classList.toggle("on", b.dataset.kind === state.kind));
-    document.querySelector(".mapcol").dataset.kind = state.kind;
+    if (document.querySelector(".mapcol").dataset.kind !== state.kind) {
+      document.querySelector(".mapcol").dataset.kind = state.kind;
+      document.body.dataset.tone = state.kind; // tinte muy leve del fondo
+      MapView.recolor && MapView.recolor();
+    }
     $("fDay").value = state.day;
     $("fFrom").value = String(state.from - (state.from % 30));
     $("fTo").value = String(Math.min(1439, state.to - (state.to % 30) + 29));
