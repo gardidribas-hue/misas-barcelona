@@ -205,7 +205,13 @@ def devocionari_litany(r):
                 blocks.append(cur); cur = []
             cur.append(l)
         blocks.append(cur)
-        ore = ["\n".join(lines(tail, col))]
+        vr = []  # «Pregueu per nosaltres»: una versión y una respuesta, partidas en varias líneas
+        for l in lines(tail, col):
+            if vr and not l.startswith("R/.") and (len(vr) == 1 or vr[-1].startswith("R/.")):
+                vr[-1] += " " + l
+            else:
+                vr.append(l)
+        ore = ["\n".join(vr)]
         if lang == "ca":
             ore.append(" ".join(prayer))
         res[lang] = {"kyrie": ["\n".join(ls[:k])], "litany": ["\n".join(b) for b in blocks], "oremus": ore}
