@@ -79,19 +79,19 @@
   }
 
   // ---------- El rosario entero en un solo texto vertical ----------
-  // Credo, Salve, letanías (con el Señor ten piedad y la oración final) y señal de la cruz se ven siempre; Padrenuestro, Avemaría, Gloria y
-  // Oh Jesús mío se abren con la flechita del título, porque mucha gente ya se los sabe.
+  // Credo, Salve, letanías (con el Señor ten piedad y la oración final) y señal de la cruz se ven siempre; Padrenuestro, Avemaría y Gloria
+  // se abren con la flechita del título, porque mucha gente ya se los sabe.
   function rosaryText(L) {
     // Las respuestas de las letanías vienen como líneas «R/. …» y se ven en negrita.
     const line = (l) => /^R\/\.\s/.test(l) ? `<b>${esc(l.slice(4))}</b>` : esc(l);
     const paras = (k) => TXT(k).map((p) => `<p>${p.split("\n").map(line).join("<br>")}</p>`).join("");
-    const name = (k, extra) => (k === "cross" ? "✝ " : "") + esc(L[k]) + (extra ? ` <span class="pr-x">${esc(extra)}</span>` : "") +
+    const name = (k, extra) => esc(L[k]) + (extra ? ` <span class="pr-x">${esc(extra)}</span>` : "") +
       (k === "cross" ? ` <span class="pr-note">(${esc(L.signing)})</span>` : "");
     const shown = (k) => TXT(k) ? `<div class="pr"><h3>${name(k)}</h3><div class="pr-text">${paras(k)}</div></div>` : "";
     const fold = (k, extra) => TXT(k)
       ? `<details class="pr fold"><summary><h3>${name(k, extra)}</h3><span class="chev" aria-hidden="true"></span></summary><div class="pr-text">${paras(k)}</div></details>`
       : `<div class="pr"><h3>${name(k, extra)}</h3></div>`;
-    const decade = () => fold("pater") + fold("ave", "×10") + fold("gloria") + fold("fatima");
+    const decade = () => fold("pater") + fold("ave", "×10") + fold("gloria");
     let h = `<section class="ros-part"><h2 class="ros-sec">${esc(L.intro)}</h2>${shown("cross")}${shown("credo")}${fold("pater")}${fold("ave", "×3")}${fold("gloria")}</section>`;
     SETS[ros.set].forEach((m, k) => {
       h += `<section class="ros-part ros-mys"><p class="ros-ord"><span class="num">${k + 1}</span>${esc(L.ord[k])} ${esc(L.mys)}</p>
