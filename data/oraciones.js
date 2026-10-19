@@ -17,12 +17,10 @@ window.MisasOraciones = {
    "Gloria al Padre, al Hijo y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén."
   ],
   "salve": [
-   "Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra, Dios te salve. A ti clamamos los desterrados hijos de Eva. A ti suspiramos gimiendo y llorando en este valle de lágrimas. Ea, pues, Señora, abogada nuestra: vuelve a nosotros esos tus ojos misericordiosos. Y después de este destierro, muéstranos a Jesús, fruto bendito de tu vientre. Oh clemente, oh piadosa, oh dulce Virgen María! Ruega por nosotros, Santa Madre de Dios, para que seamos dignos de las promesas de Nuestro Señor Jesucristo.",
-   "— Madre Angelica",
-   "— Madre Angelica"
+   "Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra, Dios te salve. A ti clamamos los desterrados hijos de Eva. A ti suspiramos gimiendo y llorando en este valle de lágrimas. Ea, pues, Señora, abogada nuestra: vuelve a nosotros esos tus ojos misericordiosos. Y después de este destierro, muéstranos a Jesús, fruto bendito de tu vientre. Oh clemente, oh piadosa, oh dulce Virgen María! Ruega por nosotros, Santa Madre de Dios, para que seamos dignos de las promesas de Nuestro Señor Jesucristo."
   ],
   "fatima": [
-   "Oh mi Jesús, perdónanos nuestros pecados, líbranos del fuego del infierno, lleva todas las almas al cielo, especialmente las mas necesitadas de tu misericordia\"."
+   "Oh mi Jesús, perdónanos nuestros pecados, líbranos del fuego del infierno, lleva todas las almas al cielo, especialmente las mas necesitadas de tu misericordia."
   ]
  },
  "ca": {
