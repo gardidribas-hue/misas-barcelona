@@ -12,9 +12,8 @@
   const I18N = {
     es: {
       wordTitle: "Palabra <em>del día</em>", todayBtn: "Hoy", prayStart: "Rezar el rosario", prayExit: "← Misterios", prev: "Anterior", next: "Siguiente",
-      rd: { FR: "1.ª lectura", PS: "Salmo", SR: "2.ª lectura", GSP: "Evangelio" },
-      wordSource: "Textos: <a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">Evangelio del día</a>.", wordCaNote: "",
-      wordError: "No he podido cargar las lecturas ahora mismo. Puedes leerlas en <a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">evangeliodeldia.org</a>.",
+      wordSource: "Fuente: <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">{name}</a>",
+      wordError: "Todavía no tengo las lecturas de este día. Puedes leerlas en <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">Vatican News</a>.",
       rosSets: { joyful: "gozosos", sorrowful: "dolorosos", glorious: "gloriosos", luminous: "luminosos" }, rosTitle: "Misterios <em>{set}</em>",
       rosDay: "Rosario de hoy · {day}", todayMark: "hoy", prevDay: "Día anterior", nextDay: "Día siguiente",
       brandMain: "Misas", brandArch: "Archidiócesis de", tabHome: "Inicio", tabChat: "Chat", tabMap: "Mapa", tabWord: "Palabra del día", tabWordShort: "Palabra", tabRosary: "Rosario",
@@ -51,9 +50,8 @@
     },
     ca: {
       wordTitle: "Paraula <em>del dia</em>", todayBtn: "Avui", prayStart: "Resar el rosari", prayExit: "← Misteris", prev: "Anterior", next: "Següent",
-      rd: { FR: "1a lectura", PS: "Salm", SR: "2a lectura", GSP: "Evangeli" },
-      wordSource: "Textos: <a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">Evangelio del día</a>.", wordCaNote: "Les lectures es mostren en castellà, tal com les publica la font.", wordCaFoot: "L'Evangeli del dia en català és d'<a href=\"https://evangeli.net/evangeli\" target=\"_blank\" rel=\"noopener\">evangeli.net</a>; les altres lectures, en castellà, d'<a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">Evangelio del día</a>.",
-      wordError: "Ara mateix no he pogut carregar les lectures. Les pots llegir a <a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">evangeliodeldia.org</a>.",
+      wordSource: "Font: <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">{name}</a>",
+      wordError: "Encara no tinc les lectures d'aquest dia. Les pots llegir a <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">evangeli.net</a>.",
       rosSets: { joyful: "de goig", sorrowful: "de dolor", glorious: "de glòria", luminous: "de llum" }, rosTitle: "Misteris <em>{set}</em>",
       rosDay: "Rosari d'avui · {day}", todayMark: "avui", prevDay: "Dia anterior", nextDay: "Dia següent",
       brandMain: "Misses", brandArch: "Arxidiòcesi de", tabHome: "Inici", tabChat: "Xat", tabMap: "Mapa", tabWord: "Paraula del dia", tabWordShort: "Paraula", tabRosary: "Rosari",

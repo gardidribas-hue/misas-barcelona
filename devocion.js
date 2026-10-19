@@ -60,6 +60,8 @@
     ca: `<svg viewBox="0 0 24 24" aria-hidden="true"><clipPath id="pfc"><circle cx="12" cy="12" r="12"/></clipPath><g clip-path="url(#pfc)"><rect width="24" height="24" fill="#fcdd09"/><g fill="#da121a"><rect y="2.67" width="24" height="2.67"/><rect y="8" width="24" height="2.67"/><rect y="13.33" width="24" height="2.67"/><rect y="18.67" width="24" height="2.67"/></g></g></svg>`,
     la: `<svg viewBox="0 0 24 24" aria-hidden="true"><clipPath id="pfv"><circle cx="12" cy="12" r="12"/></clipPath><g clip-path="url(#pfv)"><rect width="12" height="24" fill="#ffe000"/><rect x="12" width="12" height="24" fill="#fff"/><g stroke-width="1.6" stroke-linecap="round"><path d="M14.5 9.5l5 5" stroke="#c9a227"/><path d="M19.5 9.5l-5 5" stroke="#9aa0a6"/></g><path d="M15.5 8.2h3l-.5-1.6h-2z" fill="#c9a227"/></g></svg>`
   };
+  // Texto de las oraciones (data/oraciones.js, generado por scripts/oraciones.py).
+  const TXT = (key) => { const o = window.MisasOraciones, v = o && o[pl()] && o[pl()][key]; return v && v.length ? v : null; };
   const PRAYER_LANGS = { es: "Castellano", ca: "Català", la: "Latine" };
 
   const todayCode = () => A.nowBcn().day;
@@ -106,16 +108,21 @@
     card.classList.remove("swap"); void card.offsetWidth; card.classList.add("swap");
     if (st.key === "mystery") {
       $("prayLabel").textContent = `${L.ord[st.part]} ${L.mys}`;
+      $("prayText").classList.remove("long");
       $("prayText").textContent = st.m[pl()][0];
       $("prayRef").textContent = `${st.m[pl()][1]} · ${st.m.ref}`;
     } else if (st.key === "done") {
       $("prayLabel").textContent = "";
+      $("prayText").classList.remove("long");
       $("prayText").textContent = L.done;
       $("prayRef").textContent = "";
     } else {
-      $("prayLabel").textContent = st.bead ? `${L.ave} · ${st.bead} ${L.of} ${st.of}` : "";
-      $("prayText").textContent = L[st.key];
-      $("prayRef").textContent = L.hint;
+      // Texto completo como guía al principio y en el primer misterio; después, solo el nombre.
+      const full = (st.part === "intro" || st.part === 0 || st.key === "salve") && TXT(st.key);
+      $("prayLabel").textContent = st.bead ? `${L.ave} · ${st.bead} ${L.of} ${st.of}` : full ? L[st.key] : "";
+      $("prayText").classList.toggle("long", !!full);
+      $("prayText").innerHTML = full ? full.map((p) => `<span>${esc(p)}</span>`).join("") : esc(L[st.key]);
+      $("prayRef").textContent = full ? "" : L.hint;
     }
     const beads = $("beads");
     if (st.bead || st.key === "pater" || st.key === "gloria" || st.key === "fatima") {
@@ -137,35 +144,23 @@
     ros.i = Math.max(0, ros.i + d); renderStep();
   };
 
-  // ---------- Palabra del día: lecturas de la misa, cargadas al momento ----------
-  // Fuente: el servicio público de Evangelio del día (evangeliodeldia.org). No guardamos los textos en la web.
-  const FEED = "https://feed.evangelizo.org/v2/reader.php";
+  // ---------- Palabra del día: lecturas de la misa ----------
+  // Castellano: Vatican News; català: evangeli.net. La acción «contenido» (scripts/palabra.py)
+  // las descarga cada día en data/palabra/AAAA-MM-DD.json, porque esas webs no dejan leerlas desde otra página.
+  const SRC_URL = { es: (k) => `https://www.vaticannews.va/es/evangelio-de-hoy/${k.replace(/-/g, "/")}.html`, ca: (k) => `https://evangeli.net/evangeli/dia/${k}` };
   const word = { date: null, cache: {} };
-  const ymd = (d) => `${d.getUTCFullYear()}${String(d.getUTCMonth() + 1).padStart(2, "0")}${String(d.getUTCDate()).padStart(2, "0")}`;
+  const ymd = (d) => d.toISOString().slice(0, 10);
   function todayBcnDate() {
     const p = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Madrid", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
     return new Date(p + "T12:00:00Z");
   }
-  function toText(html) {
-    const doc = new DOMParser().parseFromString(String(html).replace(/<br\s*\/?>/gi, "\n").replace(/<\/p>/gi, "\n\n"), "text/html");
-    return (doc.body.textContent || "").split("\n").map((l) => l.trim())
-      .filter((l) => !/evangeliodeldia|evangelizo|registrar|suscrib|copyright|©/i.test(l)).join("\n").replace(/\n{3,}/g, "\n\n").trim();
-  }
-  const get = (params) => fetch(`${FEED}?${new URLSearchParams(Object.assign({ lang: "SP" }, params))}`).then((r) => { if (!r.ok) throw new Error(r.status); return r.text(); });
-  async function loadDay(key) {
-    if (word.cache[key]) return word.cache[key];
-    const date = key;
-    const parts = ["FR", "PS", "SR", "GSP"];
-    const [title, ...rest] = await Promise.all([
-      get({ date, type: "liturgic_t" }).catch(() => ""),
-      ...parts.map((c) => get({ date, type: "reading_lt", content: c }).catch(() => "")),
-      ...parts.map((c) => get({ date, type: "reading", content: c }).catch(() => ""))
-    ]);
-    const day = { title: toText(title), readings: {} };
-    parts.forEach((c, i) => { const text = toText(rest[i + parts.length]); if (text) day.readings[c] = { ref: toText(rest[i]), text }; });
-    if (!Object.keys(day.readings).length) throw new Error("sin lecturas");
-    word.cache[key] = day;
-    return day;
+  function loadDay(key) {
+    if (!word.cache[key]) {
+      word.cache[key] = fetch(`data/palabra/${key}.json`, { cache: "no-cache" })
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .catch((e) => { delete word.cache[key]; throw e; });
+    }
+    return word.cache[key];
   }
   async function renderWord() {
     if (!word.date) word.date = todayBcnDate();
@@ -173,35 +168,31 @@
     $("wordDate").textContent = new Intl.DateTimeFormat(L === "ca" ? "ca-ES" : "es-ES", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" }).format(word.date);
     $("wordToday").classList.toggle("on", key === ymd(todayBcnDate()));
     $("wordPrev").setAttribute("aria-label", t("prevDay")); $("wordNext").setAttribute("aria-label", t("nextDay"));
-    $("wordFoot").innerHTML = caToday() ? t("wordCaFoot") : [t("wordCaNote"), t("wordSource")].filter(Boolean).join(" ");
     $("wordLit").textContent = "";
+    $("wordFoot").innerHTML = "";
     $("reading").innerHTML = `<div class="skel"></div><div class="skel short"></div><div class="skel"></div>`;
-    let day;
-    try { day = await loadDay(key); } catch (e) {
-      if (caToday()) { day = { title: "", readings: { GSP: { ref: "", text: "" } } }; }
-      else {
-      if (key === ymd(word.date)) $("reading").innerHTML = `<p class="empty">${t("wordError")}</p>`;
+    let day = null;
+    try { day = (await loadDay(key))[L]; } catch (e) { /* sin archivo para ese día */ }
+    if (key !== ymd(word.date) || L !== A.lang()) return; // el usuario ya ha cambiado de día o de idioma
+    if (!day || !day.readings || !day.readings.length) {
+      $("reading").innerHTML = `<p class="empty">${t("wordError", { url: SRC_URL[L](key) })}</p>`;
       return;
-      }
     }
-    if (key !== ymd(word.date)) return; // el usuario ya ha cambiado de día
-    $("wordLit").textContent = day.title;
+    $("wordLit").textContent = day.title || "";
     showDay(day);
   }
-  // En catalán, el Evangelio de hoy se muestra con el widget oficial de evangeli.net.
-  const CA_WIDGET = "https://evangeli.net/evangeli/widget/web";
-  const caToday = () => A.lang() === "ca" && ymd(word.date) === ymd(todayBcnDate());
-  // Todas las lecturas del día, una debajo de otra.
+  // Todas las lecturas del día, una debajo de otra; la fuente, al final.
   function showDay(day) {
-    const rd = t("rd"), el = $("reading");
+    const el = $("reading");
     el.classList.remove("swap"); void el.offsetWidth; el.classList.add("swap");
-    el.innerHTML = ["FR", "PS", "SR", "GSP"].filter((c) => day.readings[c]).map((c) => {
-      const r = day.readings[c];
-      const body = c === "GSP" && caToday()
-        ? `<div class="widget"><iframe src="${CA_WIDGET}" title="Evangeli del dia (evangeli.net)" loading="lazy"></iframe></div>`
-        : `<h2>${esc(r.ref)}</h2>` + r.text.split(/\n{2,}|\n/).filter(Boolean).map((p) => `<p>${esc(p)}</p>`).join("");
-      return `<section class="rd-block" data-rd="${c}"><p class="rd-kind">${esc(rd[c])}</p>${body}</section>`;
+    el.innerHTML = day.readings.map((r) => {
+      const head = r.title
+        ? `<p class="rd-kind">${esc(r.kind)}</p><h2>${esc(r.title)}</h2>`
+        : `<h2>${esc(r.kind)}</h2>`;
+      return `<section class="rd-block">${head}${r.ref ? `<p class="rd-ref">${esc(r.ref)}</p>` : ""}` +
+        r.text.map((p) => `<p>${esc(p)}</p>`).join("") + `</section>`;
     }).join("");
+    $("wordFoot").innerHTML = t("wordSource", { name: esc(day.source), url: esc(day.url) }) + (day.copyright ? ` · ${esc(day.copyright)}` : "");
   }
   const shiftDay = (d) => { word.date = new Date(word.date.getTime() + d * 864e5); renderWord(); $("wordScroll").scrollTop = 0; };
 
