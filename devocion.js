@@ -44,15 +44,15 @@
   const PL = {
     es: { set: { joyful: "Misterios gozosos", sorrowful: "Misterios dolorosos", glorious: "Misterios gloriosos", luminous: "Misterios luminosos" },
       ord: ["Primer", "Segundo", "Tercer", "Cuarto", "Quinto"], mys: "misterio", of: "de", intro: "Inicio", end: "Final",
-      cross: "Señal de la cruz", credo: "Credo", pater: "Padrenuestro", ave: "Avemaría", gloria: "Gloria", fatima: "Oh Jesús mío", salve: "Salve", litany: "Letanías lauretanas", oremus: "Oración final", signing: "santiguándose",
+      cross: "Señal de la cruz", credo: "Credo", pater: "Padrenuestro", ave: "Avemaría", gloria: "Gloria", fatima: "Oh Jesús mío", salve: "Salve", kyrie: "Señor, ten piedad", litany: "Letanías a la Virgen María", oremus: "Oración final", signing: "santiguándose",
       hint: "Reza en silencio o en voz alta. Toca para seguir.", done: "Has terminado el rosario. Que el Señor te bendiga." },
     ca: { set: { joyful: "Misteris de goig", sorrowful: "Misteris de dolor", glorious: "Misteris de glòria", luminous: "Misteris de llum" },
       ord: ["Primer", "Segon", "Tercer", "Quart", "Cinquè"], mys: "misteri", of: "de", intro: "Inici", end: "Final",
-      cross: "Senyal de la creu", credo: "Credo", pater: "Parenostre", ave: "Avemaria", gloria: "Glòria", fatima: "Oh Jesús meu", salve: "Salve", litany: "Lletanies lauretanes", oremus: "Oració final", signing: "senyant-se",
+      cross: "Senyal de la creu", credo: "Credo", pater: "Parenostre", ave: "Avemaria", gloria: "Glòria", fatima: "Oh Jesús meu", salve: "Salve", kyrie: "Senyor, tingueu pietat", litany: "Lletanies a la Mare de Déu", oremus: "Oració final", signing: "senyant-se",
       hint: "Resa en silenci o en veu alta. Toca per seguir.", done: "Has acabat el rosari. Que el Senyor et beneeixi." },
     la: { set: { joyful: "Mysteria gaudiosa", sorrowful: "Mysteria dolorosa", glorious: "Mysteria gloriosa", luminous: "Mysteria luminosa" },
       ord: ["Primum", "Secundum", "Tertium", "Quartum", "Quintum"], mys: "mysterium", of: "ex", intro: "Initium", end: "Finis",
-      cross: "Signum crucis", credo: "Credo", pater: "Pater noster", ave: "Ave Maria", gloria: "Gloria Patri", fatima: "Oratio Fatimae", salve: "Salve Regina", litany: "Litaniae Lauretanae", oremus: "Oratio", signing: "signando se",
+      cross: "Signum crucis", credo: "Credo", pater: "Pater noster", ave: "Ave Maria", gloria: "Gloria Patri", fatima: "Oratio Fatimae", salve: "Salve Regina", kyrie: "Kyrie, eleison", litany: "Litaniae Lauretanae", oremus: "Oratio", signing: "signando se",
       hint: "Ora in silentio vel voce. Tange ut pergas.", done: "Rosarium absolvisti. Benedicat te Dominus." }
   };
   const FLAGS = {
@@ -79,10 +79,12 @@
   }
 
   // ---------- El rosario entero en un solo texto vertical ----------
-  // Credo, Salve, letanías y señal de la cruz se ven siempre; Padrenuestro, Avemaría, Gloria y
+  // Credo, Salve, letanías (con el Señor ten piedad y la oración final) y señal de la cruz se ven siempre; Padrenuestro, Avemaría, Gloria y
   // Oh Jesús mío se abren con la flechita del título, porque mucha gente ya se los sabe.
   function rosaryText(L) {
-    const paras = (k) => TXT(k).map((p) => `<p>${esc(p).replace(/\n/g, "<br>")}</p>`).join("");
+    // Las respuestas de las letanías vienen como líneas «R/. …» y se ven en negrita.
+    const line = (l) => /^R\/\.\s/.test(l) ? `<b>${esc(l.slice(4))}</b>` : esc(l);
+    const paras = (k) => TXT(k).map((p) => `<p>${p.split("\n").map(line).join("<br>")}</p>`).join("");
     const name = (k, extra) => (k === "cross" ? "✝ " : "") + esc(L[k]) + (extra ? ` <span class="pr-x">${esc(extra)}</span>` : "") +
       (k === "cross" ? ` <span class="pr-note">(${esc(L.signing)})</span>` : "");
     const shown = (k) => TXT(k) ? `<div class="pr"><h3>${name(k)}</h3><div class="pr-text">${paras(k)}</div></div>` : "";
@@ -95,7 +97,7 @@
       h += `<section class="ros-part ros-mys"><p class="ros-ord"><span class="num">${k + 1}</span>${esc(L.ord[k])} ${esc(L.mys)}</p>
         <h2>${esc(m[pl()][0])}</h2><p class="mline">${esc(m[pl()][1])} · <span class="nw">${esc(m.ref)}</span></p>${decade()}</section>`;
     });
-    h += `<section class="ros-part"><h2 class="ros-sec">${esc(L.end)}</h2>${shown("salve")}${shown("litany")}${shown("oremus")}${shown("cross")}<p class="ros-done">${esc(L.done)}</p></section>`;
+    h += `<section class="ros-part"><h2 class="ros-sec">${esc(L.end)}</h2>${shown("salve")}${shown("kyrie")}${shown("litany")}${shown("oremus")}${shown("cross")}<p class="ros-done">${esc(L.done)}</p></section>`;
     return h;
   }
 
