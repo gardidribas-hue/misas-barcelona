@@ -21,6 +21,21 @@ window.MisasOraciones = {
   ],
   "fatima": [
    "Oh mi Jesús, perdónanos nuestros pecados, líbranos del fuego del infierno, lleva todas las almas al cielo, especialmente las mas necesitadas de tu misericordia."
+  ],
+  "kyrie": [
+   "Señor, ten piedad\nCristo, ten piedad\nSeñor, ten piedad.\nCristo, óyenos.\nCristo, escúchanos."
+  ],
+  "litany": [
+   "Dios, Padre celestial,\nR/. ten piedad de nosotros.",
+   "Dios, Hijo, Redentor del mundo,\nDios, Espíritu Santo,\nSantísima Trinidad, un solo Dios,",
+   "Santa María,\nR/. ruega por nosotros.\nSanta Madre de Dios,\nSanta Virgen de las Vírgenes,\nMadre de Cristo,\nMadre de la Iglesia,\nMadre de la misericordia,\nMadre de la divina gracia,\nMadre de la esperanza,\nMadre purísima,\nMadre castísima,\nMadre siempre virgen,\nMadre inmaculada,\nMadre amable,\nMadre admirable,\nMadre del buen consejo,\nMadre del Creador,\nMadre del Salvador,\nVirgen prudentísima,\nVirgen digna de veneración,\nVirgen digna de alabanza,\nVirgen poderosa,\nVirgen clemente,\nVirgen fiel,\nEspejo de justicia,\nTrono de la sabiduría,\nCausa de nuestra alegría,\nVaso espiritual,\nVaso digno de honor,\nVaso de insigne devoción,\nRosa mística,\nTorre de David,\nTorre de marfil,\nCasa de oro,\nArca de la Alianza,\nPuerta del cielo,\nEstrella de la mañana,\nSalud de los enfermos,\nRefugio de los pecadores,\nConsuelo de los migrantes,\nConsoladora de los afligidos,\nAuxilio de los cristianos,\nReina de los Ángeles,\nReina de los Patriarcas,\nReina de los Profetas,\nReina de los Apóstoles,\nReina de los Mártires,\nReina de los Confesores,\nReina de las Vírgenes,\nReina de todos los Santos,\nReina concebida sin pecado original,\nReina asunta a los Cielos,\nReina del Santísimo Rosario,\nReina de la familia,\nReina de la paz.",
+   "Cordero de Dios, que quitas el pecado del mundo,\nR/. perdónanos, Señor.",
+   "Cordero de Dios, que quitas el pecado del mundo,\nR/. escúchanos, Señor.",
+   "Cordero de Dios, que quitas el pecado del mundo,\nR/. ten misericordia de nosotros."
+  ],
+  "oremus": [
+   "Ruega por nosotros, Santa Madre de Dios.\nR/. Para que seamos dignos de las promesas de Cristo.",
+   "Te rogamos nos concedas, Señor Dios nuestro, gozar de continua salud de alma y cuerpo, y por la gloriosa intercesión de la bienaventurada siempre Virgen María, vernos libres de las tristezas de la vida presente y disfrutar de las alegrías eternas. Por Cristo nuestro Señor. Amén."
   ]
  },
  "ca": {
@@ -50,6 +65,22 @@ window.MisasOraciones = {
    "Crec en un Déu, Pare totpoderós, creador del cel i de la terra.",
    "I en Jesucrist, únic Fill seu i Senyor nostre; el qual fou concebut per obra de l’Esperit Sant, nasqué de Maria Verge; patí sota el poder de Ponç Pilat, fou crucificat, mort i sepultat; davallà als inferns, ressuscità el tercer dia d’entre els morts; se’n pujà al cel, seu a la dreta de Déu, Pare totpoderós; i d’allí ha de venir a jutjar els vius i els morts.",
    "Crec en l’Esperit Sant; la santa Mare Església catòlica; la comunió dels sants; la remissió dels pecats; la resurrecció de la carn; la vida perdurable. Amén."
+  ],
+  "kyrie": [
+   "Senyor, tingueu pietat.\nR/. Senyor, tingueu pietat.\nCrist, tingueu pietat.\nR/. Crist, tingueu pietat.\nSenyor, tingueu pietat.\nR/. Senyor, tingueu pietat.\nCrist, oïu-nos.\nR/. Crist, oïu-nos.\nCrist escolteu-nos.\nR/. Crist escolteu-nos."
+  ],
+  "litany": [
+   "Déu Pare celestial,\nR/. tingueu pietat de nosaltres.",
+   "Déu, Fill Redemptor del món,\nR/. tingueu pietat de nosaltres.",
+   "Déu, Esperit Sant,\nR/. tingueu pietat de nosaltres.",
+   "Trinitat santa, un sol Déu,\nR/. tingueu pietat de nosaltres.",
+   "Santa Maria,\nR/. pregueu per nosaltres.\nSanta Mare de Déu\nSanta Verge de les verges\nMare del Crist\nMare de l'Església\nMare de la misericòrdia\nMare de la divina gràcia\nMare de l'esperança\nMare puríssima\nMare castíssima\nMare virginal\nMare sense corrupció\nMare immaculada\nMare amable\nMare admirable\nMare del bon consell\nMare del Creador\nMare del Salvador\nVerge prudentíssima\nVerge venerable\nVerge predicable\nVerge potent\nVerge clement\nVerge fidel\nMirall de justícia\nSeu de la saviesa\nCausa de la nostra alegria\nVas espiritual\nVas honorable\nVas insigne de devoció\nRosa mística\nTorre de David\nTorre de marfil\nCasa daurada\nArca de la Nova Aliança\nPorta del cel\nEstel del matí\nSalut dels malalts\nRefugi dels pecadors\nConsol dels emigrants\nConsoladora dels afligits\nAuxili dels cristians\nReina dels àngels\nReina dels patriarques\nReina dels profetes\nReina dels apòstols\nReina dels màrtirs\nReina dels confessors\nReina de les verges\nReina de tots els sants\nReina concebuda sens pecat original\nReina al cel assumpta\nReina del sacratíssim rosari\nReina de les famílies\nReina de la pau\nAnyell de Déu que lleveu el pecat del món,\nR/. perdoneu-nos, Senyor.",
+   "Anyell de Déu que lleveu el pecat del món,\nR/. escolteu-nos, Senyor.",
+   "Anyell de Déu que lleveu el pecat del món,\nR/. tingueu pietat de nosaltres."
+  ],
+  "oremus": [
+   "Pregueu per nosaltres, Santa Mare de Déu.\nR/. Perquè siguem dignes de les promeses de nostre Senyor Jesucrist.",
+   "Concediu, Senyor Déu, als vostres servents, que frueixin de salut perpètua en l'ànima i en el cos; i per la gloriosa intercessió de la benaurada sempre Verge Maria, siguin ara alliberats de tristesa i gaudeixin després l'alegria eterna del cel. Us ho demanem per Crist, Senyor nostre. Amén."
   ]
  },
  "la": {
@@ -80,13 +111,28 @@ window.MisasOraciones = {
    "Et in Iesum Christum, Fílium Eius únicum, Dóminum nostrum, qui conceptus est de Spíritu Sancto, natus ex Maria Vírgine, passus sub Póntio Piláto, crucifixus, mórtuus, et sepúltus, descéndit ad ínferos, tértia die resurréxit a mórtuis, ascéndit ad cælos, sedet ad déxteram Dei Patris omnipoténtis, inde ventúrus est iudicáre vivos et mórtuos.",
    "Et in Spíritum Sanctum, sanctam Ecclésiam cathólicam, sanctórum communiónem, remissiónem peccatórum, carnis resurrectiónem, vitam ætérnam. Amen."
   ],
+  "kyrie": [
+   "Kýrie, eléison.\nR/. Kýrie, eléison.\nChriste, eléison.\nR/. Christe, eléison.\nKýrie, eléison.\nR/. Kýrie, eléison.\nChriste, audi nos.\nR/. Christe, audi nos.\nChriste, exáudi nos.\nR/. Christe, exáudi nos."
+  ],
+  "litany": [
+   "Pater de cælis, Deus,\nR/. miserére nobis.",
+   "Fili, Redémptor mundi, Deus,\nR/. miserére nobis.",
+   "Spíritus Sancte, Deus,\nR/. miserére nobis.",
+   "Sancta Trínitas, unus Deus,\nR/. miserére nobis.",
+   "Sancta Maria,\nR/. ora pro nobis.\nSancta Dei Génetrix\nSancta Virgo vírginum\nMater Christi\nMater Ecclésiæ\nMater Misericordiæ\nMater divínæ gratiæ\nMater Spei\nMater puríssima\nMater castíssima\nMater invioláta\nMater intemeráta\nMater immaculáta\nMater amábilis\nMater admirábilis\nMater boni Consílii\nMater Creatóris\nMater Salvatóris\nVirgo prudentíssima\nVirgo veneránda\nVirgo prædicánda\nVirgo potens\nVirgo clemens\nVirgo fidélis\nSpéculum iustítiæ\nSedes Sapiéntiæ\nCausa nostræ lætítiæ\nVas spirituále\nVas honorábile\nVas insigne devotiónis\nRosa mýstica\nTurris Davídica\nTurris ebúrnea\nDomus áurea\nFœderis arca\nIánua cæli\nStella matutina\nSalus infirmórum\nRefugium peccatórum\nSolacium migrantium\nConsolátrix afflictórum\nAuxílium christianórum\nRegina Angelórum\nRegina Patriarchárum\nRegina Prophetárum\nRegina Apostolórum\nRegina Mártyrum\nRegina Confessórum\nRegina Vírginum\nRegina Sanctórum ómnium\nRegina sine labe originali concépta\nRegina in cælum assumpta\nRegina sacratíssimi Rosárii\nRegina famíliæ\nRegina pacis\nAgnus Dei, qui tollis peccáta mundi,\nR/. parce nobis, Dómine.",
+   "Agnus Dei, qui tollis peccáta mundi,\nR/. exáudi nos, Dómine.",
+   "Agnus Dei, qui tollis peccáta mundi,\nR/. miserére nobis."
+  ],
+  "oremus": [
+   "Ora pro nobis, Sancta Dei Génetrix.\nR/. Ut digni efficiámur promissiónibus Christi."
+  ],
   "fatima": [
    "Domine Iesu, dimitte nobis debita nostra, salva nos ab igne inferni, perduc in caelum omnes animas, praesertim eas quae misericordiae tuae maximae indigent."
   ]
  },
  "sources": {
   "es": {
-   "name": "EWTN",
+   "name": "EWTN · Santa Sede (letanías)",
    "url": "https://www.ewtn.com/es/oracion/oraciones-del-rosario"
   },
   "ca": {

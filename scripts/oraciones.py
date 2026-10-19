@@ -3,6 +3,8 @@
 Castellano: EWTN (Oraciones del Rosario).
 Català y latín: Devocionari de l'Opus Dei (opusdei.cat), que trae las dos columnas.
 Oración de Fátima en latín: EWTN (Prayers of the Rosary in English and Latin).
+Letanías: castellano de la Santa Sede (vatican.va); català y latín del Devocionari.
+En las letanías, las respuestas van como líneas que empiezan por «R/. ».
     pip install beautifulsoup4 pypdf && python scripts/oraciones.py
 """
 import io, json, pathlib, re, urllib.request
@@ -15,6 +17,7 @@ SRC = {
     "es": "https://www.ewtn.com/es/oracion/oraciones-del-rosario",
     "ca": "https://multimedia.opusdei.org/doc/pdf/Devocionari%20mobil%20-%20www.opusdei.cat20220314171720840413.pdf",
     "la": "https://www.ewtn.com/catholicism/teachings/prayers-of-the-rosary-in-english-and-latin-164",
+    "litany_es": "https://www.vatican.va/special/rosary/documents/litanie-lauretane_sp.html",
 }
 
 
@@ -120,9 +123,107 @@ def devocionari():
     return ca, la
 
 
+def vatican_litany():
+    """Letanías de la Santa Sede: cada <p> es un bloque; las respuestas van en negrita."""
+    s = BeautifulSoup(fetch(SRC["litany_es"]), "html.parser")
+    blocks = []
+    for p in s.find_all("p", align="left"):
+        lines, cur = [], ""
+        for node in p.children:
+            if getattr(node, "name", None) == "br":
+                lines.append(cur); cur = ""
+            elif getattr(node, "name", None) == "b":
+                cur += "R/. " + node.get_text(" ")
+            else:
+                cur += node.get_text(" ") if hasattr(node, "get_text") else str(node)
+        lines.append(cur)
+        lines = [re.sub(r"^R/\.\s*R/\.", "R/.", clean(l.replace("\xa0", " "))) for l in lines]
+        lines = [re.sub(r"^\s*R/\.\s*", "R/. ", l) for l in lines if l]
+        if lines:
+            blocks.append(lines)
+    out = {"kyrie": [], "litany": [], "oremus": []}
+    for b in blocks:
+        if re.match(r"ORACI", b[0], re.I):
+            out["oremus"].append(" ".join(b[1:]))
+        elif b[0].startswith("Ruega por nosotros"):
+            out["oremus"].append("\n".join(b))
+        elif not out["kyrie"]:
+            out["kyrie"].append("\n".join(b))
+        else:
+            out["litany"].append("\n".join(b))
+    return out
+
+
+def devocionari_litany(r):
+    """Lletanies del devocionari (pàgines 47-51), en dues columnes: català | latín."""
+    rows, prayer, tail, state = [], [], [], "before"
+    for i in range(47, 52):
+        for ln in r.pages[i].extract_text(extraction_mode="layout").splitlines():
+            if not ln.strip() or re.search(r"SECCIÓ\s+ÍNDEX", ln):
+                continue
+            if state == "before":
+                if ln.strip() == "Lletanies":
+                    state = "litany"
+                continue
+            if state == "litany" and ln.strip().startswith("Concediu"):
+                state = "prayer"
+            if state == "prayer":
+                prayer.append(ln.strip())
+                if ln.strip().endswith("Amén."):
+                    state = "between"
+                continue
+            if state == "between":
+                if "V/. Pregueu" in ln:
+                    state = "tail"
+                else:
+                    continue
+            m = re.match(r"^(\s*)(.*?)(?:\s{3,}(\S.*))?$", ln)
+            ind, left, right = len(m.group(1)), m.group(2).strip(), (m.group(3) or "").strip()
+            if ind >= 28:
+                left, right = "", ln.strip()
+            (tail if state == "tail" else rows).append((left, right))
+    def lines(pairs, col):
+        out = []
+        for pr in pairs:
+            t = re.sub(r"^V/\s*\.\s*", "", pr[col]).strip()
+            t = re.sub(r"^R/\s*\.\s*", "R/. ", t)
+            if not t:
+                continue
+            if out and t[0].islower():
+                out[-1] += " " + t  # línea partida
+            else:
+                out.append(t)
+        return out
+    res = {}
+    for lang, col in (("ca", 0), ("la", 1)):
+        ls = lines(rows, col)
+        # Señor, ten piedad: hasta la última respuesta antes de «Déu Pare» / «Pater de cælis».
+        k = next(i for i, l in enumerate(ls) if re.match(r"(Déu Pare|Pater de)", l))
+        blocks, cur = [], []
+        for l in ls[k:]:
+            if not l.startswith("R/.") and cur and cur[-1].startswith("R/.") and not re.match(r"(Santa|Sancta) (Mare|Dei)", l):
+                blocks.append(cur); cur = []
+            cur.append(l)
+        blocks.append(cur)
+        vr = []  # «Pregueu per nosaltres»: una versión y una respuesta, partidas en varias líneas
+        for l in lines(tail, col):
+            if vr and not l.startswith("R/.") and (len(vr) == 1 or vr[-1].startswith("R/.")):
+                vr[-1] += " " + l
+            else:
+                vr.append(l)
+        ore = ["\n".join(vr)]
+        if lang == "ca":
+            ore.append(" ".join(prayer))
+        res[lang] = {"kyrie": ["\n".join(ls[:k])], "litany": ["\n".join(b) for b in blocks], "oremus": ore}
+    return res
+
+
 def main():
     data = {"es": ewtn_es()}
     data["ca"], data["la"] = devocionari()
+    data["es"].update(vatican_litany())
+    lit = devocionari_litany(PdfReader(io.BytesIO(fetch(SRC["ca"]))))
+    data["ca"].update(lit["ca"]); data["la"].update(lit["la"])
     fat = ewtn_la_fatima()
     if fat:
         data["la"]["fatima"] = fat
@@ -131,7 +232,7 @@ def main():
         for k, v in d.items():
             print("  ", k, "|", v[0][:28] if v else "", "...", v[-1][-22:] if v else "")
     data["sources"] = {
-        "es": {"name": "EWTN", "url": SRC["es"]},
+        "es": {"name": "EWTN · Santa Sede (letanías)", "url": SRC["es"]},
         "ca": {"name": "Devocionari (opusdei.cat)", "url": SRC["ca"]},
         "la": {"name": "Devocionari (opusdei.cat) · EWTN", "url": SRC["ca"]},
     }
