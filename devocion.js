@@ -131,10 +131,11 @@
       return;
     }
     $("wordLit").textContent = day.title || "";
-    showDay(day);
+    showDay(day, key > ymd(todayBcnDate()));
   }
   // Todas las lecturas del día, una debajo de otra; la fuente, al final.
-  function showDay(day) {
+  // En días futuros no se muestra la reflexión de los Papas: Vatican News aún no la ha publicado.
+  function showDay(day, future) {
     const el = $("reading");
     el.classList.remove("swap"); void el.offsetWidth; el.classList.add("swap");
     // Sin salmo: solo lecturas y evangelio.
@@ -144,7 +145,7 @@
         : `<h2>${esc(r.kind)}</h2>`;
       return `<section class="rd-block">${head}${r.ref ? `<p class="rd-ref">${esc(r.ref)}</p>` : ""}` +
         r.text.map((p) => `<p>${esc(p).replace(/\n/g, "<br>")}</p>`).join("") + `</section>`;
-    }).join("") + (day.reflection ? `<aside class="rd-papa"><h2>${esc(day.reflection.heading)}</h2>` +
+    }).join("") + (day.reflection && !future ? `<aside class="rd-papa"><h2>${esc(day.reflection.heading)}</h2>` +
       day.reflection.text.map((p) => `<p>${esc(p)}</p>`).join("") +
       (day.reflection.translated ? `<p class="rd-note">${esc(t("papaTranslated", { engine: day.reflection.translated }))}</p>` : "") + `</aside>` : "");
     $("wordFoot").innerHTML = t("wordSource", { name: esc(day.source), url: esc(day.url) }) + (day.copyright ? ` · ${esc(day.copyright)}` : "");
