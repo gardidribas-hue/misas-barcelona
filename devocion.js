@@ -140,7 +140,7 @@
   // ---------- Palabra del día: lecturas de la misa, cargadas al momento ----------
   // Fuente: el servicio público de Evangelio del día (evangeliodeldia.org). No guardamos los textos en la web.
   const FEED = "https://feed.evangelizo.org/v2/reader.php";
-  const word = { date: null, tab: "GSP", cache: {} };
+  const word = { date: null, cache: {} };
   const ymd = (d) => `${d.getUTCFullYear()}${String(d.getUTCMonth() + 1).padStart(2, "0")}${String(d.getUTCDate()).padStart(2, "0")}`;
   function todayBcnDate() {
     const p = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Madrid", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
@@ -175,7 +175,6 @@
     $("wordPrev").setAttribute("aria-label", t("prevDay")); $("wordNext").setAttribute("aria-label", t("nextDay"));
     $("wordFoot").innerHTML = caToday() ? t("wordCaFoot") : [t("wordCaNote"), t("wordSource")].filter(Boolean).join(" ");
     $("wordLit").textContent = "";
-    $("wordTabs").innerHTML = "";
     $("reading").innerHTML = `<div class="skel"></div><div class="skel short"></div><div class="skel"></div>`;
     let day;
     try { day = await loadDay(key); } catch (e) {
@@ -187,29 +186,22 @@
     }
     if (key !== ymd(word.date)) return; // el usuario ya ha cambiado de día
     $("wordLit").textContent = day.title;
-    const avail = Object.keys(day.readings);
-    if (!avail.includes(word.tab)) word.tab = avail.includes("GSP") ? "GSP" : avail[0];
-    const rd = t("rd");
-    $("wordTabs").innerHTML = avail.map((c) => `<button type="button" role="tab" data-rd="${c}" class="${c === word.tab ? "on" : ""}" aria-selected="${c === word.tab}">${esc(rd[c])}</button>`).join("");
-    $("wordTabs").style.setProperty("--n", avail.length);
-    $("wordTabs").style.setProperty("--idx", avail.indexOf(word.tab));
-    showReading(day);
+    showDay(day);
   }
   // En catalán, el Evangelio de hoy se muestra con el widget oficial de evangeli.net.
   const CA_WIDGET = "https://evangeli.net/evangeli/widget/web";
   const caToday = () => A.lang() === "ca" && ymd(word.date) === ymd(todayBcnDate());
-  function showReading(day) {
-    const r = day.readings[word.tab];
-    if (word.tab === "GSP" && caToday()) {
-      const el = $("reading");
-      el.classList.remove("swap"); void el.offsetWidth; el.classList.add("swap");
-      el.innerHTML = `<div class="widget"><iframe src="${CA_WIDGET}" title="Evangeli del dia (evangeli.net)" loading="lazy"></iframe></div>`;
-      return;
-    }
-    const paras = r.text.split(/\n{2,}|\n/).filter(Boolean);
-    const el = $("reading");
+  // Todas las lecturas del día, una debajo de otra.
+  function showDay(day) {
+    const rd = t("rd"), el = $("reading");
     el.classList.remove("swap"); void el.offsetWidth; el.classList.add("swap");
-    el.innerHTML = `<h2>${esc(r.ref)}</h2>` + paras.map((p) => `<p>${esc(p)}</p>`).join("");
+    el.innerHTML = ["FR", "PS", "SR", "GSP"].filter((c) => day.readings[c]).map((c) => {
+      const r = day.readings[c];
+      const body = c === "GSP" && caToday()
+        ? `<div class="widget"><iframe src="${CA_WIDGET}" title="Evangeli del dia (evangeli.net)" loading="lazy"></iframe></div>`
+        : `<h2>${esc(r.ref)}</h2>` + r.text.split(/\n{2,}|\n/).filter(Boolean).map((p) => `<p>${esc(p)}</p>`).join("");
+      return `<section class="rd-block" data-rd="${c}"><p class="rd-kind">${esc(rd[c])}</p>${body}</section>`;
+    }).join("");
   }
   const shiftDay = (d) => { word.date = new Date(word.date.getTime() + d * 864e5); renderWord(); $("wordScroll").scrollTop = 0; };
 
@@ -226,13 +218,6 @@
   $("wordPrev").onclick = () => shiftDay(-1);
   $("wordNext").onclick = () => shiftDay(1);
   $("wordToday").onclick = () => { word.date = todayBcnDate(); renderWord(); };
-  $("wordTabs").onclick = (e) => {
-    const b = e.target.closest("button"); if (!b) return;
-    word.tab = b.dataset.rd;
-    $("wordTabs").querySelectorAll("button").forEach((x) => { x.classList.toggle("on", x === b); x.setAttribute("aria-selected", x === b); });
-    $("wordTabs").style.setProperty("--idx", [...$("wordTabs").children].indexOf(b));
-    const day = word.cache[ymd(word.date)]; if (day) showReading(day);
-  };
 
   $("rosSets").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.set = b.dataset.set; renderRosary(); } };
   $("plangs").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.pl = b.dataset.pl === A.lang() ? null : b.dataset.pl; renderRosary(); } };
