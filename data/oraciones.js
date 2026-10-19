@@ -79,7 +79,7 @@ window.MisasOraciones = {
    "Anyell de Déu que lleveu el pecat del món,\nR/. tingueu pietat de nosaltres."
   ],
   "oremus": [
-   "Pregueu per nosaltres, Santa\nMare de Déu.\nR/. Perquè siguem dignes de les promeses de nostre Senyor\nJesucrist.",
+   "Pregueu per nosaltres, Santa Mare de Déu.\nR/. Perquè siguem dignes de les promeses de nostre Senyor Jesucrist.",
    "Concediu, Senyor Déu, als vostres servents, que frueixin de salut perpètua en l'ànima i en el cos; i per la gloriosa intercessió de la benaurada sempre Verge Maria, siguin ara alliberats de tristesa i gaudeixin després l'alegria eterna del cel. Us ho demanem per Crist, Senyor nostre. Amén."
   ]
  },
@@ -124,7 +124,7 @@ window.MisasOraciones = {
    "Agnus Dei, qui tollis peccáta mundi,\nR/. miserére nobis."
   ],
   "oremus": [
-   "Ora pro nobis, Sancta Dei\nGénetrix.\nR/. Ut digni efficiámur promissiónibus Christi."
+   "Ora pro nobis, Sancta Dei Génetrix.\nR/. Ut digni efficiámur promissiónibus Christi."
   ],
   "fatima": [
    "Domine Iesu, dimitte nobis debita nostra, salva nos ab igne inferni, perduc in caelum omnes animas, praesertim eas quae misericordiae tuae maximae indigent."
