@@ -341,12 +341,12 @@ body[data-tone="adoration"] { background: color-mix(in srgb, var(--backdrop) var
 .top-right { display: flex; align-items: center; gap: 10px; }
 .langs { display: flex; gap: 4px; background: var(--chip); border-radius: 999px; padding: 4px; }
 .langs button { display: inline-flex; align-items: center; gap: 6px; border: 0; cursor: pointer; background: none; color: var(--backdrop-muted); border-radius: 999px; padding: 3px 10px 3px 3px; font: 800 12px/1 var(--ui); letter-spacing: .06em; opacity: .75; transition: background .2s var(--ease), opacity .2s, color .2s, transform .15s var(--ease); }
-.langs svg { width: 26px; height: 26px; border-radius: 50%; box-shadow: 0 0 0 1.5px var(--ring); filter: saturate(.8); transition: transform .4s var(--ease), filter .3s; }
+/* Sin filter en las banderas: Safari recortaba el aro por arriba mientras animaba el filtro al cargar. */
+.langs svg { display: block; flex: none; overflow: visible; width: 26px; height: 26px; border-radius: 50%; box-shadow: 0 0 0 1.5px var(--ring); transition: transform .4s var(--ease); }
 .langs button.on { opacity: 1; background: var(--chip-on); color: var(--backdrop-ink); }
-.langs button.on svg { filter: none; box-shadow: 0 0 0 2px var(--gold); }
+.langs button.on svg { box-shadow: 0 0 0 2px var(--gold); }
 .langs button:active { transform: scale(.94); }
 .modes button { padding: 3px; }
-.modes button svg { filter: none; }
 .modes button:not(.on) svg { opacity: .55; }
 @media (hover: hover) { .langs button:not(.on):hover { opacity: .9; } .langs button:hover svg { transform: rotate(-12deg) scale(1.06); } }
 body.lang-swap .chatcol, body.lang-swap .side, body.lang-swap .top { opacity: .35; transition: opacity .16s; }
@@ -409,7 +409,7 @@ button, .btn, .card { -webkit-tap-highlight-color: transparent; }
 .bottomnav { display: none; }
 @media (max-width: 860px) {
   .tabs { display: none; }
-  .langs button { padding: 2px; }
+  .langs button { padding: 3px; }
   .modes { gap: 2px; }
   .langs button span { display: none; }
   .langs svg { width: 28px; height: 28px; }
@@ -528,9 +528,9 @@ body[data-tone="rosary"] { background: color-mix(in srgb, var(--backdrop) var(--
 .chips button.on small { color: inherit; opacity: .75; }
 .plangs { display: flex; gap: 4px; background: var(--surface); border-radius: 999px; padding: 4px; }
 .plangs button { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; cursor: pointer; border-radius: 999px; padding: 3px 10px 3px 3px; font: 800 12px/1 var(--ui); letter-spacing: .06em; color: var(--muted); opacity: .75; transition: background .2s, opacity .2s, transform .15s var(--ease); }
-.plangs svg { width: 24px; height: 24px; border-radius: 50%; box-shadow: 0 0 0 1px rgba(0,0,0,.12); filter: saturate(.8); }
+.plangs svg { display: block; flex: none; overflow: visible; width: 24px; height: 24px; border-radius: 50%; box-shadow: 0 0 0 1px rgba(0,0,0,.12); }
 .plangs button.on { background: var(--bg); color: var(--ink); opacity: 1; box-shadow: var(--shadow); }
-.plangs button.on svg { filter: none; box-shadow: 0 0 0 2px var(--accent-strong); }
+.plangs button.on svg { box-shadow: 0 0 0 2px var(--accent-strong); }
 .plangs button:active { transform: scale(.94); }
 /* Rosario entero en un solo texto vertical */
 .ros-text { display: grid; gap: 40px; font: 400 20px/1.7 var(--read); }
