@@ -65,7 +65,7 @@
   const PRAYER_LANGS = { es: "Castellano", ca: "Català", la: "Latine" };
 
   const todayCode = () => A.nowBcn().day;
-  const ros = { set: BY_DAY[todayCode()], pl: null, steps: [], i: 0 };
+  const ros = { set: BY_DAY[todayCode()], pl: null };
   const pl = () => ros.pl || A.lang();
   const store = (k, v) => { try { v === undefined ? (v = localStorage.getItem(k)) : localStorage.setItem(k, v); } catch (e) { /* sin almacenamiento */ } return v; };
 
@@ -75,74 +75,26 @@
     $("rosTitle").innerHTML = esc(L.set[ros.set]).replace(/^(\S+)\s(.+)$/, "$1 <em>$2</em>");
     $("rosSets").innerHTML = Object.keys(SETS).map((k) => `<button type="button" data-set="${k}" class="${k === ros.set ? "on" : ""}">${esc(PL[pl()].set[k].replace(/^\S+\s/, ""))}${k === BY_DAY[todayCode()] ? ` <small>· ${t("todayMark")}</small>` : ""}</button>`).join("");
     $("plangs").innerHTML = ["es", "ca", "la"].map((l) => `<button type="button" data-pl="${l}" class="${l === pl() ? "on" : ""}" aria-pressed="${l === pl()}" title="${PRAYER_LANGS[l]}">${FLAGS[l]}<span>${l.toUpperCase()}</span></button>`).join("");
-    $("mysteries").innerHTML = list.map((m, i) => `<li class="mys" style="--i:${i}">
-        <span class="num">${i + 1}</span>
-        <span class="mname">${esc(m[pl()][0])}</span>
-        <span class="mline">${esc(m[pl()][1])}</span>
-        <span class="mref">${esc(m.ref)}</span>
-      </li>`).join("");
+    $("rosText").innerHTML = rosaryText(L);
   }
 
-  // ---------- Rezo guiado, paso a paso ----------
-  function buildSteps() {
-    const s = [];
-    const push = (key, extra) => s.push(Object.assign({ key }, extra));
-    push("cross", { part: "intro" }); push("credo", { part: "intro" }); push("pater", { part: "intro" });
-    for (let b = 1; b <= 3; b++) push("ave", { part: "intro", bead: b, of: 3 });
-    push("gloria", { part: "intro" });
+  // ---------- El rosario entero en un solo texto vertical ----------
+  // Credo, Salve y señal de la cruz se ven siempre; Padrenuestro, primer Avemaría, Gloria y
+  // Oh Jesús mío son desplegables, porque mucha gente ya se los sabe.
+  function rosaryText(L) {
+    const paras = (k) => TXT(k).map((p) => `<p>${esc(p)}</p>`).join("");
+    const shown = (k) => TXT(k) ? `<div class="pr"><h3>${esc(L[k])}</h3><div class="pr-text">${paras(k)}</div></div>` : `<p class="pr pr-plain">${esc(L[k])}</p>`;
+    const fold = (k) => TXT(k) ? `<details class="pr fold"><summary>${esc(L[k])}</summary><div class="pr-text">${paras(k)}</div></details>` : `<p class="pr pr-plain">${esc(L[k])}</p>`;
+    const aves = (n) => `${fold("ave")}<div class="pr pr-rest"><span>${esc(L.ave)} × ${n - 1}</span><span class="beads" aria-hidden="true">${"<i></i>".repeat(n - 1)}</span></div>`;
+    const decade = () => fold("pater") + aves(10) + fold("gloria") + fold("fatima");
+    let h = `<section class="ros-part"><h2 class="ros-sec">${esc(L.intro)}</h2>${shown("cross")}${shown("credo")}${fold("pater")}${aves(3)}${fold("gloria")}</section>`;
     SETS[ros.set].forEach((m, k) => {
-      push("mystery", { part: k, m });
-      push("pater", { part: k });
-      for (let b = 1; b <= 10; b++) push("ave", { part: k, bead: b, of: 10 });
-      push("gloria", { part: k }); push("fatima", { part: k });
+      h += `<section class="ros-part ros-mys"><p class="ros-ord"><span class="num">${k + 1}</span>${esc(L.ord[k])} ${esc(L.mys)}</p>
+        <h2>${esc(m[pl()][0])}</h2><p class="mline">${esc(m[pl()][1])} · <span class="nw">${esc(m.ref)}</span></p>${decade()}</section>`;
     });
-    push("salve", { part: "end" }); push("cross", { part: "end" }); push("done", { part: "end" });
-    return s;
+    h += `<section class="ros-part"><h2 class="ros-sec">${esc(L.end)}</h2>${shown("salve")}${shown("cross")}<p class="ros-done">${esc(L.done)}</p></section>`;
+    return h;
   }
-  function renderStep() {
-    const L = PL[pl()], st = ros.steps[ros.i], n = ros.steps.length;
-    const where = st.part === "intro" ? L.intro : st.part === "end" ? L.end : `${L.ord[st.part]} ${L.mys}`;
-    $("prayWhere").textContent = `${L.set[ros.set]} · ${where}`;
-    $("prayBar").style.width = `${Math.round((ros.i + 1) / n * 100)}%`;
-    const card = $("prayCard");
-    card.classList.remove("swap"); void card.offsetWidth; card.classList.add("swap");
-    if (st.key === "mystery") {
-      $("prayLabel").textContent = `${L.ord[st.part]} ${L.mys}`;
-      $("prayText").classList.remove("long");
-      $("prayText").textContent = st.m[pl()][0];
-      $("prayRef").textContent = `${st.m[pl()][1]} · ${st.m.ref}`;
-    } else if (st.key === "done") {
-      $("prayLabel").textContent = "";
-      $("prayText").classList.remove("long");
-      $("prayText").textContent = L.done;
-      $("prayRef").textContent = "";
-    } else {
-      // Texto completo como guía al principio y en el primer misterio; después, solo el nombre.
-      const full = (st.part === "intro" || st.part === 0 || st.key === "salve") && TXT(st.key);
-      $("prayLabel").textContent = st.bead ? `${L.ave} · ${st.bead} ${L.of} ${st.of}` : full ? L[st.key] : "";
-      $("prayText").classList.toggle("long", !!full);
-      $("prayText").innerHTML = full ? full.map((p) => `<span>${esc(p)}</span>`).join("") : esc(L[st.key]);
-      $("prayRef").textContent = full ? "" : L.hint;
-    }
-    const beads = $("beads");
-    if (st.bead || st.key === "pater" || st.key === "gloria" || st.key === "fatima") {
-      const total = st.part === "intro" ? 3 : 10, on = st.bead || (st.key === "pater" ? 0 : total);
-      beads.innerHTML = Array.from({ length: total }, (_, b) => `<i class="${b < on ? "on" : ""}${b === on - 1 && st.bead ? " now" : ""}"></i>`).join("");
-      beads.style.visibility = "visible";
-    } else beads.style.visibility = "hidden";
-    $("prayPrev").disabled = ros.i === 0;
-    $("prayNext").textContent = ros.i === n - 1 ? t("prayExit").replace(/^←\s*/, "") : t("next");
-  }
-  function startPray() {
-    ros.steps = buildSteps(); ros.i = 0;
-    $("rosList").hidden = true; $("prayMode").hidden = false;
-    renderStep(); $("rosScroll").scrollTop = 0; $("prayCard").focus({ preventScroll: true });
-  }
-  function exitPray() { $("prayMode").hidden = true; $("rosList").hidden = false; }
-  const step = (d) => {
-    if (ros.i + d >= ros.steps.length) return exitPray();
-    ros.i = Math.max(0, ros.i + d); renderStep();
-  };
 
   // ---------- Palabra del día: lecturas de la misa ----------
   // Castellano: Vatican News; català: evangeli.net. La acción «contenido» (scripts/palabra.py)
@@ -207,7 +159,7 @@
     if (mode === "rosary" && !rosReady) { rosReady = true; renderRosary(); }
   }
   document.addEventListener("misas:mode", onMode);
-  A.onLang(() => { ros.pl = null; if (wordReady) renderWord(); if (rosReady) { renderRosary(); if (!$("prayMode").hidden) renderStep(); } });
+  A.onLang(() => { ros.pl = null; if (wordReady) renderWord(); if (rosReady) renderRosary(); });
 
   $("wordPrev").onclick = () => shiftDay(-1);
   $("wordNext").onclick = () => shiftDay(1);
@@ -215,16 +167,11 @@
 
   $("rosSets").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.set = b.dataset.set; renderRosary(); } };
   $("plangs").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.pl = b.dataset.pl === A.lang() ? null : b.dataset.pl; renderRosary(); } };
-  $("prayBtn").onclick = startPray;
-  $("prayExit").onclick = exitPray;
-  $("prayPrev").onclick = () => step(-1);
-  $("prayNext").onclick = () => step(1);
-  $("prayCard").onclick = () => step(1);
-  document.addEventListener("keydown", (e) => {
-    if ($("prayMode").hidden || $("stage").dataset.mode !== "rosary") return;
-    if (e.key === "ArrowRight" || e.key === " ") { e.preventDefault(); step(1); }
-    else if (e.key === "ArrowLeft") { e.preventDefault(); step(-1); }
-    else if (e.key === "Escape") exitPray();
-  });
+  // Cuentas del Avemaría: al tocar una se marcan hasta ella (tocar la última marcada la desmarca).
+  $("rosText").onclick = (e) => {
+    const i = e.target.closest(".beads i"); if (!i) return;
+    const all = [...i.parentNode.children], n = all.indexOf(i) + 1, cur = all.filter((x) => x.classList.contains("on")).length;
+    all.forEach((x, j) => x.classList.toggle("on", j < (n === cur ? n - 1 : n)));
+  };
   onMode();
 })();
