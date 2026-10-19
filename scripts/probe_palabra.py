@@ -20,4 +20,4 @@ for url in sys.argv[1:]:
         txt = el.get_text(" ", strip=True)
         own = "".join(el.find_all(string=True, recursive=False)).strip()
         if own or el.name in ("h1","h2","h3","h4","section","article"):
-            print(f"{el.name}.{'.'.join(el.get('class') or [])}#{el.get('id') or ''} | {own[:50] or txt[:50]}")
+            print(f"{el.name}.{'.'.join(el.get('class') or [])}#{el.get('id') or ''} | {own[:40] or txt[:40]}")

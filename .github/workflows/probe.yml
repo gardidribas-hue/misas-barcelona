@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: pip install beautifulsoup4
-      - run: python scripts/probe_palabra.py https://www.vaticannews.va/es/evangelio-de-hoy.html https://www.vaticannews.va/es/evangelio-de-hoy/2026/10/19.html https://evangeli.net/evangeli/dia/2026-10-19 | head -400
+      - run: python scripts/probe_palabra.py https://opusdei.org/ca/article/guia-del-rosari/ https://opusdei.org/es-es/article/guia-del-rosario/ https://ewtn.com/catholicism/teachings/prayers-of-the-rosary-in-english-and-latin-164 https://www.vaticannews.va/es/evangelio-de-hoy/2026/10/18.html | head -700
