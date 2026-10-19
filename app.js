@@ -13,6 +13,7 @@
     es: {
       wordTitle: "Palabra <em>del día</em>", todayBtn: "Hoy", prayStart: "Rezar el rosario", prayExit: "← Misterios", prev: "Anterior", next: "Siguiente",
       wordSource: "Fuente: <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">{name}</a>",
+      papaTranslated: "",
       wordError: "Todavía no tengo las lecturas de este día. Puedes leerlas en <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">Vatican News</a>.",
       rosSets: { joyful: "gozosos", sorrowful: "dolorosos", glorious: "gloriosos", luminous: "luminosos" }, rosTitle: "Misterios <em>{set}</em>",
       rosDay: "Rosario de hoy · {day}", todayMark: "hoy", prevDay: "Día anterior", nextDay: "Día siguiente",
@@ -51,6 +52,7 @@
     ca: {
       wordTitle: "Paraula <em>del dia</em>", todayBtn: "Avui", prayStart: "Resar el rosari", prayExit: "← Misteris", prev: "Anterior", next: "Següent",
       wordSource: "Font: <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">{name}</a>",
+      papaTranslated: "Traducció automàtica ({engine}) del text de Vatican News.",
       wordError: "Encara no tinc les lectures d'aquest dia. Les pots llegir a <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">evangeli.net</a>.",
       rosSets: { joyful: "de goig", sorrowful: "de dolor", glorious: "de glòria", luminous: "de llum" }, rosTitle: "Misteris <em>{set}</em>",
       rosDay: "Rosari d'avui · {day}", todayMark: "avui", prevDay: "Dia anterior", nextDay: "Dia següent",

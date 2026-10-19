@@ -45,10 +45,15 @@ def vatican(day):
     if sel:
         nxt = sel.find_next("span")
         title = clean(nxt.get_text(" ")) if nxt else ""
-    readings = []
+    readings, reflection = [], None
     for sec in s.select("section.section--isStatic"):
         h2 = sec.find("h2")
         head = clean(h2.get_text(" ")) if h2 else ""
+        if re.match(r"Las palabras de los Papas", head, re.I):
+            text = [t for p in sec.find_all("p") for t in paras(p)]
+            if text:
+                reflection = {"heading": head, "text": text}
+            continue
         if not re.match(r"(Lectura|Evangelio|Salmo)", head, re.I):
             continue
         default = "Evangelio" if head.lower().startswith("evangelio") else "Primera lectura"
@@ -75,7 +80,31 @@ def vatican(day):
         r["title"] = re.sub(r"^ectura\b", "Lectura", r["title"])
     if not readings:
         raise ValueError("sin lecturas")
-    return {"title": title, "url": url, "source": "Vatican News", "readings": readings}
+    out = {"title": title, "url": url, "source": "Vatican News", "readings": readings}
+    if reflection:
+        out["reflection"] = reflection
+    return out
+
+
+def translate_ca(paras):
+    """Traducción automática castellano -> catalán (Apertium; si falla, Google Translate)."""
+    import urllib.parse
+    def apertium(q):
+        url = "https://www.apertium.org/apy/translate?" + urllib.parse.urlencode({"langpair": "spa|cat", "markUnknown": "no", "q": q})
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
+            return json.loads(r.read())["responseData"]["translatedText"]
+    def google(q):
+        url = "https://translate.googleapis.com/translate_a/single?" + urllib.parse.urlencode({"client": "gtx", "sl": "es", "tl": "ca", "dt": "t", "q": q})
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
+            return "".join(seg[0] for seg in json.loads(r.read())[0])
+    for name, fn in (("Apertium", apertium), ("Google Translate", google)):
+        try:
+            out = [clean(fn(p)) for p in paras]
+            if all(out):
+                return out, name
+        except Exception as e:
+            print("traducción", name, "ERROR", e)
+    raise ValueError("sin traducción")
 
 
 def evangeli(day):
@@ -136,8 +165,15 @@ def catalan(day, es):
         title = evangeli(day)["title"]
     except Exception:
         title = ""
-    return {"title": title, "url": readings[-1].pop("url"), "source": "Bíblia Catalana Interconfessional",
-            "readings": [{k: v for k, v in r.items() if k != "url"} for r in readings]}
+    out = {"title": title, "url": readings[-1].pop("url"), "source": "Bíblia Catalana Interconfessional",
+           "readings": [{k: v for k, v in r.items() if k != "url"} for r in readings]}
+    if es.get("reflection"):
+        try:
+            text, engine = translate_ca(es["reflection"]["text"])
+            out["reflection"] = {"heading": "Les paraules dels Papes", "text": text, "translated": engine}
+        except Exception as e:
+            print(day, "reflexión ca ERROR", e)
+    return out
 
 
 def main():
@@ -153,6 +189,8 @@ def main():
             try:
                 data[lang] = fn(day)
                 ok += 1
+                rf = data[lang].get("reflection")
+                print(day, lang, "reflexión:", (len(rf["text"]), rf.get("translated"), rf["text"][0][:20]) if rf else None)
                 print(day, lang, [f"{r['kind']} | {r['title'][:40]} | {r['ref']} | {len(r['text'])}p {r['text'][0][:12]}…{r['text'][-1][-12:]}" for r in data[lang]["readings"]])
             except Exception as e:
                 print(day, lang, "ERROR", e)
