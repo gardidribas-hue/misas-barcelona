@@ -1,0 +1,11 @@
+name: probe-bci
+on:
+  push:
+    branches: [claude/project-thread-3pofmn]
+    paths: [scripts/probe_bci.py, .github/workflows/probe.yml]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/probe_bci.py | head -150
