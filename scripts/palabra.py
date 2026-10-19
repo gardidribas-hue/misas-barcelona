@@ -184,6 +184,17 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     today = dt.datetime.now(ZoneInfo("Europe/Madrid")).date()
     ok = 0
+    # Vatican News rellena los días aún sin preparar con la reflexión de un día anterior:
+    # si una reflexión ya ha salido otro día antes, no se muestra (mejor sin caja que con la de otro día).
+    key = lambda r: " ".join(r["text"]) if r else None
+    first = today - dt.timedelta(days=DAYS_BACK)
+    seen = set()
+    for f in OUT.glob("*.json"):
+        try:
+            if dt.date.fromisoformat(f.stem) < first:
+                seen.add(key(json.loads(f.read_text()).get("es", {}).get("reflection")))
+        except (ValueError, json.JSONDecodeError):
+            pass
     for d in range(-DAYS_BACK, DAYS_AHEAD + 1):
         day = today + dt.timedelta(days=d)
         path = OUT / f"{day:%Y-%m-%d}.json"
@@ -200,6 +211,13 @@ def main():
                 print(day, lang, "ERROR", e)
                 if lang in old:
                     data[lang] = old[lang]
+        rk = key(data.get("es", {}).get("reflection"))
+        if rk and rk in seen:
+            print(day, "reflexión repetida de otro día: se quita")
+            for lang in ("es", "ca"):
+                data.get(lang, {}).pop("reflection", None)
+        elif rk:
+            seen.add(rk)
         if "es" in data or "ca" in data:
             path.write_text(json.dumps(data, ensure_ascii=False, indent=1))
     for f in OUT.glob("*.json"):
