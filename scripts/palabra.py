@@ -2,7 +2,7 @@
 
 Castellano: Vatican News (Palabra del día).
 Català: las mismas citas en la Bíblia Catalana Interconfessional (bible.com, ver bci.py);
-el nombre del día litúrgico en catalán sale de evangeli.net.
+el nombre del día y la reflexión de los Papas se traducen con Apertium.
 Lo ejecuta cada día la acción de GitHub «contenido»; también se puede lanzar a mano:
     pip install beautifulsoup4 && python scripts/palabra.py
 """
@@ -161,10 +161,12 @@ def catalan(day, es):
     if not es:
         raise ValueError("faltan las citas en castellano")
     readings = [bci.reading(r) for r in es["readings"]]
-    try:
-        title = evangeli(day)["title"]
-    except Exception:
-        title = ""
+    title = ""
+    if es.get("title"):  # el mismo nombre del día que en castellano, traducido
+        try:
+            title = translate_ca([es["title"]])[0][0]
+        except Exception:
+            pass
     out = {"title": title, "url": readings[-1].pop("url"), "source": "Bíblia Catalana Interconfessional",
            "readings": [{k: v for k, v in r.items() if k != "url"} for r in readings]}
     if es.get("reflection"):
