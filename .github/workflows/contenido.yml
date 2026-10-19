@@ -6,7 +6,7 @@ on:
     - cron: "15 14 * * *"
   workflow_dispatch:
   push:
-    paths: [scripts/palabra.py, scripts/oraciones.py, .github/workflows/contenido.yml]
+    paths: [scripts/palabra.py, scripts/bci.py, scripts/oraciones.py, .github/workflows/contenido.yml]
 permissions:
   contents: write
 concurrency: contenido

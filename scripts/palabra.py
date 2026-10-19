@@ -1,12 +1,15 @@
 """Descarga las lecturas de la misa y las guarda en data/palabra/AAAA-MM-DD.json.
 
-Castellano: Vatican News (Palabra del día). Català: evangeli.net.
+Castellano: Vatican News (Palabra del día).
+Català: las mismas citas en la Bíblia Catalana Interconfessional (bible.com, ver bci.py);
+el nombre del día litúrgico en catalán sale de evangeli.net.
 Lo ejecuta cada día la acción de GitHub «contenido»; también se puede lanzar a mano:
     pip install beautifulsoup4 && python scripts/palabra.py
 """
 import datetime as dt, json, pathlib, re, sys, urllib.request
 from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
+import bci
 
 OUT = pathlib.Path(__file__).resolve().parent.parent / "data" / "palabra"
 UA = {"User-Agent": "Mozilla/5.0 (misas-barcelona; +https://gardidribas-hue.github.io/misas-barcelona/)"}
@@ -124,6 +127,19 @@ def evangeli(day):
             "copyright": "© Albada Editorial / evangeli.net", "readings": readings}
 
 
+def catalan(day, es):
+    """Las lecturas de Vatican News, con el mismo fragmento de la BCI."""
+    if not es:
+        raise ValueError("faltan las citas en castellano")
+    readings = [bci.reading(r) for r in es["readings"]]
+    try:
+        title = evangeli(day)["title"]
+    except Exception:
+        title = ""
+    return {"title": title, "url": readings[-1].pop("url"), "source": "Bíblia Catalana Interconfessional",
+            "readings": [{k: v for k, v in r.items() if k != "url"} for r in readings]}
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     today = dt.datetime.now(ZoneInfo("Europe/Madrid")).date()
@@ -133,11 +149,11 @@ def main():
         path = OUT / f"{day:%Y-%m-%d}.json"
         old = json.loads(path.read_text()) if path.exists() else {}
         data = {"date": f"{day:%Y-%m-%d}"}
-        for lang, fn in (("es", vatican), ("ca", evangeli)):
+        for lang, fn in (("es", vatican), ("ca", lambda d: catalan(d, data.get("es")))):
             try:
                 data[lang] = fn(day)
                 ok += 1
-                print(day, lang, [f"{r['kind']} | {r['ref']} | {len(r['text'])}p" for r in data[lang]["readings"]])
+                print(day, lang, [f"{r['kind']} | {r['title'][:40]} | {r['ref']} | {len(r['text'])}p {r['text'][0][:12]}…{r['text'][-1][-12:]}" for r in data[lang]["readings"]])
             except Exception as e:
                 print(day, lang, "ERROR", e)
                 if lang in old:
