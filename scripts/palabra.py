@@ -68,6 +68,8 @@ def vatican(day):
             else:
                 cur["text"].extend(paras(p))
     readings = [r for r in readings if r["text"]]
+    for r in readings:  # la letra capital va aparte en la página
+        r["title"] = re.sub(r"^ectura\b", "Lectura", r["title"])
     if not readings:
         raise ValueError("sin lecturas")
     return {"title": title, "url": url, "source": "Vatican News", "readings": readings}
@@ -113,6 +115,9 @@ def evangeli(day):
     # Orden de la misa: lecturas, salmo, (segunda lectura), evangelio.
     order = lambda r: 0 if r["kind"].startswith("1") else 1 if r["kind"].lower().startswith("salm") else 2 if r["kind"].startswith("2") else 3
     readings = [r for r in sorted(readings, key=order) if r["text"]]
+    names = {"1": "Primera lectura", "2": "Segona lectura", "t": "Evangeli"}
+    for r in readings:
+        r["kind"] = names.get(r["kind"][:1].lower(), r["kind"])
     if not readings:
         raise ValueError("sense lectures")
     return {"title": clean(lit.get_text(" ")) if lit else "", "url": url, "source": "evangeli.net",

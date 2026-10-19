@@ -51,9 +51,9 @@ def ewtn_es():
     salve = got.get("salve", [])
     # Tras la Salve, la página añade una nota y la oración de Fátima entre comillas.
     fat = [p for p in salve if p.startswith(("\"", "“"))]
-    got["salve"] = [p for p in salve if not p.lower().startswith("luego de") and p not in fat]
+    got["salve"] = [p for p in salve if not p.lower().startswith("luego de") and not p.startswith("—") and p not in fat]
     if fat:
-        got["fatima"] = [fat[0].strip("\"“” ")]
+        got["fatima"] = [re.sub(r"[\"“”]", "", fat[0]).strip()]
     got["cross"] = [p.replace("+ ", "") for p in got.get("cross", [])]
     return got
 
