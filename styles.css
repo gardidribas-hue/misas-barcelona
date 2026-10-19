@@ -441,3 +441,113 @@ button, .btn, .card { -webkit-tap-highlight-color: transparent; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .lede .k-conf { color: #cfbaf3; } :root:not([data-theme="light"]) .lede .k-ador { color: #ecd290; } }
 :root[data-theme="dark"] .lede .k-conf { color: #cfbaf3; }
 :root[data-theme="dark"] .lede .k-ador { color: #ecd290; }
+
+/* =====================================================================
+   Palabra del día (verde) y Rosario (azul mariano), mismo estilo
+   ===================================================================== */
+[data-kind="word"], .x-word { --accent: #a9d6b6; --accent-strong: #3f8a5a; --accent-soft: #e4f2e8; --accent-ink: #173a24; --hit: #cfe9d6; --hit-ink: #173a24; }
+[data-kind="rosary"], .x-ros { --accent: #b6cbea; --accent-strong: #4a6fa5; --accent-soft: #e6eef9; --accent-ink: #1b2d4a; --hit: #d3e0f3; --hit-ink: #1b2d4a; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) [data-kind="word"], :root:not([data-theme="light"]) .x-word { --accent: #9fd0ad; --accent-strong: #b5e0c1; --accent-soft: #22332a; --accent-ink: #12301d; }
+  :root:not([data-theme="light"]) [data-kind="rosary"], :root:not([data-theme="light"]) .x-ros { --accent: #a9c1e6; --accent-strong: #c3d5f0; --accent-soft: #232c3a; --accent-ink: #15243d; }
+}
+body[data-tone="word"] { background: color-mix(in srgb, var(--backdrop) 90%, #4f9a68); }
+body[data-tone="rosary"] { background: color-mix(in srgb, var(--backdrop) 90%, #5b7fb8); }
+
+/* Vistas */
+.wordcol, .rosarycol { display: none; }
+.stage[data-mode="word"], .stage[data-mode="rosary"] { grid-template-columns: 1fr; }
+.stage[data-mode="word"] > :not(.wordcol), .stage[data-mode="rosary"] > :not(.rosarycol) { display: none; }
+.stage[data-mode="word"] .wordcol, .stage[data-mode="rosary"] .rosarycol { display: flex; flex-direction: column; }
+.wordcol { view-transition-name: wordwin; }
+.rosarycol { view-transition-name: roswin; }
+
+/* Botones de cabecera con circulito e icono */
+.extras { display: flex; gap: 6px; }
+.extras button { display: inline-flex; align-items: center; gap: 8px; border: 0; cursor: pointer; background: rgba(255,255,255,.08); color: var(--backdrop-muted); border-radius: 999px; padding: 4px 14px 4px 4px; font: 700 14px/1 var(--ui); white-space: nowrap; transition: background .25s var(--ease), color .25s var(--ease), transform .15s var(--ease); }
+.extras .ico { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); transition: background .25s var(--ease), color .25s var(--ease), transform .4s var(--ease); }
+.extras svg { width: 17px; height: 17px; }
+.extras button:hover { color: var(--backdrop-ink); }
+.extras button:hover .ico { transform: rotate(-8deg) scale(1.05); }
+.extras button.on { background: var(--accent); color: var(--accent-ink); }
+.extras button.on .ico { background: var(--bg); color: var(--accent-strong); }
+.extras button:active { transform: scale(.95); }
+@media (min-width: 861px) and (max-width: 1240px) { .extras button { padding-right: 4px; } .extras button > span:not(.ico) { display: none; } }
+
+/* Contenido de las dos vistas: una columna tranquila */
+.dev-scroll { flex: 1; min-height: 0; overflow-y: auto; padding: 0 28px; }
+.dev-inner { max-width: 720px; margin: 0 auto; padding: 40px 0 56px; display: flex; flex-direction: column; gap: 22px; }
+.dev-head { display: grid; gap: 12px; }
+.dev-head .eyebrow::first-letter { text-transform: uppercase; }
+.dev-head h1 em { color: var(--accent-strong); }
+.dev-sub { margin: 0; color: var(--muted); font-style: italic; font-size: 18px; min-height: 1.5em; }
+.daynav { display: flex; gap: 6px; }
+.daynav .pill { min-width: 44px; }
+.daynav .pill.on { background: var(--accent); color: var(--accent-ink); }
+.seg.rd { grid-template-columns: repeat(var(--n, 4), 1fr); }
+.seg.rd::before { width: calc((100% - 8px) / var(--n, 4)); }
+.seg.rd:empty { display: none; }
+.reading { display: grid; gap: 14px; font: 400 21px/1.62 var(--display); color: var(--ink); }
+.reading h2 { margin: 0 0 4px; font: 800 14px/1.4 var(--ui); letter-spacing: .04em; color: var(--accent-strong); }
+.reading p { margin: 0; text-wrap: pretty; }
+.reading .skel { height: 22px; border-radius: 8px; }
+.reading .skel.short { width: 60%; }
+.reading.swap > * { animation: rise .45s var(--ease) both; }
+.reading .empty { font: italic 400 17px/1.5 var(--ui); }
+.dev-foot { margin: 0; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+
+/* Rosario */
+.ros-tools { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; align-items: center; }
+.chips button small { font-weight: 600; color: var(--muted); }
+.chips button.on small { color: inherit; opacity: .75; }
+.plangs { display: flex; gap: 4px; background: var(--surface); border-radius: 999px; padding: 4px; }
+.plangs button { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; cursor: pointer; border-radius: 999px; padding: 3px 10px 3px 3px; font: 800 12px/1 var(--ui); letter-spacing: .06em; color: var(--muted); opacity: .75; transition: background .2s, opacity .2s, transform .15s var(--ease); }
+.plangs svg { width: 24px; height: 24px; border-radius: 50%; box-shadow: 0 0 0 1px rgba(0,0,0,.12); filter: saturate(.8); }
+.plangs button.on { background: var(--bg); color: var(--ink); opacity: 1; box-shadow: var(--shadow); }
+.plangs button.on svg { filter: none; box-shadow: 0 0 0 2px var(--accent-strong); }
+.plangs button:active { transform: scale(.94); }
+.mysteries { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.mys { display: grid; grid-template-columns: 40px 1fr auto; gap: 2px 14px; align-items: center; padding: 14px 18px 14px 14px; border-radius: 20px; background: var(--surface); animation: rise .45s var(--ease) both; animation-delay: calc(var(--i) * 70ms); }
+.mys .num { grid-row: span 2; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); font: 400 22px/1 var(--display); }
+.mys .mname { font-weight: 800; font-size: 17px; }
+.mys .mline { grid-column: 2; color: var(--muted); font-style: italic; font-size: 15px; }
+.mys .mref { grid-row: 1; grid-column: 3; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pray { align-self: center; padding: 13px 28px; font-size: 16px; }
+
+.pray-mode { max-width: 640px; margin: 0 auto; padding: 28px 0 40px; min-height: 100%; display: flex; flex-direction: column; gap: 18px; }
+.pray-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.pray-where { font-size: 13px; font-weight: 700; color: var(--muted); text-align: right; }
+.pray-progress { height: 4px; border-radius: 4px; background: var(--surface); overflow: hidden; }
+.pray-progress i { display: block; height: 100%; width: 0; background: var(--accent-strong); border-radius: 4px; transition: width .4s var(--ease); }
+.pray-card { flex: 1; min-height: 280px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 14px; padding: 28px 18px; border-radius: 28px; background: var(--surface); cursor: pointer; outline: none; }
+.pray-card:focus-visible { box-shadow: 0 0 0 3px var(--accent); }
+.pray-card.swap > * { animation: rise .4s var(--ease) both; }
+.pray-label { margin: 0; font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-strong); min-height: 1em; }
+.pray-text { margin: 0; font: 400 clamp(34px, 5vw, 52px)/1.1 var(--display); text-wrap: balance; }
+.pray-ref { margin: 0; color: var(--muted); font-style: italic; max-width: 40ch; }
+.beads { display: flex; justify-content: center; gap: 9px; }
+.beads i { width: 12px; height: 12px; border-radius: 50%; background: var(--surface); box-shadow: inset 0 0 0 1.5px var(--accent); transition: background .3s, transform .3s var(--ease); }
+.beads i.on { background: var(--accent-strong); box-shadow: none; }
+.beads i.now { transform: scale(1.35); }
+.pray-nav { display: grid; grid-template-columns: 1fr 1.6fr; gap: 10px; }
+.pray-nav .pill { padding: 14px; font-size: 16px; }
+.pray-nav .pill:disabled { opacity: .4; cursor: default; }
+
+/* Móvil: cinco botones en la barra inferior */
+@media (max-width: 860px) {
+  .extras { display: none; }
+  .bottomnav { gap: 2px; padding: 5px; }
+  .bottomnav button { font-size: 10.5px; border-radius: 16px; }
+  .bottomnav .x-word.on, .bottomnav .x-ros.on { background: var(--accent); color: var(--accent-ink); }
+  .bottomnav .x-word:not(.on) svg { color: #a9d6b6; }
+  .bottomnav .x-ros:not(.on) svg { color: #b6cbea; }
+  .dev-scroll { padding: 0 18px; }
+  .dev-inner { padding: 26px 0 32px; gap: 18px; }
+  .reading { font-size: 19px; }
+  .mys { grid-template-columns: 34px 1fr; padding: 12px 14px 12px 12px; }
+  .mys .num { width: 34px; height: 34px; font-size: 19px; }
+  .mys .mref { grid-row: auto; grid-column: 2; }
+  .pray-mode { padding: 18px 0 24px; }
+  .pray-card { min-height: 240px; }
+}
+@media (max-width: 860px) { .mys .num { grid-row: span 3; } }

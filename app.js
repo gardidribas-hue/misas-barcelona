@@ -11,7 +11,13 @@
   // ---------- Idiomas: castellano y catalán ----------
   const I18N = {
     es: {
-      brandMain: "Misas", brandArch: "Archidiócesis de", tabHome: "Inicio", tabChat: "Chat", tabMap: "Mapa",
+      wordTitle: "Palabra <em>del día</em>", todayBtn: "Hoy", prayStart: "Rezar el rosario", prayExit: "← Misterios", prev: "Anterior", next: "Siguiente",
+      rd: { FR: "1.ª lectura", PS: "Salmo", SR: "2.ª lectura", GSP: "Evangelio" },
+      wordSource: "Textos: <a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">Evangelio del día</a>.", wordCaNote: "",
+      wordError: "No he podido cargar las lecturas ahora mismo. Puedes leerlas en <a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">evangeliodeldia.org</a>.",
+      rosSets: { joyful: "gozosos", sorrowful: "dolorosos", glorious: "gloriosos", luminous: "luminosos" }, rosTitle: "Misterios <em>{set}</em>",
+      rosDay: "Rosario de hoy · {day}", todayMark: "hoy", prevDay: "Día anterior", nextDay: "Día siguiente",
+      brandMain: "Misas", brandArch: "Archidiócesis de", tabHome: "Inicio", tabChat: "Chat", tabMap: "Mapa", tabWord: "Palabra del día", tabWordShort: "Palabra", tabRosary: "Rosario",
       eyebrow: "Archidiócesis de Barcelona · <span id=\"parishCount\">{n}</span> parroquias",
       heroTitle: "¿Dónde quieres ir a <em>misa</em>?",
       heroLede: "Dime dónde estás y a qué hora te va bien. También busco <strong class=\"k-conf\"><em>confesiones</em></strong> y <strong class=\"k-ador\"><em>adoración</em></strong>.",
@@ -44,7 +50,13 @@
       hints: ["Misa ahora cerca de mí", "Gràcia, entre las 17 y las 20", "Confesiones el sábado", "Adoración en el Eixample", "Domingo por la mañana en Sarrià", "Misa en castellano en Sants"]
     },
     ca: {
-      brandMain: "Misses", brandArch: "Arxidiòcesi de", tabHome: "Inici", tabChat: "Xat", tabMap: "Mapa",
+      wordTitle: "Paraula <em>del dia</em>", todayBtn: "Avui", prayStart: "Resar el rosari", prayExit: "← Misteris", prev: "Anterior", next: "Següent",
+      rd: { FR: "1a lectura", PS: "Salm", SR: "2a lectura", GSP: "Evangeli" },
+      wordSource: "Textos: <a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">Evangelio del día</a>.", wordCaNote: "Les lectures es mostren en castellà, tal com les publica la font.",
+      wordError: "Ara mateix no he pogut carregar les lectures. Les pots llegir a <a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">evangeliodeldia.org</a>.",
+      rosSets: { joyful: "de goig", sorrowful: "de dolor", glorious: "de glòria", luminous: "de llum" }, rosTitle: "Misteris <em>{set}</em>",
+      rosDay: "Rosari d'avui · {day}", todayMark: "avui", prevDay: "Dia anterior", nextDay: "Dia següent",
+      brandMain: "Misses", brandArch: "Arxidiòcesi de", tabHome: "Inici", tabChat: "Xat", tabMap: "Mapa", tabWord: "Paraula del dia", tabWordShort: "Paraula", tabRosary: "Rosari",
       eyebrow: "Arxidiòcesi de Barcelona · <span id=\"parishCount\">{n}</span> parròquies",
       heroTitle: "On vols anar a <em>missa</em>?",
       heroLede: "Digues-me on ets i a quina hora et va bé. També busco <strong class=\"k-conf\"><em>confessions</em></strong> i <strong class=\"k-ador\"><em>adoració</em></strong>.",
@@ -420,13 +432,15 @@
   }
 
   // ---------- Modos ----------
+  const DEVOTION = ["word", "rosary"];
   const calm = () => window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   function setMode(mode) {
     if (state.mode === mode && $("stage").dataset.mode === mode) return;
     const apply = () => {
       state.mode = mode;
       $("stage").dataset.mode = mode;
-      document.querySelectorAll(".tabs button, .bottomnav button").forEach((b) => b.classList.toggle("on", b.dataset.go === mode));
+      document.body.dataset.tone = DEVOTION.includes(mode) ? mode : state.kind;
+      document.querySelectorAll(".tabs button, .extras button, .bottomnav button").forEach((b) => b.classList.toggle("on", b.dataset.go === mode));
       document.dispatchEvent(new Event("misas:mode"));
       MapView.resize && MapView.resize();
       if (state.pendingFit && mode !== "chat") refit();
@@ -724,17 +738,18 @@
       applyLang(); fillSelects(); syncControls(); renderList(); showOnMapLabel();
       if (state.detailId) openDetail(state.detailId, false);
       setPh(true);
+      langListeners.forEach((fn) => fn(LNG));
     };
     document.body.classList.add("lang-swap");
     setTimeout(() => { swap(); document.body.classList.remove("lang-swap"); }, calm() ? 0 : 160);
   }
 
   function syncControls() {
-    document.querySelectorAll(".seg button").forEach((b) => b.classList.toggle("on", b.dataset.kind === state.kind));
-    document.querySelectorAll(".seg").forEach((sg) => sg.style.setProperty("--idx", ["mass", "confession", "adoration"].indexOf(state.kind)));
+    document.querySelectorAll(".seg.kinds button").forEach((b) => b.classList.toggle("on", b.dataset.kind === state.kind));
+    document.querySelectorAll(".seg.kinds").forEach((sg) => sg.style.setProperty("--idx", ["mass", "confession", "adoration"].indexOf(state.kind)));
     if (document.querySelector(".mapcol").dataset.kind !== state.kind) {
       document.querySelector(".mapcol").dataset.kind = state.kind;
-      document.body.dataset.tone = state.kind; // tinte muy leve del fondo
+      if (!DEVOTION.includes(state.mode)) document.body.dataset.tone = state.kind; // tinte muy leve del fondo
       MapView.recolor && MapView.recolor();
     }
     $("fDay").value = state.day;
@@ -800,7 +815,7 @@
   function bindToTop() {
     const btn = $("toTop");
     let target = null;
-    const scrollers = [$("chatScroll"), $("side"), $("stage")];
+    const scrollers = [$("chatScroll"), $("side"), $("stage"), $("wordScroll"), $("rosScroll")];
     const place = () => {
       if (!target || target.scrollTop < 360 || !target.offsetParent && target !== $("stage")) { btn.classList.remove("show"); return; }
       const r = target.getBoundingClientRect(), bottomNav = document.querySelector(".bottomnav").offsetHeight || 0;
@@ -830,7 +845,7 @@
     });
 
     document.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => setMode(b.dataset.go)));
-    document.querySelectorAll(".seg button").forEach((b) => b.onclick = () => { state.kind = b.dataset.kind; if (state.mode === "home") setMode("map"); applyFilters(); });
+    document.querySelectorAll(".seg.kinds button").forEach((b) => b.onclick = () => { state.kind = b.dataset.kind; if (state.mode === "home") setMode("map"); applyFilters(); });
     const on = (id, key, num) => $(id).onchange = (e) => { state[key] = num ? Number(e.target.value) : e.target.value; applyFilters(); };
     on("fDay", "day"); on("fFrom", "from", true); on("fTo", "to", true); on("fLang", "lang");
     $("fMun").onchange = (e) => { state.mun = e.target.value; state.dist = ""; state.origin = null; $("nearBtn").classList.remove("on"); applyFilters(); };
@@ -868,6 +883,8 @@
     showOnMap(f, null, computeResults(f, null));
     if (!window.maplibregl && !CFG.googleMapsApiKey) hideSplash();
   }
-  window.MisasApp = { parseQuery, search, ask, setMode, state, DATA };
+  const langListeners = [];
+  window.MisasApp = { t, lang: () => LNG, onLang: (fn) => langListeners.push(fn), calm, nowBcn, esc, cap,
+    i18n: (lng, dict) => Object.assign(I18N[lng], dict), parseQuery, search, ask, setMode, state, DATA };
   start();
 })();

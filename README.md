@@ -32,6 +32,8 @@ cd web-misas && python3 -m http.server 8000   # y abre http://localhost:8000
 - Filtros: misa / confesión / adoración, día, franja horaria, municipio, idioma y texto. En Barcelona se puede elegir distrito: se marca en rojo translúcido en el mapa, y también se puede pulsar el distrito en el propio mapa.
 - "Cerca de mí": en el chat («misa ahora cerca de mí») y con el botón del mapa; ordena por distancia usando tu ubicación.
 - Castellano y catalán: botón con la bandera arriba a la derecha (se recuerda en el navegador; por defecto, el idioma del navegador).
+- **Palabra del día** (verde): lecturas de la misa del día, cargadas al momento desde el servicio público de Evangelio del día (evangeliodeldia.org); no se guardan en la web.
+- **Rosario** (azul): misterios del día con su cita bíblica y rezo guiado paso a paso (cuentas del misterio) en castellano, catalán o latín.
 - Móvil: barra de navegación inferior, botón de volver arriba, pantalla de carga y esqueletos mientras llegan los datos.
 - Ficha de cada parroquia: horarios, confesiones, adoración, teléfono, web y "Cómo llegar" (Google Maps).
 

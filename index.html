@@ -33,6 +33,10 @@
       <button type="button" data-go="chat" data-i18n="tabChat">Chat</button>
       <button type="button" data-go="map" data-i18n="tabMap">Mapa</button>
     </nav>
+    <nav class="extras" aria-label="Oración">
+      <button type="button" data-go="word" class="x-word"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.6C10.2 5.2 7.6 4.6 4.5 4.6v12.8c3.1 0 5.7.6 7.5 2 1.8-1.4 4.4-2 7.5-2V4.6c-3.1 0-5.7.6-7.5 2zM12 6.6v12.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 8.2v4M6.6 9.6h2.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span><span data-i18n="tabWord">Palabra del día</span></button>
+      <button type="button" data-go="rosary" class="x-ros"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="currentColor"><circle cx="12" cy="2.9" r="1.25"/><circle cx="16.2" cy="4.6" r="1.25"/><circle cx="18" cy="8.8" r="1.25"/><circle cx="16.2" cy="13" r="1.25"/><circle cx="7.8" cy="13" r="1.25"/><circle cx="6" cy="8.8" r="1.25"/><circle cx="7.8" cy="4.6" r="1.25"/><circle cx="12" cy="14.9" r="1.45"/></g><path d="M12 16.4v6M9.6 18.7h4.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><span data-i18n="tabRosary">Rosario</span></button>
+    </nav>
     <div class="langs" id="langs" role="group" aria-label="Idioma"><button type="button" data-lang="es" aria-label="Castellano" title="Castellano"></button><button type="button" data-lang="ca" aria-label="Català" title="Català"></button></div>
   </div>
 </header>
@@ -64,7 +68,7 @@
   <section class="mapcol" aria-label="Mapa y filtros">
     <aside class="side win" id="side">
       <div class="filters" id="filters">
-        <div class="seg" role="group" aria-label="Qué buscas">
+        <div class="seg kinds" role="group" aria-label="Qué buscas">
           <button type="button" data-kind="mass" class="on" data-i18n="kindMass">Misa</button>
           <button type="button" data-kind="confession" data-i18n="kindConf">Confesión</button>
           <button type="button" data-kind="adoration" data-i18n="kindAdor">Adoración</button>
@@ -97,7 +101,7 @@
     <div class="mapwrap win">
       <div id="map" role="region" aria-label="Mapa de parroquias"></div>
       <div class="floatbar" id="floatbar">
-        <div class="seg mini" role="group" aria-label="Qué buscas">
+        <div class="seg kinds mini" role="group" aria-label="Qué buscas">
           <button type="button" data-kind="mass" class="on" data-i18n="kindMass">Misa</button>
           <button type="button" data-kind="confession" data-i18n="kindConf">Confesión</button>
           <button type="button" data-kind="adoration" data-i18n="kindAdor">Adoración</button>
@@ -117,6 +121,62 @@
       <div class="maplabel" id="mapLabel"></div>
     </div>
   </section>
+
+  <!-- Palabra del día: lecturas de la misa -->
+  <section class="wordcol win" id="wordcol" data-kind="word" aria-label="Palabra del día">
+    <div class="dev-scroll" id="wordScroll">
+      <div class="dev-inner">
+        <header class="dev-head">
+          <p class="eyebrow" id="wordDate"></p>
+          <h1 data-i18n-html="wordTitle">Palabra <em>del día</em></h1>
+          <p class="dev-sub" id="wordLit"></p>
+          <div class="daynav">
+            <button type="button" class="pill" id="wordPrev" aria-label="Día anterior">‹</button>
+            <button type="button" class="pill" id="wordToday" data-i18n="todayBtn">Hoy</button>
+            <button type="button" class="pill" id="wordNext" aria-label="Día siguiente">›</button>
+          </div>
+        </header>
+        <div class="seg rd" id="wordTabs" role="tablist"></div>
+        <article class="reading" id="reading" aria-live="polite"></article>
+        <p class="dev-foot" id="wordFoot"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rosario del día -->
+  <section class="rosarycol win" id="rosarycol" data-kind="rosary" aria-label="Rosario">
+    <div class="dev-scroll" id="rosScroll">
+      <div class="dev-inner" id="rosList">
+        <header class="dev-head">
+          <p class="eyebrow" id="rosDay"></p>
+          <h1 id="rosTitle"></h1>
+          <div class="ros-tools">
+            <div class="chips" id="rosSets"></div>
+            <div class="plangs" id="plangs" role="group" aria-label="Idioma del rezo"></div>
+          </div>
+        </header>
+        <ol class="mysteries" id="mysteries"></ol>
+        <button type="button" class="pill accent pray" id="prayBtn" data-i18n="prayStart">Rezar el rosario</button>
+      </div>
+      <div class="pray-mode" id="prayMode" hidden>
+        <div class="pray-top">
+          <button type="button" class="pill" id="prayExit" data-i18n="prayExit">← Misterios</button>
+          <span class="pray-where" id="prayWhere"></span>
+        </div>
+        <div class="pray-progress"><i id="prayBar"></i></div>
+        <div class="pray-card" id="prayCard" tabindex="0">
+          <p class="pray-label" id="prayLabel"></p>
+          <p class="pray-text" id="prayText"></p>
+          <p class="pray-ref" id="prayRef"></p>
+        </div>
+        <div class="beads" id="beads" aria-hidden="true"></div>
+        <div class="pray-nav">
+          <button type="button" class="pill" id="prayPrev" data-i18n="prev">Anterior</button>
+          <button type="button" class="pill accent" id="prayNext" data-i18n="next">Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <!-- Navegación inferior en el móvil -->
@@ -133,6 +193,14 @@
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.4-6.5 11-6.5 11z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.9"/></svg>
     <span data-i18n="tabMap">Mapa</span>
   </button>
+  <button type="button" data-go="word" class="x-word">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.6C10.2 5.2 7.6 4.6 4.5 4.6v12.8c3.1 0 5.7.6 7.5 2 1.8-1.4 4.4-2 7.5-2V4.6c-3.1 0-5.7.6-7.5 2zM12 6.6v12.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 8.2v4M6.6 9.6h2.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+    <span data-i18n="tabWordShort">Palabra</span>
+  </button>
+  <button type="button" data-go="rosary" class="x-ros">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><g fill="currentColor"><circle cx="12" cy="2.9" r="1.25"/><circle cx="16.2" cy="4.6" r="1.25"/><circle cx="18" cy="8.8" r="1.25"/><circle cx="16.2" cy="13" r="1.25"/><circle cx="7.8" cy="13" r="1.25"/><circle cx="6" cy="8.8" r="1.25"/><circle cx="7.8" cy="4.6" r="1.25"/><circle cx="12" cy="14.9" r="1.45"/></g><path d="M12 16.4v6M9.6 18.7h4.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+    <span data-i18n="tabRosary">Rosario</span>
+  </button>
 </nav>
 
 <button type="button" class="totop" id="toTop" aria-label="Volver arriba" data-i18n-aria="toTop" hidden>
@@ -146,5 +214,6 @@
 <script defer src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" crossorigin></script>
 <script defer src="zonas.js"></script>
 <script defer src="app.js"></script>
+<script defer src="devocion.js"></script>
 </body>
 </html>
