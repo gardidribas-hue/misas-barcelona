@@ -95,7 +95,7 @@ def evangeli(day):
     for el in s.find_all("div", class_=re.compile(r"(^|_)reading$")):
         kind, ref = split_ref(head_of(el))
         readings.append({"kind": kind, "title": "", "ref": ref, "text": paras(el)})
-    sv = s.select_one(".salm_verscicle")
+    sv = None  # El salmo no se muestra en la web.
     if sv:
         kind = head_of(sv)
         ref = clean(sv.get_text(" "))

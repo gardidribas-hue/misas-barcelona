@@ -185,7 +185,8 @@
   function showDay(day) {
     const el = $("reading");
     el.classList.remove("swap"); void el.offsetWidth; el.classList.add("swap");
-    el.innerHTML = day.readings.map((r) => {
+    // Sin salmo: solo lecturas y evangelio.
+    el.innerHTML = day.readings.filter((r) => !/^salm/i.test(r.kind)).map((r) => {
       const head = r.title
         ? `<p class="rd-kind">${esc(r.kind)}</p><h2>${esc(r.title)}</h2>`
         : `<h2>${esc(r.kind)}</h2>`;
