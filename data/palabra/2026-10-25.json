@@ -37,35 +37,38 @@
  },
  "ca": {
   "title": "Diumenge 30 (A) de durant l'any",
-  "url": "https://evangeli.net/evangeli/dia/2026-10-25",
-  "source": "evangeli.net",
-  "copyright": "© Albada Editorial / evangeli.net",
+  "url": "https://www.bible.com/bible/335/MAT.22.BCI",
+  "source": "Bíblia Catalana Interconfessional",
   "readings": [
    {
     "kind": "Primera lectura",
-    "title": "",
-    "ref": "Ex 22,20-26",
+    "title": "Lectura del llibre de l'Èxode",
+    "ref": "Èxode 22, 20-26",
     "text": [
-     "El Senyor diu: «No maltractis ni oprimeixis els immigrats, que també vosaltres vau ser immigrats al país d'Egipte. No maltractis cap viuda ni cap orfe: Si els maltractes i alcen a mi el seu clam, jo l'escoltaré i, encès d'indignació, us mataré amb l'espasa: les vostres dones quedaran viudes, i orfes els vostres fills.",
-     "»Si prestes diners a algú del meu poble, als pobres que viuen amb tu, no facis com els usurers: no li exigeixis els interessos. Si et quedes com a penyora el mantell d'algú, torna-l'hi abans no es pongui el sol. És tot el que té per abrigar-se, el mantell que l'embolcalla. Amb què dormiria? Si ell alçava a mi el seu clam, jo l'escoltaria, perquè soc compassiu»."
+     "»No explotis ni oprimeixis l’immigrant, que també vosaltres vau ser immigrants al país d’Egipte.",
+     "»No maltractis cap viuda ni cap orfe: si els maltractes i clamen a mi, jo escoltaré el seu clam i, encès d’indignació, us faré morir a la guerra; llavors quedaran viudes les vostres dones, i orfes els vostres fills.",
+     "»Si prestes diners a algú del meu poble, al pobre que viu amb tu, no facis com els usurers: no li exigeixis interessos.",
+     "»Si et quedes com a penyora el mantell d’algú, torna-l’hi abans no es pongui el sol. És tot el que té per a abrigar-se. Amb què dormiria? Si clamava a mi, jo l’escoltaria, perquè sóc misericordiós."
     ]
    },
    {
     "kind": "Segona lectura",
-    "title": "",
-    "ref": "1Te 1,5c-10",
+    "title": "Lectura de la primera carta de sant Pau als cristians de Tessalònica",
+    "ref": "1 Tessalonicencs 1, 5-10",
     "text": [
-     "Germans, ja sabeu el que fèiem per vosaltres mentre érem a la vostra ciutat. També vosaltres heu imitat el nostre exemple i el del Senyor, acollint la paraula de Déu enmig de moltes adversitats, plens del goig de l'Esperit Sant. Així heu estat un model per a tots els creients de Macedònia i d'Acaia, perquè, des de la vostra ciutat, s'ha estès el ressò de la paraula del Senyor.",
-     "I no solament a Macedònia i a Acaia, pertot arreu parlen de la vostra conversió de manera que no ens cal afegir-hi res: ells mateixos conten com va ser la nostra arribada entre vosaltres i com abandonàreu els ídols i us convertíreu a Déu per adorar només el Déu viu i veritable i esperar del cel Jesús, el seu Fill, que ell ressuscità d'entre els morts i que ens salvarà de la pena en el judici que ha de venir."
+     "perquè el nostre evangeli s’ha difós entre vosaltres no tan sols amb paraules, sinó també amb obres podero-ses i tota la plenitud de l’Esperit Sant; i prou sabeu el que vam fer per vosaltres quan érem enmig vostre. Però també vosaltres us heu fet imitadors nostres i del Senyor, acollint la Paraula enmig de moltes tribulacions, plens del goig de l’Esperit Sant. Així heu estat un model per a tots els creients de Macedònia i d’Acaia,",
+     "ja que gràcies a vosaltres ha ressonat la paraula del Senyor; i no solament a Macedònia i Acaia, sinó que la fama de la vostra fe en Déu ha arribat a tot arreu, de manera que no cal que en diguem res més. Tots ells expliquen com va ser la nostra estada entre vosaltres i com us apartàreu dels ídols i us convertíreu a Déu, per servir només el Déu viu i veritable i esperar del cel Jesús, el seu Fill, que ell ressuscità d’entre els morts i que ens allibera de la indignació divina que ha de venir."
     ]
    },
    {
     "kind": "Evangeli",
-    "title": "",
-    "ref": "Mt 22,34-40",
+    "title": "Lectura de l'evangeli segons sant Mateu",
+    "ref": "Mateu 22, 34-40",
     "text": [
-     "En aquell temps, quan els fariseus van saber que Jesús havia fet callar als saduceus, es reuniren tots plegats. I un d’ells, doctor de la Llei, l’interrogà amb intenció de temptar-lo: «Mestre, quin és el gran manament en la Llei?». I li digué: «Estimaràs el Senyor, el teu Déu, amb tot el teu cor i amb tota la teva ànima i amb tota la teva ment: aquest és el gran i primer manament. I el segon és semblant a aquest: Estimaràs el teu proïsme com a tu mateix. D’aquests dos manaments tota la Llei en depèn, i els Profetes».",
-     "© Albada Editorial / evangeli.net"
+     "Quan els fariseus van saber que Jesús havia fet callar els saduceus, es reuniren tots junts, i un d’ells, que era mestre de la Llei, per provar-lo li va fer aquesta pregunta:",
+     "– Mestre, quin és el manament més gran de la Llei?",
+     "Jesús li digué:",
+     "– Estima el Senyor, el teu Déu, amb tot el cor, amb tota l’ànima i amb tot el pensament. Aquest manament és el més gran i el primer. El segon li és semblant: Estima els altres com a tu mateix. Tots els manaments de la Llei i dels Profetes depenen d’aquests dos."
     ]
    }
   ]

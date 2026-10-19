@@ -29,26 +29,31 @@
  },
  "ca": {
   "title": "Divendres 28 de durant l'any",
-  "url": "https://evangeli.net/evangeli/dia/2026-10-16",
-  "source": "evangeli.net",
-  "copyright": "© Albada Editorial / evangeli.net",
+  "url": "https://www.bible.com/bible/335/LUK.12.BCI",
+  "source": "Bíblia Catalana Interconfessional",
   "readings": [
    {
     "kind": "Primera lectura",
-    "title": "",
-    "ref": "Ef 1,11-14",
+    "title": "Lectura de la carta de sant Pau als cristians d'Efes",
+    "ref": "Efesis 1, 11-14",
     "text": [
-     "Germans, en Crist hem rebut la nostra part en l'herència. Ens hi havia destinat el designi d'aquell qui tot ho duu a terme d'acord amb la decisió de la seva voluntat. Volia que fóssim lloança de la seva grandesa, nosaltres que des del principi tenim posada en Crist la nostra esperança. Vosaltres vau escoltar l'anunci de la veritat, la Bona Nova de la vostra salvació i, després d'escoltar-la i de creure-hi, també vosaltres, en el Crist, heu estat marcats amb l'Esperit Sant promès. Aquesta és la penyora de l'heretat que Déu ens té reservada, quan ens rescatarà plenament com a possessió seva personal. Aleshores serem lloança de la seva grandesa."
+     "En Crist hem rebut\nla nostra part en l’herència;",
+     "ens hi havia destinat el designi",
+     "d’aquell qui tot ho duu a terme\nd’acord amb la decisió\nde la seva voluntat.\nVolia que fóssim\nlloança de la seva glòria,\nnosaltres que des del principi\ntenim posada en Crist\nla nostra esperança.\nEn ell, vosaltres vau escoltar\nla paraula de la veritat,\nl’evangeli que us salva.",
+     "En ell heu cregut",
+     "i heu estat marcats amb el segell\nde l’Esperit Sant promès.\nI l’Esperit és la penyora de l’heretat\nque Déu ens té reservada,",
+     "quan ens redimirà",
+     "com a possessió seva,\na lloança de la seva glòria."
     ]
    },
    {
     "kind": "Evangeli",
-    "title": "",
-    "ref": "Lc 12,1-7",
+    "title": "Lectura de l'evangeli segons sant Lluc",
+    "ref": "Lluc 12, 1-7",
     "text": [
-     "En aquell temps, la gent s'havia aglomerat a milers, fins al punt que es trepitjaven els uns als altres. Jesús començà a dir als seus deixebles en primer lloc: «Guardeu-vos del ferment del fariseus, que és la hipocresia. Res no hi ha encobert que no s’hagi de descobrir, ni res d’amagat que no s’hagi de saber. Perquè allò que heu dit a les tenebres, serà sentit a la llum; i el que heu parlat a cau d’orella a les cambres, serà proclamat des dels terrats.",
-     "I us dic a vosaltres, amics meus: no tingueu por als qui maten el cos i després d’això ja no poden fer res més. Però us mostraré a qui heu de témer: temeu aquell que, després de matar, té el poder de llançar a la gehenna. Així us ho dic: aquest heu de témer. ¿No es venen cinc ocellets per dos asos? Doncs bé, cap d’ells no és oblidat per Déu. I també els cabells del vostre cap, tots són comptats. No temeu, sou millors que molts ocellets».",
-     "© Albada Editorial / evangeli.net"
+     "Mentrestant, la gent s’havia aglomerat a milers, fins al punt que es trepitjaven els uns als altres. Jesús començà a dir primer als seus deixebles:",
+     "– Guardeu-vos del llevat dels fariseus, que és la hipocresia. No hi ha res de secret que no s’hagi de revelar, ni res d’amagat que no s’hagi de saber. Per això, tot el que heu dit en la fosca, ho sentiran a plena llum, i el que heu parlat a cau d’orella en la cambra més retirada, ho pregonaran des dels terrats.",
+     "»A vosaltres, amics meus, us dic que no tingueu por dels qui maten el cos i després ja no poden fer res més. Jo us faré veure qui heu de témer: temeu aquell qui, després de prendre la vida, té poder de tirar a l’infern. Us ho asseguro: a aquest sí que l’heu de témer. ¿No es venen cinc ocells per dues monedes? Doncs bé, Déu no n’oblida ni un de sol. Més encara, fins i tot els cabells us té comptats. No tingueu por: vosaltres valeu més que tots els ocells."
     ]
    }
   ]

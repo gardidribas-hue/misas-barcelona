@@ -51,33 +51,43 @@
  },
  "ca": {
   "title": "Diumenge 29 (A) de durant l'any",
-  "url": "https://evangeli.net/evangeli/dia/2026-10-18",
-  "source": "evangeli.net",
-  "copyright": "© Albada Editorial / evangeli.net",
+  "url": "https://www.bible.com/bible/335/MAT.22.BCI",
+  "source": "Bíblia Catalana Interconfessional",
   "readings": [
    {
     "kind": "Primera lectura",
-    "title": "",
-    "ref": "Is 45,1.4-6",
+    "title": "Lectura del llibre d'Isaïes",
+    "ref": "Isaïes 45, 1. 4-6",
     "text": [
-     "El Senyor pren Cir, el seu ungit, per la mà dreta, i el condueix per sotmetre-li les nacions i deixar desarmats els reis, per obrir-li les ciutats, perquè no trobi tancades les portes. El Senyor li diu: «Per amor de Jacob, el meu servent, d'Israel, el meu elegit, et crido pel teu nom, et dono un títol honrós, tot i que no em coneixes. Jo soc el Senyor, no n'hi ha d'altre. Fora de mi no hi ha cap Déu. Sense que em coneguessis t'he fet prendre les armes perquè sàpiguen de llevant fins a ponent que no hi ha ningú fora de mi. Jo soc el Senyor. No n'hi ha d'altre»."
+     "Això diu el Senyor a Cir,",
+     "el seu ungit,\na qui ha donat la mà,\nper sotmetre-li les nacions\ni desarmar els reis,\nper obrir davant d’ell\nles portes de les ciutats,\nles portes que no es tancaran:",
+     "Per amor del meu servent,\nel poble de Jacob,\nd’Israel, el meu elegit,\net crido pel teu nom.\nT’he fet aquest honor,\na tu que no em coneixes.\nJo sóc el Senyor,\ni no n’hi ha d’altre.\nFora de mi no hi ha cap Déu.\nT’he fet prendre les armes,\na tu que no em coneixes,\nperquè tothom sàpiga,\nde llevant fins a ponent,\nque fora de mi no hi ha ningú.\nJo sóc el Senyor, i no n’hi ha d’altre."
     ]
    },
    {
     "kind": "Segona lectura",
-    "title": "",
-    "ref": "1Te 1,1-5b",
+    "title": "Lectura de la primera carta de sant Pau als cristians de Tessalònica",
+    "ref": "1 Tessalonicencs 1, 1-5",
     "text": [
-     "Pau, Silvà i Timoteu, a la comunitat de Tessalònica, reunida per Déu Pare i per Jesucrist, el Senyor. Us desitgem la gràcia i la pau. Sempre donem gràcies a Déu per tots vosaltres i us recordem en les nostres pregàries. No deixem mai de recordar davant Déu, Pare nostre, com la vostra fe treballa per propagar-se, la vostra caritat no es cansa de fer el bé, i la vostra esperança en Jesucrist, el nostre Senyor, aguanta les adversitats. Germans, estimats de Déu: sabem de cert que ell us ha elegit, perquè quan us anunciàvem l'evangeli, no predicàvem només de paraula, sinó amb obres poderoses, amb dons de l'Esperit Sant, i amb molta convicció."
+     "Pau, Siles i Timoteu, a l’església dels tessalonicencs, que viu en Déu Pare i en Jesucrist, el Senyor. Us desitgem la gràcia i la pau.",
+     "Sempre donem gràcies a Déu per tots vosaltres i us tenim presents en les nostres pregàries. Contínuament recordem davant de Déu, el nostre Pare, la vostra fe activa, el vostre amor incansable i la vostra esperança constant en nostre Senyor Jesucrist. Sabem, germans estimats de Déu, que ell us ha escollit, perquè el nostre evangeli s’ha difós entre vosaltres no tan sols amb paraules, sinó també amb obres podero-ses i tota la plenitud de l’Esperit Sant; i prou sabeu el que vam fer per vosaltres quan érem enmig vostre."
     ]
    },
    {
     "kind": "Evangeli",
-    "title": "",
-    "ref": "Mt 22,15-21",
+    "title": "Lectura de l'evangeli segons sant Mateu",
+    "ref": "Mateu 22, 15-21",
     "text": [
-     "En aquell temps, havent-se retirat els fariseus, tingueren consell per tal d’atrapar-lo en alguna paraula. I li envien els seus deixebles amb els herodians, dient: «Mestre, sabem que ets veraç i que ensenyes el camí de Déu en veritat, i no et deixes portar per ningú, ja que no mires les aparences de les persones. Digues-nos, doncs, què et sembla: ¿És lícit pagar el cens a Cèsar, o no?». I coneixent Jesús la maldat d’ells, diu: «Per què em tempteu, hipòcrites? Mostreu-me la moneda del cens». Ells li portaren un denari. I ell els diu: «De qui és aquesta imatge i la inscripció?». Li responen: «De Cèsar». Llavors els diu: «Torneu, doncs, les coses de Cèsar a Cèsar, i les de Déu a Déu».",
-     "© Albada Editorial / evangeli.net"
+     "Aleshores els fariseus van planejar la manera de sorprendre Jesús en alguna paraula comprometedora. I van enviar els seus deixebles i els partidaris d’Herodes a dir-li:",
+     "– Mestre, sabem que dius la veritat i que ensenyes realment el camí de Déu, sense deixar-te influir per ningú, ja que no fas distinció de persones. Digues-nos què et sembla: ¿És permès o no de pagar tribut al Cèsar?",
+     "Jesús es va adonar de la seva malícia i els digué:",
+     "– Per què em poseu a prova, hipòcrites? Ensenyeu-me la moneda del tribut.",
+     "Ells li portaren un denari. Jesús els preguntà:",
+     "– De qui són aquesta imatge i aquesta inscripció?",
+     "Li responen:",
+     "– Del Cèsar.",
+     "Llavors els diu:",
+     "– Doncs doneu al Cèsar el que és del Cèsar, i a Déu el que és de Déu."
     ]
    }
   ]
