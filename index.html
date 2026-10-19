@@ -104,10 +104,16 @@
         </div>
         <button type="button" class="pill" data-go="map" data-i18n="filtersList">Filtros y lista</button>
       </div>
+      <div class="mapbtns">
+      <button type="button" class="near reset" id="resetMap" data-i18n-aria="resetMap" aria-label="Restablecer mapa">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4.5v4h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span data-i18n="resetMap">Restablecer mapa</span>
+      </button>
       <button type="button" class="near" id="nearBtn">
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2v3M12 19v3M2 12h3M19 12h3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/></svg>
         <span data-i18n="nearMe">Cerca de mí</span>
       </button>
+      </div>
       <div class="maplabel" id="mapLabel"></div>
     </div>
   </section>

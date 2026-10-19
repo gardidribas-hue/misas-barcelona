@@ -19,7 +19,7 @@
       lblDay: "Día", lblFrom: "Desde", lblTo: "Hasta", lblMun: "Municipio", lblLang: "Idioma", lblDist: "Distritos",
       langAny: "Cualquiera", langCa: "Catalán", langEs: "Castellano", langOther: "Otros idiomas",
       searchPh: "Nombre de la parroquia o calle", reset: "Quitar filtros", filtersList: "Filtros y lista",
-      nearMe: "Cerca de mí", toTop: "Volver arriba", switchTo: "Canviar a català", loading: "Cargando parroquias…",
+      nearMe: "Cerca de mí", resetMap: "Restablecer mapa", toTop: "Volver arriba", switchTo: "Canviar a català", loading: "Cargando parroquias…",
       days: { mon: "lunes", tue: "martes", wed: "miércoles", thu: "jueves", fri: "viernes", sat: "sábado", sun: "domingo" },
       dayShort: { mon: "L", tue: "M", wed: "X", thu: "J", fri: "V", sat: "S", sun: "D", hol: "F" },
       todayOpt: "Hoy ({d})", tomorrow: "Mañana", sunHol: "Domingo y festivos", anyDay: "Cualquier día",
@@ -52,7 +52,7 @@
       lblDay: "Dia", lblFrom: "Des de", lblTo: "Fins a", lblMun: "Municipi", lblLang: "Idioma", lblDist: "Districtes",
       langAny: "Qualsevol", langCa: "Català", langEs: "Castellà", langOther: "Altres idiomes",
       searchPh: "Nom de la parròquia o carrer", reset: "Treure filtres", filtersList: "Filtres i llista",
-      nearMe: "A prop meu", toTop: "Tornar a dalt", switchTo: "Cambiar a castellano", loading: "Carregant parròquies…",
+      nearMe: "A prop meu", resetMap: "Restablir el mapa", toTop: "Tornar a dalt", switchTo: "Cambiar a castellano", loading: "Carregant parròquies…",
       days: { mon: "dilluns", tue: "dimarts", wed: "dimecres", thu: "dijous", fri: "divendres", sat: "dissabte", sun: "diumenge" },
       dayShort: { mon: "Dl", tue: "Dt", wed: "Dc", thu: "Dj", fri: "Dv", sat: "Ds", sun: "Dg", hol: "F" },
       todayOpt: "Avui ({d})", tomorrow: "Demà", sunHol: "Diumenge i festius", anyDay: "Qualsevol dia",
@@ -787,6 +787,15 @@
     } finally { btn.classList.remove("busy"); }
   }
 
+  // Vuelve el mapa a como estaba al entrar: misas de hoy desde ahora, sin zona ni ubicación.
+  function resetMap() {
+    const ic = $("resetMap").querySelector("svg"); ic.classList.remove("turn"); void ic.offsetWidth; ic.classList.add("turn");
+    $("nearBtn").classList.remove("on");
+    closeDetail();
+    showOnMap(initialFilters(), null, computeResults(initialFilters(), null));
+  }
+  const initialFilters = () => Object.assign({}, BLANK, { from: nowBcn().min });
+
   // Botón de volver arriba: sigue al panel que se está desplazando.
   function bindToTop() {
     const btn = $("toTop");
@@ -833,15 +842,18 @@
     $("list").addEventListener("keydown", (e) => { if (e.key === "Enter") pick(e); });
     $("langs").onclick = (e) => { const b = e.target.closest("button"); if (b && b.dataset.lang !== LNG) setLang(b.dataset.lang); };
     $("nearBtn").onclick = nearMe;
+    $("resetMap").onclick = resetMap;
     bindToTop();
   }
 
   function hideSplash() {
     if (!document.body.classList.contains("loading")) return;
     document.body.classList.remove("loading");
-    const sp = $("splash");
-    sp.classList.add("out");
-    setTimeout(() => sp.remove(), 700);
+    // La barra termina de llenarse y entonces se desvanece la pantalla.
+    const sp = $("splash"), bar = sp.querySelector(".splash-bar i");
+    bar.style.width = getComputedStyle(bar).width; bar.style.animation = "none"; void bar.offsetWidth;
+    bar.style.transition = "width .35s ease-out"; bar.style.width = "100%";
+    setTimeout(() => { sp.classList.add("out"); setTimeout(() => sp.remove(), 700); }, calm() ? 0 : 380);
   }
 
   async function start() {
