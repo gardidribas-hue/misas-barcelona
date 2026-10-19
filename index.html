@@ -20,7 +20,7 @@
 <!-- Pantalla de carga: se va en cuanto el mapa y los datos están listos -->
 <div class="splash" id="splash" aria-hidden="true">
   <div class="splash-in">
-    <span class="b-main">Misas</span>
+    <span class="splash-logo"><span class="b-main" data-i18n="brandMain">Misas</span> <em>Barcelona</em></span>
     <span class="splash-bar"><i></i></span>
   </div>
 </div>
@@ -33,7 +33,7 @@
       <button type="button" data-go="chat" data-i18n="tabChat">Chat</button>
       <button type="button" data-go="map" data-i18n="tabMap">Mapa</button>
     </nav>
-    <button type="button" class="langbtn" id="langBtn" aria-label="Cambiar idioma"></button>
+    <div class="langs" id="langs" role="group" aria-label="Idioma"><button type="button" data-lang="es" aria-label="Castellano" title="Castellano"></button><button type="button" data-lang="ca" aria-label="Català" title="Català"></button></div>
   </div>
 </header>
 

@@ -711,10 +711,10 @@
     document.querySelectorAll("[data-i18n-html]").forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml, { n: DATA.length }); });
     document.querySelectorAll("[data-i18n-ph]").forEach((el) => { el.placeholder = t(el.dataset.i18nPh); });
     document.querySelectorAll("[data-i18n-aria]").forEach((el) => { el.setAttribute("aria-label", t(el.dataset.i18nAria)); });
-    const other = LNG === "es" ? "ca" : "es";
-    $("langBtn").innerHTML = `${FLAG[LNG]}<span>${LNG.toUpperCase()}</span>`;
-    $("langBtn").title = t("switchTo"); $("langBtn").setAttribute("aria-label", t("switchTo"));
-    $("langBtn").dataset.next = other;
+    document.querySelectorAll("#langs button").forEach((b) => {
+      if (!b.innerHTML) b.innerHTML = `${FLAG[b.dataset.lang]}<span>${b.dataset.lang.toUpperCase()}</span>`;
+      b.classList.toggle("on", b.dataset.lang === LNG); b.setAttribute("aria-pressed", b.dataset.lang === LNG);
+    });
     $("ideas").innerHTML = t("ideas").map((q) => `<li><button type="button">${esc(q)}</button></li>`).join("");
   }
   function setLang(l) {
@@ -831,7 +831,7 @@
     const pick = (e) => { const c = e.target.closest(".card"); if (c) openDetail(c.dataset.id); };
     $("list").addEventListener("click", pick);
     $("list").addEventListener("keydown", (e) => { if (e.key === "Enter") pick(e); });
-    $("langBtn").onclick = () => setLang($("langBtn").dataset.next);
+    $("langs").onclick = (e) => { const b = e.target.closest("button"); if (b && b.dataset.lang !== LNG) setLang(b.dataset.lang); };
     $("nearBtn").onclick = nearMe;
     bindToTop();
   }
