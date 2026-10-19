@@ -52,7 +52,7 @@
     ca: {
       wordTitle: "Paraula <em>del dia</em>", todayBtn: "Avui", prayStart: "Resar el rosari", prayExit: "← Misteris", prev: "Anterior", next: "Següent",
       rd: { FR: "1a lectura", PS: "Salm", SR: "2a lectura", GSP: "Evangeli" },
-      wordSource: "Textos: <a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">Evangelio del día</a>.", wordCaNote: "Les lectures es mostren en castellà, tal com les publica la font.",
+      wordSource: "Textos: <a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">Evangelio del día</a>.", wordCaNote: "Les lectures es mostren en castellà, tal com les publica la font.", wordCaFoot: "L'Evangeli del dia en català és d'<a href=\"https://evangeli.net/evangeli\" target=\"_blank\" rel=\"noopener\">evangeli.net</a>; les altres lectures, en castellà, d'<a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">Evangelio del día</a>.",
       wordError: "Ara mateix no he pogut carregar les lectures. Les pots llegir a <a href=\"https://evangeliodeldia.org/SP/gospel\" target=\"_blank\" rel=\"noopener\">evangeliodeldia.org</a>.",
       rosSets: { joyful: "de goig", sorrowful: "de dolor", glorious: "de glòria", luminous: "de llum" }, rosTitle: "Misteris <em>{set}</em>",
       rosDay: "Rosari d'avui · {day}", todayMark: "avui", prevDay: "Dia anterior", nextDay: "Dia següent",

@@ -446,13 +446,13 @@ button, .btn, .card { -webkit-tap-highlight-color: transparent; }
    Palabra del día (verde) y Rosario (azul mariano), mismo estilo
    ===================================================================== */
 [data-kind="word"], .x-word { --accent: #a9d6b6; --accent-strong: #3f8a5a; --accent-soft: #e4f2e8; --accent-ink: #173a24; --hit: #cfe9d6; --hit-ink: #173a24; }
-[data-kind="rosary"], .x-ros { --accent: #b6cbea; --accent-strong: #4a6fa5; --accent-soft: #e6eef9; --accent-ink: #1b2d4a; --hit: #d3e0f3; --hit-ink: #1b2d4a; }
+[data-kind="rosary"], .x-ros { --accent: #ffffff; --accent-strong: #8c8378; --accent-soft: #f6f3ee; --accent-ink: #2c2325; --hit: #f1ede6; --hit-ink: #2c2325; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) [data-kind="word"], :root:not([data-theme="light"]) .x-word { --accent: #9fd0ad; --accent-strong: #b5e0c1; --accent-soft: #22332a; --accent-ink: #12301d; }
-  :root:not([data-theme="light"]) [data-kind="rosary"], :root:not([data-theme="light"]) .x-ros { --accent: #a9c1e6; --accent-strong: #c3d5f0; --accent-soft: #232c3a; --accent-ink: #15243d; }
+  :root:not([data-theme="light"]) [data-kind="rosary"], :root:not([data-theme="light"]) .x-ros { --accent: #f4f1ec; --accent-strong: #e8e2d8; --accent-soft: #2c2a27; --accent-ink: #2c2325; }
 }
 body[data-tone="word"] { background: color-mix(in srgb, var(--backdrop) 90%, #4f9a68); }
-body[data-tone="rosary"] { background: color-mix(in srgb, var(--backdrop) 90%, #5b7fb8); }
+body[data-tone="rosary"] { background: color-mix(in srgb, var(--backdrop) 88%, #ffffff); }
 
 /* Vistas */
 .wordcol, .rosarycol { display: none; }
@@ -540,7 +540,7 @@ body[data-tone="rosary"] { background: color-mix(in srgb, var(--backdrop) 90%, #
   .bottomnav button { font-size: 10.5px; border-radius: 16px; }
   .bottomnav .x-word.on, .bottomnav .x-ros.on { background: var(--accent); color: var(--accent-ink); }
   .bottomnav .x-word:not(.on) svg { color: #a9d6b6; }
-  .bottomnav .x-ros:not(.on) svg { color: #b6cbea; }
+  .bottomnav .x-ros:not(.on) svg { color: #ffffff; }
   .dev-scroll { padding: 0 18px; }
   .dev-inner { padding: 26px 0 32px; gap: 18px; }
   .reading { font-size: 19px; }
@@ -551,3 +551,13 @@ body[data-tone="rosary"] { background: color-mix(in srgb, var(--backdrop) 90%, #
   .pray-card { min-height: 240px; }
 }
 @media (max-width: 860px) { .mys .num { grid-row: span 3; } }
+
+/* Rosario en blanco: los elementos blancos necesitan un borde suave para verse sobre la ventana clara */
+.rosarycol .mys .num, .rosarycol .pray, .rosarycol .pray-nav .accent, .rosarycol .chips button.on, .rosarycol .plangs button.on { box-shadow: 0 0 0 1px rgba(60,45,40,.10), 0 4px 14px rgba(60,45,40,.08); }
+.rosarycol .mys { background: var(--surface); }
+.rosarycol .dev-head h1 em { color: var(--accent-strong); }
+.rosarycol .pray-card { background: #fff; box-shadow: 0 0 0 1px rgba(60,45,40,.06), 0 10px 30px rgba(60,45,40,.06); }
+.extras .x-ros .ico { background: rgba(255,255,255,.16); color: #fff; }
+.extras .x-ros.on .ico { background: var(--surface); color: var(--accent-strong); }
+.widget { border-radius: 22px; overflow: hidden; background: #fff; box-shadow: 0 0 0 1px var(--line); }
+.widget iframe { display: block; width: 100%; height: min(78vh, 900px); border: 0; }

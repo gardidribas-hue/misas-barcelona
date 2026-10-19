@@ -66,7 +66,6 @@
   const ros = { set: BY_DAY[todayCode()], pl: null, steps: [], i: 0 };
   const pl = () => ros.pl || A.lang();
   const store = (k, v) => { try { v === undefined ? (v = localStorage.getItem(k)) : localStorage.setItem(k, v); } catch (e) { /* sin almacenamiento */ } return v; };
-  ros.pl = (["es", "ca", "la"].includes(store("misas-rezo")) && store("misas-rezo")) || null;
 
   function renderRosary() {
     const L = PL[pl()], list = SETS[ros.set], D = t("days");
@@ -174,14 +173,17 @@
     $("wordDate").textContent = new Intl.DateTimeFormat(L === "ca" ? "ca-ES" : "es-ES", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" }).format(word.date);
     $("wordToday").classList.toggle("on", key === ymd(todayBcnDate()));
     $("wordPrev").setAttribute("aria-label", t("prevDay")); $("wordNext").setAttribute("aria-label", t("nextDay"));
-    $("wordFoot").innerHTML = [t("wordCaNote"), t("wordSource")].filter(Boolean).join(" ");
+    $("wordFoot").innerHTML = caToday() ? t("wordCaFoot") : [t("wordCaNote"), t("wordSource")].filter(Boolean).join(" ");
     $("wordLit").textContent = "";
     $("wordTabs").innerHTML = "";
     $("reading").innerHTML = `<div class="skel"></div><div class="skel short"></div><div class="skel"></div>`;
     let day;
     try { day = await loadDay(key); } catch (e) {
+      if (caToday()) { day = { title: "", readings: { GSP: { ref: "", text: "" } } }; }
+      else {
       if (key === ymd(word.date)) $("reading").innerHTML = `<p class="empty">${t("wordError")}</p>`;
       return;
+      }
     }
     if (key !== ymd(word.date)) return; // el usuario ya ha cambiado de día
     $("wordLit").textContent = day.title;
@@ -193,8 +195,17 @@
     $("wordTabs").style.setProperty("--idx", avail.indexOf(word.tab));
     showReading(day);
   }
+  // En catalán, el Evangelio de hoy se muestra con el widget oficial de evangeli.net.
+  const CA_WIDGET = "https://evangeli.net/evangeli/widget/web";
+  const caToday = () => A.lang() === "ca" && ymd(word.date) === ymd(todayBcnDate());
   function showReading(day) {
     const r = day.readings[word.tab];
+    if (word.tab === "GSP" && caToday()) {
+      const el = $("reading");
+      el.classList.remove("swap"); void el.offsetWidth; el.classList.add("swap");
+      el.innerHTML = `<div class="widget"><iframe src="${CA_WIDGET}" title="Evangeli del dia (evangeli.net)" loading="lazy"></iframe></div>`;
+      return;
+    }
     const paras = r.text.split(/\n{2,}|\n/).filter(Boolean);
     const el = $("reading");
     el.classList.remove("swap"); void el.offsetWidth; el.classList.add("swap");
@@ -210,7 +221,7 @@
     if (mode === "rosary" && !rosReady) { rosReady = true; renderRosary(); }
   }
   document.addEventListener("misas:mode", onMode);
-  A.onLang(() => { if (wordReady) renderWord(); if (rosReady) { renderRosary(); if (!$("prayMode").hidden) renderStep(); } });
+  A.onLang(() => { ros.pl = null; if (wordReady) renderWord(); if (rosReady) { renderRosary(); if (!$("prayMode").hidden) renderStep(); } });
 
   $("wordPrev").onclick = () => shiftDay(-1);
   $("wordNext").onclick = () => shiftDay(1);
@@ -224,7 +235,7 @@
   };
 
   $("rosSets").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.set = b.dataset.set; renderRosary(); } };
-  $("plangs").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.pl = b.dataset.pl; store("misas-rezo", ros.pl); renderRosary(); } };
+  $("plangs").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.pl = b.dataset.pl === A.lang() ? null : b.dataset.pl; renderRosary(); } };
   $("prayBtn").onclick = startPray;
   $("prayExit").onclick = exitPray;
   $("prayPrev").onclick = () => step(-1);
