@@ -338,6 +338,9 @@ body[data-tone="adoration"] { background: color-mix(in srgb, var(--backdrop) 90%
 .langs button.on { opacity: 1; background: rgba(255,255,255,.12); color: var(--backdrop-ink); }
 .langs button.on svg { filter: none; box-shadow: 0 0 0 2px var(--gold); }
 .langs button:active { transform: scale(.94); }
+.modes button { padding: 3px; }
+.modes button svg { filter: none; }
+.modes button:not(.on) svg { opacity: .55; }
 @media (hover: hover) { .langs button:not(.on):hover { opacity: .9; } .langs button:hover svg { transform: rotate(-12deg) scale(1.06); } }
 body.lang-swap .chatcol, body.lang-swap .side, body.lang-swap .top { opacity: .35; transition: opacity .16s; }
 .chatcol, .side, .top { transition: opacity .25s var(--ease); }
@@ -400,6 +403,7 @@ button, .btn, .card { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 860px) {
   .tabs { display: none; }
   .langs button { padding: 2px; }
+  .modes { gap: 2px; }
   .langs button span { display: none; }
   .langs svg { width: 28px; height: 28px; }
   :root { --nav: 64px; }
