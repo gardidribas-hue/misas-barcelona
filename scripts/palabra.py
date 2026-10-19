@@ -86,8 +86,9 @@ def vatican(day):
     return out
 
 
-def translate_ca(paras):
-    """Traducción automática castellano -> catalán (Apertium; si falla, Google Translate)."""
+def translate_ca(paras, prefer_google=False):
+    """Traducción automática castellano -> catalán (Apertium; si falla, Google Translate).
+    Para el nombre del día va mejor Google: Apertium deja sin traducir «Domingo» o los nombres de santos."""
     import urllib.parse
     def apertium(q):
         url = "https://www.apertium.org/apy/translate?" + urllib.parse.urlencode({"langpair": "spa|cat", "markUnknown": "no", "q": q})
@@ -97,7 +98,8 @@ def translate_ca(paras):
         url = "https://translate.googleapis.com/translate_a/single?" + urllib.parse.urlencode({"client": "gtx", "sl": "es", "tl": "ca", "dt": "t", "q": q})
         with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
             return "".join(seg[0] for seg in json.loads(r.read())[0])
-    for name, fn in (("Apertium", apertium), ("Google Translate", google)):
+    engines = [("Apertium", apertium), ("Google Translate", google)]
+    for name, fn in (engines[::-1] if prefer_google else engines):
         try:
             out = [clean(fn(p)) for p in paras]
             if all(out):
@@ -164,7 +166,7 @@ def catalan(day, es):
     title = ""
     if es.get("title"):  # el mismo nombre del día que en castellano, traducido
         try:
-            title = translate_ca([es["title"]])[0][0]
+            title = translate_ca([es["title"]], prefer_google=True)[0][0]
         except Exception:
             pass
     out = {"title": title, "url": readings[-1].pop("url"), "source": "Bíblia Catalana Interconfessional",
