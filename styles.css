@@ -214,9 +214,10 @@ h1 em { color: var(--accent-strong); }
 .maplibregl-ctrl-group { border-radius: 14px !important; overflow: hidden; box-shadow: var(--shadow) !important; }
 .maplibregl-ctrl-top-right { top: 6px; right: 6px; }
 
-.pin { appearance: none; padding: 0; margin: 0; display: block; width: 14px; height: 14px; border-radius: 50%; background: var(--accent-strong); border: 2.5px solid #fff; box-shadow: 0 1px 5px rgba(0,0,0,.3); cursor: pointer; transition: transform .15s var(--ease); }
-.pin:hover { transform: scale(1.35); }
-.pin.on { width: auto; height: auto; border-radius: 999px; background: var(--accent); color: var(--accent-ink); padding: 5px 12px; font: 800 13px/1.2 var(--ui); white-space: nowrap; transform: translateY(-50%); }
+.pin { appearance: none; padding: 0; margin: 0; display: block; width: 14px; height: 14px; border-radius: 50%; background: var(--accent-strong); border: 2.5px solid #fff; box-shadow: 0 1px 5px rgba(0,0,0,.3); cursor: pointer; transition: background .2s, box-shadow .2s; }
+/* MapLibre coloca cada punto con transform: nada debe animar ni cambiar el transform del punto, o se tambalea al mover el mapa */
+.pin:hover { box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-strong) 30%, transparent), 0 1px 5px rgba(0,0,0,.3); }
+.pin.on { width: auto; height: auto; border-radius: 999px; background: var(--accent); color: var(--accent-ink); padding: 5px 12px; font: 800 13px/1.2 var(--ui); white-space: nowrap; }
 .pin.me { background: #fff; width: 18px; height: 18px; border: 5px solid var(--accent-strong); box-shadow: 0 0 0 8px rgba(228,125,130,.25); }
 .maplibregl-ctrl-attrib { font-size: 11px; border-radius: 10px 0 0 0; }
 
@@ -433,3 +434,10 @@ button, .btn, .card { -webkit-tap-highlight-color: transparent; }
 .near.reset svg.turn { animation: unspin .6s var(--ease); }
 @keyframes unspin { from { transform: rotate(0); } to { transform: rotate(-360deg); } }
 @media (hover: hover) { .near.reset:hover svg { transform: rotate(-40deg); color: var(--accent-strong); } }
+
+/* «confesiones» y «adoración» en sus colores en la portada del chat */
+.lede .k-conf { color: #7f5cb8; }
+.lede .k-ador { color: #a67b17; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .lede .k-conf { color: #cfbaf3; } :root:not([data-theme="light"]) .lede .k-ador { color: #ecd290; } }
+:root[data-theme="dark"] .lede .k-conf { color: #cfbaf3; }
+:root[data-theme="dark"] .lede .k-ador { color: #ecd290; }
