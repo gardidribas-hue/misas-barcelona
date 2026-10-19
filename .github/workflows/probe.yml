@@ -1,0 +1,12 @@
+name: probe-palabra
+on:
+  push:
+    branches: [claude/project-thread-3pofmn]
+    paths: [scripts/probe_palabra.py, .github/workflows/probe.yml]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install beautifulsoup4
+      - run: python scripts/probe_palabra.py https://www.vaticannews.va/es/evangelio-de-hoy.html https://www.vaticannews.va/es/evangelio-de-hoy/2026/10/19.html https://evangeli.net/evangeli/dia/2026-10-19 | head -400
