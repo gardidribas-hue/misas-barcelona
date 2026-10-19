@@ -5,20 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Misas Barcelona</title>
 <meta name="description" content="Encuentra misas, confesiones y adoración eucarística en las parroquias de la Archidiócesis de Barcelona.">
+<meta name="theme-color" content="#2f2729">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>
+<link rel="preload" as="script" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="loading">
+
+<!-- Pantalla de carga: se va en cuanto el mapa y los datos están listos -->
+<div class="splash" id="splash" aria-hidden="true">
+  <div class="splash-in">
+    <span class="b-main">Misas</span>
+    <span class="splash-bar"><i></i></span>
+  </div>
+</div>
+
 <header class="top">
-  <button type="button" class="brand" data-go="home" aria-label="Misas, Archidiócesis de Barcelona. Inicio"><span class="b-main">Misas</span><span class="b-stack"><em class="b-arch">Archidiócesis de</em><em class="b-city">Barcelona</em></span></button>
-  <nav class="tabs" aria-label="Vistas">
-    <button type="button" data-go="home" class="on">Inicio</button>
-    <button type="button" data-go="chat">Chat</button>
-    <button type="button" data-go="map">Mapa</button>
-  </nav>
+  <button type="button" class="brand" data-go="home" aria-label="Misas, Archidiócesis de Barcelona. Inicio"><span class="b-main" data-i18n="brandMain">Misas</span><span class="b-stack"><em class="b-arch" data-i18n="brandArch">Archidiócesis de</em><em class="b-city">Barcelona</em></span></button>
+  <div class="top-right">
+    <nav class="tabs" aria-label="Vistas">
+      <button type="button" data-go="home" class="on" data-i18n="tabHome">Inicio</button>
+      <button type="button" data-go="chat" data-i18n="tabChat">Chat</button>
+      <button type="button" data-go="map" data-i18n="tabMap">Mapa</button>
+    </nav>
+    <button type="button" class="langbtn" id="langBtn" aria-label="Cambiar idioma"></button>
+  </div>
 </header>
 
 <main class="stage" id="stage" data-mode="home">
@@ -27,9 +43,9 @@
   <section class="chatcol win" aria-label="Asistente">
     <div class="chat-scroll" id="chatScroll">
       <div class="hero" id="hero">
-        <p class="eyebrow">Archidiócesis de Barcelona · <span id="parishCount">211</span> parroquias</p>
-        <h1>¿Dónde quieres ir a <em>misa</em>?</h1>
-        <p class="lede">Dime dónde estás y a qué hora te va bien. También busco <strong><em>confesiones</em></strong> y <strong><em>adoración</em></strong>.</p>
+        <p class="eyebrow" data-i18n-html="eyebrow">Archidiócesis de Barcelona · <span id="parishCount">211</span> parroquias</p>
+        <h1 data-i18n-html="heroTitle">¿Dónde quieres ir a <em>misa</em>?</h1>
+        <p class="lede" data-i18n-html="heroLede">Dime dónde estás y a qué hora te va bien. También busco <strong><em>confesiones</em></strong> y <strong><em>adoración</em></strong>.</p>
       </div>
       <div class="thread" id="thread" aria-live="polite"></div>
     </div>
@@ -49,53 +65,80 @@
     <aside class="side win" id="side">
       <div class="filters" id="filters">
         <div class="seg" role="group" aria-label="Qué buscas">
-          <button type="button" data-kind="mass" class="on">Misa</button>
-          <button type="button" data-kind="confession">Confesión</button>
-          <button type="button" data-kind="adoration">Adoración</button>
+          <button type="button" data-kind="mass" class="on" data-i18n="kindMass">Misa</button>
+          <button type="button" data-kind="confession" data-i18n="kindConf">Confesión</button>
+          <button type="button" data-kind="adoration" data-i18n="kindAdor">Adoración</button>
         </div>
         <div class="grid3">
-          <label>Día<select id="fDay"></select></label>
-          <label>Desde<select id="fFrom"></select></label>
-          <label>Hasta<select id="fTo"></select></label>
+          <label><span data-i18n="lblDay">Día</span><select id="fDay"></select></label>
+          <label><span data-i18n="lblFrom">Desde</span><select id="fFrom"></select></label>
+          <label><span data-i18n="lblTo">Hasta</span><select id="fTo"></select></label>
         </div>
         <div class="grid2">
-          <label>Municipio<select id="fMun"></select></label>
-          <label>Idioma<select id="fLang">
-            <option value="">Cualquiera</option><option value="ca">Catalán</option>
-            <option value="es">Castellano</option><option value="other">Otros idiomas</option>
+          <label><span data-i18n="lblMun">Municipio</span><select id="fMun"></select></label>
+          <label><span data-i18n="lblLang">Idioma</span><select id="fLang">
+            <option value="" data-i18n="langAny">Cualquiera</option><option value="ca" data-i18n="langCa">Catalán</option>
+            <option value="es" data-i18n="langEs">Castellano</option><option value="other" data-i18n="langOther">Otros idiomas</option>
           </select></label>
         </div>
         <div class="districts" id="districts" hidden>
-          <span class="label">Distritos</span>
+          <span class="label" data-i18n="lblDist">Distritos</span>
           <div class="chips" id="distChips"></div>
         </div>
-        <input id="fText" type="search" placeholder="Nombre de la parroquia o calle" aria-label="Buscar por nombre o calle">
-        <button type="button" class="link" id="reset">Quitar filtros</button>
+        <input id="fText" type="search" placeholder="Nombre de la parroquia o calle" data-i18n-ph="searchPh" aria-label="Buscar por nombre o calle">
+        <button type="button" class="link" id="reset" data-i18n="reset">Quitar filtros</button>
       </div>
       <div class="summary" id="summary" aria-live="polite"></div>
-      <ul class="cards list" id="list"></ul>
+      <ul class="cards list" id="list">
+        <li class="skel"></li><li class="skel"></li><li class="skel"></li><li class="skel"></li>
+      </ul>
       <section class="detail" id="detail" hidden aria-label="Ficha de la parroquia"></section>
     </aside>
     <div class="mapwrap win">
       <div id="map" role="region" aria-label="Mapa de parroquias"></div>
       <div class="floatbar" id="floatbar">
         <div class="seg mini" role="group" aria-label="Qué buscas">
-          <button type="button" data-kind="mass" class="on">Misa</button>
-          <button type="button" data-kind="confession">Confesión</button>
-          <button type="button" data-kind="adoration">Adoración</button>
+          <button type="button" data-kind="mass" class="on" data-i18n="kindMass">Misa</button>
+          <button type="button" data-kind="confession" data-i18n="kindConf">Confesión</button>
+          <button type="button" data-kind="adoration" data-i18n="kindAdor">Adoración</button>
         </div>
-        <button type="button" class="pill" data-go="map">Filtros y lista</button>
+        <button type="button" class="pill" data-go="map" data-i18n="filtersList">Filtros y lista</button>
       </div>
+      <button type="button" class="near" id="nearBtn">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2v3M12 19v3M2 12h3M19 12h3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/></svg>
+        <span data-i18n="nearMe">Cerca de mí</span>
+      </button>
       <div class="maplabel" id="mapLabel"></div>
     </div>
   </section>
 </main>
 
-<script src="config.js"></script>
-<script src="data/parroquias.js"></script>
-<script src="data/geo.js"></script>
-<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-<script src="zonas.js"></script>
-<script src="app.js"></script>
+<!-- Navegación inferior en el móvil -->
+<nav class="bottomnav" aria-label="Vistas">
+  <button type="button" data-go="home" class="on">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
+    <span data-i18n="tabHome">Inicio</span>
+  </button>
+  <button type="button" data-go="chat">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 19 17h-7l-4.5 3.5V17H5a1.5 1.5 0 0 1-1.5-1.5v-9A1.5 1.5 0 0 1 5 5z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
+    <span data-i18n="tabChat">Chat</span>
+  </button>
+  <button type="button" data-go="map">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.4-6.5 11-6.5 11z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.9"/></svg>
+    <span data-i18n="tabMap">Mapa</span>
+  </button>
+</nav>
+
+<button type="button" class="totop" id="toTop" aria-label="Volver arriba" data-i18n-aria="toTop" hidden>
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script defer src="config.js"></script>
+<script defer src="data/parroquias.js"></script>
+<script defer src="data/geo.js"></script>
+<script defer src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" crossorigin></script>
+<script defer src="zonas.js"></script>
+<script defer src="app.js"></script>
 </body>
 </html>

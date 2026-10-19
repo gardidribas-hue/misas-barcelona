@@ -30,7 +30,9 @@ cd web-misas && python3 -m http.server 8000   # y abre http://localhost:8000
 - Chat: escribes lo que buscas (con ideas de ejemplo en gris) y responde con las parroquias que encajan; «Ver en el mapa» las lleva al mapa.
 - Mapa vectorial moderno y gratuito (MapLibre con el estilo Liberty de OpenFreeMap, actualizado cada semana desde OpenStreetMap). Con una clave de Google Maps en `config.js` se usa Google Maps.
 - Filtros: misa / confesión / adoración, día, franja horaria, municipio, idioma y texto. En Barcelona se puede elegir distrito: se marca en rojo translúcido en el mapa, y también se puede pulsar el distrito en el propio mapa.
-- "Cerca de mí": ordena por distancia usando la ubicación del móvil.
+- "Cerca de mí": en el chat («misa ahora cerca de mí») y con el botón del mapa; ordena por distancia usando tu ubicación.
+- Castellano y catalán: botón con la bandera arriba a la derecha (se recuerda en el navegador; por defecto, el idioma del navegador).
+- Móvil: barra de navegación inferior, botón de volver arriba, pantalla de carga y esqueletos mientras llegan los datos.
 - Ficha de cada parroquia: horarios, confesiones, adoración, teléfono, web y "Cómo llegar" (Google Maps).
 
 ## Google Maps

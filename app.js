@@ -7,19 +7,91 @@
   const GEO = window.MISAS_GEO || { municipios: [], distritos: {} };
   const BARRIOS = window.MISAS_BARRIOS || {};
   const DAY_CODES = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
-  const DAY_NAMES = { mon: "lunes", tue: "martes", wed: "miércoles", thu: "jueves", fri: "viernes", sat: "sábado", sun: "domingo" };
-  const DAY_SHORT = { mon: "L", tue: "M", wed: "X", thu: "J", fri: "V", sat: "S", sun: "D", hol: "F" };
-  const KIND_PL = { mass: "misas", confession: "confesiones", adoration: "adoración" };
-  const LANG = { ca: "cat", es: "cast", "ca-es": "cat/cast", en: "en", fr: "fr", de: "de", it: "it", pl: "pl", other: "otro" };
-  const IDEAS = [
-    "Estoy en Gràcia y quiero ir a misa entre las 17 y las 20",
-    "Misa el domingo por la mañana en Sarrià",
-    "Confesiones el sábado en Badalona",
-    "Adoración hoy en el Eixample",
-    "Missa en català demà al vespre a Sants",
-    "Misa ahora cerca de mí"
-  ];
-  const HINTS = ["Misa ahora cerca de mí", "Gràcia, entre las 17 y las 20", "Confesiones el sábado", "Adoración en el Eixample", "Domingo por la mañana en Sarrià", "Missa en català a Sants"];
+  const LANG = { ca: "cat", es: "cast", "ca-es": "cat/cast", en: "en", fr: "fr", de: "de", it: "it", pl: "pl" };
+  // ---------- Idiomas: castellano y catalán ----------
+  const I18N = {
+    es: {
+      brandMain: "Misas", brandArch: "Archidiócesis de", tabHome: "Inicio", tabChat: "Chat", tabMap: "Mapa",
+      eyebrow: "Archidiócesis de Barcelona · <span id=\"parishCount\">{n}</span> parroquias",
+      heroTitle: "¿Dónde quieres ir a <em>misa</em>?",
+      heroLede: "Dime dónde estás y a qué hora te va bien. También busco <strong><em>confesiones</em></strong> y <strong><em>adoración</em></strong>.",
+      kindMass: "Misa", kindConf: "Confesión", kindAdor: "Adoración",
+      lblDay: "Día", lblFrom: "Desde", lblTo: "Hasta", lblMun: "Municipio", lblLang: "Idioma", lblDist: "Distritos",
+      langAny: "Cualquiera", langCa: "Catalán", langEs: "Castellano", langOther: "Otros idiomas",
+      searchPh: "Nombre de la parroquia o calle", reset: "Quitar filtros", filtersList: "Filtros y lista",
+      nearMe: "Cerca de mí", toTop: "Volver arriba", switchTo: "Canviar a català", loading: "Cargando parroquias…",
+      days: { mon: "lunes", tue: "martes", wed: "miércoles", thu: "jueves", fri: "viernes", sat: "sábado", sun: "domingo" },
+      dayShort: { mon: "L", tue: "M", wed: "X", thu: "J", fri: "V", sat: "S", sun: "D", hol: "F" },
+      todayOpt: "Hoy ({d})", tomorrow: "Mañana", sunHol: "Domingo y festivos", anyDay: "Cualquier día",
+      allMun: "Todos los municipios", byDist: " · por distritos", allBcn: "Toda Barcelona",
+      kindPl: { mass: "misas", confession: "confesiones", adoration: "adoración" },
+      today: "hoy", tomorrowL: "mañana", anyDayL: "cualquier día", onSun: "el domingo o festivo", onDay: "el {d}",
+      fromT: ", desde las {t}", beforeT: ", antes de las {t}", rangeT: ", de {a} a {b}",
+      nearYou: " cerca de ti", nearX: " cerca de {x}", inX: " en {x}",
+      parish1: "parroquia", parishN: "parroquias", byDistance: ", de la más cercana a la más lejana", byTime: ", por orden de hora",
+      seeAll: "Ver las {n} en el mapa", seeMap: "Ver en el mapa", seeMore: "Ver {n} más", seeLess: "Ver menos",
+      noneChat: "No he encontrado nada. Prueba con otra hora («por la tarde»), otro día o una zona más amplia.",
+      noneList: "No hay resultados. Amplía la franja horaria o quita algún filtro.",
+      noLocation: "No puedo saber dónde estás. Dime el barrio, el distrito o el municipio, por ejemplo: «estoy en Sants».",
+      noLocationMap: "No he podido acceder a tu ubicación.",
+      think: { mass: "Buscando misas…", confession: "Buscando confesiones…", adoration: "Buscando adoración…", times: "Mirando horarios…" },
+      soft: "confesión antes de misa o a petición", langOtherShort: "otro",
+      back: "← Volver a la lista", district: "Distrito {d}", community: "Comunidad pastoral {c}",
+      directions: "Cómo llegar", web: "Web", official: "Ficha oficial",
+      hMass: "Misas", noMass: "Esta parroquia no publica horario de misas.", hConf: "Confesiones", hAdor: "Adoración eucarística", hOther: "Otras celebraciones",
+      monSat: "Lun–Sáb", monFri: "Lun–Vie", sundays: "Domingos", districtLbl: "Distrito", youAreHere: "Estás aquí", askMore: "Pregunta otra cosa… ",
+      ideas: ["Estoy en Gràcia y quiero ir a misa entre las 17 y las 20", "Misa el domingo por la mañana en Sarrià", "Confesiones el sábado en Sants", "Adoración hoy en el Eixample"],
+      hints: ["Misa ahora cerca de mí", "Gràcia, entre las 17 y las 20", "Confesiones el sábado", "Adoración en el Eixample", "Domingo por la mañana en Sarrià", "Misa en castellano en Sants"]
+    },
+    ca: {
+      brandMain: "Misses", brandArch: "Arxidiòcesi de", tabHome: "Inici", tabChat: "Xat", tabMap: "Mapa",
+      eyebrow: "Arxidiòcesi de Barcelona · <span id=\"parishCount\">{n}</span> parròquies",
+      heroTitle: "On vols anar a <em>missa</em>?",
+      heroLede: "Digues-me on ets i a quina hora et va bé. També busco <strong><em>confessions</em></strong> i <strong><em>adoració</em></strong>.",
+      kindMass: "Missa", kindConf: "Confessió", kindAdor: "Adoració",
+      lblDay: "Dia", lblFrom: "Des de", lblTo: "Fins a", lblMun: "Municipi", lblLang: "Idioma", lblDist: "Districtes",
+      langAny: "Qualsevol", langCa: "Català", langEs: "Castellà", langOther: "Altres idiomes",
+      searchPh: "Nom de la parròquia o carrer", reset: "Treure filtres", filtersList: "Filtres i llista",
+      nearMe: "A prop meu", toTop: "Tornar a dalt", switchTo: "Cambiar a castellano", loading: "Carregant parròquies…",
+      days: { mon: "dilluns", tue: "dimarts", wed: "dimecres", thu: "dijous", fri: "divendres", sat: "dissabte", sun: "diumenge" },
+      dayShort: { mon: "Dl", tue: "Dt", wed: "Dc", thu: "Dj", fri: "Dv", sat: "Ds", sun: "Dg", hol: "F" },
+      todayOpt: "Avui ({d})", tomorrow: "Demà", sunHol: "Diumenge i festius", anyDay: "Qualsevol dia",
+      allMun: "Tots els municipis", byDist: " · per districtes", allBcn: "Tot Barcelona",
+      kindPl: { mass: "misses", confession: "confessions", adoration: "adoració" },
+      today: "avui", tomorrowL: "demà", anyDayL: "qualsevol dia", onSun: "el diumenge o festiu", onDay: "el {d}",
+      fromT: ", des de les {t}", beforeT: ", abans de les {t}", rangeT: ", de {a} a {b}",
+      nearYou: " a prop teu", nearX: " a prop de {x}", inX: " a {x}",
+      parish1: "parròquia", parishN: "parròquies", byDistance: ", de la més propera a la més llunyana", byTime: ", per ordre d'hora",
+      seeAll: "Veure les {n} al mapa", seeMap: "Veure al mapa", seeMore: "Veure'n {n} més", seeLess: "Veure'n menys",
+      noneChat: "No he trobat res. Prova amb una altra hora («a la tarda»), un altre dia o una zona més àmplia.",
+      noneList: "No hi ha resultats. Amplia la franja horària o treu algun filtre.",
+      noLocation: "No puc saber on ets. Digues-me el barri, el districte o el municipi, per exemple: «soc a Sants».",
+      noLocationMap: "No he pogut accedir a la teva ubicació.",
+      think: { mass: "Buscant misses…", confession: "Buscant confessions…", adoration: "Buscant adoració…", times: "Mirant horaris…" },
+      soft: "confessió abans de missa o a petició", langOtherShort: "altre",
+      back: "← Tornar a la llista", district: "Districte {d}", community: "Comunitat pastoral {c}",
+      directions: "Com arribar-hi", web: "Web", official: "Fitxa oficial",
+      hMass: "Misses", noMass: "Aquesta parròquia no publica horari de misses.", hConf: "Confessions", hAdor: "Adoració eucarística", hOther: "Altres celebracions",
+      monSat: "Dl–Ds", monFri: "Dl–Dv", sundays: "Diumenges", districtLbl: "Districte", youAreHere: "Ets aquí", askMore: "Pregunta una altra cosa… ",
+      ideas: ["Soc a Gràcia i vull anar a missa entre les 17 i les 20", "Missa diumenge al matí a Sarrià", "Confessions dissabte a Sants", "Adoració avui a l'Eixample"],
+      hints: ["Missa ara a prop meu", "Gràcia, entre les 17 i les 20", "Confessions dissabte", "Adoració a l'Eixample", "Diumenge al matí a Sarrià", "Missa en català a Sants"]
+    }
+  };
+  let LNG = (() => {
+    try { const s = localStorage.getItem("misas-lang"); if (s === "es" || s === "ca") return s; } catch (e) { /* sin almacenamiento */ }
+    return /^ca\b/i.test(navigator.language || "") ? "ca" : "es";
+  })();
+  const t = (key, vars) => {
+    let s = I18N[LNG][key]; if (s == null) s = I18N.es[key];
+    if (vars && typeof s === "string") s = s.replace(/\{(\w+)\}/g, (m, k) => vars[k] != null ? vars[k] : m);
+    return s;
+  };
+  const cap = (s) => s[0].toUpperCase() + s.slice(1);
+  // Banderas redondas (SVG en línea, sin peticiones extra)
+  const FLAG = {
+    es: `<svg viewBox="0 0 24 24" aria-hidden="true"><clipPath id="fe"><circle cx="12" cy="12" r="12"/></clipPath><g clip-path="url(#fe)"><rect width="24" height="24" fill="#c60b1e"/><rect y="6" width="24" height="12" fill="#ffc400"/></g></svg>`,
+    ca: `<svg viewBox="0 0 24 24" aria-hidden="true"><clipPath id="fc"><circle cx="12" cy="12" r="12"/></clipPath><g clip-path="url(#fc)"><rect width="24" height="24" fill="#fcdd09"/><g fill="#da121a"><rect y="2.67" width="24" height="2.67"/><rect y="8" width="24" height="2.67"/><rect y="13.33" width="24" height="2.67"/><rect y="18.67" width="24" height="2.67"/></g></g></svg>`
+  };
 
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -227,6 +299,8 @@
       map.on("mouseleave", "outlines-fill", () => { map.getCanvas().style.cursor = ""; if (hover !== null) map.setFeatureState({ source: "outlines", id: hover }, { hover: false }); hover = null; });
       map.on("click", "outlines-fill", (e) => MapView.onAreaClick && MapView.onAreaClick(e.features[0].properties.name));
       loaded = true; pending.forEach((fn) => fn()); pending = [];
+      $("map").classList.add("ready");
+      MapView.onLoad && MapView.onLoad();
     });
     let me = null;
     Object.assign(MapView, {
@@ -265,7 +339,7 @@
       },
       showUser(ll) {
         if (me) me.remove();
-        const el = document.createElement("div"); el.className = "pin me"; el.title = "Estás aquí";
+        const el = document.createElement("div"); el.className = "pin me"; el.title = t("youAreHere");
         me = new maplibregl.Marker({ element: el }).setLngLat([ll[1], ll[0]]).addTo(map);
       },
       resize() { map.resize(); }
@@ -288,6 +362,7 @@
         area.setStyle({ fillColor: line, fillOpacity: 0.26, strokeColor: line, strokeWeight: 2.5, clickable: false });
       };
       MapView.recolor();
+      google.maps.event.addListenerOnce(map, "tilesloaded", () => { $("map").classList.add("ready"); MapView.onLoad && MapView.onLoad(); });
       outlines.addListener("mouseover", (e) => outlines.overrideStyle(e.feature, { fillOpacity: 0.14 }));
       outlines.addListener("mouseout", () => outlines.revertStyle());
       outlines.addListener("click", (e) => MapView.onAreaClick && MapView.onAreaClick(e.feature.getProperty("name")));
@@ -326,7 +401,7 @@
         showUser(ll) {
           if (me) me.map = null;
           const el = document.createElement("div"); el.className = "pin me";
-          me = new google.maps.marker.AdvancedMarkerElement({ map, position: { lat: ll[0], lng: ll[1] }, title: "Estás aquí", content: el });
+          me = new google.maps.marker.AdvancedMarkerElement({ map, position: { lat: ll[0], lng: ll[1] }, title: t("youAreHere"), content: el });
         },
         resize() {}
       });
@@ -335,10 +410,10 @@
 
   async function initMap() {
     try {
-      if (CFG.googleMapsApiKey) await initGoogle(); else initMapLibre();
+      if (CFG.googleMapsApiKey) await initGoogle(); else if (window.maplibregl) initMapLibre();
     } catch (e) {
       console.warn("Google Maps no disponible; uso el mapa vectorial", e);
-      initMapLibre();
+      if (window.maplibregl) initMapLibre();
     }
     MapView.ready = true;
     MapView.onAreaClick = (name) => { state.dist = name; state.origin = null; setMode("map"); applyFilters(); };
@@ -351,7 +426,8 @@
     const apply = () => {
       state.mode = mode;
       $("stage").dataset.mode = mode;
-      document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.go === mode));
+      document.querySelectorAll(".tabs button, .bottomnav button").forEach((b) => b.classList.toggle("on", b.dataset.go === mode));
+      document.dispatchEvent(new Event("misas:mode"));
       MapView.resize && MapView.resize();
       if (state.pendingFit && mode !== "chat") refit();
     };
@@ -368,10 +444,10 @@
 
   // ---------- Pintar resultados ----------
   function timesHtml(r, kind, day) {
-    if (r.soft) return `<span class="t note">confesión antes de misa o a petición</span>` + r.hits.map((h) => `<span class="t hit">${h.start}</span>`).join("");
+    if (r.soft) return `<span class="t note">${t("soft")}</span>` + r.hits.map((h) => `<span class="t hit">${h.start}</span>`).join("");
     const hit = new Set(r.hits);
     return (eventsOf(r.p, kind) || []).filter((ev) => dayMatch(ev, day))
-      .map((ev) => `<span class="t ${hit.has(ev) ? "hit" : ""}">${ev.start}${ev.end ? "–" + ev.end : ""}${ev.lang ? `<small>${LANG[ev.lang] || ev.lang}</small>` : ""}</span>`).join("");
+      .map((ev) => `<span class="t ${hit.has(ev) ? "hit" : ""}">${ev.start}${ev.end ? "–" + ev.end : ""}${ev.lang ? `<small>${LANG[ev.lang] || (ev.lang === "other" ? t("langOtherShort") : ev.lang)}</small>` : ""}</span>`).join("");
   }
   function cardHtml(r, kind, day) {
     const p = r.p;
@@ -386,11 +462,12 @@
 
   function describe(f, zone, near) {
     const day = resolvedDay(f.day);
-    const dayTxt = f.day === "today" ? "hoy" : f.day === "tomorrow" ? "mañana" : f.day === "any" ? "cualquier día" : day === "sun" ? "el domingo o festivo" : `el ${DAY_NAMES[day]}`;
-    const t = f.from === 0 && f.to >= 1439 ? "" : f.to >= 1439 ? `, desde las ${fmt(f.from)}` : f.from === 0 ? `, antes de las ${fmt(f.to)}` : `, de ${fmt(f.from)} a ${fmt(f.to)}`;
-    const where = near ? " cerca de ti" : zone && zone.type === "barrio" ? ` cerca de ${title(zone.name)}` : f.dist ? ` en ${f.dist}` : f.mun ? ` en ${f.mun}` : zone ? ` cerca de ${zone.name}` : "";
-    return `<strong>${KIND_PL[f.kind][0].toUpperCase() + KIND_PL[f.kind].slice(1)}</strong> ${dayTxt}${t}<em>${esc(where)}</em>`;
+    const dayTxt = f.day === "today" ? t("today") : f.day === "tomorrow" ? t("tomorrowL") : f.day === "any" ? t("anyDayL") : day === "sun" ? t("onSun") : t("onDay", { d: t("days")[day] });
+    const tm = f.from === 0 && f.to >= 1439 ? "" : f.to >= 1439 ? t("fromT", { t: fmt(f.from) }) : f.from === 0 ? t("beforeT", { t: fmt(f.to) }) : t("rangeT", { a: fmt(f.from), b: fmt(f.to) });
+    const where = near ? t("nearYou") : zone && zone.type === "barrio" ? t("nearX", { x: title(zone.name) }) : f.dist ? t("inX", { x: f.dist }) : f.mun ? t("inX", { x: f.mun }) : zone ? t("nearX", { x: zone.name }) : "";
+    return `<strong>${cap(t("kindPl")[f.kind])}</strong> ${dayTxt}${tm}<em>${esc(where)}</em>`;
   }
+  const nParishes = (n) => `${n} ${n === 1 ? t("parish1") : t("parishN")}`;
 
   function computeResults(f, origin) {
     let res = search(f, origin);
@@ -416,8 +493,11 @@
       // Si el mapa está oculto (vista de chat), el encuadre se hace al mostrarlo.
       if ($("map").offsetWidth) refit(); else state.pendingFit = true;
     }
+    showOnMapLabel();
+  }
+  function showOnMapLabel() {
     const lbl = $("mapLabel");
-    lbl.innerHTML = state.dist ? `Distrito <em>${esc(state.dist)}</em>` : state.mun ? `<em>${esc(state.mun)}</em>` : "";
+    lbl.innerHTML = state.dist ? `${t("districtLbl")} <em>${esc(state.dist)}</em>` : state.mun ? `<em>${esc(state.mun)}</em>` : "";
   }
 
   function refit() {
@@ -428,20 +508,26 @@
     MapView.fit(state.results.map((r) => r.p).slice(0, state.origin ? 10 : state.results.length), state.origin);
   }
 
+  const nearUser = () => !!(state.origin && state.user && state.origin === state.user);
   function renderList() {
     const res = state.results, day = resolvedDay(state.day);
-    $("summary").innerHTML = `<strong>${res.length}</strong> ${res.length === 1 ? "parroquia" : "parroquias"} · ${describe(state, null, false).replace(/<\/?strong>/g, "")}`;
+    $("summary").innerHTML = `<strong>${res.length}</strong> ${res.length === 1 ? t("parish1") : t("parishN")} · ${describe(state, null, nearUser()).replace(/<\/?strong>/g, "")}`;
     $("list").innerHTML = res.length ? res.slice(0, 300).map((r) => cardHtml(r, state.kind, day)).join("")
-      : `<li class="empty">No hay resultados. Amplía la franja horaria o quita algún filtro.</li>`;
+      : `<li class="empty">${t("noneList")}</li>`;
+    observeReveal($("list").querySelectorAll(".card"));
+  }
+
+  // Aparición suave de las tarjetas al hacer scroll
+  const revealer = "IntersectionObserver" in window ? new IntersectionObserver((entries) => {
+    for (const e of entries) if (e.isIntersecting) { e.target.classList.add("in"); revealer.unobserve(e.target); }
+  }, { rootMargin: "0px 0px -24px 0px", threshold: 0.05 }) : null;
+  function observeReveal(els) {
+    if (!revealer || calm()) return;
+    els.forEach((el, i) => { el.classList.add("rv"); el.style.setProperty("--d", `${Math.min(i, 6) * 40}ms`); revealer.observe(el); });
   }
 
   // ---------- Chat ----------
   const wait = (ms) => new Promise((r) => setTimeout(r, calm() ? 0 : ms));
-  const THINK = {
-    mass: ["Buscando misas…", "Mirando horarios…"],
-    confession: ["Buscando confesiones…", "Mirando horarios…"],
-    adoration: ["Buscando adoración…", "Mirando horarios…"],
-  };
   function scrollChat() {
     const sc = $("chatScroll");
     sc.scrollTo({ top: sc.scrollHeight, behavior: calm() ? "auto" : "smooth" });
@@ -453,8 +539,9 @@
     $("stage").classList.add("has-thread");
     const q = document.createElement("div"); q.className = "q"; q.textContent = question; thread.appendChild(q);
     const a = document.createElement("div"); a.className = "a pending"; a.dataset.kind = kind;
-    const lines = THINK[kind] || THINK.mass;
-    a.innerHTML = `<div class="thinking"><span class="dots"><i></i><i></i><i></i></span><span class="say">${lines[0]}</span></div>`;
+    const lines = [t("think")[kind] || t("think").mass, t("think").times];
+    a.innerHTML = `<div class="thinking"><span class="dots"><i></i><i></i><i></i></span><span class="say">${lines[0]}</span></div>
+      <ul class="cards ghost"><li class="skel"></li><li class="skel"></li></ul>`;
     thread.appendChild(a);
     let k = 0;
     a._timer = setInterval(() => { const s = a.querySelector(".say"); if (s) s.textContent = lines[++k % lines.length]; }, 900);
@@ -482,7 +569,7 @@
     fold.classList.toggle("closed", !open);
     if (btn) {
       btn.setAttribute("aria-expanded", open);
-      btn.innerHTML = (open ? "Ver menos" : `Ver ${cards.length - PEEK} más`) + CHEV;
+      btn.innerHTML = (open ? t("seeLess") : t("seeMore", { n: cards.length - PEEK })) + CHEV;
     }
     if (open) setTimeout(() => { if (!fold.classList.contains("closed")) ul.style.maxHeight = "none"; }, 520);
   }
@@ -499,11 +586,11 @@
     const day = resolvedDay(f.day), shown = 6;
     await finishTurn(a, res.length
       ? `<div class="head">${describe(f, zone, near)}</div>
-         <div class="meta">${res.length} ${res.length === 1 ? "parroquia" : "parroquias"}${origin ? ", de la más cercana a la más lejana" : ", por orden de hora"}</div>
+         <div class="meta">${nParishes(res.length)}${origin ? t("byDistance") : t("byTime")}</div>
          <div class="fold"><ul class="cards">${res.slice(0, shown).map((r) => cardHtml(r, f.kind, day)).join("")}</ul></div>
          ${Math.min(res.length, shown) > PEEK ? `<button type="button" class="more" aria-expanded="false"></button>` : ""}
-         <div class="row"><button type="button" class="pill accent see-map">Ver ${res.length > shown ? `las ${res.length} ` : ""}en el mapa</button></div>`
-      : `<div class="head">${describe(f, zone, near)}</div><p class="empty">No he encontrado nada. Prueba con otra hora («por la tarde»), otro día o una zona más amplia.</p>`);
+         <div class="row"><button type="button" class="pill accent see-map">${res.length > shown ? t("seeAll", { n: res.length }) : t("seeMap")}</button></div>`
+      : `<div class="head">${describe(f, zone, near)}</div><p class="empty">${t("noneChat")}</p>`);
     if (a.querySelector(".more")) {
       setFold(a, false);
       a.querySelector(".more").onclick = () => setFold(a, a.querySelector(".fold").classList.contains("closed"));
@@ -523,7 +610,7 @@
     if (near) {
       try { origin = await locate(); }
       catch (e) {
-        await finishTurn(a, `<p class="empty">No puedo saber dónde estás. Dime el barrio, el distrito o el municipio, por ejemplo: «estoy en Sants».</p>`);
+        await finishTurn(a, `<p class="empty">${t("noLocation")}</p>`);
         return;
       }
     }
@@ -554,10 +641,10 @@
     const wk = ["mon", "tue", "wed", "thu", "fri"];
     return `<dl class="sched">${[...groups].map(([k, list]) => {
       const d = k.split(",");
-      const label = wk.every((x) => d.includes(x)) && d.includes("sat") && !d.includes("sun") ? "Lun–Sáb"
-        : wk.every((x) => d.includes(x)) && d.length === 5 ? "Lun–Vie"
-        : d.every((x) => x === "sun" || x === "hol") ? "Domingos" : d.map((x) => DAY_SHORT[x]).join(" ");
-      return `<dt>${label}</dt><dd>${list.map((ev) => `<span class="t" ${ev.note ? `title="${esc(ev.note)}"` : ""}>${ev.start}${ev.end ? "–" + ev.end : ""}${ev.lang ? `<small>${LANG[ev.lang] || ev.lang}</small>` : ""}</span>`).join("")}</dd>`;
+      const label = wk.every((x) => d.includes(x)) && d.includes("sat") && !d.includes("sun") ? t("monSat")
+        : wk.every((x) => d.includes(x)) && d.length === 5 ? t("monFri")
+        : d.every((x) => x === "sun" || x === "hol") ? t("sundays") : d.map((x) => t("dayShort")[x]).join(" ");
+      return `<dt>${label}</dt><dd>${list.map((ev) => `<span class="t" ${ev.note ? `title="${esc(ev.note)}"` : ""}>${ev.start}${ev.end ? "–" + ev.end : ""}${ev.lang ? `<small>${LANG[ev.lang] || (ev.lang === "other" ? t("langOtherShort") : ev.lang)}</small>` : ""}</span>`).join("")}</dd>`;
     }).join("")}</dl>`;
   }
 
@@ -573,50 +660,78 @@
     const dest = p.lat != null ? `${p.lat},${p.lng}` : encodeURIComponent(`${p.name}, ${p.address || ""}, ${p.municipio || ""}`);
     const box = $("detail");
     box.innerHTML = `
-      <button type="button" class="pill" id="closeDetail" style="align-self:flex-start">← Volver a la lista</button>
+      <button type="button" class="pill" id="closeDetail" style="align-self:flex-start">${t("back")}</button>
       <h2>${esc(p.name)}</h2>
-      <p class="addr">${esc([p.address, p.municipio].filter(Boolean).join(", "))}<em>${esc(p.distrito ? `Distrito ${p.distrito}` : "")}${p.distrito && !/^Sin /.test(p.comunitat) ? " · " : ""}${esc(!/^Sin /.test(p.comunitat) ? `Comunidad pastoral ${p.comunitat}` : "")}</em></p>
+      <p class="addr">${esc([p.address, p.municipio].filter(Boolean).join(", "))}<em>${esc(p.distrito ? t("district", { d: p.distrito }) : "")}${p.distrito && !/^Sin /.test(p.comunitat) ? " · " : ""}${esc(!/^Sin /.test(p.comunitat) ? t("community", { c: p.comunitat }) : "")}</em></p>
       <div class="actions">
-        <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=${dest}">Cómo llegar</a>
+        <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=${dest}">${t("directions")}</a>
         ${p.phone ? `<a class="btn" href="tel:${esc(p.phone.replace(/\s/g, ""))}">${esc(p.phone)}</a>` : ""}
-        ${p.web ? `<a class="btn" target="_blank" rel="noopener" href="${esc(p.web)}">Web</a>` : ""}
-        ${p.url ? `<a class="btn" target="_blank" rel="noopener" href="${esc(p.url)}">Ficha oficial</a>` : ""}
+        ${p.web ? `<a class="btn" target="_blank" rel="noopener" href="${esc(p.web)}">${t("web")}</a>` : ""}
+        ${p.url ? `<a class="btn" target="_blank" rel="noopener" href="${esc(p.url)}">${t("official")}</a>` : ""}
       </div>
-      <h3>Misas</h3>
-      ${schedule(p.masses) || `<p class="note">Esta parroquia no publica horario de misas.</p>`}
+      <h3>${t("hMass")}</h3>
+      ${schedule(p.masses) || `<p class="note">${t("noMass")}</p>`}
       ${p.masses_text ? `<p class="note">${esc(p.masses_text)}</p>` : ""}
-      ${p.confessions.length || p.confessions_text ? `<h3>Confesiones</h3>${schedule(p.confessions)}${p.confessions_text ? `<p class="note">${esc(p.confessions_text)}</p>` : ""}` : ""}
-      ${p.adoration.length || p.adoration_text ? `<h3>Adoración eucarística</h3>${schedule(p.adoration)}${p.adoration_text ? `<p class="note">${esc(p.adoration_text)}</p>` : ""}` : ""}
-      ${p.other ? `<h3>Otras celebraciones</h3><p class="note">${esc(p.other)}</p>` : ""}`;
-    box.hidden = false;
+      ${p.confessions.length || p.confessions_text ? `<h3>${t("hConf")}</h3>${schedule(p.confessions)}${p.confessions_text ? `<p class="note">${esc(p.confessions_text)}</p>` : ""}` : ""}
+      ${p.adoration.length || p.adoration_text ? `<h3>${t("hAdor")}</h3>${schedule(p.adoration)}${p.adoration_text ? `<p class="note">${esc(p.adoration_text)}</p>` : ""}` : ""}
+      ${p.other ? `<h3>${t("hOther")}</h3><p class="note">${esc(p.other)}</p>` : ""}`;
+    box.hidden = false; state.detailId = id;
+    observeReveal(box.querySelectorAll("h3, .sched, .note"));
     $("filters").hidden = true; $("summary").hidden = true; $("list").hidden = true;
     $("side").scrollTop = 0;
     $("closeDetail").onclick = closeDetail;
     if (focus && MapView.focus) MapView.focus(p);
   }
   function closeDetail() {
-    $("detail").hidden = true;
+    $("detail").hidden = true; state.detailId = null;
     $("filters").hidden = false; $("summary").hidden = false; $("list").hidden = false;
     if (MapView.highlight) MapView.highlight(null);
   }
 
   // ---------- Filtros ----------
   function fillSelects() {
-    const n = nowBcn();
-    $("fDay").innerHTML = `<option value="today">Hoy (${DAY_NAMES[n.day]})</option><option value="tomorrow">Mañana</option>` +
-      DAY_CODES.map((d) => `<option value="${d}">${d === "sun" ? "Domingo y festivos" : DAY_NAMES[d][0].toUpperCase() + DAY_NAMES[d].slice(1)}</option>`).join("") + `<option value="any">Cualquier día</option>`;
+    const n = nowBcn(), D = t("days");
+    $("fDay").innerHTML = `<option value="today">${t("todayOpt", { d: D[n.day] })}</option><option value="tomorrow">${t("tomorrow")}</option>` +
+      DAY_CODES.map((d) => `<option value="${d}">${d === "sun" ? t("sunHol") : cap(D[d])}</option>`).join("") + `<option value="any">${t("anyDay")}</option>`;
     const hours = []; for (let h = 0; h < 24; h++) for (const m of [0, 30]) hours.push(h * 60 + m);
     $("fFrom").innerHTML = hours.map((m) => `<option value="${m}">${fmt(m)}</option>`).join("");
     $("fTo").innerHTML = hours.map((m) => `<option value="${m + 29}">${fmt(m + 29)}</option>`).join("");
     const counts = {};
     for (const p of DATA) counts[p.municipio] = (counts[p.municipio] || 0) + 1;
-    $("fMun").innerHTML = `<option value="">Todos los municipios</option>` + Object.keys(counts).filter(Boolean).sort((a, b) => a.localeCompare(b, "ca"))
-      .map((m) => `<option value="${esc(m)}">${esc(m)}${GEO.distritos[m] ? " · por distritos" : ""} (${counts[m]})</option>`).join("");
+    $("fMun").innerHTML = `<option value="">${t("allMun")}</option>` + Object.keys(counts).filter(Boolean).sort((a, b) => a.localeCompare(b, "ca"))
+      .map((m) => `<option value="${esc(m)}">${esc(m)}${GEO.distritos[m] ? t("byDist") : ""} (${counts[m]})</option>`).join("");
     const dists = GEO.distritos.Barcelona || [];
-    $("distChips").innerHTML = `<button type="button" data-dist="">Toda Barcelona</button>` + dists.map((d) => `<button type="button" data-dist="${esc(d.name)}">${esc(d.name)}</button>`).join("");
+    $("distChips").innerHTML = `<button type="button" data-dist="">${t("allBcn")}</button>` + dists.map((d) => `<button type="button" data-dist="${esc(d.name)}">${esc(d.name)}</button>`).join("");
   }
+
+  // Textos fijos de la página en el idioma elegido
+  function applyLang() {
+    document.documentElement.lang = LNG;
+    document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
+    document.querySelectorAll("[data-i18n-html]").forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml, { n: DATA.length }); });
+    document.querySelectorAll("[data-i18n-ph]").forEach((el) => { el.placeholder = t(el.dataset.i18nPh); });
+    document.querySelectorAll("[data-i18n-aria]").forEach((el) => { el.setAttribute("aria-label", t(el.dataset.i18nAria)); });
+    const other = LNG === "es" ? "ca" : "es";
+    $("langBtn").innerHTML = `${FLAG[LNG]}<span>${LNG.toUpperCase()}</span>`;
+    $("langBtn").title = t("switchTo"); $("langBtn").setAttribute("aria-label", t("switchTo"));
+    $("langBtn").dataset.next = other;
+    $("ideas").innerHTML = t("ideas").map((q) => `<li><button type="button">${esc(q)}</button></li>`).join("");
+  }
+  function setLang(l) {
+    LNG = l;
+    try { localStorage.setItem("misas-lang", l); } catch (e) { /* sin almacenamiento */ }
+    const swap = () => {
+      applyLang(); fillSelects(); syncControls(); renderList(); showOnMapLabel();
+      if (state.detailId) openDetail(state.detailId, false);
+      setPh(true);
+    };
+    document.body.classList.add("lang-swap");
+    setTimeout(() => { swap(); document.body.classList.remove("lang-swap"); }, calm() ? 0 : 160);
+  }
+
   function syncControls() {
     document.querySelectorAll(".seg button").forEach((b) => b.classList.toggle("on", b.dataset.kind === state.kind));
+    document.querySelectorAll(".seg").forEach((sg) => sg.style.setProperty("--idx", ["mass", "confession", "adoration"].indexOf(state.kind)));
     if (document.querySelector(".mapcol").dataset.kind !== state.kind) {
       document.querySelector(".mapcol").dataset.kind = state.kind;
       document.body.dataset.tone = state.kind; // tinte muy leve del fondo
@@ -638,40 +753,108 @@
   }
 
   // ---------- Arranque ----------
-  function autosize(t) { t.style.height = "auto"; t.style.height = Math.min(t.scrollHeight, 160) + "px"; }
+  function autosize(el) { el.style.height = "auto"; el.style.height = Math.min(el.scrollHeight, 160) + "px"; }
+
+  let hintIdx = 0;
+  function setPh(now) {
+    const input = $("chatInput");
+    if (input.value && !now) return;
+    const hints = t("hints");
+    input.placeholder = ($("stage").classList.contains("has-thread") && innerWidth > 1100 ? t("askMore") : "") + hints[hintIdx++ % hints.length];
+  }
+
+  let toastTimer;
+  function toast(msg) {
+    const el = $("toast");
+    el.textContent = msg; el.classList.add("show");
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove("show"), 3200);
+  }
+
+  // «Cerca de mí» en el mapa: ordena por distancia desde donde estás.
+  async function nearMe() {
+    const btn = $("nearBtn");
+    if (btn.classList.contains("on")) { // segundo toque: vuelve a la vista sin ubicación
+      btn.classList.remove("on"); state.origin = null; applyFilters(); return;
+    }
+    btn.classList.add("busy");
+    try {
+      const ll = await locate();
+      Object.assign(state, { origin: ll, mun: "", dist: "" });
+      btn.classList.add("on");
+      applyFilters();
+    } catch (e) {
+      toast(t("noLocationMap"));
+    } finally { btn.classList.remove("busy"); }
+  }
+
+  // Botón de volver arriba: sigue al panel que se está desplazando.
+  function bindToTop() {
+    const btn = $("toTop");
+    let target = null;
+    const scrollers = [$("chatScroll"), $("side"), $("stage")];
+    const place = () => {
+      if (!target || target.scrollTop < 360 || !target.offsetParent && target !== $("stage")) { btn.classList.remove("show"); return; }
+      const r = target.getBoundingClientRect(), bottomNav = document.querySelector(".bottomnav").offsetHeight || 0;
+      btn.hidden = false;
+      btn.style.left = `${Math.round(r.right - 62)}px`;
+      btn.style.top = `${Math.round(Math.min(r.bottom, innerHeight - bottomNav) - 62)}px`;
+      requestAnimationFrame(() => btn.classList.add("show"));
+    };
+    scrollers.forEach((el) => el.addEventListener("scroll", () => { target = el; place(); }, { passive: true }));
+    addEventListener("resize", place);
+    btn.onclick = () => { if (target) target.scrollTo({ top: 0, behavior: calm() ? "auto" : "smooth" }); };
+    document.addEventListener("misas:mode", () => { target = null; place(); });
+  }
 
   function bind() {
-    $("parishCount").textContent = DATA.length;
-    $("ideas").innerHTML = IDEAS.slice(0, 4).map((s) => `<li><button type="button">${esc(s)}</button></li>`).join("");
+    applyLang();
     $("ideas").onclick = (e) => { const b = e.target.closest("button"); if (b) ask(b.textContent); };
     const input = $("chatInput");
-    let i = 0;
-    const setPh = () => { input.placeholder = ($("stage").classList.contains("has-thread") ? "Pregunta otra cosa… " : "") + HINTS[i++ % HINTS.length]; };
-    setPh(); setInterval(() => { if (!input.value) setPh(); }, 3500);
+    setPh(); setInterval(() => setPh(), 3500);
     input.addEventListener("input", () => autosize(input));
     input.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("chatForm").requestSubmit(); } });
-    $("chatForm").addEventListener("submit", (e) => { e.preventDefault(); const v = input.value; input.value = ""; autosize(input); ask(v); });
+    $("chatForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const v = input.value; if (!v.trim()) return;
+      const send = document.querySelector(".send"); send.classList.remove("fly"); void send.offsetWidth; send.classList.add("fly");
+      input.value = ""; autosize(input); ask(v);
+    });
 
     document.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => setMode(b.dataset.go)));
     document.querySelectorAll(".seg button").forEach((b) => b.onclick = () => { state.kind = b.dataset.kind; if (state.mode === "home") setMode("map"); applyFilters(); });
     const on = (id, key, num) => $(id).onchange = (e) => { state[key] = num ? Number(e.target.value) : e.target.value; applyFilters(); };
     on("fDay", "day"); on("fFrom", "from", true); on("fTo", "to", true); on("fLang", "lang");
-    $("fMun").onchange = (e) => { state.mun = e.target.value; state.dist = ""; state.origin = null; applyFilters(); };
-    $("distChips").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; state.dist = b.dataset.dist; state.origin = null; applyFilters(); };
-    let t; $("fText").oninput = (e) => { clearTimeout(t); t = setTimeout(() => { state.text = e.target.value.trim(); applyFilters(); }, 250); };
-    $("reset").onclick = () => { Object.assign(state, BLANK, { origin: null }); applyFilters(); };
+    $("fMun").onchange = (e) => { state.mun = e.target.value; state.dist = ""; state.origin = null; $("nearBtn").classList.remove("on"); applyFilters(); };
+    $("distChips").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; state.dist = b.dataset.dist; state.origin = null; $("nearBtn").classList.remove("on"); applyFilters(); };
+    let timer; $("fText").oninput = (e) => { clearTimeout(timer); timer = setTimeout(() => { state.text = e.target.value.trim(); applyFilters(); }, 250); };
+    $("reset").onclick = () => { Object.assign(state, BLANK, { origin: null }); $("nearBtn").classList.remove("on"); applyFilters(); };
     const pick = (e) => { const c = e.target.closest(".card"); if (c) openDetail(c.dataset.id); };
     $("list").addEventListener("click", pick);
     $("list").addEventListener("keydown", (e) => { if (e.key === "Enter") pick(e); });
+    $("langBtn").onclick = () => setLang($("langBtn").dataset.next);
+    $("nearBtn").onclick = nearMe;
+    bindToTop();
+  }
+
+  function hideSplash() {
+    if (!document.body.classList.contains("loading")) return;
+    document.body.classList.remove("loading");
+    const sp = $("splash");
+    sp.classList.add("out");
+    setTimeout(() => sp.remove(), 700);
   }
 
   async function start() {
     fillSelects();
     bind();
+    // La pantalla de carga se retira cuando el mapa ha cargado (o, como mucho, a los 2,5 s).
+    MapView.onLoad = hideSplash;
+    setTimeout(hideSplash, 2500);
     await initMap();
     // Vista inicial: misas de hoy desde ahora en el mapa.
     const f = Object.assign({}, BLANK, { from: nowBcn().min });
     showOnMap(f, null, computeResults(f, null));
+    if (!window.maplibregl && !CFG.googleMapsApiKey) hideSplash();
   }
   window.MisasApp = { parseQuery, search, ask, setMode, state, DATA };
   start();
