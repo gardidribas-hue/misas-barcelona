@@ -192,7 +192,9 @@
         : `<h2>${esc(r.kind)}</h2>`;
       return `<section class="rd-block">${head}${r.ref ? `<p class="rd-ref">${esc(r.ref)}</p>` : ""}` +
         r.text.map((p) => `<p>${esc(p).replace(/\n/g, "<br>")}</p>`).join("") + `</section>`;
-    }).join("");
+    }).join("") + (day.reflection ? `<aside class="rd-papa"><h2>${esc(day.reflection.heading)}</h2>` +
+      day.reflection.text.map((p) => `<p>${esc(p)}</p>`).join("") +
+      (day.reflection.translated ? `<p class="rd-note">${esc(t("papaTranslated", { engine: day.reflection.translated }))}</p>` : "") + `</aside>` : "");
     $("wordFoot").innerHTML = t("wordSource", { name: esc(day.source), url: esc(day.url) }) + (day.copyright ? ` · ${esc(day.copyright)}` : "");
   }
   const shiftDay = (d) => { word.date = new Date(word.date.getTime() + d * 864e5); renderWord(); $("wordScroll").scrollTop = 0; };
