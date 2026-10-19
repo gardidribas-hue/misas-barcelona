@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python scripts/probe_bci.py | head -150
+      - run: pip install beautifulsoup4 && python scripts/probe_bci.py | head -150
