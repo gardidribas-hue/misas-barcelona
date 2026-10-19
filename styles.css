@@ -23,6 +23,7 @@
   --radius: 28px;
   --gap: 12px;
   --display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --read: "Source Serif 4", "Iowan Old Style", Georgia, serif;
   --ui: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --top: 76px;
   --ease: cubic-bezier(.2, .7, .2, 1);
@@ -487,8 +488,8 @@ body[data-tone="rosary"] { background: color-mix(in srgb, var(--backdrop) 88%, #
 .seg.rd { grid-template-columns: repeat(var(--n, 4), 1fr); }
 .seg.rd::before { width: calc((100% - 8px) / var(--n, 4)); }
 .seg.rd:empty { display: none; }
-.reading { display: grid; gap: 14px; font: 400 21px/1.62 var(--display); color: var(--ink); }
-.reading h2 { margin: 0 0 4px; font: 800 14px/1.4 var(--ui); letter-spacing: .04em; color: var(--accent-strong); }
+.reading { display: grid; gap: 18px; font: 400 21px/1.75 var(--read); color: var(--ink); font-optical-sizing: auto; }
+.reading h2 { margin: 0 0 6px; font: 400 40px/1.1 var(--display); letter-spacing: -.01em; color: var(--accent-strong); text-wrap: balance; }
 .reading p { margin: 0; text-wrap: pretty; }
 .reading .skel { height: 22px; border-radius: 8px; }
 .reading .skel.short { width: 60%; }
@@ -543,7 +544,8 @@ body[data-tone="rosary"] { background: color-mix(in srgb, var(--backdrop) 88%, #
   .bottomnav .x-ros:not(.on) svg { color: #ffffff; }
   .dev-scroll { padding: 0 18px; }
   .dev-inner { padding: 26px 0 32px; gap: 18px; }
-  .reading { font-size: 19px; }
+  .reading { font-size: 19px; line-height: 1.7; }
+  .reading h2 { font-size: 32px; }
   .mys { grid-template-columns: 34px 1fr; padding: 12px 14px 12px 12px; }
   .mys .num { width: 34px; height: 34px; font-size: 19px; }
   .mys .mref { grid-row: auto; grid-column: 2; }
