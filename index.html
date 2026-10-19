@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=Manrope:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="styles.css">
+<script>try { var th = localStorage.getItem("misas-theme"); if (th === "light" || th === "dark") document.documentElement.dataset.theme = th; } catch (e) {}</script>
 </head>
 <body class="loading">
 
@@ -37,6 +38,7 @@
       <button type="button" data-go="word" class="x-word"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.6C10.2 5.2 7.6 4.6 4.5 4.6v12.8c3.1 0 5.7.6 7.5 2 1.8-1.4 4.4-2 7.5-2V4.6c-3.1 0-5.7.6-7.5 2zM12 6.6v12.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 8.2v4M6.6 9.6h2.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span><span data-i18n="tabWord">Palabra del día</span></button>
       <button type="button" data-go="rosary" class="x-ros"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="currentColor"><circle cx="12" cy="2.9" r="1.25"/><circle cx="16.2" cy="4.6" r="1.25"/><circle cx="18" cy="8.8" r="1.25"/><circle cx="16.2" cy="13" r="1.25"/><circle cx="7.8" cy="13" r="1.25"/><circle cx="6" cy="8.8" r="1.25"/><circle cx="7.8" cy="4.6" r="1.25"/><circle cx="12" cy="14.9" r="1.45"/></g><path d="M12 16.4v6M9.6 18.7h4.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><span data-i18n="tabRosary">Rosario</span></button>
     </nav>
+    <div class="langs modes" id="modes" role="group" aria-label="Modo"><button type="button" data-mode="light" aria-label="Modo claro" title="Modo claro"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#fbe7a8"/><circle cx="12" cy="12" r="3.6" fill="#e0a21b"/><g stroke="#e0a21b" stroke-width="1.6" stroke-linecap="round"><path d="M12 4.6v1.8M12 17.6v1.8M4.6 12h1.8M17.6 12h1.8M6.8 6.8l1.3 1.3M15.9 15.9l1.3 1.3M6.8 17.2l1.3-1.3M15.9 8.1l1.3-1.3"/></g></svg></button><button type="button" data-mode="dark" aria-label="Modo oscuro" title="Modo oscuro"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#27304a"/><path d="M14.6 6.2a6.2 6.2 0 1 0 3.6 10.6 5.2 5.2 0 0 1-3.6-10.6z" fill="#e9eefb"/><circle cx="7.4" cy="8" r=".8" fill="#e9eefb"/><circle cx="9.6" cy="5.6" r=".55" fill="#e9eefb"/></svg></button></div>
     <div class="langs" id="langs" role="group" aria-label="Idioma"><button type="button" data-lang="es" aria-label="Castellano" title="Castellano"></button><button type="button" data-lang="ca" aria-label="Català" title="Català"></button></div>
   </div>
 </header>

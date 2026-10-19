@@ -17,7 +17,7 @@
       wordError: "Todavía no tengo las lecturas de este día. Puedes leerlas en <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">Vatican News</a>.",
       rosSets: { joyful: "gozosos", sorrowful: "dolorosos", glorious: "gloriosos", luminous: "luminosos" }, rosTitle: "Misterios <em>{set}</em>",
       rosDay: "Rosario de hoy · {day}", todayMark: "hoy", prevDay: "Día anterior", nextDay: "Día siguiente",
-      brandMain: "Misas", brandArch: "Archidiócesis de", tabHome: "Inicio", tabChat: "Chat", tabMap: "Mapa", tabWord: "Palabra del día", tabWordShort: "Palabra", tabRosary: "Rosario",
+      brandMain: "Misas", brandArch: "Archidiócesis de", tabHome: "Inicio", tabChat: "Chat", tabMap: "Mapa", tabWord: "Palabra del día", tabWordShort: "Palabra", tabRosary: "Rosario", themeLight: "Modo claro", themeDark: "Modo oscuro", themeGroup: "Modo",
       eyebrow: "Archidiócesis de Barcelona · <span id=\"parishCount\">{n}</span> parroquias",
       heroTitle: "¿Dónde quieres ir a <em>misa</em>?",
       heroLede: "Dime dónde estás y a qué hora te va bien. También busco <strong class=\"k-conf\"><em>confesiones</em></strong> y <strong class=\"k-ador\"><em>adoración</em></strong>.",
@@ -56,7 +56,7 @@
       wordError: "Encara no tinc les lectures d'aquest dia. Les pots llegir a <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">evangeli.net</a>.",
       rosSets: { joyful: "de goig", sorrowful: "de dolor", glorious: "de glòria", luminous: "de llum" }, rosTitle: "Misteris <em>{set}</em>",
       rosDay: "Rosari d'avui · {day}", todayMark: "avui", prevDay: "Dia anterior", nextDay: "Dia següent",
-      brandMain: "Misses", brandArch: "Arxidiòcesi de", tabHome: "Inici", tabChat: "Xat", tabMap: "Mapa", tabWord: "Paraula del dia", tabWordShort: "Paraula", tabRosary: "Rosari",
+      brandMain: "Misses", brandArch: "Arxidiòcesi de", tabHome: "Inici", tabChat: "Xat", tabMap: "Mapa", tabWord: "Paraula del dia", tabWordShort: "Paraula", tabRosary: "Rosari", themeLight: "Mode clar", themeDark: "Mode fosc", themeGroup: "Mode",
       eyebrow: "Arxidiòcesi de Barcelona · <span id=\"parishCount\">{n}</span> parròquies",
       heroTitle: "On vols anar a <em>missa</em>?",
       heroLede: "Digues-me on ets i a quina hora et va bé. També busco <strong class=\"k-conf\"><em>confessions</em></strong> i <strong class=\"k-ador\"><em>adoració</em></strong>.",
@@ -729,8 +729,23 @@
       if (!b.innerHTML) b.innerHTML = `${FLAG[b.dataset.lang]}<span>${b.dataset.lang.toUpperCase()}</span>`;
       b.classList.toggle("on", b.dataset.lang === LNG); b.setAttribute("aria-pressed", b.dataset.lang === LNG);
     });
+    $("modes").setAttribute("aria-label", t("themeGroup"));
+    document.querySelectorAll("#modes button").forEach((b) => { const l = t(b.dataset.mode === "dark" ? "themeDark" : "themeLight"); b.title = l; b.setAttribute("aria-label", l); });
+    applyTheme();
     $("ideas").innerHTML = t("ideas").map((q) => `<li><button type="button">${esc(q)}</button></li>`).join("");
   }
+  // Modo claro / oscuro: por defecto el del sistema; la elección se recuerda en el navegador.
+  const darkMQ = window.matchMedia ? matchMedia("(prefers-color-scheme: dark)") : null;
+  function applyTheme() {
+    const cur = document.documentElement.dataset.theme || (darkMQ && darkMQ.matches ? "dark" : "light");
+    document.querySelectorAll("#modes button").forEach((b) => { b.classList.toggle("on", b.dataset.mode === cur); b.setAttribute("aria-pressed", b.dataset.mode === cur); });
+  }
+  function setTheme(m) {
+    document.documentElement.dataset.theme = m;
+    try { localStorage.setItem("misas-theme", m); } catch (e) { /* sin almacenamiento */ }
+    applyTheme();
+  }
+  if (darkMQ && darkMQ.addEventListener) darkMQ.addEventListener("change", applyTheme);
   function setLang(l) {
     LNG = l;
     try { localStorage.setItem("misas-lang", l); } catch (e) { /* sin almacenamiento */ }
@@ -855,6 +870,7 @@
     const pick = (e) => { const c = e.target.closest(".card"); if (c) openDetail(c.dataset.id); };
     $("list").addEventListener("click", pick);
     $("list").addEventListener("keydown", (e) => { if (e.key === "Enter") pick(e); });
+    $("modes").onclick = (e) => { const b = e.target.closest("button"); if (b) setTheme(b.dataset.mode); };
     $("langs").onclick = (e) => { const b = e.target.closest("button"); if (b && b.dataset.lang !== LNG) setLang(b.dataset.lang); };
     $("nearBtn").onclick = nearMe;
     $("resetMap").onclick = resetMap;
