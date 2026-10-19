@@ -191,7 +191,7 @@
         ? `<p class="rd-kind">${esc(r.kind)}</p><h2>${esc(r.title)}</h2>`
         : `<h2>${esc(r.kind)}</h2>`;
       return `<section class="rd-block">${head}${r.ref ? `<p class="rd-ref">${esc(r.ref)}</p>` : ""}` +
-        r.text.map((p) => `<p>${esc(p)}</p>`).join("") + `</section>`;
+        r.text.map((p) => `<p>${esc(p).replace(/\n/g, "<br>")}</p>`).join("") + `</section>`;
     }).join("");
     $("wordFoot").innerHTML = t("wordSource", { name: esc(day.source), url: esc(day.url) }) + (day.copyright ? ` · ${esc(day.copyright)}` : "");
   }
