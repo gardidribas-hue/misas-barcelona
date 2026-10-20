@@ -36,6 +36,13 @@ window.MisasOraciones = {
   "oremus": [
    "Ruega por nosotros, Santa Madre de Dios.\nR/. Para que seamos dignos de las promesas de Cristo.",
    "Te rogamos nos concedas, Señor Dios nuestro, gozar de continua salud de alma y cuerpo, y por la gloriosa intercesión de la bienaventurada siempre Virgen María, vernos libres de las tristezas de la vida presente y disfrutar de las alegrías eternas. Por Cristo nuestro Señor. Amén."
+  ],
+  "credo_long": [
+   "Creo en un solo Dios, Padre Todopoderoso, Creador del cielo y de la tierra, de todo lo visible y lo invisible. Creo en un solo Señor, Jesucristo, Hijo único de Dios, nacido del Padre antes de todos los siglos: Dios de Dios, Luz de Luz, Dios verdadero de Dios verdadero, engendrado, no creado, de la misma naturaleza del Padre, por quien todo fue hecho; que por nosotros, los hombres, y por nuestra salvación bajó del cielo, y por obra del Espíritu Santo se encarnó de María, la Virgen, y se hizo hombre; y por nuestra causa fue crucificado en tiempos de Poncio Pilato; padeció y fue sepultado, y resucitó al tercer día, según las Escrituras, y subió al cielo, y está sentado a la derecha del Padre; y de nuevo vendrá con gloria para juzgar a vivos y muertos, y su reino no tendrá fin.",
+   "Creo en el Espíritu Santo, Señor y dador de vida, que procede del Padre y del Hijo, que con el Padre y el Hijo recibe una misma adoración y gloria, y que habló por los profetas.",
+   "Creo en la Iglesia, que es una, santa, católica y apostólica.",
+   "Confieso que hay un solo Bautismo para el perdón de los pecados.",
+   "Espero la resurrección de los muertos y la vida del mundo futuro. Amén."
   ]
  },
  "ca": {
@@ -65,6 +72,12 @@ window.MisasOraciones = {
    "Crec en un Déu, Pare totpoderós, creador del cel i de la terra.",
    "I en Jesucrist, únic Fill seu i Senyor nostre; el qual fou concebut per obra de l’Esperit Sant, nasqué de Maria Verge; patí sota el poder de Ponç Pilat, fou crucificat, mort i sepultat; davallà als inferns, ressuscità el tercer dia d’entre els morts; se’n pujà al cel, seu a la dreta de Déu, Pare totpoderós; i d’allí ha de venir a jutjar els vius i els morts.",
    "Crec en l’Esperit Sant; la santa Mare Església catòlica; la comunió dels sants; la remissió dels pecats; la resurrecció de la carn; la vida perdurable. Amén."
+  ],
+  "credo_long": [
+   "Crec en un sol Déu, Pare totpoderós, creador del cel i de la terra, de totes les coses visibles i invisibles.",
+   "I en un sol Senyor, Jesucrist, Fill unigènit de Déu, nascut del Pare abans de tots els segles. Déu nat de Déu, Llum resplendor de la Llum, Déu veritable nascut del Déu veritable, engendrat, no pas creat, de la mateixa naturalesa del Pare: per ell tota cosa fou creada. El qual per nosaltres els homes i per la nostra salvació, davallà del cel. I, per obra de l'Esperit Sant, s'encarnà de la Verge Maria, i es féu home. Crucificat després per nosaltres sota el poder de Ponç Pilat; patí i fou sepultat, i ressuscità el tercer dia, com deien ja les Escriptures, i se'n pujà al cel, on seu a la dreta del Pare. I tornarà gloriós a judicar els vius i els morts, i el seu regnat no tindrà fi.",
+   "Crec en l'Esperit Sant, que és Senyor i infon la vida, que procedeix del Pare i del Fill. I juntament amb el Pare i el Fill és adorat i glorificat; que parlà per boca dels profetes.",
+   "I en una sola Església, santa, catòlica i apostòlica. Professo que hi ha un sol baptisme per a perdonar el pecat. I espero la resurrecció dels morts, i la vida de la glòria. Amén."
   ],
   "kyrie": [
    "Senyor, tingueu pietat.\nR/. Senyor, tingueu pietat.\nCrist, tingueu pietat.\nR/. Crist, tingueu pietat.\nSenyor, tingueu pietat.\nR/. Senyor, tingueu pietat.\nCrist, oïu-nos.\nR/. Crist, oïu-nos.\nCrist escolteu-nos.\nR/. Crist escolteu-nos."
@@ -111,6 +124,12 @@ window.MisasOraciones = {
    "Et in Iesum Christum, Fílium Eius únicum, Dóminum nostrum, qui conceptus est de Spíritu Sancto, natus ex Maria Vírgine, passus sub Póntio Piláto, crucifixus, mórtuus, et sepúltus, descéndit ad ínferos, tértia die resurréxit a mórtuis, ascéndit ad cælos, sedet ad déxteram Dei Patris omnipoténtis, inde ventúrus est iudicáre vivos et mórtuos.",
    "Et in Spíritum Sanctum, sanctam Ecclésiam cathólicam, sanctórum communiónem, remissiónem peccatórum, carnis resurrectiónem, vitam ætérnam. Amen."
   ],
+  "credo_long": [
+   "Credo in unum Deum, Patrem omnipoténtem, factórem cæli et terræ, visibílium ómnium et invisibílium.",
+   "Et in unum Dóminum Iesum Christum, Fílium Dei unigénitum et ex Patre natum ante ómnia sǽcula: Deum de Deo, Lumen de Lúmine, Deum verum de Deo vero, génitum, non factum, consubstantiálem Patri: per quem ómnia facta sunt; qui propter nos hómines et propter nostram salútem, descéndit de cælis, et incarnátus est de Spíritu Sancto ex Maria Vírgine et homo factus est, crucifíxus etiam pro nobis sub Póntio Piláto, passus et sepúltus est, et resurréxit tértia die secúndum Scriptúras, et ascéndit in cælum, sedet ad déxteram Patris, et íterum ventúrus est cum glória, iudicáre vivos et mórtuos, cuius regni non erit finis.",
+   "Et in Spíritum Sanctum, Dóminum et vivificántem, qui ex Patre Filióque procédit, qui cum Patre et Fílio simul adorátur et conglorificátur, qui locútus est per Prophétas.",
+   "Et unam sanctam cathólicam et apostólicam Ecclésiam. Confíteor unum Baptísma in remissiónem peccatórum. Et exspécto resurrectiónem mortuórum, et vitam ventúri sǽculi. Amen."
+  ],
   "kyrie": [
    "Kýrie, eléison.\nR/. Kýrie, eléison.\nChriste, eléison.\nR/. Christe, eléison.\nKýrie, eléison.\nR/. Kýrie, eléison.\nChriste, audi nos.\nR/. Christe, audi nos.\nChriste, exáudi nos.\nR/. Christe, exáudi nos."
   ],
@@ -132,7 +151,7 @@ window.MisasOraciones = {
  },
  "sources": {
   "es": {
-   "name": "EWTN · Santa Sede (letanías)",
+   "name": "EWTN · Santa Sede (letanías y Credo largo)",
    "url": "https://www.ewtn.com/es/oracion/oraciones-del-rosario"
   },
   "ca": {

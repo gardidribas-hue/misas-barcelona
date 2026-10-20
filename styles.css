@@ -534,7 +534,7 @@ body[data-tone="rosary"] { background: color-mix(in srgb, var(--backdrop) var(--
 .plangs button:active { transform: scale(.94); }
 /* Rosario entero en un solo texto vertical */
 .ros-text { display: grid; gap: 40px; font: 400 20px/1.7 var(--read); }
-.ros-part { display: grid; gap: 14px; }
+.ros-part { display: grid; gap: 34px; } /* espacio entre oraciones, para no mezclarlas */
 .ros-sec { margin: 0; font: 800 13px/1 var(--ui); letter-spacing: .1em; text-transform: uppercase; color: var(--accent-strong); }
 .ros-mys { padding-top: 32px; border-top: 1px solid var(--line); }
 .ros-ord { margin: 0; display: flex; align-items: center; gap: 10px; font: 800 13px/1 var(--ui); letter-spacing: .1em; text-transform: uppercase; color: var(--accent-strong); }
@@ -543,6 +543,11 @@ body[data-tone="rosary"] { background: color-mix(in srgb, var(--backdrop) var(--
 .ros-mys .mline { margin: -6px 0 4px; color: var(--muted); font-style: italic; font-size: 17px; }
 .ros-mys .nw { white-space: nowrap; }
 .pr { margin: 0; }
+.pr-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-bottom: 6px; }
+.pr-head h3 { margin: 0; }
+.credo-pick { display: flex; gap: 2px; background: var(--surface); border-radius: 999px; padding: 3px; }
+.credo-pick button { border: 0; cursor: pointer; background: none; border-radius: 999px; padding: 6px 14px; font: 700 13px/1 var(--ui); color: var(--muted); transition: background .2s, color .2s; }
+.credo-pick button.on { background: var(--bg); color: var(--ink); box-shadow: var(--shadow); }
 .pr h3 { margin: 0 0 6px; font: 800 22px/1.3 var(--ui); color: var(--ink); }
 .pr h3 .pr-x { font-weight: 700; color: var(--accent-strong); }
 .pr h3 .pr-note { font-weight: 600; font-size: .7em; color: var(--muted); }
