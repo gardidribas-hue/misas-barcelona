@@ -1,8 +1,0 @@
-name: probe
-on: { push: { branches: [claude/project-thread-3pofmn], paths: [scripts/probe.py] } }
-jobs:
-  p:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: pip install pypdf && python scripts/probe.py

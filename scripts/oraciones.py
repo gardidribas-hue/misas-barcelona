@@ -3,6 +3,8 @@
 Castellano: EWTN (Oraciones del Rosario).
 Català y latín: Devocionari de l'Opus Dei (opusdei.cat), que trae las dos columnas.
 Oración de Fátima en latín: EWTN (Prayers of the Rosary in English and Latin).
+Credo largo (Niceno-Constantinopolitano): castellano del Compendio del Catecismo (vatican.va);
+català y latín del Devocionari.
 Letanías: castellano de la Santa Sede (vatican.va); català y latín del Devocionari.
 En las letanías, las respuestas van como líneas que empiezan por «R/. ».
     pip install beautifulsoup4 pypdf && python scripts/oraciones.py
@@ -18,6 +20,7 @@ SRC = {
     "ca": "https://multimedia.opusdei.org/doc/pdf/Devocionari%20mobil%20-%20www.opusdei.cat20220314171720840413.pdf",
     "la": "https://www.ewtn.com/catholicism/teachings/prayers-of-the-rosary-in-english-and-latin-164",
     "litany_es": "https://www.vatican.va/special/rosary/documents/litanie-lauretane_sp.html",
+    "credo_es": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_sp.html",
 }
 
 
@@ -118,9 +121,28 @@ def devocionari():
     ca["cross"], la["cross"] = two_columns(page(46), start="V/. Pel senyal", stop_left="Amén", stop_right="Amen")
     for key, i in (("pater", 5), ("ave", 6), ("gloria", 7), ("salve", 8), ("credo", 13)):
         ca[key], la[key] = two_columns(page(i))
+    # Credo de Nicea-Constantinoble: empieza en la página 11 y sigue en la 12.
+    l1, r1 = two_columns(page(11), start="Crec en un sol")
+    l2, r2 = two_columns(page(12))
+    ca["credo_long"], la["credo_long"] = l1 + l2, r1 + r2
     for d in (ca, la):
         d["cross"] = [re.sub(r"^V/\.\s*", "", p) for p in d["cross"]]
     return ca, la
+
+
+def vatican_credo():
+    """Credo Niceno-Constantinopolitano en castellano, del Compendio del Catecismo."""
+    s = BeautifulSoup(fetch(SRC["credo_es"]), "html.parser")
+    b = next(b for b in s.find_all("b") if "Niceno-Constantinopolitano" in b.get_text())
+    out = []
+    for p in b.find_parent("p").find_all_next("p"):
+        t = clean(p.get_text(" "))
+        if not t:
+            continue
+        out.append(t)
+        if t.endswith("Amén."):
+            break
+    return out
 
 
 def vatican_litany():
@@ -222,6 +244,7 @@ def main():
     data = {"es": ewtn_es()}
     data["ca"], data["la"] = devocionari()
     data["es"].update(vatican_litany())
+    data["es"]["credo_long"] = vatican_credo()
     lit = devocionari_litany(PdfReader(io.BytesIO(fetch(SRC["ca"]))))
     data["ca"].update(lit["ca"]); data["la"].update(lit["la"])
     fat = ewtn_la_fatima()
@@ -232,7 +255,7 @@ def main():
         for k, v in d.items():
             print("  ", k, "|", v[0][:28] if v else "", "...", v[-1][-22:] if v else "")
     data["sources"] = {
-        "es": {"name": "EWTN · Santa Sede (letanías)", "url": SRC["es"]},
+        "es": {"name": "EWTN · Santa Sede (letanías y Credo largo)", "url": SRC["es"]},
         "ca": {"name": "Devocionari (opusdei.cat)", "url": SRC["ca"]},
         "la": {"name": "Devocionari (opusdei.cat) · EWTN", "url": SRC["ca"]},
     }
