@@ -1,0 +1,113 @@
+# https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona
+# 2026-10-21 · formato: json
+
+{
+ "adorations": [
+  {
+   "begin": "18:00",
+   "comments": "",
+   "days": [
+    4
+   ],
+   "end": "18:45",
+   "type": "Normal"
+  },
+  {
+   "begin": "19:30",
+   "comments": "",
+   "days": [
+    5
+   ],
+   "end": "21:00",
+   "type": "Normal",
+   "weeks": [
+    1
+   ]
+  }
+ ],
+ "celebrations": null,
+ "confessions": "Media hora antes de misa y cuando se solicite al sacerdote.",
+ "masses": null,
+ "periods": [
+  {
+   "begin": {
+    "day": 26,
+    "month": 6
+   },
+   "end": {
+    "day": 11,
+    "month": 9
+   },
+   "masses": [
+    {
+     "days": [
+      0,
+      9
+     ],
+     "time": "11:00"
+    },
+    {
+     "days": [
+      0,
+      9
+     ],
+     "language": "es",
+     "time": "13:00"
+    },
+    {
+     "days": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8
+     ],
+     "time": "19:00"
+    }
+   ],
+   "name": "Verano"
+  },
+  {
+   "begin": {
+    "day": 12,
+    "month": 9
+   },
+   "end": {
+    "day": 25,
+    "month": 6
+   },
+   "masses": [
+    {
+     "days": [
+      0,
+      9
+     ],
+     "time": "11:00"
+    },
+    {
+     "days": [
+      0,
+      9
+     ],
+     "language": "es",
+     "time": "13:00"
+    },
+    {
+     "days": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8
+     ],
+     "time": "19:00"
+    }
+   ],
+   "name": "Invierno"
+  }
+ ]
+}

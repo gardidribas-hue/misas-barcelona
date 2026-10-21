@@ -1,0 +1,112 @@
+# https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona
+# 2026-10-21 · formato: json
+
+{
+ "adorations": [],
+ "celebrations": null,
+ "confessions": "Lunes a sábado 18:30.\nDomingo antes de misa.",
+ "masses": null,
+ "periods": [
+  {
+   "begin": {
+    "aprox": false,
+    "day": 1,
+    "month": 9
+   },
+   "end": {
+    "aprox": false,
+    "day": 30,
+    "month": 6
+   },
+   "masses": [
+    {
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9
+     ],
+     "language": "es",
+     "time": "10:00"
+    },
+    {
+     "days": [
+      0,
+      9
+     ],
+     "time": "12:00"
+    },
+    {
+     "days": [
+      0,
+      9
+     ],
+     "language": "es",
+     "time": "13:00"
+    },
+    {
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9
+     ],
+     "time": "19:00"
+    }
+   ],
+   "name": "Invierno"
+  },
+  {
+   "begin": {
+    "aprox": false,
+    "day": 1,
+    "month": 7
+   },
+   "end": {
+    "aprox": false,
+    "day": 31,
+    "month": 8
+   },
+   "masses": [
+    {
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9
+     ],
+     "language": "es",
+     "time": "10:00"
+    },
+    {
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9
+     ],
+     "time": "19:00"
+    }
+   ],
+   "name": "Verano"
+  }
+ ]
+}

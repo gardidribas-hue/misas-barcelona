@@ -1,0 +1,57 @@
+{
+ "fecha": "2026-10-21",
+ "revisados": 5,
+ "actualizados": [
+  {
+   "id": "BCN0003",
+   "nombre": "Basílica de la Puríssima Concepció",
+   "fuente": "F2",
+   "celebraciones": 45
+  },
+  {
+   "id": "BCN0092",
+   "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
+   "fuente": "F2",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0212",
+   "nombre": "Sant Ferran",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0213",
+   "nombre": "Sant Francesc d'Assís",
+   "fuente": "F1",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0226",
+   "nombre": "Sant Joan de Gràcia",
+   "fuente": "F2",
+   "celebraciones": 9
+  }
+ ],
+ "cambios": [],
+ "caidas": [],
+ "discrepancias": [
+  {
+   "id": "BCN0213",
+   "nombre": "Sant Francesc d'Assís",
+   "solo_en_F1": "",
+   "solo_en_F2": "domingo 18:30, domingo 20:00"
+  }
+ ],
+ "sin_horario": [],
+ "pendientes": [],
+ "sospechosos": [
+  {
+   "id": "BCN0003",
+   "nombre": "Basílica de la Puríssima Concepció",
+   "motivos": [
+    "hora fuera de 06:00–23:00: adoracion 01:00"
+   ]
+  }
+ ]
+}
