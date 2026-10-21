@@ -342,13 +342,13 @@ body[data-tone="adoration"] { background: color-mix(in srgb, var(--backdrop) var
 .langs { display: flex; gap: 4px; background: var(--chip); border-radius: 999px; padding: 4px; }
 .langs button { display: inline-flex; align-items: center; gap: 6px; border: 0; cursor: pointer; background: none; color: var(--backdrop-muted); border-radius: 999px; padding: 3px 10px 3px 3px; font: 800 12px/1 var(--ui); letter-spacing: .06em; opacity: .75; transition: background .2s var(--ease), opacity .2s, color .2s, transform .15s var(--ease); }
 /* Sin filter en las banderas: Safari recortaba el aro por arriba mientras animaba el filtro al cargar. */
-.langs svg { display: block; flex: none; overflow: visible; width: 26px; height: 26px; border-radius: 50%; box-shadow: 0 0 0 1.5px var(--ring); transition: transform .4s var(--ease); }
+.langs svg { display: block; flex: none; overflow: visible; width: 26px; height: 26px; border-radius: 50%; box-shadow: 0 0 0 1.5px var(--ring); }
 .langs button.on { opacity: 1; background: var(--chip-on); color: var(--backdrop-ink); }
 .langs button.on svg { box-shadow: 0 0 0 2px var(--gold); }
 .langs button:active { transform: scale(.94); }
 .modes button { padding: 3px; }
 .modes button:not(.on) svg { opacity: .55; }
-@media (hover: hover) { .langs button:not(.on):hover { opacity: .9; } .langs button:hover svg { transform: rotate(-12deg) scale(1.06); } }
+@media (hover: hover) { .langs button:not(.on):hover { opacity: .9; } }
 body.lang-swap .chatcol, body.lang-swap .side, body.lang-swap .top { opacity: .35; transition: opacity .16s; }
 .chatcol, .side, .top { transition: opacity .25s var(--ease); }
 
