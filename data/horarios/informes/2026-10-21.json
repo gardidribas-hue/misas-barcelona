@@ -1,8 +1,61 @@
 {
  "fecha": "2026-10-21",
  "revisados": 5,
- "actualizados": [],
- "cambios": [],
+ "actualizados": [
+  {
+   "id": "BCN0003",
+   "nombre": "Basílica de la Puríssima Concepció",
+   "fuente": "F1",
+   "celebraciones": 37
+  },
+  {
+   "id": "BCN0092",
+   "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
+   "fuente": "F2",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0212",
+   "nombre": "Sant Ferran",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0213",
+   "nombre": "Sant Francesc d'Assís",
+   "fuente": "F1",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0226",
+   "nombre": "Sant Joan de Gràcia",
+   "fuente": "F1",
+   "celebraciones": 6
+  }
+ ],
+ "cambios": [
+  {
+   "id": "BCN0003",
+   "nombre": "Basílica de la Puríssima Concepció",
+   "fuente": "F1",
+   "antes": 38,
+   "ahora": 37
+  },
+  {
+   "id": "BCN0212",
+   "nombre": "Sant Ferran",
+   "fuente": "F3",
+   "antes": 3,
+   "ahora": 3
+  },
+  {
+   "id": "BCN0213",
+   "nombre": "Sant Francesc d'Assís",
+   "fuente": "F1",
+   "antes": 8,
+   "ahora": 8
+  }
+ ],
  "caidas": [],
  "discrepancias": [],
  "sin_horario": [],

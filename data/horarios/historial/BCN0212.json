@@ -114,5 +114,63 @@
     "confianza": "baja"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-21",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "20:15",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Vigilia de Domingos y festivos : 20,15 en Catalan",
+    "vespertina_dominical": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
+    "comprobado": "2026-10-21",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos y Festivos : 12,30 en Castellano",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
+    "comprobado": "2026-10-21",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Confesiones y orientación espiritual : Siempre que se pida, antes o despues de la Eucaristia",
+    "a_peticion": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
+    "comprobado": "2026-10-21",
+    "confianza": "baja"
+   }
+  ]
  }
 ]

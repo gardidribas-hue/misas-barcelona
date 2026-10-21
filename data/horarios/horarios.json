@@ -163,7 +163,6 @@
      },
      "semanas_mes": [],
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
-     "vespertina_dominical": true,
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
      "comprobado": "2026-10-21",
@@ -185,7 +184,6 @@
      },
      "semanas_mes": [],
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
-     "vespertina_dominical": true,
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
      "comprobado": "2026-10-21",
@@ -207,7 +205,6 @@
      },
      "semanas_mes": [],
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
-     "vespertina_dominical": true,
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
      "comprobado": "2026-10-21",
@@ -260,8 +257,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "08:00",
      "fin": null,
@@ -281,8 +278,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "10:00",
      "fin": null,
@@ -302,8 +299,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "11:30",
      "fin": null,
@@ -323,8 +320,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "13:00",
      "fin": null,
@@ -344,8 +341,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "18:00",
      "fin": null,
@@ -365,8 +362,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "20:00",
      "fin": null,
@@ -386,8 +383,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "20:30",
      "fin": null,
@@ -591,8 +588,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "08:00",
      "fin": null,
@@ -612,8 +609,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "10:00",
      "fin": null,
@@ -633,8 +630,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "11:30",
      "fin": null,
@@ -654,8 +651,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "13:00",
      "fin": null,
@@ -675,8 +672,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "18:00",
      "fin": null,
@@ -696,8 +693,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "20:00",
      "fin": null,
@@ -829,24 +826,6 @@
       1
      ],
      "notas": "De 22:00 a 1:00, adoració eucarística a la capella de Montserrat.",
-     "fuente": "F1",
-     "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "20:15",
-     "fin": null,
-     "idioma": "ca",
-     "temporada": null,
-     "semanas_mes": [
-      1
-     ],
-     "notas": "Mes de Maria: Devocions pròpies del mes de maig després del rosari i de la Missa de les 20:15.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
      "comprobado": "2026-10-21",
@@ -1142,8 +1121,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "12:30",
      "fin": null,
@@ -1237,8 +1216,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "11:30",
      "fin": null,
@@ -1254,8 +1233,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "18:30",
      "fin": null,
@@ -1272,8 +1251,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "festivo_precepto",
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "20:00",
      "fin": null,
