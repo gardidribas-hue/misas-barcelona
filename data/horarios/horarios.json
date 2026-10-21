@@ -1415,6 +1415,55 @@
      "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
      "comprobado": "2026-10-21",
      "confianza": "alta"
+    },
+    {
+     "tipo": "adoracion",
+     "dias": [
+      "jueves"
+     ],
+     "inicio": "18:00",
+     "fin": "18:45",
+     "idioma": null,
+     "temporada": null,
+     "semanas_mes": [],
+     "notas": "Normal",
+     "fuente": "F2",
+     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+     "comprobado": "2026-10-21",
+     "confianza": "alta"
+    },
+    {
+     "tipo": "adoracion",
+     "dias": [
+      "viernes"
+     ],
+     "inicio": "19:30",
+     "fin": "21:00",
+     "idioma": null,
+     "temporada": null,
+     "semanas_mes": [],
+     "notas": "Normal",
+     "fuente": "F2",
+     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+     "comprobado": "2026-10-21",
+     "confianza": "alta"
+    },
+    {
+     "tipo": "confesion",
+     "dias": [],
+     "inicio": null,
+     "fin": null,
+     "idioma": null,
+     "temporada": null,
+     "semanas_mes": [],
+     "notas": "Media hora antes de misa y cuando se solicite al sacerdote.",
+     "relativa_a_misa": {
+      "minutos_antes": 30
+     },
+     "fuente": "F2",
+     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+     "comprobado": "2026-10-21",
+     "confianza": "alta"
     }
    ],
    "notas_fuente": [

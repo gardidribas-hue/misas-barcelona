@@ -386,5 +386,66 @@
     "confianza": "alta"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-21",
+  "fuente": "F1",
+  "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Horari de missa: de dilluns a dissabte a les 19.00h. Diumeges a les 11h (català) i a les 13h (castellà)",
+    "fuente": "F1",
+    "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Horari de missa: de dilluns a dissabte a les 19.00h. Diumeges a les 11h (català) i a les 13h (castellà)",
+    "fuente": "F1",
+    "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Horari de missa: de dilluns a dissabte a les 19.00h. Diumeges a les 11h (català) i a les 13h (castellà)",
+    "fuente": "F1",
+    "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   }
+  ]
  }
 ]
