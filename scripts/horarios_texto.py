@@ -9,6 +9,8 @@ aparte las líneas con horas que no ha sabido interpretar, para revisarlas.
 """
 import re, unicodedata
 
+VERSION = 2  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
+
 DIAS = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
 VISPERA, FESTIVO = "vispera_festivo", "festivo_precepto"
 LAB5, LAB6, TODOS = DIAS[:5], DIAS[:6], DIAS[:]
@@ -94,7 +96,7 @@ def horas_de(t):
         h, mi = int(m.group("h")), m.group("m")
         after = t[m.end():m.end() + 14]
         before = t[max(0, m.start() - 12):m.start()]
-        if re.match(rf"\s*(de |d')?{MESES}", after) or re.search(r"(dia|el|del|any|ano)\s$", before):
+        if re.match(rf"\s*(de |d')?{MESES}", after) or re.search(r"\b(dia|el|del|any|ano)\s$", before):
             continue  # es una fecha
         fuerte = bool(mi) or bool(m.group("suf")) or bool(m.group("tarde")) or re.search(r"(a les|a las|les|las)\s$", before)
         if m.group("sep") == "," and mi and not m.group("suf") and re.match(r"\d", t[m.end() - 2:m.end()]) is None:
@@ -168,8 +170,9 @@ RX_IGNORA = (r"despatx|despacho|secretaria|caritas|acollida|acogida|arxiu|archiv
 TEMPORADAS = [  # (regex, nombre, inicio, fin)
     (r"setmana santa|semana santa|dijous sant|divendres sant|jueves santo|viernes santo|vetlla pasqual|vigilia pascual", "Semana Santa", None, None),
     (r"\bnadal\b|\bnavidad\b|nochebuena|cap d'any|\breis\b|\breyes\b", "Navidad", None, None),
+    (r"juliol i agost|julio y agosto", "Verano", "07-01", "08-31"),
     (r"\bagost\b|\bagosto\b", "Agosto", "08-01", "08-31"),
-    (r"juliol i agost|julio y agosto|\bestiu\b|\bverano\b|\bvacances\b|\bvacaciones\b", "Verano", "07-01", "08-31"),
+    (r"\bestiu\b|\bverano\b|\bvacances\b|\bvacaciones\b", "Verano", "07-01", "08-31"),
     (r"\bjuliol\b|\bjulio\b", "Julio", "07-01", "07-31"),
     (r"\bcurs\b|\bcurso\b|hivern|invierno|setembre a juny|septiembre a junio|octubre a juny|octubre a junio|resta de l'any|resto del ano|tot l'any|todo el ano", "Curso", "09-01", "06-30"),
 ]
@@ -207,6 +210,7 @@ def extraer(texto, tipo_inicial="misa"):
     laborables = LAB5 if hay_sabado else LAB6
     out, dudosas = [], []
     tipo, temporada, dias_ctx, idioma_ctx, ignora = tipo_inicial, None, None, None, False
+    ultimo_dd = None  # días de la línea anterior, para líneas que solo continúan la lista de horas
     for linea in lineas(texto):
         t = norm(linea)
         hs = horas_de(t)
@@ -215,10 +219,32 @@ def extraer(texto, tipo_inicial="misa"):
         nuevo_tipo = "confesion" if re.search(RX_CONF, t) else "adoracion" if re.search(RX_ADOR, t) else \
             "misa" if re.search(RX_MISA, t) else None
         temp = temporada_de(t)
+        rel = re.search(r"(mitja hora|media hora|\d{2} ?min(?:uts|utos)?\.?|una hora)\s+(abans|antes)|(abans|antes)\s+(de\s+)?(les|las|cada|la)?\s*(missa|misa|eucaristia|celebraci)", t)
         if es_titulo:
+            # Confesiones como regla relativa a la misa ("mitja hora abans de cada missa")
+            if (tipo == "confesion" or re.search(RX_CONF, t)) and rel:
+                mins = re.search(r"(\d{2}) ?min", t)
+                mins = int(mins.group(1)) if mins else 30 if re.search(r"mitja|media", t) else 60 if "una hora" in t else None
+                dd = dias_de(t, laborables)
+                c = celebracion("confesion", (dd or dias_ctx or (None, [], False)), None, None, idioma_de(t), temporada, linea)
+                c["relativa_a_misa"] = {"minutos_antes": mins} if mins else {"antes": True}
+                if re.search(r"despres|despues", t):
+                    c["relativa_a_misa"]["tambien_despues"] = True
+                out.append(c)
+                tipo = "confesion"
+                continue
+            if (tipo == "confesion" or re.search(RX_CONF, t)) and re.search(r"(a peticio|a peticion|quan es demani|siempre que se pida|cuando se solicite|cita previa|demanar hora|concertar)", t):
+                c = celebracion("confesion", (dias_de(t, laborables) or dias_ctx or (None, [], False)), None, None, idioma_de(t), temporada, linea)
+                c["a_peticion"] = True
+                out.append(c)
+                tipo = "confesion"
+                continue
             if re.search(RX_IGNORA, t) and not nuevo_tipo:
                 ignora = True
                 continue
+            # Solo cambia de tipo un título corto ("CONFESSIONS:"), no una frase larga que mencione el Santíssim.
+            if nuevo_tipo and not (len(t) <= 50 or t.rstrip().endswith(":")):
+                nuevo_tipo = None
             if nuevo_tipo or temp:
                 ignora = False
             if nuevo_tipo:
@@ -233,20 +259,8 @@ def extraer(texto, tipo_inicial="misa"):
                 idioma_ctx = idi
             elif nuevo_tipo or temp:
                 idioma_ctx = idi
-            # Confesiones como regla relativa a la misa
-            if (nuevo_tipo or tipo) == "confesion":
-                rel = re.search(r"(mitja hora|media hora|30 minuts|30 minutos|15 minuts|15 minutos|una hora)\s+(abans|antes)|(abans|antes)\s+(de\s+)?(les|las|cada|la)?\s*(missa|misa|eucaristia|celebraci)", t)
-                if rel:
-                    mins = 30 if re.search(r"mitja|media|30", t) else 15 if "15" in t else 60 if "una hora" in t else None
-                    c = celebracion("confesion", (dd or dias_ctx or (None, [], False)), None, None, idi, temporada, linea)
-                    c["relativa_a_misa"] = {"minutos_antes": mins} if mins else {"antes": True}
-                    if re.search(r"despres|despues", t):
-                        c["relativa_a_misa"]["tambien_despues"] = True
-                    out.append(c)
-                elif re.search(r"(a peticio|a peticion|quan es demani|siempre que se pida|cita previa|demanar hora|concertar)", t):
-                    c = celebracion("confesion", (dd or dias_ctx or (None, [], False)), None, None, idi, temporada, linea)
-                    c["a_peticion"] = True
-                    out.append(c)
+            if nuevo_tipo or temp or dd:
+                ultimo_dd = None
             continue
         if ignora and not nuevo_tipo:
             continue
@@ -264,8 +278,15 @@ def extraer(texto, tipo_inicial="misa"):
                 if dd:
                     dias_ctx = dd
                 continue
-            dd = dias_de(tr[:hs[0][2]] or tr, laborables) or dias_de(tr, laborables) or dias_ctx
-            if not dd:
+            dd = dias_de(tr[:hs[0][2]] or tr, laborables) or dias_de(tr, laborables)
+            deducidos = False
+            if dd:
+                ultimo_dd = dd
+            elif dias_ctx:
+                dd = dias_ctx
+            elif ultimo_dd and not temp:
+                dd, deducidos = ultimo_dd, True  # "Diumenges: 11:30h" y debajo "18:30h"
+            else:
                 dudosas.append(linea)
                 continue
             idi_tr = idioma_de(tr)
@@ -280,9 +301,11 @@ def extraer(texto, tipo_inicial="misa"):
                 c = celebracion(tipo_l, dd, ini, fin, idi, temporada_l, linea)
                 if not c["dias"]:
                     continue
+                if deducidos:
+                    c["dias_deducidos"] = True
                 out.append(c)
                 found = True
-        if not found and re.search(r"\d", t) and horas_de(t):
+        if not found and re.search(r"\d", t) and horas_de(t) and linea not in dudosas:
             dudosas.append(linea)
     # Quita duplicados exactos
     vistos, unicas = set(), []

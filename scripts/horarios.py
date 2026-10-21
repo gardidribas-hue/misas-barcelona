@@ -16,7 +16,7 @@ Lo ejecuta cada semana la acción de GitHub «horarios». A mano:
 import argparse, datetime as dt, hashlib, io, json, pathlib, re, shutil, subprocess, sys, tempfile, time
 import urllib.error, urllib.parse, urllib.request, urllib.robotparser
 from bs4 import BeautifulSoup
-from horarios_texto import extraer, norm, DIAS, VISPERA, FESTIVO
+from horarios_texto import extraer, norm, DIAS, VISPERA, FESTIVO, VERSION
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "horarios"
@@ -406,11 +406,17 @@ def guardar(p, obj):
 
 
 def sha(texto):
-    return hashlib.sha256(re.sub(r"\s+", " ", texto).strip().encode()).hexdigest()[:16]
+    return hashlib.sha256(f"v{VERSION} {re.sub(r'\s+', ' ', texto).strip()}".encode()).hexdigest()[:16]
+
+
+def guardar_texto(tid, fn, url, formato, texto):
+    (OUT / "textos").mkdir(parents=True, exist_ok=True)
+    (OUT / "textos" / f"{tid}-{fn}.txt").write_text(f"# {url}\n# {HOY} · formato: {formato}\n\n{texto}\n", "utf-8")
 
 
 def confianza_f1(cels, dudosas):
-    return "alta" if not dudosas and any(c["tipo"] == "misa" for c in cels) else "media"
+    seguro = not dudosas and not any(c.get("dias_deducidos") for c in cels)
+    return "alta" if seguro and any(c["tipo"] == "misa" for c in cels) else "media"
 
 
 def confianza_f2(revision):
@@ -457,12 +463,12 @@ def procesar(lug, lugares, previo, estado_t, informe):
                 texto, url, formato, notas = leer_f1(lug, fs["F1"], lugares, estado_t) if fn == "F1" else leer_f3(lug, fs["F3"])
                 cels, dudosas = extraer(texto)
                 dudosas = list(dict.fromkeys(dudosas))
+                guardar_texto(tid, fn, url, formato, texto)
                 if not any(c["tipo"] == "misa" for c in cels):
                     raise SinHorario("no se reconoce ningún horario de misa" + (f" ({len(dudosas)} líneas dudosas)" if dudosas else ""))
                 conf = confianza_f1(cels, dudosas) if fn == "F1" else "baja"
             h = sha(texto)
-            (OUT / "textos").mkdir(parents=True, exist_ok=True)
-            (OUT / "textos" / f"{tid}-{fn}.txt").write_text(f"# {url}\n# {HOY} · formato: {formato}\n\n{texto}\n", "utf-8")
+            guardar_texto(tid, fn, url, formato, texto)
             intentos.append({"fuente": fn, "resultado": "ok"})
             elegido = dict(fuente=fn, url=url, formato=formato, celebraciones=cels, dudosas=dudosas, notas=notas,
                            confianza=conf, hash=h)
