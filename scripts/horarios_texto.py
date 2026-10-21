@@ -5,11 +5,11 @@ Es un extractor por reglas: solo guarda lo que reconoce con seguridad (día + ho
 aparte las líneas con horas que no ha sabido interpretar, para revisarlas.
 
     from horarios_texto import extraer
-    celebraciones, dudosas = extraer(texto)
+    celebraciones, dudosas, avisos = extraer(texto)
 """
 import re, unicodedata
 
-VERSION = 2  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
+VERSION = 5  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
 
 DIAS = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
 VISPERA, FESTIVO = "vispera_festivo", "festivo_precepto"
@@ -27,12 +27,12 @@ D1 = {  # nombre (sin acentos, singular o plural) -> índice
     "dilluns": 0, "lunes": 0, "dimarts": 1, "martes": 1, "dimecres": 2, "miercoles": 2,
     "dijous": 3, "jueves": 3, "divendres": 4, "viernes": 4,
     "dissabte": 5, "dissabtes": 5, "sabado": 5, "sabados": 5,
-    "diumenge": 6, "diumenges": 6, "domingo": 6, "domingos": 6,
+    "diumenge": 6, "diumenges": 6, "diumeges": 6, "domingo": 6, "domingos": 6,
 }
 DIA_RE = "|".join(sorted(D1, key=len, reverse=True))
 ORD = {"primer": 1, "primera": 1, "1r": 1, "1er": 1, "segon": 2, "segona": 2, "segundo": 2, "segunda": 2,
        "2n": 2, "tercer": 3, "tercera": 3, "3r": 3, "quart": 4, "quarta": 4, "cuarto": 4, "cuarta": 4,
-       "4t": 4, "ultim": -1, "ultima": -1, "ultimo": -1}
+       "4t": 4, "darrer": -1, "darrera": -1, "ultim": -1, "ultima": -1, "ultimo": -1}
 ORD_RE = "|".join(sorted(ORD, key=len, reverse=True))
 
 
@@ -90,7 +90,7 @@ MESES = r"(gener|febrer|marc|abril|maig|juny|juliol|agost|setembre|octubre|novem
 
 
 def horas_de(t):
-    """Horas de un texto normalizado: lista de (inicio, fin|None, posición)."""
+    """Horas de un texto normalizado: lista de (inicio, fin|None, posición, marcada_con_asterisco)."""
     toks = []
     for m in HORA_RE.finditer(t):
         h, mi = int(m.group("h")), m.group("m")
@@ -98,40 +98,40 @@ def horas_de(t):
         before = t[max(0, m.start() - 12):m.start()]
         if re.match(rf"\s*(de |d')?{MESES}", after) or re.search(r"\b(dia|el|del|any|ano)\s$", before):
             continue  # es una fecha
-        fuerte = bool(mi) or bool(m.group("suf")) or bool(m.group("tarde")) or re.search(r"(a les|a las|les|las)\s$", before)
+        fuerte = bool(mi) or bool(m.group("suf")) or bool(m.group("tarde")) or bool(re.search(r"\b(a les|a las|les|las)\s$", before))
         if m.group("sep") == "," and mi and not m.group("suf") and re.match(r"\d", t[m.end() - 2:m.end()]) is None:
             fuerte = False
         tarde = m.group("tarde") or ""
         if h < 12 and re.search(r"tarda|tarde|nit|noche|vespre", tarde):
             h += 12
-        toks.append([h, int(mi or 0), m.start(), m.end(), bool(fuerte)])
+        estrella = bool(re.match(r"\s?\*", t[m.end():m.end() + 2]))
+        toks.append([h, int(mi or 0), m.start(), m.end(), fuerte, estrella])
+    # "de 18 a 21": un intervalo con "de … a …" son horas aunque no lleven "h".
+    for i in range(len(toks) - 1):
+        a, b = toks[i], toks[i + 1]
+        if re.search(r"\b(de|des de|desde)\s$", t[max(0, a[2] - 8):a[2]]) and re.fullmatch(r"\s*(h\s*)?(a|a les|a las|fins a|fins les|hasta|hasta las)\s*", t[a[3]:b[2]]) \
+                and 6 <= a[0] <= 23 and (b[0] > a[0] or b[0] <= 3):
+            a[4] = b[4] = True
     # Una lista "8, 10, 11 i 19 h": si una hora de la cadena es segura, todas lo son.
-    for i in range(len(toks)):
-        for j in (i - 1, i + 1):
-            if 0 <= j < len(toks) and not toks[i][4] and toks[j][4]:
-                a, b = sorted((i, j))
-                if re.fullmatch(r"\s*(,|i|y|e|o|-|–|/|;|\||a|fins a|hasta)\s*(h\s*)?", t[toks[a][3]:toks[b][2]]):
-                    toks[i][4] = True
-        if not toks[i][4]:
-            continue
-    for _ in range(3):  # propaga por cadenas largas
+    for _ in range(4):
         for i in range(len(toks)):
             for j in (i - 1, i + 1):
                 if 0 <= j < len(toks) and not toks[i][4] and toks[j][4]:
                     a, b = sorted((i, j))
-                    if re.fullmatch(r"\s*(,|i|y|e|o|-|–|/|;|\|)\s*", t[toks[a][3]:toks[b][2]]):
+                    if re.fullmatch(r"\s*\*?\s*(,|i|y|e|o|-|–|/|;|\|)\s*", t[toks[a][3]:toks[b][2]]):
                         toks[i][4] = True
     toks = [x for x in toks if x[4]]
     out, i = [], 0
     while i < len(toks):
-        h, mi, s, e, _ = toks[i]
+        h, mi, s, e, _, est = toks[i]
         ini = f"{h:02d}:{mi:02d}"
-        if i + 1 < len(toks) and re.fullmatch(r"\s*(h\s*)?(-|–|a|fins a|fins les|hasta|hasta las|a les|a las)\s*", t[e:toks[i + 1][2]]) \
-                and (toks[i + 1][0], toks[i + 1][1]) > (h, mi):
-            out.append((ini, f"{toks[i + 1][0]:02d}:{toks[i + 1][1]:02d}", s))
-            i += 2
-            continue
-        out.append((ini, None, s))
+        if i + 1 < len(toks) and re.fullmatch(r"\s*(h\s*)?(-|–|a|fins a|fins les|hasta|hasta las|a les|a las)\s*", t[e:toks[i + 1][2]]):
+            h2, m2 = toks[i + 1][0], toks[i + 1][1]
+            if (h2, m2) > (h, mi) or (h >= 20 and h2 <= 3):  # también "de 22:00 a 1:00"
+                out.append((ini, f"{h2:02d}:{m2:02d}", s, est))
+                i += 2
+                continue
+        out.append((ini, None, s, est))
         i += 1
     return out
 
@@ -145,7 +145,7 @@ IDIOMAS = [
     (r"frances|francais", "otro", "francés"), (r"alemany|aleman|deutsch", "otro", "alemán"),
     (r"polones|polaco", "otro", "polaco"), (r"ucraines|ucraniano", "otro", "ucraniano"),
     (r"portugues", "otro", "portugués"), (r"llati|latin\b", "otro", "latín"),
-    (r"tagal|filipi", "otro", "tagalo"), (r"xines|chino", "otro", "chino"),
+    (r"tagal|filipi", "otro", "tagalo"), (r"\bgrec\b|\bgriego\b", "otro", "griego"), (r"xines|chino", "otro", "chino"),
     (r"romanes|rumano", "otro", "rumano"), (r"coreano|corea", "otro", "coreano"),
 ]
 
@@ -160,8 +160,10 @@ def idioma_de(t):
 
 RX_CONF = r"confessi|confesi|penitencia|reconciliaci|sagrament del perdo"
 RX_ADOR = r"adoraci|exposici|santissim|santisimo|hora santa|jueves eucaristicos|dijous eucaristics|benedicci"
-RX_MISA = r"\bmisses?\b|\bmisas?\b|eucaristi|celebraci"
-RX_IGNORA = (r"despatx|despacho|secretaria|caritas|acollida|acogida|arxiu|archivo|catequesi|catequesis|obert|abierto"
+RX_MISA = r"\bmiss(a|es)\b|\bmisas?\b|eucaristi|celebraci"
+RX_AVISO = (r"se celebrara|es celebrara|es tornara|se tornara|se volvera|a partir del? (dia )?\d|des del dia|desde el dia"
+            r"|despres del dia|despues del dia|\bel dia \d|queda suspes|queda suprimi|no hi haura|no habra|excepcionalment")
+RX_IGNORA = (r"despatx|despacho|atencio|atencion|secretaria|caritas|acollida|acogida|arxiu|archivo|catequesi|catequesis|obert|abierto"
              r"|obertura|apertura|horari del temple|horari de l'esglesia|horario del templo|visites|visitas|botiga|tienda"
              r"|rosari|rosario|vespres|visperas solemnes|visperas cantadas|telefon|telefono|tel\.|whatsapp|reunio|reunion"
              r"|grup|grupo|assaig|ensayo|coral|escolta|esplai|curs de|cursillo|bateig|bautizo|casament|boda|exequies"
@@ -183,7 +185,7 @@ FIN_MES = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 
 def temporada_de(t):
-    m = re.search(rf"(?:del?\s+(\d{{1,2}})\s+(?:de\s+|d')?)?{MESES}\s+(?:a|al|fins a|fins al|hasta|-|–)\s+(?:(?:el\s+)?(\d{{1,2}})\s+(?:de\s+|d')?)?{MESES}", t)
+    m = re.search(rf"(?:del?\s+(\d{{1,2}})\s+(?:de\s+|d')?)?{MESES}\s*(?:\s(?:a|al|fins a|fins al|hasta)\s|-|–)\s*(?:(?:el\s+)?(\d{{1,2}})\s+(?:de\s+|d')?)?{MESES}", t)
     if m:
         d1, m1, d2, m2 = m.group(1), MES_N[m.group(2)], m.group(3), MES_N[m.group(4)]
         ini, fin = f"{m1:02d}-{int(d1 or 1):02d}", f"{m2:02d}-{int(d2 or FIN_MES[m2 - 1]):02d}"
@@ -204,11 +206,14 @@ def lineas(texto):
 
 
 def extraer(texto, tipo_inicial="misa"):
-    """Devuelve (celebraciones, líneas_dudosas). Cada celebración es un dict del modelo de datos."""
+    """Devuelve (celebraciones, líneas_dudosas, avisos). Cada celebración es un dict del modelo de datos."""
     todo = norm(texto)
     hay_sabado = bool(re.search(r"\b(dissabtes?|sabados?|vigilies|visperas de)\b", todo))
     laborables = LAB5 if hay_sabado else LAB6
-    out, dudosas = [], []
+    out, dudosas, avisos = [], [], []
+    # "Les misses són en català, excepte les marcades amb *, que són en castellà"
+    m = re.search(r"\ben (catala|castella|catalan|castellano)\w*[^.]{0,40}?(excepte|excepto|menys|salvo|llevat)[^.]{0,40}?\*[^.]{0,30}?(catala|castella|catalan|castellano)", todo)
+    leyenda = (idioma_de(m.group(1)), idioma_de(m.group(3))) if m else None
     tipo, temporada, dias_ctx, idioma_ctx, ignora = tipo_inicial, None, None, None, False
     ultimo_dd = None  # días de la línea anterior, para líneas que solo continúan la lista de horas
     for linea in lineas(texto):
@@ -248,6 +253,8 @@ def extraer(texto, tipo_inicial="misa"):
             if nuevo_tipo or temp:
                 ignora = False
             if nuevo_tipo:
+                if nuevo_tipo != tipo:
+                    temporada = None  # las temporadas suelen ir dentro de cada apartado (misas, confesiones…)
                 tipo, dias_ctx = nuevo_tipo, None
             if temp:
                 temporada, dias_ctx = temp, None
@@ -264,10 +271,20 @@ def extraer(texto, tipo_inicial="misa"):
             continue
         if ignora and not nuevo_tipo:
             continue
-        if re.search(RX_IGNORA, t) and not nuevo_tipo:
+        if re.search(RX_AVISO, t):
+            avisos.append(linea)  # aviso puntual ("la missa de 20:15 es tornarà a celebrar el dia 25")
             continue
+        if len(t) > 110 and hs[0][2] > 50:
+            dudosas.append(linea)  # frase larga con horas en medio: no se interpreta
+            continue
+        # En una línea con horas, el tipo solo cambia si la palabra va antes de la primera hora.
+        pref = t[:hs[0][2]]
+        nuevo_tipo = "confesion" if re.search(RX_CONF, pref) else "adoracion" if re.search(RX_ADOR, pref) else \
+            "misa" if re.search(RX_MISA, pref) else None
+        if re.search(RX_IGNORA, pref) and not nuevo_tipo:
+            continue  # "Vespres cantades: diumenges a les 19:00", "Despatx: dimarts de 18 a 20 h"…
         tipo_l = nuevo_tipo or tipo
-        temporada_l = temp or temporada  # "Juliol i agost: 10 h" solo afecta a esa línea
+        temporada_l = temporada_de(pref) or temporada  # "Juliol i agost: 10 h" solo afecta a esa línea
         # Separa la línea en trozos "días: horas" (p. ej. "Feiners: 19 h. Diumenges: 11 i 13 h").
         trozos = re.split(r"(?<=\D)[.;](?=\s+[a-z])|\s\|\s|\s/\s(?=\D)", t)
         found = False
@@ -290,11 +307,13 @@ def extraer(texto, tipo_inicial="misa"):
                 dudosas.append(linea)
                 continue
             idi_tr = idioma_de(tr)
-            for k, (ini, fin, pos) in enumerate(hs):
+            for k, (ini, fin, pos, estrella) in enumerate(hs):
                 fin_seg = hs[k + 1][2] if k + 1 < len(hs) else len(tr)
                 idi = idioma_de(tr[pos:fin_seg])
                 if not idi and idi_tr and idi_tr[2] < hs[0][2]:
                     idi = idi_tr
+                if not idi and leyenda and tipo_l == "misa":
+                    idi = leyenda[1] if estrella else leyenda[0]
                 idi = idi or idioma_ctx
                 if tipo_l == "misa":
                     fin = None
@@ -314,7 +333,7 @@ def extraer(texto, tipo_inicial="misa"):
         if k not in vistos:
             vistos.add(k)
             unicas.append(c)
-    return unicas, dudosas
+    return unicas, dudosas, avisos
 
 
 def celebracion(tipo, dd, ini, fin, idi, temporada, linea):
@@ -331,5 +350,5 @@ def celebracion(tipo, dd, ini, fin, idi, temporada, linea):
 
 if __name__ == "__main__":
     import json, sys
-    cs, dud = extraer(sys.stdin.read())
-    print(json.dumps({"celebraciones": cs, "dudosas": dud}, ensure_ascii=False, indent=1))
+    cs, dud, av = extraer(sys.stdin.read())
+    print(json.dumps({"celebraciones": cs, "dudosas": dud, "avisos": av}, ensure_ascii=False, indent=1))

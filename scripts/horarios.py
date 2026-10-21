@@ -354,7 +354,7 @@ def leer_f2(lug, f2):
     if isinstance(texto_conf, list):
         texto_conf = "\n".join(map(str, texto_conf))
     if texto_conf.strip():
-        conf, _ = extraer(texto_conf, tipo_inicial="confesion")
+        conf = extraer(texto_conf, tipo_inicial="confesion")[0]
         conf = [c for c in conf if c["tipo"] == "confesion"]
         if not conf:
             conf = [{"tipo": "confesion", "dias": [], "inicio": None, "fin": None, "idioma": None, "temporada": None,
@@ -470,7 +470,8 @@ def procesar(lug, lugares, previo, estado_t, informe):
                 if elegido:
                     break
                 texto, url, formato, notas = leer_f1(lug, fs["F1"], lugares, estado_t) if fn == "F1" else leer_f3(lug, fs["F3"])
-                cels, dudosas = extraer(texto)
+                cels, dudosas, avisos = extraer(texto)
+                notas = notas + [f"aviso: {a}" for a in avisos]
                 dudosas = list(dict.fromkeys(dudosas))
                 guardar_texto(tid, fn, url, formato, texto)
                 if not any(c["tipo"] == "misa" for c in cels):
