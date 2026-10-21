@@ -13,7 +13,7 @@ Lo ejecuta cada semana la acción de GitHub «horarios». A mano:
     python scripts/horarios.py importar data/horarios/Fuentes_horarios_misas_Arzobispado_Barcelona.xlsx
     python scripts/horarios.py actualizar [--ids BCN0003,BCN0213]
 """
-import argparse, datetime as dt, hashlib, io, json, pathlib, re, shutil, subprocess, sys, tempfile, time
+import argparse, datetime as dt, hashlib, io, json, os, pathlib, re, shutil, subprocess, sys, tempfile, time
 import urllib.error, urllib.parse, urllib.request, urllib.robotparser
 from bs4 import BeautifulSoup
 from horarios_texto import extraer, norm, DIAS, VISPERA, FESTIVO, VERSION
@@ -24,6 +24,7 @@ UA = "Mozilla/5.0 (compatible; misas-barcelona/1.0; +https://github.com/gardidri
 HOY = dt.date.today().isoformat()
 F2_ANTIGUA = "2024-01-01"  # una revisión de misas.org anterior a esta fecha se considera poco fiable
 PAUSA = 1.0  # segundos entre peticiones al mismo servidor (misas.org pide como mucho 1 por segundo)
+CRUDO = bool(os.environ.get("HORARIOS_CRUDO"))
 AVISO = "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia."
 
 
@@ -82,7 +83,12 @@ def descargar(url):
     try:
         req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "ca,es;q=0.8"})
         with urllib.request.urlopen(req, timeout=40) as r:
-            return r.read(), r.headers.get("Content-Type", ""), r.geturl()
+            datos = r.read()
+            if CRUDO:  # copia de lo descargado, para depurar las reglas
+                nombre = re.sub(r"[^a-z0-9]+", "_", url.lower().split("//", 1)[-1])[:120]
+                (OUT / "crudo").mkdir(parents=True, exist_ok=True)
+                (OUT / "crudo" / nombre).write_bytes(datos)
+            return datos, r.headers.get("Content-Type", ""), r.geturl()
     finally:
         _ultima[host] = time.time()
 
@@ -104,10 +110,11 @@ def robots_permite(url):
 # --- De HTML / PDF / imagen a texto ----------------------------------------------------------------
 def html_a_texto(html):
     s = BeautifulSoup(html, "html.parser")
-    for el in s(["script", "style", "noscript", "nav", "header", "footer", "form", "aside", "iframe", "svg"]):
+    for el in s(["script", "style", "noscript", "nav", "footer", "form", "iframe", "svg", "template"]):
         el.decompose()
-    for el in s.select("[class*=cookie], [id*=cookie], [class*=menu], [id*=menu]"):
-        el.decompose()
+    for el in s.select("[id*=cookie], [class*=cookie]"):
+        if el.name not in ("body", "html", "main"):
+            el.decompose()
     for br in s.find_all("br"):
         br.replace_with("\n")
     bloques = s.find_all(["h1", "h2", "h3", "h4", "h5", "h6", "p", "li", "td", "th", "dt", "dd", "div", "span", "strong", "b"])
@@ -240,7 +247,8 @@ def leer_f1(lug, f1, lugares, estado_t):
             # Portada, o página compartida sin bloque propio: busca un enlace al horario (o a la página del templo).
             links = enlaces(datos.decode("utf-8", "replace"), final)
             claves = claves_nombre(lug["nombre"])
-            cand = [u for t, u in links if compartida and any(c in norm(t) for c in claves)] + \
+            cand = sorted((u for t, u in links if compartida and any(c in norm(t) for c in claves)),
+                          key=lambda u: not re.search(r"parroqui|esglesi|iglesi|templ", u)) + \
                    [u for t, u in links if es_portada and re.search(RX_ENLACE_HORARIO, norm(t + " " + u))]
             cand = [u for u in dict.fromkeys(cand) if u.startswith("http") and u.split("#")[0] != final.split("#")[0]]
             if not cand:
