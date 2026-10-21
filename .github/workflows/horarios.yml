@@ -10,7 +10,7 @@ on:
         description: "IDs separados por comas (vacío = todos)"
         required: false
   push:
-    paths: [scripts/horarios.py, scripts/horarios_texto.py, .github/workflows/horarios.yml]
+    paths: [scripts/horarios.py, scripts/horarios_texto.py, scripts/horarios_app.py, .github/workflows/horarios.yml]
 permissions:
   contents: write
 concurrency: horarios
@@ -30,6 +30,8 @@ jobs:
           IDS="${{ github.event.inputs.ids }}"
           if [ "${{ github.event_name }}" = "push" ]; then IDS="$PRUEBA"; fi
           python scripts/horarios.py actualizar --ids "$IDS"
+      - name: Formato de la web
+        run: python scripts/horarios_app.py
       - name: Guardar cambios
         run: |
           git config user.name "misas-barcelona bot"

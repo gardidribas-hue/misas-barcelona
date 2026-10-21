@@ -9,7 +9,7 @@ aparte las líneas con horas que no ha sabido interpretar, para revisarlas.
 """
 import re, unicodedata
 
-VERSION = 6  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
+VERSION = 7  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
 
 DIAS = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
 VISPERA, FESTIVO = "vispera_festivo", "festivo_precepto"
@@ -252,6 +252,10 @@ def extraer(texto, tipo_inicial="misa"):
                 nuevo_tipo = None
             if nuevo_tipo or temp:
                 ignora = False
+            elif len(t) <= 50 and not dias_de(t, laborables) and not idioma_de(t) and not re.search(r"horari|horario|\d", t) \
+                    and linea.upper() == linea and re.search(r"[a-z]", t):
+                ignora, dias_ctx = True, None  # título en mayúsculas de otro apartado ("PREGÀRIA A LA MARE DE DÉU")
+                continue
             if nuevo_tipo:
                 if nuevo_tipo != tipo:
                     temporada = None  # las temporadas suelen ir dentro de cada apartado (misas, confesiones…)
@@ -281,7 +285,8 @@ def extraer(texto, tipo_inicial="misa"):
         pref = t[:hs[0][2]]
         nuevo_tipo = "confesion" if re.search(RX_CONF, pref) else "adoracion" if re.search(RX_ADOR, pref) else \
             "misa" if re.search(RX_MISA, pref) else None
-        if re.search(RX_IGNORA, pref) and not nuevo_tipo:
+        mi, mt = re.search(RX_IGNORA, pref), re.search(f"{RX_CONF}|{RX_ADOR}|{RX_MISA}", pref)
+        if mi and (not nuevo_tipo or mt.start() > mi.start()):
             continue  # "Vespres cantades: diumenges a les 19:00", "Despatx: dimarts de 18 a 20 h"…
         tipo_l = nuevo_tipo or tipo
         temporada_l = temporada_de(pref) or temporada  # "Juliol i agost: 10 h" solo afecta a esa línea
@@ -338,12 +343,13 @@ def extraer(texto, tipo_inicial="misa"):
 
 def celebracion(tipo, dd, ini, fin, idi, temporada, linea):
     dias, semanas, vig = dd
-    c = {"tipo": tipo, "dias": list(dias or []), "inicio": ini, "fin": fin,
+    orden = DIAS + [VISPERA, FESTIVO]
+    c = {"tipo": tipo, "dias": sorted(dias or [], key=orden.index), "inicio": ini, "fin": fin,
          "idioma": idi[0] if idi else None, "temporada": temporada, "semanas_mes": list(semanas or []),
          "notas": linea[:200]}
     if idi and idi[1]:
         c["idioma_detalle"] = idi[1]
-    if vig and tipo == "misa":
+    if vig and tipo == "misa" and (ini or "") >= "16:00":  # "Dissabtes i vigílies: 8h… 20h": solo la de la tarde vale por el domingo
         c["vespertina_dominical"] = True
     return c
 
