@@ -1,0 +1,41 @@
+name: horarios
+# Una vez por semana lee las fuentes de cada templo (web propia, misas.org, Arzobispado) y guarda
+# los horarios en data/horarios/. Al tocar los scripts, solo prueba los 5 templos de ejemplo.
+on:
+  schedule:
+    - cron: "30 3 * * 1"
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "IDs separados por comas (vacío = todos)"
+        required: false
+  push:
+    paths: [scripts/horarios.py, scripts/horarios_texto.py, .github/workflows/horarios.yml]
+permissions:
+  contents: write
+concurrency: horarios
+env:
+  PRUEBA: BCN0003,BCN0213,BCN0226,BCN0092,BCN0212
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-cat tesseract-ocr-spa poppler-utils >/dev/null
+          pip install -q beautifulsoup4 pypdf openpyxl
+      - name: Leer las fuentes
+        run: |
+          IDS="${{ github.event.inputs.ids }}"
+          if [ "${{ github.event_name }}" = "push" ]; then IDS="$PRUEBA"; fi
+          python scripts/horarios.py actualizar --ids "$IDS"
+      - name: Guardar cambios
+        run: |
+          git config user.name "misas-barcelona bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/horarios
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "Horarios actualizados ($(date -u +%F))"
+          git pull --rebase -q origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
