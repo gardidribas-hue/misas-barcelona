@@ -116,6 +116,7 @@ def convertir(fecha):
     geo_js = (ROOT / "data" / "geo.js").read_text("utf-8")
     geo = json.loads(geo_js[geo_js.index("{"):geo_js.rindex("}") + 1])
     md = fecha[5:]
+    lugares = {l["id"]: l for l in json.loads((H / "lugares.json").read_text("utf-8"))["lugares"]}
     out = {}
     for tid, t in datos["templos"].items():
         cels = t.get("celebraciones") or []
@@ -160,7 +161,12 @@ def convertir(fecha):
                         rec["horario"]["otras_temporadas"].append({"tipo": campo, "nombre": v["nombre"] + fechas, "texto": r})
         # Parroquia de la web en el mismo sitio (menos de 120 m) y con nombre parecido.
         best = None
-        if t.get("lat"):
+        lug = lugares.get(tid, {})
+        f3 = ((lug.get("fuentes") or {}).get("F3") or {}).get("url") or ""
+        slug = re.search(r"/parroquies/([^/]+)", f3)
+        if slug:  # misma ficha del Arzobispado que la de data/parroquias.json
+            best = next(((0, p["id"]) for p in parroquias if re.search(rf"/parroquies/{re.escape(slug.group(1))}/?$", p.get("url") or "")), None)
+        if not best and t.get("lat"):
             for p in parroquias:
                 if p.get("lat") is None:
                     continue
