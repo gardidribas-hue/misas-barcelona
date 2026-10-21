@@ -28,7 +28,7 @@ jobs:
       - name: Leer las fuentes
         run: |
           IDS="${{ github.event.inputs.ids }}"
-          if [ "${{ github.event_name }}" = "push" ]; then IDS="$PRUEBA"; export HORARIOS_CRUDO=1; fi
+          if [ "${{ github.event_name }}" = "push" ]; then IDS="$PRUEBA"; fi
           python scripts/horarios.py actualizar --ids "$IDS"
       - name: Guardar cambios
         run: |

@@ -418,6 +418,10 @@ def sha(texto):
     return hashlib.sha256(f"v{VERSION} {limpio}".encode()).hexdigest()[:16]
 
 
+def comparable(cels):
+    return sorted(json.dumps({k: v for k, v in c.items() if k != "comprobado"}, sort_keys=True, ensure_ascii=False) for c in cels)
+
+
 def guardar_texto(tid, fn, url, formato, texto):
     (OUT / "textos").mkdir(parents=True, exist_ok=True)
     (OUT / "textos" / f"{tid}-{fn}.txt").write_text(f"# {url}\n# {HOY} · formato: {formato}\n\n{texto}\n", "utf-8")
@@ -449,13 +453,13 @@ def orden_fuentes(lug):
 def procesar(lug, lugares, previo, estado_t, informe):
     tid = lug["id"]
     fs = lug["fuentes"]
-    intentos, elegido, f2_datos, f2_debil = [], None, None, None
+    intentos, elegido, f2_datos, f2_debil, f2_revision = [], None, None, None, None
     for fn in orden_fuentes(lug):
         try:
             if fn == "F2":
                 texto, url, cels, revision = leer_f2(lug, fs["F2"])
                 dudosas, formato, notas = [], "json", []
-                f2_datos = cels
+                f2_datos, f2_revision = cels, revision
                 if elegido:
                     break
                 if not any(c["tipo"] == "misa" for c in cels):
@@ -489,6 +493,9 @@ def procesar(lug, lugares, previo, estado_t, informe):
         except (urllib.error.URLError, OSError, ValueError, RuntimeError, subprocess.SubprocessError) as e:
             intentos.append({"fuente": fn, "resultado": f"error: {e}"[:200]})
             informe["caidas"].append({"id": tid, "nombre": lug["nombre"], "fuente": fn, "error": f"{e}"[:200]})
+    if elegido and elegido["fuente"] == "F1" and f2_datos:  # lo que se completa con misas.org también cuenta para el hash
+        extra = json.dumps([c for c in f2_datos if c["tipo"] != "misa"], sort_keys=True, ensure_ascii=False)
+        elegido["hash"] = sha(elegido["hash"] + extra)
     if not elegido and f2_debil:
         texto, url, cels, dudosas, formato, notas, conf = f2_debil
         elegido = dict(fuente="F2", url=url, formato=formato, celebraciones=cels, dudosas=dudosas, notas=notas,
@@ -511,7 +518,13 @@ def procesar(lug, lugares, previo, estado_t, informe):
         cels = previo["celebraciones"]
     else:
         cels = [dict(c, fuente=fn, url=elegido["url"], comprobado=HOY, confianza=elegido["confianza"]) for c in elegido["celebraciones"]]
-        if previo and previo.get("celebraciones"):
+        if fn == "F1" and f2_datos:
+            # Si la web no dice nada de confesiones o adoración, se toman de misas.org (cada una lleva su fuente).
+            tipos_f1 = {c["tipo"] for c in cels}
+            conf2 = confianza_f2(f2_revision)
+            cels += [dict(c, fuente="F2", url=fs["F2"].get("pagina") or fs["F2"]["url"], comprobado=HOY, confianza=conf2)
+                     for c in f2_datos if c["tipo"] != "misa" and c["tipo"] not in tipos_f1]
+        if previo and previo.get("celebraciones") and comparable(previo["celebraciones"]) != comparable(cels):
             hist = cargar(OUT / "historial" / f"{tid}.json", [])
             hist.append({k: previo.get(k) for k in ("comprobado", "fuente", "url", "confianza", "celebraciones")})
             guardar(OUT / "historial" / f"{tid}.json", hist[-20:])

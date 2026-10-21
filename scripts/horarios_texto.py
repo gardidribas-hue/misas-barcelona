@@ -9,7 +9,7 @@ aparte las líneas con horas que no ha sabido interpretar, para revisarlas.
 """
 import re, unicodedata
 
-VERSION = 5  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
+VERSION = 6  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
 
 DIAS = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
 VISPERA, FESTIVO = "vispera_festivo", "festivo_precepto"
