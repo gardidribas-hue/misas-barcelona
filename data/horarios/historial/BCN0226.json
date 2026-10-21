@@ -191,5 +191,200 @@
     "confianza": "alta"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-21",
+  "fuente": "F2",
+  "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "06-26",
+     "fin": "09-11"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "06-26",
+     "fin": "09-11"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "06-26",
+     "fin": "09-11"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "vespertina_dominical": true,
+    "fuente": "F2",
+    "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-12",
+     "fin": "06-25"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-12",
+     "fin": "06-25"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-12",
+     "fin": "06-25"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "vespertina_dominical": true,
+    "fuente": "F2",
+    "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "18:00",
+    "fin": "18:45",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Normal",
+    "fuente": "F2",
+    "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "19:30",
+    "fin": "21:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Normal",
+    "fuente": "F2",
+    "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Media hora antes de misa y cuando se solicite al sacerdote.",
+    "relativa_a_misa": {
+     "minutos_antes": 30
+    },
+    "fuente": "F2",
+    "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   }
+  ]
  }
 ]

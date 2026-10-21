@@ -5,25 +5,25 @@
    "ultimo_ok": "2026-10-21"
   },
   "F1": {
-   "hash": "337940fe187972e6",
+   "hash": "6f96a87a372ca3f5",
    "ultimo_ok": "2026-10-21"
   }
  },
  "BCN0092": {
   "F2": {
-   "hash": "b8e7bd1d716ff81f",
+   "hash": "d64cf2663658d54d",
    "ultimo_ok": "2026-10-21"
   }
  },
  "BCN0212": {
   "F3": {
-   "hash": "dd569c9c5e7b7d92",
+   "hash": "393bf604536fbc63",
    "ultimo_ok": "2026-10-21"
   }
  },
  "BCN0213": {
   "F1": {
-   "hash": "d46f446488e806a4",
+   "hash": "83613bfa1e08996f",
    "ultimo_ok": "2026-10-21"
   }
  },
@@ -31,6 +31,10 @@
   "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
   "F2": {
    "hash": "7f537d647b19be92",
+   "ultimo_ok": "2026-10-21"
+  },
+  "F1": {
+   "hash": "c0423869ab81bc74",
    "ultimo_ok": "2026-10-21"
   }
  }

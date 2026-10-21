@@ -1943,5 +1943,908 @@
     "confianza": "alta"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-21",
+  "fuente": "F1",
+  "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "La missa de 13:00 dels diumenges se celebrarà des del dìa de la Mercè, el dia 24.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "20:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "La missa de Joves dels diumenges a les 20:30 es tornarà a celebrar el darre diumenge de Setembre, el dia 27.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "10-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "10-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "10-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "10-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "10-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "10-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "20:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "10-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Les Misses són en català, excepte les marcades amb *, que són en castellà. A les Misses del dissabte a les 18’00 i del diumenge a les 11’30 i 13’00 s’utilitzen diverses llengües i es reparteixen els t",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Les Misses són en català, excepte les marcades amb *, que són en castellà. A les Misses del dissabte a les 18’00 i del diumenge a les 11’30 i 13’00 s’utilitzen diverses llengües i es reparteixen els t",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Les Misses són en català, excepte les marcades amb *, que són en castellà. A les Misses del dissabte a les 18’00 i del diumenge a les 11’30 i 13’00 s’utilitzen diverses llengües i es reparteixen els t",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [
+     1
+    ],
+    "notas": "MISSA FAMILIAR: Primers diumenges de mes, a les 13:00. Missa participada per a infants i els seus pares.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "otro",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Missa ortodoxa en ritus bizantí, en grec i ucrainès: Cada diumenge, de 10:00 a 13:00, a la capella de Montserrat.",
+    "idioma_detalle": "ucraniano",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Dies feiners: 8:00, 10:00, 11:00, 19:00 (de dilluns a dissabte matí).",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Dies feiners: 8:00, 10:00, 11:00, 19:00 (de dilluns a dissabte matí).",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Dies feiners: 8:00, 10:00, 11:00, 19:00 (de dilluns a dissabte matí).",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Dies feiners: 8:00, 10:00, 11:00, 19:00 (de dilluns a dissabte matí).",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Vigílies i dissabtes tarda: 18:00, 20:00*.",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Vigílies i dissabtes tarda: 18:00, 20:00*.",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Cada dia de 8 a 13h i de 18 a 21, abans i després de les Misses.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "festivo_precepto",
+     "domingo"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Vespres Solemnes: Tots els diumenges i festius d’Advent i Nadal i de Quaresma i Pasqua. Se celebren a les 19:00, a la Basílica, amb exposició major del Santíssim.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Vespres Cantades: Diumenges de durant l’any, a les 19:00, a la Basílica, amb exposició major del Santíssim.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "18:00",
+    "fin": "19:00",
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "De dilluns a divendres, de 18h a 19h.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "miercoles"
+    ],
+    "inicio": "21:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Hora Santa Joves, els dimecres durant els curs escolar a les 21h.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "18:00",
+    "fin": "19:00",
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [
+     1
+    ],
+    "notas": "De 18:00 a 19:00, exposició major del Santíssim a l’altar del Sagrat Cor i acte de consagració al Cor de Jesús.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "22:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [
+     1
+    ],
+    "notas": "De 22:00 a 1:00, adoració eucarística a la capella de Montserrat.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "01:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [
+     1
+    ],
+    "notas": "De 22:00 a 1:00, adoració eucarística a la capella de Montserrat.",
+    "fuente": "F1",
+    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
+    "comprobado": "2026-10-21",
+    "confianza": "media"
+   }
+  ]
  }
 ]

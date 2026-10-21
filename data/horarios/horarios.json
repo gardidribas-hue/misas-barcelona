@@ -30,38 +30,6 @@
     {
      "tipo": "misa",
      "dias": [
-      "domingo"
-     ],
-     "inicio": "13:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "La missa de 13:00 dels diumenges se celebrarà des del dìa de la Mercè, el dia 24.",
-     "fuente": "F1",
-     "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo"
-     ],
-     "inicio": "20:30",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "La missa de Joves dels diumenges a les 20:30 es tornarà a celebrar el darre diumenge de Setembre, el dia 27.",
-     "fuente": "F1",
-     "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
       "lunes",
       "martes",
       "miercoles",
@@ -70,8 +38,12 @@
      ],
      "inicio": "08:00",
      "fin": null,
-     "idioma": null,
-     "temporada": null,
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Curso",
+      "inicio": "09-01",
+      "fin": "06-30"
+     },
      "semanas_mes": [],
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
@@ -90,8 +62,12 @@
      ],
      "inicio": "10:00",
      "fin": null,
-     "idioma": null,
-     "temporada": null,
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Curso",
+      "inicio": "09-01",
+      "fin": "06-30"
+     },
      "semanas_mes": [],
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
@@ -110,8 +86,12 @@
      ],
      "inicio": "11:00",
      "fin": null,
-     "idioma": null,
-     "temporada": null,
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Curso",
+      "inicio": "09-01",
+      "fin": "06-30"
+     },
      "semanas_mes": [],
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
@@ -130,8 +110,12 @@
      ],
      "inicio": "19:00",
      "fin": null,
-     "idioma": null,
-     "temporada": null,
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Curso",
+      "inicio": "09-01",
+      "fin": "06-30"
+     },
      "semanas_mes": [],
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
@@ -150,8 +134,12 @@
      ],
      "inicio": "20:15",
      "fin": null,
-     "idioma": null,
-     "temporada": null,
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Curso",
+      "inicio": "09-01",
+      "fin": "06-30"
+     },
      "semanas_mes": [],
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
@@ -167,8 +155,12 @@
      ],
      "inicio": "08:00",
      "fin": null,
-     "idioma": null,
-     "temporada": null,
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Curso",
+      "inicio": "09-01",
+      "fin": "06-30"
+     },
      "semanas_mes": [],
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
      "vespertina_dominical": true,
@@ -185,8 +177,12 @@
      ],
      "inicio": "10:00",
      "fin": null,
-     "idioma": null,
-     "temporada": null,
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Curso",
+      "inicio": "09-01",
+      "fin": "06-30"
+     },
      "semanas_mes": [],
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
      "vespertina_dominical": true,
@@ -203,8 +199,12 @@
      ],
      "inicio": "11:00",
      "fin": null,
-     "idioma": null,
-     "temporada": null,
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Curso",
+      "inicio": "09-01",
+      "fin": "06-30"
+     },
      "semanas_mes": [],
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
      "vespertina_dominical": true,
@@ -221,8 +221,12 @@
      ],
      "inicio": "18:00",
      "fin": null,
-     "idioma": null,
-     "temporada": null,
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Curso",
+      "inicio": "09-01",
+      "fin": "06-30"
+     },
      "semanas_mes": [],
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
      "vespertina_dominical": true,
@@ -239,8 +243,12 @@
      ],
      "inicio": "20:00",
      "fin": null,
-     "idioma": null,
-     "temporada": null,
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Curso",
+      "inicio": "09-01",
+      "fin": "06-30"
+     },
      "semanas_mes": [],
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
      "vespertina_dominical": true,
@@ -250,17 +258,17 @@
      "confianza": "media"
     },
     {
-     "tipo": "adoracion",
+     "tipo": "misa",
      "dias": [
       "festivo_precepto",
       "domingo"
      ],
      "inicio": "08:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
       "nombre": "Curso",
-      "inicio": "10-01",
+      "inicio": "09-01",
       "fin": "06-30"
      },
      "semanas_mes": [],
@@ -271,17 +279,17 @@
      "confianza": "media"
     },
     {
-     "tipo": "adoracion",
+     "tipo": "misa",
      "dias": [
       "festivo_precepto",
       "domingo"
      ],
      "inicio": "10:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "es",
      "temporada": {
       "nombre": "Curso",
-      "inicio": "10-01",
+      "inicio": "09-01",
       "fin": "06-30"
      },
      "semanas_mes": [],
@@ -292,17 +300,17 @@
      "confianza": "media"
     },
     {
-     "tipo": "adoracion",
+     "tipo": "misa",
      "dias": [
       "festivo_precepto",
       "domingo"
      ],
      "inicio": "11:30",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
       "nombre": "Curso",
-      "inicio": "10-01",
+      "inicio": "09-01",
       "fin": "06-30"
      },
      "semanas_mes": [],
@@ -313,17 +321,17 @@
      "confianza": "media"
     },
     {
-     "tipo": "adoracion",
+     "tipo": "misa",
      "dias": [
       "festivo_precepto",
       "domingo"
      ],
      "inicio": "13:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
       "nombre": "Curso",
-      "inicio": "10-01",
+      "inicio": "09-01",
       "fin": "06-30"
      },
      "semanas_mes": [],
@@ -334,17 +342,17 @@
      "confianza": "media"
     },
     {
-     "tipo": "adoracion",
+     "tipo": "misa",
      "dias": [
       "festivo_precepto",
       "domingo"
      ],
      "inicio": "18:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "es",
      "temporada": {
       "nombre": "Curso",
-      "inicio": "10-01",
+      "inicio": "09-01",
       "fin": "06-30"
      },
      "semanas_mes": [],
@@ -355,17 +363,17 @@
      "confianza": "media"
     },
     {
-     "tipo": "adoracion",
+     "tipo": "misa",
      "dias": [
       "festivo_precepto",
       "domingo"
      ],
      "inicio": "20:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
       "nombre": "Curso",
-      "inicio": "10-01",
+      "inicio": "09-01",
       "fin": "06-30"
      },
      "semanas_mes": [],
@@ -376,17 +384,17 @@
      "confianza": "media"
     },
     {
-     "tipo": "adoracion",
+     "tipo": "misa",
      "dias": [
       "festivo_precepto",
       "domingo"
      ],
      "inicio": "20:30",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
       "nombre": "Curso",
-      "inicio": "10-01",
+      "inicio": "09-01",
       "fin": "06-30"
      },
      "semanas_mes": [],
@@ -399,60 +407,16 @@
     {
      "tipo": "misa",
      "dias": [
-      "sabado"
-     ],
-     "inicio": "18:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Les Misses són en català, excepte les marcades amb *, que són en castellà. A les Misses del dissabte a les 18’00 i del diumenge a les 11’30 i 13’00 s’utilitzen diverses llengües i es reparteixen els t",
-     "fuente": "F1",
-     "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "sabado"
-     ],
-     "inicio": "11:30",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Les Misses són en català, excepte les marcades amb *, que són en castellà. A les Misses del dissabte a les 18’00 i del diumenge a les 11’30 i 13’00 s’utilitzen diverses llengües i es reparteixen els t",
-     "fuente": "F1",
-     "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "sabado"
-     ],
-     "inicio": "13:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Les Misses són en català, excepte les marcades amb *, que són en castellà. A les Misses del dissabte a les 18’00 i del diumenge a les 11’30 i 13’00 s’utilitzen diverses llengües i es reparteixen els t",
-     "fuente": "F1",
-     "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
       "domingo"
      ],
      "inicio": "13:00",
      "fin": null,
-     "idioma": null,
-     "temporada": null,
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Curso",
+      "inicio": "09-01",
+      "fin": "06-30"
+     },
      "semanas_mes": [
       1
      ],
@@ -467,13 +431,18 @@
      "dias": [
       "domingo"
      ],
-     "inicio": "10:00",
+     "inicio": "13:00",
      "fin": null,
-     "idioma": "otro",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Missa ortodoxa en ritus bizantí, en grec i ucrainès: Cada diumenge, de 10:00 a 13:00, a la capella de Montserrat.",
-     "idioma_detalle": "ucraniano",
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Curso",
+      "inicio": "09-01",
+      "fin": "06-30"
+     },
+     "semanas_mes": [
+      -1
+     ],
+     "notas": "MISSA PER DEMANAR LA FE PER ALS QUI ESTIMEM: Darrers diumenges de mes, a les 13:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
      "comprobado": "2026-10-21",
@@ -490,10 +459,10 @@
      ],
      "inicio": "08:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
+      "nombre": "Verano",
+      "inicio": "07-01",
       "fin": "08-31"
      },
      "semanas_mes": [],
@@ -514,10 +483,10 @@
      ],
      "inicio": "10:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
+      "nombre": "Verano",
+      "inicio": "07-01",
       "fin": "08-31"
      },
      "semanas_mes": [],
@@ -538,10 +507,10 @@
      ],
      "inicio": "11:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
+      "nombre": "Verano",
+      "inicio": "07-01",
       "fin": "08-31"
      },
      "semanas_mes": [],
@@ -562,10 +531,10 @@
      ],
      "inicio": "19:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
+      "nombre": "Verano",
+      "inicio": "07-01",
       "fin": "08-31"
      },
      "semanas_mes": [],
@@ -583,10 +552,10 @@
      ],
      "inicio": "18:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
+      "nombre": "Verano",
+      "inicio": "07-01",
       "fin": "08-31"
      },
      "semanas_mes": [],
@@ -605,10 +574,10 @@
      ],
      "inicio": "20:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "es",
      "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
+      "nombre": "Verano",
+      "inicio": "07-01",
       "fin": "08-31"
      },
      "semanas_mes": [],
@@ -627,10 +596,10 @@
      ],
      "inicio": "08:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
+      "nombre": "Verano",
+      "inicio": "07-01",
       "fin": "08-31"
      },
      "semanas_mes": [],
@@ -648,10 +617,10 @@
      ],
      "inicio": "10:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "es",
      "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
+      "nombre": "Verano",
+      "inicio": "07-01",
       "fin": "08-31"
      },
      "semanas_mes": [],
@@ -669,10 +638,10 @@
      ],
      "inicio": "11:30",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
+      "nombre": "Verano",
+      "inicio": "07-01",
       "fin": "08-31"
      },
      "semanas_mes": [],
@@ -690,10 +659,10 @@
      ],
      "inicio": "13:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
+      "nombre": "Verano",
+      "inicio": "07-01",
       "fin": "08-31"
      },
      "semanas_mes": [],
@@ -711,10 +680,10 @@
      ],
      "inicio": "18:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "es",
      "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
+      "nombre": "Verano",
+      "inicio": "07-01",
       "fin": "08-31"
      },
      "semanas_mes": [],
@@ -732,10 +701,10 @@
      ],
      "inicio": "20:00",
      "fin": null,
-     "idioma": null,
+     "idioma": "ca",
      "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
+      "nombre": "Verano",
+      "inicio": "07-01",
       "fin": "08-31"
      },
      "semanas_mes": [],
@@ -746,7 +715,7 @@
      "confianza": "media"
     },
     {
-     "tipo": "misa",
+     "tipo": "confesion",
      "dias": [
       "lunes",
       "martes",
@@ -757,13 +726,9 @@
       "domingo"
      ],
      "inicio": "08:00",
-     "fin": null,
+     "fin": "13:00",
      "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
+     "temporada": null,
      "semanas_mes": [],
      "notas": "Cada dia de 8 a 13h i de 18 a 21, abans i després de les Misses.",
      "fuente": "F1",
@@ -772,41 +737,22 @@
      "confianza": "media"
     },
     {
-     "tipo": "adoracion",
+     "tipo": "confesion",
      "dias": [
-      "festivo_precepto",
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes",
+      "sabado",
       "domingo"
      ],
-     "inicio": "19:00",
-     "fin": null,
+     "inicio": "18:00",
+     "fin": "21:00",
      "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
+     "temporada": null,
      "semanas_mes": [],
-     "notas": "Vespres Solemnes: Tots els diumenges i festius d’Advent i Nadal i de Quaresma i Pasqua. Se celebren a les 19:00, a la Basílica, amb exposició major del Santíssim.",
-     "fuente": "F1",
-     "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
-     "confianza": "media"
-    },
-    {
-     "tipo": "adoracion",
-     "dias": [
-      "domingo"
-     ],
-     "inicio": "19:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "Vespres Cantades: Diumenges de durant l’any, a les 19:00, a la Basílica, amb exposició major del Santíssim.",
+     "notas": "Cada dia de 8 a 13h i de 18 a 21, abans i després de les Misses.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
      "comprobado": "2026-10-21",
@@ -824,11 +770,7 @@
      "inicio": "18:00",
      "fin": "19:00",
      "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
+     "temporada": null,
      "semanas_mes": [],
      "notas": "De dilluns a divendres, de 18h a 19h.",
      "fuente": "F1",
@@ -864,11 +806,7 @@
      "inicio": "18:00",
      "fin": "19:00",
      "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
+     "temporada": null,
      "semanas_mes": [
       1
      ],
@@ -884,13 +822,9 @@
       "viernes"
      ],
      "inicio": "22:00",
-     "fin": null,
+     "fin": "01:00",
      "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
+     "temporada": null,
      "semanas_mes": [
       1
      ],
@@ -901,36 +835,35 @@
      "confianza": "media"
     },
     {
-     "tipo": "adoracion",
+     "tipo": "misa",
      "dias": [
       "viernes"
      ],
-     "inicio": "01:00",
+     "inicio": "20:15",
      "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
+     "idioma": "ca",
+     "temporada": null,
      "semanas_mes": [
       1
      ],
-     "notas": "De 22:00 a 1:00, adoració eucarística a la capella de Montserrat.",
+     "notas": "Mes de Maria: Devocions pròpies del mes de maig després del rosari i de la Missa de les 20:15.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
      "comprobado": "2026-10-21",
      "confianza": "media"
     }
    ],
-   "lineas_dudosas": [
-    "La missa de 20:15 se celebrarà després del dìa de la Mercè, el dia 25.",
-    "MISSA PER A JOVES: Durant el curs escolar, a les 20.30."
+   "notas_fuente": [
+    "aviso: La missa de 20:15 se celebrarà després del dìa de la Mercè, el dia 25.",
+    "aviso: La missa de 13:00 dels diumenges se celebrarà des del dìa de la Mercè, el dia 24.",
+    "aviso: La missa de Joves dels diumenges a les 20:30 es tornarà a celebrar el darre diumenge de Setembre, el dia 27."
    ],
-   "discrepancia_F2": {
-    "solo_en_F1": "sabado 11:30, sabado 13:00",
-    "solo_en_F2": "domingo 08:00, domingo 11:30, domingo 18:00, domingo 20:00"
-   },
+   "lineas_dudosas": [
+    "Les Misses són en català, excepte les marcades amb *, que són en castellà. A les Misses del dissabte a les 18’00 i del diumenge a les 11’30 i 13’00 s’utilitzen diverses llengües i es reparteixen els textos de la Missa segons la nacionalitat dels assistents.",
+    "MISSA PER A JOVES: Durant el curs escolar, a les 20.30.",
+    "Missa ortodoxa en ritus bizantí, en grec i ucrainès: Cada diumenge, de 10:00 a 13:00, a la capella de Montserrat.",
+    "Vespres Solemnes: Tots els diumenges i festius d’Advent i Nadal i de Quaresma i Pasqua. Se celebren a les 19:00, a la Basílica, amb exposició major del Santíssim."
+   ],
    "sospechas": [
     "hora fuera de 06:00–23:00: adoracion 01:00"
    ],
@@ -1419,211 +1352,73 @@
    "intentos": [
     {
      "fuente": "F1",
-     "resultado": "no se reconoce ningún horario de misa"
-    },
-    {
-     "fuente": "F2",
      "resultado": "ok"
     }
    ],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
    "estado": "ok",
-   "fuente": "F2",
-   "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
-   "formato": "json",
+   "fuente": "F1",
+   "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
+   "formato": "html",
    "comprobado": "2026-10-21",
    "confianza": "alta",
    "celebraciones": [
     {
      "tipo": "misa",
      "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "11:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Verano",
-      "inicio": "06-26",
-      "fin": "09-11"
-     },
-     "semanas_mes": [],
-     "notas": "",
-     "fuente": "F2",
-     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
-     "comprobado": "2026-10-21",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "13:00",
-     "fin": null,
-     "idioma": "es",
-     "temporada": {
-      "nombre": "Verano",
-      "inicio": "06-26",
-      "fin": "09-11"
-     },
-     "semanas_mes": [],
-     "notas": "",
-     "fuente": "F2",
-     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
-     "comprobado": "2026-10-21",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
       "lunes",
       "martes",
       "miercoles",
       "jueves",
       "viernes",
-      "sabado",
-      "vispera_festivo"
+      "sabado"
      ],
      "inicio": "19:00",
      "fin": null,
      "idioma": null,
-     "temporada": {
-      "nombre": "Verano",
-      "inicio": "06-26",
-      "fin": "09-11"
-     },
+     "temporada": null,
      "semanas_mes": [],
-     "notas": "",
-     "vespertina_dominical": true,
-     "fuente": "F2",
-     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+     "notas": "Horari de missa: de dilluns a dissabte a les 19.00h. Diumeges a les 11h (català) i a les 13h (castellà)",
+     "fuente": "F1",
+     "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
      "comprobado": "2026-10-21",
      "confianza": "alta"
     },
     {
      "tipo": "misa",
      "dias": [
-      "domingo",
-      "festivo_precepto"
+      "domingo"
      ],
      "inicio": "11:00",
      "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Invierno",
-      "inicio": "09-12",
-      "fin": "06-25"
-     },
+     "idioma": "ca",
+     "temporada": null,
      "semanas_mes": [],
-     "notas": "",
-     "fuente": "F2",
-     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+     "notas": "Horari de missa: de dilluns a dissabte a les 19.00h. Diumeges a les 11h (català) i a les 13h (castellà)",
+     "fuente": "F1",
+     "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
      "comprobado": "2026-10-21",
      "confianza": "alta"
     },
     {
      "tipo": "misa",
      "dias": [
-      "domingo",
-      "festivo_precepto"
+      "domingo"
      ],
      "inicio": "13:00",
      "fin": null,
      "idioma": "es",
-     "temporada": {
-      "nombre": "Invierno",
-      "inicio": "09-12",
-      "fin": "06-25"
-     },
-     "semanas_mes": [],
-     "notas": "",
-     "fuente": "F2",
-     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
-     "comprobado": "2026-10-21",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes",
-      "sabado",
-      "vispera_festivo"
-     ],
-     "inicio": "19:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Invierno",
-      "inicio": "09-12",
-      "fin": "06-25"
-     },
-     "semanas_mes": [],
-     "notas": "",
-     "vespertina_dominical": true,
-     "fuente": "F2",
-     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
-     "comprobado": "2026-10-21",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "adoracion",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "18:00",
-     "fin": "18:45",
-     "idioma": null,
      "temporada": null,
      "semanas_mes": [],
-     "notas": "Normal",
-     "fuente": "F2",
-     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
-     "comprobado": "2026-10-21",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "adoracion",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "19:30",
-     "fin": "21:00",
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Normal",
-     "fuente": "F2",
-     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
-     "comprobado": "2026-10-21",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "confesion",
-     "dias": [],
-     "inicio": null,
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Media hora antes de misa y cuando se solicite al sacerdote.",
-     "relativa_a_misa": {
-      "minutos_antes": 30
-     },
-     "fuente": "F2",
-     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
+     "notas": "Horari de missa: de dilluns a dissabte a les 19.00h. Diumeges a les 11h (català) i a les 13h (castellà)",
+     "fuente": "F1",
+     "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
      "comprobado": "2026-10-21",
      "confianza": "alta"
     }
    ],
    "notas_fuente": [
-    "última revisión en misas.org: 2026-10-10"
+    "bloque del templo dentro de una página compartida"
    ],
    "tipo": "Parroquia",
    "municipio": "Barcelona",
