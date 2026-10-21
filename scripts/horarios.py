@@ -406,7 +406,8 @@ def guardar(p, obj):
 
 
 def sha(texto):
-    return hashlib.sha256(f"v{VERSION} {re.sub(r'\s+', ' ', texto).strip()}".encode()).hexdigest()[:16]
+    limpio = re.sub(r"\s+", " ", texto).strip()
+    return hashlib.sha256(f"v{VERSION} {limpio}".encode()).hexdigest()[:16]
 
 
 def guardar_texto(tid, fn, url, formato, texto):
