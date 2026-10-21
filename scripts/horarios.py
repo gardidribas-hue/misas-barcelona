@@ -230,11 +230,14 @@ class SinHorario(Exception):
 
 
 def leer_f1(lug, f1, lugares, estado_t):
-    url = estado_t.get("F1_url_descubierta") or f1["url"]
+    descubierta = estado_t.get("F1_url_descubierta")
+    url = descubierta or f1["url"]
     if not robots_permite(url):
         raise SinHorario("robots.txt no permite leerla")
     datos, ctype, final = descargar(url)
     texto, formato = a_texto(datos, ctype, final)
+    if descubierta:  # página del horario encontrada en una pasada anterior
+        return seccion_horarios(texto), final, formato, ["página encontrada desde " + f1["url"]]
     es_portada = "portada" in (f1.get("tipo") or "") or f1.get("formato") == "Sin verificar"
     compartida = [o["nombre"] for o in lugares if o["id"] != lug["id"] and (o["fuentes"].get("F1") or {}).get("url") == f1["url"]]
     notas = []
