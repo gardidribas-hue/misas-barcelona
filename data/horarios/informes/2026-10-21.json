@@ -6,13 +6,13 @@
    "id": "BCN0003",
    "nombre": "Basílica de la Puríssima Concepció",
    "fuente": "F2",
-   "celebraciones": 45
+   "celebraciones": 46
   },
   {
    "id": "BCN0092",
    "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
    "fuente": "F2",
-   "celebraciones": 7
+   "celebraciones": 8
   },
   {
    "id": "BCN0212",
@@ -24,7 +24,7 @@
    "id": "BCN0213",
    "nombre": "Sant Francesc d'Assís",
    "fuente": "F1",
-   "celebraciones": 5
+   "celebraciones": 8
   },
   {
    "id": "BCN0226",
@@ -33,16 +33,45 @@
    "celebraciones": 9
   }
  ],
- "cambios": [],
- "caidas": [],
- "discrepancias": [
+ "cambios": [
+  {
+   "id": "BCN0003",
+   "nombre": "Basílica de la Puríssima Concepció",
+   "fuente": "F2",
+   "antes": 45,
+   "ahora": 46
+  },
+  {
+   "id": "BCN0092",
+   "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
+   "fuente": "F2",
+   "antes": 7,
+   "ahora": 8
+  },
+  {
+   "id": "BCN0212",
+   "nombre": "Sant Ferran",
+   "fuente": "F3",
+   "antes": 3,
+   "ahora": 3
+  },
   {
    "id": "BCN0213",
    "nombre": "Sant Francesc d'Assís",
-   "solo_en_F1": "",
-   "solo_en_F2": "domingo 18:30, domingo 20:00"
+   "fuente": "F1",
+   "antes": 5,
+   "ahora": 8
+  },
+  {
+   "id": "BCN0226",
+   "nombre": "Sant Joan de Gràcia",
+   "fuente": "F2",
+   "antes": 9,
+   "ahora": 9
   }
  ],
+ "caidas": [],
+ "discrepancias": [],
  "sin_horario": [],
  "pendientes": [],
  "sospechosos": [

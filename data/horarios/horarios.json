@@ -986,6 +986,23 @@
      "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
      "comprobado": "2026-10-21",
      "confianza": "alta"
+    },
+    {
+     "tipo": "confesion",
+     "dias": [],
+     "inicio": null,
+     "fin": null,
+     "idioma": null,
+     "temporada": null,
+     "semanas_mes": [],
+     "notas": "En verano y septiembre antes de misa.",
+     "relativa_a_misa": {
+      "antes": true
+     },
+     "fuente": "F2",
+     "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+     "comprobado": "2026-10-21",
+     "confianza": "alta"
     }
    ],
    "notas_fuente": [
@@ -1194,6 +1211,25 @@
      "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
      "comprobado": "2026-10-21",
      "confianza": "alta"
+    },
+    {
+     "tipo": "confesion",
+     "dias": [
+      "domingo"
+     ],
+     "inicio": null,
+     "fin": null,
+     "idioma": null,
+     "temporada": null,
+     "semanas_mes": [],
+     "notas": "Domingo antes de misa.",
+     "relativa_a_misa": {
+      "antes": true
+     },
+     "fuente": "F2",
+     "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+     "comprobado": "2026-10-21",
+     "confianza": "alta"
     }
    ],
    "notas_fuente": [
@@ -1360,6 +1396,42 @@
      "confianza": "media"
     },
     {
+     "tipo": "misa",
+     "dias": [
+      "festivo_precepto",
+      "domingo"
+     ],
+     "inicio": "18:30",
+     "fin": null,
+     "idioma": "ca",
+     "temporada": null,
+     "semanas_mes": [],
+     "notas": "= Catalán * 18:30h S. Francesc",
+     "dias_deducidos": true,
+     "fuente": "F1",
+     "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
+     "comprobado": "2026-10-21",
+     "confianza": "media"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
+      "festivo_precepto",
+      "domingo"
+     ],
+     "inicio": "20:00",
+     "fin": null,
+     "idioma": "es",
+     "temporada": null,
+     "semanas_mes": [],
+     "notas": "= Castellano 20:00h S. Francesc",
+     "dias_deducidos": true,
+     "fuente": "F1",
+     "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
+     "comprobado": "2026-10-21",
+     "confianza": "media"
+    },
+    {
      "tipo": "adoracion",
      "dias": [
       "viernes"
@@ -1376,7 +1448,24 @@
      "confianza": "media"
     },
     {
-     "tipo": "adoracion",
+     "tipo": "confesion",
+     "dias": [],
+     "inicio": null,
+     "fin": null,
+     "idioma": null,
+     "temporada": null,
+     "semanas_mes": [],
+     "notas": "30 min. abans de missa i abans de la benedicció del Santíssim",
+     "relativa_a_misa": {
+      "minutos_antes": 30
+     },
+     "fuente": "F1",
+     "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
+     "comprobado": "2026-10-21",
+     "confianza": "media"
+    },
+    {
+     "tipo": "confesion",
      "dias": [
       "miercoles"
      ],
@@ -1392,13 +1481,6 @@
      "confianza": "media"
     }
    ],
-   "lineas_dudosas": [
-    "= Catalán * 18:30h S. Francesc"
-   ],
-   "discrepancia_F2": {
-    "solo_en_F1": "",
-    "solo_en_F2": "domingo 18:30, domingo 20:00"
-   },
    "tipo": "Parroquia",
    "municipio": "Barcelona",
    "direccion": "C/ Ramon Turró, 130-138",
@@ -1608,7 +1690,9 @@
      "temporada": null,
      "semanas_mes": [],
      "notas": "Media hora antes de misa y cuando se solicite al sacerdote.",
-     "solo_texto": true,
+     "relativa_a_misa": {
+      "minutos_antes": 30
+     },
      "fuente": "F2",
      "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
      "comprobado": "2026-10-21",
