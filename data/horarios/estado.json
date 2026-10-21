@@ -3,6 +3,10 @@
   "F2": {
    "hash": "29f1c668a01a36af",
    "ultimo_ok": "2026-10-21"
+  },
+  "F1": {
+   "hash": "337940fe187972e6",
+   "ultimo_ok": "2026-10-21"
   }
  },
  "BCN0092": {
@@ -24,7 +28,7 @@
   }
  },
  "BCN0226": {
-  "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/publicacions/sant-joan-de-gracia",
+  "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
   "F2": {
    "hash": "7f537d647b19be92",
    "ultimo_ok": "2026-10-21"

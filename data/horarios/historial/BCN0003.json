@@ -962,5 +962,986 @@
     "confianza": "alta"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-21",
+  "fuente": "F2",
+  "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Misa Mayor",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "vespertina_dominical": true,
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "En la capilla del Santísimo",
+    "vespertina_dominical": true,
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "En la capilla del Santísimo",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-23"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-23"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-23"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-23"
+    },
+    "semanas_mes": [],
+    "notas": "En la capilla del Santísimo",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-23"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-23"
+    },
+    "semanas_mes": [],
+    "notas": "Misa Mayor",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-23"
+    },
+    "semanas_mes": [],
+    "notas": "Misa Internacional",
+    "vespertina_dominical": true,
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-23"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-23"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-23"
+    },
+    "semanas_mes": [],
+    "notas": "En la capilla del Santísimo",
+    "vespertina_dominical": true,
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-23"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Misa internacional",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Misa internacional",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Misa internacional",
+    "vespertina_dominical": true,
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "vespertina_dominical": true,
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "20:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-24",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "En la capilla del Santísmo (durante el curso universitario)",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "18:00",
+    "fin": "19:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Normal · El 1º viernes de mes, en el altar del Sagrado Corazón",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "22:00",
+    "fin": "01:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Nocturna · El 1º viernes de mes, en la capilla de Montserrat",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "18:00",
+    "fin": "19:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Normal · En la capilla del Santísimo",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "miercoles"
+    ],
+    "inicio": "21:30",
+    "fin": "22:30",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Normal · Para jóvenes, de octubre a junio",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "08:00",
+    "fin": "12:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Lunes a viernes 8:00-12:00 y 18:00-20:00.",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "18:00",
+    "fin": "20:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Lunes a viernes 8:00-12:00 y 18:00-20:00.",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "10:30",
+    "fin": "11:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Sábado 10:30-11:00 y 17:30-20:30.",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "17:30",
+    "fin": "20:30",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Sábado 10:30-11:00 y 17:30-20:30.",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "11:00",
+    "fin": "13:30",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festivos 11:00-13:30 y 17:30-20:30.",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "17:30",
+    "fin": "20:30",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festivos 11:00-13:30 y 17:30-20:30.",
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "En verano y septiembre antes de misa.",
+    "relativa_a_misa": {
+     "antes": true
+    },
+    "fuente": "F2",
+    "url": "https://misas.org/p/basilica-de-la-purissima-concepcio-i-assumpcio-de-nostra-senyora-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   }
+  ]
  }
 ]
