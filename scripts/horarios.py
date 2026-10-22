@@ -524,7 +524,7 @@ def procesar(lug, lugares, previo, estado_t, informe):
 
     res = {"id": tid, "nombre": lug["nombre"], "intentos": intentos, "aviso": AVISO}
     if not elegido:
-        if previo and previo.get("celebraciones"):
+        if previo and previo.get("celebraciones") and previo.get("fuente") in orden_fuentes(lug):
             res.update({k: previo.get(k) for k in ("fuente", "url", "comprobado", "confianza", "celebraciones", "formato")})
             res["estado"] = "pendiente de verificar"
             informe["pendientes"].append({"id": tid, "nombre": lug["nombre"]})
