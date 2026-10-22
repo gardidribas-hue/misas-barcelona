@@ -77,13 +77,13 @@ _ultima = {}
 _robots = {}
 
 
-def descargar(url, post=None, timeout=40):
+def descargar(url, post=None, timeout=40, ua=None):
     host = urllib.parse.urlsplit(url).netloc
     espera = PAUSA - (time.time() - _ultima.get(host, 0))
     if espera > 0:
         time.sleep(espera)
     try:
-        req = urllib.request.Request(url, data=post, headers={"User-Agent": UA, "Accept": "*/*", "Accept-Language": "ca,es;q=0.8"})
+        req = urllib.request.Request(url, data=post, headers={"User-Agent": ua or UA, "Accept": "*/*", "Accept-Language": "ca,es;q=0.8"})
         with urllib.request.urlopen(req, timeout=timeout) as r:
             datos = r.read()
             if CRUDO:  # copia de lo descargado, para depurar las reglas
@@ -373,6 +373,7 @@ def leer_f2(lug, f2):
 
 # OpenStreetMap: horarios de misa en las etiquetas mass_times / service_times de cada iglesia (licencia ODbL).
 USAR_OSM = True
+UA_OSM = "misas-barcelona/1.0 (horarios de misa; https://github.com/gardidribas-hue/misas-barcelona)"  # Overpass rechaza los «Mozilla/…»
 OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.private.coffee/api/interpreter",
             "https://maps.mail.ru/osm/tools/overpass/api/interpreter"]
 BBOX = (41.30, 2.05, 41.72, 2.75)  # Barcelona, Llobregat y Maresme
@@ -390,7 +391,7 @@ def osm_iglesias():
         errores = []
         for servidor in OVERPASS * 2:  # servidores públicos de Overpass; si uno no responde, el siguiente
             try:
-                datos, _, _ = descargar(servidor, post=urllib.parse.urlencode({"data": q}).encode(), timeout=150)
+                datos, _, _ = descargar(servidor, post=urllib.parse.urlencode({"data": q}).encode(), timeout=150, ua=UA_OSM)
                 break
             except urllib.error.HTTPError as e:
                 errores.append(f"{servidor}: {e.code} {e.read()[:150]!r}")

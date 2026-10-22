@@ -41,5 +41,5 @@ jobs:
           git add data/horarios
           if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
           git commit -m "Horarios actualizados ($(date -u +%F))"
-          git pull --rebase -q origin "${GITHUB_REF_NAME}"
+          git pull --rebase -X theirs -q origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
