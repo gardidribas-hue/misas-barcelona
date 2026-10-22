@@ -1,0 +1,105 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-de-fatima/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diaria 10:00 castellano.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-de-fatima/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:30 castellano.",
+    "dias_deducidos": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-de-fatima/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "10:30",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festivos 10:30 catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-de-fatima/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "12:00 castellano",
+    "dias_deducidos": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-de-fatima/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:30 castellano",
+    "dias_deducidos": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-de-fatima/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

@@ -1,0 +1,98 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-de-lourdes/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Laborables: 19:30h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-de-lourdes/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Excepto el Lunes 19:30h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-de-lourdes/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo",
+     "festivo_precepto"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Vísperas de festivo: 19:30h.",
+    "vespertina_dominical": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-de-lourdes/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festivos: 11:00h. y 12:30h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-de-lourdes/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festivos: 11:00h. y 12:30h.",
+    "dias_deducidos": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-de-lourdes/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

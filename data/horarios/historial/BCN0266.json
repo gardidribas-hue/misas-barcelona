@@ -1,0 +1,171 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/santa-anna/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "LABORABLES: 10:00h, 12:00h y 20:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-anna/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "LABORABLES: 10:00h, 12:00h y 20:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-anna/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "LABORABLES: 10:00h, 12:00h y 20:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-anna/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Vigilia: A las 20:00h",
+    "vespertina_dominical": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-anna/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Mañana: 10:00h, 11:00h, 12:00h, 13:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-anna/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Mañana: 10:00h, 11:00h, 12:00h, 13:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-anna/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Mañana: 10:00h, 11:00h, 12:00h, 13:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-anna/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Mañana: 10:00h, 11:00h, 12:00h, 13:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-anna/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Tardes: 20:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-anna/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

@@ -1,0 +1,63 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-ildefons-2/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "20:30",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners: 20:30h castellà",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ildefons-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festius: 10:00h i 12:00h castellà",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ildefons-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festius: 10:00h i 12:00h castellà",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ildefons-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

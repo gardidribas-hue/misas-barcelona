@@ -1,0 +1,162 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F1",
+  "url": "http://santaeulaliadelcentre.blog.cat/2020/04/03/horaris-de-setmana-santa-pasqua-2/",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Vigília (dissabte): 20,00 h.",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "http://santaeulaliadelcentre.blog.cat/2020/04/03/horaris-de-setmana-santa-pasqua-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Diumenge: 10,00 h., 12,00 h., 19,30 h. (Comunitat polonesa: 18,00 h. en llengua polonesa) http://kapelania-barcelona.pl/",
+    "fuente": "F1",
+    "url": "http://santaeulaliadelcentre.blog.cat/2020/04/03/horaris-de-setmana-santa-pasqua-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Diumenge: 10,00 h., 12,00 h., 19,30 h. (Comunitat polonesa: 18,00 h. en llengua polonesa) http://kapelania-barcelona.pl/",
+    "fuente": "F1",
+    "url": "http://santaeulaliadelcentre.blog.cat/2020/04/03/horaris-de-setmana-santa-pasqua-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": "otro",
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Diumenge: 10,00 h., 12,00 h., 19,30 h. (Comunitat polonesa: 18,00 h. en llengua polonesa) http://kapelania-barcelona.pl/",
+    "idioma_detalle": "polaco",
+    "fuente": "F1",
+    "url": "http://santaeulaliadelcentre.blog.cat/2020/04/03/horaris-de-setmana-santa-pasqua-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Diumenge: 10,00 h., 12,00 h., 19,30 h. (Comunitat polonesa: 18,00 h. en llengua polonesa) http://kapelania-barcelona.pl/",
+    "fuente": "F1",
+    "url": "http://santaeulaliadelcentre.blog.cat/2020/04/03/horaris-de-setmana-santa-pasqua-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "09:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "9,30 h., de dilluns a dissabte",
+    "fuente": "F1",
+    "url": "http://santaeulaliadelcentre.blog.cat/2020/04/03/horaris-de-setmana-santa-pasqua-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "20,00 h., de dilluns a divendres",
+    "fuente": "F1",
+    "url": "http://santaeulaliadelcentre.blog.cat/2020/04/03/horaris-de-setmana-santa-pasqua-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   }
+  ]
+ }
+]

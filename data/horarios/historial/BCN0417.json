@@ -1,0 +1,65 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-simo-i-sant-pau/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Laborables: martes y jueves a las 18:00h,",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-simo-i-sant-pau/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Vísperas: 19:00h.",
+    "vespertina_dominical": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-simo-i-sant-pau/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "09:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festivos: 9:30h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-simo-i-sant-pau/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

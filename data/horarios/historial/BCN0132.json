@@ -1,0 +1,137 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F1",
+  "url": "https://www.medallamiraculosa.org/es/parroquia/",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Abierta de 10 a 12 y de 18 a 20",
+    "fuente": "F1",
+    "url": "https://www.medallamiraculosa.org/es/parroquia/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Abierta de 10 a 12 y de 18 a 20",
+    "fuente": "F1",
+    "url": "https://www.medallamiraculosa.org/es/parroquia/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Abierta de 10 a 12 y de 19 a 20:45",
+    "fuente": "F1",
+    "url": "https://www.medallamiraculosa.org/es/parroquia/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Abierta de 10 a 12 y de 19 a 20:45",
+    "fuente": "F1",
+    "url": "https://www.medallamiraculosa.org/es/parroquia/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "15 min. antes de la Misa.",
+    "relativa_a_misa": {
+     "minutos_antes": 15
+    },
+    "fuente": "F1",
+    "url": "https://www.medallamiraculosa.org/es/parroquia/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:00",
+    "fin": "20:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "De lunes a viernes de 19 a 20",
+    "fuente": "F1",
+    "url": "https://www.medallamiraculosa.org/es/parroquia/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "20:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [
+     3
+    ],
+    "notas": "Tercer jueves de mes de 20:30 a 24",
+    "fuente": "F1",
+    "url": "https://www.medallamiraculosa.org/es/parroquia/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   }
+  ]
+ }
+]

@@ -1,0 +1,100 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-andreu-4/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Laborables: 19 h. (excepto miércoles que es a las 10 h.)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-andreu-4/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Laborables: 19 h. (excepto miércoles que es a las 10 h.)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-andreu-4/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Sábados y vigilias: 19 h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-andreu-4/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos y festivos: 11:00 h y 19 h. (cast). En la Capilla de S. Pedro a la 13 h. (en verano es a las 9:30h.)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-andreu-4/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos y festivos: 11:00 h y 19 h. (cast). En la Capilla de S. Pedro a la 13 h. (en verano es a las 9:30h.)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-andreu-4/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

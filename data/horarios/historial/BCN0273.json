@@ -1,0 +1,102 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/santa-isabel-darago-i-sant-joaquim/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "09:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festius: 9 - 10.30 - 12h. i 20h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-isabel-darago-i-sant-joaquim/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festius: 9 - 10.30 - 12h. i 20h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-isabel-darago-i-sant-joaquim/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festius: 9 - 10.30 - 12h. i 20h.",
+    "dias_deducidos": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-isabel-darago-i-sant-joaquim/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners: 11.30 h. i 20h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-isabel-darago-i-sant-joaquim/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners: 11.30 h. i 20h.",
+    "dias_deducidos": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-isabel-darago-i-sant-joaquim/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]
