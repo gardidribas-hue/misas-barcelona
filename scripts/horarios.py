@@ -372,7 +372,8 @@ def leer_f2(lug, f2):
 
 # OpenStreetMap: horarios de misa en las etiquetas mass_times / service_times de cada iglesia (licencia ODbL).
 USAR_OSM = True
-OVERPASS = "https://overpass-api.de/api/interpreter"
+OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.private.coffee/api/interpreter",
+            "https://maps.mail.ru/osm/tools/overpass/api/interpreter"]
 BBOX = (41.30, 2.05, 41.72, 2.75)  # Barcelona, Llobregat y Maresme
 _osm = None
 OSM_DIA = {"Mo": "lunes", "Tu": "martes", "We": "miercoles", "Th": "jueves", "Fr": "viernes", "Sa": "sabado", "Su": "domingo", "PH": FESTIVO}
@@ -385,7 +386,17 @@ def osm_iglesias():
     if _osm is None:
         q = (f'[out:json][timeout:120];nwr["amenity"="place_of_worship"]["religion"="christian"]'
              f'({BBOX[0]},{BBOX[1]},{BBOX[2]},{BBOX[3]});out center tags;')
-        datos, _, _ = descargar(OVERPASS, post=urllib.parse.urlencode({"data": q}).encode())
+        errores = []
+        for servidor in OVERPASS:  # servidores públicos de Overpass; si uno no responde, el siguiente
+            try:
+                datos, _, _ = descargar(servidor, post=urllib.parse.urlencode({"data": q}).encode())
+                break
+            except urllib.error.HTTPError as e:
+                errores.append(f"{servidor}: {e.code} {e.read()[:150]!r}")
+            except (urllib.error.URLError, OSError) as e:
+                errores.append(f"{servidor}: {e}")
+        else:
+            raise RuntimeError("Overpass no responde: " + " | ".join(errores))
         _osm = []
         for e in json.loads(datos.decode("utf-8"))["elements"]:
             t = e.get("tags", {})
@@ -607,9 +618,9 @@ def procesar(lug, lugares, previo, estado_t, informe):
                                confianza="baja", hash=sha(texto))
         except SinHorario as e:
             intentos.append({"fuente": "OSM", "resultado": str(e)})
-        except (urllib.error.URLError, OSError, ValueError, KeyError) as e:
-            intentos.append({"fuente": "OSM", "resultado": f"error: {e}"[:200]})
-            informe["caidas"].append({"id": tid, "nombre": lug["nombre"], "fuente": "OSM", "error": f"{e}"[:200]})
+        except (urllib.error.URLError, OSError, ValueError, KeyError, RuntimeError) as e:
+            intentos.append({"fuente": "OSM", "resultado": f"error: {e}"[:600]})
+            informe["caidas"].append({"id": tid, "nombre": lug["nombre"], "fuente": "OSM", "error": f"{e}"[:600]})
     if not elegido and f2_debil:
         texto, url, cels, dudosas, formato, notas, conf = f2_debil
         elegido = dict(fuente="F2", url=url, formato=formato, celebraciones=cels, dudosas=dudosas, notas=notas,
