@@ -77,14 +77,14 @@ _ultima = {}
 _robots = {}
 
 
-def descargar(url, post=None):
+def descargar(url, post=None, timeout=40):
     host = urllib.parse.urlsplit(url).netloc
     espera = PAUSA - (time.time() - _ultima.get(host, 0))
     if espera > 0:
         time.sleep(espera)
     try:
         req = urllib.request.Request(url, data=post, headers={"User-Agent": UA, "Accept": "*/*", "Accept-Language": "ca,es;q=0.8"})
-        with urllib.request.urlopen(req, timeout=40) as r:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
             datos = r.read()
             if CRUDO:  # copia de lo descargado, para depurar las reglas
                 nombre = re.sub(r"[^a-z0-9]+", "_", url.lower().split("//", 1)[-1])[:120]
@@ -388,9 +388,9 @@ def osm_iglesias():
         q = (f'[out:json][timeout:120];nwr["amenity"="place_of_worship"]["religion"="christian"]'
              f'({BBOX[0]},{BBOX[1]},{BBOX[2]},{BBOX[3]});out center tags;')
         errores = []
-        for servidor in OVERPASS:  # servidores públicos de Overpass; si uno no responde, el siguiente
+        for servidor in OVERPASS * 2:  # servidores públicos de Overpass; si uno no responde, el siguiente
             try:
-                datos, _, _ = descargar(servidor, post=urllib.parse.urlencode({"data": q}).encode())
+                datos, _, _ = descargar(servidor, post=urllib.parse.urlencode({"data": q}).encode(), timeout=150)
                 break
             except urllib.error.HTTPError as e:
                 errores.append(f"{servidor}: {e.code} {e.read()[:150]!r}")
