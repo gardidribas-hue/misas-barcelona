@@ -13,7 +13,7 @@ Lo ejecuta cada semana la acción de GitHub «horarios». A mano:
     python scripts/horarios.py importar data/horarios/Fuentes_horarios_misas_Arzobispado_Barcelona.xlsx
     python scripts/horarios.py actualizar [--ids BCN0003,BCN0213]
 """
-import argparse, datetime as dt, hashlib, io, json, os, pathlib, re, shutil, subprocess, sys, tempfile, time
+import argparse, datetime as dt, hashlib, io, json, math, os, pathlib, re, shutil, subprocess, sys, tempfile, time
 import urllib.error, urllib.parse, urllib.request, urllib.robotparser
 from bs4 import BeautifulSoup
 from horarios_texto import extraer, norm, DIAS, VISPERA, FESTIVO, VERSION
@@ -370,6 +370,78 @@ def leer_f2(lug, f2):
     return texto, f2.get("pagina") or final, cels, revision
 
 
+# OpenStreetMap: horarios de misa en las etiquetas mass_times / service_times de cada iglesia (licencia ODbL).
+USAR_OSM = True
+OVERPASS = "https://overpass-api.de/api/interpreter"
+BBOX = (41.30, 2.05, 41.72, 2.75)  # Barcelona, Llobregat y Maresme
+_osm = None
+OSM_DIA = {"Mo": "lunes", "Tu": "martes", "We": "miercoles", "Th": "jueves", "Fr": "viernes", "Sa": "sabado", "Su": "domingo", "PH": FESTIVO}
+OSM_D = list(OSM_DIA)
+OSM_MES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def osm_iglesias():
+    global _osm
+    if _osm is None:
+        q = (f'[out:json][timeout:120];nwr["amenity"="place_of_worship"]["religion"="christian"]'
+             f'({BBOX[0]},{BBOX[1]},{BBOX[2]},{BBOX[3]});out center tags;')
+        datos, _, _ = descargar(OVERPASS + "?data=" + urllib.parse.quote(q))
+        _osm = []
+        for e in json.loads(datos.decode("utf-8"))["elements"]:
+            t = e.get("tags", {})
+            if t.get("denomination") not in (None, "catholic", "roman_catholic"):
+                continue
+            lat, lng = (e.get("lat"), e.get("lon")) if "lat" in e else (e.get("center", {}).get("lat"), e.get("center", {}).get("lon"))
+            if lat is not None:
+                _osm.append({"id": f"{e['type']}/{e['id']}", "lat": lat, "lng": lng, "tags": t})
+    return _osm
+
+
+def osm_celebraciones(valor, tipo):
+    """«Mo-Fr 19:00; Sa 20:00; Su,PH 11:00,13:00» (formato opening_hours) -> celebraciones."""
+    cels, dudosas = [], []
+    for regla in [r.strip() for r in re.split(r";|\|\|", valor) if r.strip()]:
+        temporada = None
+        m = re.match(rf"^({'|'.join(OSM_MES)})(?:-({'|'.join(OSM_MES)}))?\s+", regla)
+        if m:
+            a = OSM_MES.index(m.group(1)) + 1
+            b = OSM_MES.index(m.group(2) or m.group(1)) + 1
+            temporada = {"nombre": "Verano" if a in (6, 7, 8) and b in (7, 8, 9) else "Curso" if a in (9, 10) else f"{m.group(1)}–{m.group(2) or m.group(1)}",
+                         "inicio": f"{a:02d}-01", "fin": f"{b:02d}-{[31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][b - 1]:02d}"}
+            regla = regla[m.end():]
+        m = re.match(r"^((?:Mo|Tu|We|Th|Fr|Sa|Su|PH)(?:\s*[-,]\s*(?:Mo|Tu|We|Th|Fr|Sa|Su|PH))*)\s+(.+)$", regla)
+        horas = re.findall(r"(\d{1,2}):(\d{2})(?:\s*-\s*(\d{1,2}):(\d{2}))?", m.group(2)) if m else []
+        if not m or not horas:
+            dudosas.append(regla)
+            continue
+        dias = []
+        for parte in re.split(r"\s*,\s*", m.group(1)):
+            if "-" in parte:
+                x, y = [OSM_D.index(d.strip()) for d in parte.split("-")]
+                dias += [OSM_DIA[d] for d in OSM_D[x:y + 1]]
+            else:
+                dias.append(OSM_DIA[parte])
+        for h1, m1, h2, m2 in horas:
+            cels.append({"tipo": tipo, "dias": list(dict.fromkeys(dias)), "inicio": f"{int(h1):02d}:{m1}",
+                         "fin": f"{int(h2):02d}:{m2}" if h2 and tipo != "misa" else None, "idioma": None,
+                         "temporada": temporada, "semanas_mes": [], "notas": ""})
+    return cels, dudosas
+
+
+def leer_osm(lug):
+    if lug.get("lat") is None:
+        raise SinHorario("sin coordenadas")
+    cerca = [(math.dist((o["lat"], o["lng"]), (lug["lat"], lug["lng"])) * 111000, o) for o in osm_iglesias()]
+    cerca = sorted((x for x in cerca if x[0] < 80), key=lambda x: x[0])
+    con = [o for _, o in cerca if o["tags"].get("mass_times") or o["tags"].get("service_times")]
+    if not con:
+        raise SinHorario("OpenStreetMap no tiene horario de misas para este templo" if cerca else "no está en OpenStreetMap")
+    o = con[0]
+    cels, dudosas = osm_celebraciones(o["tags"].get("mass_times") or o["tags"]["service_times"], "misa")
+    texto = json.dumps({k: v for k, v in o["tags"].items() if re.search(r"name|times|opening|website|check_date", k)}, ensure_ascii=False, indent=1, sort_keys=True)
+    return texto, "https://www.openstreetmap.org/" + o["id"], cels, dudosas
+
+
 # --- Controles de calidad -----------------------------------------------------------------------------
 def sospechas(lug, cels):
     s = []
@@ -517,6 +589,27 @@ def procesar(lug, lugares, previo, estado_t, informe):
     if elegido and elegido["fuente"] == "F1" and f2_datos:  # lo que se completa con misas.org también cuenta para el hash
         extra = json.dumps([c for c in f2_datos if c["tipo"] != "misa"], sort_keys=True, ensure_ascii=False)
         elegido["hash"] = sha(elegido["hash"] + extra)
+    if USAR_OSM and (not elegido or elegido["fuente"] == "F3"):
+        # Sin web propia, el Arzobispado y OpenStreetMap valen lo mismo; si no coinciden, manda el Arzobispado.
+        try:
+            texto, url, cels, dudosas = leer_osm(lug)
+            if not any(c["tipo"] == "misa" for c in cels):
+                raise SinHorario("el horario de OpenStreetMap no se entiende")
+            guardar_texto(tid, "OSM", url, "osm", texto)
+            intentos.append({"fuente": "OSM", "resultado": "ok"})
+            if elegido:
+                d = comparar(elegido["celebraciones"], cels)
+                if d:
+                    elegido["discrepancia_OSM"] = {"solo_en_Arzobispado": d["solo_en_F1"], "solo_en_OSM": d["solo_en_F2"]}
+                elegido["hash"] = sha(elegido["hash"] + texto)
+            else:
+                elegido = dict(fuente="OSM", url=url, formato="osm", celebraciones=cels, dudosas=dudosas, notas=[],
+                               confianza="baja", hash=sha(texto))
+        except SinHorario as e:
+            intentos.append({"fuente": "OSM", "resultado": str(e)})
+        except (urllib.error.URLError, OSError, ValueError, KeyError) as e:
+            intentos.append({"fuente": "OSM", "resultado": f"error: {e}"[:200]})
+            informe["caidas"].append({"id": tid, "nombre": lug["nombre"], "fuente": "OSM", "error": f"{e}"[:200]})
     if not elegido and f2_debil:
         texto, url, cels, dudosas, formato, notas, conf = f2_debil
         elegido = dict(fuente="F2", url=url, formato=formato, celebraciones=cels, dudosas=dudosas, notas=notas,
@@ -562,6 +655,11 @@ def procesar(lug, lugares, previo, estado_t, informe):
         res["notas_fuente"] = elegido["notas"]
     if elegido["dudosas"]:
         res["lineas_dudosas"] = elegido["dudosas"]
+    if elegido.get("discrepancia_OSM"):
+        res["discrepancia_OSM"] = elegido["discrepancia_OSM"]
+        res["aviso_fiabilidad"] = "El Arzobispado y OpenStreetMap no coinciden: se muestra el del Arzobispado, que puede no estar al día. Confírmalo con la parroquia."
+        informe["discrepancias"].append({"id": tid, "nombre": lug["nombre"], "solo_en_F1": elegido["discrepancia_OSM"]["solo_en_Arzobispado"],
+                                         "solo_en_F2": elegido["discrepancia_OSM"]["solo_en_OSM"], "entre": "Arzobispado / OpenStreetMap"})
     if fn == "F1" and f2_datos:
         d = comparar(cels, f2_datos)
         if d:
@@ -591,20 +689,23 @@ def actualizar(ids=None):
         datos["templos"][lug["id"]] = r
         print("    " + "; ".join(f"{i['fuente']}: {i['resultado']}" for i in r["intentos"]) + f" -> {r['estado']} {r.get('fuente') or ''}", flush=True)
     datos["meta"] = {"actualizado": HOY, "templos": len(datos["templos"]), "aviso": AVISO,
-                     "fuentes": {"F1": "web de la parroquia o del arciprestazgo", "F2": "misas.org", "F3": "Arzobispado de Barcelona (esglesia.barcelona)"}}
+                     "fuentes": {"F1": "web de la parroquia o del arciprestazgo", "F2": "misas.org (sin usar)", "F3": "Arzobispado de Barcelona (esglesia.barcelona)", "OSM": "OpenStreetMap (etiqueta mass_times)"}}
     guardar(OUT / "horarios.json", datos)
     guardar(OUT / "estado.json", estado)
+    if _osm is not None:
+        con = sum(1 for o in _osm if o["tags"].get("mass_times") or o["tags"].get("service_times"))
+        informe["osm"] = f"OpenStreetMap: {len(_osm)} iglesias católicas en la zona, {con} con horario de misas"
     guardar(OUT / "informes" / f"{HOY}.json", {"fecha": HOY, "revisados": len(sel), **informe})
     (OUT / "informes" / f"{HOY}.md").write_text(informe_md(len(sel), informe), "utf-8")
     print(informe_md(len(sel), informe))
 
 
 def informe_md(n, inf):
-    L = [f"# Informe de horarios · {HOY}", "", f"Templos revisados: {n}", ""]
+    L = [f"# Informe de horarios · {HOY}", "", f"Templos revisados: {n}", ""] + ([inf["osm"], ""] if inf.get("osm") else [])
     secc = [("actualizados", "Templos actualizados", lambda x: f"{x['nombre']} ({x['id']}): {x['celebraciones']} celebraciones, fuente {x['fuente']}"),
             ("cambios", "Cambios detectados", lambda x: f"{x['nombre']} ({x['id']}): {x['antes']} → {x['ahora']} celebraciones ({x['fuente']})"),
             ("caidas", "Fuentes caídas", lambda x: f"{x['nombre']} ({x['id']}) · {x['fuente']}: {x['error']}"),
-            ("discrepancias", "Discrepancias F1 / F2 (manda la F1)", lambda x: f"{x['nombre']} ({x['id']}): solo en la web: {x['solo_en_F1'] or '—'}; solo en misas.org: {x['solo_en_F2'] or '—'}"),
+            ("discrepancias", "Discrepancias entre fuentes (manda la primera)", lambda x: f"{x['nombre']} ({x['id']}) · {x.get('entre', 'web / misas.org')}: solo en la primera: {x['solo_en_F1'] or '—'}; solo en la segunda: {x['solo_en_F2'] or '—'}"),
             ("pendientes", "Pendientes de verificar (se mantiene el último horario bueno)", lambda x: f"{x['nombre']} ({x['id']})"),
             ("sin_horario", "Templos sin horario", lambda x: f"{x['nombre']} ({x['id']}): {x['motivo']}"),
             ("sospechosos", "Datos sospechosos", lambda x: f"{x['nombre']} ({x['id']}): {'; '.join(x['motivos'])}")]
