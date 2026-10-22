@@ -9,7 +9,7 @@ aparte las líneas con horas que no ha sabido interpretar, para revisarlas.
 """
 import re, unicodedata
 
-VERSION = 9  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
+VERSION = 10  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
 
 DIAS = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
 VISPERA, FESTIVO = "vispera_festivo", "festivo_precepto"
@@ -57,7 +57,7 @@ def dias_de(t, laborables=LAB5):
         add(*TODOS)
     if re.search(r"\b(dies feiners|feiners?|laborables?|dies laborables|dias laborables|entre setmana|entre semana)\b", s):
         add(*laborables)
-    if re.search(r"\b(vigilie?s|vigilia|visperas? de|vispres de|vespertina|vigilies)\b", s) or \
+    if re.search(r"\b(vigili[ae]s?|visperas? de|vispres de|vespertina)\b", s) or \
             re.search(r"\bvisperas?\b(?!\s+(solemnes|cantadas))", s):
         add("sabado", VISPERA)
         vig = True
@@ -79,7 +79,7 @@ def dias_de(t, laborables=LAB5):
 
 # --- Horas ------------------------------------------------------------------------------------
 HORA_RE = re.compile(
-    r"(?<![\d/.,:])"
+    r"(?<![\d/.,])(?<!\d:)"
     r"(?P<h>[01]?\d|2[0-3])"
     r"(?:(?P<sep>[:.,'h]|\sh\s?)(?P<m>[0-5]\d))?"
     r"(?P<suf>\s*(?:h\b|hores\b|horas\b|hrs?\b|h\.))?"
@@ -351,6 +351,9 @@ def extraer(texto, tipo_inicial="misa"):
         if k in vistos:
             continue
         vistos.add(k)
+        # «Festivos: 11:00» sin ningún «domingo» en el texto: en una parroquia, los festivos incluyen el domingo.
+        if FESTIVO in c["dias"] and "domingo" not in c["dias"] and not re.search(r"\b(diumenges?|domingos?)\b", todo):
+            c["dias"] = sorted(set(c["dias"]) | {"domingo"}, key=(DIAS + [VISPERA, FESTIVO]).index)
         # De madrugada no hay misas ni confesiones: suele ser la hora de una entrada de blog o un número suelto.
         if c["inicio"] and c["inicio"] < "06:00":
             dudosas.append(f"Hora de madrugada, no se publica ({c['inicio']}): «{c.get('notas', '')[:120]}»")

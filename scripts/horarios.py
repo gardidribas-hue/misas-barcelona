@@ -730,8 +730,11 @@ def actualizar(ids=None):
     if _osm is not None:
         con = sum(1 for o in _osm if o["tags"].get("mass_times") or o["tags"].get("service_times"))
         informe["osm"] = f"OpenStreetMap: {len(_osm)} iglesias católicas en la zona, {con} con horario de misas"
-    guardar(OUT / "informes" / f"{HOY}.json", {"fecha": HOY, "revisados": len(sel), **informe})
-    (OUT / "informes" / f"{HOY}.md").write_text(informe_md(len(sel), informe), "utf-8")
+    # Una prueba con unos pocos templos no pisa el informe de la pasada completa del mismo día.
+    nombre = HOY if not ids else f"{HOY}-prueba"
+    guardar(OUT / "informes" / f"{nombre}.json", {"fecha": HOY, "revisados": len(sel), **informe})
+    (OUT / "informes" / f"{nombre}.md").write_text(informe_md(len(sel), informe), "utf-8")
+    (OUT / "informes" / "estado.md").write_text(estado_md(datos, lugares), "utf-8")
     print(informe_md(len(sel), informe))
 
 
@@ -751,14 +754,52 @@ def informe_md(n, inf):
     return "\n".join(L)
 
 
+def estado_md(datos, lugares):
+    """Cómo están ahora todos los templos (no solo los revisados en esta pasada)."""
+    T = datos["templos"]
+    tipo = {l["id"]: l.get("tipo") or "" for l in lugares}
+    con = {k: t for k, t in T.items() if t.get("celebraciones")}
+    parr = [k for k in T if "arroqu" in tipo.get(k, "")]
+    fuentes = {"F1": "web propia", "F3": "Arzobispado", "OSM": "OpenStreetMap"}
+    L = [f"# Estado de los horarios · {datos['meta'].get('actualizado', HOY)}", "",
+         f"- Templos: {len(T)}; con horario: {len(con)}; sin horario: {len(T) - len(con)}",
+         f"- Parroquias: {len(parr)}; con horario: {sum(1 for k in parr if k in con)}",
+         "- Fuente del horario: " + ", ".join(f"{fuentes.get(f, f)} {n}" for f, n in sorted(
+             {f: sum(1 for t in con.values() if t.get("fuente") == f) for f in {t.get("fuente") for t in con.values()}}.items(), key=lambda x: -x[1])),
+         "- Confianza: " + ", ".join(f"{c} {sum(1 for t in con.values() if t.get('confianza') == c)}" for c in ("alta", "media", "baja")),
+         f"- Ocultos por defecto («Sin horario conocido» en el Excel): {sum(1 for t in T.values() if t.get('oculto_por_defecto'))}", ""]
+    def sec(titulo, filas):
+        L.append(f"## {titulo} ({len(filas)})")
+        L.extend(filas or ["- Ninguno"])
+        L.append("")
+    sec("Datos sospechosos", [f"- {t['nombre']} ({k}): {'; '.join(t['sospechas'])}" for k, t in T.items() if t.get("sospechas")])
+    sec("Arzobispado y OpenStreetMap no coinciden (manda el Arzobispado)", [f"- {t['nombre']} ({k})" for k, t in T.items() if t.get("discrepancia_OSM")])
+    sec("Webs que fallan", [f"- {t['nombre']} ({k}) · {i['fuente']}: {i['resultado'][7:]}" for k, t in T.items() for i in t.get("intentos") or [] if i["resultado"].startswith("error: ")])
+    sin = {k: t for k, t in T.items() if not t.get("celebraciones")}
+    por_tipo = {}
+    for k, t in sin.items():
+        por_tipo.setdefault(tipo.get(k) or "Otro", []).append(f"- {t['nombre']} ({k}): " + "; ".join(f"{i['fuente']}: {i['resultado']}" for i in t.get("intentos") or []))
+    L.append(f"## Templos sin horario ({len(sin)})")
+    L.append("")
+    for tp, filas in sorted(por_tipo.items(), key=lambda x: -len(x[1])):
+        L.append(f"### {tp} ({len(filas)})")
+        L.extend(filas)
+        L.append("")
+    sec("Con horario", [f"- {t['nombre']} ({k}): {len(t['celebraciones'])} celebraciones · {fuentes.get(t.get('fuente'), t.get('fuente'))} · confianza {t.get('confianza')}" for k, t in con.items()])
+    return "\n".join(L)
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("importar").add_argument("xlsx")
     a = sub.add_parser("actualizar")
     a.add_argument("--ids", default="", help="IDs separados por comas (por defecto, todos)")
+    sub.add_parser("estado")
     args = ap.parse_args()
     if args.cmd == "importar":
         importar(args.xlsx)
+    elif args.cmd == "estado":
+        (OUT / "informes" / "estado.md").write_text(estado_md(cargar(OUT / "horarios.json", None), cargar(OUT / "lugares.json", None)["lugares"]), "utf-8")
     else:
         actualizar({i.strip() for i in args.ids.split(",") if i.strip()} or None)
