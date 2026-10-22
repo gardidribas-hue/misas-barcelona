@@ -17,7 +17,6 @@ import argparse, datetime as dt, hashlib, io, json, math, os, pathlib, re, shuti
 import urllib.error, urllib.parse, urllib.request, urllib.robotparser
 from bs4 import BeautifulSoup
 from horarios_texto import extraer, norm, DIAS, VISPERA, FESTIVO, VERSION
-import horarios_gemini as gemini
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "horarios"
@@ -534,26 +533,14 @@ def guardar_texto(tid, fn, url, formato, texto):
 
 
 def lectura_id():
-    """Cambia el hash si cambia cómo se lee el texto (con Gemini o solo con reglas)."""
-    return f"\n# lectura: {gemini.MODELO}" if gemini.disponible() else ""
+    """Reservado por si la lectura cambia de método: hoy, solo reglas."""
+    return ""
 
 
 def leer_texto(texto, nombre, informe, tid):
-    """Texto de horarios -> celebraciones. Con Gemini si hay clave; las reglas sirven de control."""
-    cels_r, dud_r, av_r = extraer(texto)
-    if not gemini.disponible():
-        return cels_r, dud_r, av_r, "reglas"
-    try:
-        cels, dud, av = gemini.extraer(texto, nombre)
-    except RuntimeError as e:
-        informe["caidas"].append({"id": tid, "nombre": nombre, "fuente": "Gemini", "error": str(e)[:200]})
-        return cels_r, dud_r, av_r, "reglas"
-    if not any(c["tipo"] == "misa" for c in cels):
-        return cels_r, dud_r, av_r, "reglas"
-    d = comparar(cels, cels_r)
-    if d:
-        dud = dud + [f"Gemini y las reglas no coinciden. Solo Gemini: {d['solo_en_F1'] or '—'}. Solo reglas: {d['solo_en_F2'] or '—'}"]
-    return cels, dud, av, "gemini"
+    """Texto de horarios -> celebraciones, con las reglas de horarios_texto.py."""
+    cels, dud, av = extraer(texto)
+    return cels, dud, av, "reglas"
 
 
 def confianza_f1(cels, dudosas, lectura="reglas"):
@@ -607,7 +594,7 @@ def procesar(lug, lugares, previo, estado_t, informe):
                 guardar_texto(tid, fn, url, formato, texto)
                 h_texto = sha(texto + lectura_id())
                 if previo and previo.get("fuente") == fn and previo.get("celebraciones") and estado_t.get(f"{fn}_texto") == h_texto:
-                    # El texto no ha cambiado: no se vuelve a leer (ni a gastar una petición a Gemini).
+                    # El texto no ha cambiado: no se vuelve a leer.
                     cels, dudosas, avisos, lectura = previo["celebraciones"], previo.get("lineas_dudosas") or [], [], "sin cambios"
                 else:
                     cels, dudosas, avisos, lectura = leer_texto(texto, lug["nombre"], informe, tid)
