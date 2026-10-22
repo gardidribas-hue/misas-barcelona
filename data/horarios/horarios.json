@@ -21,6 +21,7 @@
     }
    ],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
+   "lectura": "reglas",
    "estado": "ok",
    "fuente": "F1",
    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
@@ -862,7 +863,7 @@
    "intentos": [
     {
      "fuente": "OSM",
-     "resultado": "error: Overpass no responde: https://overpass-api.de/api/interpreter: 406 b'<html>\\r\\n<head><title>406 Not Acceptable</title></head>\\r\\n<body>\\r\\n<center><h1>406 Not Acceptable</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r\\n</h' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<html>\\r\\n<head><title>504 Gateway Time-out</title></head>\\r\\n<body>\\r\\n<center><h1>504 Gateway Time-out</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r'"
+     "resultado": "error: Overpass no responde: https://overpass-api.de/api/interpreter: 406 b'<html>\\r\\n<head><title>406 Not Acceptable</title></head>\\r\\n<body>\\r\\n<center><h1>406 Not Acceptable</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r\\n</h' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd' | https://overpass-api.de/api/interpreter: 406 b'<html>\\r\\n<h"
     }
    ],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
@@ -887,10 +888,11 @@
     },
     {
      "fuente": "OSM",
-     "resultado": "no está en OpenStreetMap"
+     "resultado": "error: Overpass no responde: https://overpass-api.de/api/interpreter: 406 b'<html>\\r\\n<head><title>406 Not Acceptable</title></head>\\r\\n<body>\\r\\n<center><h1>406 Not Acceptable</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r\\n</h' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<html>\\r\\n<head><title>504 Gateway Time-out</title></head>\\r\\n<body>\\r\\n<center><h1>504 Gateway Time-out</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r' | https://overpass-api.de/api/interpreter: 406 b'<ht"
     }
    ],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
+   "lectura": "reglas",
    "estado": "ok",
    "fuente": "F3",
    "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
@@ -968,6 +970,7 @@
     }
    ],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
+   "lectura": "reglas",
    "estado": "ok",
    "fuente": "F1",
    "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
@@ -1141,6 +1144,7 @@
     }
    ],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
+   "lectura": "reglas",
    "estado": "ok",
    "fuente": "F1",
    "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
