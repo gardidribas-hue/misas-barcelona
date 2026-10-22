@@ -1246,5 +1246,159 @@
     "confianza": "alta"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F1",
+  "url": "https://parroquiasantramon.org/horaris/",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "12:00 (en castellà)",
+    "fuente": "F1",
+    "url": "https://parroquiasantramon.org/horaris/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "13:00 (suspesa entre el 1 de juliol y el 30 de setembre)",
+    "fuente": "F1",
+    "url": "https://parroquiasantramon.org/horaris/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "09:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "9:00 (suspesa entre l’1 d’agost i el 14 de setembre)",
+    "fuente": "F1",
+    "url": "https://parroquiasantramon.org/horaris/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "miercoles",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "20:00 (dilluns, dimecres i divendres, en castellà)",
+    "fuente": "F1",
+    "url": "https://parroquiasantramon.org/horaris/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Cada dijous, a les 19,00 (suspès durant el mes d’agost).",
+    "fuente": "F1",
+    "url": "https://parroquiasantramon.org/horaris/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "09:30",
+    "fin": "10:15",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Preferiblemente todos los viernes de 9.30 a 10.15 en la capilla del Santísimo.",
+    "fuente": "F1",
+    "url": "https://parroquiasantramon.org/horaris/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "lunes",
+     "miercoles"
+    ],
+    "inicio": "10:00",
+    "fin": "11:45",
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Dilluns i dimecres, de 10:00 a 11:45.",
+    "fuente": "F1",
+    "url": "https://parroquiasantramon.org/horaris/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenge 20-Setembte, 12h: Eucaristía en honor a NUESTRO SEñOR de los MILAGROS.",
+    "fuente": "F1",
+    "url": "https://parroquiasantramon.org/horaris/",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   }
+  ]
  }
 ]

@@ -1270,10 +1270,8 @@
      "dias": [
       "lunes",
       "martes",
-      "miercoles",
       "jueves",
-      "viernes",
-      "sabado"
+      "viernes"
      ],
      "inicio": "19:00",
      "fin": null,
@@ -7309,11 +7307,7 @@
      "tipo": "misa",
      "dias": [
       "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes",
-      "sabado"
+      "viernes"
      ],
      "inicio": "10:00",
      "fin": null,
@@ -7787,11 +7781,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
       "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
+      "miercoles"
      ],
      "inicio": "10:00",
      "fin": null,
@@ -7807,11 +7798,7 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
+      "jueves"
      ],
      "inicio": "19:30",
      "fin": null,
@@ -14799,7 +14786,6 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
       "martes",
       "miercoles",
       "jueves",
@@ -17698,12 +17684,7 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes",
-      "sabado"
+      "miercoles"
      ],
      "inicio": "18:00",
      "fin": null,
@@ -21096,11 +21077,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
       "martes",
-      "miercoles",
       "jueves",
-      "viernes",
       "sabado"
      ],
      "inicio": "19:00",
@@ -22031,7 +22009,7 @@
       "fin": "08-31"
      },
      "semanas_mes": [],
-     "notas": "Diumenge 20-Setembte, 12h: Eucaristía en honor a NUESTRO SEñOR de los MILAGROS.",
+     "notas": "Diumenge 18 d'octubre, 12h: Solemnidad de Ntro. Sr. De los Milagros. Eucaristía Solemne y salida al atrio. Coincide con la colecta del “DOMUND”.",
      "fuente": "F1",
      "url": "https://parroquiasantramon.org/horaris/",
      "comprobado": "2026-10-22",
@@ -22040,7 +22018,8 @@
    ],
    "notas_fuente": [
     "aviso: 9:00 (bilingüe) (no se celebra el dia 1 de gener ni el 25 y 26 de desembre)",
-    "aviso: 20:00 (no se celebra el dia 24 de desembre)"
+    "aviso: 20:00 (no se celebra el dia 24 de desembre)",
+    "aviso: Dilluns 12 d'octubre: missa a les 12 en honor de la Mare de Déu del Pilar. No hi haurà missa de 9 h."
    ],
    "tipo": "Parroquia",
    "municipio": "Barcelona",
@@ -26744,7 +26723,6 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
       "martes",
       "miercoles",
       "jueves",
@@ -34711,11 +34689,8 @@
      "tipo": "misa",
      "dias": [
       "lunes",
-      "martes",
       "miercoles",
-      "jueves",
-      "viernes",
-      "sabado"
+      "viernes"
      ],
      "inicio": "18:00",
      "fin": null,
@@ -35251,12 +35226,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
       "martes",
-      "miercoles",
-      "jueves",
-      "viernes",
-      "sabado"
+      "jueves"
      ],
      "inicio": "18:00",
      "fin": null,
@@ -35534,12 +35505,10 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
       "martes",
       "miercoles",
       "jueves",
-      "viernes",
-      "sabado"
+      "viernes"
      ],
      "inicio": "19:00",
      "fin": null,
@@ -35843,12 +35812,8 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
-      "martes",
       "miercoles",
-      "jueves",
-      "viernes",
-      "sabado"
+      "viernes"
      ],
      "inicio": "20:00",
      "fin": null,
@@ -36963,12 +36928,7 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes",
-      "sabado"
+      "miercoles"
      ],
      "inicio": "20:00",
      "fin": null,
@@ -37417,11 +37377,7 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
+      "jueves"
      ],
      "inicio": "20:00",
      "fin": null,
@@ -37596,11 +37552,7 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
+      "jueves"
      ],
      "inicio": "19:00",
      "fin": null,
@@ -37683,11 +37635,7 @@
     {
      "tipo": "misa",
      "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
+      "miercoles"
      ],
      "inicio": "19:30",
      "fin": null,
