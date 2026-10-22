@@ -9,7 +9,7 @@ aparte las líneas con horas que no ha sabido interpretar, para revisarlas.
 """
 import re, unicodedata
 
-VERSION = 8  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
+VERSION = 9  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
 
 DIAS = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
 VISPERA, FESTIVO = "vispera_festivo", "festivo_precepto"
@@ -96,12 +96,15 @@ def horas_de(t):
         h, mi = int(m.group("h")), m.group("m")
         after = t[m.end():m.end() + 14]
         before = t[max(0, m.start() - 12):m.start()]
-        if re.match(rf"\s*(de |d')?{MESES}", after) or re.search(r"\b(dia|el|del|any|ano)\s$", before):
-            continue  # es una fecha
+        if re.match(rf"\s*(de |d')?{MESES}", after) or re.search(r"\b(dia|el|del|any|ano)\s$", before) \
+                or re.search(r"\d{4},?\s+(a les|a las|at)?\s*$", t[max(0, m.start() - 16):m.start()]):
+            continue  # es una fecha, o la hora de una fecha («14 febrer 2018 a les 2:02», de un comentario)
         fuerte = bool(mi) or bool(m.group("suf")) or bool(m.group("tarde")) or bool(re.search(r"\b(a les|a las|les|las)\s$", before))
         if m.group("sep") == "," and mi and not m.group("suf") and re.match(r"\d", t[m.end() - 2:m.end()]) is None:
             fuerte = False
         tarde = m.group("tarde") or ""
+        if h < 12 and re.match(r"\s?p\.?\s?m\b", after):
+            h += 12  # "4:00 pm"
         if h < 12 and re.search(r"tarda|tarde|nit|noche|vespre", tarde):
             h += 12
         estrella = bool(re.match(r"\s?\*", t[m.end():m.end() + 2]))
@@ -207,6 +210,10 @@ def lineas(texto):
 
 def extraer(texto, tipo_inicial="misa"):
     """Devuelve (celebraciones, líneas_dudosas, avisos). Cada celebración es un dict del modelo de datos."""
+    # Los comentarios de los lectores («Noemi diu:») no son el horario: se corta el texto donde empiezan.
+    m = re.search(r"(?m)^.{1,60}\b(diu|dice|says|escribi[oó]|va dir):\s*$", texto)
+    if m:
+        texto = texto[:m.start()]
     todo = norm(texto)
     hay_sabado = bool(re.search(r"\b(dissabtes?|sabados?|vigilies|visperas de)\b", todo))
     laborables = LAB5 if hay_sabado else LAB6
@@ -341,9 +348,14 @@ def extraer(texto, tipo_inicial="misa"):
     vistos, unicas = set(), []
     for c in out:
         k = (c["tipo"], tuple(c["dias"]), c["inicio"], c["fin"], c["idioma"], (c["temporada"] or {}).get("nombre"), tuple(c["semanas_mes"]))
-        if k not in vistos:
-            vistos.add(k)
-            unicas.append(c)
+        if k in vistos:
+            continue
+        vistos.add(k)
+        # De madrugada no hay misas ni confesiones: suele ser la hora de una entrada de blog o un número suelto.
+        if c["inicio"] and c["inicio"] < "06:00":
+            dudosas.append(f"Hora de madrugada, no se publica ({c['inicio']}): «{c.get('notas', '')[:120]}»")
+            continue
+        unicas.append(c)
     return unicas, dudosas, avisos
 
 

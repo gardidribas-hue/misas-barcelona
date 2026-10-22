@@ -113,7 +113,7 @@ def html_a_texto(html):
     s = BeautifulSoup(html, "html.parser")
     for el in s(["script", "style", "noscript", "nav", "footer", "form", "iframe", "svg", "template"]):
         el.decompose()
-    for el in s.select("[id*=cookie], [class*=cookie]"):
+    for el in s.select("[id*=cookie], [class*=cookie], #comments, #respond, .comments-area, .comment-list, .commentlist"):
         if el.name not in ("body", "html", "main"):
             el.decompose()
     for br in s.find_all("br"):
