@@ -1,57 +1,31 @@
 {
  "fecha": "2026-10-22",
  "revisados": 5,
- "actualizados": [
+ "actualizados": [],
+ "cambios": [],
+ "caidas": [
   {
-   "id": "BCN0003",
-   "nombre": "Basílica de la Puríssima Concepció",
-   "fuente": "F1",
-   "celebraciones": 37
+   "id": "BCN0092",
+   "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
+   "fuente": "OSM",
+   "error": "HTTP Error 406: Not Acceptable"
   },
   {
    "id": "BCN0212",
    "nombre": "Sant Ferran",
-   "fuente": "F3",
-   "celebraciones": 3
-  },
-  {
-   "id": "BCN0213",
-   "nombre": "Sant Francesc d'Assís",
-   "fuente": "F1",
-   "celebraciones": 8
-  },
-  {
-   "id": "BCN0226",
-   "nombre": "Sant Joan de Gràcia",
-   "fuente": "F1",
-   "celebraciones": 3
+   "fuente": "OSM",
+   "error": "HTTP Error 406: Not Acceptable"
   }
  ],
- "cambios": [
-  {
-   "id": "BCN0213",
-   "nombre": "Sant Francesc d'Assís",
-   "fuente": "F1",
-   "antes": 8,
-   "ahora": 8
-  },
-  {
-   "id": "BCN0226",
-   "nombre": "Sant Joan de Gràcia",
-   "fuente": "F1",
-   "antes": 6,
-   "ahora": 3
-  }
- ],
- "caidas": [],
  "discrepancias": [],
- "sin_horario": [],
- "pendientes": [
+ "sin_horario": [
   {
    "id": "BCN0092",
-   "nombre": "Església de Sant Sever i Sant Vicenç de Paül"
+   "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
+   "motivo": "OSM: error: HTTP Error 406: Not Acceptable"
   }
  ],
+ "pendientes": [],
  "sospechosos": [
   {
    "id": "BCN0003",
