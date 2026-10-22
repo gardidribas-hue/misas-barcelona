@@ -1,6 +1,6 @@
 {
  "meta": {
-  "actualizado": "2026-10-21",
+  "actualizado": "2026-10-22",
   "templos": 5,
   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
   "fuentes": {
@@ -24,7 +24,7 @@
    "fuente": "F1",
    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
    "formato": "html",
-   "comprobado": "2026-10-21",
+   "comprobado": "2026-10-22",
    "confianza": "media",
    "celebraciones": [
     {
@@ -48,7 +48,7 @@
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -72,7 +72,7 @@
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -96,7 +96,7 @@
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -120,7 +120,7 @@
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -144,7 +144,7 @@
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -165,7 +165,7 @@
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -186,7 +186,7 @@
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -207,7 +207,7 @@
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -229,7 +229,7 @@
      "vespertina_dominical": true,
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -251,7 +251,7 @@
      "vespertina_dominical": true,
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -272,7 +272,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -293,7 +293,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -314,7 +314,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -335,7 +335,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -356,7 +356,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -377,7 +377,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -398,7 +398,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -420,7 +420,7 @@
      "notas": "MISSA FAMILIAR: Primers diumenges de mes, a les 13:00. Missa participada per a infants i els seus pares.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -442,7 +442,7 @@
      "notas": "MISSA PER DEMANAR LA FE PER ALS QUI ESTIMEM: Darrers diumenges de mes, a les 13:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -466,7 +466,7 @@
      "notas": "Dies feiners: 8:00, 10:00, 11:00, 19:00 (de dilluns a dissabte matí).",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -490,7 +490,7 @@
      "notas": "Dies feiners: 8:00, 10:00, 11:00, 19:00 (de dilluns a dissabte matí).",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -514,7 +514,7 @@
      "notas": "Dies feiners: 8:00, 10:00, 11:00, 19:00 (de dilluns a dissabte matí).",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -538,7 +538,7 @@
      "notas": "Dies feiners: 8:00, 10:00, 11:00, 19:00 (de dilluns a dissabte matí).",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -560,7 +560,7 @@
      "vespertina_dominical": true,
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -582,7 +582,7 @@
      "vespertina_dominical": true,
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -603,7 +603,7 @@
      "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -624,7 +624,7 @@
      "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -645,7 +645,7 @@
      "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -666,7 +666,7 @@
      "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -687,7 +687,7 @@
      "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -708,7 +708,7 @@
      "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -730,7 +730,7 @@
      "notas": "Cada dia de 8 a 13h i de 18 a 21, abans i després de les Misses.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -752,7 +752,7 @@
      "notas": "Cada dia de 8 a 13h i de 18 a 21, abans i després de les Misses.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -772,7 +772,7 @@
      "notas": "De dilluns a divendres, de 18h a 19h.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -792,7 +792,7 @@
      "notas": "Hora Santa Joves, els dimecres durant els curs escolar a les 21h.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -810,7 +810,7 @@
      "notas": "De 18:00 a 19:00, exposició major del Santíssim a l’altar del Sagrat Cor i acte de consagració al Cor de Jesús.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -828,7 +828,7 @@
      "notas": "De 22:00 a 1:00, adoració eucarística a la capella de Montserrat.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     }
    ],
@@ -858,17 +858,10 @@
   "BCN0092": {
    "id": "BCN0092",
    "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
-   "intentos": [
-    {
-     "fuente": "F2",
-     "resultado": "ok"
-    }
-   ],
+   "intentos": [],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "estado": "ok",
    "fuente": "F2",
    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
-   "formato": "json",
    "comprobado": "2026-10-21",
    "confianza": "alta",
    "celebraciones": [
@@ -1067,9 +1060,8 @@
      "confianza": "alta"
     }
    ],
-   "notas_fuente": [
-    "última revisión en misas.org: 2026-06-28"
-   ],
+   "formato": "json",
+   "estado": "pendiente de verificar",
    "tipo": "Iglesia",
    "municipio": "Barcelona",
    "direccion": "Carrer Provença, 210",
@@ -1084,10 +1076,6 @@
    "nombre": "Sant Ferran",
    "intentos": [
     {
-     "fuente": "F2",
-     "resultado": "misas.org no tiene misas registradas"
-    },
-    {
      "fuente": "F3",
      "resultado": "ok"
     }
@@ -1097,7 +1085,7 @@
    "fuente": "F3",
    "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
    "formato": "html",
-   "comprobado": "2026-10-21",
+   "comprobado": "2026-10-22",
    "confianza": "baja",
    "celebraciones": [
     {
@@ -1115,7 +1103,7 @@
      "vespertina_dominical": true,
      "fuente": "F3",
      "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "baja"
     },
     {
@@ -1132,7 +1120,7 @@
      "notas": "Domingos y Festivos : 12,30 en Castellano",
      "fuente": "F3",
      "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "baja"
     },
     {
@@ -1147,7 +1135,7 @@
      "a_peticion": true,
      "fuente": "F3",
      "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "baja"
     }
    ],
@@ -1174,7 +1162,7 @@
    "fuente": "F1",
    "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
    "formato": "pdf",
-   "comprobado": "2026-10-21",
+   "comprobado": "2026-10-22",
    "confianza": "media",
    "celebraciones": [
     {
@@ -1194,7 +1182,7 @@
      "notas": "Dilluns a divendres: 20h S. Francesc",
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -1210,7 +1198,7 @@
      "notas": "Dissabtes: 20h S. Francesc",
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -1227,7 +1215,7 @@
      "notas": "Diumenges i festius: 11:30h S. Francesc",
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -1238,15 +1226,22 @@
      ],
      "inicio": "18:30",
      "fin": null,
-     "idioma": "ca",
+     "idioma": "otro",
      "temporada": null,
      "semanas_mes": [],
      "notas": "= Catalán * 18:30h S. Francesc",
      "dias_deducidos": true,
+     "idioma_incierto": true,
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-10-21",
-     "confianza": "media"
+     "comprobado": "2026-10-22",
+     "confianza": "media",
+     "idioma_detalle": "italiano",
+     "corregido": {
+      "motivo": "La misa del domingo a las 18:30 es en italiano (el PDF lo indica con un símbolo)",
+      "por": "Guillem",
+      "fecha": "2026-10-22"
+     }
     },
     {
      "tipo": "misa",
@@ -1256,14 +1251,15 @@
      ],
      "inicio": "20:00",
      "fin": null,
-     "idioma": "es",
+     "idioma": null,
      "temporada": null,
      "semanas_mes": [],
      "notas": "= Castellano 20:00h S. Francesc",
      "dias_deducidos": true,
+     "idioma_incierto": true,
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -1279,7 +1275,7 @@
      "notas": "Divendres: de 17:30h a 19:45h S. Francesc d’Assís",
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -1296,7 +1292,7 @@
      },
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     },
     {
@@ -1312,7 +1308,7 @@
      "notas": "Dimecres: de 18:15h a 19h S. Francesc d’Assís",
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "media"
     }
    ],
@@ -1339,7 +1335,7 @@
    "fuente": "F1",
    "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
    "formato": "html",
-   "comprobado": "2026-10-21",
+   "comprobado": "2026-10-22",
    "confianza": "alta",
    "celebraciones": [
     {
@@ -1360,7 +1356,7 @@
      "notas": "Horari de missa: de dilluns a dissabte a les 19.00h. Diumeges a les 11h (català) i a les 13h (castellà)",
      "fuente": "F1",
      "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "alta"
     },
     {
@@ -1376,7 +1372,7 @@
      "notas": "Horari de missa: de dilluns a dissabte a les 19.00h. Diumeges a les 11h (català) i a les 13h (castellà)",
      "fuente": "F1",
      "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "alta"
     },
     {
@@ -1392,56 +1388,7 @@
      "notas": "Horari de missa: de dilluns a dissabte a les 19.00h. Diumeges a les 11h (català) i a les 13h (castellà)",
      "fuente": "F1",
      "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
-     "comprobado": "2026-10-21",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "adoracion",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "18:00",
-     "fin": "18:45",
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Normal",
-     "fuente": "F2",
-     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
-     "comprobado": "2026-10-21",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "adoracion",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "19:30",
-     "fin": "21:00",
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Normal",
-     "fuente": "F2",
-     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
-     "comprobado": "2026-10-21",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "confesion",
-     "dias": [],
-     "inicio": null,
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Media hora antes de misa y cuando se solicite al sacerdote.",
-     "relativa_a_misa": {
-      "minutos_antes": 30
-     },
-     "fuente": "F2",
-     "url": "https://misas.org/p/parroquia-de-sant-joan-baptista-de-gracia-barcelona",
-     "comprobado": "2026-10-21",
+     "comprobado": "2026-10-22",
      "confianza": "alta"
     }
    ],
