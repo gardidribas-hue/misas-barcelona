@@ -1,0 +1,5 @@
+[
+ {"id": "BCN0213", "buscar": {"tipo": "misa", "dias": ["domingo"], "inicio": "18:30"},
+  "poner": {"idioma": "otro", "idioma_detalle": "italiano"},
+  "motivo": "La misa del domingo a las 18:30 es en italiano (el PDF lo indica con un símbolo)", "por": "Guillem", "fecha": "2026-10-22"}
+]

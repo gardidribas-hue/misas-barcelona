@@ -9,7 +9,7 @@ aparte las líneas con horas que no ha sabido interpretar, para revisarlas.
 """
 import re, unicodedata
 
-VERSION = 7  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
+VERSION = 8  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
 
 DIAS = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
 VISPERA, FESTIVO = "vispera_festivo", "festivo_precepto"
@@ -217,6 +217,8 @@ def extraer(texto, tipo_inicial="misa"):
     tipo, temporada, dias_ctx, idioma_ctx, ignora = tipo_inicial, None, None, None, False
     ultimo_dd = None  # días de la línea anterior, para líneas que solo continúan la lista de horas
     for linea in lineas(texto):
+        # "= Catalán o castellano": leyenda de un símbolo que se ha perdido al leer el PDF; el idioma no es fiable.
+        leyenda_simbolo = bool(re.match(r"^\s*[=*•]\s*\S", linea))
         t = norm(linea)
         hs = horas_de(t)
         es_titulo = not hs
@@ -265,7 +267,7 @@ def extraer(texto, tipo_inicial="misa"):
             dd = dias_de(t, laborables)
             if dd:
                 dias_ctx = dd
-            idi = idioma_de(t)
+            idi = None if leyenda_simbolo else idioma_de(t)
             if idi and not dd and not nuevo_tipo:
                 idioma_ctx = idi
             elif nuevo_tipo or temp:
@@ -320,6 +322,8 @@ def extraer(texto, tipo_inicial="misa"):
                 if not idi and leyenda and tipo_l == "misa":
                     idi = leyenda[1] if estrella else leyenda[0]
                 idi = idi or idioma_ctx
+                if leyenda_simbolo:
+                    idi = None
                 if tipo_l == "misa":
                     fin = None
                 c = celebracion(tipo_l, dd, ini, fin, idi, temporada_l, linea)
@@ -327,6 +331,8 @@ def extraer(texto, tipo_inicial="misa"):
                     continue
                 if deducidos:
                     c["dias_deducidos"] = True
+                if leyenda_simbolo:
+                    c["idioma_incierto"] = True  # el idioma va con un símbolo que no se ha podido leer
                 out.append(c)
                 found = True
         if not found and re.search(r"\d", t) and horas_de(t) and linea not in dudosas:

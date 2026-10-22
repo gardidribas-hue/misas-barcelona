@@ -10,7 +10,7 @@ on:
         description: "IDs separados por comas (vacío = todos)"
         required: false
   push:
-    paths: [scripts/horarios.py, scripts/horarios_texto.py, scripts/horarios_app.py, .github/workflows/horarios.yml]
+    paths: [scripts/horarios.py, scripts/horarios_texto.py, scripts/horarios_app.py, data/horarios/correcciones.json, .github/workflows/horarios.yml]
 permissions:
   contents: write
 concurrency: horarios

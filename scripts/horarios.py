@@ -22,6 +22,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "horarios"
 UA = "Mozilla/5.0 (compatible; misas-barcelona/1.0; +https://github.com/gardidribas-hue/misas-barcelona)"
 HOY = dt.date.today().isoformat()
+USAR_MISAS_ORG = False  # Guillem (22/10/2026): misas.org no es fiable; orden web propia → Arzobispado
 F2_ANTIGUA = "2024-01-01"  # una revisión de misas.org anterior a esta fecha se considera poco fiable
 PAUSA = 1.0  # segundos entre peticiones al mismo servidor (misas.org pide como mucho 1 por segundo)
 CRUDO = bool(os.environ.get("HORARIOS_CRUDO"))
@@ -421,6 +422,23 @@ def sha(texto):
     return hashlib.sha256(f"v{VERSION} {limpio}".encode()).hexdigest()[:16]
 
 
+def aplicar_correcciones(tid, cels, res):
+    """Correcciones a mano (data/horarios/correcciones.json): mandan sobre lo extraído mientras la celebración exista."""
+    for k in cargar(OUT / "correcciones.json", []):
+        if k.get("id") != tid:
+            continue
+        b = k.get("buscar", {})
+        hechas = 0
+        for c in cels:
+            if all((set(v) <= set(c.get(f) or [])) if isinstance(v, list) else c.get(f) == v for f, v in b.items()):
+                c.update(k.get("poner", {}))
+                c["corregido"] = {"motivo": k.get("motivo"), "por": k.get("por"), "fecha": k.get("fecha")}
+                hechas += 1
+        if not hechas:
+            res.setdefault("correcciones_sin_aplicar", []).append(k.get("motivo"))
+    return cels
+
+
 def comparable(cels):
     return sorted(json.dumps({k: v for k, v in c.items() if k != "comprobado"}, sort_keys=True, ensure_ascii=False) for c in cels)
 
@@ -431,7 +449,7 @@ def guardar_texto(tid, fn, url, formato, texto):
 
 
 def confianza_f1(cels, dudosas):
-    seguro = not dudosas and not any(c.get("dias_deducidos") for c in cels)
+    seguro = not dudosas and not any(c.get("dias_deducidos") or c.get("idioma_incierto") for c in cels)
     return "alta" if seguro and any(c["tipo"] == "misa" for c in cels) else "media"
 
 
@@ -446,7 +464,7 @@ def orden_fuentes(lug):
     orden = []
     if "F1" in fs and norm(str(fs["F1"].get("bloquea_bots") or "")) != "si":
         orden.append("F1")
-    if "F2" in fs:
+    if "F2" in fs and USAR_MISAS_ORG:
         orden.append("F2")
     if "F3" in fs:
         orden.append("F3")
@@ -534,6 +552,7 @@ def procesar(lug, lugares, previo, estado_t, informe):
             informe["cambios"].append({"id": tid, "nombre": lug["nombre"], "fuente": fn,
                                        "antes": len(previo["celebraciones"]), "ahora": len(cels)})
         informe["actualizados"].append({"id": tid, "nombre": lug["nombre"], "fuente": fn, "celebraciones": len(cels)})
+    cels = aplicar_correcciones(tid, cels, res)
     for c in cels:
         c["comprobado"] = HOY
     estado_t[fn] = {"hash": elegido["hash"], "ultimo_ok": HOY}
