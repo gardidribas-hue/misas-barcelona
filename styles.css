@@ -23,6 +23,8 @@
   --area-line: #e8474e;
   --gold: #f5c542;            /* dorado del logotipo */
   --gold-ink: #c48b00;        /* dorado legible sobre blanco */
+  --logo-gold: #bf9b30;       /* «ARXIDIÒCESI DE» del logotipo del Arzobispado */
+  --logo-rose: #dc676c;       /* «Barcelona» del logotipo del Arzobispado */
   --papa-bg: #fbf1d3;         /* caja de la reflexión de los Papas */
   --papa-line: #efdca0;
   --papa-ink: #8a6512;
@@ -39,7 +41,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --backdrop: #0e0b0c; --backdrop-ink: #f3e9e7; --backdrop-muted: #8f8183; --chip: rgba(255,255,255,.08); --chip-on: rgba(255,255,255,.12); --ring: rgba(255,255,255,.25); --tone-mix: 90%; --gold-ink: #f5c542;
+    --backdrop: #0e0b0c; --backdrop-ink: #f3e9e7; --backdrop-muted: #8f8183; --chip: rgba(255,255,255,.08); --chip-on: rgba(255,255,255,.12); --ring: rgba(255,255,255,.25); --tone-mix: 90%; --gold-ink: #f5c542; --logo-gold: #d9b65a; --logo-rose: #ee8f92;
     --win-shadow: 0 2px 6px rgba(0,0,0,.18), 0 24px 60px rgba(0,0,0,.28);
     --bg: #1d1819; --surface: #2a2324; --ink: #f4ebe9; --muted: #ab9c9e; --faint: #6f6264; --line: #362e30;
     --accent: #f0a6a2; --accent-strong: #f5b9b5; --accent-soft: #3d2729; --accent-ink: #3a1518;
@@ -50,7 +52,7 @@
   }
 }
 :root[data-theme="dark"] {
-  --backdrop: #0e0b0c; --backdrop-ink: #f3e9e7; --backdrop-muted: #8f8183; --chip: rgba(255,255,255,.08); --chip-on: rgba(255,255,255,.12); --ring: rgba(255,255,255,.25); --tone-mix: 90%; --gold-ink: #f5c542;
+  --backdrop: #0e0b0c; --backdrop-ink: #f3e9e7; --backdrop-muted: #8f8183; --chip: rgba(255,255,255,.08); --chip-on: rgba(255,255,255,.12); --ring: rgba(255,255,255,.25); --tone-mix: 90%; --gold-ink: #f5c542; --logo-gold: #d9b65a; --logo-rose: #ee8f92;
     --win-shadow: 0 2px 6px rgba(0,0,0,.18), 0 24px 60px rgba(0,0,0,.28);
   --bg: #1d1819; --surface: #2a2324; --ink: #f4ebe9; --muted: #ab9c9e; --faint: #6f6264; --line: #362e30;
   --accent: #f0a6a2; --accent-strong: #f5b9b5; --accent-soft: #3d2729; --accent-ink: #3a1518;
@@ -74,10 +76,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
 /* Logotipo: «Misas» | ARCHIDIÓCESIS DE / Barcelona, separados por un filete fino */
 .brand { display: inline-flex; align-items: last baseline; gap: 14px; font-size: 40px; }
 .brand .b-main { line-height: 1; padding-bottom: .06em; }
-.brand .b-stack { display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; text-align: left; gap: 1px; padding-left: 14px; border-left: 1px solid color-mix(in srgb, var(--backdrop-ink) 22%, transparent); }
-.brand em { color: var(--accent); }
-.brand .b-arch { color: var(--gold-ink); font: 700 10.5px/1 var(--ui); letter-spacing: .2em; text-transform: uppercase; }
-.brand .b-city { font-size: 32px; line-height: .9; }
+.brand .b-stack { display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; text-align: right; gap: 0; padding-left: 14px; border-left: 1px solid color-mix(in srgb, var(--backdrop-ink) 22%, transparent); }
+.brand em { color: var(--logo-rose); }
+/* Como el logotipo del Arzobispado: versalitas doradas espaciadas, alineadas a la derecha sobre «Barcelona» en cursiva rosa */
+.brand .b-arch { color: var(--logo-gold); font: 700 9.5px/1 var(--ui); font-style: normal; letter-spacing: .24em; text-transform: uppercase; }
+.brand .b-city { font-size: 34px; line-height: .86; padding-right: .04em; }
 .tabs { display: flex; gap: 2px; background: var(--chip); border-radius: 999px; padding: 4px; }
 .tabs button { border: 0; background: none; border-radius: 999px; padding: 7px 16px; font-weight: 700; font-size: 14px; color: var(--backdrop-muted); cursor: pointer; transition: background .25s var(--ease), color .25s var(--ease); }
 .tabs button:hover { color: var(--backdrop-ink); }
@@ -239,8 +242,8 @@ h1 em { color: var(--accent-strong); }
   :root { --top: 64px; --radius: 24px; --gap: 10px; }
   .brand { font-size: 28px; gap: 9px; }
   .brand .b-stack { padding-left: 9px; gap: 1px; }
-  .brand .b-arch { font-size: 7.5px; letter-spacing: .14em; }
-  .brand .b-city { font-size: 22px; }
+  .brand .b-arch { font-size: 6.8px; letter-spacing: .2em; }
+  .brand .b-city { font-size: 24px; }
   .tabs button { padding: 6px 11px; }
   .stage[data-mode="home"] { grid-template-columns: 1fr; grid-template-rows: auto 46vh; overflow-y: auto; }
   .stage[data-mode="home"] .chatcol { min-height: auto; overflow: visible; }
@@ -368,7 +371,7 @@ button, .btn, .card { -webkit-tap-highlight-color: transparent; }
   .more:hover { gap: 9px; }
   .link:hover { color: var(--accent-strong); }
   .filters select:hover, .filters input:hover { background: var(--accent-soft); }
-  .brand:hover .b-city { color: var(--gold-ink); }
+  .brand:hover .b-city { color: var(--logo-gold); }
   .brand .b-city { transition: color .3s var(--ease); }
   .maplibregl-ctrl-group button:hover { background: var(--accent-soft) !important; }
 }
@@ -434,7 +437,8 @@ button, .btn, .card { -webkit-tap-highlight-color: transparent; }
 }
 @media (max-width: 380px) {
   .brand { font-size: 25px; }
-  .brand .b-city { font-size: 19px; }
+  .brand .b-city { font-size: 21px; }
+  .brand .b-arch { font-size: 6px; }
   .ideas button { font-size: 15px; }
 }
 @media (min-width: 861px) and (max-width: 1100px) {
