@@ -76,13 +76,13 @@ _ultima = {}
 _robots = {}
 
 
-def descargar(url):
+def descargar(url, post=None):
     host = urllib.parse.urlsplit(url).netloc
     espera = PAUSA - (time.time() - _ultima.get(host, 0))
     if espera > 0:
         time.sleep(espera)
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "ca,es;q=0.8"})
+        req = urllib.request.Request(url, data=post, headers={"User-Agent": UA, "Accept": "*/*", "Accept-Language": "ca,es;q=0.8"})
         with urllib.request.urlopen(req, timeout=40) as r:
             datos = r.read()
             if CRUDO:  # copia de lo descargado, para depurar las reglas
@@ -385,7 +385,7 @@ def osm_iglesias():
     if _osm is None:
         q = (f'[out:json][timeout:120];nwr["amenity"="place_of_worship"]["religion"="christian"]'
              f'({BBOX[0]},{BBOX[1]},{BBOX[2]},{BBOX[3]});out center tags;')
-        datos, _, _ = descargar(OVERPASS + "?data=" + urllib.parse.quote(q))
+        datos, _, _ = descargar(OVERPASS, post=urllib.parse.urlencode({"data": q}).encode())
         _osm = []
         for e in json.loads(datos.decode("utf-8"))["elements"]:
             t = e.get("tags", {})
