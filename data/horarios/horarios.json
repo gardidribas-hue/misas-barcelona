@@ -2648,22 +2648,6 @@
      "dias": [
       "domingo"
      ],
-     "inicio": "01:30",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "12:30 p. m. – 1:30 p. m.12:30 – 13:3012:30 – 13:30",
-     "fuente": "F1",
-     "url": "https://misatradicional.es/laforja/#horarios",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "confesion",
-     "dias": [
-      "domingo"
-     ],
      "inicio": "13:30",
      "fin": null,
      "idioma": null,
@@ -2680,10 +2664,8 @@
     "página encontrada desde https://misatradicional.es"
    ],
    "lineas_dudosas": [
-    "12:30 p. m. – 1:30 p. m.12:30 – 13:3012:30 – 13:30"
-   ],
-   "sospechas": [
-    "hora fuera de 06:00–23:00: confesion 01:30"
+    "12:30 p. m. – 1:30 p. m.12:30 – 13:3012:30 – 13:30",
+    "Hora de madrugada, no se publica (01:30): «12:30 p. m. – 1:30 p. m.12:30 – 13:3012:30 – 13:30»"
    ],
    "tipo": "Capilla",
    "municipio": "Barcelona",
@@ -3931,176 +3913,236 @@
    "intentos": [
     {
      "fuente": "F1",
-     "resultado": "error: HTTP Error 429: Too Many Requests"
-    },
-    {
-     "fuente": "F3",
      "resultado": "ok"
-    },
-    {
-     "fuente": "OSM",
-     "resultado": "OpenStreetMap no tiene horario de misas para este templo"
     }
    ],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
    "lectura": "reglas",
    "estado": "ok",
-   "fuente": "F3",
-   "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+   "fuente": "F1",
+   "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
    "formato": "html",
    "comprobado": "2026-10-22",
-   "confianza": "baja",
+   "confianza": "media",
    "celebraciones": [
     {
      "tipo": "misa",
      "dias": [
+      "martes"
+     ],
+     "inicio": "16:00",
+     "fin": null,
+     "idioma": null,
+     "temporada": {
+      "nombre": "Navidad",
+      "inicio": null,
+      "fin": null
+     },
+     "semanas_mes": [],
+     "notas": "Dimarts: 16h a 21h",
+     "fuente": "F1",
+     "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "media"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
+      "miercoles",
+      "jueves"
+     ],
+     "inicio": "10:00",
+     "fin": null,
+     "idioma": null,
+     "temporada": {
+      "nombre": "Navidad",
+      "inicio": null,
+      "fin": null
+     },
+     "semanas_mes": [],
+     "notas": "Dimecres i dijous: 10h a 13h i 16h a 21h",
+     "fuente": "F1",
+     "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "media"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
+      "miercoles",
+      "jueves"
+     ],
+     "inicio": "16:00",
+     "fin": null,
+     "idioma": null,
+     "temporada": {
+      "nombre": "Navidad",
+      "inicio": null,
+      "fin": null
+     },
+     "semanas_mes": [],
+     "notas": "Dimecres i dijous: 10h a 13h i 16h a 21h",
+     "fuente": "F1",
+     "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "media"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
+      "viernes"
+     ],
+     "inicio": "17:00",
+     "fin": null,
+     "idioma": null,
+     "temporada": {
+      "nombre": "Navidad",
+      "inicio": null,
+      "fin": null
+     },
+     "semanas_mes": [],
+     "notas": "Divendres: 17h a 21h",
+     "fuente": "F1",
+     "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "media"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
+      "sabado"
+     ],
+     "inicio": "10:00",
+     "fin": null,
+     "idioma": null,
+     "temporada": {
+      "nombre": "Navidad",
+      "inicio": null,
+      "fin": null
+     },
+     "semanas_mes": [],
+     "notas": "Dissabtes: 10h a 12h i 16h a 19h",
+     "fuente": "F1",
+     "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "media"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
+      "sabado"
+     ],
+     "inicio": "16:00",
+     "fin": null,
+     "idioma": null,
+     "temporada": {
+      "nombre": "Navidad",
+      "inicio": null,
+      "fin": null
+     },
+     "semanas_mes": [],
+     "notas": "Dissabtes: 10h a 12h i 16h a 19h",
+     "fuente": "F1",
+     "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "media"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
       "lunes",
       "martes",
       "miercoles",
       "jueves",
       "viernes",
-      "sabado"
+      "sabado",
+      "vispera_festivo"
      ],
      "inicio": "19:30",
      "fin": null,
-     "idioma": null,
-     "temporada": null,
+     "idioma": "ca",
+     "temporada": {
+      "nombre": "Navidad",
+      "inicio": null,
+      "fin": null
+     },
      "semanas_mes": [],
-     "notas": "De lunes a sábado, misa a las 19:30 horas.",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+     "notas": "Laborables, vigílies i dissabtes: 19h30 (català)",
+     "vespertina_dominical": true,
+     "fuente": "F1",
+     "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
      "comprobado": "2026-10-22",
-     "confianza": "baja"
+     "confianza": "media"
     },
     {
      "tipo": "misa",
      "dias": [
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "10:00",
      "fin": null,
      "idioma": "es",
-     "temporada": null,
+     "temporada": {
+      "nombre": "Navidad",
+      "inicio": null,
+      "fin": null
+     },
      "semanas_mes": [],
-     "notas": "Domingo: 10:00 (castellano), 12:30 (catalán), 19:30 (bilingüe)",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+     "notas": "Diumenges i festius: 10h (castellano), 12h30 (català) i 19h30 (bilingüe)",
+     "fuente": "F1",
+     "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
      "comprobado": "2026-10-22",
-     "confianza": "baja"
+     "confianza": "media"
     },
     {
      "tipo": "misa",
      "dias": [
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "12:30",
      "fin": null,
      "idioma": "ca",
-     "temporada": null,
+     "temporada": {
+      "nombre": "Navidad",
+      "inicio": null,
+      "fin": null
+     },
      "semanas_mes": [],
-     "notas": "Domingo: 10:00 (castellano), 12:30 (catalán), 19:30 (bilingüe)",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+     "notas": "Diumenges i festius: 10h (castellano), 12h30 (català) i 19h30 (bilingüe)",
+     "fuente": "F1",
+     "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
      "comprobado": "2026-10-22",
-     "confianza": "baja"
+     "confianza": "media"
     },
     {
      "tipo": "misa",
      "dias": [
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "19:30",
      "fin": null,
      "idioma": "bilingue",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Domingo: 10:00 (castellano), 12:30 (catalán), 19:30 (bilingüe)",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
-     ],
-     "inicio": "18:30",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Lunes a viernes a las 18:30 h. San Rosario",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Viernes de 20:00 h. a 20:30 h. Exposición Eucarística",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes",
-      "sabado"
-     ],
-     "inicio": "20:30",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Viernes de 20:00 h. a 20:30 h. Exposición Eucarística",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
-    },
-    {
-     "tipo": "confesion",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes",
-      "sabado"
-     ],
-     "inicio": null,
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Confesiones antes de las misas y siempre que se pida a Sacristia",
-     "relativa_a_misa": {
-      "antes": true
+     "temporada": {
+      "nombre": "Navidad",
+      "inicio": null,
+      "fin": null
      },
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+     "semanas_mes": [],
+     "notas": "Diumenges i festius: 10h (castellano), 12h30 (català) i 19h30 (bilingüe)",
+     "fuente": "F1",
+     "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
      "comprobado": "2026-10-22",
-     "confianza": "baja"
+     "confianza": "media"
     }
+   ],
+   "notas_fuente": [
+    "página encontrada desde http://www.cristrei.cat"
+   ],
+   "lineas_dudosas": [
+    "11:09"
    ],
    "tipo": "Parroquia",
    "municipio": "Barcelona",
@@ -10260,7 +10302,7 @@
    "intentos": [
     {
      "fuente": "F1",
-     "resultado": "no se encuentra el enlace al horario"
+     "resultado": "error: HTTP Error 429: Too Many Requests"
     },
     {
      "fuente": "OSM",
@@ -12682,7 +12724,7 @@
       "domingo",
       "festivo_precepto"
      ],
-     "inicio": "04:00",
+     "inicio": "16:00",
      "fin": null,
      "idioma": "otro",
      "temporada": null,
@@ -12717,7 +12759,7 @@
       "domingo",
       "festivo_precepto"
      ],
-     "inicio": "06:00",
+     "inicio": "18:00",
      "fin": null,
      "idioma": "otro",
      "temporada": null,
@@ -12750,7 +12792,7 @@
      "dias": [
       "sabado"
      ],
-     "inicio": "07:00",
+     "inicio": "19:00",
      "fin": null,
      "idioma": "es",
      "temporada": null,
@@ -12782,7 +12824,7 @@
      "dias": [
       "viernes"
      ],
-     "inicio": "07:00",
+     "inicio": "19:00",
      "fin": null,
      "idioma": "es",
      "temporada": null,
@@ -12814,7 +12856,7 @@
      "dias": [
       "viernes"
      ],
-     "inicio": "07:30",
+     "inicio": "19:30",
      "fin": null,
      "idioma": "otro",
      "temporada": null,
@@ -12847,22 +12889,6 @@
      "dias": [
       "jueves"
      ],
-     "inicio": "06:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "18:00 (6:00 pm) Adoración del Santísimo Sacramento",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
-    },
-    {
-     "tipo": "adoracion",
-     "dias": [
-      "jueves"
-     ],
      "inicio": "19:00",
      "fin": null,
      "idioma": null,
@@ -12879,7 +12905,7 @@
      "dias": [
       "jueves"
      ],
-     "inicio": "07:00",
+     "inicio": "19:00",
      "fin": null,
      "idioma": "es",
      "temporada": null,
@@ -12905,26 +12931,7 @@
      "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
      "comprobado": "2026-10-22",
      "confianza": "baja"
-    },
-    {
-     "tipo": "adoracion",
-     "dias": [
-      "miercoles"
-     ],
-     "inicio": "07:30",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "19:30 (7:30 pm) Novena Perpetuo Socorro",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
     }
-   ],
-   "sospechas": [
-    "hora fuera de 06:00–23:00: misa 04:00"
    ],
    "tipo": "Parroquia",
    "municipio": "Barcelona",
@@ -16623,26 +16630,147 @@
    "intentos": [
     {
      "fuente": "F1",
-     "resultado": "error: HTTP Error 429: Too Many Requests"
-    },
-    {
-     "fuente": "F3",
      "resultado": "ok"
-    },
-    {
-     "fuente": "OSM",
-     "resultado": "OpenStreetMap no tiene horario de misas para este templo"
     }
    ],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
    "lectura": "reglas",
    "estado": "ok",
-   "fuente": "F3",
-   "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+   "fuente": "F1",
+   "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
    "formato": "html",
    "comprobado": "2026-10-22",
-   "confianza": "baja",
+   "confianza": "alta",
    "celebraciones": [
+    {
+     "tipo": "misa",
+     "dias": [
+      "domingo",
+      "festivo_precepto"
+     ],
+     "inicio": "10:00",
+     "fin": null,
+     "idioma": null,
+     "temporada": {
+      "nombre": "Semana Santa",
+      "inicio": null,
+      "fin": null
+     },
+     "semanas_mes": [],
+     "notas": "Diumenges i festes religioses, a les 10’00, 11’30, 13'00 i 20’00 h.",
+     "fuente": "F1",
+     "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "alta"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
+      "domingo",
+      "festivo_precepto"
+     ],
+     "inicio": "11:30",
+     "fin": null,
+     "idioma": null,
+     "temporada": {
+      "nombre": "Semana Santa",
+      "inicio": null,
+      "fin": null
+     },
+     "semanas_mes": [],
+     "notas": "Diumenges i festes religioses, a les 10’00, 11’30, 13'00 i 20’00 h.",
+     "fuente": "F1",
+     "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "alta"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
+      "domingo",
+      "festivo_precepto"
+     ],
+     "inicio": "13:00",
+     "fin": null,
+     "idioma": null,
+     "temporada": {
+      "nombre": "Semana Santa",
+      "inicio": null,
+      "fin": null
+     },
+     "semanas_mes": [],
+     "notas": "Diumenges i festes religioses, a les 10’00, 11’30, 13'00 i 20’00 h.",
+     "fuente": "F1",
+     "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "alta"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
+      "domingo",
+      "festivo_precepto"
+     ],
+     "inicio": "20:00",
+     "fin": null,
+     "idioma": null,
+     "temporada": {
+      "nombre": "Semana Santa",
+      "inicio": null,
+      "fin": null
+     },
+     "semanas_mes": [],
+     "notas": "Diumenges i festes religioses, a les 10’00, 11’30, 13'00 i 20’00 h.",
+     "fuente": "F1",
+     "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "alta"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
+      "sabado",
+      "vispera_festivo",
+      "festivo_precepto"
+     ],
+     "inicio": "13:15",
+     "fin": null,
+     "idioma": null,
+     "temporada": {
+      "nombre": "Semana Santa",
+      "inicio": null,
+      "fin": null
+     },
+     "semanas_mes": [],
+     "notas": "Dissabtes i vigílies de festes religioses, a les 13'15 (Missa diària) i 20’00 h. (Missa de vigília)",
+     "fuente": "F1",
+     "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "alta"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
+      "sabado",
+      "vispera_festivo",
+      "festivo_precepto"
+     ],
+     "inicio": "20:00",
+     "fin": null,
+     "idioma": null,
+     "temporada": {
+      "nombre": "Semana Santa",
+      "inicio": null,
+      "fin": null
+     },
+     "semanas_mes": [],
+     "notas": "Dissabtes i vigílies de festes religioses, a les 13'15 (Missa diària) i 20’00 h. (Missa de vigília)",
+     "vespertina_dominical": true,
+     "fuente": "F1",
+     "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "alta"
+    },
     {
      "tipo": "misa",
      "dias": [
@@ -16654,18 +16782,18 @@
      ],
      "inicio": "13:15",
      "fin": null,
-     "idioma": "es",
+     "idioma": null,
      "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
+      "nombre": "Semana Santa",
+      "inicio": null,
+      "fin": null
      },
      "semanas_mes": [],
-     "notas": "13:15h. (castellano)",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+     "notas": "Dies feiners, a les 13’15 i a les 20’00 h.",
+     "fuente": "F1",
+     "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
      "comprobado": "2026-10-22",
-     "confianza": "baja"
+     "confianza": "alta"
     },
     {
      "tipo": "misa",
@@ -16680,234 +16808,84 @@
      "fin": null,
      "idioma": null,
      "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
+      "nombre": "Semana Santa",
+      "inicio": null,
+      "fin": null
      },
      "semanas_mes": [],
-     "notas": "20:00h.",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+     "notas": "Dies feiners, a les 13’15 i a les 20’00 h.",
+     "fuente": "F1",
+     "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
      "comprobado": "2026-10-22",
-     "confianza": "baja"
+     "confianza": "alta"
     },
     {
-     "tipo": "misa",
+     "tipo": "adoracion",
      "dias": [
-      "sabado",
-      "vispera_festivo",
-      "festivo_precepto"
+      "jueves"
+     ],
+     "inicio": "13:45",
+     "fin": null,
+     "idioma": null,
+     "temporada": null,
+     "semanas_mes": [],
+     "notas": "DIURNA: Tots els dijous des de les 13`45 fins a les 20'00. NOCTURNA: Dimarts de 20'30 a Dimecres a les 13'00 h.",
+     "fuente": "F1",
+     "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
+     "comprobado": "2026-10-22",
+     "confianza": "alta"
+    },
+    {
+     "tipo": "adoracion",
+     "dias": [
+      "jueves"
      ],
      "inicio": "20:00",
      "fin": null,
      "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
+     "temporada": null,
      "semanas_mes": [],
-     "notas": "20:00h.",
-     "vespertina_dominical": true,
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+     "notas": "DIURNA: Tots els dijous des de les 13`45 fins a les 20'00. NOCTURNA: Dimarts de 20'30 a Dimecres a les 13'00 h.",
+     "fuente": "F1",
+     "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
      "comprobado": "2026-10-22",
-     "confianza": "baja"
+     "confianza": "alta"
     },
     {
-     "tipo": "misa",
+     "tipo": "adoracion",
      "dias": [
-      "domingo",
-      "festivo_precepto"
+      "jueves"
      ],
-     "inicio": "10:00",
+     "inicio": "20:30",
      "fin": null,
      "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
+     "temporada": null,
      "semanas_mes": [],
-     "notas": "10:00h.",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+     "notas": "DIURNA: Tots els dijous des de les 13`45 fins a les 20'00. NOCTURNA: Dimarts de 20'30 a Dimecres a les 13'00 h.",
+     "fuente": "F1",
+     "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
      "comprobado": "2026-10-22",
-     "confianza": "baja"
+     "confianza": "alta"
     },
     {
-     "tipo": "misa",
+     "tipo": "adoracion",
      "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "11:30",
-     "fin": null,
-     "idioma": "es",
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
-     "semanas_mes": [],
-     "notas": "11:30h. (castellano)",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
+      "jueves"
      ],
      "inicio": "13:00",
      "fin": null,
      "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
+     "temporada": null,
      "semanas_mes": [],
-     "notas": "13:00h.",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+     "notas": "DIURNA: Tots els dijous des de les 13`45 fins a les 20'00. NOCTURNA: Dimarts de 20'30 a Dimecres a les 13'00 h.",
+     "fuente": "F1",
+     "url": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
      "comprobado": "2026-10-22",
-     "confianza": "baja"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
-     "semanas_mes": [],
-     "notas": "20:00h.",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Verano",
-      "inicio": "07-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "20:00h.",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "sabado",
-      "vispera_festivo",
-      "festivo_precepto"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Verano",
-      "inicio": "07-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "20:00h.",
-     "vespertina_dominical": true,
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "11:30",
-     "fin": null,
-     "idioma": "es",
-     "temporada": {
-      "nombre": "Verano",
-      "inicio": "07-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "11:30h. (castellano)",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "13:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Verano",
-      "inicio": "07-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "13:00h.",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Verano",
-      "inicio": "07-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "20:00h.",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
-     "comprobado": "2026-10-22",
-     "confianza": "baja"
+     "confianza": "alta"
     }
+   ],
+   "notas_fuente": [
+    "página encontrada desde https://santgregoritaumaturg.blogspot.com"
    ],
    "tipo": "Parroquia",
    "municipio": "Barcelona",
@@ -21849,7 +21827,7 @@
    "url": "https://parroquiasantramon.org/horaris/",
    "formato": "html",
    "comprobado": "2026-10-22",
-   "confianza": "media",
+   "confianza": "alta",
    "celebraciones": [
     {
      "tipo": "misa",
@@ -21866,7 +21844,7 @@
      "fuente": "F1",
      "url": "https://parroquiasantramon.org/horaris/",
      "comprobado": "2026-10-22",
-     "confianza": "media"
+     "confianza": "alta"
     },
     {
      "tipo": "misa",
@@ -21883,7 +21861,7 @@
      "fuente": "F1",
      "url": "https://parroquiasantramon.org/horaris/",
      "comprobado": "2026-10-22",
-     "confianza": "media"
+     "confianza": "alta"
     },
     {
      "tipo": "misa",
@@ -21904,7 +21882,7 @@
      "fuente": "F1",
      "url": "https://parroquiasantramon.org/horaris/",
      "comprobado": "2026-10-22",
-     "confianza": "media"
+     "confianza": "alta"
     },
     {
      "tipo": "misa",
@@ -21922,7 +21900,7 @@
      "fuente": "F1",
      "url": "https://parroquiasantramon.org/horaris/",
      "comprobado": "2026-10-22",
-     "confianza": "media"
+     "confianza": "alta"
     },
     {
      "tipo": "adoracion",
@@ -21938,7 +21916,7 @@
      "fuente": "F1",
      "url": "https://parroquiasantramon.org/horaris/",
      "comprobado": "2026-10-22",
-     "confianza": "media"
+     "confianza": "alta"
     },
     {
      "tipo": "confesion",
@@ -21954,7 +21932,7 @@
      "fuente": "F1",
      "url": "https://parroquiasantramon.org/horaris/",
      "comprobado": "2026-10-22",
-     "confianza": "media"
+     "confianza": "alta"
     },
     {
      "tipo": "confesion",
@@ -21975,1003 +21953,33 @@
      "fuente": "F1",
      "url": "https://parroquiasantramon.org/horaris/",
      "comprobado": "2026-10-22",
-     "confianza": "media"
+     "confianza": "alta"
     },
     {
      "tipo": "confesion",
      "dias": [
-      "lunes"
-     ],
-     "inicio": "19:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "La celebració de la Penitència serà Dilluns Sant, a les 7 de la tarda.",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "21:12",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "3 desembre 2025 a les 21:12",
-     "dias_deducidos": true,
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "18:25",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "4 desembre 2025 a les 18:25",
-     "dias_deducidos": true,
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "14:32",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "20 setembre 2025 a les 14:32",
-     "dias_deducidos": true,
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "10:21",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "21 setembre 2025 a les 10:21",
-     "dias_deducidos": true,
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "10:57",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "7 agost 2025 a les 10:57",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "22:28",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "7 agost 2025 a les 22:28",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "12:55",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "18 maig 2025 a les 12:55",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "08:32",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "24 maig 2025 a les 8:32",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "09:18",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "25 agost 2024 a les 9:18",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "12:10",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "25 agost 2024 a les 12:10",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
-     ],
-     "inicio": "09:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "De lunes a viernes los horarios de misa son a las 9h y a las 20h.",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "De lunes a viernes los horarios de misa son a las 9h y a las 20h.",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "4 agost 2022 a les 20:00",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "10:18",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "4 maig 2022 a les 10:18",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "22:05",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "4 maig 2022 a les 22:05",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "16:13",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "23 març 2022 a les 16:13",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "22:40",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "23 març 2022 a les 22:40",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "19:03",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "19 maig 2023 a les 19:03",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "15:15",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "7 desembre 2021 a les 15:15",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "miercoles"
-     ],
-     "inicio": "20:47",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "9 desembre 2021 a les 20:47",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "08:11",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "30 octubre 2021 a les 8:11",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "13:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "Querría venir a misa de 13h por Todos Los Santos y confesarme antes de la misa, pero ¿dan la comunión en la boca, de acuerdo con el reciente Decreto del Cardenal?",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "16:44",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "30 octubre 2021 a les 16:44",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "09:22",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Agosto",
-      "inicio": "08-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "31 agost 2021 a les 9:22",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo"
-     ],
-     "inicio": "11:02",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "25 desembre 2018 a les 11:02",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo"
-     ],
-     "inicio": "09:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "Avui no hi ha hagut missa de 9 del matí. La resta, com sempre.",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo"
-     ],
-     "inicio": "11:27",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "30 novembre 2018 a les 11:27",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo"
-     ],
-     "inicio": "21:12",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "5 desembre 2018 a les 21:12",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo"
-     ],
-     "inicio": "18:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "Sí. Será como cada año: el 24 a las 18h.",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo"
-     ],
-     "inicio": "02:02",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "14 febrer 2018 a les 2:02",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "miercoles"
-     ],
-     "inicio": "08:05",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "14 febrer 2018 a les 8:05",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "miercoles"
-     ],
-     "inicio": "07:26",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "12 febrer 2018 a les 7:26",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "miercoles"
-     ],
-     "inicio": "18:03",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "13 febrer 2018 a les 18:03",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "miercoles"
-     ],
-     "inicio": "22:16",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "16 gener 2018 a les 22:16",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "miercoles"
-     ],
-     "inicio": "08:03",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "17 gener 2018 a les 8:03",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "miercoles"
-     ],
-     "inicio": "11:49",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "24 desembre 2017 a les 11:49",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "12:59",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "24 desembre 2017 a les 12:59",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "12:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "Hola. El 25 hay misa a las 12, 13 y 20 horas.",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "13:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "Hola. El 25 hay misa a las 12, 13 y 20 horas.",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "Hola. El 25 hay misa a las 12, 13 y 20 horas.",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "04:46",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "22 desembre 2017 a les 4:46",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "08:47",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "22 desembre 2017 a les 8:47",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "09:48",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "22 desembre 2017 a les 9:48",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "13:21",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "22 desembre 2017 a les 13:21",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "13:05",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "16 desembre 2017 a les 13:05",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "13:09",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "16 desembre 2017 a les 13:09",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes"
-     ],
-     "inicio": "14:31",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "27 octubre 2017 a les 14:31",
-     "fuente": "F1",
-     "url": "https://parroquiasantramon.org/horaris/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
       "domingo"
      ],
      "inicio": "12:00",
      "fin": null,
-     "idioma": "es",
+     "idioma": null,
      "temporada": {
-      "nombre": "Navidad",
-      "inicio": null,
-      "fin": null
+      "nombre": "Agosto",
+      "inicio": "08-01",
+      "fin": "08-31"
      },
      "semanas_mes": [],
      "notas": "Diumenge 18 d'octubre, 12h: Solemnidad de Ntro. Sr. De los Milagros. Eucaristía Solemne y salida al atrio. Coincide con la colecta del “DOMUND”.",
      "fuente": "F1",
      "url": "https://parroquiasantramon.org/horaris/",
      "comprobado": "2026-10-22",
-     "confianza": "media"
+     "confianza": "alta"
     }
    ],
    "notas_fuente": [
     "aviso: 9:00 (bilingüe) (no se celebra el dia 1 de gener ni el 25 y 26 de desembre)",
     "aviso: 20:00 (no se celebra el dia 24 de desembre)",
-    "aviso: Properament publicarem els horaris de Nadal a la nostra web. T’avanço que la celebració de la penitència serà el dia 22, a les 19h.",
     "aviso: Dilluns 12 d'octubre: missa a les 12 en honor de la Mare de Déu del Pilar. No hi haurà missa de 9 h."
-   ],
-   "lineas_dudosas": [
-    "3 març 2026 a les 23:13",
-    "Se podría decir los horarios de misas en la grabación de mensajes donde se pide el teléfono. Por ej. Sábados 20:00 hs – Domingo 09:00 hs/12:00 hs/13:00 hs. o Deje su teléfono . Esto es solo una sugerencia y mil disculpas por la intromisión.",
-    "4 agost 2022 a les 10:50",
-    "Para poder ser madrina se suele pedir que se asista a un curso preparatorio. Suponemos que eso es lo que te han pedido. Si estás interesada, el próximo sábado tenemos uno al que puedes asistir. Para ello, es imprescindible que vengas el viernes al despacho parroquial, a partir de las 6, para apuntarte.",
-    "Ayer día 22 de marzo fui a misa por la tarde , y el párroco comentó , que este sábado había una misa especial a las 8 , quería asegurarme si era 8 de la mañana o 8 de la tarde , gracias",
-    "Como las confesiones, debido a las medidas sanitarias, se celebran en la sacristía, no es posible celebrarla antes de la misa de 1, dado que a las 12 hay otra misa, y no hay tiempo material. Por lo tanto, si desea recibir el sacramento de la penitencia, debe venir antes de la misa de 12.",
-    "1 setembre 2021 a les 22:42",
-    "24 març 2021 a les 17:54",
-    "25 març 2021 a les 19:37",
-    "1 març 2021 a les 10:45",
-    "5 març 2021 a les 17:48",
-    "5 octubre 2020 a les 12:37",
-    "5 octubre 2020 a les 19:29",
-    "17 setembre 2020 a les 12:55",
-    "17 setembre 2020 a les 19:26",
-    "La misa del gallo será el 24, a las 24h, es decir a la medianoche del 25, como es tradicional. El 24 a las 6 de la tarde celebraremos la misa del pollito, pensando en los más pequeños.",
-    "Por favor, ¿podrían decirnos si este año 2018 también harán misa del pollito a las 18h el lunes 24/12/2018?, Muchas gracias",
-    "La pots portar a qualsevol hora en que el temple sigui obert: de 9,30 a 13 i de 17,30 a 20, qualsevol dia de la setmana. Moltes gràcies!",
-    "Por favor, ¿podrian decirnos si este año tambien haran misa del pollito a las 18h el domingo 24/12/2017?, Muchas gracias",
-    "7 novembre 2017 a les 21:52",
-    "Entre semana son en castellano las misas de los lunes y los miércoles, a las 20h. El domingo la de las 9 es bilingue (litúrgia de la Palabra en castellano, y litúrgia de la Eucaristía en catalán). También es en castellano la misa de 12.",
-    "9 gener 2017 a les 19:26",
-    "11 gener 2017 a les 19:34"
-   ],
-   "sospechas": [
-    "hora fuera de 06:00–23:00: misa 02:02",
-    "hora fuera de 06:00–23:00: misa 04:46"
    ],
    "tipo": "Parroquia",
    "municipio": "Barcelona",
@@ -24090,7 +23098,7 @@
    "intentos": [
     {
      "fuente": "F1",
-     "resultado": "no se encuentra el enlace al horario"
+     "resultado": "error: <urlopen error timed out>"
     },
     {
      "fuente": "F3",
@@ -26286,7 +25294,7 @@
    "intentos": [
     {
      "fuente": "F1",
-     "resultado": "error: HTTP Error 429: Too Many Requests"
+     "resultado": "error: HTTP Error 404: Not Found"
     },
     {
      "fuente": "F3",
@@ -28994,23 +28002,6 @@
     {
      "tipo": "misa",
      "dias": [
-      "sabado",
-      "vispera_festivo"
-     ],
-     "inicio": "02:55",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "2:55",
-     "fuente": "F1",
-     "url": "http://mdd-salut-bdn.blogspot.com/",
-     "comprobado": "2026-10-22",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
       "sabado"
      ],
      "inicio": "07:55",
@@ -29206,10 +28197,8 @@
     "7:59",
     "4:18",
     "8:40",
-    "8:05"
-   ],
-   "sospechas": [
-    "hora fuera de 06:00–23:00: misa 02:55"
+    "8:05",
+    "Hora de madrugada, no se publica (02:55): «2:55»"
    ],
    "tipo": "Parroquia",
    "municipio": "Badalona",
@@ -29984,7 +28973,7 @@
    "intentos": [
     {
      "fuente": "F1",
-     "resultado": "error: HTTP Error 429: Too Many Requests"
+     "resultado": "no se reconoce ningún horario de misa"
     },
     {
      "fuente": "F3",
@@ -37485,7 +36474,7 @@
    "intentos": [
     {
      "fuente": "F1",
-     "resultado": "no se encuentra el enlace al horario"
+     "resultado": "error: <urlopen error timed out>"
     },
     {
      "fuente": "OSM",

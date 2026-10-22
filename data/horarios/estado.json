@@ -44,64 +44,64 @@
  },
  "BCN0001": {},
  "BCN0002": {
-  "F1_texto": "65e239c642459039",
-  "F3_texto": "4eebddae5646e4f8",
+  "F1_texto": "b383657c6b09ca55",
+  "F3_texto": "c3f524ba17fba1fd",
   "F3": {
-   "hash": "4eebddae5646e4f8",
+   "hash": "c3f524ba17fba1fd",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0004": {
-  "F3_texto": "88f2f09074335f57",
+  "F3_texto": "6834c6573ac029f4",
   "F3": {
-   "hash": "88f2f09074335f57",
+   "hash": "6834c6573ac029f4",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0005": {
-  "F1_texto": "adff4ee442db1100",
-  "F3_texto": "436874c7e1314d40",
+  "F1_texto": "47a306255e94daae",
+  "F3_texto": "f8c61a6fbaf408ca",
   "F3": {
-   "hash": "436874c7e1314d40",
+   "hash": "f8c61a6fbaf408ca",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0006": {
-  "F3_texto": "de0383f62e726638",
+  "F3_texto": "0324f992940bb188",
   "F3": {
-   "hash": "760938dd0f34387f",
+   "hash": "0cb71964d369aa66",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0007": {
-  "F1_texto": "fba0e086cceefa8d",
-  "F3_texto": "f9fac6c49a7a4c94"
+  "F1_texto": "d1dd53bbace2dc23",
+  "F3_texto": "b07b9bd8bc5c12b9"
  },
  "BCN0008": {
-  "F3_texto": "faa5e8598f729f22",
+  "F3_texto": "35ec368066e166e2",
   "F3": {
-   "hash": "faa5e8598f729f22",
+   "hash": "35ec368066e166e2",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0009": {
   "F1_url_descubierta": "https://www.santamariadelmar.barcelona/es/horarios-y-tarifas",
-  "F1_texto": "c7a92b4a5f3a8af8"
+  "F1_texto": "c7389fa70b76551d"
  },
  "BCN0010": {},
  "BCN0011": {
-  "F3_texto": "ce7aee4ba7a0d4e6",
+  "F3_texto": "5875283b4ea43458",
   "F3": {
-   "hash": "ce7aee4ba7a0d4e6",
+   "hash": "5875283b4ea43458",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0012": {
-  "F3_texto": "304822cfa4c6e73d"
+  "F3_texto": "7a773bdc6dcfa63c"
  },
  "BCN0013": {
   "F1_url_descubierta": "https://hospitalitat.org/missa-a-la-catedral-11-de-febrer/",
-  "F1_texto": "01d00d37f391a31b"
+  "F1_texto": "a8c5ac0ac0a7b615"
  },
  "BCN0014": {},
  "BCN0015": {},
@@ -109,9 +109,9 @@
  "BCN0017": {},
  "BCN0018": {
   "F1_url_descubierta": "https://parroquiamarededeudelsangels.com/horarios",
-  "F1_texto": "e0faeb1f292f1ab0",
+  "F1_texto": "45654f6255465df9",
   "F1": {
-   "hash": "e0faeb1f292f1ab0",
+   "hash": "45654f6255465df9",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -129,9 +129,9 @@
  "BCN0030": {},
  "BCN0031": {
   "F1_url_descubierta": "https://misatradicional.es/laforja/#horarios",
-  "F1_texto": "bf6e52189fd4df2c",
+  "F1_texto": "6851b26386d356bd",
   "F1": {
-   "hash": "bf6e52189fd4df2c",
+   "hash": "6851b26386d356bd",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -140,15 +140,15 @@
  "BCN0034": {},
  "BCN0035": {
   "F1_url_descubierta": "https://casalloiola.org/que-oferim/#ocic",
-  "F1_texto": "a0f37266dcfa403f",
+  "F1_texto": "db7d4a07d433a64f",
   "F1": {
-   "hash": "a0f37266dcfa403f",
+   "hash": "db7d4a07d433a64f",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0036": {
-  "F1_texto": "32d244d22fd49b8e",
-  "F3_texto": "caf249c6fc2090f9"
+  "F1_texto": "137ddc70de84b7bf",
+  "F3_texto": "bc046b94c773e108"
  },
  "BCN0037": {},
  "BCN0038": {},
@@ -174,27 +174,27 @@
  "BCN0058": {},
  "BCN0059": {
   "F1_url_descubierta": "https://barcelona.dominicos.org/ca/horaris-4/",
-  "F1_texto": "07be500b0e92cca1",
+  "F1_texto": "c91df9ef7bb0dcaa",
   "F1": {
-   "hash": "07be500b0e92cca1",
+   "hash": "c91df9ef7bb0dcaa",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0060": {},
  "BCN0061": {
   "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/parroquies/corpus-christi",
-  "F1_texto": "94349c68da771f5d",
-  "F3_texto": "21163c66ede22e14",
+  "F1_texto": "5613e319760849ae",
+  "F3_texto": "dcce93536a894068",
   "F3": {
-   "hash": "21163c66ede22e14",
+   "hash": "dcce93536a894068",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0062": {},
  "BCN0063": {
-  "F3_texto": "877662e20995a8a9",
+  "F3_texto": "c9b5e92cb7663a7b",
   "F3": {
-   "hash": "877662e20995a8a9",
+   "hash": "c9b5e92cb7663a7b",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -203,12 +203,18 @@
   "F3": {
    "hash": "c21b05396422f5d6",
    "ultimo_ok": "2026-10-22"
+  },
+  "F1_url_descubierta": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+  "F1_texto": "9359842971820c06",
+  "F1": {
+   "hash": "9359842971820c06",
+   "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0065": {
-  "F3_texto": "88bfcfddb45f62d4",
+  "F3_texto": "97266708decfc727",
   "F3": {
-   "hash": "88bfcfddb45f62d4",
+   "hash": "97266708decfc727",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -226,7 +232,7 @@
  "BCN0077": {},
  "BCN0078": {
   "F1_url_descubierta": "https://dominiquesbarcelona.com/horaris/",
-  "F1_texto": "9f3998146040a71e"
+  "F1_texto": "4960aa6e82a14876"
  },
  "BCN0079": {},
  "BCN0080": {},
@@ -242,12 +248,12 @@
  "BCN0090": {},
  "BCN0091": {
   "F1_url_descubierta": "https://catedralbcn.org/culte-i-pregaria/",
-  "F1_texto": "fd1469ac102f4c3f"
+  "F1_texto": "92d12d18a8517bc1"
  },
  "BCN0093": {
-  "F1_texto": "84a3ecb9303e4b0b",
+  "F1_texto": "b62fd6a79ab7752d",
   "F1": {
-   "hash": "84a3ecb9303e4b0b",
+   "hash": "b62fd6a79ab7752d",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -255,9 +261,9 @@
  "BCN0095": {},
  "BCN0096": {},
  "BCN0097": {
-  "F1_texto": "062a032b2c3a513f",
+  "F1_texto": "1a6115560f856aef",
   "F1": {
-   "hash": "062a032b2c3a513f",
+   "hash": "1a6115560f856aef",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -265,12 +271,12 @@
  "BCN0099": {},
  "BCN0100": {},
  "BCN0101": {
-  "F3_texto": "828e936eeaea0825"
+  "F3_texto": "5e248485bb98b14c"
  },
  "BCN0102": {
-  "F1_texto": "6e59d05edb283782",
+  "F1_texto": "168ce86e8223c7ea",
   "F1": {
-   "hash": "6e59d05edb283782",
+   "hash": "168ce86e8223c7ea",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -282,7 +288,7 @@
  "BCN0108": {},
  "BCN0109": {
   "F1_url_descubierta": "https://www.scias.com/ca/lassemblea-general-scias-reuneix-socis-socies-compromissaris",
-  "F1_texto": "254b2c3859b332ea"
+  "F1_texto": "3c29d084a3dbdbfe"
  },
  "BCN0110": {},
  "BCN0111": {},
@@ -298,24 +304,24 @@
  "BCN0121": {},
  "BCN0122": {},
  "BCN0123": {
-  "F1_texto": "ada28524121e89fd",
+  "F1_texto": "bdf51c20ce578fff",
   "F1": {
-   "hash": "ada28524121e89fd",
+   "hash": "bdf51c20ce578fff",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0124": {},
  "BCN0125": {
-  "F3_texto": "6b84963ea81ef607",
+  "F3_texto": "aefd86100f0e64b4",
   "F3": {
-   "hash": "6b84963ea81ef607",
+   "hash": "aefd86100f0e64b4",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0126": {
-  "F3_texto": "75ac754ba3c3bd25",
+  "F3_texto": "342d25fae3ddab1d",
   "F3": {
-   "hash": "75ac754ba3c3bd25",
+   "hash": "342d25fae3ddab1d",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -323,153 +329,153 @@
  "BCN0128": {},
  "BCN0129": {
   "F1_url_descubierta": "https://misas.org/p/parroquia-de-la-mare-de-deu-de-betlem-barcelona",
-  "F1_texto": "9b20f630ea5d5076",
-  "F3_texto": "53870dffcf050f68",
+  "F1_texto": "671baaa4e6caa278",
+  "F3_texto": "31495a4e71193210",
   "F3": {
-   "hash": "53870dffcf050f68",
+   "hash": "31495a4e71193210",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0130": {
-  "F3_texto": "761021eeecfc3b30",
+  "F3_texto": "a252e06137145270",
   "F3": {
-   "hash": "761021eeecfc3b30",
+   "hash": "a252e06137145270",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0131": {
-  "F3_texto": "89eedaee7e0f9b83",
+  "F3_texto": "9972a77f09e1dd32",
   "F3": {
-   "hash": "89eedaee7e0f9b83",
+   "hash": "9972a77f09e1dd32",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0132": {
-  "F1_texto": "c2bda3ccabfbcb39",
+  "F1_texto": "0bf32112768c76a7",
   "F1": {
-   "hash": "c2bda3ccabfbcb39",
+   "hash": "0bf32112768c76a7",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0133": {
-  "F3_texto": "88714b29d4cb8c8d",
+  "F3_texto": "bd423acd405334fb",
   "F3": {
-   "hash": "88714b29d4cb8c8d",
+   "hash": "bd423acd405334fb",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0134": {
-  "F1_texto": "adff4ee442db1100",
-  "F3_texto": "bd412e37322b9bce",
+  "F1_texto": "47a306255e94daae",
+  "F3_texto": "8f4049ebd4e9cf71",
   "F3": {
-   "hash": "bd412e37322b9bce",
+   "hash": "8f4049ebd4e9cf71",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0135": {
   "F1_url_descubierta": "https://drive.google.com/file/d/1ITt1phgdeAzaXsGasG4WeUTrJ4qxHp1J/view?usp=drive_link",
-  "F1_texto": "77b23b55a5c28716",
-  "F3_texto": "527acce0e194d5ff",
+  "F1_texto": "2bdb24dd2f525f19",
+  "F3_texto": "90e3e7f1caa680da",
   "F3": {
-   "hash": "527acce0e194d5ff",
+   "hash": "90e3e7f1caa680da",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0136": {
-  "F3_texto": "8ea5fe1cb61c25ab",
+  "F3_texto": "ab5a37102f755f6c",
   "F3": {
-   "hash": "8ea5fe1cb61c25ab",
+   "hash": "ab5a37102f755f6c",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0137": {
-  "F3_texto": "4374d9b864c0b15b",
+  "F3_texto": "02d38e7738771323",
   "F3": {
-   "hash": "4374d9b864c0b15b",
+   "hash": "02d38e7738771323",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0138": {
   "F1_url_descubierta": "https://parroquiamdnuriabcn.blogspot.com/feeds/posts/default",
-  "F1_texto": "9b4f54df9ab634bd",
-  "F3_texto": "2280b51c4ee2c8bf",
+  "F1_texto": "f1297f9d32d95337",
+  "F3_texto": "908e6a08683a30f2",
   "F3": {
-   "hash": "2280b51c4ee2c8bf",
+   "hash": "908e6a08683a30f2",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0139": {
-  "F3_texto": "ed552b3e037474e4",
+  "F3_texto": "2264f7ccfa224a86",
   "F3": {
-   "hash": "ed552b3e037474e4",
+   "hash": "2264f7ccfa224a86",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0140": {
   "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/parroquies/la-salut",
-  "F1_texto": "fbb851b600d4a261",
-  "F3_texto": "71c7d0d756846b9a",
+  "F1_texto": "416dd9ede2579c6f",
+  "F3_texto": "895786cdd11f7ee6",
   "F3": {
-   "hash": "71c7d0d756846b9a",
+   "hash": "895786cdd11f7ee6",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0141": {
   "F1_url_descubierta": "https://parroquiapilarsanteugeni.com/misses/",
-  "F1_texto": "51728e2cdef3b965",
-  "F3_texto": "67e3a56c77762c4c",
+  "F1_texto": "c1673bd44442fa44",
+  "F3_texto": "6d874c62410d2373",
   "F3": {
-   "hash": "67e3a56c77762c4c",
+   "hash": "6d874c62410d2373",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0142": {
-  "F3_texto": "f817fe2cf600862b",
+  "F3_texto": "b921c009ed92129a",
   "F3": {
-   "hash": "f817fe2cf600862b",
+   "hash": "b921c009ed92129a",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0143": {
-  "F3_texto": "4f85858fc8e6092e",
+  "F3_texto": "003030dfd9da038d",
   "F3": {
-   "hash": "4f85858fc8e6092e",
+   "hash": "003030dfd9da038d",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0144": {
-  "F1_texto": "376dd7c38c3eea22",
+  "F1_texto": "0ae6968f95305224",
   "F1": {
-   "hash": "376dd7c38c3eea22",
+   "hash": "0ae6968f95305224",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0145": {
   "F1_url_descubierta": "https://parroquiamarededeudelsangels.com/horarios",
-  "F1_texto": "e0faeb1f292f1ab0",
+  "F1_texto": "45654f6255465df9",
   "F1": {
-   "hash": "e0faeb1f292f1ab0",
+   "hash": "45654f6255465df9",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0146": {
-  "F1_texto": "3d0c5f789bd2734b",
+  "F1_texto": "f2add32b5313c67a",
   "F1": {
-   "hash": "3d0c5f789bd2734b",
+   "hash": "f2add32b5313c67a",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0147": {
-  "F1_texto": "fc0d823d1fdd4846",
+  "F1_texto": "1c815c8e4e2795f3",
   "F1": {
-   "hash": "fc0d823d1fdd4846",
+   "hash": "1c815c8e4e2795f3",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0148": {
-  "F1_texto": "c7dcc6ee9ce0a3d0",
+  "F1_texto": "aad6ef6448a92804",
   "F1": {
-   "hash": "c7dcc6ee9ce0a3d0",
+   "hash": "aad6ef6448a92804",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -483,21 +489,21 @@
  "BCN0156": {},
  "BCN0157": {
   "F1_url_descubierta": "https://www.benedictinessantperepuelles.cat/horari.html",
-  "F1_texto": "c477e47d7b645430"
+  "F1_texto": "fc10b752ff7c36e0"
  },
  "BCN0158": {
   "F1_url_descubierta": "https://mariareina.barcelona/#Horario",
-  "F1_texto": "c7dcc6ee9ce0a3d0",
+  "F1_texto": "aad6ef6448a92804",
   "F1": {
-   "hash": "c7dcc6ee9ce0a3d0",
+   "hash": "aad6ef6448a92804",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0159": {
   "F1_url_descubierta": "https://valldonzella.cat/horaris-liturgics-monestir-valldonzella/",
-  "F1_texto": "e94864e48653e9ce",
+  "F1_texto": "8e7fd2ca6cb8972a",
   "F1": {
-   "hash": "e94864e48653e9ce",
+   "hash": "8e7fd2ca6cb8972a",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -511,17 +517,17 @@
  "BCN0167": {},
  "BCN0168": {},
  "BCN0169": {
-  "F3_texto": "286bc73e77fa3b11",
+  "F3_texto": "6feffda75b17622f",
   "F3": {
-   "hash": "286bc73e77fa3b11",
+   "hash": "6feffda75b17622f",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0170": {
   "F1_url_descubierta": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-  "F1_texto": "34655b6d9c9fdf3a",
+  "F1_texto": "5c0d1603212c7a41",
   "F1": {
-   "hash": "34655b6d9c9fdf3a",
+   "hash": "5c0d1603212c7a41",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -530,25 +536,25 @@
  "BCN0173": {},
  "BCN0174": {
   "F1_url_descubierta": "https://www.parroquiasantfrancescassis.com/horaris",
-  "F1_texto": "8b44460cc99e7b02",
+  "F1_texto": "0c379bd8d26cfb1e",
   "F1": {
-   "hash": "8b44460cc99e7b02",
+   "hash": "0c379bd8d26cfb1e",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0175": {},
  "BCN0176": {},
  "BCN0177": {
-  "F3_texto": "e567ca65bfdaa9d9",
+  "F3_texto": "4cc518ea8d0a28cf",
   "F3": {
-   "hash": "e567ca65bfdaa9d9",
+   "hash": "4cc518ea8d0a28cf",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0178": {},
  "BCN0179": {
   "F1_url_descubierta": "https://monestir.org/misas-y-adoraciones/",
-  "F1_texto": "56a4baa7c3b941c7"
+  "F1_texto": "2c97dfc49c2b9b52"
  },
  "BCN0180": {},
  "BCN0181": {},
@@ -567,155 +573,155 @@
  "BCN0194": {},
  "BCN0195": {},
  "BCN0196": {
-  "F1_texto": "a2e53903590f1fa4",
+  "F1_texto": "d24e822b0cb37ce8",
   "F1": {
-   "hash": "a2e53903590f1fa4",
+   "hash": "d24e822b0cb37ce8",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0197": {
-  "F1_texto": "c78a00556beeb7bf",
-  "F3_texto": "98e194a0cf4d6067",
+  "F1_texto": "8bfd6edfb55679d3",
+  "F3_texto": "623defecbcd5ae1d",
   "F3": {
-   "hash": "823b3ea035e0adfa",
+   "hash": "7202e2177de82aed",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0198": {
-  "F3_texto": "5480201763d22481",
+  "F3_texto": "4f32c37ea467226b",
   "F3": {
-   "hash": "5480201763d22481",
+   "hash": "4f32c37ea467226b",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0199": {
-  "F1_texto": "adff4ee442db1100",
-  "F3_texto": "42b123ede565cbb7",
+  "F1_texto": "47a306255e94daae",
+  "F3_texto": "0da6330698c720a6",
   "F3": {
-   "hash": "42b123ede565cbb7",
+   "hash": "0da6330698c720a6",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0200": {
-  "F3_texto": "de29d2b3cc290222",
+  "F3_texto": "bddbfb8d250b254b",
   "F3": {
-   "hash": "de29d2b3cc290222",
+   "hash": "bddbfb8d250b254b",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0201": {
-  "F1_texto": "c4808dadb93c9ad4",
+  "F1_texto": "e4ef8aeb81c32f0d",
   "F1": {
-   "hash": "c4808dadb93c9ad4",
+   "hash": "e4ef8aeb81c32f0d",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0202": {
-  "F3_texto": "5e633ebf43b0d9c1",
+  "F3_texto": "35791ca86727c152",
   "F3": {
-   "hash": "5e633ebf43b0d9c1",
+   "hash": "35791ca86727c152",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0203": {
-  "F3_texto": "bb36d103f998e7d2",
+  "F3_texto": "cae90dd2827af353",
   "F3": {
-   "hash": "bb36d103f998e7d2",
+   "hash": "cae90dd2827af353",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0204": {
   "F1_url_descubierta": "https://santbernat.salesians.cat/horario-de-las-celebraciones-de-semana-santa-2026/",
-  "F1_texto": "8107284a54f48382",
+  "F1_texto": "23c9dbf7b9df7411",
   "F1": {
-   "hash": "8107284a54f48382",
+   "hash": "23c9dbf7b9df7411",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0205": {
-  "F3_texto": "fd9b4ef0f88268c8",
+  "F3_texto": "c8463911120dd2d6",
   "F3": {
-   "hash": "fd9b4ef0f88268c8",
+   "hash": "c8463911120dd2d6",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0206": {
-  "F3_texto": "dba1709e615913c0",
+  "F3_texto": "5cd1ca0c6e54763b",
   "F3": {
-   "hash": "dba1709e615913c0",
+   "hash": "5cd1ca0c6e54763b",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0207": {
-  "F3_texto": "9463da1df4f3d16a",
+  "F3_texto": "0fca6212604a3c81",
   "F3": {
-   "hash": "9463da1df4f3d16a",
+   "hash": "0fca6212604a3c81",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0208": {
-  "F3_texto": "5b6a81e77b317f51",
+  "F3_texto": "6123aa946f17c008",
   "F3": {
-   "hash": "5b6a81e77b317f51",
+   "hash": "6123aa946f17c008",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0209": {
-  "F3_texto": "9becd2b41a34b330",
+  "F3_texto": "cf395318a91141e3",
   "F3": {
-   "hash": "9becd2b41a34b330",
+   "hash": "cf395318a91141e3",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0210": {
-  "F3_texto": "09b41fa4d0bd8eb5",
+  "F3_texto": "2bb52f6874e222e5",
   "F3": {
-   "hash": "09b41fa4d0bd8eb5",
+   "hash": "2bb52f6874e222e5",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0211": {
   "F1_url_descubierta": "https://parroquiapilarsanteugeni.com/parroquia-sant-eugeni-papa/",
-  "F1_texto": "adff4ee442db1100",
-  "F3_texto": "cb54b4382d44c074",
+  "F1_texto": "47a306255e94daae",
+  "F3_texto": "9abb7117021e72b5",
   "F3": {
-   "hash": "cb54b4382d44c074",
+   "hash": "9abb7117021e72b5",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0214": {
-  "F1_texto": "6e2c1aeb833e501f",
+  "F1_texto": "27c13a7ee02492ce",
   "F1": {
-   "hash": "6e2c1aeb833e501f",
+   "hash": "27c13a7ee02492ce",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0215": {
   "F1_url_descubierta": "https://www.parroquiaconcepciobcn.org/misses/",
-  "F1_texto": "3a63c2a93fc1ac05",
+  "F1_texto": "e784f262aab58f4c",
   "F1": {
-   "hash": "3a63c2a93fc1ac05",
+   "hash": "e784f262aab58f4c",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0216": {
-  "F3_texto": "dd8f417ce78cc033",
+  "F3_texto": "ab511e55792a16af",
   "F3": {
-   "hash": "dd8f417ce78cc033",
+   "hash": "ab511e55792a16af",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0217": {
-  "F1_texto": "862a02462818c00c",
+  "F1_texto": "1c0d3731a0ea2a90",
   "F1": {
-   "hash": "862a02462818c00c",
+   "hash": "1c0d3731a0ea2a90",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0218": {
-  "F3_texto": "89105676bd4d6749",
+  "F3_texto": "e42af7dd9cd219f7",
   "F3": {
-   "hash": "89105676bd4d6749",
+   "hash": "e42af7dd9cd219f7",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -724,480 +730,486 @@
   "F3": {
    "hash": "a34d8e4e9e0713fc",
    "ultimo_ok": "2026-10-22"
+  },
+  "F1_url_descubierta": "https://santgregoritaumaturg.blogspot.com/2024/03/horaris-de-setmana-santa-2024.html",
+  "F1_texto": "58e138407f8696e8",
+  "F1": {
+   "hash": "58e138407f8696e8",
+   "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0220": {
-  "F3_texto": "79844fb64c7f55cf",
+  "F3_texto": "8eda7c006c9cc036",
   "F3": {
-   "hash": "79844fb64c7f55cf",
+   "hash": "8eda7c006c9cc036",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0221": {
-  "F3_texto": "180427a1d9c3d370",
+  "F3_texto": "b311bf4b6639273f",
   "F3": {
-   "hash": "180427a1d9c3d370",
+   "hash": "b311bf4b6639273f",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0222": {
-  "F3_texto": "625d8e12daf75b15",
+  "F3_texto": "14d3a09c66360453",
   "F3": {
-   "hash": "625d8e12daf75b15",
+   "hash": "14d3a09c66360453",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0223": {
-  "F1_texto": "4bb68147777ecad9",
+  "F1_texto": "b628ad9a66e1fd9f",
   "F1": {
-   "hash": "4bb68147777ecad9",
+   "hash": "b628ad9a66e1fd9f",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0224": {
-  "F3_texto": "6beccc840953878a",
+  "F3_texto": "ebd76f325da00ce7",
   "F3": {
-   "hash": "6beccc840953878a",
+   "hash": "ebd76f325da00ce7",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0225": {
-  "F3_texto": "36f31c7c6b6382fe",
+  "F3_texto": "6f889d11aa5f94aa",
   "F3": {
-   "hash": "36f31c7c6b6382fe",
+   "hash": "6f889d11aa5f94aa",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0227": {
-  "F3_texto": "2ee5ea2bb0ebeab3",
+  "F3_texto": "1def9045a11fc748",
   "F3": {
-   "hash": "2ee5ea2bb0ebeab3",
+   "hash": "1def9045a11fc748",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0228": {
-  "F3_texto": "7c04e6bb6e10c946",
+  "F3_texto": "085f2ec6ed254be1",
   "F3": {
-   "hash": "7c04e6bb6e10c946",
+   "hash": "085f2ec6ed254be1",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0229": {
   "F1_url_descubierta": "https://www.santjoanmariavianney.com/horarios",
-  "F1_texto": "84ec1348f3343b31",
+  "F1_texto": "c89acd1d67b059b8",
   "F1": {
-   "hash": "84ec1348f3343b31",
+   "hash": "c89acd1d67b059b8",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0230": {
   "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/parroquies/sant-jordi",
-  "F1_texto": "2644eb9d4f8f5069",
-  "F3_texto": "726f5b5c188447da",
+  "F1_texto": "a204cdb7939fe796",
+  "F3_texto": "8e71d61f2ba6c266",
   "F3": {
-   "hash": "726f5b5c188447da",
+   "hash": "8e71d61f2ba6c266",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0231": {
-  "F3_texto": "0925c618a0d64c1a",
+  "F3_texto": "f7397f698d95978b",
   "F3": {
-   "hash": "0925c618a0d64c1a",
+   "hash": "f7397f698d95978b",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0232": {
-  "F3_texto": "5b8a6662c58b4965",
+  "F3_texto": "644d952884655afc",
   "F3": {
-   "hash": "5b8a6662c58b4965",
+   "hash": "644d952884655afc",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0233": {
-  "F3_texto": "154a275e07b12149",
+  "F3_texto": "89f735e6461d1043",
   "F3": {
-   "hash": "154a275e07b12149",
+   "hash": "89f735e6461d1043",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0234": {
-  "F3_texto": "51a46a99d94682f5",
+  "F3_texto": "390d7414d061d8cd",
   "F3": {
-   "hash": "51a46a99d94682f5",
+   "hash": "390d7414d061d8cd",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0235": {
-  "F3_texto": "fea326503a4e2f4f",
+  "F3_texto": "43bba8416fb41447",
   "F3": {
-   "hash": "fea326503a4e2f4f",
+   "hash": "43bba8416fb41447",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0236": {
-  "F3_texto": "f36995a8bb4cc32e",
+  "F3_texto": "aa8a89398f766c6e",
   "F3": {
-   "hash": "f36995a8bb4cc32e",
+   "hash": "aa8a89398f766c6e",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0237": {
-  "F3_texto": "61d9be8eee20111c",
+  "F3_texto": "eb364c71b03200eb",
   "F3": {
-   "hash": "61d9be8eee20111c",
+   "hash": "eb364c71b03200eb",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0238": {
-  "F3_texto": "21b8cef159780278",
+  "F3_texto": "240762deadc69bd3",
   "F3": {
-   "hash": "21b8cef159780278",
+   "hash": "240762deadc69bd3",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0239": {
-  "F3_texto": "80e10309f028f164",
+  "F3_texto": "3692bb9a8e793093",
   "F3": {
-   "hash": "80e10309f028f164",
+   "hash": "3692bb9a8e793093",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0240": {
-  "F3_texto": "752415df4e9d51b9",
+  "F3_texto": "6afcb4725d552f98",
   "F3": {
-   "hash": "e572a7c6438a1092",
+   "hash": "31e0daa5fbc35400",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0241": {
-  "F3_texto": "a2516b2a1f0daa52",
+  "F3_texto": "ee792bc294e8f4a0",
   "F3": {
-   "hash": "a2516b2a1f0daa52",
+   "hash": "ee792bc294e8f4a0",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0242": {
-  "F3_texto": "650e949379cc59cc",
+  "F3_texto": "41bba49eea9f9b24",
   "F3": {
-   "hash": "650e949379cc59cc",
+   "hash": "41bba49eea9f9b24",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0243": {
-  "F3_texto": "1506543adc7df758",
+  "F3_texto": "9200fb6f42942961",
   "F3": {
-   "hash": "1506543adc7df758",
+   "hash": "9200fb6f42942961",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0244": {
-  "F3_texto": "0f2bfe6b80c27b42",
+  "F3_texto": "b1f359a587bcac46",
   "F3": {
-   "hash": "0f2bfe6b80c27b42",
+   "hash": "b1f359a587bcac46",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0245": {
-  "F3_texto": "22376b6d1be2cbb5",
+  "F3_texto": "e26aa31bc38bfc9e",
   "F3": {
-   "hash": "22376b6d1be2cbb5",
+   "hash": "e26aa31bc38bfc9e",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0246": {
   "F1_url_descubierta": "https://www.santoleguer.es/horarios-parroquia/",
-  "F1_texto": "b38f3c73fb0bfed4",
+  "F1_texto": "3101cf5e4f0dcd3a",
   "F1": {
-   "hash": "b38f3c73fb0bfed4",
+   "hash": "3101cf5e4f0dcd3a",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0247": {
-  "F3_texto": "abe8d0014d124ad0",
+  "F3_texto": "06bae8b6c23f2547",
   "F3": {
-   "hash": "abe8d0014d124ad0",
+   "hash": "06bae8b6c23f2547",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0248": {
-  "F3_texto": "b403224bf08adcd0",
+  "F3_texto": "dbf42ee167a54022",
   "F3": {
-   "hash": "b403224bf08adcd0",
+   "hash": "dbf42ee167a54022",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0249": {
-  "F1_texto": "c78a00556beeb7bf",
-  "F3_texto": "490f563a94a93338",
+  "F1_texto": "8bfd6edfb55679d3",
+  "F3_texto": "390fa3b85edf031b",
   "F3": {
-   "hash": "490f563a94a93338",
+   "hash": "390fa3b85edf031b",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0250": {
-  "F3_texto": "9fcc1d69b063fe39",
+  "F3_texto": "5d51016b8b00cbee",
   "F3": {
-   "hash": "9fcc1d69b063fe39",
+   "hash": "5d51016b8b00cbee",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0251": {
-  "F3_texto": "13b7cc663d289626",
+  "F3_texto": "5c4d6e56565ad6ba",
   "F3": {
-   "hash": "13b7cc663d289626",
+   "hash": "5c4d6e56565ad6ba",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0252": {
   "F1_url_descubierta": "https://drive.google.com/file/d/1ITt1phgdeAzaXsGasG4WeUTrJ4qxHp1J/view?usp=drive_link",
-  "F1_texto": "77b23b55a5c28716",
-  "F3_texto": "b296e9cbe5415dc7",
+  "F1_texto": "2bdb24dd2f525f19",
+  "F3_texto": "fdabe36e720ccabd",
   "F3": {
-   "hash": "b296e9cbe5415dc7",
+   "hash": "fdabe36e720ccabd",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0253": {
-  "F1_texto": "1f9b589bbcdd3117",
+  "F1_texto": "7c67ffbedd1c2de4",
   "F1": {
-   "hash": "1f9b589bbcdd3117",
+   "hash": "7c67ffbedd1c2de4",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0254": {
-  "F3_texto": "544337a6c6cfee8c",
+  "F3_texto": "0f9e360fbc2865fb",
   "F3": {
-   "hash": "544337a6c6cfee8c",
+   "hash": "0f9e360fbc2865fb",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0255": {
-  "F3_texto": "219732ff298d36ca",
+  "F3_texto": "681a7872c8b95274",
   "F3": {
-   "hash": "219732ff298d36ca",
+   "hash": "681a7872c8b95274",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0256": {
-  "F3_texto": "90a1227dbd8f7311",
+  "F3_texto": "4281393fe336dd79",
   "F3": {
-   "hash": "90a1227dbd8f7311",
+   "hash": "4281393fe336dd79",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0257": {
-  "F3_texto": "652c37d84d7f9533",
+  "F3_texto": "967354fbdc53fee5",
   "F3": {
-   "hash": "652c37d84d7f9533",
+   "hash": "967354fbdc53fee5",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0258": {
-  "F1_texto": "0debe225339d4e03",
+  "F1_texto": "f4d8ae4eb511395d",
   "F1": {
-   "hash": "0debe225339d4e03",
+   "hash": "f4d8ae4eb511395d",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0259": {
-  "F1_texto": "544ccf4949d9dc65",
+  "F1_texto": "8b74f72566bb4a34",
   "F1": {
-   "hash": "544ccf4949d9dc65",
+   "hash": "8b74f72566bb4a34",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0260": {
   "F1_url_descubierta": "https://drive.google.com/file/d/1ITt1phgdeAzaXsGasG4WeUTrJ4qxHp1J/view?usp=drive_link",
-  "F1_texto": "77b23b55a5c28716",
-  "F3_texto": "5519c37e1b817199",
+  "F1_texto": "2bdb24dd2f525f19",
+  "F3_texto": "d38b683e70e7998f",
   "F3": {
-   "hash": "5519c37e1b817199",
+   "hash": "d38b683e70e7998f",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0261": {
-  "F3_texto": "206bb3bbe7135e87",
+  "F3_texto": "bb7ce8fc30dce178",
   "F3": {
-   "hash": "206bb3bbe7135e87",
+   "hash": "bb7ce8fc30dce178",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0262": {
-  "F3_texto": "4fa0f754ecf56aad",
+  "F3_texto": "6c948511d95afea7",
   "F3": {
-   "hash": "4fa0f754ecf56aad",
+   "hash": "6c948511d95afea7",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0263": {
   "F1_url_descubierta": "http://www.parroquiasarria.net/la-parroquia/horaris/",
-  "F1_texto": "e02b45d1063109cf",
+  "F1_texto": "b9c8dbc897e32cfa",
   "F1": {
-   "hash": "e02b45d1063109cf",
+   "hash": "b9c8dbc897e32cfa",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0264": {
-  "F3_texto": "3ae722eed5cfb584",
+  "F3_texto": "fe6097454f2e0785",
   "F3": {
-   "hash": "3ae722eed5cfb584",
+   "hash": "fe6097454f2e0785",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0265": {
-  "F1_texto": "679780e826028528",
+  "F1_texto": "9e8f62e092c3997b",
   "F1": {
-   "hash": "679780e826028528",
+   "hash": "9e8f62e092c3997b",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0266": {
-  "F3_texto": "9b516d506fa8b014",
+  "F3_texto": "636c9491a3d5e2fb",
   "F3": {
-   "hash": "9b516d506fa8b014",
+   "hash": "636c9491a3d5e2fb",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0267": {
-  "F3_texto": "c71ee1b0ffbd0646",
+  "F3_texto": "cf51be2a3ccd8944",
   "F3": {
-   "hash": "c71ee1b0ffbd0646",
+   "hash": "cf51be2a3ccd8944",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0268": {
-  "F3_texto": "29f9c47676ce7383",
+  "F3_texto": "8e5f3611288a40a4",
   "F3": {
-   "hash": "29f9c47676ce7383",
+   "hash": "8e5f3611288a40a4",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0269": {
-  "F3_texto": "44abd0a67bc4322f"
+  "F3_texto": "5f626ec613ef4f72"
  },
  "BCN0270": {
-  "F3_texto": "e81982e41c5acf65",
+  "F3_texto": "4adf5599e1c15dfa",
   "F3": {
-   "hash": "e81982e41c5acf65",
+   "hash": "4adf5599e1c15dfa",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0271": {
-  "F3_texto": "f7c76624007a6b59",
+  "F3_texto": "6d6017d7c61871a6",
   "F3": {
-   "hash": "f7c76624007a6b59",
+   "hash": "6d6017d7c61871a6",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0272": {
-  "F1_texto": "a6c94721efa88ce4",
+  "F1_texto": "9f4812cd6c3c1e6f",
   "F1": {
-   "hash": "a6c94721efa88ce4",
+   "hash": "9f4812cd6c3c1e6f",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0273": {
-  "F3_texto": "340d4fde9e854acb",
+  "F3_texto": "9e974183e684385f",
   "F3": {
-   "hash": "340d4fde9e854acb",
+   "hash": "9e974183e684385f",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0274": {
   "F1_url_descubierta": "https://www.santajoaquinabcn.com/horarios/",
-  "F1_texto": "ca2a630b99dc0ad7",
+  "F1_texto": "23be8f38ccd88df1",
   "F1": {
-   "hash": "ca2a630b99dc0ad7",
+   "hash": "23be8f38ccd88df1",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0275": {
   "F1_url_descubierta": "https://drive.google.com/file/d/1ITt1phgdeAzaXsGasG4WeUTrJ4qxHp1J/view?usp=drive_link",
-  "F1_texto": "77b23b55a5c28716",
-  "F3_texto": "1f95d44e48ba0fb4",
+  "F1_texto": "2bdb24dd2f525f19",
+  "F3_texto": "1857487504deebe6",
   "F3": {
-   "hash": "1f95d44e48ba0fb4",
+   "hash": "1857487504deebe6",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0276": {
   "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/parroquies/santa-maria-de-gracia",
-  "F1_texto": "9185084080ba251a",
-  "F3_texto": "4b7556261daa5f35",
+  "F1_texto": "d9ba57d177aaaba8",
+  "F3_texto": "a949b0ba60bcdb43",
   "F3": {
-   "hash": "4b7556261daa5f35",
+   "hash": "a949b0ba60bcdb43",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0277": {
-  "F3_texto": "3d35cdf0f4d50db0",
+  "F3_texto": "1e4ed2b1e2375e9b",
   "F3": {
-   "hash": "3d35cdf0f4d50db0",
+   "hash": "1e4ed2b1e2375e9b",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0278": {
-  "F3_texto": "4e8f82610097a1c4",
+  "F3_texto": "9b243c7537b7aa69",
   "F3": {
-   "hash": "4e8f82610097a1c4",
+   "hash": "9b243c7537b7aa69",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0279": {
-  "F3_texto": "a3884e359c7e4274",
+  "F3_texto": "72c76af09bc818fb",
   "F3": {
-   "hash": "a3884e359c7e4274",
+   "hash": "72c76af09bc818fb",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0280": {
-  "F1_texto": "c78a00556beeb7bf",
-  "F3_texto": "90376b9c66e0a140",
+  "F1_texto": "8bfd6edfb55679d3",
+  "F3_texto": "9a58335eaa4618e7",
   "F3": {
-   "hash": "90376b9c66e0a140",
+   "hash": "9a58335eaa4618e7",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0281": {
-  "F3_texto": "5d499a4ee7bc60aa",
+  "F3_texto": "c8796e55f8a79074",
   "F3": {
-   "hash": "5d499a4ee7bc60aa",
+   "hash": "c8796e55f8a79074",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0282": {
-  "F3_texto": "6dc01aab98d99409",
+  "F3_texto": "f46557573bc5beac",
   "F3": {
-   "hash": "6dc01aab98d99409",
+   "hash": "f46557573bc5beac",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0283": {
-  "F3_texto": "e399cd6bb0dc810e",
+  "F3_texto": "0e74de3e88504e08",
   "F3": {
-   "hash": "e399cd6bb0dc810e",
+   "hash": "0e74de3e88504e08",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0284": {
-  "F3_texto": "5a7a91ef353ddc47",
+  "F3_texto": "d80f192755d4eafd",
   "F3": {
-   "hash": "4722720c43378264",
+   "hash": "b344db42dc4fafc9",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0285": {
-  "F1_texto": "bb14285927b79956",
+  "F1_texto": "b3d815dee885706e",
   "F1": {
-   "hash": "bb14285927b79956",
+   "hash": "b3d815dee885706e",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0286": {},
  "BCN0287": {
-  "F1_texto": "475f8da17a5f646d",
+  "F1_texto": "4e7bf887d1df700a",
   "F1": {
-   "hash": "475f8da17a5f646d",
+   "hash": "4e7bf887d1df700a",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1206,33 +1218,33 @@
  "BCN0290": {},
  "BCN0291": {
   "F1_url_descubierta": "https://santuarisantaeulalia.cat/celebracions/misses/",
-  "F1_texto": "fc7821c8ad0c0802",
+  "F1_texto": "ef2f6e9dff3ef443",
   "F1": {
-   "hash": "fc7821c8ad0c0802",
+   "hash": "ef2f6e9dff3ef443",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0292": {
-  "F1_texto": "dccc368a03f967d2"
+  "F1_texto": "ec01e8b21a18bb6a"
  },
  "BCN0293": {
-  "F1_texto": "d91653b8f085f116",
+  "F1_texto": "c820797743cb346f",
   "F1": {
-   "hash": "d91653b8f085f116",
+   "hash": "c820797743cb346f",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0294": {
-  "F3_texto": "4c7aaa5907be196c",
+  "F3_texto": "6de03fa1788fd068",
   "F3": {
-   "hash": "4c7aaa5907be196c",
+   "hash": "6de03fa1788fd068",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0295": {
-  "F3_texto": "4d58a6ab8c0fbddb",
+  "F3_texto": "60447f17fbc4b4b6",
   "F3": {
-   "hash": "4d58a6ab8c0fbddb",
+   "hash": "60447f17fbc4b4b6",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1243,33 +1255,33 @@
  "BCN0300": {},
  "BCN0301": {
   "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/parroquies/josepets",
-  "F1_texto": "370e012a78abebc6",
-  "F3_texto": "6a08eb85973aa1d3",
+  "F1_texto": "9b6ba3c67493c990",
+  "F3_texto": "22c67e33c85bf8ff",
   "F3": {
-   "hash": "6a08eb85973aa1d3",
+   "hash": "22c67e33c85bf8ff",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0302": {
   "F1_url_descubierta": "https://www.parroquiavergedelapau.com/horaris",
-  "F1_texto": "ef6dd0fa07ed6a96",
+  "F1_texto": "9772b706748178b5",
   "F1": {
-   "hash": "ef6dd0fa07ed6a96",
+   "hash": "9772b706748178b5",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0303": {
-  "F3_texto": "51cb955e4109d253",
+  "F3_texto": "11e2874b518298db",
   "F3": {
-   "hash": "51cb955e4109d253",
+   "hash": "11e2874b518298db",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0304": {},
  "BCN0305": {
-  "F3_texto": "4bf4b931d5dcdb43",
+  "F3_texto": "09b3fe6333fe5bea",
   "F3": {
-   "hash": "4bf4b931d5dcdb43",
+   "hash": "09b3fe6333fe5bea",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1279,9 +1291,9 @@
  "BCN0309": {},
  "BCN0310": {},
  "BCN0311": {
-  "F3_texto": "2b51e3f8724039c1",
+  "F3_texto": "8872c024c7446d7e",
   "F3": {
-   "hash": "2b51e3f8724039c1",
+   "hash": "8872c024c7446d7e",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1293,35 +1305,35 @@
  "BCN0317": {},
  "BCN0318": {
   "F1_url_descubierta": "https://www.hospitalgermanstrias.cat/web/guest/horaris",
-  "F1_texto": "a472e7c715f5e8f7"
+  "F1_texto": "ddf61fe2ba655b00"
  },
  "BCN0319": {},
  "BCN0320": {
-  "F1_texto": "46aa567eb37a7ba3",
+  "F1_texto": "cb06e9b40ce45c0c",
   "F1": {
-   "hash": "46aa567eb37a7ba3",
+   "hash": "cb06e9b40ce45c0c",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0321": {
-  "F3_texto": "d24e2d07db03bc76",
+  "F3_texto": "9adbf25f6dcc0cd3",
   "F3": {
-   "hash": "d24e2d07db03bc76",
+   "hash": "9adbf25f6dcc0cd3",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0322": {
-  "F3_texto": "a97f6017f5f79c45",
+  "F3_texto": "73163f8d578d03e1",
   "F3": {
-   "hash": "a97f6017f5f79c45",
+   "hash": "73163f8d578d03e1",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0323": {
-  "F1_texto": "f5d10994366767c6",
-  "F3_texto": "05a0b4e75eee6082",
+  "F1_texto": "63616e6482d1dacd",
+  "F3_texto": "0b64f7f36f2b491e",
   "F3": {
-   "hash": "05a0b4e75eee6082",
+   "hash": "0b64f7f36f2b491e",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1329,72 +1341,73 @@
  "BCN0325": {},
  "BCN0326": {},
  "BCN0327": {
-  "F3_texto": "9cec2e73fdf48cfc",
+  "F3_texto": "a3b7c923fc3c727a",
   "F3": {
-   "hash": "9cec2e73fdf48cfc",
+   "hash": "a3b7c923fc3c727a",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0328": {
-  "F3_texto": "c9c8bb7cd4e95099",
+  "F3_texto": "dff3ff2619af02cd",
   "F3": {
-   "hash": "c9c8bb7cd4e95099",
+   "hash": "dff3ff2619af02cd",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0329": {
-  "F3_texto": "13279877d18e8b04",
+  "F3_texto": "169a19c2ea27789b",
   "F3": {
-   "hash": "13279877d18e8b04",
+   "hash": "169a19c2ea27789b",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0330": {
-  "F3_texto": "46bf90d8176218a6",
+  "F3_texto": "57b5d52903c8ab84",
   "F3": {
-   "hash": "46bf90d8176218a6",
+   "hash": "57b5d52903c8ab84",
    "ultimo_ok": "2026-10-22"
-  }
+  },
+  "F1_texto": "47c37a6de76b5ecf"
  },
  "BCN0331": {
-  "F1_texto": "5272d872ba581fbb",
+  "F1_texto": "a087619c6b6148d6",
   "F1": {
-   "hash": "5272d872ba581fbb",
+   "hash": "a087619c6b6148d6",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0332": {
-  "F3_texto": "a7b8c9213d3a1405",
+  "F3_texto": "ccec32f12a4ea3a0",
   "F3": {
-   "hash": "a7b8c9213d3a1405",
+   "hash": "ccec32f12a4ea3a0",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0333": {
-  "F3_texto": "beea9e658ea1dc76",
+  "F3_texto": "687006d41ed517f5",
   "F3": {
-   "hash": "beea9e658ea1dc76",
+   "hash": "687006d41ed517f5",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0334": {
-  "F1_texto": "eabf9fbd2a484f98",
+  "F1_texto": "a785a380fe3b4ff0",
   "F1": {
-   "hash": "eabf9fbd2a484f98",
+   "hash": "a785a380fe3b4ff0",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0335": {
-  "F3_texto": "4986db3db9d351b5",
+  "F3_texto": "4f1bcfbc534ddaf3",
   "F3": {
-   "hash": "4986db3db9d351b5",
+   "hash": "4f1bcfbc534ddaf3",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0336": {
-  "F3_texto": "be774499c66aedfe",
+  "F3_texto": "deecdb7646f5f2ae",
   "F3": {
-   "hash": "be774499c66aedfe",
+   "hash": "deecdb7646f5f2ae",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1403,27 +1416,27 @@
  "BCN0339": {},
  "BCN0340": {},
  "BCN0341": {
-  "F3_texto": "63835e88181582ed",
+  "F3_texto": "fe76cbe5c5d0e327",
   "F3": {
-   "hash": "63835e88181582ed",
+   "hash": "fe76cbe5c5d0e327",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0342": {},
  "BCN0343": {},
  "BCN0344": {
-  "F3_texto": "899797ab7a8f9c0c",
+  "F3_texto": "af2daf17a5b20aec",
   "F3": {
-   "hash": "899797ab7a8f9c0c",
+   "hash": "af2daf17a5b20aec",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0345": {},
  "BCN0346": {},
  "BCN0347": {
-  "F3_texto": "b37b0d2b0a4711d5",
+  "F3_texto": "6ae39fccff2e6cbb",
   "F3": {
-   "hash": "b37b0d2b0a4711d5",
+   "hash": "6ae39fccff2e6cbb",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1432,55 +1445,55 @@
  "BCN0350": {},
  "BCN0351": {},
  "BCN0352": {
-  "F3_texto": "038032578d4455a3",
+  "F3_texto": "c2e7b150070d46de",
   "F3": {
-   "hash": "038032578d4455a3",
+   "hash": "c2e7b150070d46de",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0353": {
-  "F3_texto": "016789556643c1d8",
+  "F3_texto": "dcb94d9292f59fe4",
   "F3": {
-   "hash": "016789556643c1d8",
+   "hash": "dcb94d9292f59fe4",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0354": {
-  "F3_texto": "b866073f57f1916f",
+  "F3_texto": "e119db38d5be368d",
   "F3": {
-   "hash": "b866073f57f1916f",
+   "hash": "e119db38d5be368d",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0355": {
-  "F3_texto": "becc7daea84e9954",
+  "F3_texto": "3adaffb323451f64",
   "F3": {
-   "hash": "becc7daea84e9954",
+   "hash": "3adaffb323451f64",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0356": {
-  "F3_texto": "9486224d9222d45c",
+  "F3_texto": "546eb811d4b53d3e",
   "F3": {
-   "hash": "9486224d9222d45c",
+   "hash": "546eb811d4b53d3e",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0357": {},
  "BCN0358": {
-  "F3_texto": "44abd0a67bc4322f"
+  "F3_texto": "5f626ec613ef4f72"
  },
  "BCN0359": {
-  "F3_texto": "76364984a47a8866",
+  "F3_texto": "169cea35a5f50a14",
   "F3": {
-   "hash": "76364984a47a8866",
+   "hash": "169cea35a5f50a14",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0360": {
-  "F3_texto": "e7b36652c012c2f4",
+  "F3_texto": "e6b9df13dd2f9e9b",
   "F3": {
-   "hash": "e7b36652c012c2f4",
+   "hash": "e6b9df13dd2f9e9b",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1488,139 +1501,139 @@
  "BCN0362": {},
  "BCN0363": {
   "OSM": {
-   "hash": "71e00c9820124fe2",
+   "hash": "1bfe6832cc91b8da",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0364": {
-  "F3_texto": "d7e9110312b4370c",
+  "F3_texto": "8a7534ddd16cd820",
   "F3": {
-   "hash": "d7e9110312b4370c",
+   "hash": "8a7534ddd16cd820",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0365": {},
  "BCN0366": {
-  "F3_texto": "7b435ee526f8dc2b"
+  "F3_texto": "5340d498f45d0630"
  },
  "BCN0367": {},
  "BCN0368": {},
  "BCN0369": {},
  "BCN0370": {
   "F1_url_descubierta": "https://www.parroquiasantamagdalena.org/horaris/",
-  "F1_texto": "74af8fce5463a975"
+  "F1_texto": "218682f1baba9cf2"
  },
  "BCN0371": {
-  "F3_texto": "286bc73e77fa3b11",
+  "F3_texto": "6feffda75b17622f",
   "F3": {
-   "hash": "286bc73e77fa3b11",
+   "hash": "6feffda75b17622f",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0372": {},
  "BCN0373": {
   "F1_url_descubierta": "http://www.xaloc.org/ca/collegi/informacio-general/horari-escolar",
-  "F1_texto": "04dd072c1f27d095"
+  "F1_texto": "2c0f8aff7dcb60f6"
  },
  "BCN0374": {},
  "BCN0375": {},
  "BCN0376": {},
  "BCN0377": {},
  "BCN0378": {
-  "F3_texto": "5e22b15b5c4a13f7",
+  "F3_texto": "1703b7d3e808e15e",
   "F3": {
-   "hash": "5e22b15b5c4a13f7",
+   "hash": "1703b7d3e808e15e",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0379": {
-  "F3_texto": "6e80089f091df157",
+  "F3_texto": "64fe21f73e8dc2a8",
   "F3": {
-   "hash": "6e80089f091df157",
+   "hash": "64fe21f73e8dc2a8",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0380": {
-  "F3_texto": "5fe50c6e08b9de48",
+  "F3_texto": "9549d37c6d90247b",
   "F3": {
-   "hash": "5fe50c6e08b9de48",
+   "hash": "9549d37c6d90247b",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0381": {
   "F1_url_descubierta": "https://sites.google.com/view/desemparatslh/misas-y-oraciones/horario",
-  "F1_texto": "ade8fca59c80070f",
-  "F3_texto": "e49e7366c45a1401",
+  "F1_texto": "a7becbb356143966",
+  "F3_texto": "bf3fff857dcfae6d",
   "F3": {
-   "hash": "e49e7366c45a1401",
+   "hash": "bf3fff857dcfae6d",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0382": {},
  "BCN0383": {
-  "F3_texto": "44abd0a67bc4322f"
+  "F3_texto": "5f626ec613ef4f72"
  },
  "BCN0384": {
-  "F3_texto": "10c443d54eab0454"
+  "F3_texto": "c4b41d08ea8ebf84"
  },
  "BCN0385": {
-  "F3_texto": "3c845b5e6f5a9bf3",
+  "F3_texto": "452799420da3b624",
   "F3": {
-   "hash": "3c845b5e6f5a9bf3",
+   "hash": "452799420da3b624",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0386": {
-  "F1_texto": "47d16331fae9295c",
-  "F3_texto": "e63487281a5b3e43",
+  "F1_texto": "18c4864c80968796",
+  "F3_texto": "0a6deb291a707128",
   "F3": {
-   "hash": "e63487281a5b3e43",
+   "hash": "0a6deb291a707128",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0387": {
-  "F3_texto": "a5f324de412bdac1",
+  "F3_texto": "0ee3fa5c59e17786",
   "F3": {
-   "hash": "a5f324de412bdac1",
+   "hash": "0ee3fa5c59e17786",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0388": {
-  "F3_texto": "4d47cc1f0ca832cc"
+  "F3_texto": "74984ea9e21450a1"
  },
  "BCN0389": {
   "F1_url_descubierta": "http://santaeulaliadelcentre.blog.cat/2020/04/03/horaris-de-setmana-santa-pasqua-2/",
-  "F1_texto": "9569b7bafa63c7e3",
+  "F1_texto": "f3c2bd5f63a51e4a",
   "F1": {
-   "hash": "9569b7bafa63c7e3",
+   "hash": "f3c2bd5f63a51e4a",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0390": {
-  "F1_texto": "28552ee49227b4f0",
+  "F1_texto": "30d81ff843bae5e0",
   "F1": {
-   "hash": "28552ee49227b4f0",
+   "hash": "30d81ff843bae5e0",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0391": {
-  "F3_texto": "b0b68bbce5ee7345",
+  "F3_texto": "25abeb992e02491f",
   "F3": {
-   "hash": "b0b68bbce5ee7345",
+   "hash": "25abeb992e02491f",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0392": {
-  "F3_texto": "6d445a2d414b4622",
+  "F3_texto": "3b6db581bd8218b5",
   "F3": {
-   "hash": "6d445a2d414b4622",
+   "hash": "3b6db581bd8218b5",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0393": {
-  "F3_texto": "174aca1a0a31f442",
+  "F3_texto": "97702be6f12c1271",
   "F3": {
-   "hash": "174aca1a0a31f442",
+   "hash": "97702be6f12c1271",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1640,23 +1653,23 @@
  "BCN0407": {},
  "BCN0408": {},
  "BCN0409": {
-  "F3_texto": "6c7898df5b3826c9",
+  "F3_texto": "37ff455f7b56c822",
   "F3": {
-   "hash": "6c7898df5b3826c9",
+   "hash": "37ff455f7b56c822",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0410": {
-  "F3_texto": "31f207b0954e95c7",
+  "F3_texto": "1325096d5147cfc5",
   "F3": {
-   "hash": "31f207b0954e95c7",
+   "hash": "1325096d5147cfc5",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0411": {
-  "F3_texto": "30470fdcf7b4e30c",
+  "F3_texto": "f8b7539fff1d30c6",
   "F3": {
-   "hash": "30470fdcf7b4e30c",
+   "hash": "f8b7539fff1d30c6",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1664,23 +1677,23 @@
  "BCN0413": {},
  "BCN0414": {},
  "BCN0415": {
-  "F3_texto": "0466819337945926",
+  "F3_texto": "f66f9db0ae09303b",
   "F3": {
-   "hash": "0466819337945926",
+   "hash": "f66f9db0ae09303b",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0416": {
-  "F3_texto": "96142da1ee0d2c1d",
+  "F3_texto": "bea7dd459914f511",
   "F3": {
-   "hash": "96142da1ee0d2c1d",
+   "hash": "bea7dd459914f511",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0417": {
-  "F3_texto": "0f78ce4d9271a5ba",
+  "F3_texto": "5f5a4ae8e2b14787",
   "F3": {
-   "hash": "0f78ce4d9271a5ba",
+   "hash": "5f5a4ae8e2b14787",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1688,9 +1701,9 @@
  "BCN0419": {},
  "BCN0420": {},
  "BCN0421": {
-  "F3_texto": "bfd211a46db80b2a",
+  "F3_texto": "93577808a4d1fef8",
   "F3": {
-   "hash": "bfd211a46db80b2a",
+   "hash": "93577808a4d1fef8",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1698,53 +1711,53 @@
  "BCN0423": {},
  "BCN0424": {},
  "BCN0425": {
-  "F3_texto": "e9997284845559b8",
+  "F3_texto": "e2f4f93545cad712",
   "F3": {
-   "hash": "e9997284845559b8",
+   "hash": "e2f4f93545cad712",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0426": {},
  "BCN0427": {},
  "BCN0428": {
-  "F3_texto": "867643bf89ecdfd0",
+  "F3_texto": "120ee2ff81789166",
   "F3": {
-   "hash": "867643bf89ecdfd0",
+   "hash": "120ee2ff81789166",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0429": {
-  "F3_texto": "ae590e7e1193efca",
+  "F3_texto": "d62afd0fb553a861",
   "F3": {
-   "hash": "ae590e7e1193efca",
+   "hash": "d62afd0fb553a861",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0430": {
-  "F3_texto": "680ec728a3e87420",
+  "F3_texto": "81b26f525217e60f",
   "F3": {
-   "hash": "680ec728a3e87420",
+   "hash": "81b26f525217e60f",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0431": {
-  "F3_texto": "673c4d047abd4dbc",
+  "F3_texto": "519730d5a6b7db2a",
   "F3": {
-   "hash": "673c4d047abd4dbc",
+   "hash": "519730d5a6b7db2a",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0432": {
-  "F3_texto": "eee00922ac891cbd",
+  "F3_texto": "3099b3bcd1fa0051",
   "F3": {
-   "hash": "eee00922ac891cbd",
+   "hash": "3099b3bcd1fa0051",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0433": {
-  "F3_texto": "d9ab5b09bd286a22",
+  "F3_texto": "49858f1ff4d6029e",
   "F3": {
-   "hash": "d9ab5b09bd286a22",
+   "hash": "49858f1ff4d6029e",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1753,9 +1766,9 @@
  "BCN0436": {},
  "BCN0437": {},
  "BCN0438": {
-  "F3_texto": "1dfd482caa0c62c3",
+  "F3_texto": "c1bf63c4693aa70f",
   "F3": {
-   "hash": "1dfd482caa0c62c3",
+   "hash": "c1bf63c4693aa70f",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1763,83 +1776,83 @@
  "BCN0440": {},
  "BCN0441": {},
  "BCN0442": {
-  "F3_texto": "b7b042d959a76772",
+  "F3_texto": "5c161593c0123445",
   "F3": {
-   "hash": "b7b042d959a76772",
+   "hash": "5c161593c0123445",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0443": {},
  "BCN0444": {
-  "F3_texto": "1924a834e4ab22fc",
+  "F3_texto": "c78efe0c68abe7f2",
   "F3": {
-   "hash": "1924a834e4ab22fc",
+   "hash": "c78efe0c68abe7f2",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0445": {},
  "BCN0446": {},
  "BCN0447": {
-  "F3_texto": "79bdda0fdb57d540",
+  "F3_texto": "21858d6e65092325",
   "F3": {
-   "hash": "79bdda0fdb57d540",
+   "hash": "21858d6e65092325",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0448": {
-  "F3_texto": "55045d83602f5b9c",
+  "F3_texto": "2773ebc03313a7f1",
   "F3": {
-   "hash": "55045d83602f5b9c",
+   "hash": "2773ebc03313a7f1",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0449": {
-  "F3_texto": "1d6c81aa693a6e75",
+  "F3_texto": "c6e2643f0e1ce064",
   "F3": {
-   "hash": "1d6c81aa693a6e75",
+   "hash": "c6e2643f0e1ce064",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0450": {
-  "F3_texto": "67e30872ae106d53",
+  "F3_texto": "b09281dd158b8e18",
   "F3": {
-   "hash": "67e30872ae106d53",
+   "hash": "b09281dd158b8e18",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0451": {
-  "F3_texto": "ba4f342a91f78e39",
+  "F3_texto": "69c2ea3ce89d98e9",
   "F3": {
-   "hash": "ba4f342a91f78e39",
+   "hash": "69c2ea3ce89d98e9",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0452": {
-  "F3_texto": "72e4f6113d45a899",
+  "F3_texto": "fd04482761473e35",
   "F3": {
-   "hash": "72e4f6113d45a899",
+   "hash": "fd04482761473e35",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0453": {
-  "F3_texto": "535841f4a4c05fbc",
+  "F3_texto": "da76369e401127e0",
   "F3": {
-   "hash": "535841f4a4c05fbc",
+   "hash": "da76369e401127e0",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0454": {
-  "F3_texto": "dedde6b6e765e93b",
+  "F3_texto": "8b50be037270b38a",
   "F3": {
-   "hash": "dedde6b6e765e93b",
+   "hash": "8b50be037270b38a",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0455": {},
  "BCN0456": {
-  "F3_texto": "a6dc7d0ad89b2291",
+  "F3_texto": "a37c57c281cfb0f7",
   "F3": {
-   "hash": "a6dc7d0ad89b2291",
+   "hash": "a37c57c281cfb0f7",
    "ultimo_ok": "2026-10-22"
   }
  },
@@ -1847,45 +1860,45 @@
  "BCN0458": {},
  "BCN0459": {
   "F1_url_descubierta": "https://franciscanasdelossagradoscorazones.org/ceremonia-de-bendicion/",
-  "F1_texto": "d0fa9884f3d726d0"
+  "F1_texto": "67cd8ae8c3855c72"
  },
  "BCN0460": {},
  "BCN0461": {},
  "BCN0462": {},
  "BCN0463": {
-  "F3_texto": "c201b8ab578b1a89",
+  "F3_texto": "c39481c1936e5123",
   "F3": {
-   "hash": "c201b8ab578b1a89",
+   "hash": "c39481c1936e5123",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0464": {},
  "BCN0465": {
   "F1_url_descubierta": "https://parroquiadesantgenisdevilassar.blogspot.com/feeds/posts/default",
-  "F1_texto": "92d758030cfe4109"
+  "F1_texto": "981957967390250d"
  },
  "BCN0466": {},
  "BCN0467": {
-  "F3_texto": "4198da55ea0ebcca",
+  "F3_texto": "ad66e11d002c7929",
   "F3": {
-   "hash": "4198da55ea0ebcca",
+   "hash": "ad66e11d002c7929",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0468": {},
  "BCN0469": {
-  "F3_texto": "25d53b03f82bcb83",
+  "F3_texto": "aec1cb3528fdbe63",
   "F3": {
-   "hash": "25d53b03f82bcb83",
+   "hash": "aec1cb3528fdbe63",
    "ultimo_ok": "2026-10-22"
   }
  },
  "BCN0470": {},
  "BCN0471": {},
  "BCN0472": {
-  "F3_texto": "7a3c3c6d64658b8a",
+  "F3_texto": "aaab906ecd3c79fb",
   "F3": {
-   "hash": "7a3c3c6d64658b8a",
+   "hash": "aaab906ecd3c79fb",
    "ultimo_ok": "2026-10-22"
   }
  }

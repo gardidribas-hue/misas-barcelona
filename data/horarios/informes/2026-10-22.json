@@ -9,6 +9,378 @@
    "celebraciones": 37
   },
   {
+   "id": "BCN0003",
+   "nombre": "Basílica de la Puríssima Concepció",
+   "fuente": "F1",
+   "celebraciones": 37
+  },
+  {
+   "id": "BCN0004",
+   "nombre": "Basílica de Sant Josep Oriol",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0005",
+   "nombre": "Basílica de Santa Maria del Mar",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0006",
+   "nombre": "Basílica de Santa Maria del Pi i Sant Jaume",
+   "fuente": "F3",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0008",
+   "nombre": "Basílica dels Sants Just i Pastor",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0011",
+   "nombre": "Capella de l'Hospital Clínic",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0018",
+   "nombre": "Capella de la Mare de Déu dels Àngels",
+   "fuente": "F1",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0031",
+   "nombre": "Capilla de Nuestra Señora de la Merced y San Pedro Apóstol",
+   "fuente": "F1",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0035",
+   "nombre": "Casal Loiola",
+   "fuente": "F1",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0059",
+   "nombre": "Convento de Santa Catalina (Dominicos)",
+   "fuente": "F1",
+   "celebraciones": 11
+  },
+  {
+   "id": "BCN0061",
+   "nombre": "Corpus Christi",
+   "fuente": "F3",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0063",
+   "nombre": "Crist Redemptor",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0064",
+   "nombre": "Crist Rei",
+   "fuente": "F1",
+   "celebraciones": 10
+  },
+  {
+   "id": "BCN0065",
+   "nombre": "El Bon Pastor",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0093",
+   "nombre": "Església de Santa Maria de Montalegre",
+   "fuente": "F1",
+   "celebraciones": 14
+  },
+  {
+   "id": "BCN0097",
+   "nombre": "Església del Sagrat Cor de Jesús (Jesuites)",
+   "fuente": "F1",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0102",
+   "nombre": "Esperit Sant",
+   "fuente": "F1",
+   "celebraciones": 10
+  },
+  {
+   "id": "BCN0123",
+   "nombre": "Iglesia del Perpetuo Socorro (Redentoristas)",
+   "fuente": "F1",
+   "celebraciones": 16
+  },
+  {
+   "id": "BCN0125",
+   "nombre": "Immaculada Concepció i Sant Lorenzo Ruiz (parroquia filipina)",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0126",
+   "nombre": "Immaculat Cor de Maria",
+   "fuente": "F3",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0129",
+   "nombre": "Mare de Déu de Betlem",
+   "fuente": "F3",
+   "celebraciones": 14
+  },
+  {
+   "id": "BCN0130",
+   "nombre": "Mare de Déu de Fàtima",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0131",
+   "nombre": "Mare de Déu de l'Esperança",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0132",
+   "nombre": "Mare de Déu de la Medalla Miraculosa",
+   "fuente": "F1",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0133",
+   "nombre": "Mare de Déu de la Salut",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0134",
+   "nombre": "Mare de Déu de Lourdes (parroquia francesa)",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0135",
+   "nombre": "Mare de Déu de Lourdes (Poble-sec)",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0136",
+   "nombre": "Mare de Déu de Mont Carmel",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0137",
+   "nombre": "Mare de Déu de Montserrat (Guinardó)",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0138",
+   "nombre": "Mare de Déu de Núria",
+   "fuente": "F3",
+   "celebraciones": 11
+  },
+  {
+   "id": "BCN0139",
+   "nombre": "Mare de Déu del Carme",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0140",
+   "nombre": "Mare de Déu del Coll",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0141",
+   "nombre": "Mare de Déu del Pilar",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0142",
+   "nombre": "Mare de Déu del Port",
+   "fuente": "F3",
+   "celebraciones": 10
+  },
+  {
+   "id": "BCN0143",
+   "nombre": "Mare de Déu del Roser",
+   "fuente": "F3",
+   "celebraciones": 9
+  },
+  {
+   "id": "BCN0144",
+   "nombre": "Mare de Déu dels Dolors",
+   "fuente": "F1",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0145",
+   "nombre": "Mare de Déu dels Àngels",
+   "fuente": "F1",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0146",
+   "nombre": "Maria Auxiliadora (Sarrià, Santuari)",
+   "fuente": "F1",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0147",
+   "nombre": "Maria Mitjancera de totes les Gràcies",
+   "fuente": "F1",
+   "celebraciones": 23
+  },
+  {
+   "id": "BCN0148",
+   "nombre": "Maria Reina",
+   "fuente": "F1",
+   "celebraciones": 22
+  },
+  {
+   "id": "BCN0158",
+   "nombre": "Monestir de Santa Maria de Pedralbes (Clarisas)",
+   "fuente": "F1",
+   "celebraciones": 22
+  },
+  {
+   "id": "BCN0159",
+   "nombre": "Monestir de Santa Maria de Valldonzella (Madres Cistercienses)",
+   "fuente": "F1",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0169",
+   "nombre": "Parròquia Castrense de Plaça",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0170",
+   "nombre": "Parròquia de la Sagrada Família",
+   "fuente": "F1",
+   "celebraciones": 13
+  },
+  {
+   "id": "BCN0174",
+   "nombre": "Parròquia del Patriarca Abraham",
+   "fuente": "F1",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0177",
+   "nombre": "Preciosíssima Sang de Nostre Senyor Jesucrist",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0196",
+   "nombre": "Sagrada Família (parroquia, cripta)",
+   "fuente": "F1",
+   "celebraciones": 14
+  },
+  {
+   "id": "BCN0197",
+   "nombre": "Sagrat Cor de Jesús (Poblenou)",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0198",
+   "nombre": "Sant Agustí",
+   "fuente": "F3",
+   "celebraciones": 17
+  },
+  {
+   "id": "BCN0199",
+   "nombre": "Sant Albert Magne (parroquia alemana)",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0200",
+   "nombre": "Sant Ambrós",
+   "fuente": "F3",
+   "celebraciones": 9
+  },
+  {
+   "id": "BCN0201",
+   "nombre": "Sant Andreu de Palomar",
+   "fuente": "F1",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0202",
+   "nombre": "Sant Antoni de Pàdua",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0203",
+   "nombre": "Sant Bartomeu",
+   "fuente": "F3",
+   "celebraciones": 11
+  },
+  {
+   "id": "BCN0204",
+   "nombre": "Sant Bernat de Claravall",
+   "fuente": "F1",
+   "celebraciones": 13
+  },
+  {
+   "id": "BCN0205",
+   "nombre": "Sant Carles Borromeu",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0206",
+   "nombre": "Sant Cebrià",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0207",
+   "nombre": "Sant Crist",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0208",
+   "nombre": "Sant Cristòfor",
+   "fuente": "F3",
+   "celebraciones": 12
+  },
+  {
+   "id": "BCN0209",
+   "nombre": "Sant Domènec de Guzmán",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0210",
+   "nombre": "Sant Esteve",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0211",
+   "nombre": "Sant Eugeni I, Papa",
+   "fuente": "F3",
+   "celebraciones": 6
+  },
+  {
    "id": "BCN0212",
    "nombre": "Sant Ferran",
    "fuente": "F3",
@@ -21,10 +393,1311 @@
    "celebraciones": 8
   },
   {
+   "id": "BCN0214",
+   "nombre": "Sant Francesc de Pàola",
+   "fuente": "F1",
+   "celebraciones": 28
+  },
+  {
+   "id": "BCN0215",
+   "nombre": "Sant Francesc de Sales (les Saleses)",
+   "fuente": "F1",
+   "celebraciones": 33
+  },
+  {
+   "id": "BCN0216",
+   "nombre": "Sant Francesc Xavier",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0217",
+   "nombre": "Sant Fèlix",
+   "fuente": "F1",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0218",
+   "nombre": "Sant Genís dels Agudells",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0219",
+   "nombre": "Sant Gregori Taumaturg",
+   "fuente": "F1",
+   "celebraciones": 12
+  },
+  {
+   "id": "BCN0220",
+   "nombre": "Sant Ignasi de Loiola",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0221",
+   "nombre": "Sant Ildefons",
+   "fuente": "F3",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0222",
+   "nombre": "Sant Jeroni",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0223",
+   "nombre": "Sant Joan Bosco",
+   "fuente": "F1",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0224",
+   "nombre": "Sant Joan d'Horta",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0225",
+   "nombre": "Sant Joan d'Àvila",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
    "id": "BCN0226",
    "nombre": "Sant Joan de Gràcia",
    "fuente": "F1",
    "celebraciones": 3
+  },
+  {
+   "id": "BCN0227",
+   "nombre": "Sant Joan de la Creu",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0228",
+   "nombre": "Sant Joan de Mata",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0229",
+   "nombre": "Sant Joan Maria Vianney",
+   "fuente": "F1",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0230",
+   "nombre": "Sant Jordi (Vallcarca)",
+   "fuente": "F3",
+   "celebraciones": 10
+  },
+  {
+   "id": "BCN0231",
+   "nombre": "Sant Josep de Calassanç",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0232",
+   "nombre": "Sant Josep i Santa Mònica",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0233",
+   "nombre": "Sant Josep Manyanet (Santuari)",
+   "fuente": "F3",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0234",
+   "nombre": "Sant Josep Obrer",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0235",
+   "nombre": "Sant Llorenç",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0236",
+   "nombre": "Sant Lluís Gonzaga",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0237",
+   "nombre": "Sant Marc",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0238",
+   "nombre": "Sant Marcel",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0239",
+   "nombre": "Sant Martí de Provençals",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0240",
+   "nombre": "Sant Martí del Clot",
+   "fuente": "F3",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0241",
+   "nombre": "Sant Mateu",
+   "fuente": "F3",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0242",
+   "nombre": "Sant Medir",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0243",
+   "nombre": "Sant Miquel del Port",
+   "fuente": "F3",
+   "celebraciones": 10
+  },
+  {
+   "id": "BCN0244",
+   "nombre": "Sant Miquel dels Sants",
+   "fuente": "F3",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0245",
+   "nombre": "Sant Narcís",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0246",
+   "nombre": "Sant Oleguer, bisbe",
+   "fuente": "F1",
+   "celebraciones": 18
+  },
+  {
+   "id": "BCN0247",
+   "nombre": "Sant Ot",
+   "fuente": "F3",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0248",
+   "nombre": "Sant Pacià",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0249",
+   "nombre": "Sant Pancraç",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0250",
+   "nombre": "Sant Pau del Camp",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0251",
+   "nombre": "Sant Paulí de Nola",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0252",
+   "nombre": "Sant Pere Claver",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0253",
+   "nombre": "Sant Pere de les Puel·les",
+   "fuente": "F1",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0254",
+   "nombre": "Sant Pere Ermengol",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0255",
+   "nombre": "Sant Pere Nolasc",
+   "fuente": "F3",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0256",
+   "nombre": "Sant Pius X",
+   "fuente": "F3",
+   "celebraciones": 9
+  },
+  {
+   "id": "BCN0257",
+   "nombre": "Sant Rafael",
+   "fuente": "F3",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0258",
+   "nombre": "Sant Ramon de Penyafort",
+   "fuente": "F1",
+   "celebraciones": 11
+  },
+  {
+   "id": "BCN0259",
+   "nombre": "Sant Ramon Nonat",
+   "fuente": "F1",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0260",
+   "nombre": "Sant Salvador d'Horta",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0261",
+   "nombre": "Sant Sebastià",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0262",
+   "nombre": "Sant Tomàs d'Aquino",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0263",
+   "nombre": "Sant Vicenç de Sarrià",
+   "fuente": "F1",
+   "celebraciones": 28
+  },
+  {
+   "id": "BCN0264",
+   "nombre": "Sant Àngel Custodi",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0265",
+   "nombre": "Santa Agnès",
+   "fuente": "F1",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0266",
+   "nombre": "Santa Anna",
+   "fuente": "F3",
+   "celebraciones": 9
+  },
+  {
+   "id": "BCN0267",
+   "nombre": "Santa Bernardeta - Sant Lluc",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0268",
+   "nombre": "Santa Cecília",
+   "fuente": "F3",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0270",
+   "nombre": "Santa Dorotea",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0271",
+   "nombre": "Santa Engràcia",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0272",
+   "nombre": "Santa Eulàlia de Vilapicina",
+   "fuente": "F1",
+   "celebraciones": 20
+  },
+  {
+   "id": "BCN0273",
+   "nombre": "Santa Isabel d'Aragó i Sant Joaquim",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0274",
+   "nombre": "Santa Joaquima de Vedruna",
+   "fuente": "F1",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0275",
+   "nombre": "Santa Madrona",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0276",
+   "nombre": "Santa Maria de Gràcia",
+   "fuente": "F3",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0277",
+   "nombre": "Santa Maria de Sants",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0278",
+   "nombre": "Santa Maria de Vallvidrera",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0279",
+   "nombre": "Santa Maria del Remei",
+   "fuente": "F3",
+   "celebraciones": 11
+  },
+  {
+   "id": "BCN0280",
+   "nombre": "Santa Maria del Taulat i Sant Bernat Calvó",
+   "fuente": "F3",
+   "celebraciones": 10
+  },
+  {
+   "id": "BCN0281",
+   "nombre": "Santa Maria Magdalena",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0282",
+   "nombre": "Santa Tecla",
+   "fuente": "F3",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0283",
+   "nombre": "Santa Teresa de Jesús",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0284",
+   "nombre": "Santa Teresa de l'Infant Jesús",
+   "fuente": "F3",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0285",
+   "nombre": "Sants Gervasi i Protasi (Mare de Déu de la Bonanova)",
+   "fuente": "F1",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0287",
+   "nombre": "Santuari de la Mare de Déu de la Salut (Les Planes)",
+   "fuente": "F1",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0291",
+   "nombre": "Santuari de Santa Eulàlia de Vilapicina",
+   "fuente": "F1",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0293",
+   "nombre": "Santuari Sant Antoni de Pàdua",
+   "fuente": "F1",
+   "celebraciones": 25
+  },
+  {
+   "id": "BCN0294",
+   "nombre": "Santíssim Sagrament",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0295",
+   "nombre": "Santíssima Trinitat",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0301",
+   "nombre": "Verge de Gràcia i Sant Josep (Josepets)",
+   "fuente": "F3",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0302",
+   "nombre": "Verge de la Pau",
+   "fuente": "F1",
+   "celebraciones": 9
+  },
+  {
+   "id": "BCN0303",
+   "nombre": "Verge de Natzaret",
+   "fuente": "F3",
+   "celebraciones": 9
+  },
+  {
+   "id": "BCN0305",
+   "nombre": "Sant Feliu",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0311",
+   "nombre": "Sant Julià",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0320",
+   "nombre": "Mare de Déu de la Salut",
+   "fuente": "F1",
+   "celebraciones": 10
+  },
+  {
+   "id": "BCN0321",
+   "nombre": "Mare de Déu de Lourdes",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0322",
+   "nombre": "Mare de Déu de Montserrat",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0323",
+   "nombre": "Mare de Déu del Roser",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0327",
+   "nombre": "Sant Antoni de Pàdua",
+   "fuente": "F3",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0328",
+   "nombre": "Sant Crist de Canyet",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0329",
+   "nombre": "Sant Francesc d'Assís",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0330",
+   "nombre": "Sant Jaume Apòstol",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0331",
+   "nombre": "Sant Josep",
+   "fuente": "F1",
+   "celebraciones": 44
+  },
+  {
+   "id": "BCN0332",
+   "nombre": "Sant Pau",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0333",
+   "nombre": "Sant Roc",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0334",
+   "nombre": "Sant Sebastià",
+   "fuente": "F1",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0335",
+   "nombre": "Santa Clara",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0336",
+   "nombre": "Santa Maria",
+   "fuente": "F3",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0341",
+   "nombre": "Sant Feliu",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0344",
+   "nombre": "Santa Creu",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0347",
+   "nombre": "Santa Maria",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0352",
+   "nombre": "Sant Ildefons",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0353",
+   "nombre": "Sant Jaume",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0354",
+   "nombre": "Sant Miquel Arcàngel",
+   "fuente": "F3",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0355",
+   "nombre": "Santa Maria",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0356",
+   "nombre": "Verge del Pilar",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0359",
+   "nombre": "Sant Esteve de Canyamars",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0360",
+   "nombre": "Sant Iscle i Santa Victòria",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0363",
+   "nombre": "Església de Santa Maria de Maricel",
+   "fuente": "OSM",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0364",
+   "nombre": "Mare de Déu del Pilar",
+   "fuente": "F3",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0371",
+   "nombre": "Sant Antoni de Pàdua",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0378",
+   "nombre": "Immaculada Concepció",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0379",
+   "nombre": "Mare de Déu de Bellvitge",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0380",
+   "nombre": "Mare de Déu de la Llum",
+   "fuente": "F3",
+   "celebraciones": 9
+  },
+  {
+   "id": "BCN0381",
+   "nombre": "Mare de Déu dels Desemparats",
+   "fuente": "F3",
+   "celebraciones": 11
+  },
+  {
+   "id": "BCN0385",
+   "nombre": "Sant Enric d'Ossó",
+   "fuente": "F3",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0386",
+   "nombre": "Sant Isidre Llaurador",
+   "fuente": "F3",
+   "celebraciones": 9
+  },
+  {
+   "id": "BCN0387",
+   "nombre": "Sant Joan Evangelista",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0389",
+   "nombre": "Santa Eulàlia de Mèrida",
+   "fuente": "F1",
+   "celebraciones": 7
+  },
+  {
+   "id": "BCN0390",
+   "nombre": "Santa Eulàlia de Provençana",
+   "fuente": "F1",
+   "celebraciones": 10
+  },
+  {
+   "id": "BCN0391",
+   "nombre": "Santa Gemma Galgani",
+   "fuente": "F3",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0392",
+   "nombre": "Santa Maria de Gornal",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0393",
+   "nombre": "Basílica de Santa Maria",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0409",
+   "nombre": "Mare de Déu de l'Esperança",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0410",
+   "nombre": "Mare de Déu de Montserrat",
+   "fuente": "F3",
+   "celebraciones": 1
+  },
+  {
+   "id": "BCN0411",
+   "nombre": "Maria Auxiliadora",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0415",
+   "nombre": "Sagrada Família",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0416",
+   "nombre": "Sant Josep",
+   "fuente": "F3",
+   "celebraciones": 6
+  },
+  {
+   "id": "BCN0417",
+   "nombre": "Sant Simó i Sant Pau",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0421",
+   "nombre": "Sant Joan",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0425",
+   "nombre": "Sant Pere",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0428",
+   "nombre": "Sant Cristòfol",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0429",
+   "nombre": "Santa Maria",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0430",
+   "nombre": "Mare de Déu de les Neus",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0431",
+   "nombre": "Sant Adrià",
+   "fuente": "F3",
+   "celebraciones": 13
+  },
+  {
+   "id": "BCN0432",
+   "nombre": "Sant Joan Baptista",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0433",
+   "nombre": "Santes Juliana i Semproniana",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0438",
+   "nombre": "Sant Andreu de Llavaneres",
+   "fuente": "F3",
+   "celebraciones": 5
+  },
+  {
+   "id": "BCN0442",
+   "nombre": "Mare de Déu del Carme",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0444",
+   "nombre": "Sant Vicenç de Montalt",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0447",
+   "nombre": "Sant Jaume Apòstol",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0448",
+   "nombre": "Sant Joan Baptista",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0449",
+   "nombre": "Sant Joaquim",
+   "fuente": "F3",
+   "celebraciones": 2
+  },
+  {
+   "id": "BCN0450",
+   "nombre": "Sant Josep Oriol",
+   "fuente": "F3",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0451",
+   "nombre": "Sant Miquel Arcàngel",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0452",
+   "nombre": "Santa Coloma (Església Major)",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0453",
+   "nombre": "Santa Maria",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0454",
+   "nombre": "Santa Rosa",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0456",
+   "nombre": "Sant Martí",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0463",
+   "nombre": "Sant Cebrià",
+   "fuente": "F3",
+   "celebraciones": 3
+  },
+  {
+   "id": "BCN0467",
+   "nombre": "Sant Genís",
+   "fuente": "F3",
+   "celebraciones": 4
+  },
+  {
+   "id": "BCN0469",
+   "nombre": "Sant Joan",
+   "fuente": "F3",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0472",
+   "nombre": "Sant Andreu",
+   "fuente": "F3",
+   "celebraciones": 1
+  }
+ ],
+ "cambios": [
+  {
+   "id": "BCN0031",
+   "nombre": "Capilla de Nuestra Señora de la Merced y San Pedro Apóstol",
+   "fuente": "F1",
+   "antes": 6,
+   "ahora": 5
+  },
+  {
+   "id": "BCN0064",
+   "nombre": "Crist Rei",
+   "fuente": "F1",
+   "antes": 8,
+   "ahora": 10
+  },
+  {
+   "id": "BCN0198",
+   "nombre": "Sant Agustí",
+   "fuente": "F3",
+   "antes": 19,
+   "ahora": 17
+  },
+  {
+   "id": "BCN0213",
+   "nombre": "Sant Francesc d'Assís",
+   "fuente": "F1",
+   "antes": 8,
+   "ahora": 8
+  },
+  {
+   "id": "BCN0219",
+   "nombre": "Sant Gregori Taumaturg",
+   "fuente": "F1",
+   "antes": 12,
+   "ahora": 12
+  },
+  {
+   "id": "BCN0259",
+   "nombre": "Sant Ramon Nonat",
+   "fuente": "F1",
+   "antes": 56,
+   "ahora": 8
+  },
+  {
+   "id": "BCN0320",
+   "nombre": "Mare de Déu de la Salut",
+   "fuente": "F1",
+   "antes": 11,
+   "ahora": 10
+  }
+ ],
+ "caidas": [
+  {
+   "id": "BCN0008",
+   "nombre": "Basílica dels Sants Just i Pastor",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0024",
+   "nombre": "Capella de Sant Josep",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno 111] Connection refused>"
+  },
+  {
+   "id": "BCN0037",
+   "nombre": "Centre Cristià dels Universitaris (CCU)",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -5] No address associated with hostname>"
+  },
+  {
+   "id": "BCN0038",
+   "nombre": "Centre Fòrum - Hospital del Mar",
+   "fuente": "F1",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "id": "BCN0043",
+   "nombre": "Centro Eucarístico María Emilia Riquelme y Zayas",
+   "fuente": "F1",
+   "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)>"
+  },
+  {
+   "id": "BCN0044",
+   "nombre": "Centro Médico Teknon",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0052",
+   "nombre": "Col·legi Mary Ward",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0053",
+   "nombre": "Col·legi Salesià Sant Joan Bosco (Horta)",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0090",
+   "nombre": "Església de Sant Llàtzer",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0111",
+   "nombre": "Hospital de la Mare de Déu de la Mercè",
+   "fuente": "F1",
+   "error": "HTTP Error 522: <none>"
+  },
+  {
+   "id": "BCN0112",
+   "nombre": "Hospital de la Santa Creu i Sant Pau",
+   "fuente": "F1",
+   "error": "<urlopen error timed out>"
+  },
+  {
+   "id": "BCN0115",
+   "nombre": "Hospital Delfos",
+   "fuente": "F1",
+   "error": "<urlopen error timed out>"
+  },
+  {
+   "id": "BCN0126",
+   "nombre": "Immaculat Cor de Maria",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0130",
+   "nombre": "Mare de Déu de Fàtima",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0143",
+   "nombre": "Mare de Déu del Roser",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0149",
+   "nombre": "Misioneras del Santísimo Sacramento y de María Inmaculada",
+   "fuente": "F1",
+   "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)>"
+  },
+  {
+   "id": "BCN0151",
+   "nombre": "Monestir de l'Adoració Perpètua",
+   "fuente": "F1",
+   "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+   "id": "BCN0155",
+   "nombre": "Monestir de la Visitació de Santa Maria (Saleses)",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0162",
+   "nombre": "Nou Hospital de la Santa Creu i Sant Pau",
+   "fuente": "F1",
+   "error": "<urlopen error timed out>"
+  },
+  {
+   "id": "BCN0166",
+   "nombre": "Oratori de Santa Maria de Bonaigua",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0171",
+   "nombre": "Parròquia de la Verge de Natzaret",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0180",
+   "nombre": "Reial Santuari de Sant Josep de la Muntanya",
+   "fuente": "F1",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "id": "BCN0216",
+   "nombre": "Sant Francesc Xavier",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0225",
+   "nombre": "Sant Joan d'Àvila",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0235",
+   "nombre": "Sant Llorenç",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0250",
+   "nombre": "Sant Pau del Camp",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno 111] Connection refused>"
+  },
+  {
+   "id": "BCN0262",
+   "nombre": "Sant Tomàs d'Aquino",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0266",
+   "nombre": "Santa Anna",
+   "fuente": "F1",
+   "error": "<urlopen error timed out>"
+  },
+  {
+   "id": "BCN0282",
+   "nombre": "Santa Tecla",
+   "fuente": "F1",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "id": "BCN0305",
+   "nombre": "Sant Feliu",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0321",
+   "nombre": "Mare de Déu de Lourdes",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0322",
+   "nombre": "Mare de Déu de Montserrat",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0326",
+   "nombre": "Residència Roca i Pi",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0328",
+   "nombre": "Sant Crist de Canyet",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0329",
+   "nombre": "Sant Francesc d'Assís",
+   "fuente": "F1",
+   "celebraciones": 8
+  },
+  {
+   "id": "BCN0335",
+   "nombre": "Santa Clara",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0336",
+   "nombre": "Santa Maria",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0341",
+   "nombre": "Sant Feliu",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0344",
+   "nombre": "Santa Creu",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0345",
+   "nombre": "Capella de la Mare de Déu del Remei",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0346",
+   "nombre": "Església del Carme",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0347",
+   "nombre": "Santa Maria",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0348",
+   "nombre": "Capella de Betània",
+   "fuente": "F1",
+   "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)>"
+  },
+  {
+   "id": "BCN0349",
+   "nombre": "Església de la Sagrada Família",
+   "fuente": "F1",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "id": "BCN0378",
+   "nombre": "Immaculada Concepció",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0408",
+   "nombre": "Hospital de Mataró",
+   "fuente": "F1",
+   "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.csdm.es'. (_ssl.c:1000)>"
+  },
+  {
+   "id": "BCN0421",
+   "nombre": "Sant Joan",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0427",
+   "nombre": "Casal Benèfic Premianenc",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0430",
+   "nombre": "Mare de Déu de les Neus",
+   "fuente": "F1",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "id": "BCN0435",
+   "nombre": "Ermita de Sant Sebastià",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0436",
+   "nombre": "Església de Sant Pere",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0437",
+   "nombre": "Església Vella de Sant Andreu",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0438",
+   "nombre": "Sant Andreu de Llavaneres",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0439",
+   "nombre": "Capella de la Mare de Déu del Bon Viatge",
+   "fuente": "F1",
+   "error": "<urlopen error timed out>"
+  },
+  {
+   "id": "BCN0444",
+   "nombre": "Sant Vicenç de Montalt",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0452",
+   "nombre": "Santa Coloma (Església Major)",
+   "fuente": "F1",
+   "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "id": "BCN0455",
+   "nombre": "Llar Santa Rosalía",
+   "fuente": "F1",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "id": "BCN0467",
+   "nombre": "Sant Genís",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "BCN0469",
+   "nombre": "Sant Joan",
+   "fuente": "F1",
+   "error": "HTTP Error 403: Forbidden"
   }
  ],
  "cambios": [
@@ -43,6 +1716,906 @@
    "id": "BCN0092",
    "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
    "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0094",
+   "nombre": "Església de Santa Maria de Vallvidrera",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0095",
+   "nombre": "Església del Barri de Can Clos",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0096",
+   "nombre": "Església del Sagrat Cor (Scala Dei)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0098",
+   "nombre": "Església dels Germans Missioners de malalts pobres",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0099",
+   "nombre": "Església dels Pares Camils",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0100",
+   "nombre": "Església dels Sagrats Cors",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0101",
+   "nombre": "Església Romànica del Poble Espanyol",
+   "motivo": "F3: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0103",
+   "nombre": "Franciscanas Misioneras de María",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0104",
+   "nombre": "Fraternidad de la Comunidad del Cordero",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0105",
+   "nombre": "Germanetes dels Pobres",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0106",
+   "nombre": "Germanetes dels Pobres (Residència d'Ancians)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0107",
+   "nombre": "Hermanas de Jesús Paciente",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0108",
+   "nombre": "Hospital Creu Roja Dos de Maig",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0109",
+   "nombre": "Hospital de Barcelona",
+   "motivo": "F1: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0110",
+   "nombre": "Hospital de l'Esperança",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0111",
+   "nombre": "Hospital de la Mare de Déu de la Mercè",
+   "motivo": "F1: error: HTTP Error 522: <none>; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0112",
+   "nombre": "Hospital de la Santa Creu i Sant Pau",
+   "motivo": "F1: error: <urlopen error timed out>; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0113",
+   "nombre": "Hospital de Sant Miquel (Fundació Albà)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0114",
+   "nombre": "Hospital del Mar",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0115",
+   "nombre": "Hospital Delfos",
+   "motivo": "F1: error: <urlopen error timed out>; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0116",
+   "nombre": "Hospital Quirón",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0117",
+   "nombre": "Hospital Sant Rafael",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0118",
+   "nombre": "Hospital Universitari Sagrat Cor",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0119",
+   "nombre": "Hospital Vall d'Hebron (Área de Traumatología)",
+   "motivo": "F1: robots.txt no permite leer https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1528702625966742%26amp%3Bset%3Da.558778562959158%26amp%3Btype%3D3&title=%09%09%09Santa%20%C3%9Arsula%20i%20les%20santes%20verges%F0%9F%98%87Santa%20%C3%9Arsula%20i%20les%20santes%20verges%20Santa%20%C3%9Arsula%20%28%E2%80%98ossa%20petita%E2%80%99%29%20i%20les%20santes%20d%E2%80%99avui%20van%20arribar%20a%20ser%20suprimides%20del%20Santoral%2C%20per%C3%B2%2C%20degut%20al%20seu%20culte%20molt%20tradicional%2C%20encara%20avui%20les%20conserva.%20Possiblement%2C%20la%20tradici%C3%B3%20vol%20fer%20d%E2%80%99elles%20un%20homenatge%20a%20la%20virginitat%20femenina.%20La%20tradici%C3%B3%20del%20segle%20V%20ens%20informa%20que%20el%20pare%20de%20la%20princesa%20bretona%20%C3%9Arsula%20la%20volia%20casar%20amb%20el%20pr%C3%ADncep%20pag%C3%A0%20d%E2%80%99Arm%C3%B2rica%20%28l%E2%80%99actual%20Bretanya%29.%20Ella%2C%20que%20ja%20havia%20consagrat%20la%20seva%20virginitat%2C%20s%E2%80%99hi%20volia%20negar%2C%20per%C3%B2%20aix%C3%B2%20suposava%20la%20guerra.%20Per%20guanyar%20temps%20va%20posar%20unes%20condicions%3A%20un%20termini%20de%20tres%20anys%2C%20que%20es%20reunissin%20deu%20comparses%20de%20mil%20donzelles%20cada%20una%20%28d%E2%80%99aqu%C3%AD%20les%20%C2%AB11.000%20verges%C2%BB%3F%29%20i%20que%20el%20pr%C3%ADncep%20es%20bateg%C3%A9s.%20A%20la%20tornada%20d%E2%80%99un%20complicat%20viatge%20a%20Roma%20pel%20Rin%2C%20l%E2%80%99%C3%9Arsula%20i%20les%20companyes%20van%20ser%20martiritzades%20a%20Col%C3%B2nia%20pels%20huns%20d%E2%80%99%C3%80tila.%20En%20una%20inscripci%C3%B3%20llatina%20a%20la%20catedral%20de%20Col%C3%B2nia%20hi%20consta%3A%20%C2%ABXI.%20M.%20V.%C2%BB%2C%20que%20es%20pot%20llegir%20com%20%C2%AB11%20m%C3%A0rtirs%20verges%C2%BB%2C%20i%20no%20%C2%AB11%20milers%20de%20verges%C2%BB.%20Al%20MNAC%20es%20conserva%20el%20quadre%20d%E2%80%99en%20Joan%20Reixach%20%28segle%20XV%29%3A%20%C2%ABEl%20retaule%20de%20les%20onze%20mil%20verges%C2%BB.%20%C2%ABLes%20verges...%20segueixen%20l%E2%80%99Anyell%20arreu%20on%20va%C2%BB%20%28Ap%2014%2C4%29.%F0%9F%97%A3%C2%ABQuan%20trona%20pel%20mes%20d%E2%80%99octubre%2C%20neu%20segura%C2%BB%2C%20segons%20una%20dita%20popular.%09%09%09%09; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0120",
+   "nombre": "Hospital Vall d'Hebron (Área Materno Infantil)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0121",
+   "nombre": "IESE Business School Barcelona (Campus Norte)",
+   "motivo": "F1: no hay bloque del templo ni enlace a su horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0122",
+   "nombre": "IESE Business School Barcelona (Campus Sur)",
+   "motivo": "F1: no hay bloque del templo ni enlace a su horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0124",
+   "nombre": "Iglesia del Santísimo Sacramento (Sede de ANFE)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0127",
+   "nombre": "Institut del Desert de Sarrià",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0128",
+   "nombre": "Llar Verge de Gràcia",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0149",
+   "nombre": "Misioneras del Santísimo Sacramento y de María Inmaculada",
+   "motivo": "F1: error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)>; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0150",
+   "nombre": "Monestir de Jesús i María (Mínimes de Sant Francesc de Paula)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0151",
+   "nombre": "Monestir de l'Adoració Perpètua",
+   "motivo": "F1: error: HTTP Error 429: Too Many Requests; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0152",
+   "nombre": "Monestir de l'Encarnació (Madres Carmelitas)",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0153",
+   "nombre": "Monestir de la Immaculada (Carmelitas Descalzas)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0154",
+   "nombre": "Monestir de la Mare de Déu de la Divina Providència (Clarisses)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0155",
+   "nombre": "Monestir de la Visitació de Santa Maria (Saleses)",
+   "motivo": "F1: error: <urlopen error [Errno -2] Name or service not known>; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0156",
+   "nombre": "Monestir de Sant Maties",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0157",
+   "nombre": "Monestir de Sant Pere de les Puel·les (Benedictinas)",
+   "motivo": "F1: no se reconoce ningún horario de misa (10 líneas dudosas); OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0160",
+   "nombre": "Monestir de Santa Maria Magdalena (Madres Agustinas)",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0161",
+   "nombre": "Monestir Romànic de Sant Miquel (Poble Espanyol)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0162",
+   "nombre": "Nou Hospital de la Santa Creu i Sant Pau",
+   "motivo": "F1: error: <urlopen error timed out>; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0163",
+   "nombre": "Oratori de la Divina Misericòrdia",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0164",
+   "nombre": "Oratori de Sant Felip Neri",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0165",
+   "nombre": "Oratori de Sant Felip Neri de Gràcia",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0166",
+   "nombre": "Oratori de Santa Maria de Bonaigua",
+   "motivo": "F1: error: HTTP Error 403: Forbidden; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0167",
+   "nombre": "Oratorio de la Universitat Abat Oliba CEU",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0168",
+   "nombre": "Pares Trinitaris",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0171",
+   "nombre": "Parròquia de la Verge de Natzaret",
+   "motivo": "F1: error: <urlopen error [Errno -2] Name or service not known>; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0172",
+   "nombre": "Parròquia de Sant Albert Magne (St. Albertus Magnus)",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0173",
+   "nombre": "Parròquia de Sant Josep de Calassanç",
+   "motivo": "F1: robots.txt no permite leer https://calassans1976.blogspot.com/search?updated-max=2026-09-05T10:13:00%2B02:00&max-results=7; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0175",
+   "nombre": "Parròquia francesa de la Mare de Déu de Lourdes",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0176",
+   "nombre": "Patronat d'Obreres (Llar Marillac)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0178",
+   "nombre": "Refugi d'Obreres",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0179",
+   "nombre": "Reial Monestir de Santa Isabel (Regnum Christi)",
+   "motivo": "F1: no se reconoce ningún horario de misa; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0180",
+   "nombre": "Reial Santuari de Sant Josep de la Muntanya",
+   "motivo": "F1: error: HTTP Error 404: Not Found; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0181",
+   "nombre": "Religioses Darderes",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0182",
+   "nombre": "Residencia Corazón de Jesús (Missioneres de Betània)",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0183",
+   "nombre": "Residencia de la Inmaculada (Hermanas Carmelitas de San José)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0184",
+   "nombre": "Residencia del Amor de Dios",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0185",
+   "nombre": "Residencia Geriátrica de Nuestra Señora de Fátima del Tibidabo",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0186",
+   "nombre": "Residencial Mas d'Anglí",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0187",
+   "nombre": "Residència Betània (Hijas de la Caridad de San Vicente de Paúl)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0188",
+   "nombre": "Residència d'Ancians Associació Sagrada Família",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0189",
+   "nombre": "Residència de Sant Josep",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0190",
+   "nombre": "Residència Fort Pienc",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0191",
+   "nombre": "Residència Madre Caterina (Josefinas)",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0192",
+   "nombre": "Residència Pare Batllori",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0193",
+   "nombre": "Residència Reina de la Pau (Dominiques de la Presentació)",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0194",
+   "nombre": "Residència Sacerdotal Sant Josep Oriol",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0195",
+   "nombre": "Residència Sant Ignasi de Loiola (Darderes)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0269",
+   "nombre": "Santa Creu d'Olorda",
+   "motivo": "F3: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0286",
+   "nombre": "Santuari de la Mare de Déu de l'Ajuda",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0288",
+   "nombre": "Santuari de la Mare de Déu de la Salut (Les Planes)",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0289",
+   "nombre": "Santuari de la Mare de Déu del Carme (Carmelites Descalços)",
+   "motivo": "F1: robots.txt no permite leerla; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0290",
+   "nombre": "Santuari de la Mare de Déu del Sagrat Cor",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0292",
+   "nombre": "Santuari de Santa Gemma (Padres Pasionistas)",
+   "motivo": "F1: no se reconoce ningún horario de misa; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0296",
+   "nombre": "SAR La Salut - Josep Servat",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0297",
+   "nombre": "Seminari Conciliar de Barcelona",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0298",
+   "nombre": "Universitat de Barcelona",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0299",
+   "nombre": "Universitat Internacional de Catalunya (Edificio Beta)",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0300",
+   "nombre": "Universitat Internacional de Catalunya (Edificio Gamma/Delta)",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0304",
+   "nombre": "Residència Germans Aymar i Puig",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0306",
+   "nombre": "Capella de Santa Maria del Cros",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0307",
+   "nombre": "Ermita de Sant Miquel del Cros",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0308",
+   "nombre": "Ermita de Sant Sebastià",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0309",
+   "nombre": "La Nostra Llar Santa Anna",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0310",
+   "nombre": "Monasterio del Oasis de Jesús Sacerdote",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0312",
+   "nombre": "Capella de Sant Joan Baptista (Salut Alta)",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0313",
+   "nombre": "Ermita de Sant Climent",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0314",
+   "nombre": "Ermita de Sant Onofre",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0315",
+   "nombre": "Església de Nostra Senyora del Carme",
+   "motivo": "F1: robots.txt no permite leerla; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0316",
+   "nombre": "Església de Sant Lluís de Manresà",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0317",
+   "nombre": "Hospital Municipal",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0318",
+   "nombre": "Hospital Universitari Germans Trias i Pujol",
+   "motivo": "F1: no se reconoce ningún horario de misa; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0319",
+   "nombre": "Institut Guttmann - Hospital de Neurorehabilitació",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0324",
+   "nombre": "Monestir de la Divina Providència (Clarisas)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0325",
+   "nombre": "Monestir de Sant Jeroni de la Murtra",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0326",
+   "nombre": "Residència Roca i Pi",
+   "motivo": "F1: error: HTTP Error 403: Forbidden; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0337",
+   "nombre": "Santuari de Maria Auxiliadora",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0338",
+   "nombre": "Capella de Sant Sebastià",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0339",
+   "nombre": "Capella de Santa Helena d'Agell",
+   "motivo": "F1: robots.txt no permite leerla; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0340",
+   "nombre": "Centre Cívic Pla de l'Avellà",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0342",
+   "nombre": "Ermita de Sant Cristòfol",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0343",
+   "nombre": "Oratori de Can Vilumara",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0345",
+   "nombre": "Capella de la Mare de Déu del Remei",
+   "motivo": "F1: error: HTTP Error 403: Forbidden; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0346",
+   "nombre": "Església del Carme",
+   "motivo": "F1: error: HTTP Error 403: Forbidden; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0348",
+   "nombre": "Capella de Betània",
+   "motivo": "F1: error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)>; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0349",
+   "nombre": "Església de la Sagrada Família",
+   "motivo": "F1: error: HTTP Error 404: Not Found; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0350",
+   "nombre": "Església de Sant Felip Neri",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0351",
+   "nombre": "Església de Santa Sílvia (Riera)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0357",
+   "nombre": "Ermita de Sant Llop",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0358",
+   "nombre": "Sant Andreu d'Alfar",
+   "motivo": "F3: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0361",
+   "nombre": "Santuari del Corredor",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0362",
+   "nombre": "Casa Benèfica",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0365",
+   "nombre": "Oratori de Santa Maria d'Ocata",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0366",
+   "nombre": "Sant Pere",
+   "motivo": "F3: no se reconoce ningún horario de misa (5 líneas dudosas); OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0367",
+   "nombre": "Hospital de Sant Joan de Déu",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0368",
+   "nombre": "Monasterio de Santa María de Montsió",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0369",
+   "nombre": "Parròquia de Sant Mateu",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0370",
+   "nombre": "Parròquia de Santa Magdalena",
+   "motivo": "F1: no se reconoce ningún horario de misa; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0372",
+   "nombre": "Capella Germanes Franciscanes",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0373",
+   "nombre": "Col·legi Xaloc",
+   "motivo": "F1: no se reconoce ningún horario de misa; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0374",
+   "nombre": "Ermita de Bellvitge",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0375",
+   "nombre": "Ermita de Santa Eulàlia de Provençana",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0376",
+   "nombre": "Hospital General de L'Hospitalet",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0377",
+   "nombre": "Hospital Universitari de Bellvitge",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0382",
+   "nombre": "Residència Collblanc",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0383",
+   "nombre": "Sant Albert Magne",
+   "motivo": "F3: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0384",
+   "nombre": "Sant Benet",
+   "motivo": "F3: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0388",
+   "nombre": "Sant Josep",
+   "motivo": "F3: no se reconoce ningún horario de misa; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0394",
+   "nombre": "Ermita de Sant Martí de Mata",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0395",
+   "nombre": "Ermita de Sant Miquel de Mata",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0396",
+   "nombre": "Ermita de Sant Simó",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0397",
+   "nombre": "Ermita de Santa Maria de Cirera",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0398",
+   "nombre": "Ermita de Santa Rita (Valldeix)",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0399",
+   "nombre": "Església de la Divina Providència de les Clarisses",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0400",
+   "nombre": "Església de les Franciscanes dels Sagrats Cors",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0401",
+   "nombre": "Església de les Serventes de Maria",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0402",
+   "nombre": "Església de Sant Jaume i de Santa Magdalena de l'Hospital",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0403",
+   "nombre": "Església de Sant Joan Bosco",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0404",
+   "nombre": "Església de Santa Anna",
+   "motivo": "F1: robots.txt no permite leerla; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0405",
+   "nombre": "Església del Col·legi de Valldemia (Maristes)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0406",
+   "nombre": "Església del Sagrat Cor",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0407",
+   "nombre": "Església dels Pares Salesians",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0408",
+   "nombre": "Hospital de Mataró",
+   "motivo": "F1: error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.csdm.es'. (_ssl.c:1000)>; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0412",
+   "nombre": "Monestir de l'Assumpció de Maria Santíssima (Clarisses Caputxines)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0413",
+   "nombre": "Monestir de la Immaculada Concepció (Carmelites Descalces)",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0414",
+   "nombre": "Residència ICASS (Gatassa)",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0418",
+   "nombre": "Capella del Cor de Maria",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0419",
+   "nombre": "Ermita de Sant Martí",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0420",
+   "nombre": "Residència Sant Jordi",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0422",
+   "nombre": "Capella de Santa Anna",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0423",
+   "nombre": "Capella del Remei",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0424",
+   "nombre": "Ermita de Sant Mateu",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0426",
+   "nombre": "Santuari de la Mare de Déu de la Cisa",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0427",
+   "nombre": "Casal Benèfic Premianenc",
+   "motivo": "F1: error: HTTP Error 403: Forbidden; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0434",
+   "nombre": "Capella dels Germans Franciscans de la Creu Blanca",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0435",
+   "nombre": "Ermita de Sant Sebastià",
+   "motivo": "F1: error: HTTP Error 403: Forbidden; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0436",
+   "nombre": "Església de Sant Pere",
+   "motivo": "F1: error: HTTP Error 403: Forbidden; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0437",
+   "nombre": "Església Vella de Sant Andreu",
+   "motivo": "F1: error: HTTP Error 403: Forbidden; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0439",
+   "nombre": "Capella de la Mare de Déu del Bon Viatge",
+   "motivo": "F1: error: <urlopen error timed out>; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0440",
+   "nombre": "Església de Santa Maria del Pla del Vent",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0441",
+   "nombre": "Hospital de Sant Joan Despí Moisès Broggi",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0443",
+   "nombre": "Parròquia de Sant Joan Baptista",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0445",
+   "nombre": "Capella del Recinte Torribera",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0446",
+   "nombre": "Hospital de l'Esperit Sant",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0455",
+   "nombre": "Llar Santa Rosalía",
+   "motivo": "F1: error: HTTP Error 404: Not Found; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0457",
+   "nombre": "Capella de Ca la Godó",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0458",
+   "nombre": "Cartoixa de Santa Maria de Montalegre",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0459",
+   "nombre": "Casa de Espiritualidad María Inmaculada",
+   "motivo": "F1: no se reconoce ningún horario de misa; OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0460",
+   "nombre": "Ermita de la Mare de Déu de l'Alegria",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0461",
+   "nombre": "Monestir de la Sagrada Família (Carmelitas Descalzas)",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0462",
+   "nombre": "Residència Sant Cebrià",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0464",
+   "nombre": "Ermita de Sant Salvador",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0465",
+   "nombre": "Ermita de Sant Sebastià",
+   "motivo": "F1: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0466",
+   "nombre": "Hospital de Sant Pere",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  },
+  {
+   "id": "BCN0468",
+   "nombre": "Església de les Religioses Franciscanes",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0470",
+   "nombre": "Ermita de Sant Bartomeu de Cabanyes",
+   "motivo": "OSM: no está en OpenStreetMap"
+  },
+  {
+   "id": "BCN0471",
+   "nombre": "Ermita de Sant Pere de Clarà",
+   "motivo": "F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap"
   }
  ],
  "pendientes": [],
@@ -52,6 +2625,97 @@
    "nombre": "Basílica de la Puríssima Concepció",
    "motivos": [
     "hora fuera de 06:00–23:00: adoracion 01:00"
+   ]
+  },
+  {
+   "id": "BCN0132",
+   "nombre": "Mare de Déu de la Medalla Miraculosa",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
+   ]
+  },
+  {
+   "id": "BCN0222",
+   "nombre": "Sant Jeroni",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
+   ]
+  },
+  {
+   "id": "BCN0234",
+   "nombre": "Sant Josep Obrer",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
+   ]
+  },
+  {
+   "id": "BCN0235",
+   "nombre": "Sant Llorenç",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
+   ]
+  },
+  {
+   "id": "BCN0254",
+   "nombre": "Sant Pere Ermengol",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
+   ]
+  },
+  {
+   "id": "BCN0273",
+   "nombre": "Santa Isabel d'Aragó i Sant Joaquim",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
+   ]
+  },
+  {
+   "id": "BCN0274",
+   "nombre": "Santa Joaquima de Vedruna",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
+   ]
+  },
+  {
+   "id": "BCN0305",
+   "nombre": "Sant Feliu",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
+   ]
+  },
+  {
+   "id": "BCN0330",
+   "nombre": "Sant Jaume Apòstol",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
+   ]
+  },
+  {
+   "id": "BCN0352",
+   "nombre": "Sant Ildefons",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
+   ]
+  },
+  {
+   "id": "BCN0353",
+   "nombre": "Sant Jaume",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
+   ]
+  },
+  {
+   "id": "BCN0425",
+   "nombre": "Sant Pere",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
+   ]
+  },
+  {
+   "id": "BCN0429",
+   "nombre": "Santa Maria",
+   "motivos": [
+    "parroquia sin ninguna misa dominical"
    ]
   }
  ],

@@ -1,0 +1,325 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "otro",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "10:00 Eucaristía (Filipino)",
+    "idioma_detalle": "tagalo",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "11:30 Eucaristía (Castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:45",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "12:45 Eucaristía (Castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "16:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "16:00 (4:00 pm) Eucaristía (Inglés)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "04:00",
+    "fin": null,
+    "idioma": "otro",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "16:00 (4:00 pm) Eucaristía (Inglés)",
+    "idioma_detalle": "inglés",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "18:00 (6:00 pm) Eucaristía (Filipino)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "06:00",
+    "fin": null,
+    "idioma": "otro",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "18:00 (6:00 pm) Eucaristía (Filipino)",
+    "idioma_detalle": "tagalo",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:00 (7:00 pm) Eucaristía (Castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "07:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:00 (7:00 pm) Eucaristía (Castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:00 (7:00 pm) Eucaristía (Castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "07:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:00 (7:00 pm) Eucaristía (Castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:30 (7:30 pm) Eucaristía (Filipino)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "07:30",
+    "fin": null,
+    "idioma": "otro",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:30 (7:30 pm) Eucaristía (Filipino)",
+    "idioma_detalle": "tagalo",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "18:00 (6:00 pm) Adoración del Santísimo Sacramento",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "06:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "18:00 (6:00 pm) Adoración del Santísimo Sacramento",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:00 (7:00 pm) Eucaristía (Castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "07:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:00 (7:00 pm) Eucaristía (Castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "miercoles"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:30 (7:30 pm) Novena Perpetuo Socorro",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "miercoles"
+    ],
+    "inicio": "07:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:30 (7:30 pm) Novena Perpetuo Socorro",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-agusti/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

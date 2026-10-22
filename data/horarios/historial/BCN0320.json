@@ -1,0 +1,237 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F1",
+  "url": "http://mdd-salut-bdn.blogspot.com/",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "09:05",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Agosto",
+     "inicio": "08-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "9:05",
+    "fuente": "F1",
+    "url": "http://mdd-salut-bdn.blogspot.com/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "02:55",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "2:55",
+    "fuente": "F1",
+    "url": "http://mdd-salut-bdn.blogspot.com/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "07:55",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "7:55",
+    "fuente": "F1",
+    "url": "http://mdd-salut-bdn.blogspot.com/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Dies feiners: 19'30h",
+    "fuente": "F1",
+    "url": "http://mdd-salut-bdn.blogspot.com/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Vigilies de festius: 20h",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "http://mdd-salut-bdn.blogspot.com/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "09:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 9h, 12h, i 20h.",
+    "fuente": "F1",
+    "url": "http://mdd-salut-bdn.blogspot.com/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 9h, 12h, i 20h.",
+    "fuente": "F1",
+    "url": "http://mdd-salut-bdn.blogspot.com/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 9h, 12h, i 20h.",
+    "fuente": "F1",
+    "url": "http://mdd-salut-bdn.blogspot.com/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Dijous: 20h.",
+    "fuente": "F1",
+    "url": "http://mdd-salut-bdn.blogspot.com/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Dissabtes: 20h.",
+    "fuente": "F1",
+    "url": "http://mdd-salut-bdn.blogspot.com/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges: 12h.",
+    "fuente": "F1",
+    "url": "http://mdd-salut-bdn.blogspot.com/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   }
+  ]
+ }
+]
