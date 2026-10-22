@@ -1,0 +1,149 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-ot/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Mañana: 11:30, 12:30 (catalán) y 13:30 (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ot/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Mañana: 11:30, 12:30 (catalán) y 13:30 (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ot/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "13:30",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Mañana: 11:30, 12:30 (catalán) y 13:30 (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ot/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Tarde: 19:00 (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ot/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "08:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Mañana: 08:30",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ot/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Tarde: 20:00 (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ot/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Tarde: 19:00 (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ot/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "CONFESIONES: Antes de cada misa y siempre que haya un sacerdote disponible.",
+    "relativa_a_misa": {
+     "antes": true
+    },
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-ot/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

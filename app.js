@@ -44,8 +44,8 @@
       soft: "confesión antes de misa o a petición", langOtherShort: "otro",
       back: "← Volver a la lista", district: "Distrito {d}", community: "Comunidad pastoral {c}",
       directions: "Cómo llegar", web: "Web", official: "Ficha oficial",
-      hMass: "Misas", noMass: "Esta parroquia no publica horario de misas.", hConf: "Confesiones", hAdor: "Adoración eucarística", hOther: "Otras celebraciones",
-      monSat: "Lun–Sáb", monFri: "Lun–Vie", sundays: "Domingos", districtLbl: "Distrito", youAreHere: "Estás aquí", askMore: "Pregunta otra cosa… ",
+      hMass: "Misas", noMass: "Esta parroquia no publica horario de misas.", hConf: "Confesiones", hAdor: "Adoración eucarística", hOther: "Otras celebraciones", srcH: "De dónde sale este horario", srcNames: { F1: "web de la parroquia", F2: "misas.org", F3: "ficha del Arzobispado", OSM: "OpenStreetMap" }, checked: "Comprobado el {d}", conf: { alta: "fiabilidad alta", media: "fiabilidad media", baja: "fiabilidad baja: puede no estar al día, confírmalo con la parroquia" }, srcOf: "{k}: {s}", warnHol: "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Si vas a ir un día especial, confírmalo con la parroquia.", otherSeasons: "Otras temporadas", mismatch: "El Arzobispado y OpenStreetMap no coinciden: se muestra el del Arzobispado, que puede no estar al día. Confírmalo con la parroquia.", pending: "Pendiente de verificar: no se ha podido leer la fuente esta semana; se muestra el último horario conocido.",
+      monSat: "Lun–Sáb", everyDay: "Cada día", monFri: "Lun–Vie", sundays: "Domingos", districtLbl: "Distrito", youAreHere: "Estás aquí", askMore: "Pregunta otra cosa… ",
       ideas: ["Estoy en Gràcia y quiero ir a misa entre las 17 y las 20", "Misa el domingo por la mañana en Sarrià", "Confesiones el sábado en Sants", "Adoración hoy en el Eixample"],
       hints: ["Misa ahora cerca de mí", "Gràcia, entre las 17 y las 20", "Confesiones el sábado", "Adoración en el Eixample", "Domingo por la mañana en Sarrià", "Misa en castellano en Sants"]
     },
@@ -83,8 +83,8 @@
       soft: "confessió abans de missa o a petició", langOtherShort: "altre",
       back: "← Tornar a la llista", district: "Districte {d}", community: "Comunitat pastoral {c}",
       directions: "Com arribar-hi", web: "Web", official: "Fitxa oficial",
-      hMass: "Misses", noMass: "Aquesta parròquia no publica horari de misses.", hConf: "Confessions", hAdor: "Adoració eucarística", hOther: "Altres celebracions",
-      monSat: "Dl–Ds", monFri: "Dl–Dv", sundays: "Diumenges", districtLbl: "Districte", youAreHere: "Ets aquí", askMore: "Pregunta una altra cosa… ",
+      hMass: "Misses", noMass: "Aquesta parròquia no publica horari de misses.", hConf: "Confessions", hAdor: "Adoració eucarística", hOther: "Altres celebracions", srcH: "D'on surt aquest horari", srcNames: { F1: "web de la parròquia", F2: "misas.org", F3: "fitxa de l'Arquebisbat", OSM: "OpenStreetMap" }, checked: "Comprovat el {d}", conf: { alta: "fiabilitat alta", media: "fiabilitat mitjana", baja: "fiabilitat baixa: pot no estar al dia, confirma-ho amb la parròquia" }, srcOf: "{k}: {s}", warnHol: "Els horaris poden canviar els festius, a l'estiu i per Nadal o Setmana Santa. Si hi vas un dia especial, confirma-ho amb la parròquia.", otherSeasons: "Altres temporades", mismatch: "L'Arquebisbat i OpenStreetMap no coincideixen: es mostra el de l'Arquebisbat, que pot no estar al dia. Confirma-ho amb la parròquia.", pending: "Pendent de verificar: aquesta setmana no s'ha pogut llegir la font; es mostra l'últim horari conegut.",
+      monSat: "Dl–Ds", everyDay: "Cada dia", monFri: "Dl–Dv", sundays: "Diumenges", districtLbl: "Districte", youAreHere: "Ets aquí", askMore: "Pregunta una altra cosa… ",
       ideas: ["Soc a Gràcia i vull anar a missa entre les 17 i les 20", "Missa diumenge al matí a Sarrià", "Confessions dissabte a Sants", "Adoració avui a l'Eixample"],
       hints: ["Missa ara a prop meu", "Gràcia, entre les 17 i les 20", "Confessions dissabte", "Adoració a l'Eixample", "Diumenge al matí a Sarrià", "Missa en català a Sants"]
     }
@@ -655,11 +655,36 @@
     const wk = ["mon", "tue", "wed", "thu", "fri"];
     return `<dl class="sched">${[...groups].map(([k, list]) => {
       const d = k.split(",");
-      const label = wk.every((x) => d.includes(x)) && d.includes("sat") && !d.includes("sun") ? t("monSat")
+      const label = wk.every((x) => d.includes(x)) && d.includes("sat") && d.includes("sun") ? t("everyDay")
+        : wk.every((x) => d.includes(x)) && d.includes("sat") && !d.includes("sun") ? t("monSat")
         : wk.every((x) => d.includes(x)) && d.length === 5 ? t("monFri")
         : d.every((x) => x === "sun" || x === "hol") ? t("sundays") : d.map((x) => t("dayShort")[x]).join(" ");
       return `<dt>${label}</dt><dd>${list.map((ev) => `<span class="t" ${ev.note ? `title="${esc(ev.note)}"` : ""}>${ev.start}${ev.end ? "–" + ev.end : ""}${ev.lang ? `<small>${LANG[ev.lang] || (ev.lang === "other" ? t("langOtherShort") : ev.lang)}</small>` : ""}</span>`).join("")}</dd>`;
     }).join("")}</dl>`;
+  }
+
+  // Fuente del horario (horarios automáticos): enlace, fecha de comprobación, fiabilidad y aviso de festivos.
+  function sourceBox(p) {
+    const h = p.horario;
+    if (!h || !h.fuente) return "";
+    const date = (d) => d ? `${d.slice(8, 10)}/${d.slice(5, 7)}/${d.slice(0, 4)}` : "";
+    const KIND = { masses: t("hMass"), confessions: t("hConf"), adoration: t("hAdor") };
+    const per = Object.entries(h.fuentes_por_tipo || {});
+    const mixed = new Set(per.map(([, v]) => v.fuente)).size > 1;
+    const link = (f, url) => `<a target="_blank" rel="noopener" href="${esc(url)}">${esc(t("srcNames")[f] || f)}</a>`;
+    const lines = mixed
+      ? per.map(([k, v]) => `<li>${t("srcOf", { k: KIND[k], s: link(v.fuente, v.url) })} <span class="conf c-${esc(v.confianza)}">${esc(t("conf")[v.confianza] || "")}</span></li>`).join("")
+      : `<li>${link(h.fuente, h.url)} <span class="conf c-${esc(h.confianza)}">${esc(t("conf")[h.confianza] || "")}</span></li>`;
+    const others = (h.otras_temporadas || []).map((o) => `<li><b>${esc(o.nombre)}</b> · ${esc(KIND[o.tipo])}: ${esc(o.texto)}</li>`).join("");
+    return `<div class="srcbox">
+      ${others ? `<h3>${t("otherSeasons")}</h3><ul class="seasons">${others}</ul>` : ""}
+      ${h.estado === "pendiente de verificar" ? `<p class="warn">${t("pending")}</p>` : ""}
+      ${h.discrepancia ? `<p class="warn">${t("mismatch")}</p>` : ""}
+      <p class="warn">${t("warnHol")}</p>
+      <h4>${t("srcH")}</h4>
+      <ul>${lines}</ul>
+      <p class="checked">${t("checked", { d: date(h.comprobado) })}</p>
+    </div>`;
   }
 
   function openDetail(id, focus = true) {
@@ -688,7 +713,8 @@
       ${p.masses_text ? `<p class="note">${esc(p.masses_text)}</p>` : ""}
       ${p.confessions.length || p.confessions_text ? `<h3>${t("hConf")}</h3>${schedule(p.confessions)}${p.confessions_text ? `<p class="note">${esc(p.confessions_text)}</p>` : ""}` : ""}
       ${p.adoration.length || p.adoration_text ? `<h3>${t("hAdor")}</h3>${schedule(p.adoration)}${p.adoration_text ? `<p class="note">${esc(p.adoration_text)}</p>` : ""}` : ""}
-      ${p.other ? `<h3>${t("hOther")}</h3><p class="note">${esc(p.other)}</p>` : ""}`;
+      ${p.other ? `<h3>${t("hOther")}</h3><p class="note">${esc(p.other)}</p>` : ""}
+      ${sourceBox(p)}`;
     box.hidden = false; state.detailId = id;
     observeReveal(box.querySelectorAll("h3, .sched, .note"));
     $("filters").hidden = true; $("summary").hidden = true; $("list").hidden = true;

@@ -1,0 +1,387 @@
+[
+ {
+  "comprobado": "2026-10-21",
+  "fuente": "F2",
+  "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo",
+     "vispera_festivo",
+     "festivo_precepto"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "vespertina_dominical": true,
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo",
+     "vispera_festivo",
+     "festivo_precepto"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "vespertina_dominical": true,
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "18:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Lunes a sábado 18:30.",
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   }
+  ]
+ },
+ {
+  "comprobado": "2026-10-21",
+  "fuente": "F2",
+  "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo",
+     "vispera_festivo",
+     "festivo_precepto"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Invierno",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "vespertina_dominical": true,
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo",
+     "vispera_festivo",
+     "festivo_precepto"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "",
+    "vespertina_dominical": true,
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "18:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Lunes a sábado 18:30.",
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingo antes de misa.",
+    "relativa_a_misa": {
+     "antes": true
+    },
+    "fuente": "F2",
+    "url": "https://misas.org/p/esglesia-de-sant-sever-i-sant-vicenc-de-paul-barcelona",
+    "comprobado": "2026-10-21",
+    "confianza": "alta"
+   }
+  ]
+ }
+]

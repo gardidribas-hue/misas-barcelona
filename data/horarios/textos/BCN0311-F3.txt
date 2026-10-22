@@ -1,0 +1,10 @@
+# https://esglesia.barcelona/es/parroquies/sant-julia/
+# 2026-10-22 · formato: html
+
+Horario de misas
+laborables:
+19:30 horas, de lunes a viernes en la iglesia parroquial.
+Sábados:
+20:00 horas, en la iglesia parroquial.
+Domingos y festivos:
+9:00, 12:00 y 20:00 en la iglesia parroquial.

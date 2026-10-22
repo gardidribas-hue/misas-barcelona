@@ -1,0 +1,160 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "De lunes a sábado, misa a las 19:30 horas.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingo: 10:00 (castellano), 12:30 (catalán), 19:30 (bilingüe)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingo: 10:00 (castellano), 12:30 (catalán), 19:30 (bilingüe)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": "bilingue",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingo: 10:00 (castellano), 12:30 (catalán), 19:30 (bilingüe)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "18:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Lunes a viernes a las 18:30 h. San Rosario",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Viernes de 20:00 h. a 20:30 h. Exposición Eucarística",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "20:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Viernes de 20:00 h. a 20:30 h. Exposición Eucarística",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Confesiones antes de las misas y siempre que se pida a Sacristia",
+    "relativa_a_misa": {
+     "antes": true
+    },
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/crist-rei/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

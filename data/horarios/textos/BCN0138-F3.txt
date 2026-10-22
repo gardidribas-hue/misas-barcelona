@@ -1,0 +1,10 @@
+# https://esglesia.barcelona/es/parroquies/mare-de-deu-de-nuria/
+# 2026-10-22 · formato: html
+
+Horario de misas
+Lunes a viernes (incluidas vísperas de fiesta entre semana): 9:30* - 13:00cs - 20:00ct
+Sábados: 9:30* - 13:00cs - 18:00ct
+Domingos y festivos: 10:30* - 12:00cs - 13:00ct - 18:00cs - 20:00ct
+ct = Misa en catalán
+cs = Misa en castellano
+* = Misa bilingüe

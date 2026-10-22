@@ -1,0 +1,126 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/santa-maria-del-pi-basilica/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "(laborables) 19:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-del-pi-basilica/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "16:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "(sábados) 16:30h, 18.30h, 20:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-del-pi-basilica/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "18:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "(sábados) 16:30h, 18.30h, 20:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-del-pi-basilica/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "(sábados) 16:30h, 18.30h, 20:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-del-pi-basilica/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "(festivos) 12:00h catalán, 13:00h castellano, 20:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-del-pi-basilica/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "(festivos) 12:00h catalán, 13:00h castellano, 20:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-del-pi-basilica/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "(festivos) 12:00h catalán, 13:00h castellano, 20:00h catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-del-pi-basilica/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

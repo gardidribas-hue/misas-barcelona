@@ -1,0 +1,19 @@
+{
+ "fecha": "2026-10-21",
+ "revisados": 5,
+ "actualizados": [],
+ "cambios": [],
+ "caidas": [],
+ "discrepancias": [],
+ "sin_horario": [],
+ "pendientes": [],
+ "sospechosos": [
+  {
+   "id": "BCN0003",
+   "nombre": "Basílica de la Puríssima Concepció",
+   "motivos": [
+    "hora fuera de 06:00–23:00: adoracion 01:00"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,275 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "13:15",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "13:15h. (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "20:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "20:00h.",
+    "vespertina_dominical": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "10:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "11:30h. (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "13:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "20:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "20:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "20:00h.",
+    "vespertina_dominical": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "11:30h. (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "13:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "20:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-gregori-taumaturg/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

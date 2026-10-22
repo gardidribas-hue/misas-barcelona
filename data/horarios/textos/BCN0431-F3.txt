@@ -1,0 +1,25 @@
+# https://esglesia.barcelona/es/parroquies/sant-adria/
+# 2026-10-22 · formato: html
+
+Horario de misas
+Horarios de misa Invierno (1/oct - 31/may)
+LABORABLES
+- 09:00
+- 19:30
+VíSPERAS
+- 19:30
+FESTIVOS
+- 09:00 Se suprime el Domingo de Resurrección
+- 10:45 Familias Se suprime el Domingo de Resurrección
+- 12:30 Bilingüe
+- 19:30 Misa rociera el 3º domingo de mes Español
+Horarios de misa Verano (1/jun - 30/sep)
+LABORABLES
+- 09:00
+- 19:30
+VíSPERAS
+- 19:30
+FESTIVOS
+- 09:00
+- 12:30 Bilingüe
+- 19:30 Español

@@ -1,0 +1,12 @@
+# https://esglesia.barcelona/es/parroquies/sant-ambros/
+# 2026-10-22 · formato: html
+
+Horario de misas
+Horario invierno:
+Laborables: 08:30h. i 19:30h.
+Vísperas de festivo: 19:30h.
+Domingos y festivos: 09:00h. i 12:00h.
+Horario verano:
+Laborables: 19:30h.
+Vísperas de festivo: 19:30h.
+Domingos y festivos: 09:00h. i 12:00h.

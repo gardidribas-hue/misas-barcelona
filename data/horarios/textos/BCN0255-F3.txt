@@ -1,0 +1,15 @@
+# https://esglesia.barcelona/es/parroquies/sant-pere-nolasc/
+# 2026-10-22 · formato: html
+
+Horario de misas
+Laborables:
+08:30h. (catalán)
+18:30h. (castellano)
+Vísperas de festivo:
+08:30h.. (catalán)
+19:30h. (castellano)
+Domingos y Festivos:
+09:00h. (catalán)
+11:00h. (castellano)
+12:00h. (bilingüe)
+19:30h. (castellano)

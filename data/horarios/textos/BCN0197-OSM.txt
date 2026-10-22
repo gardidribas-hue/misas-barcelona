@@ -1,0 +1,9 @@
+# https://www.openstreetmap.org/relation/10743906
+# 2026-10-22 · formato: osm
+
+{
+ "name": "Parròquia del Sagrat Cor de Jesús",
+ "name:ca": "Parròquia del Sagrat Cor de Jesús",
+ "service_times": "Mo-Fr 08:00,20:00; Sa 20:00; Su 12:00",
+ "website": "https://www.esglesiapoblenou.cat/index.php/informacio-sagrat-cor/219-informacio-basica"
+}
