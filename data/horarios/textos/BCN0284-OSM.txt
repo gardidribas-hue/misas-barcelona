@@ -1,0 +1,9 @@
+# https://www.openstreetmap.org/relation/9157966
+# 2026-10-22 · formato: osm
+
+{
+ "name": "Parròquia de Santa Teresa del Nen Jesús",
+ "name:ca": "Parròquia de Santa Teresa del Nen Jesús",
+ "name:es": "Parroquia de Santa Teresa del Niño Jesús",
+ "service_times": "Sa 10:00-10:45,18:30-19:15,20:00-20:45; Su 11:00-11:45,12:00-12:45,20:00-20:45"
+}

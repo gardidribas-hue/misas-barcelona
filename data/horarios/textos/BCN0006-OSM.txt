@@ -1,0 +1,15 @@
+# https://www.openstreetmap.org/way/625295824
+# 2026-10-22 · formato: osm
+
+{
+ "name": "Parròquia Basílica de Santa Maria del Pi",
+ "name:ca": "Parròquia Basílica de Santa Maria del Pi",
+ "name:es": "Parroquia Basílica de Santa María del Pi",
+ "name:ko": "산타마리아 델피 성당",
+ "name:ru": "Санта Мария де пи",
+ "name:zh": "松樹聖母瑪利亞教堂",
+ "opening_hours": "Mo-Th 18:00-20:00; Fr,Sa 09:30-11:00, 18:00-20:00; Su,PH 11:00-13:00",
+ "opening_hours:visitors": "Fr-Sa 11:00-18:00",
+ "service_times": "Mo-Fr 19:00; Sa 19:00; Su,PH 12:00",
+ "website": "https://www.basilicadelpi.cat"
+}

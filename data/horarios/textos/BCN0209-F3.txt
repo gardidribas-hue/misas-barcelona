@@ -1,0 +1,8 @@
+# https://esglesia.barcelona/es/parroquies/sant-domenec-guzman/
+# 2026-10-22 · formato: html
+
+Horario de misas
+laborables: 9:30
+vísperas: 19:00
+dominicales y de las fiestas: 11:00 - 13:00
+Nota: Todas las misas son en catalán, excepto la misa de 11:00 de los domingos y fiestas

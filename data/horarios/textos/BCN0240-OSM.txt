@@ -1,0 +1,9 @@
+# https://www.openstreetmap.org/way/146984774
+# 2026-10-22 · formato: osm
+
+{
+ "name": "Sant Martí del Clot",
+ "name:ca": "Sant Martí del Clot",
+ "opening_hours": "Mo-Th 20:00-21:00; Sa 19:00-20:00; Su 10:00-13:30,20:00-21:00",
+ "service_times": "Mo-Th 20:00; Sa 19:00; Su 10:00; 11:00; 12:30; 20:00"
+}

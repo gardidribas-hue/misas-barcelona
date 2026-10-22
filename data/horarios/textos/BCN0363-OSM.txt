@@ -1,0 +1,8 @@
+# https://www.openstreetmap.org/way/571400078
+# 2026-10-22 · formato: osm
+
+{
+ "name": "M.D. de Maricel",
+ "service_times": "Fr 19:00; Sa 21:00; Su 13:00",
+ "website": "https://invarquit.cultura.gencat.cat/card/8601"
+}

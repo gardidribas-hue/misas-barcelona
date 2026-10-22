@@ -1,0 +1,11 @@
+# https://esglesia.barcelona/es/parroquies/santa-maria-del-remei/
+# 2026-10-22 · formato: html
+
+Horario de misas
+Invierno: Domingos y festivos: 10:00h, 12:00h (en español), 20:00h.
+Sábados y Vísperas de festivos de precepto: 9:00h, 19:00h (misa de víspera)
+De lunes a viernes: 9:00 h, 20:00 h.
+Verano (del lunes más cercano al 15 de julio al Domingo más cercano al 15 de septiembre):
+Domingos y festivos: 12:00h (en español), 20:00h
+Sábados y Vísperas de festivos de precepto: 19:00h (misa de víspera)
+De lunes a viernes: 20:00 h.
