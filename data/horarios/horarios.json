@@ -834,11 +834,6 @@
      "confianza": "media"
     }
    ],
-   "notas_fuente": [
-    "aviso: La missa de 20:15 se celebrarà després del dìa de la Mercè, el dia 25.",
-    "aviso: La missa de 13:00 dels diumenges se celebrarà des del dìa de la Mercè, el dia 24.",
-    "aviso: La missa de Joves dels diumenges a les 20:30 es tornarà a celebrar el darre diumenge de Setembre, el dia 27."
-   ],
    "lineas_dudosas": [
     "Les Misses són en català, excepte les marcades amb *, que són en castellà. A les Misses del dissabte a les 18’00 i del diumenge a les 11’30 i 13’00 s’utilitzen diverses llengües i es reparteixen els textos de la Missa segons la nacionalitat dels assistents.",
     "MISSA PER A JOVES: Durant el curs escolar, a les 20.30.",
@@ -863,7 +858,7 @@
    "intentos": [
     {
      "fuente": "OSM",
-     "resultado": "error: Overpass no responde: https://overpass-api.de/api/interpreter: 406 b'<html>\\r\\n<head><title>406 Not Acceptable</title></head>\\r\\n<body>\\r\\n<center><h1>406 Not Acceptable</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r\\n</h' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd' | https://overpass-api.de/api/interpreter: 406 b'<html>\\r\\n<h"
+     "resultado": "OpenStreetMap no tiene horario de misas para este templo"
     }
    ],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
@@ -888,7 +883,7 @@
     },
     {
      "fuente": "OSM",
-     "resultado": "error: Overpass no responde: https://overpass-api.de/api/interpreter: 406 b'<html>\\r\\n<head><title>406 Not Acceptable</title></head>\\r\\n<body>\\r\\n<center><h1>406 Not Acceptable</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r\\n</h' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<html>\\r\\n<head><title>504 Gateway Time-out</title></head>\\r\\n<body>\\r\\n<center><h1>504 Gateway Time-out</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r' | https://overpass-api.de/api/interpreter: 406 b'<ht"
+     "resultado": "no está en OpenStreetMap"
     }
    ],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
