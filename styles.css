@@ -580,3 +580,15 @@ body[data-tone="rosary"] { background: color-mix(in srgb, var(--backdrop) var(--
 
 .widget { border-radius: 22px; overflow: hidden; background: #fff; box-shadow: 0 0 0 1px var(--line); }
 .widget iframe { display: block; width: 100%; height: min(78vh, 900px); border: 0; }
+
+/* Fuente del horario en la ficha (horarios automáticos) */
+.srcbox { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; padding: 14px 16px; border-radius: 18px; background: var(--surface); }
+.srcbox h3 { margin: 0; }
+.srcbox h4 { margin: 4px 0 0; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.srcbox ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14px; }
+.srcbox a { color: var(--accent-strong); font-weight: 700; }
+.srcbox .warn { margin: 0; font-size: 13.5px; padding: 8px 10px; border-radius: 12px; background: var(--papa-bg); color: var(--papa-ink); }
+.srcbox .checked { margin: 0; font-size: 13px; color: var(--muted); }
+.srcbox .conf { font-size: 12px; font-weight: 700; padding: 1px 8px; border-radius: 999px; background: var(--chip); color: var(--muted); display: inline-block; }
+.srcbox .conf.c-baja { background: var(--accent-soft); color: var(--accent-strong); }
+.srcbox .seasons { padding-left: 0; list-style: none; }

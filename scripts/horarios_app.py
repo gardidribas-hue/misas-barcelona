@@ -125,6 +125,7 @@ def convertir(fecha):
                "masses": [], "confessions": [], "adoration": [], "masses_text": "", "confessions_text": "", "adoration_text": "",
                "horario": {"estado": t["estado"], "fuente": t.get("fuente"), "url": t.get("url"), "comprobado": t.get("comprobado"),
                            "confianza": t.get("confianza"), "aviso": t.get("aviso"), "oculto": t.get("oculto_por_defecto", False),
+                           "discrepancia": bool(t.get("aviso_fiabilidad")),
                            "fuentes_por_tipo": {}, "otras_temporadas": []}}
         for tipo, campo in TIPO.items():
             cs = [c for c in cels if c["tipo"] == tipo]

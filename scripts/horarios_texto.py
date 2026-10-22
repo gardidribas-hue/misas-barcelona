@@ -9,7 +9,7 @@ aparte las líneas con horas que no ha sabido interpretar, para revisarlas.
 """
 import re, unicodedata
 
-VERSION = 10  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
+VERSION = 11  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
 
 DIAS = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
 VISPERA, FESTIVO = "vispera_festivo", "festivo_precepto"
@@ -55,7 +55,9 @@ def dias_de(t, laborables=LAB5):
         s = s.replace(m.group(0), " ")
     if re.search(r"\b(cada dia|tots els dies|todos los dias|diariament|diariamente|diari[oa]s?)\b", s):
         add(*TODOS)
-    if re.search(r"\b(dies feiners|feiners?|laborables?|dies laborables|dias laborables|entre setmana|entre semana)\b", s):
+    # «Laborables: lunes, martes, jueves y viernes»: si se nombran días entre semana, valen esos y no todos los laborables.
+    if re.search(r"\b(dies feiners|feiners?|laborables?|dies laborables|dias laborables|entre setmana|entre semana)\b", s) \
+            and not any(d in DIAS[:5] for d in dias) and not any(D1[x] < 5 for x in re.findall(rf"\b({DIA_RE})\b", s)):
         add(*laborables)
     if re.search(r"\b(vigili[ae]s?|visperas? de|vispres de|vespertina)\b", s) or \
             re.search(r"\bvisperas?\b(?!\s+(solemnes|cantadas))", s):
