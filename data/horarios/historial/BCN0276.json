@@ -1,0 +1,130 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/santa-maria-de-gracia/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "08:15",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Laborables: 8:15 (catalán) y 19:30 (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-de-gracia/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Laborables: 8:15 (catalán) y 19:30 (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-de-gracia/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Sábados y vigílias: 12:30 y 19:30 Bilingües",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-de-gracia/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": "bilingue",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Sábados y vigílias: 12:30 y 19:30 Bilingües",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-de-gracia/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos y precepto: 11:30 y 12:30",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-de-gracia/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos y precepto: 11:30 y 12:30",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-de-gracia/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festivos no precepto 12:30",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-de-gracia/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]
