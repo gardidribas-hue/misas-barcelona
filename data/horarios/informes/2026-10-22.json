@@ -8,13 +8,7 @@
    "id": "BCN0092",
    "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
    "fuente": "OSM",
-   "error": "HTTP Error 406: Not Acceptable"
-  },
-  {
-   "id": "BCN0212",
-   "nombre": "Sant Ferran",
-   "fuente": "OSM",
-   "error": "HTTP Error 406: Not Acceptable"
+   "error": "Overpass no responde: https://overpass-api.de/api/interpreter: 406 b'<html>\\r\\n<head><title>406 Not Acceptable</title></head>\\r\\n<body>\\r\\n<center><h1>406 Not Acceptable</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r\\n</h' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<html>\\r\\n<head><title>504 Gateway Time-out</title></head>\\r\\n<body>\\r\\n<center><h1>504 Gateway Time-out</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r'"
   }
  ],
  "discrepancias": [],
@@ -22,7 +16,7 @@
   {
    "id": "BCN0092",
    "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
-   "motivo": "OSM: error: HTTP Error 406: Not Acceptable"
+   "motivo": "OSM: error: Overpass no responde: https://overpass-api.de/api/interpreter: 406 b'<html>\\r\\n<head><title>406 Not Acceptable</title></head>\\r\\n<body>\\r\\n<center><h1>406 Not Acceptable</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r\\n</h' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<html>\\r\\n<head><title>504 Gateway Time-out</title></head>\\r\\n<body>\\r\\n<center><h1>504 Gateway Time-out</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r'"
   }
  ],
  "pendientes": [],
@@ -34,5 +28,6 @@
     "hora fuera de 06:00–23:00: adoracion 01:00"
    ]
   }
- ]
+ ],
+ "osm": "OpenStreetMap: 540 iglesias católicas en la zona, 12 con horario de misas"
 }
