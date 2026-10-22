@@ -17,6 +17,7 @@ import argparse, datetime as dt, hashlib, io, json, math, os, pathlib, re, shuti
 import urllib.error, urllib.parse, urllib.request, urllib.robotparser
 from bs4 import BeautifulSoup
 from horarios_texto import extraer, norm, DIAS, VISPERA, FESTIVO, VERSION
+import horarios_gemini as gemini
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "horarios"
@@ -531,7 +532,30 @@ def guardar_texto(tid, fn, url, formato, texto):
     (OUT / "textos" / f"{tid}-{fn}.txt").write_text(f"# {url}\n# {HOY} · formato: {formato}\n\n{texto}\n", "utf-8")
 
 
-def confianza_f1(cels, dudosas):
+def lectura_id():
+    """Cambia el hash si cambia cómo se lee el texto (con Gemini o solo con reglas)."""
+    return f"\n# lectura: {gemini.MODELO}" if gemini.disponible() else ""
+
+
+def leer_texto(texto, nombre, informe, tid):
+    """Texto de horarios -> celebraciones. Con Gemini si hay clave; las reglas sirven de control."""
+    cels_r, dud_r, av_r = extraer(texto)
+    if not gemini.disponible():
+        return cels_r, dud_r, av_r, "reglas"
+    try:
+        cels, dud, av = gemini.extraer(texto, nombre)
+    except RuntimeError as e:
+        informe["caidas"].append({"id": tid, "nombre": nombre, "fuente": "Gemini", "error": str(e)[:200]})
+        return cels_r, dud_r, av_r, "reglas"
+    if not any(c["tipo"] == "misa" for c in cels):
+        return cels_r, dud_r, av_r, "reglas"
+    d = comparar(cels, cels_r)
+    if d:
+        dud = dud + [f"Gemini y las reglas no coinciden. Solo Gemini: {d['solo_en_F1'] or '—'}. Solo reglas: {d['solo_en_F2'] or '—'}"]
+    return cels, dud, av, "gemini"
+
+
+def confianza_f1(cels, dudosas, lectura="reglas"):
     seguro = not dudosas and not any(c.get("dias_deducidos") or c.get("idioma_incierto") for c in cels)
     return "alta" if seguro and any(c["tipo"] == "misa" for c in cels) else "media"
 
@@ -558,6 +582,7 @@ def procesar(lug, lugares, previo, estado_t, informe):
     tid = lug["id"]
     fs = lug["fuentes"]
     intentos, elegido, f2_datos, f2_debil, f2_revision = [], None, None, None, None
+    lectura = "reglas"
     for fn in orden_fuentes(lug):
         try:
             if fn == "F2":
@@ -578,18 +603,25 @@ def procesar(lug, lugares, previo, estado_t, informe):
                 if elegido:
                     break
                 texto, url, formato, notas = leer_f1(lug, fs["F1"], lugares, estado_t) if fn == "F1" else leer_f3(lug, fs["F3"])
-                cels, dudosas, avisos = extraer(texto)
+                guardar_texto(tid, fn, url, formato, texto)
+                h_texto = sha(texto + lectura_id())
+                if previo and previo.get("fuente") == fn and previo.get("celebraciones") and estado_t.get(f"{fn}_texto") == h_texto:
+                    # El texto no ha cambiado: no se vuelve a leer (ni a gastar una petición a Gemini).
+                    cels, dudosas, avisos, lectura = previo["celebraciones"], previo.get("lineas_dudosas") or [], [], "sin cambios"
+                else:
+                    cels, dudosas, avisos, lectura = leer_texto(texto, lug["nombre"], informe, tid)
+                    estado_t[f"{fn}_texto"] = h_texto
                 notas = notas + [f"aviso: {a}" for a in avisos]
                 dudosas = list(dict.fromkeys(dudosas))
-                guardar_texto(tid, fn, url, formato, texto)
                 if not any(c["tipo"] == "misa" for c in cels):
                     raise SinHorario("no se reconoce ningún horario de misa" + (f" ({len(dudosas)} líneas dudosas)" if dudosas else ""))
-                conf = confianza_f1(cels, dudosas) if fn == "F1" else "baja"
+                conf = (previo.get("confianza") if lectura == "sin cambios" else confianza_f1(cels, dudosas, lectura)) if fn == "F1" else "baja"
+                texto = texto + lectura_id()
             h = sha(texto)
             guardar_texto(tid, fn, url, formato, texto)
             intentos.append({"fuente": fn, "resultado": "ok"})
             elegido = dict(fuente=fn, url=url, formato=formato, celebraciones=cels, dudosas=dudosas, notas=notas,
-                           confianza=conf, hash=h)
+                           confianza=conf, hash=h, lectura=lectura)
             if fn != "F1" or "F2" not in fs:
                 break
         except SinHorario as e:
@@ -660,6 +692,10 @@ def procesar(lug, lugares, previo, estado_t, informe):
     for c in cels:
         c["comprobado"] = HOY
     estado_t[fn] = {"hash": elegido["hash"], "ultimo_ok": HOY}
+    if elegido.get("lectura") not in (None, "sin cambios"):
+        res["lectura"] = elegido["lectura"]
+    elif previo and previo.get("lectura"):
+        res["lectura"] = previo["lectura"]
     res.update({"estado": "ok", "fuente": fn, "url": elegido["url"], "formato": elegido["formato"], "comprobado": HOY,
                 "confianza": elegido["confianza"], "celebraciones": cels})
     if elegido["notas"]:

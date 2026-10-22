@@ -10,7 +10,7 @@ on:
         description: "IDs separados por comas (vacío = todos)"
         required: false
   push:
-    paths: [scripts/horarios.py, scripts/horarios_texto.py, scripts/horarios_app.py, data/horarios/correcciones.json, .github/workflows/horarios.yml]
+    paths: [scripts/horarios.py, scripts/horarios_texto.py, scripts/horarios_app.py, scripts/horarios_gemini.py, data/horarios/correcciones.json, .github/workflows/horarios.yml]
 permissions:
   contents: write
 concurrency: horarios
@@ -26,6 +26,8 @@ jobs:
           sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-cat tesseract-ocr-spa poppler-utils >/dev/null
           pip install -q beautifulsoup4 pypdf openpyxl
       - name: Leer las fuentes
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           IDS="${{ github.event.inputs.ids }}"
           if [ "${{ github.event_name }}" = "push" ]; then IDS="$PRUEBA"; fi
