@@ -733,3 +733,7 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 .modes button.on::after { box-shadow: 0 0 0 2px var(--gold); }
 /* La sombra de las ventanas tapaba el borde inferior de los botones de la cabecera en el móvil */
 .top { position: relative; z-index: 5; }
+/* Sin el recuadro gris al tocar las preguntas en el móvil */
+.faq summary { -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; border-radius: 20px; }
+.faq summary:focus:not(:focus-visible) { outline: none; }
+.faq details.more > summary { border-radius: 8px; }
