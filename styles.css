@@ -653,3 +653,75 @@ body[data-tone="volunteer"] { background: color-mix(in srgb, var(--backdrop) var
 }
 /* La pregunta del usuario se leía mal (letra blanca sobre rosa claro). */
 .q { color: var(--ink); }
+
+/* ---------- Propuesta: Sobre nosotros y preguntas frecuentes (turquesa) ---------- */
+[data-kind="faq"], .x-faq { --accent: #13a3a0; --accent-strong: #0b7a78; --accent-soft: #dcf4f2; --accent-ink: #ffffff; --hit: #b5e8e4; --hit-ink: #0e3433; --x-icon: #13a3a0; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) [data-kind="faq"], :root:not([data-theme="light"]) .x-faq { --accent: #9dd6d2; --accent-strong: #b6e3e0; --accent-soft: #1f3231; --accent-ink: #0f2e2d; --hit: #cdebe8; --hit-ink: #0e3433; --x-icon: #a6dad6; }
+}
+:root[data-theme="dark"] [data-kind="faq"], :root[data-theme="dark"] .x-faq { --accent: #9dd6d2; --accent-strong: #b6e3e0; --accent-soft: #1f3231; --accent-ink: #0f2e2d; --hit: #cdebe8; --hit-ink: #0e3433; --x-icon: #a6dad6; }
+body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--tone-mix), #3f9a96); }
+.faqcol { display: none; view-transition-name: faqwin; }
+.stage[data-mode="faq"] { grid-template-columns: 1fr; }
+.stage[data-mode="faq"] > :not(.faqcol) { display: none; }
+.stage[data-mode="faq"] .faqcol { display: flex; flex-direction: column; }
+
+/* Botón redondo «?» en la cabecera, junto a modo e idioma */
+.x-faq { flex: none; width: 40px; height: 40px; border: 0; border-radius: 50%; display: grid; place-items: center; cursor: pointer; background: color-mix(in srgb, var(--accent) 18%, var(--chip)); color: var(--accent-strong); transition: background .25s var(--ease), color .25s var(--ease), transform .15s var(--ease); }
+.x-faq svg { width: 22px; height: 22px; }
+.x-faq:hover { background: color-mix(in srgb, var(--accent) 30%, var(--chip)); }
+.x-faq:active { transform: scale(.94); }
+.x-faq.on { background: var(--accent); color: var(--accent-ink); }
+
+/* Preguntas desplegables */
+.faq { display: grid; gap: 10px; }
+.faq details { border-radius: 20px; background: var(--accent-soft); box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--accent) 30%, transparent); }
+.faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 17px 20px; font: 800 18px/1.3 var(--ui); color: var(--accent-strong); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: ""; flex: none; width: 10px; height: 10px; border-right: 2.4px solid currentColor; border-bottom: 2.4px solid currentColor; transform: translateY(-3px) rotate(45deg); transition: transform .25s var(--ease); }
+.faq details[open] > summary::after { transform: translateY(2px) rotate(-135deg); }
+.faq details > div { padding: 0 20px 18px; display: grid; gap: 10px; color: var(--muted); font-size: 16px; line-height: 1.55; }
+.faq details p, .faq details ul { margin: 0; }
+.faq details ul { padding-left: 20px; display: grid; gap: 6px; }
+.faq a { color: var(--accent-strong); font-weight: 700; }
+.faq mark.todo { background: #fff1a8; color: #5a4600; padding: 1px 5px; border-radius: 6px; font-weight: 600; }
+@media (max-width: 860px) {
+  .x-faq { width: 36px; height: 36px; }
+  .x-faq svg { width: 20px; height: 20px; }
+  .top-right { gap: 6px; }
+  .faq summary { padding: 15px 16px; font-size: 16.5px; }
+  .faq details > div { padding: 0 16px 16px; font-size: 15.5px; }
+}
+/* Con el botón «?» la cabecera del móvil va más justa */
+@media (max-width: 430px) {
+  .top { padding-inline: max(14px, env(safe-area-inset-left, 0px)) max(14px, env(safe-area-inset-right, 0px)); }
+  .brand { font-size: 26px; gap: 8px; }
+  .brand .b-stack { font-size: 22px; padding-left: 8px; }
+  .langs { padding: 3px; }
+  .langs svg { width: 25px; height: 25px; }
+  .x-faq { width: 33px; height: 33px; }
+}
+@media (max-width: 380px) {
+  .top { padding-inline: max(10px, env(safe-area-inset-left, 0px)) max(10px, env(safe-area-inset-right, 0px)); }
+  .top-right { gap: 4px; }
+  .brand { font-size: 23px; gap: 6px; }
+  .brand .b-stack { font-size: 19px; padding-left: 6px; }
+  .langs svg { width: 22px; height: 22px; }
+  .x-faq { width: 30px; height: 30px; }
+  .x-faq svg { width: 18px; height: 18px; }
+}
+.x-faq svg { width: 22px; height: 22px; }
+.faq summary .soon { margin-left: auto; flex: none; align-self: center; margin-top: 3px; opacity: .6; color: #a87300; font: italic 600 13px/1.3 var(--ui); }
+.faq details.off > summary { cursor: default; }
+.faq details.off > summary::after { color: var(--faint); opacity: .55; }
+:root[data-theme="dark"] .faq summary .soon { color: #e3c478; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .faq summary .soon { color: #e3c478; } }
+.faq summary > span:first-child { min-width: 0; }
+.faq details.more { background: none; box-shadow: none; border-radius: 0; display: grid; gap: 10px; }
+.faq details.more > summary { padding: 0; font: 700 15.5px/1.3 var(--ui); justify-content: flex-start; gap: 8px; }
+.faq details.more > summary::after { width: 7px; height: 7px; border-width: 2px; }
+.faq details.more[open] > summary { margin-bottom: 10px; }
+.faq details.more > p { margin: 0 0 10px; padding-left: 14px; border-left: 3px solid color-mix(in srgb, var(--accent) 45%, transparent); color: var(--muted); font: 400 16px/1.55 var(--ui); }
+.faq details.more > p:last-child { margin-bottom: 0; }
+@media (max-width: 860px) { .x-faq svg { width: 20px; height: 20px; } .faq summary .soon { font-size: 12px; align-self: center; margin-top: 0; transform: translateY(6px); } }
+@media (max-width: 380px) { .x-faq svg { width: 18px; height: 18px; } }
