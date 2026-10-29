@@ -493,7 +493,7 @@ body[data-tone="volunteer"] { background: color-mix(in srgb, var(--backdrop) var
 .extras { display: flex; gap: 6px; }
 .extras button { display: inline-flex; align-items: center; gap: 8px; border: 0; cursor: pointer; background: var(--chip); color: var(--backdrop-muted); border-radius: 999px; padding: 4px 14px 4px 4px; font: 700 14px/1 var(--ui); white-space: nowrap; transition: background .25s var(--ease), color .25s var(--ease), transform .15s var(--ease); }
 .extras .ico { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); transition: background .25s var(--ease), color .25s var(--ease), transform .4s var(--ease); }
-.extras svg { width: 17px; height: 17px; }
+.extras svg { width: 18px; height: 18px; }
 .extras button:hover { color: var(--backdrop-ink); }
 .extras button:hover .ico { transform: rotate(-8deg) scale(1.05); }
 .extras button.on { background: var(--accent); color: var(--accent-ink); }
@@ -565,8 +565,8 @@ body[data-tone="volunteer"] { background: color-mix(in srgb, var(--backdrop) var
 .fold summary::-webkit-details-marker { display: none; }
 .fold summary h3 { margin: 0; }
 .fold .chev { flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--surface); transition: background .2s; }
-.fold .chev::before { content: ""; width: 7px; height: 7px; margin-top: -3px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg); transition: transform .25s var(--ease), margin .25s; }
-.fold[open] .chev::before { transform: rotate(225deg); margin-top: 3px; }
+.fold .chev::before { content: ""; width: 7px; height: 7px; margin-top: -5.6px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg); transition: transform .25s var(--ease), margin .25s; }
+.fold[open] .chev::before { transform: rotate(225deg); margin-top: 4px; }
 .fold summary:hover .chev { background: var(--accent-soft); }
 .fold .pr-text { padding: 10px 0 2px; color: color-mix(in srgb, var(--ink) 68%, var(--bg)); animation: rise .3s var(--ease) both; }
 .ros-done { margin: 8px 0 0; color: var(--muted); font-style: italic; }
@@ -699,7 +699,7 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
   .brand .b-stack { font-size: 22px; padding-left: 8px; }
   .langs { padding: 3px; }
   .langs svg { width: 25px; height: 25px; }
-  .x-faq { width: 33px; height: 33px; }
+  .x-faq { width: 34px; height: 34px; }
 }
 @media (max-width: 380px) {
   .top { padding-inline: max(10px, env(safe-area-inset-left, 0px)) max(10px, env(safe-area-inset-right, 0px)); }
