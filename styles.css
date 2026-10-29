@@ -623,3 +623,33 @@ body[data-tone="volunteer"] { background: color-mix(in srgb, var(--backdrop) var
 .srcbox .rev.r-verde { background: rgba(46, 160, 67, .14); border-color: #2ea043; }
 .srcbox .rev.r-rojo { background: rgba(207, 34, 46, .13); border-color: #cf222e; }
 .srcbox .rev.r-amarillo { background: rgba(212, 167, 44, .18); border-color: #d4a72c; }
+
+/* ---------- Propuesta: chat compacto ---------- */
+/* Sin la lista de ideas: los ejemplos van rotando dentro de la caja. */
+.ideas { display: none; }
+.composer { position: relative; }
+.composer .ph { position: absolute; left: 24px; right: 72px; top: 50%; translate: 0 -50%; pointer-events: none; color: var(--faint); font-size: 19px; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.composer .ph.in { animation: phIn .5s var(--ease); }
+.composer.typed .ph { display: none; }
+@keyframes phIn { from { opacity: 0; transform: translateY(8px); } }
+/* Antes de la primera pregunta, la caja va justo debajo del título, centrada, como en ChatGPT o Claude. */
+.stage:not(.has-thread) .chatcol { justify-content: center; }
+.stage:not(.has-thread) .chat-scroll { flex: none; }
+.stage[data-mode="home"] .chat-scroll { justify-content: flex-start; }
+.stage:not(.has-thread) .dock { padding-bottom: 28px; }
+/* Inicio: columna más estrecha y portada más corta, para que mande el mapa. */
+.stage[data-mode="home"] { grid-template-columns: minmax(360px, 36%) 1fr; }
+.stage[data-mode="home"] .hero { padding-block: 0 8px; gap: 12px; }
+.stage[data-mode="home"] h1 { font-size: clamp(40px, 4.4vw, 64px); }
+.stage[data-mode="home"] .lede { font-size: 17px; }
+@media (max-width: 860px) {
+  .composer .ph { font-size: 17px; left: 22px; right: 66px; }
+  .stage[data-mode="home"] { grid-template-columns: 1fr; grid-template-rows: auto 56vh; }
+  .stage[data-mode="home"] .hero { padding-block: 20px 4px; }
+  .stage[data-mode="home"] h1 { font-size: 40px; }
+  .stage[data-mode="home"] .lede { display: none; }
+  .stage[data-mode="home"] .dock { padding-bottom: 18px; }
+  .stage[data-mode="home"] .mapcol { min-height: 56vh; }
+}
+/* La pregunta del usuario se leía mal (letra blanca sobre rosa claro). */
+.q { color: var(--ink); }

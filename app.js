@@ -829,7 +829,9 @@
     const input = $("chatInput");
     if (input.value && !now) return;
     const hints = t("hints");
-    input.placeholder = ($("stage").classList.contains("has-thread") && innerWidth > 1100 ? t("askMore") : "") + hints[hintIdx++ % hints.length];
+    const ph = $("chatPh");
+    ph.textContent = ($("stage").classList.contains("has-thread") && innerWidth > 1100 ? t("askMore") : "") + hints[hintIdx++ % hints.length];
+    ph.classList.remove("in"); void ph.offsetWidth; ph.classList.add("in");
   }
 
   let toastTimer;
@@ -889,13 +891,14 @@
     $("ideas").onclick = (e) => { const b = e.target.closest("button"); if (b) ask(b.textContent); };
     const input = $("chatInput");
     setPh(); setInterval(() => setPh(), 3500);
-    input.addEventListener("input", () => autosize(input));
+    const typed = () => $("chatForm").classList.toggle("typed", !!input.value);
+    input.addEventListener("input", () => { autosize(input); typed(); });
     input.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("chatForm").requestSubmit(); } });
     $("chatForm").addEventListener("submit", (e) => {
       e.preventDefault();
       const v = input.value; if (!v.trim()) return;
       const send = document.querySelector(".send"); send.classList.remove("fly"); void send.offsetWidth; send.classList.add("fly");
-      input.value = ""; autosize(input); ask(v);
+      input.value = ""; autosize(input); typed(); ask(v);
     });
 
     document.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => setMode(b.dataset.go)));
