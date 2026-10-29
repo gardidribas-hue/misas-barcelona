@@ -23,14 +23,14 @@ window.CITAS = [
    "ref": "Marcos 10, 45",
    "url": "https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/marcos/10/",
    "text": [
-    "Que tampoco el Hijo del hombre ha venido a ser servido, sino a servir y a dar su vida como rescate por muchos."
+    "…que tampoco el Hijo del hombre ha venido a ser servido, sino a servir y a dar su vida como rescate por muchos."
    ],
    "src": "Biblia de Jerusalén"
   },
   "ca": {
    "ref": "Marc 10, 45",
    "text": [
-    "Com el Fill de l’home, que no ha vingut a ser servit, sinó a servir i a donar la seva vida en rescat per tothom."
+    "…com el Fill de l’home, que no ha vingut a ser servit, sinó a servir i a donar la seva vida en rescat per tothom."
    ],
    "url": "https://www.bible.com/bible/335/MRK.10.BCI",
    "src": "Bíblia Catalana Interconfessional"
