@@ -27,13 +27,11 @@ def get(url):
 def jerusalen(path, verses):
     url = BJ.format(path)
     s = BeautifulSoup(get(url), "html.parser")
-    if "--debug" in sys.argv:
-        el = s.find(string=re.compile(rf"^\s*{verses[0]}\s*$"))
-        print("DEBUG", url, "->", el.parent.name if el else None)
-        if el:
-            print("DEBUG bloque:", str(el.parent.parent)[:1500])
-        else:
-            print("DEBUG html:", str(s)[:3000])
+    if "--debug" in sys.argv and path == "i-pedro/4":
+        html = str(s)
+        i = html.find("administradores")
+        print("DEBUG", url, "pos", i)
+        print("DEBUG trozo:", html[max(0, i - 2500):i + 600])
     out = []
     for v in verses:
         el = s.find(attrs={"data-v": str(v)}) or s.find(id=f"{v}") or s.find(id=f"v{v}")
