@@ -43,7 +43,7 @@ def jerusalen(path, verses):
 
 def limpia(paras):
     """Une los párrafos y deja la tipografía lista para ir entre «»: sin comillas de continuación (»)
-    ni de cierre sueltas, diálogos (– …) y comillas rectas como “…”, y mayúscula inicial."""
+    ni de cierre sueltas, diálogos (– …) y comillas rectas como “…”, y «…» delante si el verso empieza a media frase."""
     out = []
     for i, p in enumerate(paras):
         p = re.sub(r"^[»\s]+", "", p).strip()
@@ -55,7 +55,7 @@ def limpia(paras):
     t = re.sub(r'"([^"]+)"', r"“\1”", t)
     if t.count("»") > t.count("«"):
         t = t.rstrip("» ").strip()
-    return [t[:1].upper() + t[1:]]
+    return ["…" + t if t[:1].islower() else t]  # verso que empieza a media frase
 
 
 def main():
