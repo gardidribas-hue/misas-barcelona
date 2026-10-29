@@ -28,10 +28,12 @@ def jerusalen(path, verses):
     url = BJ.format(path)
     s = BeautifulSoup(get(url), "html.parser")
     if "--debug" in sys.argv and path == "i-pedro/4":
+        for t in s(["script", "style", "head"]):
+            t.decompose()
         html = str(s)
         i = html.find("administradores")
         print("DEBUG", url, "pos", i)
-        print("DEBUG trozo:", html[max(0, i - 2500):i + 600])
+        print("DEBUG trozo:", html[max(0, i - 1800):i + 500] if i >= 0 else html[:6000])
     out = []
     for v in verses:
         el = s.find(attrs={"data-v": str(v)}) or s.find(id=f"{v}") or s.find(id=f"v{v}")
