@@ -42,8 +42,20 @@ def jerusalen(path, verses):
 
 
 def limpia(paras):
-    """Une los párrafos y quita las comillas de continuación (» al principio) y los guiones de diálogo sueltos."""
-    return [" ".join(re.sub(r"^[»\s]+(?:[–—]\s*)?", "", p).strip() for p in paras)]
+    """Une los párrafos y deja la tipografía lista para ir entre «»: sin comillas de continuación (»)
+    ni de cierre sueltas, diálogos (– …) y comillas rectas como “…”, y mayúscula inicial."""
+    out = []
+    for i, p in enumerate(paras):
+        p = re.sub(r"^[»\s]+", "", p).strip()
+        if re.match(r"^[–—]\s*", p):
+            p = re.sub(r"^[–—]\s*", "", p)
+            p = f"“{p}”" if i else p
+        out.append(p)
+    t = " ".join(out)
+    t = re.sub(r'"([^"]+)"', r"“\1”", t)
+    if t.count("»") > t.count("«"):
+        t = t.rstrip("» ").strip()
+    return [t[:1].upper() + t[1:]]
 
 
 def main():
@@ -51,7 +63,8 @@ def main():
     for ref, path, verses in CITAS:
         item = {"es": {"ref": ref}}
         try:
-            item["es"]["text"], item["es"]["url"] = jerusalen(path, verses)
+            text, item["es"]["url"] = jerusalen(path, verses)
+            item["es"]["text"] = limpia(text)
             item["es"]["src"] = "Biblia de Jerusalén"
         except Exception as e:
             print("ES fallo", ref, e)
