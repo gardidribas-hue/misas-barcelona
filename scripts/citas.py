@@ -25,22 +25,25 @@ def get(url):
 
 
 def jerusalen(path, verses):
+    """Versos de la Biblia de Jerusalén: <section class="entry"><p><strong>10.</strong> texto</p>…"""
     url = BJ.format(path)
     s = BeautifulSoup(get(url), "html.parser")
-    if "--debug" in sys.argv and path == "i-pedro/4":
-        for t in s(["script", "style", "head"]):
-            t.decompose()
-        html = str(s)
-        i = html.find("administradores")
-        print("DEBUG", url, "pos", i)
-        print("DEBUG trozo:", html[max(0, i - 1800):i + 500] if i >= 0 else html[:6000])
-    out = []
-    for v in verses:
-        el = s.find(attrs={"data-v": str(v)}) or s.find(id=f"{v}") or s.find(id=f"v{v}")
-        if el is None:
-            raise ValueError(f"no encuentro el verso {v} en {url}")
-        out.append(re.sub(r"\s+", " ", el.get_text(" ")).strip())
-    return out, url
+    found = {}
+    for p in s.select("article.bibleChapter section.entry p"):
+        n = p.find("strong")
+        m = n and re.match(r"^(\d+)\.?$", n.get_text(strip=True))
+        if m:
+            n.decompose()
+            found[int(m.group(1))] = re.sub(r"\s+", " ", p.get_text(" ")).strip()
+    missing = [v for v in verses if not found.get(v)]
+    if missing:
+        raise ValueError(f"no encuentro los versos {missing} en {url}")
+    return [" ".join(found[v] for v in verses)], url
+
+
+def limpia(paras):
+    """Une los párrafos y quita las comillas de continuación (» al principio) y los guiones de diálogo sueltos."""
+    return [" ".join(re.sub(r"^[»\s]+(?:[–—]\s*)?", "", p).strip() for p in paras)]
 
 
 def main():
@@ -49,18 +52,20 @@ def main():
         item = {"es": {"ref": ref}}
         try:
             item["es"]["text"], item["es"]["url"] = jerusalen(path, verses)
+            item["es"]["src"] = "Biblia de Jerusalén"
         except Exception as e:
             print("ES fallo", ref, e)
         try:
             ca = bci.reading({"ref": ref, "kind": ""})
-            item["ca"] = {"ref": ca["ref"], "text": ca["text"], "url": ca["url"]}
+            item["ca"] = {"ref": ca["ref"], "text": limpia(ca["text"]), "url": ca["url"], "src": "Bíblia Catalana Interconfessional"}
         except Exception as e:
             print("CA fallo", ref, e)
         print(json.dumps(item, ensure_ascii=False))
         res.append(item)
-    if "--debug" not in sys.argv:
-        with open("data/citas.js", "w", encoding="utf-8") as f:
-            f.write("// Generado por scripts/citas.py\nwindow.CITAS = " + json.dumps(res, ensure_ascii=False, indent=1) + ";\n")
+    if any("text" not in c["es"] or "ca" not in c for c in res):
+        sys.exit("Falta alguna cita; no escribo data/citas.js")
+    with open("data/citas.js", "w", encoding="utf-8") as f:
+        f.write("// Generado por scripts/citas.py\nwindow.CITAS = " + json.dumps(res, ensure_ascii=False, indent=1) + ";\n")
 
 
 if __name__ == "__main__":
