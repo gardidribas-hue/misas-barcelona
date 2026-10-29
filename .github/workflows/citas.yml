@@ -1,0 +1,19 @@
+name: citas
+# Citas bíblicas de la pestaña Voluntariado (Biblia de Jerusalén y BCI). Solo cuando cambia el script.
+on:
+  workflow_dispatch:
+  push:
+    paths: [scripts/citas.py, .github/workflows/citas.yml]
+permissions:
+  contents: write
+concurrency: citas
+jobs:
+  citas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install beautifulsoup4
+      - run: python scripts/citas.py --debug
+        working-directory: .
+        env:
+          PYTHONPATH: scripts
