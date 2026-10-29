@@ -1,19 +1,26 @@
 # http://www.xaloc.org/ca/collegi/informacio-general/horari-escolar
-# 2026-10-22 · formato: html
+# 2026-10-29 · formato: html
 
 Xaloc - Horari escolar
 Per demanar més informació ompli el següent formulari:
 Horari escolar
 PRIMÀRIA:
 - Cicle inicial: 9h a 13h – 14.45h a 16.45h
-- Cicle mitjà: 9h a 13.15h – 14.45 a 16.45h
-- Cicle superior: 9h a 13.15h – 14.45 a 16.45h
+- Cicle mitjà: 9h a 13.15h – 14.45h a 16.45h
+- Cicle superior: 9h a 13.15h – 14.45h a 16.45h
 ESO: 9h a 13.40h – 15.10h a 17h
 BATXILLERAT: 8h a 14.35h
 BATXILLERAT INTERNACIONAL: 8h a 14.35h – 15.30h a 17h
 CICLES FORMATIUS: 8h a 14.30h
 Servei d’Acollida Matinal
-El col·legi obrirà a les 8.30h del matí i tancarà després de la sortida dels alumnes, a les 17h de la tarda.
-Els alumnes que ho necessitin es podran inscriure al Servei d’Acollida Matinal, a partir de les 8h. Abans no serà possible entrar al col·legi.
+El col·legi obrirà a les 8.30 h i tancarà a les 17 h, després de la sortida dels alumnes.
+Les famílies que ho necessitin podran inscriure els seus fills al Servei d’Acollida Matinal, disponible a partir de les 8 h. Abans d’aquesta hora no serà possible accedir al col·legi.
+Servei d’Acollida del Migdia
+Per als alumnes que dinen fora del col·legi, l’horari d’entrada serà el següent:
+Primària: 14.30 h
+Secundària: 15 h
+Les famílies que necessitin que els seus fills entrin al col·legi abans de l’horari establert podran fer ús del Servei d’Acollida del Migdia.
+Servei d’Acollida de Tarda
+Les famílies que necessitin deixar els seus fills al col·legi a la tarda podran fer ús del Servei d’Acollida de Tarda, disponible de les 17 h a les 18 h.
 Projecte educatiu
 Horari escolar

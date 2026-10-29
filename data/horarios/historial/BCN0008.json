@@ -1,0 +1,42 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sants-just-i-pastor-basilica/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Sábados a las 20.00 h, en catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sants-just-i-pastor-basilica/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos a las 11.00 h, en catalán",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sants-just-i-pastor-basilica/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

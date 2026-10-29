@@ -1,0 +1,268 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F1",
+  "url": "https://www.montalegre.org/es/horarios/misas/",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos y días de precepto | 11:00",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "18:00 | 12:00",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "18:00 | 12:00",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:00",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Festivos que no son de precepto | 11:00",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "18:00 | 12:00",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "18:00 | 12:00",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "festivo_precepto"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:00",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Lunes a sábado | 12:00",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "18:00 | 10:00",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "18:00 | 10:00",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19:00",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "A las 19:30h conferencia La Santa Sede y los lefebvrianos. Un cisma en la Iglesia, a cargo de Mn. Emili Gil, Provicario de la Archidiócesis de Barcelona.",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "A las 20h CONCIERTO DE NAVIDAD Gospel Imma – Just Gospel (Director Josep Beuter).",
+    "fuente": "F1",
+    "url": "https://www.montalegre.org/es/horarios/misas/",
+    "comprobado": "2026-10-22",
+    "confianza": "media"
+   }
+  ]
+ }
+]
