@@ -3,10 +3,10 @@ window.CITAS = [
  {
   "es": {
    "ref": "Gálatas 6, 10",
+   "url": "https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/galatas/6/",
    "text": [
     "Así que, mientras tengamos oportunidad, hagamos el bien a todos, pero especialmente a nuestros hermanos en la fe."
    ],
-   "url": "https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/galatas/6/",
    "src": "Biblia de Jerusalén"
   },
   "ca": {
@@ -21,16 +21,16 @@ window.CITAS = [
  {
   "es": {
    "ref": "Marcos 10, 45",
-   "text": [
-    "que tampoco el Hijo del hombre ha venido a ser servido, sino a servir y a dar su vida como rescate por muchos.»"
-   ],
    "url": "https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/marcos/10/",
+   "text": [
+    "Que tampoco el Hijo del hombre ha venido a ser servido, sino a servir y a dar su vida como rescate por muchos."
+   ],
    "src": "Biblia de Jerusalén"
   },
   "ca": {
    "ref": "Marc 10, 45",
    "text": [
-    "com el Fill de l’home, que no ha vingut a ser servit, sinó a servir i a donar la seva vida en rescat per tothom."
+    "Com el Fill de l’home, que no ha vingut a ser servit, sinó a servir i a donar la seva vida en rescat per tothom."
    ],
    "url": "https://www.bible.com/bible/335/MRK.10.BCI",
    "src": "Bíblia Catalana Interconfessional"
@@ -39,10 +39,10 @@ window.CITAS = [
  {
   "es": {
    "ref": "Santiago 2, 15-17",
+   "url": "https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/santiago/2/",
    "text": [
     "Si un hermano o una hermana están desnudos y carecen del sustento diario, y alguno de vosotros les dice: «Idos en paz, calentaos y hartaos», pero no les dais lo necesario para el cuerpo, ¿de qué sirve? Así también la fe, si no tiene obras, está realmente muerta."
    ],
-   "url": "https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/santiago/2/",
    "src": "Biblia de Jerusalén"
   },
   "ca": {
@@ -57,16 +57,16 @@ window.CITAS = [
  {
   "es": {
    "ref": "Mateo 25, 40",
-   "text": [
-    "Y el Rey les dirá: \"En verdad os digo que cuanto hicisteis a unos de estos hermanos míos más pequeños, a mí me lo hicisteis.\""
-   ],
    "url": "https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/mateo/25/",
+   "text": [
+    "Y el Rey les dirá: “En verdad os digo que cuanto hicisteis a unos de estos hermanos míos más pequeños, a mí me lo hicisteis.”"
+   ],
    "src": "Biblia de Jerusalén"
   },
   "ca": {
    "ref": "Mateu 25, 40",
    "text": [
-    "El rei els respondrà: En veritat us ho dic: tot allò que fèieu a un d’aquests germans meus més petits, m’ho fèieu a mi."
+    "El rei els respondrà: “En veritat us ho dic: tot allò que fèieu a un d’aquests germans meus més petits, m’ho fèieu a mi.”"
    ],
    "url": "https://www.bible.com/bible/335/MAT.25.BCI",
    "src": "Bíblia Catalana Interconfessional"
@@ -75,10 +75,10 @@ window.CITAS = [
  {
   "es": {
    "ref": "2 Corintios 9, 7",
+   "url": "https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/ii-corintios/9/",
    "text": [
     "Cada cual dé según el dictamen de su corazón, no de mala gana ni forzado, pues: Dios ama al que da con alegría."
    ],
-   "url": "https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/ii-corintios/9/",
    "src": "Biblia de Jerusalén"
   },
   "ca": {
@@ -93,10 +93,10 @@ window.CITAS = [
  {
   "es": {
    "ref": "1 Pedro 4, 10",
+   "url": "https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/i-pedro/4/",
    "text": [
     "Que cada cual ponga al servicio de los demás la gracia que ha recibido, como buenos administradores de las diversas gracias de Dios."
    ],
-   "url": "https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/i-pedro/4/",
    "src": "Biblia de Jerusalén"
   },
   "ca": {
