@@ -1,0 +1,74 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F1",
+  "url": "https://jesuites.net/es/agenda-esglesies",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Hora: 19:00",
+    "fuente": "F1",
+    "url": "https://jesuites.net/es/agenda-esglesies",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "20:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Hora: 20:30",
+    "fuente": "F1",
+    "url": "https://jesuites.net/es/agenda-esglesies",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Hora: 19:00",
+    "fuente": "F1",
+    "url": "https://jesuites.net/es/agenda-esglesies",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "17:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Hora: 17:30",
+    "fuente": "F1",
+    "url": "https://jesuites.net/es/agenda-esglesies",
+    "comprobado": "2026-10-22",
+    "confianza": "alta"
+   }
+  ]
+ }
+]

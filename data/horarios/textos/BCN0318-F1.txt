@@ -1,5 +1,5 @@
 # https://www.hospitalgermanstrias.cat/web/guest/horaris
-# 2026-10-22 · formato: html
+# 2026-10-29 · formato: html
 
 Horaris de l'hospital - Germans Trias Salta al contigut
 Idioma:

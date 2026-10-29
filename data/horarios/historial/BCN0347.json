@@ -1,0 +1,59 @@
+[
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/santa-maria-2/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "bilingue",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Jueves: 10 h. (bilingüe) en la Parroquia de Santa María",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "bilingue",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Primeros sábados de mes: 10 h. (bilingüe) en la Parroquia de Santa María",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": "bilingue",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos y festivos: 12 h. (bilingüe) en la Capilla del Carmen",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-maria-2/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
+ }
+]

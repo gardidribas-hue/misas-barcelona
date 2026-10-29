@@ -158,5 +158,179 @@
     "confianza": "alta"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/santa-eulalia-de-merida/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-05",
+     "fin": "09-20"
+    },
+    "semanas_mes": [],
+    "notas": "Sábado: 20:00 h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-eulalia-de-merida/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "10:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-05",
+     "fin": "09-20"
+    },
+    "semanas_mes": [],
+    "notas": "Domingo: 10:30 h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-eulalia-de-merida/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "18:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-05",
+     "fin": "09-20"
+    },
+    "semanas_mes": [],
+    "notas": "Sábado: 18:30 h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-eulalia-de-merida/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-05",
+     "fin": "09-20"
+    },
+    "semanas_mes": [],
+    "notas": "Domingo: 12:30 h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-eulalia-de-merida/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "miercoles",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-05",
+     "fin": "09-20"
+    },
+    "semanas_mes": [],
+    "notas": "Lunes, miércoles y viernes: 20:00 h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-eulalia-de-merida/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "martes",
+     "jueves",
+     "sabado"
+    ],
+    "inicio": "09:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-05",
+     "fin": "09-20"
+    },
+    "semanas_mes": [],
+    "notas": "Martes, jueves y sábado: 9:30 h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-eulalia-de-merida/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "martes",
+     "jueves"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-05",
+     "fin": "09-20"
+    },
+    "semanas_mes": [],
+    "notas": "Martes y jueves: 20:00 h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-eulalia-de-merida/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": "otro",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-05",
+     "fin": "09-20"
+    },
+    "semanas_mes": [],
+    "notas": "La comunidad polaca celebra misa en polaco todos los domingos a las 18:00 h. en Santa Eulalia de Mérida.",
+    "idioma_detalle": "polaco",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/santa-eulalia-de-merida/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
  }
 ]

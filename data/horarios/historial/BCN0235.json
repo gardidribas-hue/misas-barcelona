@@ -59,5 +59,68 @@
     "confianza": "baja"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-22",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-llorenc/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "De Lunes a Sábado: 19:30h (catalán)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-llorenc/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "D​omingo y fiestas de precepto​: 11:00h​ (catalán)​, 13:00h (castell​ano​)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-llorenc/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "D​omingo y fiestas de precepto​: 11:00h​ (catalán)​, 13:00h (castell​ano​)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-llorenc/",
+    "comprobado": "2026-10-22",
+    "confianza": "baja"
+   }
+  ]
  }
 ]
