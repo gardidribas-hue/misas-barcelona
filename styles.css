@@ -725,3 +725,11 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 .faq details.more > p:last-child { margin-bottom: 0; }
 @media (max-width: 860px) { .x-faq svg { width: 20px; height: 20px; } .faq summary .soon { font-size: 11px; } }
 @media (max-width: 380px) { .x-faq svg { width: 18px; height: 18px; } }
+
+/* Modo claro/oscuro: el aro va en el botón y no en el SVG atenuado (Safari lo recortaba) */
+.modes button { position: relative; }
+.modes button svg, .modes button.on svg { box-shadow: none; }
+.modes button::after { content: ""; position: absolute; inset: 3px; border-radius: 50%; box-shadow: 0 0 0 1.5px var(--ring); pointer-events: none; }
+.modes button.on::after { box-shadow: 0 0 0 2px var(--gold); }
+/* La sombra de las ventanas tapaba el borde inferior de los botones de la cabecera en el móvil */
+.top { position: relative; z-index: 5; }
