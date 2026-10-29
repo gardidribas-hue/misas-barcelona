@@ -5,6 +5,7 @@ y devuelve el mismo fragmento en la BCI, con el título de la lectura en catalá
 """
 import re, unicodedata, urllib.request
 from bs4 import BeautifulSoup
+import catala
 
 VERSION = 335  # BCI en bible.com
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36"}
@@ -163,7 +164,7 @@ def passage(usfm, ranges):
                     continue
                 for junk in v.find_all(lambda t: has_cls(t, "note") or has_cls(t, "label")):
                     junk.decompose()
-                t = re.sub(r"\s+", " ", v.get_text("")).strip()
+                t = re.sub(r"\s+", " ", catala.fix_bci(v.get_text(""))).strip()
                 if t:
                     parts.append(t)
             if not parts:

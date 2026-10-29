@@ -1,15 +1,17 @@
 """Descarga las lecturas de la misa y las guarda en data/palabra/AAAA-MM-DD.json.
 
 Castellano: Vatican News (Palabra del día).
-Català: las mismas citas en la Bíblia Catalana Interconfessional (bible.com, ver bci.py);
-el nombre del día y la reflexión de los Papas se traducen con Apertium.
+Català: las mismas citas en la Bíblia Catalana Interconfessional (bible.com, ver bci.py).
+Lo único que se traduce es el nombre del día y la reflexión de los Papas: Google Translate (si falla,
+Apertium) y después se pasan los nombres propios a su forma catalana y se quitan las marcas y
+entidades HTML sueltas (ver catala.py).
 Lo ejecuta cada día la acción de GitHub «contenido»; también se puede lanzar a mano:
     pip install beautifulsoup4 && python scripts/palabra.py
 """
-import datetime as dt, json, pathlib, re, sys, urllib.request
+import datetime as dt, json, pathlib, re, sys, time, urllib.request
 from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
-import bci
+import bci, catala
 
 OUT = pathlib.Path(__file__).resolve().parent.parent / "data" / "palabra"
 UA = {"User-Agent": "Mozilla/5.0 (misas-barcelona; +https://gardidribas-hue.github.io/misas-barcelona/)"}
@@ -22,7 +24,7 @@ def get(url):
 
 
 def clean(s):
-    return re.sub(r"[ \t ]+", " ", s).strip()
+    return re.sub(r"[ \t ]+", " ", catala.unescape(s)).strip()
 
 
 def paras(el):
@@ -86,26 +88,32 @@ def vatican(day):
     return out
 
 
-def translate_ca(paras, prefer_google=False):
-    """Traducción automática castellano -> catalán (Apertium; si falla, Google Translate).
-    Para el nombre del día va mejor Google: Apertium deja sin traducir «Domingo» o los nombres de santos."""
+def translate_ca(paras):
+    """Traducción automática castellano -> catalán: Google Translate (más natural y traduce los nombres);
+    si falla, Apertium. Después se arreglan nombres propios, comillas y marcas sueltas (catala.py)."""
     import urllib.parse
     def apertium(q):
         url = "https://www.apertium.org/apy/translate?" + urllib.parse.urlencode({"langpair": "spa|cat", "markUnknown": "no", "q": q})
         with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
             return json.loads(r.read())["responseData"]["translatedText"]
     def google(q):
-        url = "https://translate.googleapis.com/translate_a/single?" + urllib.parse.urlencode({"client": "gtx", "sl": "es", "tl": "ca", "dt": "t", "q": q})
-        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
+        data = urllib.parse.urlencode({"client": "gtx", "sl": "es", "tl": "ca", "dt": "t", "q": q}).encode()
+        req = urllib.request.Request("https://translate.googleapis.com/translate_a/single", data=data, headers=UA)
+        with urllib.request.urlopen(req, timeout=40) as r:
             return "".join(seg[0] for seg in json.loads(r.read())[0])
-    engines = [("Apertium", apertium), ("Google Translate", google)]
-    for name, fn in (engines[::-1] if prefer_google else engines):
-        try:
-            out = [clean(fn(p)) for p in paras]
-            if all(out):
-                return out, name
-        except Exception as e:
-            print("traducción", name, "ERROR", e)
+    def all_at_once(fn):  # una sola petición por texto: Google corta si se le piden muchas seguidas
+        src = [catala.prepare(p) for p in paras]
+        out = [t for t in re.split(r"\n\s*\n", fn("\n\n".join(src))) if t.strip()]
+        return out if len(out) == len(src) else [fn(p) for p in src]
+    for name, fn in (("Google Translate", google), ("Apertium", apertium)):
+        for wait in (0, 10, 30):
+            time.sleep(wait)
+            try:
+                out = [catala.fix(t) for t in all_at_once(fn)]
+                if all(out):
+                    return out, name
+            except Exception as e:
+                print("traducción", name, "ERROR", e)
     raise ValueError("sin traducción")
 
 
@@ -166,7 +174,7 @@ def catalan(day, es):
     title = ""
     if es.get("title"):  # el mismo nombre del día que en castellano, traducido
         try:
-            title = translate_ca([es["title"]], prefer_google=True)[0][0]
+            title = translate_ca([es["title"]])[0][0]
         except Exception:
             pass
     out = {"title": title, "url": readings[-1].pop("url"), "source": "Bíblia Catalana Interconfessional",
