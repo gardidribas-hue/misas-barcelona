@@ -23,6 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
+          sudo apt-get update -qq
           sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-cat tesseract-ocr-spa poppler-utils >/dev/null
           pip install -q beautifulsoup4 pypdf openpyxl
       - name: Leer las fuentes

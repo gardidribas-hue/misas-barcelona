@@ -1,0 +1,48 @@
+{
+ "fecha": "2026-10-29",
+ "revisados": 5,
+ "actualizados": [
+  {
+   "id": "BCN0213",
+   "nombre": "Sant Francesc d'Assís",
+   "fuente": "F3",
+   "celebraciones": 6
+  }
+ ],
+ "cambios": [
+  {
+   "id": "BCN0213",
+   "nombre": "Sant Francesc d'Assís",
+   "fuente": "F3",
+   "antes": 8,
+   "ahora": 6
+  }
+ ],
+ "caidas": [
+  {
+   "id": "BCN0213",
+   "nombre": "Sant Francesc d'Assís",
+   "fuente": "F1",
+   "error": "<urlopen error timed out>"
+  }
+ ],
+ "discrepancias": [],
+ "sin_horario": [
+  {
+   "id": "BCN0092",
+   "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  }
+ ],
+ "pendientes": [],
+ "sospechosos": [
+  {
+   "id": "BCN0003",
+   "nombre": "Basílica de la Puríssima Concepció",
+   "motivos": [
+    "hora fuera de 06:00–23:00: adoracion 01:00"
+   ]
+  }
+ ],
+ "osm": "OpenStreetMap: 540 iglesias católicas en la zona, 12 con horario de misas"
+}
