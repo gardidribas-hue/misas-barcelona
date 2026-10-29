@@ -599,7 +599,9 @@ body[data-tone="volunteer"] { background: color-mix(in srgb, var(--backdrop) var
   .reading { font-size: 19px; line-height: 1.7; }
   .reading h2, .ros-mys h2 { font-size: 23px; }
   .ros-text { font-size: 19px; }
-  .vol-cita blockquote { font-size: 18px; }
+  .vol-cita { padding-left: 14px; gap: 6px; }
+  .vol-cita blockquote { font-size: 16px; line-height: 1.5; }
+  .vol-cita figcaption { font-size: 12px; }
   .pr h3 { font-size: 21px; }
 }
 
