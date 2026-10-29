@@ -711,9 +711,9 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
   .x-faq svg { width: 18px; height: 18px; }
 }
 .x-faq svg { width: 22px; height: 22px; }
-.faq summary .soon { margin-left: auto; flex: none; padding: 2px 7px; border-radius: 5px; background: rgba(250, 204, 21, .32); color: var(--accent-strong); font: italic 600 14px/1.3 var(--ui); }
-:root[data-theme="dark"] .faq summary .soon { background: rgba(250, 204, 21, .2); color: #f3dc8c; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .faq summary .soon { background: rgba(250, 204, 21, .2); color: #f3dc8c; } }
+.faq summary .soon { margin-left: auto; flex: none; color: #a87300; font: italic 700 14.5px/1.3 var(--ui); }
+:root[data-theme="dark"] .faq summary .soon { color: #e3c478; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .faq summary .soon { color: #e3c478; } }
 .faq summary > span:first-child { min-width: 0; }
 .faq details.more { background: none; box-shadow: none; border-radius: 0; display: grid; gap: 10px; }
 .faq details.more > summary { padding: 0; font: 700 15.5px/1.3 var(--ui); justify-content: flex-start; gap: 8px; }
@@ -721,5 +721,5 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 .faq details.more[open] > summary { margin-bottom: 10px; }
 .faq details.more > p { margin: 0 0 10px; padding-left: 14px; border-left: 3px solid color-mix(in srgb, var(--accent) 45%, transparent); color: var(--muted); font: 400 16px/1.55 var(--ui); }
 .faq details.more > p:last-child { margin-bottom: 0; }
-@media (max-width: 860px) { .x-faq svg { width: 20px; height: 20px; } .faq summary .soon { font-size: 13px; padding: 2px 6px; } }
+@media (max-width: 860px) { .x-faq svg { width: 20px; height: 20px; } .faq summary .soon { font-size: 13.5px; } }
 @media (max-width: 380px) { .x-faq svg { width: 18px; height: 18px; } }
