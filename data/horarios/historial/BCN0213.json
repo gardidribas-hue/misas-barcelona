@@ -1145,5 +1145,137 @@
     "confianza": "media"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-29",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Lunes a sábado: 20h",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+    "comprobado": "2026-10-29",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Domingo: 11:30h, 18:30h (italiano, no hay durante el verano) y 20:00h (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+    "comprobado": "2026-10-29",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "18:30",
+    "fin": null,
+    "idioma": "otro",
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Domingo: 11:30h, 18:30h (italiano, no hay durante el verano) y 20:00h (castellano)",
+    "idioma_detalle": "italiano",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+    "comprobado": "2026-10-29",
+    "confianza": "baja",
+    "corregido": {
+     "motivo": "La misa del domingo a las 18:30 es en italiano (el PDF lo indica con un símbolo)",
+     "por": "Guillem",
+     "fecha": "2026-10-22"
+    }
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Domingo: 11:30h, 18:30h (italiano, no hay durante el verano) y 20:00h (castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+    "comprobado": "2026-10-29",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "17:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Cada viernes: de 17:30h hasta la misa",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+    "comprobado": "2026-10-29",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Media hora antes de misa y durante la adoración",
+    "relativa_a_misa": {
+     "minutos_antes": 30
+    },
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+    "comprobado": "2026-10-29",
+    "confianza": "baja"
+   }
+  ]
  }
 ]
