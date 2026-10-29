@@ -1,0 +1,25 @@
+name: citas
+# Citas bíblicas de la pestaña Voluntariado (Biblia de Jerusalén y BCI). Solo cuando cambia el script.
+on:
+  workflow_dispatch:
+  push:
+    paths: [scripts/citas.py, .github/workflows/citas.yml]
+permissions:
+  contents: write
+concurrency: citas
+jobs:
+  citas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install beautifulsoup4
+      - run: python scripts/citas.py
+      - name: Guardar cambios
+        run: |
+          git config user.name "misas-barcelona bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/citas.js
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "Citas de Voluntariado actualizadas"
+          git pull --rebase -q origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

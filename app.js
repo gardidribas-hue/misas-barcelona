@@ -763,6 +763,15 @@
     document.querySelectorAll("#modes button").forEach((b) => { const l = t(b.dataset.mode === "dark" ? "themeDark" : "themeLight"); b.title = l; b.setAttribute("aria-label", l); });
     applyTheme();
     $("ideas").innerHTML = t("ideas").map((q) => `<li><button type="button">${esc(q)}</button></li>`).join("");
+    renderCita();
+  }
+  // Cita bíblica de Voluntariado: cambia cada medio día (castellano: Biblia de Jerusalén; catalán: BCI)
+  function renderCita() {
+    const box = $("volCita"), all = (window.CITAS || []).filter((c) => c.es && c.es.text && c.ca && c.ca.text);
+    if (!box || !all.length) return;
+    const pick = all[Math.floor(Date.now() / 432e5) % all.length], c = pick[LNG] || pick.es;
+    box.innerHTML = `<blockquote>${c.text.map((p) => `<p>${esc(p)}</p>`).join("")}</blockquote><figcaption>${esc(c.ref)}${c.src ? ` <small>${esc(c.src)}</small>` : ""}</figcaption>`;
+    box.hidden = false;
   }
   // Modo claro / oscuro: por defecto el del sistema; la elección se recuerda en el navegador.
   const darkMQ = window.matchMedia ? matchMedia("(prefers-color-scheme: dark)") : null;

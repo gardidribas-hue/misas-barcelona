@@ -572,6 +572,13 @@ body[data-tone="volunteer"] { background: color-mix(in srgb, var(--backdrop) var
 .ros-done { margin: 8px 0 0; color: var(--muted); font-style: italic; }
 
 /* Voluntariado (naranja): de momento, tarjetas de lo que vendrá */
+.vol-cita { margin: 2px 0 4px; padding: 4px 0 4px 20px; border-left: 3px solid var(--accent); display: grid; gap: 8px; }
+.vol-cita blockquote { margin: 0; display: grid; gap: 6px; font: italic 400 20px/1.55 var(--read); color: var(--ink); text-wrap: pretty; }
+.vol-cita blockquote p { margin: 0; }
+.vol-cita blockquote p:first-child::before { content: "«"; }
+.vol-cita blockquote p:last-child::after { content: "»"; }
+.vol-cita figcaption { font: 700 13px/1.3 var(--ui); letter-spacing: .04em; color: var(--accent-strong); }
+.vol-cita figcaption small { margin-left: 6px; font-weight: 500; letter-spacing: 0; color: var(--faint); }
 .vol-grid { list-style: none; margin: 4px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
 .vol-grid li { display: grid; align-content: start; gap: 8px; padding: 20px 20px 22px; border-radius: 22px; background: var(--accent-soft); box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--accent) 35%, transparent); }
 .vol-ico { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; background: var(--bg); color: var(--accent-strong); }
@@ -592,6 +599,9 @@ body[data-tone="volunteer"] { background: color-mix(in srgb, var(--backdrop) var
   .reading { font-size: 19px; line-height: 1.7; }
   .reading h2, .ros-mys h2 { font-size: 23px; }
   .ros-text { font-size: 19px; }
+  .vol-cita { padding-left: 14px; gap: 6px; }
+  .vol-cita blockquote { font-size: 16px; line-height: 1.5; }
+  .vol-cita figcaption { font-size: 12px; }
   .pr h3 { font-size: 21px; }
 }
 
