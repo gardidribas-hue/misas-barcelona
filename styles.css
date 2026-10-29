@@ -679,7 +679,7 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 .faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 17px 20px; font: 800 18px/1.3 var(--ui); color: var(--accent-strong); }
 .faq summary::-webkit-details-marker { display: none; }
 .faq summary::after { content: ""; flex: none; width: 10px; height: 10px; border-right: 2.4px solid currentColor; border-bottom: 2.4px solid currentColor; transform: translateY(-3px) rotate(45deg); transition: transform .25s var(--ease); }
-.faq details[open] summary::after { transform: translateY(2px) rotate(-135deg); }
+.faq details[open] > summary::after { transform: translateY(2px) rotate(-135deg); }
 .faq details > div { padding: 0 20px 18px; display: grid; gap: 10px; color: var(--muted); font-size: 16px; line-height: 1.55; }
 .faq details p, .faq details ul { margin: 0; }
 .faq details ul { padding-left: 20px; display: grid; gap: 6px; }
@@ -710,3 +710,14 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
   .x-faq { width: 30px; height: 30px; }
   .x-faq svg { width: 18px; height: 18px; }
 }
+.x-faq svg { width: 24px; height: 24px; }
+.faq summary .soon { margin-left: auto; flex: none; padding: 3px 10px; border-radius: 999px; background: var(--bg); color: var(--accent-strong); font: 700 12px/1.2 var(--ui); letter-spacing: .02em; }
+.faq summary > span:first-child { min-width: 0; }
+.faq details.more { background: none; box-shadow: none; border-radius: 0; display: grid; gap: 10px; }
+.faq details.more > summary { padding: 0; font: 700 15.5px/1.3 var(--ui); justify-content: flex-start; gap: 8px; }
+.faq details.more > summary::after { width: 7px; height: 7px; border-width: 2px; }
+.faq details.more[open] > summary { margin-bottom: 10px; }
+.faq details.more > p { margin: 0 0 10px; padding-left: 14px; border-left: 3px solid color-mix(in srgb, var(--accent) 45%, transparent); color: var(--muted); font: 400 16px/1.55 var(--ui); }
+.faq details.more > p:last-child { margin-bottom: 0; }
+@media (max-width: 860px) { .x-faq svg { width: 22px; height: 22px; } .faq summary .soon { font-size: 11px; padding: 3px 8px; } }
+@media (max-width: 380px) { .x-faq svg { width: 20px; height: 20px; } }
