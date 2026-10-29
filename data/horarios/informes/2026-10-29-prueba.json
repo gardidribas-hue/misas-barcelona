@@ -1,23 +1,8 @@
 {
  "fecha": "2026-10-29",
  "revisados": 5,
- "actualizados": [
-  {
-   "id": "BCN0213",
-   "nombre": "Sant Francesc d'Assís",
-   "fuente": "F1",
-   "celebraciones": 8
-  }
- ],
- "cambios": [
-  {
-   "id": "BCN0213",
-   "nombre": "Sant Francesc d'Assís",
-   "fuente": "F1",
-   "antes": 6,
-   "ahora": 8
-  }
- ],
+ "actualizados": [],
+ "cambios": [],
  "caidas": [],
  "discrepancias": [],
  "sin_horario": [
