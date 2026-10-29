@@ -904,6 +904,8 @@
     });
 
     document.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => setMode(b.dataset.go)));
+    // Preguntas de «Próximamente»: aún no se abren
+    document.querySelectorAll(".faq details.off > summary").forEach((sm) => sm.addEventListener("click", (e) => e.preventDefault()));
     document.querySelectorAll(".seg.kinds button").forEach((b) => b.onclick = () => { state.kind = b.dataset.kind; if (state.mode === "home") setMode("map"); applyFilters(); });
     const on = (id, key, num) => $(id).onchange = (e) => { state[key] = num ? Number(e.target.value) : e.target.value; applyFilters(); };
     on("fDay", "day"); on("fFrom", "from", true); on("fTo", "to", true); on("fLang", "lang");
