@@ -1,0 +1,27 @@
+name: revision
+# Cuando Guillem sube el Excel de revisión (columna D), la web muestra su horario y el aviso de fiabilidad.
+# No vuelve a leer las webs: eso lo hace cada lunes la acción «horarios».
+on:
+  push:
+    branches: [main]
+    paths: [data/horarios/Horarios_revision.xlsx]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: horarios
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q openpyxl
+      - run: python scripts/horarios_app.py
+      - name: Guardar cambios
+        run: |
+          git config user.name "misas-barcelona bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/horarios/horarios_app.js
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -q -m "Horarios revisados a mano ($(date -u +%F))"
+          git pull --rebase -X theirs -q origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

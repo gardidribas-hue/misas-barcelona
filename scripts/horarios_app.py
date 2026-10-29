@@ -5,11 +5,14 @@ textos libres. Este script, para cada templo:
   - elige las celebraciones de la temporada vigente en la fecha indicada (por defecto, hoy);
   - pasa a texto lo que no es una hora fija: confesiones «antes de misa», «primer viernes», etc.;
   - guarda el resto de temporadas como texto, y la fuente, su enlace, la fecha de comprobación y la confianza;
-  - lo enlaza con la parroquia de data/parroquias.json que está en el mismo sitio (si la hay).
+  - lo enlaza con la parroquia de data/parroquias.json que está en el mismo sitio (si la hay);
+  - aplica la revisión a mano del Excel de revisión (horarios_excel.py): estado de fiabilidad y, si manda
+    la revisión, su horario en lugar del leído.
     python scripts/horarios_app.py [--fecha 2026-10-21]
 """
 import argparse, datetime as dt, json, math, pathlib, re
 from horarios_texto import norm
+import horarios_excel
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 H = ROOT / "data" / "horarios"
@@ -95,6 +98,36 @@ def resumen_temporada(cs):
     return " · ".join(f"{k[0].upper()}{k[1:]}: {', '.join(sorted(set(v)))}" for k, v in grupos.items())
 
 
+def aplicar_revision(rec, t, rev, md):
+    """Columna D del Excel de revisión: estado de fiabilidad (columna E) y, si manda la revisión, su horario."""
+    cels = (t.get("celebraciones") or []) if t.get("estado") in ("ok", "pendiente de verificar") else []
+    c = horarios_excel.horario_txt(cels, md) if cels else ""
+    fuente = horarios_excel.FUENTE.get(t.get("fuente"), "") if c else ""
+    r = rev.get(rec["bcn_id"]) or {}
+    codigo, muestra = horarios_excel.estado(c, r.get("revisado", ""), fuente, r.get("web", ""))
+    if codigo == "sin_horario" and cels:  # algo leído que no cabe en el texto (p. ej. solo «primer domingo»)
+        codigo = "sin_revisar" if t.get("fuente") == "F1" else "sin_revisar_otra"
+    h = rec["horario"]
+    h["revision"] = codigo
+    if muestra != "D":
+        return
+    revisadas, libres = horarios_excel.leer_horario(r.get("revisado", ""))
+    for campo in TIPO.values():
+        rec[campo], rec[campo + "_text"] = [], ""
+    for c_ in revisadas:
+        ev = {"days": [DIA[x] for x in c_["dias"] if x in DIA], "start": c_["inicio"]}
+        if c_["tipo"] != "misa" and c_.get("fin"):
+            ev["end"] = c_["fin"]
+        if ev["days"]:
+            rec[TIPO[c_["tipo"]]].append(ev)
+    for tipo, textos in libres.items():
+        rec[TIPO[tipo] + "_text"] = " ".join(x.rstrip(".") + "." for x in textos)
+    for campo in TIPO.values():
+        rec[campo].sort(key=lambda e: e["start"])
+    h.update({"estado": "ok", "fuente": "REV", "url": None, "confianza": None, "oculto": False, "discrepancia": False,
+              "fuentes_por_tipo": {}, "otras_temporadas": [], "comprobado": None})
+
+
 def distrito_de(lat, lng, geo):
     def dentro(x, y, anillo):
         ok = False
@@ -117,6 +150,7 @@ def convertir(fecha):
     geo = json.loads(geo_js[geo_js.index("{"):geo_js.rindex("}") + 1])
     md = fecha[5:]
     lugares = {l["id"]: l for l in json.loads((H / "lugares.json").read_text("utf-8"))["lugares"]}
+    rev = horarios_excel.leer()
     out = {}
     for tid, t in datos["templos"].items():
         cels = t.get("celebraciones") or []
@@ -175,6 +209,7 @@ def convertir(fecha):
                 palabras = set(norm(t["nombre"]).split()) - {"de", "la", "del", "i", "y", "sant", "santa", "parroquia", "esglesia", "basilica"}
                 if d < 120 and palabras & set(norm(p["name"]).split()) and (best is None or d < best[0]):
                     best = (d, p["id"])
+        aplicar_revision(rec, t, rev, md)
         rec["parroquia_id"] = best[1] if best else None
         if rec["lat"] and not rec["parroquia_id"] and rec["municipio"] == "Barcelona":
             rec["distrito"] = distrito_de(rec["lat"], rec["lng"], geo)

@@ -8,7 +8,8 @@
    "hash": "0232a9268a0d4085",
    "ultimo_ok": "2026-10-29"
   },
-  "F1_texto": "0232a9268a0d4085"
+  "F1_texto": "0232a9268a0d4085",
+  "F1_desde": "https://www.parroquiaconcepciobcn.org/horaris/"
  },
  "BCN0092": {
   "F2": {
@@ -33,7 +34,8 @@
   "F3": {
    "hash": "b9a4d7b7c6fb753f",
    "ultimo_ok": "2026-10-29"
-  }
+  },
+  "F1_desde": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf"
  },
  "BCN0226": {
   "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
@@ -45,7 +47,8 @@
    "hash": "1cb0fecfb2c8a75b",
    "ultimo_ok": "2026-10-29"
   },
-  "F1_texto": "1cb0fecfb2c8a75b"
+  "F1_texto": "1cb0fecfb2c8a75b",
+  "F1_desde": "https://www.arxiprestatdegracia.cat/misses"
  },
  "BCN0001": {},
  "BCN0002": {

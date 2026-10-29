@@ -595,3 +595,7 @@ body[data-tone="rosary"] { background: color-mix(in srgb, var(--backdrop) var(--
 .srcbox .conf { font-size: 12px; font-weight: 700; padding: 1px 8px; border-radius: 999px; background: var(--chip); color: var(--muted); display: inline-block; }
 .srcbox .conf.c-baja { background: var(--accent-soft); color: var(--accent-strong); }
 .srcbox .seasons { padding-left: 0; list-style: none; }
+.srcbox .rev { margin: 0; font-size: 13.5px; font-weight: 600; padding: 8px 10px; border-radius: 12px; border-left: 4px solid; }
+.srcbox .rev.r-verde { background: rgba(46, 160, 67, .14); border-color: #2ea043; }
+.srcbox .rev.r-rojo { background: rgba(207, 34, 46, .13); border-color: #cf222e; }
+.srcbox .rev.r-amarillo { background: rgba(212, 167, 44, .18); border-color: #d4a72c; }

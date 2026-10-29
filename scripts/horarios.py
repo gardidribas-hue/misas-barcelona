@@ -231,6 +231,9 @@ class SinHorario(Exception):
 
 
 def leer_f1(lug, f1, lugares, estado_t):
+    if estado_t.get("F1_desde") not in (None, f1["url"]):  # la web ha cambiado (columna B del Excel de revisión)
+        estado_t.pop("F1_url_descubierta", None)
+    estado_t["F1_desde"] = f1["url"]
     descubierta = estado_t.get("F1_url_descubierta")
     url = descubierta or f1["url"]
     if not robots_permite(url):
@@ -712,6 +715,12 @@ def actualizar(ids=None):
     if not lugares:
         sys.exit("Falta data/horarios/lugares.json: ejecuta antes «horarios.py importar <Excel>»")
     lugares = lugares["lugares"]
+    # Si Guillem cambia la web en la columna B del Excel de revisión, se lee esa web como F1.
+    from horarios_excel import webs_cambiadas
+    cambiadas = webs_cambiadas(lugares)
+    for lug in lugares:
+        if lug["id"] in cambiadas:
+            lug["fuentes"]["F1"] = {"url": cambiadas[lug["id"]], "web_revisada": True}
     datos = cargar(OUT / "horarios.json", {"meta": {}, "templos": {}})
     estado = cargar(OUT / "estado.json", {})
     informe = {k: [] for k in ("actualizados", "cambios", "caidas", "discrepancias", "sin_horario", "pendientes", "sospechosos")}
