@@ -723,5 +723,5 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 .faq details.more[open] > summary { margin-bottom: 10px; }
 .faq details.more > p { margin: 0 0 10px; padding-left: 14px; border-left: 3px solid color-mix(in srgb, var(--accent) 45%, transparent); color: var(--muted); font: 400 16px/1.55 var(--ui); }
 .faq details.more > p:last-child { margin-bottom: 0; }
-@media (max-width: 860px) { .x-faq svg { width: 20px; height: 20px; } .faq summary .soon { font-size: 12px; align-self: flex-end; margin: 0 0 -3px auto; } }
+@media (max-width: 860px) { .x-faq svg { width: 20px; height: 20px; } .faq summary .soon { font-size: 12px; align-self: center; margin-top: 0; transform: translateY(6px); } }
 @media (max-width: 380px) { .x-faq svg { width: 18px; height: 18px; } }
