@@ -17,7 +17,7 @@
       wordError: "Todavía no tengo las lecturas de este día. Puedes leerlas en <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">Vatican News</a>.",
       rosSets: { joyful: "gozosos", sorrowful: "dolorosos", glorious: "gloriosos", luminous: "luminosos" }, rosTitle: "Misterios <em>{set}</em>",
       rosDay: "Rosario de hoy · {day}", todayMark: "hoy", prevDay: "Día anterior", nextDay: "Día siguiente",
-      brandMain: "Misas", brandArch: "Archidiócesis de", tabHome: "Inicio", tabChat: "Chat", tabMap: "Mapa", tabWord: "Palabra del día", tabWordShort: "Palabra", tabRosary: "Rosario", themeLight: "Modo claro", themeDark: "Modo oscuro", themeGroup: "Modo",
+      brandMain: "Misas", brandArch: "Archidiócesis de", tabHome: "Inicio", tabChat: "Chat", tabMap: "Mapa", tabWord: "Palabra del día", tabWordShort: "Palabra", tabRosary: "Rosario", tabVol: "Voluntariado", tabVolShort: "Voluntariado", volSoon: "Próximamente", volTitle: "Echa <em>una mano</em>", volSub: "Estamos preparando un espacio para servir en tu parroquia y en la diócesis.", volKindsT: "Tipos de voluntariado", volKindsP: "Cáritas, acompañar a mayores y enfermos, catequesis, liturgia, jóvenes…", volJoinT: "Apúntate", volJoinP: "Elige lo que te encaja y deja tus datos para que la parroquia te contacte.", volShopsT: "Tiendas y conventos", volShopsP: "Librerías religiosas, artículos de culto y dulces de convento cerca de ti.", volNote: "Iremos añadiendo cada apartado poco a poco.", themeLight: "Modo claro", themeDark: "Modo oscuro", themeGroup: "Modo",
       eyebrow: "Archidiócesis de Barcelona · <span id=\"parishCount\">{n}</span> parroquias",
       heroTitle: "¿Dónde quieres ir a <em>misa</em>?",
       heroLede: "Dime dónde estás y a qué hora te va bien. También busco <strong class=\"k-conf\"><em>confesiones</em></strong> y <strong class=\"k-ador\"><em>adoración</em></strong>.",
@@ -56,7 +56,7 @@
       wordError: "Encara no tinc les lectures d'aquest dia. Les pots llegir a <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">evangeli.net</a>.",
       rosSets: { joyful: "de goig", sorrowful: "de dolor", glorious: "de glòria", luminous: "de llum" }, rosTitle: "Misteris <em>{set}</em>",
       rosDay: "Rosari d'avui · {day}", todayMark: "avui", prevDay: "Dia anterior", nextDay: "Dia següent",
-      brandMain: "Misses", brandArch: "Arxidiòcesi de", tabHome: "Inici", tabChat: "Xat", tabMap: "Mapa", tabWord: "Paraula del dia", tabWordShort: "Paraula", tabRosary: "Rosari", themeLight: "Mode clar", themeDark: "Mode fosc", themeGroup: "Mode",
+      brandMain: "Misses", brandArch: "Arxidiòcesi de", tabHome: "Inici", tabChat: "Xat", tabMap: "Mapa", tabWord: "Paraula del dia", tabWordShort: "Paraula", tabRosary: "Rosari", tabVol: "Voluntariat", tabVolShort: "Voluntariat", volSoon: "Properament", volTitle: "Dona <em>un cop de mà</em>", volSub: "Estem preparant un espai per servir a la teva parròquia i a la diòcesi.", volKindsT: "Tipus de voluntariat", volKindsP: "Càritas, acompanyar gent gran i malalts, catequesi, litúrgia, joves…", volJoinT: "Apunta-t'hi", volJoinP: "Tria el que t'escau i deixa les teves dades perquè la parròquia et contacti.", volShopsT: "Botigues i convents", volShopsP: "Llibreries religioses, articles de culte i dolços de convent a prop teu.", volNote: "Anirem afegint cada apartat a poc a poc.", themeLight: "Mode clar", themeDark: "Mode fosc", themeGroup: "Mode",
       eyebrow: "Arxidiòcesi de Barcelona · <span id=\"parishCount\">{n}</span> parròquies",
       heroTitle: "On vols anar a <em>missa</em>?",
       heroLede: "Digues-me on ets i a quina hora et va bé. També busco <strong class=\"k-conf\"><em>confessions</em></strong> i <strong class=\"k-ador\"><em>adoració</em></strong>.",
@@ -432,7 +432,7 @@
   }
 
   // ---------- Modos ----------
-  const DEVOTION = ["word", "rosary"];
+  const DEVOTION = ["word", "rosary", "volunteer"];
   const calm = () => window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   function setMode(mode) {
     if (state.mode === mode && $("stage").dataset.mode === mode) return;
