@@ -684,7 +684,6 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 .faq details p, .faq details ul { margin: 0; }
 .faq details ul { padding-left: 20px; display: grid; gap: 6px; }
 .faq a { color: var(--accent-strong); font-weight: 700; }
-.faq details strong { color: var(--ink); font-weight: 700; }
 .faq mark.todo { background: #fff1a8; color: #5a4600; padding: 1px 5px; border-radius: 6px; font-weight: 600; }
 @media (max-width: 860px) {
   .x-faq { width: 36px; height: 36px; }
