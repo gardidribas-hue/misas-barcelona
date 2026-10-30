@@ -436,8 +436,8 @@ button, .btn, .card { -webkit-tap-highlight-color: transparent; }
   .splash-logo { font-size: 48px; }
 }
 @media (max-width: 380px) {
-  .brand { font-size: 25px; gap: 8px; }
-  .brand .b-stack { font-size: 21px; padding-left: 8px; }
+  .brand { font-size: 25px; gap: 5px; }
+  .brand .b-stack { font-size: 21px; padding-left: 5px; }
   .ideas button { font-size: 15px; }
 }
 @media (min-width: 861px) and (max-width: 1100px) {
@@ -695,8 +695,8 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 /* Con el botón «?» la cabecera del móvil va más justa */
 @media (max-width: 430px) {
   .top { padding-inline: max(14px, env(safe-area-inset-left, 0px)) max(14px, env(safe-area-inset-right, 0px)); }
-  .brand { font-size: 26px; gap: 8px; }
-  .brand .b-stack { font-size: 22px; padding-left: 8px; }
+  .brand { font-size: 26px; gap: 5px; }
+  .brand .b-stack { font-size: 22px; padding-left: 5px; }
   .langs { padding: 3px; }
   .langs svg { width: 25px; height: 25px; }
   .x-faq { width: 34px; height: 34px; }
@@ -704,8 +704,8 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 @media (max-width: 380px) {
   .top { padding-inline: max(10px, env(safe-area-inset-left, 0px)) max(10px, env(safe-area-inset-right, 0px)); }
   .top-right { gap: 4px; }
-  .brand { font-size: 23px; gap: 6px; }
-  .brand .b-stack { font-size: 19px; padding-left: 6px; }
+  .brand { font-size: 23px; gap: 4px; }
+  .brand .b-stack { font-size: 19px; padding-left: 4px; }
   .langs svg { width: 22px; height: 22px; }
   .x-faq { width: 30px; height: 30px; }
   .x-faq svg { width: 18px; height: 18px; }
