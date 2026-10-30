@@ -681,8 +681,8 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 .faq summary::after { content: ""; flex: none; width: 10px; height: 10px; border-right: 2.4px solid currentColor; border-bottom: 2.4px solid currentColor; transform: translateY(-3px) rotate(45deg); transition: transform .25s var(--ease); }
 .faq details[open] > summary::after { transform: translateY(2px) rotate(-135deg); }
 .faq details > div { padding: 0 20px 18px; display: grid; gap: 10px; color: var(--muted); font-size: 16px; line-height: 1.55; }
-.faq details p, .faq details ul { margin: 0; }
-.faq details ul { padding-left: 20px; display: grid; gap: 6px; }
+.faq details p, .faq details ul, .faq details ol { margin: 0; }
+.faq details ul, .faq details ol { padding-left: 20px; display: grid; gap: 6px; }
 .faq a { color: var(--accent-strong); font-weight: 700; }
 .faq mark.todo { background: #fff1a8; color: #5a4600; padding: 1px 5px; border-radius: 6px; font-weight: 600; }
 @media (max-width: 860px) {
