@@ -731,6 +731,19 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 .modes button svg, .modes button.on svg { box-shadow: none; }
 .modes button::after { content: ""; position: absolute; inset: 3px; border-radius: 50%; box-shadow: 0 0 0 1.5px var(--ring); pointer-events: none; }
 .modes button.on::after { box-shadow: 0 0 0 2px var(--gold); }
+/* Sol y luna animados: el sol sale desde abajo y se alargan los rayos; la luna crece y salen las estrellas */
+.modes svg * { transform-box: fill-box; transform-origin: center; }
+.modes .r { transform-box: view-box; transform-origin: 0 0; stroke-dasharray: 1; }
+@keyframes mode-rise { from { transform: translateY(12px); } to { transform: none; } }
+@keyframes mode-ray { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes mode-moon { from { transform: scale(.15) rotate(-50deg); opacity: 0; } 40% { opacity: 1; } to { transform: none; opacity: 1; } }
+@keyframes mode-star { 0% { transform: scale(0) rotate(-90deg); opacity: 0; } 60% { transform: scale(1.35) rotate(10deg); opacity: 1; } 100% { transform: none; opacity: 1; } }
+.modes .on .rise { animation: mode-rise .7s var(--ease) both; }
+.modes .on .r { animation: mode-ray .4s var(--ease) .55s both; }
+.modes .on .moon { animation: mode-moon .6s var(--ease) both; }
+.modes .on .st { animation: mode-star .45s var(--ease) both; }
+.modes .on .s1 { animation-delay: .45s; } .modes .on .s2 { animation-delay: .62s; } .modes .on .s3 { animation-delay: .78s; }
+@media (prefers-reduced-motion: reduce) { .modes svg * { animation: none !important; } }
 /* La sombra de las ventanas tapaba el borde inferior de los botones de la cabecera en el móvil */
 .top { position: relative; z-index: 5; }
 /* Sin el recuadro gris al tocar las preguntas en el móvil */
