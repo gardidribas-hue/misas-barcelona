@@ -750,3 +750,15 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 .faq summary { -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; border-radius: 20px; }
 .faq summary:focus:not(:focus-visible) { outline: none; }
 .faq details.more > summary { border-radius: 8px; }
+
+/* ---------- Móvil: mapa y ficha «unidos» ----------
+   Antes el mapa quedaba fijo arriba y la ficha se desplazaba sola en la mitad de abajo, cortada.
+   Ahora la vista Mapa es una sola página: se arrastra el mapa con el dedo para moverlo y,
+   deslizando sobre la ficha o la lista, sube todo junto y la ficha se ve entera. */
+#map, #map .maplibregl-canvas-container, #map canvas { touch-action: none; }
+@media (max-width: 860px) {
+  .stage[data-mode="map"] { grid-template-rows: auto; align-content: start; overflow-y: auto; overscroll-behavior-y: contain; -webkit-overflow-scrolling: touch; }
+  .stage[data-mode="map"] .mapcol { grid-template-rows: 50vh auto; grid-template-rows: 50svh auto; min-height: auto; }
+  .stage[data-mode="map"] .side { overflow: visible; min-height: calc(100svh - var(--top) - 50svh - var(--nav) - 3 * var(--gap)); }
+  .stage[data-mode="map"] .detail { padding-bottom: 28px; }
+}

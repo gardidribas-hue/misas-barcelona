@@ -725,6 +725,8 @@
     observeReveal(box.querySelectorAll("h3, .sched, .note"));
     $("filters").hidden = true; $("summary").hidden = true; $("list").hidden = true;
     $("side").scrollTop = 0;
+    // En el móvil la vista Mapa es una sola página: vuelve arriba para ver el punto en el mapa y el inicio de la ficha.
+    if ($("stage").scrollTop > 0) $("stage").scrollTo({ top: 0, behavior: calm() ? "auto" : "smooth" });
     $("closeDetail").onclick = closeDetail;
     if (focus && MapView.focus) MapView.focus(p);
   }
