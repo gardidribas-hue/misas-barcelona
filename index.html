@@ -5,7 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Misas Barcelona</title>
 <meta name="description" content="Encuentra misas, confesiones y adoración eucarística en las parroquias de la Archidiócesis de Barcelona.">
-<meta name="theme-color" content="#2f2729">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0b0c" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Misas BCN">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
@@ -26,10 +33,12 @@
   </div>
 </div>
 
+<a class="skip" href="#stage" data-i18n="skip">Saltar al contenido</a>
+<div id="srLive" class="sr-only" aria-live="polite"></div>
 <header class="top">
   <button type="button" class="brand" data-go="home" aria-label="Misas, Archidiócesis de Barcelona. Inicio"><span class="b-main" data-i18n="brandMain">Misas</span><span class="b-stack"><em class="b-arch" data-i18n="brandArch">Archidiócesis de</em><em class="b-city">Barcelona</em></span></button>
   <div class="top-right">
-    <nav class="tabs" aria-label="Vistas">
+    <nav class="tabs" aria-label="Secciones">
       <button type="button" data-go="home" class="on" data-i18n="tabHome">Inicio</button>
       <button type="button" data-go="chat" data-i18n="tabChat">Chat</button>
       <button type="button" data-go="map" data-i18n="tabMap">Mapa</button>
@@ -40,18 +49,25 @@
       <button type="button" data-go="volunteer" class="x-vol"><span class="ico"><svg viewBox="-1.87 -3.295 27.44 27.44" aria-hidden="true"><ellipse cx="12" cy="6.3" rx="5.0" ry="0.7" fill="none" stroke="currentColor" stroke-width="0.7"/><defs><mask id="sagrado-cor-1"><rect width="24" height="24" fill="#fff"/><path d="M7.0 6.3a5.0 0.7 0 0 0 10.0 0" fill="none" stroke="#000" stroke-width="1.55"/></mask></defs><path d="M12 10.8c-2.7-1.7-4.2-3.3-4.2-5.1 0-1.3.95-2.25 2.2-2.25.85 0 1.55.45 2 1.15.45-.7 1.15-1.15 2-1.15 1.25 0 2.2.95 2.2 2.25 0 1.8-1.5 3.4-4.2 5.1z" fill="currentColor" mask="url(#sagrado-cor-1)"/><path d="M7.0 6.3a5.0 0.7 0 0 0 10.0 0" fill="none" stroke="currentColor" stroke-width="0.7"/><path d="M7.2 5.95l-0.5 -0.5M16.8 5.95l0.5 -0.5M7.4 6.8l-0.5 0.5M16.6 6.8l0.5 0.5M9.8 6.944l-.15 0.65M14.2 6.944l.15 0.65" fill="none" stroke="currentColor" stroke-width=".65" stroke-linecap="round"/><path d="M12 .45V3.7M10.95 1.55h2.1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M2.8 14.2h3.4l3.6-1.3c.9-.3 1.8.3 1.8 1.1 0 .6-.4 1.1-1 1.3l-2.4.8M6.2 20h7.4l6.6-3.8c.7-.4.9-1.3.5-2-.4-.6-1.2-.8-1.9-.4l-3.9 2.2M2.8 14.2V20h3.4v-5.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="tabVol">Voluntariado</span></button>
     </nav>
     <button type="button" class="x-faq" data-go="faq" aria-label="Sobre nosotros y preguntas" title="Sobre nosotros y preguntas" data-i18n-aria="tabFaq"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M12.9 6.3c.3-1.4 1.4-2.3 2.8-2.3 1.6 0 2.8 1.1 2.8 2.6 0 1.2-.7 1.9-1.6 2.5-.8.5-1.3 1.1-1.3 2.1"/><path d="M11.1 17.7c-.3 1.4-1.4 2.3-2.8 2.3-1.6 0-2.8-1.1-2.8-2.6 0-1.2.7-1.9 1.6-2.5.8-.5 1.3-1.1 1.3-2.1"/></g><circle cx="15.6" cy="13.9" r="1.3" fill="currentColor"/><circle cx="8.4" cy="10.1" r="1.3" fill="currentColor"/></svg></button>
-    <div class="langs modes" id="modes" role="group" aria-label="Modo"><button type="button" data-mode="light" aria-label="Modo claro" title="Modo claro"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><radialGradient id="mode-sun-bg" cx=".5" cy=".42" r=".62"><stop offset="0" stop-color="#fff7da"/><stop offset="1" stop-color="#fde09a"/></radialGradient><clipPath id="mode-sun-clip"><circle cx="12" cy="12" r="12"/></clipPath></defs><circle cx="12" cy="12" r="12" fill="url(#mode-sun-bg)"/><g clip-path="url(#mode-sun-clip)"><g class="rise"><g class="rays" stroke="#e39d12" stroke-width="1.7" stroke-linecap="round"><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(0 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(45 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(90 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(135 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(180 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(225 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(270 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(315 12 12)"/></g><circle cx="12" cy="12" r="3.9" fill="#efa818"/></g></g></svg></button><button type="button" data-mode="dark" aria-label="Modo oscuro" title="Modo oscuro"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="mode-night" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#18213d"/><stop offset="1" stop-color="#34406c"/></linearGradient></defs><circle cx="12" cy="12" r="12" fill="url(#mode-night)"/><path class="moon" d="M11.12 6.61A6 6 0 1 0 17.27 13.84A5 5 0 0 1 11.12 6.61Z" fill="#f7e7b4"/><path class="st s1" d="M16.9 6.4Q16.9 8 18.5 8Q16.9 8 16.9 9.6Q16.9 8 15.3 8Q16.9 8 16.9 6.4Z" fill="#f7e7b4"/><path class="st s2" d="M19.2 11.4Q19.2 12.4 20.2 12.4Q19.2 12.4 19.2 13.4Q19.2 12.4 18.2 12.4Q19.2 12.4 19.2 11.4Z" fill="#f7e7b4"/><path class="st s3" d="M14.4 4.05Q14.4 4.9 15.25 4.9Q14.4 4.9 14.4 5.75Q14.4 4.9 13.55 4.9Q14.4 4.9 14.4 4.05Z" fill="#f7e7b4"/></svg></button></div>
-    <div class="langs" id="langs" role="group" aria-label="Idioma"><button type="button" data-lang="es" aria-label="Castellano" title="Castellano"></button><button type="button" data-lang="ca" aria-label="Català" title="Català"></button></div>
+    <div class="settings">
+      <button type="button" class="set-btn" id="setBtn" aria-haspopup="true" aria-expanded="false" aria-controls="setPop" aria-label="Ajustes: modo e idioma" title="Ajustes: modo e idioma" data-i18n-aria="settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="7" r="2.3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="17" r="2.3" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+      <div class="set-pop" id="setPop" hidden>
+        <p class="set-h" data-i18n="themeGroup">Modo</p>
+        <div class="langs modes" id="modes" role="group" aria-label="Modo"><button type="button" data-mode="light" aria-label="Modo claro" title="Modo claro"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><radialGradient id="mode-sun-bg" cx=".5" cy=".42" r=".62"><stop offset="0" stop-color="#fff7da"/><stop offset="1" stop-color="#fde09a"/></radialGradient><clipPath id="mode-sun-clip"><circle cx="12" cy="12" r="12"/></clipPath></defs><circle cx="12" cy="12" r="12" fill="url(#mode-sun-bg)"/><g clip-path="url(#mode-sun-clip)"><g class="rise"><g class="rays" stroke="#e39d12" stroke-width="1.7" stroke-linecap="round"><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(0 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(45 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(90 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(135 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(180 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(225 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(270 12 12)"/><path class="r" pathLength="1" d="M12 5.8V3.6" transform="rotate(315 12 12)"/></g><circle cx="12" cy="12" r="3.9" fill="#efa818"/></g></g></svg><span data-i18n="themeLight">Modo claro</span></button><button type="button" data-mode="dark" aria-label="Modo oscuro" title="Modo oscuro"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="mode-night" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#18213d"/><stop offset="1" stop-color="#34406c"/></linearGradient></defs><circle cx="12" cy="12" r="12" fill="url(#mode-night)"/><path class="moon" d="M11.12 6.61A6 6 0 1 0 17.27 13.84A5 5 0 0 1 11.12 6.61Z" fill="#f7e7b4"/><path class="st s1" d="M16.9 6.4Q16.9 8 18.5 8Q16.9 8 16.9 9.6Q16.9 8 15.3 8Q16.9 8 16.9 6.4Z" fill="#f7e7b4"/><path class="st s2" d="M19.2 11.4Q19.2 12.4 20.2 12.4Q19.2 12.4 19.2 13.4Q19.2 12.4 18.2 12.4Q19.2 12.4 19.2 11.4Z" fill="#f7e7b4"/><path class="st s3" d="M14.4 4.05Q14.4 4.9 15.25 4.9Q14.4 4.9 14.4 5.75Q14.4 4.9 13.55 4.9Q14.4 4.9 14.4 4.05Z" fill="#f7e7b4"/></svg><span data-i18n="themeDark">Modo oscuro</span></button></div>
+        <p class="set-h" data-i18n="lblLang">Idioma</p>
+        <div class="langs" id="langs" role="group" aria-label="Idioma"><button type="button" data-lang="es" aria-label="Castellano" title="Castellano"></button><button type="button" data-lang="ca" aria-label="Català" title="Català"></button></div>
+      </div>
+    </div>
   </div>
 </header>
 
-<main class="stage" id="stage" data-mode="home">
+<main class="stage" id="stage" data-mode="home" tabindex="-1">
 
   <!-- Columna del chat -->
   <section class="chatcol win" aria-label="Asistente">
     <div class="chat-scroll" id="chatScroll">
       <div class="hero" id="hero">
-        <p class="eyebrow" data-i18n-html="eyebrow">Archidiócesis de Barcelona · <span id="parishCount">211</span> parroquias</p>
+        <p class="eyebrow" data-i18n-html="eyebrow">Archidiócesis<span class="eb-city"> de Barcelona</span> · <span id="parishCount">211</span> parroquias</p>
         <h1 data-i18n-html="heroTitle">¿Dónde quieres ir a <em>misa</em>?</h1>
         <p class="lede" data-i18n-html="heroLede">Dime dónde estás y a qué hora te va bien. También busco <strong class="k-conf"><em>confesiones</em></strong> y <strong class="k-ador"><em>adoración</em></strong>.</p>
       </div>
@@ -67,6 +83,7 @@
       </form>
       <ul class="ideas" id="ideas" aria-label="Ideas para preguntar"></ul>
     </div>
+    <section class="upnext" id="upnext" aria-live="polite"></section>
   </section>
 
   <!-- Columna del mapa: filtros + lista + mapa -->
@@ -113,6 +130,7 @@
         </div>
         <button type="button" class="pill" data-go="map" data-i18n="filtersList">Filtros y lista</button>
       </div>
+      <div class="quick" id="quick" role="group" aria-label="Filtros rápidos"></div>
       <div class="mapbtns">
       <button type="button" class="near reset" id="resetMap" data-i18n-aria="resetMap" aria-label="Restablecer mapa">
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4.5v4h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -206,14 +224,10 @@
 </main>
 
 <!-- Navegación inferior en el móvil -->
-<nav class="bottomnav" aria-label="Vistas">
+<nav class="bottomnav" aria-label="Secciones">
   <button type="button" data-go="home" class="on">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
     <span data-i18n="tabHome">Inicio</span>
-  </button>
-  <button type="button" data-go="chat">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 19 17h-7l-4.5 3.5V17H5a1.5 1.5 0 0 1-1.5-1.5v-9A1.5 1.5 0 0 1 5 5z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
-    <span data-i18n="tabChat">Chat</span>
   </button>
   <button type="button" data-go="map">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.4-6.5 11-6.5 11z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.9"/></svg>
