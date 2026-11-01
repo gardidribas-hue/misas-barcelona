@@ -810,7 +810,7 @@
       ${p.adoration.length || p.adoration_text ? `<h3>${t("hAdor")}</h3>${schedule(p.adoration)}${p.adoration_text ? `<p class="note">${esc(p.adoration_text)}</p>` : ""}` : ""}
       ${p.other ? `<h3>${t("hOther")}</h3><p class="note">${esc(p.other)}</p>` : ""}
       ${sourceBox(p)}`;
-    box.hidden = false; state.detailId = id; box.classList.remove("full"); box.scrollTop = 0;
+    box.hidden = false; state.detailId = id; box.style.removeProperty("--sy"); box.scrollTop = 0;
     pushRoute("parroquia/" + id, { detail: id }); setTitle();
     observeReveal(box.querySelectorAll("h3, .sched, .note"));
     $("filters").hidden = true; $("summary").hidden = true; $("list").hidden = true;
@@ -830,7 +830,7 @@
     if (focus && MapView.focus) MapView.focus(p);
   }
   function closeDetail() {
-    $("detail").hidden = true; state.detailId = null; $("detail").classList.remove("full");
+    $("detail").hidden = true; state.detailId = null; $("detail").style.removeProperty("--sy");
     if (!routing && location.hash.startsWith("#parroquia/")) history.replaceState(null, "", "#mapa");
     setTitle();
     $("filters").hidden = false; $("summary").hidden = false; $("list").hidden = false;
@@ -1017,21 +1017,53 @@
 
   // Móvil: la ficha es una hoja que se sube hasta arriba (por encima del mapa) y se vuelve a bajar.
   function bindSheet() {
-    const box = $("detail"), mobile = () => matchMedia("(max-width: 860px)").matches;
-    const setFull = (on) => box.classList.toggle("full", on);
-    box.addEventListener("scroll", () => { if (mobile() && box.scrollTop > 8) setFull(true); }, { passive: true });
-    let y0 = null, top0 = 0, fromHandle = false;
+    const box = $("detail"), mobile = () => matchMedia("(max-width: 860px)").matches && state.mode === "map";
+    const base = () => parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--top")) + 6;
+    const maxY = () => Math.max(0, innerHeight - base() - 170); // siempre se ve un trozo de la ficha
+    const cur = () => box.getBoundingClientRect().top - base();
+    const place = (y, smooth) => { box.classList.toggle("dragging", !smooth); box.style.setProperty("--sy", Math.round(y) + "px"); };
+    let g = null; // gesto en curso
     box.addEventListener("touchstart", (e) => {
-      if (!mobile()) return; const y = e.touches[0].clientY;
-      y0 = y; top0 = box.scrollTop; fromHandle = y - box.getBoundingClientRect().top < 34;
+      if (!mobile() || e.touches.length > 1) { g = null; return; }
+      const t = e.touches[0], y = cur();
+      g = { y0: t.clientY, sheet0: y, scroll0: box.scrollTop, handle: t.clientY - (y + base()) < 36, mode: null, pts: [[t.clientY, e.timeStamp]] };
     }, { passive: true });
     box.addEventListener("touchmove", (e) => {
-      if (y0 == null) return; const dy = e.touches[0].clientY - y0;
-      if (dy < -24) { setFull(true); }
-      else if (dy > 40 && (fromHandle || (top0 <= 0 && box.scrollTop <= 0))) { setFull(false); }
-    }, { passive: true });
-    box.addEventListener("touchend", () => { y0 = null; }, { passive: true });
-    box.addEventListener("click", (e) => { if (mobile() && e.clientY - box.getBoundingClientRect().top < 30) setFull(!box.classList.contains("full")); });
+      if (!g) return;
+      const t = e.touches[0], dy = t.clientY - g.y0;
+      g.pts.push([t.clientY, e.timeStamp]); if (g.pts.length > 5) g.pts.shift();
+      if (!g.mode) {
+        if (Math.abs(dy) < 5) return;
+        // Se mueve la hoja si se agarra por arriba, si aún no está arriba del todo, o si se tira hacia abajo con la ficha al principio
+        g.mode = g.handle || (g.sheet0 > 1 && g.scroll0 <= 0) || (dy > 0 && box.scrollTop <= 0) ? "sheet" : "scroll";
+      }
+      if (g.mode !== "sheet") return;
+      e.preventDefault();
+      let y = g.sheet0 + dy;
+      if (y < 0) { box.scrollTop = g.scroll0 - y; y = 0; } // al llegar arriba, sigue bajando por la ficha en el mismo gesto
+      else box.scrollTop = 0;
+      const m = maxY(); if (y > m) y = m + (y - m) * 0.25; // resistencia suave al pasarse
+      place(y, false);
+    }, { passive: false });
+    const end = (e) => {
+      if (!g) return; const was = g; g = null;
+      if (was.mode !== "sheet") return;
+      const [a, b] = [was.pts[0], was.pts[was.pts.length - 1]];
+      const still = e && e.timeStamp - b[1] > 90; // si el dedo se paró antes de soltar, se queda justo ahí
+      const v = !still && b[1] > a[1] ? (b[0] - a[0]) / (b[1] - a[1]) : 0; // px por ms
+      let y = cur() + v * 220; // un poco de inercia, como al soltar algo
+      y = Math.min(Math.max(y, 0), maxY());
+      if (y < 24) y = 0;
+      place(y, true);
+    };
+    box.addEventListener("touchend", end, { passive: true });
+    box.addEventListener("touchcancel", end, { passive: true });
+    // Tocar la rayita: arriba del todo / a media pantalla
+    box.addEventListener("click", (e) => {
+      if (!mobile() || e.clientY - box.getBoundingClientRect().top > 30) return;
+      place(cur() > 4 ? 0 : innerHeight * 0.34, true);
+    });
+    addEventListener("resize", () => { if (!box.hidden && box.style.getPropertyValue("--sy")) place(Math.min(cur(), maxY()), true); });
   }
   function bind() {
     bindSheet();
