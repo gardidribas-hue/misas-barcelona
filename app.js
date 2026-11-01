@@ -484,8 +484,13 @@
     };
     // Transición suave entre vistas (las ventanas se mueven y cambian de tamaño).
     if (document.startViewTransition && !calm()) {
+      // En el móvil la vista entera se desliza un poco hacia el lado de la pestaña que tocas.
+      const ORDER = ["home", "chat", "map", "word", "rosary", "volunteer", "faq"];
+      const html = document.documentElement;
+      html.dataset.vtdir = ORDER.indexOf(mode) < ORDER.indexOf(state.mode) ? "back" : "fwd";
+      html.classList.add("vt-nav");
       const t = document.startViewTransition(apply);
-      t.finished.then(() => MapView.resize && MapView.resize()).catch(() => {});
+      t.finished.then(() => MapView.resize && MapView.resize()).catch(() => {}).then(() => html.classList.remove("vt-nav"));
     } else {
       apply();
       requestAnimationFrame(() => MapView.resize && MapView.resize());
@@ -902,8 +907,12 @@
       setPh(true); renderUpNext();
       langListeners.forEach((fn) => fn(LNG));
     };
-    document.body.classList.add("lang-swap");
-    setTimeout(() => { swap(); document.body.classList.remove("lang-swap"); }, calm() ? 0 : 160);
+    // Fundido suave de un idioma a otro (el texto viejo se desvanece mientras aparece el nuevo).
+    if (document.startViewTransition && !calm()) {
+      const html = document.documentElement;
+      html.classList.add("vt-lang");
+      document.startViewTransition(swap).finished.catch(() => {}).then(() => html.classList.remove("vt-lang"));
+    } else swap();
   }
 
   // Filtros rápidos encima del mapa: un toque y listo

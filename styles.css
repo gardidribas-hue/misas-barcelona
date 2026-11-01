@@ -352,7 +352,6 @@ body[data-tone="adoration"] { background: color-mix(in srgb, var(--backdrop) var
 .modes button { padding: 3px; }
 .modes button:not(.on) svg { opacity: .55; }
 @media (hover: hover) { .langs button:not(.on):hover { opacity: .9; } }
-body.lang-swap .chatcol, body.lang-swap .side, body.lang-swap .top { opacity: .35; transition: opacity .16s; }
 .chatcol, .side, .top { transition: opacity .25s var(--ease); }
 
 /* ---------- Microinteracciones y estados hover ---------- */
@@ -909,13 +908,6 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 :root[data-theme="dark"] .fav-star { color: #f2c14e; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .fav-btn.on { background: #3a3020; color: #f2c14e; } :root:not([data-theme="light"]) .fav-star { color: #f2c14e; } }
 
-/* 25: pequeño deslizamiento al cambiar de día con el dedo */
-@keyframes swl { from { transform: translateX(28px); opacity: .4; } to { transform: none; opacity: 1; } }
-@keyframes swr { from { transform: translateX(-28px); opacity: .4; } to { transform: none; opacity: 1; } }
-.wordcol.swl .dev-scroll > * { animation: swl .28s var(--ease); }
-.wordcol.swr .dev-scroll > * { animation: swr .28s var(--ease); }
-@media (prefers-reduced-motion: reduce) { .wordcol.swl .dev-scroll > *, .wordcol.swr .dev-scroll > * { animation: none; } }
-
 /* 26: botón «Añadir al calendario» */
 .btn.cal { display: inline-flex; align-items: center; gap: 7px; cursor: pointer; font-family: inherit; border: 0; }
 .btn.cal svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; }
@@ -932,3 +924,26 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 ::view-transition-new(topbar), ::view-transition-new(navbar) { animation: none; }
 .bottomnav button { transition: background .22s var(--ease), color .22s var(--ease), transform .16s var(--ease); }
 .bottomnav button:active { transform: scale(.92); }
+
+/* Transiciones suaves: cambiar de sección en el móvil y cambiar de idioma */
+@keyframes vt-fade-out { to { opacity: 0; } }
+@keyframes vt-fade-in { from { opacity: 0; } }
+@keyframes vt-out-l { to { opacity: 0; transform: translateX(-22px); } }
+@keyframes vt-out-r { to { opacity: 0; transform: translateX(22px); } }
+@keyframes vt-in-r { from { opacity: 0; transform: translateX(28px); } }
+@keyframes vt-in-l { from { opacity: 0; transform: translateX(-28px); } }
+@media (max-width: 860px) {
+  /* En el móvil se mueve la vista entera, no cada ventana por separado: así no hay saltos ni estiramientos */
+  .chatcol, .mapwrap, .side, .wordcol, .rosarycol, .volcol, .faqcol { view-transition-name: none; }
+  .stage { view-transition-name: stage; }
+  ::view-transition-group(stage) { animation: none; }
+  ::view-transition-old(stage), ::view-transition-new(stage) { height: 100%; object-fit: none; object-position: top; }
+  html.vt-nav::view-transition-old(stage) { animation: vt-out-l .2s cubic-bezier(.4,0,1,1) both; }
+  html.vt-nav::view-transition-new(stage) { animation: vt-in-r .36s cubic-bezier(.22,1,.36,1) .06s both; }
+  html.vt-nav[data-vtdir="back"]::view-transition-old(stage) { animation-name: vt-out-r; }
+  html.vt-nav[data-vtdir="back"]::view-transition-new(stage) { animation-name: vt-in-l; }
+}
+/* Al cambiar de idioma todo se funde suavemente, cabecera y barra incluidas */
+html.vt-lang::view-transition-old(*), html.vt-lang::view-transition-old(root) { display: block; animation: vt-fade-out .22s ease both; }
+html.vt-lang::view-transition-new(*), html.vt-lang::view-transition-new(root) { animation: vt-fade-in .34s ease .08s both; }
+html.vt-lang::view-transition-group(*) { animation-duration: .34s; }

@@ -175,19 +175,63 @@
   document.addEventListener("misas:mode", onMode);
   A.onLang(() => { ros.pl = null; if (wordReady) renderWord(); if (rosReady) renderRosary(); });
 
-  $("wordPrev").onclick = () => shiftDay(-1);
-  $("wordNext").onclick = () => shiftDay(1);
-  $("wordToday").onclick = () => { word.date = todayBcnDate(); renderWord(); };
-  // En el móvil, deslizar el dedo sobre la lectura cambia de día.
+  // Cambio de día con deslizamiento: la lectura sale hacia un lado y la nueva entra por el otro.
+  const calm = () => (A.calm ? A.calm() : false);
+  const inner = () => $("wordScroll").querySelector(".dev-inner");
+  const preload = () => { for (const d of [-1, 1]) loadDay(ymd(new Date(word.date.getTime() + d * 864e5))).catch(() => {}); };
+  let sliding = false;
+  async function slideDay(d, fromX = 0) {
+    const el = inner();
+    if (calm() || !el.animate) { shiftDay(d); return; }
+    if (sliding) return; sliding = true;
+    const w = $("wordcol").clientWidth || 360;
+    const out = el.animate([{ transform: `translateX(${fromX}px)`, opacity: Math.max(0.25, 1 - Math.abs(fromX) / w) }, { transform: `translateX(${-d * w * 0.45}px)`, opacity: 0 }], { duration: 200, easing: "cubic-bezier(.4,0,1,1)", fill: "forwards" });
+    el.style.transform = ""; el.style.opacity = "";
+    await out.finished.catch(() => {});
+    word.date = new Date(word.date.getTime() + d * 864e5); $("wordScroll").scrollTop = 0;
+    await renderWord();
+    out.cancel();
+    el.animate([{ transform: `translateX(${d * w * 0.35}px)`, opacity: 0 }, { transform: "none", opacity: 1 }], { duration: 380, easing: "cubic-bezier(.22,1,.36,1)" });
+    sliding = false; preload();
+  }
+  async function fadeTo(date) {
+    const el = inner();
+    if (calm() || !el.animate) { word.date = date; renderWord(); return; }
+    await el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 160, fill: "forwards" }).finished.catch(() => {});
+    word.date = date; $("wordScroll").scrollTop = 0; await renderWord();
+    el.getAnimations().forEach((x) => x.cancel());
+    el.animate([{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 320, easing: "cubic-bezier(.22,1,.36,1)" });
+    preload();
+  }
+  $("wordPrev").onclick = () => slideDay(-1);
+  $("wordNext").onclick = () => slideDay(1);
+  $("wordToday").onclick = () => fadeTo(todayBcnDate());
+  // En el móvil, la lectura sigue al dedo; al soltar pasa de día o vuelve a su sitio.
   (() => {
-    const area = $("wordcol"); let x0 = null, y0 = 0;
-    area.addEventListener("touchstart", (e) => { const p = e.touches[0]; x0 = p.clientX; y0 = p.clientY; }, { passive: true });
-    area.addEventListener("touchend", (e) => {
-      if (x0 == null) return; const p = e.changedTouches[0], dx = p.clientX - x0, dy = p.clientY - y0; x0 = null;
-      if (Math.abs(dx) < 70 || Math.abs(dx) < Math.abs(dy) * 2) return;
-      area.classList.remove("swl", "swr"); void area.offsetWidth; area.classList.add(dx < 0 ? "swl" : "swr");
-      shiftDay(dx < 0 ? 1 : -1);
+    const area = $("wordcol"); let g = null;
+    area.addEventListener("touchstart", (e) => {
+      if (e.touches.length > 1 || sliding) { g = null; return; }
+      const p = e.touches[0]; g = { x: p.clientX, y: p.clientY, dx: 0, mode: null, pts: [[p.clientX, e.timeStamp]] };
     }, { passive: true });
+    area.addEventListener("touchmove", (e) => {
+      if (!g) return; const p = e.touches[0], dx = p.clientX - g.x, dy = p.clientY - g.y;
+      if (!g.mode) { if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return; g.mode = Math.abs(dx) > Math.abs(dy) * 1.3 ? "h" : "v"; }
+      if (g.mode !== "h") return;
+      e.preventDefault();
+      g.dx = dx; g.pts.push([p.clientX, e.timeStamp]); if (g.pts.length > 5) g.pts.shift();
+      const el = inner(); el.style.transform = `translateX(${dx * 0.85}px)`; el.style.opacity = String(1 - Math.min(0.5, Math.abs(dx) / 700));
+    }, { passive: false });
+    const end = (e) => {
+      if (!g || g.mode !== "h") { g = null; return; }
+      const was = g; g = null; const el = inner(), x = was.dx * 0.85;
+      const [a, b] = [was.pts[0], was.pts[was.pts.length - 1]];
+      const v = b[1] > a[1] && e.timeStamp - b[1] < 90 ? (b[0] - a[0]) / (b[1] - a[1]) : 0;
+      if (Math.abs(was.dx) > 80 || (Math.abs(v) > 0.45 && Math.abs(was.dx) > 25)) { slideDay(was.dx < 0 ? 1 : -1, x); return; }
+      el.style.transform = ""; el.style.opacity = "";
+      if (el.animate) el.animate([{ transform: `translateX(${x}px)` }, { transform: "none" }], { duration: 320, easing: "cubic-bezier(.22,1,.36,1)" });
+    };
+    area.addEventListener("touchend", end, { passive: true });
+    area.addEventListener("touchcancel", end, { passive: true });
   })();
 
   $("rosSets").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.set = b.dataset.set; renderRosary(); } };
