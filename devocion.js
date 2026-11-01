@@ -44,15 +44,15 @@
   const PL = {
     es: { set: { joyful: "Misterios gozosos", sorrowful: "Misterios dolorosos", glorious: "Misterios gloriosos", luminous: "Misterios luminosos" },
       ord: ["Primer", "Segundo", "Tercer", "Cuarto", "Quinto"], mys: "misterio", of: "de", intro: "Para empezar", end: "Para terminar",
-      cross: "Señal de la cruz", credo: "Credo", pater: "Padrenuestro", ave: "Avemaría", gloria: "Gloria", fatima: "Oh Jesús mío", salve: "Salve", kyrie: "Señor, ten piedad", litany: "Letanías a la Virgen María", oremus: "Oración final", signing: "santiguándose", credoShort: "Corto", credoLong: "Largo", modeFull: "Completo", modeShort: "Resumen", modeGroup: "Cómo ver el rosario",
+      cross: "Señal de la cruz", credo: "Credo", pater: "Padrenuestro", ave: "Avemaría", gloria: "Gloria", fatima: "Oh Jesús mío", salve: "Salve", kyrie: "Señor, ten piedad", litany: "Letanías a la Virgen María", oremus: "Oración final", signing: "santiguándose", credoShort: "Corto", credoLong: "Largo", modeShort: "Resumen",
       hint: "Reza en silencio o en voz alta. Toca para seguir.", done: "Has terminado el rosario. Que el Señor te bendiga." },
     ca: { set: { joyful: "Misteris de goig", sorrowful: "Misteris de dolor", glorious: "Misteris de glòria", luminous: "Misteris de llum" },
       ord: ["Primer", "Segon", "Tercer", "Quart", "Cinquè"], mys: "misteri", of: "de", intro: "Per començar", end: "Per acabar",
-      cross: "Senyal de la creu", credo: "Credo", pater: "Parenostre", ave: "Avemaria", gloria: "Glòria", fatima: "Oh Jesús meu", salve: "Salve", kyrie: "Senyor, tingueu pietat", litany: "Lletanies a la Mare de Déu", oremus: "Oració final", signing: "senyant-se", credoShort: "Curt", credoLong: "Llarg", modeFull: "Complet", modeShort: "Resum", modeGroup: "Com veure el rosari",
+      cross: "Senyal de la creu", credo: "Credo", pater: "Parenostre", ave: "Avemaria", gloria: "Glòria", fatima: "Oh Jesús meu", salve: "Salve", kyrie: "Senyor, tingueu pietat", litany: "Lletanies a la Mare de Déu", oremus: "Oració final", signing: "senyant-se", credoShort: "Curt", credoLong: "Llarg", modeShort: "Resum",
       hint: "Resa en silenci o en veu alta. Toca per seguir.", done: "Has acabat el rosari. Que el Senyor et beneeixi." },
     la: { set: { joyful: "Mysteria gaudiosa", sorrowful: "Mysteria dolorosa", glorious: "Mysteria gloriosa", luminous: "Mysteria luminosa" },
       ord: ["Primum", "Secundum", "Tertium", "Quartum", "Quintum"], mys: "mysterium", of: "ex", intro: "Initium", end: "Finis",
-      cross: "Signum crucis", credo: "Credo", pater: "Pater noster", ave: "Ave Maria", gloria: "Gloria Patri", fatima: "Oratio Fatimae", salve: "Salve Regina", kyrie: "Kyrie, eleison", litany: "Litaniae Lauretanae", oremus: "Oratio", signing: "signando se", credoShort: "Breve", credoLong: "Longum", modeFull: "Integrum", modeShort: "Summarium", modeGroup: "Modus",
+      cross: "Signum crucis", credo: "Credo", pater: "Pater noster", ave: "Ave Maria", gloria: "Gloria Patri", fatima: "Oratio Fatimae", salve: "Salve Regina", kyrie: "Kyrie, eleison", litany: "Litaniae Lauretanae", oremus: "Oratio", signing: "signando se", credoShort: "Breve", credoLong: "Longum", modeShort: "Summarium",
       hint: "Ora in silentio vel voce. Tange ut pergas.", done: "Rosarium absolvisti. Benedicat te Dominus." }
   };
   const FLAGS = {
@@ -76,10 +76,9 @@
     $("rosDay").textContent = t("rosDay", { day: D[todayCode()] });
     $("rosTitle").innerHTML = esc(L.set[ros.set]).replace(/^(\S+)\s(.+)$/, "$1 <em>$2</em>");
     $("rosSets").innerHTML = Object.keys(SETS).map((k) => `<button type="button" data-set="${k}" class="${k === ros.set ? "on" : ""}">${esc(PL[pl()].set[k].replace(/^\S+\s/, ""))}${k === BY_DAY[todayCode()] ? ` <small>· ${t("todayMark")}</small>` : ""}</button>`).join("");
-    $("plangs").innerHTML = ["es", "ca", "la"].map((l) => `<button type="button" data-pl="${l}" class="${l === pl() ? "on" : ""}" aria-pressed="${l === pl()}" title="${PRAYER_LANGS[l]}">${FLAGS[l]}<span>${l.toUpperCase()}</span></button>`).join("");
-    const mb = (v, label) => `<button type="button" data-rmode="${v}" class="${v === ros.mode ? "on" : ""}" aria-pressed="${v === ros.mode}">${esc(label)}</button>`;
-    $("rosMode").setAttribute("aria-label", L.modeGroup);
-    $("rosMode").innerHTML = mb("full", L.modeFull) + mb("short", L.modeShort);
+    $("plangs").innerHTML = ["es", "ca", "la"].map((l) => `<button type="button" data-pl="${l}" class="${l === pl() ? "on" : ""}" aria-pressed="${l === pl()}" title="${PRAYER_LANGS[l]}" aria-label="${PRAYER_LANGS[l]}">${FLAGS[l]}</button>`).join("");
+    $("rosModeLabel").textContent = L.modeShort;
+    $("rosMode").setAttribute("aria-checked", ros.mode === "short");
     $("rosText").classList.toggle("short", ros.mode === "short");
     $("rosText").innerHTML = ros.mode === "short" ? rosarySummary(L) : rosaryText(L);
   }
@@ -248,10 +247,7 @@
 
   $("rosSets").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.set = b.dataset.set; renderRosary(); } };
   $("plangs").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.pl = b.dataset.pl === A.lang() ? null : b.dataset.pl; renderRosary(); } };
-  $("rosMode").onclick = (e) => {
-    const b = e.target.closest("[data-rmode]"); if (!b || b.dataset.rmode === ros.mode) return;
-    ros.mode = b.dataset.rmode; store("misas-rosmode", ros.mode); renderRosary();
-  };
+  $("rosMode").onclick = () => { ros.mode = ros.mode === "short" ? "full" : "short"; store("misas-rosmode", ros.mode); renderRosary(); };
   $("rosText").onclick = (e) => {
     const b = e.target.closest("[data-credo]"); if (!b) return;
     ros.credo = b.dataset.credo; store("misas-credo", ros.credo); renderRosary();

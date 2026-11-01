@@ -184,14 +184,14 @@ try { var ico = localStorage.getItem("misas-icon"); if (ico) misasIcon(ico); } c
     <div class="dev-scroll" id="rosScroll">
       <div class="dev-inner" id="rosList">
         <header class="dev-head">
-          <p class="eyebrow" id="rosDay"></p>
+          <div class="ros-top">
+            <p class="eyebrow" id="rosDay"></p>
+            <button type="button" class="ros-switch" id="rosMode" role="switch" aria-checked="false"><span id="rosModeLabel"></span><span class="track" aria-hidden="true"></span></button>
+          </div>
           <h1 id="rosTitle"></h1>
           <div class="ros-tools">
             <div class="chips" id="rosSets"></div>
-            <div class="ros-pickers">
-              <div class="credo-pick ros-mode" id="rosMode" role="group"></div>
-              <div class="plangs" id="plangs" role="group" aria-label="Idioma del rezo"></div>
-            </div>
+            <div class="plangs" id="plangs" role="group" aria-label="Idioma del rezo"></div>
           </div>
         </header>
         <div class="ros-text" id="rosText"></div>
