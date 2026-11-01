@@ -17,17 +17,17 @@
       wordError: "Todavía no tengo las lecturas de este día. Puedes leerlas en <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">Vatican News</a>.",
       rosSets: { joyful: "gozosos", sorrowful: "dolorosos", glorious: "gloriosos", luminous: "luminosos" }, rosTitle: "Misterios <em>{set}</em>",
       rosDay: "Rosario de hoy · {day}", todayMark: "hoy", prevDay: "Día anterior", nextDay: "Día siguiente",
-      brandMain: "Misas", brandArch: "Archidiócesis de", tabHome: "Inicio", tabChat: "Chat", tabMap: "Mapa", tabWord: "Palabra del día", tabWordShort: "Palabra", tabRosary: "Rosario", tabVol: "Voluntariado", tabVolShort: "Voluntariado", volSoon: "Próximamente", volTitle: "Echa <em>una mano</em>", volSub: "Estamos preparando un espacio para servir en tu parroquia y en la diócesis.", volKindsT: "Tipos de voluntariado", volKindsP: "Cáritas, acompañar a mayores y enfermos, catequesis, liturgia, jóvenes…", volJoinT: "Apúntate", volJoinP: "Elige lo que te encaja y deja tus datos para que la parroquia te contacte.", volShopsT: "Tiendas y conventos", volShopsP: "Librerías religiosas, artículos de culto y dulces de convento cerca de ti.", volNote: "Iremos añadiendo cada apartado poco a poco.", tabFaq: "Sobre nosotros y preguntas", faqEyebrow: "Sobre nosotros · Preguntas frecuentes", faqTitle: "Cómo <em>funciona</em> esto", faqSub: "Quién hay detrás, de dónde salen los horarios y cómo puedes ayudar.", faqIdeaQ: "¿Qué es Misas Barcelona?", faqIdeaA: "<p>Una web gratuita para encontrar misa, confesión o adoración en las parroquias de la Archidiócesis de Barcelona: dices dónde estás y a qué hora te va bien, y te decimos adónde puedes ir. También tienes la palabra del día y el rosario, y pronto un espacio de voluntariado.</p>", faqWhoQ: "¿Quién está detrás?", faqWhoA: "<p>Me llamo Guillem, tengo {age} años y soy de Barcelona. Soy graduado en Derecho y estudio el máster de Abogacía. Misas Barcelona nace de una pregunta muy sencilla: <em>«¿dónde puedo ir a misa?»</em>. Me gustaría que la eucaristía, la confesión, la adoración, la palabra, el rosario y la caridad con el prójimo estuvieran al alcance de todos, y especialmente de los jóvenes. Todo en un mismo sitio y sin complicaciones.</p><details class=\"more\"><summary>Leer la historia</summary><p>Todo empezó con dos amigas, Judit y Carla, que se estaban acercando a la fe. Querían ir a misa, pero no sabían dónde buscar, y los horarios que encontraban estaban desactualizados.</p><p>Yo había pasado por lo mismo. Me convertí con 21 años, me bauticé en abril de 2026 y, al principio, tampoco sabía adónde ir. Así que me puse manos a la obra, por ellas dos y por todos los que están en ese mismo punto.</p><p>La eucaristía, la confesión, la oración y la caridad son la base de la vida cristiana. Nadie debería quedarse sin vivirlas por no saber dónde ir.</p></details>", faqSrcQ: "¿De dónde salen los horarios?", faqSrcA: "<p>Cada horario pasa por tres capas de confirmación:</p><ol><li>Web de la parroquia: cada semana, un programa lee de forma automática la web de cada parroquia y extrae sus horarios.</li><li>Otras fuentes: si la parroquia no tiene web o no se puede leer, usamos los horarios del Arzobispado y los de OpenStreetMap, y si no coinciden, damos por buenos los del Arzobispado.</li><li>Revisión: después revisamos los horarios para corroborarlos.</li></ol><p>En cada ficha verás de dónde sale el horario y lo seguro que es.</p><p>Los horarios cambian (verano, fiestas…), así que si vas justo de tiempo, confírmalo con la parroquia.</p>", faqFixQ: "He visto un horario mal, ¿cómo aviso?", faqFixA: "<p>Estamos trabajando en ello. Muy pronto podrás buscar la parroquia por su nombre, elegirla y decirnos qué horario está mal y cuál es el correcto.</p><p>Mientras tanto, en cada ficha verás de dónde sale el horario y lo seguro que es.</p>", faqDonQ: "¿Puedo donar?", faqDonA: "<p>Estamos trabajando en ello. La web es y será gratuita.</p><p>De momento, la mejor ayuda es compartirla en tu parroquia y con tus amigos.</p>", faqPrivQ: "¿Guardáis mis datos?", faqPrivA: "<p>No. Lo que escribes en el chat y tu ubicación se quedan en tu móvil u ordenador: no se envían a ningún servidor ni pedimos registro.</p>", faqResQ: "Recursos", faqResA: "<ul><li><a href=\"https://esglesia.barcelona\" target=\"_blank\" rel=\"noopener\">Arzobispado de Barcelona</a></li><li><a href=\"https://www.vatican.va/archive/catechism_sp/index_sp.html\" target=\"_blank\" rel=\"noopener\">Catecismo de la Iglesia Católica</a></li><li><a href=\"https://www.vatican.va\" target=\"_blank\" rel=\"noopener\">La Santa Sede</a></li></ul>", themeLight: "Modo claro", themeDark: "Modo oscuro", themeGroup: "Modo",
-      eyebrow: "Archidiócesis de Barcelona · <span id=\"parishCount\">{n}</span> parroquias",
+      brandMain: "Misas", brandArch: "Archidiócesis de", skip: "Saltar al contenido", walkM: "{m} min a pie", lateT: "No llegas andando: estás a {m} min", lateNote: "= no llegas a tiempo andando", endOfDay: "Fin del día", favAdd: "Guardar en favoritas", favOff: "Quitar de favoritas", favOn: "Favorita", favSaved: "Guardada en favoritas: saldrá la primera en la lista", favRemoved: "Quitada de favoritas", kindOne: { mass: "Misa", confession: "Confesión", adoration: "Adoración" }, calAdd: "Añadir {t} al calendario", calDone: "Abre el archivo para guardarlo en tu calendario", icsNote: "Horario de Misas Barcelona. Si vas justo, confírmalo con la parroquia.", tabHome: "Inicio", tabChat: "Chat", tabMap: "Mapa", tabWord: "Palabra del día", tabWordShort: "Palabra", tabRosary: "Rosario", tabVol: "Voluntariado", tabVolShort: "Voluntariado", volSoon: "Próximamente", volTitle: "Echa <em>una mano</em>", volSub: "Estamos preparando un espacio para servir en tu parroquia y en la diócesis.", volKindsT: "Tipos de voluntariado", volKindsP: "Cáritas, acompañar a mayores y enfermos, catequesis, liturgia, jóvenes…", volJoinT: "Apúntate", volJoinP: "Elige lo que te encaja y deja tus datos para que la parroquia te contacte.", volShopsT: "Tiendas y conventos", volShopsP: "Librerías religiosas, artículos de culto y dulces de convento cerca de ti.", volNote: "Iremos añadiendo cada apartado poco a poco.", tabFaq: "Sobre nosotros y preguntas", faqEyebrow: "Sobre nosotros · Preguntas frecuentes", faqTitle: "Cómo <em>funciona</em> esto", faqSub: "Quién hay detrás, de dónde salen los horarios y cómo puedes ayudar.", faqIdeaQ: "¿Qué es Misas Barcelona?", faqIdeaA: "<p>Una web gratuita para encontrar misa, confesión o adoración en las parroquias de la Archidiócesis de Barcelona: dices dónde estás y a qué hora te va bien, y te decimos adónde puedes ir. También tienes la palabra del día y el rosario, y pronto un espacio de voluntariado.</p>", faqWhoQ: "¿Quién está detrás?", faqWhoA: "<p>Me llamo Guillem, tengo {age} años y soy de Barcelona. Soy graduado en Derecho y estudio el máster de Abogacía. Misas Barcelona nace de una pregunta muy sencilla: <em>«¿dónde puedo ir a misa?»</em>. Me gustaría que la eucaristía, la confesión, la adoración, la palabra, el rosario y la caridad con el prójimo estuvieran al alcance de todos, y especialmente de los jóvenes. Todo en un mismo sitio y sin complicaciones.</p><details class=\"more\"><summary>Leer la historia</summary><p>Todo empezó con dos amigas, Judit y Carla, que se estaban acercando a la fe. Querían ir a misa, pero no sabían dónde buscar, y los horarios que encontraban estaban desactualizados.</p><p>Yo había pasado por lo mismo. Me convertí con 21 años, me bauticé en abril de 2026 y, al principio, tampoco sabía adónde ir. Así que me puse manos a la obra, por ellas dos y por todos los que están en ese mismo punto.</p><p>La eucaristía, la confesión, la oración y la caridad son la base de la vida cristiana. Nadie debería quedarse sin vivirlas por no saber dónde ir.</p></details>", faqSrcQ: "¿De dónde salen los horarios?", faqSrcA: "<p>Cada horario pasa por tres capas de confirmación:</p><ol><li>Web de la parroquia: cada semana, un programa lee de forma automática la web de cada parroquia y extrae sus horarios.</li><li>Otras fuentes: si la parroquia no tiene web o no se puede leer, usamos los horarios del Arzobispado y los de OpenStreetMap, y si no coinciden, damos por buenos los del Arzobispado.</li><li>Revisión: después revisamos los horarios para corroborarlos.</li></ol><p>En cada ficha verás de dónde sale el horario y lo seguro que es.</p><p>Los horarios cambian (verano, fiestas…), así que si vas justo de tiempo, confírmalo con la parroquia.</p>", faqFixQ: "He visto un horario mal, ¿cómo aviso?", faqFixA: "<p>Estamos trabajando en ello. Muy pronto podrás buscar la parroquia por su nombre, elegirla y decirnos qué horario está mal y cuál es el correcto.</p><p>Mientras tanto, en cada ficha verás de dónde sale el horario y lo seguro que es.</p>", faqDonQ: "¿Puedo donar?", faqDonA: "<p>Estamos trabajando en ello. La web es y será gratuita.</p><p>De momento, la mejor ayuda es compartirla en tu parroquia y con tus amigos.</p>", faqPrivQ: "¿Guardáis mis datos?", faqPrivA: "<p>No. Lo que escribes en el chat y tu ubicación se quedan en tu móvil u ordenador: no se envían a ningún servidor ni pedimos registro.</p>", faqResQ: "Recursos", faqResA: "<ul><li><a href=\"https://esglesia.barcelona\" target=\"_blank\" rel=\"noopener\">Arzobispado de Barcelona</a></li><li><a href=\"https://www.vatican.va/archive/catechism_sp/index_sp.html\" target=\"_blank\" rel=\"noopener\">Catecismo de la Iglesia Católica</a></li><li><a href=\"https://www.vatican.va\" target=\"_blank\" rel=\"noopener\">La Santa Sede</a></li></ul>", themeLight: "Modo claro", themeDark: "Modo oscuro", themeGroup: "Modo", settings: "Ajustes: modo e idioma", langNames: { es: "Castellano", ca: "Català" },
+      eyebrow: "Archidiócesis<span class=\"eb-city\"> de Barcelona</span> · <span id=\"parishCount\">{n}</span> parroquias",
       heroTitle: "¿Dónde quieres ir a <em>misa</em>?",
       heroLede: "Dime dónde estás y a qué hora te va bien. También busco <strong class=\"k-conf\"><em>confesiones</em></strong> y <strong class=\"k-ador\"><em>adoración</em></strong>.",
       kindMass: "Misa", kindConf: "Confesión", kindAdor: "Adoración",
       lblDay: "Día", lblFrom: "Desde", lblTo: "Hasta", lblMun: "Municipio", lblLang: "Idioma", lblDist: "Distritos",
       langAny: "Cualquiera", langCa: "Catalán", langEs: "Castellano", langOther: "Otros idiomas",
-      searchPh: "Nombre de la parroquia o calle", reset: "Quitar filtros", filtersList: "Filtros y lista",
+      searchPh: "Nombre de la parroquia o calle", upNext: "Próximas misas", upNextAll: "Ver todas en el mapa", quick: { now: "Ahora", evening: "Esta tarde", tomorrow: "Mañana", sun: "Domingo" }, quickLbl: "Filtros rápidos", reset: "Quitar filtros", filtersList: "Filtros y lista",
       nearMe: "Cerca de mí", resetMap: "Restablecer mapa", toTop: "Volver arriba", switchTo: "Canviar a català", loading: "Cargando parroquias…",
       days: { mon: "lunes", tue: "martes", wed: "miércoles", thu: "jueves", fri: "viernes", sat: "sábado", sun: "domingo" },
-      dayShort: { mon: "L", tue: "M", wed: "X", thu: "J", fri: "V", sat: "S", sun: "D", hol: "F" },
+      dayShort: { mon: "L", tue: "M", wed: "X", thu: "J", fri: "V", sat: "S", sun: "D", hol: "F" }, dayAbbr: { mon: "Lun", tue: "Mar", wed: "Mié", thu: "Jue", fri: "Vie", sat: "Sáb", sun: "Dom", hol: "Festivos" }, holidays: "Festivos", sunL: "Domingo",
       todayOpt: "Hoy ({d})", tomorrow: "Mañana", sunHol: "Domingo y festivos", anyDay: "Cualquier día",
       allMun: "Todos los municipios", byDist: " · por distritos", allBcn: "Toda Barcelona",
       kindPl: { mass: "misas", confession: "confesiones", adoration: "adoración" },
@@ -43,7 +43,7 @@
       think: { mass: "Buscando misas…", confession: "Buscando confesiones…", adoration: "Buscando adoración…", times: "Mirando horarios…" },
       soft: "confesión antes de misa o a petición", langOtherShort: "otro",
       back: "← Volver a la lista", district: "Distrito {d}", community: "Comunidad pastoral {c}",
-      directions: "Cómo llegar", web: "Web", official: "Ficha oficial",
+      directions: "Cómo llegar", web: "Web", official: "Ficha oficial", share: "Compartir", copied: "Enlace copiado: ya puedes pegarlo en WhatsApp o donde quieras.", shareText: "Horarios de misa de {n}",
       hMass: "Misas", noMass: "Esta parroquia no publica horario de misas.", hConf: "Confesiones", hAdor: "Adoración eucarística", hOther: "Otras celebraciones", srcH: "De dónde sale este horario", srcNames: { REV: "revisión a mano", F1: "web de la parroquia", F2: "misas.org", F3: "ficha del Arzobispado", OSM: "OpenStreetMap" }, checked: "Comprobado el {d}", conf: { alta: "fiabilidad alta", media: "fiabilidad media", baja: "fiabilidad baja: puede no estar al día, confírmalo con la parroquia" }, srcOf: "{k}: {s}", warnHol: "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Si vas a ir un día especial, confírmalo con la parroquia.", otherSeasons: "Otras temporadas", rev: { fiable: "Horario comprobado: coincide con la revisión a mano.", no_coinciden: "No fiable: la web de la parroquia y la revisión a mano no coinciden. Se muestra el de la web; revisa la web y confírmalo con la parroquia.", sin_revisar: "Fiabilidad media: horario leído de la web de la parroquia, aún sin revisar a mano.", sin_revisar_otra: "Fiabilidad media: no sale de la web de la parroquia y aún no se ha revisado a mano. Confírmalo con la parroquia.", sin_web: "Esta parroquia no tiene web: el horario se ha revisado a mano y puede cambiar. Confírmalo con la parroquia.", sin_lectura: "Horario revisado a mano (la web de la parroquia no se ha podido leer). Puede cambiar: confírmalo con la parroquia.", revisado: "Horario revisado a mano (la ficha del Arzobispado dice otra cosa). Puede cambiar: confírmalo con la parroquia." }, mismatch: "El Arzobispado y OpenStreetMap no coinciden: se muestra el del Arzobispado, que puede no estar al día. Confírmalo con la parroquia.", pending: "Pendiente de verificar: no se ha podido leer la fuente esta semana; se muestra el último horario conocido.",
       monSat: "Lun–Sáb", everyDay: "Cada día", monFri: "Lun–Vie", sundays: "Domingos", districtLbl: "Distrito", youAreHere: "Estás aquí", askMore: "Pregunta otra cosa… ",
       ideas: ["Estoy en Gràcia y quiero ir a misa entre las 17 y las 20", "Misa el domingo por la mañana en Sarrià", "Confesiones el sábado en Sants", "Adoración hoy en el Eixample"],
@@ -56,17 +56,17 @@
       wordError: "Encara no tinc les lectures d'aquest dia. Les pots llegir a <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">evangeli.net</a>.",
       rosSets: { joyful: "de goig", sorrowful: "de dolor", glorious: "de glòria", luminous: "de llum" }, rosTitle: "Misteris <em>{set}</em>",
       rosDay: "Rosari d'avui · {day}", todayMark: "avui", prevDay: "Dia anterior", nextDay: "Dia següent",
-      brandMain: "Misses", brandArch: "Arxidiòcesi de", tabHome: "Inici", tabChat: "Xat", tabMap: "Mapa", tabWord: "Paraula del dia", tabWordShort: "Paraula", tabRosary: "Rosari", tabVol: "Voluntariat", tabVolShort: "Voluntariat", volSoon: "Properament", volTitle: "Dona <em>un cop de mà</em>", volSub: "Estem preparant un espai per servir a la teva parròquia i a la diòcesi.", volKindsT: "Tipus de voluntariat", volKindsP: "Càritas, acompanyar gent gran i malalts, catequesi, litúrgia, joves…", volJoinT: "Apunta-t'hi", volJoinP: "Tria el que t'escau i deixa les teves dades perquè la parròquia et contacti.", volShopsT: "Botigues i convents", volShopsP: "Llibreries religioses, articles de culte i dolços de convent a prop teu.", volNote: "Anirem afegint cada apartat a poc a poc.", tabFaq: "Qui som i preguntes", faqEyebrow: "Qui som · Preguntes freqüents", faqTitle: "Com <em>funciona</em> això", faqSub: "Qui hi ha al darrere, d'on surten els horaris i com pots ajudar.", faqIdeaQ: "Què és Misses Barcelona?", faqIdeaA: "<p>Un web gratuït per trobar missa, confessió o adoració a les parròquies de l'Arxidiòcesi de Barcelona: dius on ets i a quina hora et va bé, i et diem on pots anar. També tens la paraula del dia i el rosari, i aviat un espai de voluntariat.</p>", faqWhoQ: "Qui hi ha al darrere?", faqWhoA: "<p>Em dic Guillem, tinc {age} anys i sóc de Barcelona. Sóc graduat en Dret i estudio el màster d'Advocacia. Misses Barcelona neix d'una pregunta molt senzilla: <em>«on puc anar a missa?»</em>. M'agradaria que l'eucaristia, la confessió, l'adoració, la paraula, el rosari i la caritat amb el proïsme fossin a l'abast de tothom, i especialment dels joves. Tot en un mateix lloc i sense complicacions.</p><details class=\"more\"><summary>Llegir la història</summary><p>Tot va començar amb dues amigues, la Judit i la Carla, que s'estaven apropant a la fe. Volien anar a missa, però no sabien on buscar, i els horaris que trobaven estaven desactualitzats.</p><p>Jo havia passat pel mateix. Em vaig convertir amb 21 anys, em vaig batejar l'abril de 2026 i, al principi, tampoc no sabia on anar. Així que m'hi vaig posar, per elles dues i per tots els qui són en aquest mateix punt.</p><p>L'eucaristia, la confessió, la pregària i la caritat són la base de la vida cristiana. Ningú no s'hauria de quedar sense viure-les per no saber on anar.</p></details>", faqSrcQ: "D'on surten els horaris?", faqSrcA: "<p>Cada horari passa per tres capes de confirmació:</p><ol><li>Web de la parròquia: cada setmana, un programa llegeix de manera automàtica el web de cada parròquia i n'extreu els horaris.</li><li>Altres fonts: si la parròquia no té web o no es pot llegir, fem servir els horaris de l'Arquebisbat i els d'OpenStreetMap, i si no coincideixen, donem per bons els de l'Arquebisbat.</li><li>Revisió: després revisem els horaris per corroborar-los.</li></ol><p>A cada fitxa veuràs d'on surt l'horari i com n'és de segur.</p><p>Els horaris canvien (estiu, festes…), així que si vas just de temps, confirma-ho amb la parròquia.</p>", faqFixQ: "He vist un horari malament, com ho aviso?", faqFixA: "<p>Hi estem treballant. Ben aviat podràs buscar la parròquia pel nom, triar-la i dir-nos quin horari està malament i quin és el correcte.</p><p>Mentrestant, a cada fitxa veuràs d'on surt l'horari i com n'és de segur.</p>", faqDonQ: "Puc fer un donatiu?", faqDonA: "<p>Hi estem treballant. El web és i serà gratuït.</p><p>De moment, la millor ajuda és compartir-lo a la teva parròquia i amb els teus amics.</p>", faqPrivQ: "Guardeu les meves dades?", faqPrivA: "<p>No. El que escrius al xat i la teva ubicació es queden al teu mòbil o ordinador: no s'envien a cap servidor ni demanem registre.</p>", faqResQ: "Recursos", faqResA: "<ul><li><a href=\"https://esglesia.barcelona\" target=\"_blank\" rel=\"noopener\">Arquebisbat de Barcelona</a></li><li><a href=\"https://www.vatican.va/archive/catechism_sp/index_sp.html\" target=\"_blank\" rel=\"noopener\">Catecisme de l'Església Catòlica</a></li><li><a href=\"https://www.vatican.va\" target=\"_blank\" rel=\"noopener\">La Santa Seu</a></li></ul>", themeLight: "Mode clar", themeDark: "Mode fosc", themeGroup: "Mode",
-      eyebrow: "Arxidiòcesi de Barcelona · <span id=\"parishCount\">{n}</span> parròquies",
+      brandMain: "Misses", brandArch: "Arxidiòcesi de", skip: "Salta al contingut", walkM: "{m} min a peu", lateT: "No hi arribes caminant: ets a {m} min", lateNote: "= no hi arribes a temps caminant", endOfDay: "Final del dia", favAdd: "Desa a preferides", favOff: "Treu de preferides", favOn: "Preferida", favSaved: "Desada a preferides: sortirà la primera a la llista", favRemoved: "Treta de preferides", kindOne: { mass: "Missa", confession: "Confessió", adoration: "Adoració" }, calAdd: "Afegeix {t} al calendari", calDone: "Obre l\'arxiu per desar-lo al teu calendari", icsNote: "Horari de Misses Barcelona. Si vas just, confirma-ho amb la parròquia.", tabHome: "Inici", tabChat: "Xat", tabMap: "Mapa", tabWord: "Paraula del dia", tabWordShort: "Paraula", tabRosary: "Rosari", tabVol: "Voluntariat", tabVolShort: "Voluntariat", volSoon: "Properament", volTitle: "Dona <em>un cop de mà</em>", volSub: "Estem preparant un espai per servir a la teva parròquia i a la diòcesi.", volKindsT: "Tipus de voluntariat", volKindsP: "Càritas, acompanyar gent gran i malalts, catequesi, litúrgia, joves…", volJoinT: "Apunta-t'hi", volJoinP: "Tria el que t'escau i deixa les teves dades perquè la parròquia et contacti.", volShopsT: "Botigues i convents", volShopsP: "Llibreries religioses, articles de culte i dolços de convent a prop teu.", volNote: "Anirem afegint cada apartat a poc a poc.", tabFaq: "Qui som i preguntes", faqEyebrow: "Qui som · Preguntes freqüents", faqTitle: "Com <em>funciona</em> això", faqSub: "Qui hi ha al darrere, d'on surten els horaris i com pots ajudar.", faqIdeaQ: "Què és Misses Barcelona?", faqIdeaA: "<p>Un web gratuït per trobar missa, confessió o adoració a les parròquies de l'Arxidiòcesi de Barcelona: dius on ets i a quina hora et va bé, i et diem on pots anar. També tens la paraula del dia i el rosari, i aviat un espai de voluntariat.</p>", faqWhoQ: "Qui hi ha al darrere?", faqWhoA: "<p>Em dic Guillem, tinc {age} anys i sóc de Barcelona. Sóc graduat en Dret i estudio el màster d'Advocacia. Misses Barcelona neix d'una pregunta molt senzilla: <em>«on puc anar a missa?»</em>. M'agradaria que l'eucaristia, la confessió, l'adoració, la paraula, el rosari i la caritat amb el proïsme fossin a l'abast de tothom, i especialment dels joves. Tot en un mateix lloc i sense complicacions.</p><details class=\"more\"><summary>Llegir la història</summary><p>Tot va començar amb dues amigues, la Judit i la Carla, que s'estaven apropant a la fe. Volien anar a missa, però no sabien on buscar, i els horaris que trobaven estaven desactualitzats.</p><p>Jo havia passat pel mateix. Em vaig convertir amb 21 anys, em vaig batejar l'abril de 2026 i, al principi, tampoc no sabia on anar. Així que m'hi vaig posar, per elles dues i per tots els qui són en aquest mateix punt.</p><p>L'eucaristia, la confessió, la pregària i la caritat són la base de la vida cristiana. Ningú no s'hauria de quedar sense viure-les per no saber on anar.</p></details>", faqSrcQ: "D'on surten els horaris?", faqSrcA: "<p>Cada horari passa per tres capes de confirmació:</p><ol><li>Web de la parròquia: cada setmana, un programa llegeix de manera automàtica el web de cada parròquia i n'extreu els horaris.</li><li>Altres fonts: si la parròquia no té web o no es pot llegir, fem servir els horaris de l'Arquebisbat i els d'OpenStreetMap, i si no coincideixen, donem per bons els de l'Arquebisbat.</li><li>Revisió: després revisem els horaris per corroborar-los.</li></ol><p>A cada fitxa veuràs d'on surt l'horari i com n'és de segur.</p><p>Els horaris canvien (estiu, festes…), així que si vas just de temps, confirma-ho amb la parròquia.</p>", faqFixQ: "He vist un horari malament, com ho aviso?", faqFixA: "<p>Hi estem treballant. Ben aviat podràs buscar la parròquia pel nom, triar-la i dir-nos quin horari està malament i quin és el correcte.</p><p>Mentrestant, a cada fitxa veuràs d'on surt l'horari i com n'és de segur.</p>", faqDonQ: "Puc fer un donatiu?", faqDonA: "<p>Hi estem treballant. El web és i serà gratuït.</p><p>De moment, la millor ajuda és compartir-lo a la teva parròquia i amb els teus amics.</p>", faqPrivQ: "Guardeu les meves dades?", faqPrivA: "<p>No. El que escrius al xat i la teva ubicació es queden al teu mòbil o ordinador: no s'envien a cap servidor ni demanem registre.</p>", faqResQ: "Recursos", faqResA: "<ul><li><a href=\"https://esglesia.barcelona\" target=\"_blank\" rel=\"noopener\">Arquebisbat de Barcelona</a></li><li><a href=\"https://www.vatican.va/archive/catechism_sp/index_sp.html\" target=\"_blank\" rel=\"noopener\">Catecisme de l'Església Catòlica</a></li><li><a href=\"https://www.vatican.va\" target=\"_blank\" rel=\"noopener\">La Santa Seu</a></li></ul>", themeLight: "Mode clar", themeDark: "Mode fosc", themeGroup: "Mode", settings: "Ajustos: mode i idioma", langNames: { es: "Castellano", ca: "Català" },
+      eyebrow: "Arxidiòcesi<span class=\"eb-city\"> de Barcelona</span> · <span id=\"parishCount\">{n}</span> parròquies",
       heroTitle: "On vols anar a <em>missa</em>?",
       heroLede: "Digues-me on ets i a quina hora et va bé. També busco <strong class=\"k-conf\"><em>confessions</em></strong> i <strong class=\"k-ador\"><em>adoració</em></strong>.",
       kindMass: "Missa", kindConf: "Confessió", kindAdor: "Adoració",
       lblDay: "Dia", lblFrom: "Des de", lblTo: "Fins a", lblMun: "Municipi", lblLang: "Idioma", lblDist: "Districtes",
       langAny: "Qualsevol", langCa: "Català", langEs: "Castellà", langOther: "Altres idiomes",
-      searchPh: "Nom de la parròquia o carrer", reset: "Treure filtres", filtersList: "Filtres i llista",
+      searchPh: "Nom de la parròquia o carrer", upNext: "Properes misses", upNextAll: "Veure-les totes al mapa", quick: { now: "Ara", evening: "Aquesta tarda", tomorrow: "Demà", sun: "Diumenge" }, quickLbl: "Filtres ràpids", reset: "Treure filtres", filtersList: "Filtres i llista",
       nearMe: "A prop meu", resetMap: "Restablir el mapa", toTop: "Tornar a dalt", switchTo: "Cambiar a castellano", loading: "Carregant parròquies…",
       days: { mon: "dilluns", tue: "dimarts", wed: "dimecres", thu: "dijous", fri: "divendres", sat: "dissabte", sun: "diumenge" },
-      dayShort: { mon: "Dl", tue: "Dt", wed: "Dc", thu: "Dj", fri: "Dv", sat: "Ds", sun: "Dg", hol: "F" },
+      dayShort: { mon: "Dl", tue: "Dt", wed: "Dc", thu: "Dj", fri: "Dv", sat: "Ds", sun: "Dg", hol: "F" }, dayAbbr: { mon: "Dl", tue: "Dt", wed: "Dc", thu: "Dj", fri: "Dv", sat: "Ds", sun: "Dg", hol: "Festius" }, holidays: "Festius", sunL: "Diumenge",
       todayOpt: "Avui ({d})", tomorrow: "Demà", sunHol: "Diumenge i festius", anyDay: "Qualsevol dia",
       allMun: "Tots els municipis", byDist: " · per districtes", allBcn: "Tot Barcelona",
       kindPl: { mass: "misses", confession: "confessions", adoration: "adoració" },
@@ -82,7 +82,7 @@
       think: { mass: "Buscant misses…", confession: "Buscant confessions…", adoration: "Buscant adoració…", times: "Mirant horaris…" },
       soft: "confessió abans de missa o a petició", langOtherShort: "altre",
       back: "← Tornar a la llista", district: "Districte {d}", community: "Comunitat pastoral {c}",
-      directions: "Com arribar-hi", web: "Web", official: "Fitxa oficial",
+      directions: "Com arribar-hi", web: "Web", official: "Fitxa oficial", share: "Compartir", copied: "Enllaç copiat: ja el pots enganxar al WhatsApp o on vulguis.", shareText: "Horaris de missa de {n}",
       hMass: "Misses", noMass: "Aquesta parròquia no publica horari de misses.", hConf: "Confessions", hAdor: "Adoració eucarística", hOther: "Altres celebracions", srcH: "D'on surt aquest horari", srcNames: { REV: "revisió a mà", F1: "web de la parròquia", F2: "misas.org", F3: "fitxa de l'Arquebisbat", OSM: "OpenStreetMap" }, checked: "Comprovat el {d}", conf: { alta: "fiabilitat alta", media: "fiabilitat mitjana", baja: "fiabilitat baixa: pot no estar al dia, confirma-ho amb la parròquia" }, srcOf: "{k}: {s}", warnHol: "Els horaris poden canviar els festius, a l'estiu i per Nadal o Setmana Santa. Si hi vas un dia especial, confirma-ho amb la parròquia.", otherSeasons: "Altres temporades", rev: { fiable: "Horari comprovat: coincideix amb la revisió a mà.", no_coinciden: "No fiable: la web de la parròquia i la revisió a mà no coincideixen. Es mostra el de la web; revisa la web i confirma-ho amb la parròquia.", sin_revisar: "Fiabilitat mitjana: horari llegit de la web de la parròquia, encara sense revisar a mà.", sin_revisar_otra: "Fiabilitat mitjana: no surt de la web de la parròquia i encara no s'ha revisat a mà. Confirma-ho amb la parròquia.", sin_web: "Aquesta parròquia no té web: l'horari s'ha revisat a mà i pot canviar. Confirma-ho amb la parròquia.", sin_lectura: "Horari revisat a mà (la web de la parròquia no s'ha pogut llegir). Pot canviar: confirma-ho amb la parròquia.", revisado: "Horari revisat a mà (la fitxa de l'Arquebisbat diu una altra cosa). Pot canviar: confirma-ho amb la parròquia." }, mismatch: "L'Arquebisbat i OpenStreetMap no coincideixen: es mostra el de l'Arquebisbat, que pot no estar al dia. Confirma-ho amb la parròquia.", pending: "Pendent de verificar: aquesta setmana no s'ha pogut llegir la font; es mostra l'últim horari conegut.",
       monSat: "Dl–Ds", everyDay: "Cada dia", monFri: "Dl–Dv", sundays: "Diumenges", districtLbl: "Districte", youAreHere: "Ets aquí", askMore: "Pregunta una altra cosa… ",
       ideas: ["Soc a Gràcia i vull anar a missa entre les 17 i les 20", "Missa diumenge al matí a Sarrià", "Confessions dissabte a Sants", "Adoració avui a l'Eixample"],
@@ -436,13 +436,48 @@
   // ---------- Modos ----------
   const DEVOTION = ["word", "rosary", "volunteer", "faq"];
   const calm = () => window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // ---------- Enlaces propios: cada vista y cada parroquia tiene su dirección (#mapa, #parroquia/…) ----------
+  const ROUTE = { home: "inicio", chat: "chat", map: "mapa", word: "palabra", rosary: "rosario", volunteer: "voluntariado", faq: "nosotros" };
+  const ROUTE_LABEL = { home: "tabHome", chat: "tabChat", map: "tabMap", word: "tabWord", rosary: "tabRosary", volunteer: "tabVol", faq: "tabFaq" };
+  let routing = false;
+  function setTitle() {
+    const p = state.detailId && DATA.find((x) => x.id === state.detailId);
+    const name = p ? p.name : state.mode !== "home" ? t(ROUTE_LABEL[state.mode]) : "";
+    document.title = (name ? name + " · " : "") + (LNG === "ca" ? "Misses Barcelona" : "Misas Barcelona");
+  }
+  function pushRoute(hash, st) {
+    if (routing || location.hash === "#" + hash) return;
+    history.pushState(st || null, "", "#" + hash);
+  }
+  function applyRoute() {
+    const h = decodeURIComponent(location.hash.slice(1));
+    routing = true;
+    try {
+      if (h.startsWith("parroquia/")) openDetail(h.slice(10));
+      else {
+        if (state.detailId) closeDetail();
+        setMode(Object.keys(ROUTE).find((k) => ROUTE[k] === h) || "home");
+      }
+    } finally { routing = false; }
+    setTitle();
+  }
+  addEventListener("popstate", applyRoute);
+  // Avisa a los lectores de pantalla de la sección en la que estás
+  let lastAnn = "home";
+  function announce(mode) {
+    const el = document.getElementById("srLive"); if (!el || mode === lastAnn) return; lastAnn = mode;
+    el.textContent = ""; setTimeout(() => { el.textContent = t(ROUTE_LABEL[mode] || "tabHome"); }, 60);
+  }
   function setMode(mode) {
+    pushRoute(ROUTE[mode]);
     if (state.mode === mode && $("stage").dataset.mode === mode) return;
     const apply = () => {
       state.mode = mode;
       $("stage").dataset.mode = mode;
       document.body.dataset.tone = DEVOTION.includes(mode) ? mode : state.kind;
-      document.querySelectorAll(".tabs button, .extras button, .bottomnav button, .x-faq").forEach((b) => b.classList.toggle("on", b.dataset.go === mode));
+      document.querySelectorAll(".tabs button, .extras button, .bottomnav button, .x-faq").forEach((b) => { const on = b.dataset.go === mode; b.classList.toggle("on", on); if (on) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
+      setTitle();
+      announce(mode);
       document.dispatchEvent(new Event("misas:mode"));
       MapView.resize && MapView.resize();
       if (state.pendingFit && mode !== "chat") refit();
@@ -459,18 +494,39 @@
   }
 
   // ---------- Pintar resultados ----------
+  // Quita horas repetidas: la misma hora e idioma que ya sale en otro grupo de días que la incluye (p. ej. «domingo y festivos» y «festivos»).
+  function dedupe(evs) {
+    const same = (a, b) => a.start === b.start && (a.end || "") === (b.end || "") && (a.lang || "") === (b.lang || "");
+    return evs.filter((ev, i) => !evs.some((o, j) => j !== i && same(ev, o) && ev.days.every((d) => o.days.includes(d)) && (o.days.length > ev.days.length || j < i)));
+  }
   function timesHtml(r, kind, day) {
     if (r.soft) return `<span class="t note">${t("soft")}</span>` + r.hits.map((h) => `<span class="t hit">${h.start}</span>`).join("");
     const hit = new Set(r.hits);
+    // Con «Cerca de mí», las horas de hoy a las que no llegas andando salen tachadas.
+    const walk = walkMin(r), now = walk != null && state.day === "today" ? nowBcn().min : null;
+    const late = (ev) => now != null && hit.has(ev) && toMin(ev.start) - now < walk;
+    const seen = new Set();
     return (eventsOf(r.p, kind) || []).filter((ev) => dayMatch(ev, day))
-      .map((ev) => `<span class="t ${hit.has(ev) ? "hit" : ""}">${ev.start}${ev.end ? "–" + ev.end : ""}${ev.lang ? `<small>${LANG[ev.lang] || (ev.lang === "other" ? t("langOtherShort") : ev.lang)}</small>` : ""}</span>`).join("");
+      .filter((ev) => { const k = ev.start + (ev.end || "") + (ev.lang || ""); if (seen.has(k)) return false; seen.add(k); return true; })
+      .map((ev) => `<span class="t ${hit.has(ev) ? "hit" : ""}${late(ev) ? " late" : ""}"${late(ev) ? ` title="${t("lateT", { m: walk })}"` : ""}>${ev.start}${ev.end ? "–" + ev.end : ""}${ev.lang ? `<small>${LANG[ev.lang] || (ev.lang === "other" ? t("langOtherShort") : ev.lang)}</small>` : ""}</span>`).join("");
   }
+  // Minutos andando (4,5 km/h y un 30 % más por las calles), solo con «Cerca de mí».
+  const walkMin = (r) => nearUser() && r.d != null ? Math.max(1, Math.round(r.d * 1.3 / 4.5 * 60)) : null;
+  // Parroquias favoritas (se guardan solo en este móvil u ordenador)
+  const FAVS = new Set((() => { try { return JSON.parse(localStorage.getItem("misas-favs") || "[]"); } catch (e) { return []; } })());
+  const isFav = (id) => FAVS.has(id);
+  function toggleFav(id) {
+    if (FAVS.has(id)) FAVS.delete(id); else FAVS.add(id);
+    try { localStorage.setItem("misas-favs", JSON.stringify([...FAVS])); } catch (e) { /* sin almacenamiento */ }
+    return FAVS.has(id);
+  }
+  const STAR = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6-4.5-4.2 6.1-.8z"/></svg>`;
   function cardHtml(r, kind, day) {
     const p = r.p;
     const where = p.municipio === "Barcelona" ? p.distrito : p.municipio;
     return `<li class="card" data-id="${esc(p.id)}" tabindex="0">
-      <span class="name">${esc(p.name)}</span>
-      <span class="dist">${km(r.d)}</span>
+      <span class="name">${isFav(p.id) ? `<span class="fav-star" title="${t("favOn")}">${STAR}</span>` : ""}${esc(p.name)}</span>
+      <span class="dist">${km(r.d)}${walkMin(r) != null ? ` · ${t("walkM", { m: walkMin(r) })}` : ""}</span>
       <span class="where">${esc(where || p.address || "")}</span>
       <span class="times">${timesHtml(r, kind, day)}</span>
     </li>`;
@@ -527,8 +583,9 @@
   const nearUser = () => !!(state.origin && state.user && state.origin === state.user);
   function renderList() {
     const res = state.results, day = resolvedDay(state.day);
-    $("summary").innerHTML = `<strong>${res.length}</strong> ${res.length === 1 ? t("parish1") : t("parishN")} · ${describe(state, null, nearUser()).replace(/<\/?strong>/g, "")}`;
-    $("list").innerHTML = res.length ? res.slice(0, 300).map((r) => cardHtml(r, state.kind, day)).join("")
+    $("summary").innerHTML = `<strong>${res.length}</strong> ${res.length === 1 ? t("parish1") : t("parishN")} · ${describe(state, null, nearUser()).replace(/<\/?strong>/g, "")}` + (nearUser() && state.day === "today" ? `<span class="late-note"><span class="t late">10:00</span> ${t("lateNote")}</span>` : "");
+    const favFirst = res.filter((r) => isFav(r.p.id)).concat(res.filter((r) => !isFav(r.p.id)));
+    $("list").innerHTML = res.length ? favFirst.slice(0, 300).map((r) => cardHtml(r, state.kind, day)).join("")
       : `<li class="empty">${t("noneList")}</li>`;
     observeReveal($("list").querySelectorAll(".card"));
   }
@@ -653,14 +710,16 @@
   function schedule(evs) {
     if (!evs.length) return "";
     const groups = new Map();
-    for (const ev of evs) { const k = ev.days.join(","); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(ev); }
+    for (const ev of dedupe(evs)) { const k = ev.days.join(","); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(ev); }
     const wk = ["mon", "tue", "wed", "thu", "fri"];
     return `<dl class="sched">${[...groups].map(([k, list]) => {
       const d = k.split(",");
       const label = wk.every((x) => d.includes(x)) && d.includes("sat") && d.includes("sun") ? t("everyDay")
         : wk.every((x) => d.includes(x)) && d.includes("sat") && !d.includes("sun") ? t("monSat")
         : wk.every((x) => d.includes(x)) && d.length === 5 ? t("monFri")
-        : d.every((x) => x === "sun" || x === "hol") ? t("sundays") : d.map((x) => t("dayShort")[x]).join(" ");
+        : d.includes("sun") && d.every((x) => x === "sun" || x === "hol") ? t("sunL")
+        : d.length === 1 || (d.length === 2 && d.includes("hol")) ? (d[0] === "hol" ? t("holidays") : cap(t("days")[d[0]]))
+        : d.map((x) => t("dayAbbr")[x]).join(", ");
       return `<dt>${label}</dt><dd>${list.map((ev) => `<span class="t" ${ev.note ? `title="${esc(ev.note)}"` : ""}>${ev.start}${ev.end ? "–" + ev.end : ""}${ev.lang ? `<small>${LANG[ev.lang] || (ev.lang === "other" ? t("langOtherShort") : ev.lang)}</small>` : ""}</span>`).join("")}</dd>`;
     }).join("")}</dl>`;
   }
@@ -693,6 +752,34 @@
     </div>`;
   }
 
+  // «Añadir al calendario» descarga un .ics con la próxima misa que encaja con los filtros.
+  function nextHit(id) {
+    const r = state.results.find((x) => x.p.id === id);
+    if (!r || r.soft || !r.hits.length || state.day === "any") return null;
+    const ev = r.hits[0], d = resolvedDay(state.day), now = nowBcn();
+    let add = (DAY_CODES.indexOf(d) - DAY_CODES.indexOf(now.day) + 7) % 7;
+    if (add === 0 && toMin(ev.start) < now.min) add = 7;
+    const parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Madrid", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date()).split("-").map(Number);
+    const date = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2] + add));
+    return { ev, date, add };
+  }
+  function downloadIcs(p, h) {
+    const pad = (n) => String(n).padStart(2, "0");
+    const ymd = `${h.date.getUTCFullYear()}${pad(h.date.getUTCMonth() + 1)}${pad(h.date.getUTCDate())}`;
+    const s = toMin(h.ev.start), e = h.ev.end ? toMin(h.ev.end) : s + 45;
+    const hm = (m) => `${pad(Math.floor(m / 60) % 24)}${pad(m % 60)}00`;
+    const clean = (x) => String(x || "").replace(/[,;\\]/g, (c) => "\\" + c).replace(/\n/g, " ");
+    const what = t("kindOne")[state.kind] || t("kindOne").mass;
+    const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Misas Barcelona//ES", "BEGIN:VEVENT",
+      `UID:${p.id}-${ymd}-${hm(s)}@misas-barcelona`, `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").slice(0, 15)}Z`,
+      `DTSTART;TZID=Europe/Madrid:${ymd}T${hm(s)}`, `DTEND;TZID=Europe/Madrid:${ymd}T${hm(e)}`,
+      `SUMMARY:${clean(what + " · " + p.name)}`, `LOCATION:${clean([p.address, p.municipio].filter(Boolean).join(", "))}`,
+      `DESCRIPTION:${clean(t("icsNote"))}`, "END:VEVENT", "END:VCALENDAR"].join("\r\n");
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar" })); a.download = `misa-${p.id}.ics`;
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    toast(t("calDone"));
+  }
   function openDetail(id, focus = true) {
     const p = DATA.find((x) => x.id === id);
     if (!p) return;
@@ -706,13 +793,15 @@
     const box = $("detail");
     box.innerHTML = `
       <button type="button" class="pill" id="closeDetail" style="align-self:flex-start">${t("back")}</button>
-      <h2>${esc(p.name)}</h2>
+      <div class="dhead"><h2>${esc(p.name)}</h2><button type="button" class="fav-btn${isFav(p.id) ? " on" : ""}" id="favBtn" aria-pressed="${isFav(p.id)}" aria-label="${t(isFav(p.id) ? "favOff" : "favAdd")}" title="${t(isFav(p.id) ? "favOff" : "favAdd")}">${STAR}</button></div>
       <p class="addr">${esc([p.address, p.municipio].filter(Boolean).join(", "))}<em>${esc(p.distrito ? t("district", { d: p.distrito }) : "")}${p.distrito && !/^Sin /.test(p.comunitat) ? " · " : ""}${esc(!/^Sin /.test(p.comunitat) ? t("community", { c: p.comunitat }) : "")}</em></p>
       <div class="actions">
         <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=${dest}">${t("directions")}</a>
         ${p.phone ? `<a class="btn" href="tel:${esc(p.phone.replace(/\s/g, ""))}">${esc(p.phone)}</a>` : ""}
         ${p.web ? `<a class="btn" target="_blank" rel="noopener" href="${esc(p.web)}">${t("web")}</a>` : ""}
         ${p.url ? `<a class="btn" target="_blank" rel="noopener" href="${esc(p.url)}">${t("official")}</a>` : ""}
+        <button type="button" class="btn share" id="shareBtn"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M5 13v5.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>${t("share")}</button>
+        ${nextHit(id) ? `<button type="button" class="btn cal" id="calBtn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v4M10 15h4"/></svg>${t("calAdd", { t: nextHit(id).ev.start })}</button>` : ""}
       </div>
       <h3>${t("hMass")}</h3>
       ${schedule(p.masses) || `<p class="note">${t("noMass")}</p>`}
@@ -722,16 +811,28 @@
       ${p.other ? `<h3>${t("hOther")}</h3><p class="note">${esc(p.other)}</p>` : ""}
       ${sourceBox(p)}`;
     box.hidden = false; state.detailId = id;
+    pushRoute("parroquia/" + id, { detail: id }); setTitle();
     observeReveal(box.querySelectorAll("h3, .sched, .note"));
     $("filters").hidden = true; $("summary").hidden = true; $("list").hidden = true;
     $("side").scrollTop = 0;
     // En el móvil la vista Mapa es una sola página: vuelve arriba para ver el punto en el mapa y el inicio de la ficha.
     if ($("stage").scrollTop > 0) $("stage").scrollTo({ top: 0, behavior: calm() ? "auto" : "smooth" });
-    $("closeDetail").onclick = closeDetail;
+    $("closeDetail").onclick = () => { if (history.state && history.state.detail) history.back(); else closeDetail(); };
+    // Compartir la parroquia: menú del móvil (WhatsApp, Telegram…) o, si no hay, copiar el enlace
+    $("shareBtn").onclick = async () => {
+      const url = location.href.split("#")[0] + "#parroquia/" + encodeURIComponent(p.id);
+      const data = { title: p.name, text: t("shareText", { n: p.name }), url };
+      if (navigator.share) { try { await navigator.share(data); } catch (e) { /* cancelado */ } return; }
+      try { await navigator.clipboard.writeText(url); toast(t("copied")); } catch (e) { prompt("", url); }
+    };
+    $("favBtn").onclick = () => { const on = toggleFav(id), b = $("favBtn"); b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); b.title = t(on ? "favOff" : "favAdd"); b.setAttribute("aria-label", b.title); toast(t(on ? "favSaved" : "favRemoved")); renderList(); document.querySelectorAll("#list .card").forEach((c) => c.classList.toggle("sel", c.dataset.id === id)); };
+    if ($("calBtn")) $("calBtn").onclick = () => { const h = nextHit(id); if (h) downloadIcs(p, h); };
     if (focus && MapView.focus) MapView.focus(p);
   }
   function closeDetail() {
     $("detail").hidden = true; state.detailId = null;
+    if (!routing && location.hash.startsWith("#parroquia/")) history.replaceState(null, "", "#mapa");
+    setTitle();
     $("filters").hidden = false; $("summary").hidden = false; $("list").hidden = false;
     if (MapView.highlight) MapView.highlight(null);
   }
@@ -743,7 +844,7 @@
       DAY_CODES.map((d) => `<option value="${d}">${d === "sun" ? t("sunHol") : cap(D[d])}</option>`).join("") + `<option value="any">${t("anyDay")}</option>`;
     const hours = []; for (let h = 0; h < 24; h++) for (const m of [0, 30]) hours.push(h * 60 + m);
     $("fFrom").innerHTML = hours.map((m) => `<option value="${m}">${fmt(m)}</option>`).join("");
-    $("fTo").innerHTML = hours.map((m) => `<option value="${m + 29}">${fmt(m + 29)}</option>`).join("");
+    $("fTo").innerHTML = hours.map((m) => `<option value="${m + 29}">${m + 29 >= 1439 ? t("endOfDay") : fmt(m + 29)}</option>`).join("");
     const counts = {};
     for (const p of DATA) counts[p.municipio] = (counts[p.municipio] || 0) + 1;
     $("fMun").innerHTML = `<option value="">${t("allMun")}</option>` + Object.keys(counts).filter(Boolean).sort((a, b) => a.localeCompare(b, "ca"))
@@ -760,7 +861,7 @@
     document.querySelectorAll("[data-i18n-ph]").forEach((el) => { el.placeholder = t(el.dataset.i18nPh); });
     document.querySelectorAll("[data-i18n-aria]").forEach((el) => { el.setAttribute("aria-label", t(el.dataset.i18nAria)); if (el.title) el.title = t(el.dataset.i18nAria); });
     document.querySelectorAll("#langs button").forEach((b) => {
-      if (!b.innerHTML) b.innerHTML = `${FLAG[b.dataset.lang]}<span>${b.dataset.lang.toUpperCase()}</span>`;
+      if (!b.innerHTML) b.innerHTML = `${FLAG[b.dataset.lang]}<span>${t("langNames")[b.dataset.lang]}</span>`;
       b.classList.toggle("on", b.dataset.lang === LNG); b.setAttribute("aria-pressed", b.dataset.lang === LNG);
     });
     $("modes").setAttribute("aria-label", t("themeGroup"));
@@ -785,6 +886,8 @@
   }
   function setTheme(m) {
     document.documentElement.dataset.theme = m;
+    // La barra de estado del móvil sigue al modo elegido
+    document.querySelectorAll('meta[name="theme-color"]').forEach((el) => { el.removeAttribute("media"); el.content = m === "dark" ? "#0e0b0c" : "#ffffff"; });
     try { localStorage.setItem("misas-theme", m); } catch (e) { /* sin almacenamiento */ }
     applyTheme();
   }
@@ -794,16 +897,30 @@
     try { localStorage.setItem("misas-lang", l); } catch (e) { /* sin almacenamiento */ }
     const swap = () => {
       applyLang(); fillSelects(); syncControls(); renderList(); showOnMapLabel();
-      if (state.detailId) openDetail(state.detailId, false);
-      setPh(true);
+      if (state.detailId) { routing = true; openDetail(state.detailId, false); routing = false; }
+      setTitle();
+      setPh(true); renderUpNext();
       langListeners.forEach((fn) => fn(LNG));
     };
     document.body.classList.add("lang-swap");
     setTimeout(() => { swap(); document.body.classList.remove("lang-swap"); }, calm() ? 0 : 160);
   }
 
+  // Filtros rápidos encima del mapa: un toque y listo
+  const QUICK = {
+    now: () => { const n = nowBcn().min; return { day: "today", from: n, to: Math.min(1439, n + 90) }; },
+    evening: () => ({ day: "today", from: 16 * 60, to: 1439 }),
+    tomorrow: () => ({ day: "tomorrow", from: 0, to: 1439 }),
+    sun: () => ({ day: "sun", from: 0, to: 1439 })
+  };
+  function renderQuick() {
+    const box = $("quick"); if (!box) return;
+    const cur = Object.keys(QUICK).find((k) => { const q = QUICK[k](); return q.day === state.day && Math.abs(q.from - state.from) < 2 && q.to === state.to; });
+    box.innerHTML = Object.keys(QUICK).map((k) => `<button type="button" data-q="${k}" class="${k === cur ? "on" : ""}" aria-pressed="${k === cur}">${k === "now" ? '<i class="dot"></i>' : ""}${t("quick")[k]}</button>`).join("");
+  }
   function syncControls() {
-    document.querySelectorAll(".seg.kinds button").forEach((b) => b.classList.toggle("on", b.dataset.kind === state.kind));
+    renderQuick();
+    document.querySelectorAll(".seg.kinds button").forEach((b) => { b.classList.toggle("on", b.dataset.kind === state.kind); b.setAttribute("aria-pressed", b.dataset.kind === state.kind); });
     document.querySelectorAll(".seg.kinds").forEach((sg) => sg.style.setProperty("--idx", ["mass", "confession", "adoration"].indexOf(state.kind)));
     if (document.querySelector(".mapcol").dataset.kind !== state.kind) {
       document.querySelector(".mapcol").dataset.kind = state.kind;
@@ -816,7 +933,7 @@
     $("fMun").value = state.mun; $("fLang").value = state.lang; $("fText").value = state.text;
     const hasDist = !!GEO.distritos[state.mun];
     $("districts").hidden = !hasDist;
-    document.querySelectorAll("#distChips button").forEach((b) => b.classList.toggle("on", b.dataset.dist === state.dist));
+    document.querySelectorAll("#distChips button").forEach((b) => { b.classList.toggle("on", b.dataset.dist === state.dist); b.setAttribute("aria-pressed", b.dataset.dist === state.dist); });
   }
   function applyFilters() {
     if (state.dist && !state.mun) state.mun = "Barcelona";
@@ -869,6 +986,14 @@
     closeDetail();
     showOnMap(initialFilters(), null, computeResults(initialFilters(), null));
   }
+  // Inicio en el ordenador: las próximas misas (de ahora en adelante) debajo del chat, para llenar el hueco
+  function renderUpNext() {
+    const box = $("upnext"); if (!box) return;
+    const f = initialFilters(), res = computeResults(f, null).slice(0, 4), day = resolvedDay(f.day);
+    box.innerHTML = res.length ? `<p class="eyebrow">${t("upNext")}</p><ul class="cards">${res.map((r) => cardHtml(r, "mass", day)).join("")}</ul><button type="button" class="link" id="upAll">${t("upNextAll")}</button>` : "";
+    box.querySelectorAll(".card").forEach((c) => c.onclick = () => { showOnMap(f, null, computeResults(f, null)); openDetail(c.dataset.id); });
+    const all = $("upAll"); if (all) all.onclick = () => { showOnMap(f, null, computeResults(f, null)); setMode("map"); };
+  }
   const initialFilters = () => Object.assign({}, BLANK, { from: nowBcn().min });
 
   // Botón de volver arriba: sigue al panel que se está desplazando.
@@ -891,6 +1016,7 @@
   }
 
   function bind() {
+    const skip = document.querySelector(".skip"); if (skip) skip.addEventListener("click", (e) => { e.preventDefault(); const el = [...document.querySelectorAll("#stage .win")].find(x => x.offsetParent) || document.getElementById("stage"); el.setAttribute("tabindex", "-1"); el.focus(); });
     applyLang();
     $("ideas").onclick = (e) => { const b = e.target.closest("button"); if (b) ask(b.textContent); };
     const input = $("chatInput");
@@ -921,6 +1047,13 @@
     $("modes").onclick = (e) => { const b = e.target.closest("button"); if (b) setTheme(b.dataset.mode); };
     $("langs").onclick = (e) => { const b = e.target.closest("button"); if (b && b.dataset.lang !== LNG) setLang(b.dataset.lang); };
     $("nearBtn").onclick = nearMe;
+    // Menú de ajustes (modo e idioma) en un solo botón
+    const setBtn = $("setBtn"), setPop = $("setPop");
+    const openSet = (o) => { setPop.hidden = !o; setBtn.setAttribute("aria-expanded", o); setBtn.classList.toggle("on", o); };
+    setBtn.onclick = (e) => { e.stopPropagation(); openSet(setPop.hidden); };
+    document.addEventListener("click", (e) => { if (!setPop.hidden && !e.target.closest(".settings")) openSet(false); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !setPop.hidden) { openSet(false); setBtn.focus(); } });
+    $("quick").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; Object.assign(state, QUICK[b.dataset.q]()); applyFilters(); };
     $("resetMap").onclick = resetMap;
     bindToTop();
   }
@@ -945,7 +1078,9 @@
     // Vista inicial: misas de hoy desde ahora en el mapa.
     const f = Object.assign({}, BLANK, { from: nowBcn().min });
     showOnMap(f, null, computeResults(f, null));
+    renderUpNext();
     if (!window.maplibregl && !CFG.googleMapsApiKey) hideSplash();
+    if (location.hash.length > 1) applyRoute(); // entrar por un enlace: abre esa vista o esa parroquia
   }
   const langListeners = [];
   window.MisasApp = { t, lang: () => LNG, onLang: (fn) => langListeners.push(fn), calm, nowBcn, esc, cap,

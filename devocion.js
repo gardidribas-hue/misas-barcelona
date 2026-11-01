@@ -43,11 +43,11 @@
   // Nombres de las oraciones en cada idioma de rezo.
   const PL = {
     es: { set: { joyful: "Misterios gozosos", sorrowful: "Misterios dolorosos", glorious: "Misterios gloriosos", luminous: "Misterios luminosos" },
-      ord: ["Primer", "Segundo", "Tercer", "Cuarto", "Quinto"], mys: "misterio", of: "de", intro: "Inicio", end: "Final",
+      ord: ["Primer", "Segundo", "Tercer", "Cuarto", "Quinto"], mys: "misterio", of: "de", intro: "Para empezar", end: "Para terminar",
       cross: "Señal de la cruz", credo: "Credo", pater: "Padrenuestro", ave: "Avemaría", gloria: "Gloria", fatima: "Oh Jesús mío", salve: "Salve", kyrie: "Señor, ten piedad", litany: "Letanías a la Virgen María", oremus: "Oración final", signing: "santiguándose", credoShort: "Corto", credoLong: "Largo",
       hint: "Reza en silencio o en voz alta. Toca para seguir.", done: "Has terminado el rosario. Que el Señor te bendiga." },
     ca: { set: { joyful: "Misteris de goig", sorrowful: "Misteris de dolor", glorious: "Misteris de glòria", luminous: "Misteris de llum" },
-      ord: ["Primer", "Segon", "Tercer", "Quart", "Cinquè"], mys: "misteri", of: "de", intro: "Inici", end: "Final",
+      ord: ["Primer", "Segon", "Tercer", "Quart", "Cinquè"], mys: "misteri", of: "de", intro: "Per començar", end: "Per acabar",
       cross: "Senyal de la creu", credo: "Credo", pater: "Parenostre", ave: "Avemaria", gloria: "Glòria", fatima: "Oh Jesús meu", salve: "Salve", kyrie: "Senyor, tingueu pietat", litany: "Lletanies a la Mare de Déu", oremus: "Oració final", signing: "senyant-se", credoShort: "Curt", credoLong: "Llarg",
       hint: "Resa en silenci o en veu alta. Toca per seguir.", done: "Has acabat el rosari. Que el Senyor et beneeixi." },
     la: { set: { joyful: "Mysteria gaudiosa", sorrowful: "Mysteria dolorosa", glorious: "Mysteria gloriosa", luminous: "Mysteria luminosa" },
@@ -178,6 +178,17 @@
   $("wordPrev").onclick = () => shiftDay(-1);
   $("wordNext").onclick = () => shiftDay(1);
   $("wordToday").onclick = () => { word.date = todayBcnDate(); renderWord(); };
+  // En el móvil, deslizar el dedo sobre la lectura cambia de día.
+  (() => {
+    const area = $("wordcol"); let x0 = null, y0 = 0;
+    area.addEventListener("touchstart", (e) => { const p = e.touches[0]; x0 = p.clientX; y0 = p.clientY; }, { passive: true });
+    area.addEventListener("touchend", (e) => {
+      if (x0 == null) return; const p = e.changedTouches[0], dx = p.clientX - x0, dy = p.clientY - y0; x0 = null;
+      if (Math.abs(dx) < 70 || Math.abs(dx) < Math.abs(dy) * 2) return;
+      area.classList.remove("swl", "swr"); void area.offsetWidth; area.classList.add(dx < 0 ? "swl" : "swr");
+      shiftDay(dx < 0 ? 1 : -1);
+    }, { passive: true });
+  })();
 
   $("rosSets").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.set = b.dataset.set; renderRosary(); } };
   $("plangs").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.pl = b.dataset.pl === A.lang() ? null : b.dataset.pl; renderRosary(); } };
