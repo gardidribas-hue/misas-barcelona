@@ -44,15 +44,15 @@
   const PL = {
     es: { set: { joyful: "Misterios gozosos", sorrowful: "Misterios dolorosos", glorious: "Misterios gloriosos", luminous: "Misterios luminosos" },
       ord: ["Primer", "Segundo", "Tercer", "Cuarto", "Quinto"], mys: "misterio", of: "de", intro: "Para empezar", end: "Para terminar",
-      cross: "Señal de la cruz", credo: "Credo", pater: "Padrenuestro", ave: "Avemaría", gloria: "Gloria", fatima: "Oh Jesús mío", salve: "Salve", kyrie: "Señor, ten piedad", litany: "Letanías a la Virgen María", oremus: "Oración final", signing: "santiguándose", credoShort: "Corto", credoLong: "Largo",
+      cross: "Señal de la cruz", credo: "Credo", pater: "Padrenuestro", ave: "Avemaría", gloria: "Gloria", fatima: "Oh Jesús mío", salve: "Salve", kyrie: "Señor, ten piedad", litany: "Letanías a la Virgen María", oremus: "Oración final", signing: "santiguándose", credoShort: "Corto", credoLong: "Largo", modeShort: "Resumen",
       hint: "Reza en silencio o en voz alta. Toca para seguir.", done: "Has terminado el rosario. Que el Señor te bendiga." },
     ca: { set: { joyful: "Misteris de goig", sorrowful: "Misteris de dolor", glorious: "Misteris de glòria", luminous: "Misteris de llum" },
       ord: ["Primer", "Segon", "Tercer", "Quart", "Cinquè"], mys: "misteri", of: "de", intro: "Per començar", end: "Per acabar",
-      cross: "Senyal de la creu", credo: "Credo", pater: "Parenostre", ave: "Avemaria", gloria: "Glòria", fatima: "Oh Jesús meu", salve: "Salve", kyrie: "Senyor, tingueu pietat", litany: "Lletanies a la Mare de Déu", oremus: "Oració final", signing: "senyant-se", credoShort: "Curt", credoLong: "Llarg",
+      cross: "Senyal de la creu", credo: "Credo", pater: "Parenostre", ave: "Avemaria", gloria: "Glòria", fatima: "Oh Jesús meu", salve: "Salve", kyrie: "Senyor, tingueu pietat", litany: "Lletanies a la Mare de Déu", oremus: "Oració final", signing: "senyant-se", credoShort: "Curt", credoLong: "Llarg", modeShort: "Resum",
       hint: "Resa en silenci o en veu alta. Toca per seguir.", done: "Has acabat el rosari. Que el Senyor et beneeixi." },
     la: { set: { joyful: "Mysteria gaudiosa", sorrowful: "Mysteria dolorosa", glorious: "Mysteria gloriosa", luminous: "Mysteria luminosa" },
       ord: ["Primum", "Secundum", "Tertium", "Quartum", "Quintum"], mys: "mysterium", of: "ex", intro: "Initium", end: "Finis",
-      cross: "Signum crucis", credo: "Credo", pater: "Pater noster", ave: "Ave Maria", gloria: "Gloria Patri", fatima: "Oratio Fatimae", salve: "Salve Regina", kyrie: "Kyrie, eleison", litany: "Litaniae Lauretanae", oremus: "Oratio", signing: "signando se", credoShort: "Breve", credoLong: "Longum",
+      cross: "Signum crucis", credo: "Credo", pater: "Pater noster", ave: "Ave Maria", gloria: "Gloria Patri", fatima: "Oratio Fatimae", salve: "Salve Regina", kyrie: "Kyrie, eleison", litany: "Litaniae Lauretanae", oremus: "Oratio", signing: "signando se", credoShort: "Breve", credoLong: "Longum", modeShort: "Summarium",
       hint: "Ora in silentio vel voce. Tange ut pergas.", done: "Rosarium absolvisti. Benedicat te Dominus." }
   };
   const FLAGS = {
@@ -65,10 +65,11 @@
   const PRAYER_LANGS = { es: "Castellano", ca: "Català", la: "Latine" };
 
   const todayCode = () => A.nowBcn().day;
-  const ros = { set: BY_DAY[todayCode()], pl: null, credo: null };
+  const ros = { set: BY_DAY[todayCode()], pl: null, credo: null, mode: null };
   const pl = () => ros.pl || A.lang();
   const store = (k, v) => { try { v === undefined ? (v = localStorage.getItem(k)) : localStorage.setItem(k, v); } catch (e) { /* sin almacenamiento */ } return v; };
   ros.credo = store("misas-credo") === "long" ? "long" : "short";
+  ros.mode = store("misas-rosmode") === "short" ? "short" : "full"; // «Resumen»: solo los 5 misterios
 
   function renderRosary() {
     const L = PL[pl()], list = SETS[ros.set], D = t("days");
@@ -76,7 +77,10 @@
     $("rosTitle").innerHTML = esc(L.set[ros.set]).replace(/^(\S+)\s(.+)$/, "$1 <em>$2</em>");
     $("rosSets").innerHTML = Object.keys(SETS).map((k) => `<button type="button" data-set="${k}" class="${k === ros.set ? "on" : ""}">${esc(PL[pl()].set[k].replace(/^\S+\s/, ""))}${k === BY_DAY[todayCode()] ? ` <small>· ${t("todayMark")}</small>` : ""}</button>`).join("");
     $("plangs").innerHTML = ["es", "ca", "la"].map((l) => `<button type="button" data-pl="${l}" class="${l === pl() ? "on" : ""}" aria-pressed="${l === pl()}" title="${PRAYER_LANGS[l]}">${FLAGS[l]}<span>${l.toUpperCase()}</span></button>`).join("");
-    $("rosText").innerHTML = rosaryText(L);
+    $("rosModeLabel").textContent = L.modeShort;
+    $("rosMode").setAttribute("aria-checked", ros.mode === "short");
+    $("rosText").classList.toggle("short", ros.mode === "short");
+    $("rosText").innerHTML = ros.mode === "short" ? rosarySummary(L) : rosaryText(L);
   }
 
   // ---------- El rosario entero en un solo texto vertical ----------
@@ -107,6 +111,13 @@
     });
     h += `<section class="ros-part"><h2 class="ros-sec">${esc(L.end)}</h2>${shown("salve")}${shown("kyrie")}${shown("litany")}${shown("oremus")}${shown("cross")}<p class="ros-done">${esc(L.done)}</p></section>`;
     return h;
+  }
+
+  // ---------- Resumen: solo los 5 misterios, cada uno en una pestaña azul que se despliega ----------
+  // Para quien ya se sabe las oraciones: al abrir la pestaña sale la línea breve del misterio y su cita.
+  function rosarySummary(L) {
+    return SETS[ros.set].map((m, k) => `<details class="mys-tab"><summary><span class="num">${k + 1}</span><span class="mt-name"><small>${esc(L.ord[k])} ${esc(L.mys)}</small>${esc(m[pl()][0])}</span><span class="chev" aria-hidden="true"></span></summary>
+      <p class="mt-line">${esc(m[pl()][1])} <span class="nw">· ${esc(m.ref)}</span></p></details>`).join("");
   }
 
   // ---------- Palabra del día: lecturas de la misa ----------
@@ -236,6 +247,7 @@
 
   $("rosSets").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.set = b.dataset.set; renderRosary(); } };
   $("plangs").onclick = (e) => { const b = e.target.closest("button"); if (b) { ros.pl = b.dataset.pl === A.lang() ? null : b.dataset.pl; renderRosary(); } };
+  $("rosMode").onclick = () => { ros.mode = ros.mode === "short" ? "full" : "short"; store("misas-rosmode", ros.mode); renderRosary(); };
   $("rosText").onclick = (e) => {
     const b = e.target.closest("[data-credo]"); if (!b) return;
     ros.credo = b.dataset.credo; store("misas-credo", ros.credo); renderRosary();
