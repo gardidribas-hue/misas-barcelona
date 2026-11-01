@@ -781,7 +781,10 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 .icon-pick img { display: block; width: 100%; height: auto; border-radius: 22%; box-shadow: 0 0 0 1px var(--ring); }
 .icon-pick button.on { background: var(--surface); box-shadow: inset 0 0 0 2px var(--gold); }
 .icon-pick button:active { transform: scale(.94); }
+.icon-set { display: flex; flex-direction: column; gap: 8px; }
 .icon-note { margin: 0 4px; font-size: 12px; line-height: 1.4; color: var(--muted); }
+/* En ordenador no hay pantalla de inicio: el selector de icono solo sale en móvil y tableta */
+@media (hover: hover) and (pointer: fine) { .icon-set { display: none; } }
 
 /* ---------- Barra de abajo con 5 huecos (el chat sigue en Inicio) ---------- */
 @media (max-width: 860px) {
