@@ -810,7 +810,7 @@
       ${p.adoration.length || p.adoration_text ? `<h3>${t("hAdor")}</h3>${schedule(p.adoration)}${p.adoration_text ? `<p class="note">${esc(p.adoration_text)}</p>` : ""}` : ""}
       ${p.other ? `<h3>${t("hOther")}</h3><p class="note">${esc(p.other)}</p>` : ""}
       ${sourceBox(p)}`;
-    box.hidden = false; state.detailId = id;
+    box.hidden = false; state.detailId = id; box.classList.remove("full"); box.scrollTop = 0;
     pushRoute("parroquia/" + id, { detail: id }); setTitle();
     observeReveal(box.querySelectorAll("h3, .sched, .note"));
     $("filters").hidden = true; $("summary").hidden = true; $("list").hidden = true;
@@ -830,7 +830,7 @@
     if (focus && MapView.focus) MapView.focus(p);
   }
   function closeDetail() {
-    $("detail").hidden = true; state.detailId = null;
+    $("detail").hidden = true; state.detailId = null; $("detail").classList.remove("full");
     if (!routing && location.hash.startsWith("#parroquia/")) history.replaceState(null, "", "#mapa");
     setTitle();
     $("filters").hidden = false; $("summary").hidden = false; $("list").hidden = false;
@@ -1015,7 +1015,26 @@
     document.addEventListener("misas:mode", () => { target = null; place(); });
   }
 
+  // Móvil: la ficha es una hoja que se sube hasta arriba (por encima del mapa) y se vuelve a bajar.
+  function bindSheet() {
+    const box = $("detail"), mobile = () => matchMedia("(max-width: 860px)").matches;
+    const setFull = (on) => box.classList.toggle("full", on);
+    box.addEventListener("scroll", () => { if (mobile() && box.scrollTop > 8) setFull(true); }, { passive: true });
+    let y0 = null, top0 = 0, fromHandle = false;
+    box.addEventListener("touchstart", (e) => {
+      if (!mobile()) return; const y = e.touches[0].clientY;
+      y0 = y; top0 = box.scrollTop; fromHandle = y - box.getBoundingClientRect().top < 34;
+    }, { passive: true });
+    box.addEventListener("touchmove", (e) => {
+      if (y0 == null) return; const dy = e.touches[0].clientY - y0;
+      if (dy < -24) { setFull(true); }
+      else if (dy > 40 && (fromHandle || (top0 <= 0 && box.scrollTop <= 0))) { setFull(false); }
+    }, { passive: true });
+    box.addEventListener("touchend", () => { y0 = null; }, { passive: true });
+    box.addEventListener("click", (e) => { if (mobile() && e.clientY - box.getBoundingClientRect().top < 30) setFull(!box.classList.contains("full")); });
+  }
   function bind() {
+    bindSheet();
     const skip = document.querySelector(".skip"); if (skip) skip.addEventListener("click", (e) => { e.preventDefault(); const el = [...document.querySelectorAll("#stage .win")].find(x => x.offsetParent) || document.getElementById("stage"); el.setAttribute("tabindex", "-1"); el.focus(); });
     applyLang();
     $("ideas").onclick = (e) => { const b = e.target.closest("button"); if (b) ask(b.textContent); };
