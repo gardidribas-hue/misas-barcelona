@@ -862,6 +862,9 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
   .upnext .card { cursor: pointer; }
   .upnext .link { align-self: flex-start; }
   .stage[data-mode="home"] .chat-scroll { flex: none; }
+  /* Aire arriba para que «Archidiócesis de Barcelona» no choque con la esquina redondeada de la tarjeta. */
+  .stage[data-mode="home"]:not(.has-thread) .chatcol { justify-content: safe center; }
+  .stage[data-mode="home"] .hero { padding-top: 26px; }
   .stage[data-mode="home"] .floatbar .pill { display: none; }
 }
 
