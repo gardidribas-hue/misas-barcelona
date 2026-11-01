@@ -188,7 +188,10 @@ try { var ico = localStorage.getItem("misas-icon"); if (ico) misasIcon(ico); } c
           <h1 id="rosTitle"></h1>
           <div class="ros-tools">
             <div class="chips" id="rosSets"></div>
-            <div class="plangs" id="plangs" role="group" aria-label="Idioma del rezo"></div>
+            <div class="ros-pickers">
+              <div class="credo-pick ros-mode" id="rosMode" role="group"></div>
+              <div class="plangs" id="plangs" role="group" aria-label="Idioma del rezo"></div>
+            </div>
           </div>
         </header>
         <div class="ros-text" id="rosText"></div>

@@ -569,6 +569,23 @@ body[data-tone="volunteer"] { background: color-mix(in srgb, var(--backdrop) var
 .fold summary:hover .chev { background: var(--accent-soft); }
 .fold .pr-text { padding: 10px 0 2px; color: color-mix(in srgb, var(--ink) 68%, var(--bg)); animation: rise .3s var(--ease) both; }
 .ros-done { margin: 8px 0 0; color: var(--muted); font-style: italic; }
+.ros-pickers { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.ros-mode { padding: 4px; }
+.ros-mode button { padding: 9px 16px; }
+/* Resumen: los 5 misterios en pestañas azules desplegables */
+.ros-text.short { gap: 12px; }
+.mys-tab { border-radius: 18px; background: var(--accent); color: var(--accent-ink); box-shadow: var(--shadow); overflow: hidden; }
+.mys-tab summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 14px; padding: 14px 16px 14px 14px; user-select: none; }
+.mys-tab summary::-webkit-details-marker { display: none; }
+.mys-tab .num { flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-ink); color: var(--accent-strong); font: 400 1.25rem/1 var(--display); }
+.mys-tab .mt-name { flex: 1; min-width: 0; display: grid; gap: 4px; font: 700 1.25rem/1.25 var(--read); text-wrap: balance; }
+.mys-tab .mt-name small { font: 800 0.6875rem/1 var(--ui); letter-spacing: .1em; text-transform: uppercase; opacity: .8; }
+.mys-tab .chev { flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: color-mix(in srgb, var(--accent-ink) 18%, transparent); transition: background .2s; }
+.mys-tab .chev::before { content: ""; width: 7px; height: 7px; margin-top: -5.6px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); transition: transform .25s var(--ease), margin .25s; }
+.mys-tab[open] .chev::before { transform: rotate(225deg); margin-top: 4px; }
+.mys-tab summary:hover .chev { background: color-mix(in srgb, var(--accent-ink) 30%, transparent); }
+.mys-tab .mt-line { margin: 0; padding: 0 18px 16px 62px; font-style: italic; font-size: 1.0625rem; line-height: 1.55; animation: rise .3s var(--ease) both; }
+.mys-tab .nw { white-space: nowrap; font-style: normal; opacity: .85; }
 
 /* Voluntariado (naranja): de momento, tarjetas de lo que vendrá */
 .vol-cita { margin: 2px 0 4px; padding: 4px 0 4px 20px; border-left: 3px solid var(--accent); display: grid; gap: 8px; }
