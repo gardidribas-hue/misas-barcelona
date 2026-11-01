@@ -76,7 +76,7 @@
     $("rosDay").textContent = t("rosDay", { day: D[todayCode()] });
     $("rosTitle").innerHTML = esc(L.set[ros.set]).replace(/^(\S+)\s(.+)$/, "$1 <em>$2</em>");
     $("rosSets").innerHTML = Object.keys(SETS).map((k) => `<button type="button" data-set="${k}" class="${k === ros.set ? "on" : ""}">${esc(PL[pl()].set[k].replace(/^\S+\s/, ""))}${k === BY_DAY[todayCode()] ? ` <small>· ${t("todayMark")}</small>` : ""}</button>`).join("");
-    $("plangs").innerHTML = ["es", "ca", "la"].map((l) => `<button type="button" data-pl="${l}" class="${l === pl() ? "on" : ""}" aria-pressed="${l === pl()}" title="${PRAYER_LANGS[l]}" aria-label="${PRAYER_LANGS[l]}">${FLAGS[l]}</button>`).join("");
+    $("plangs").innerHTML = ["es", "ca", "la"].map((l) => `<button type="button" data-pl="${l}" class="${l === pl() ? "on" : ""}" aria-pressed="${l === pl()}" title="${PRAYER_LANGS[l]}">${FLAGS[l]}<span>${l.toUpperCase()}</span></button>`).join("");
     $("rosModeLabel").textContent = L.modeShort;
     $("rosMode").setAttribute("aria-checked", ros.mode === "short");
     $("rosText").classList.toggle("short", ros.mode === "short");

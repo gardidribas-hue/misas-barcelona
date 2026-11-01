@@ -569,11 +569,7 @@ body[data-tone="volunteer"] { background: color-mix(in srgb, var(--backdrop) var
 .fold summary:hover .chev { background: var(--accent-soft); }
 .fold .pr-text { padding: 10px 0 2px; color: color-mix(in srgb, var(--ink) 68%, var(--bg)); animation: rise .3s var(--ease) both; }
 .ros-done { margin: 8px 0 0; color: var(--muted); font-style: italic; }
-/* Una sola fila de controles: misterios y banderas juntos; «Resumen» es un interruptor en la línea de arriba */
-.ros-tools { justify-content: flex-start; gap: 6px; }
-.ros-tools .chips { display: contents; }
-.ros-tools .plangs { margin-left: auto; padding: 3px; gap: 2px; }
-.ros-tools .plangs button { padding: 3px; }
+/* «Resumen» es un interruptor en la línea de arriba */
 .ros-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .ros-switch { flex: none; display: inline-flex; align-items: center; gap: 8px; border: 0; background: none; padding: 4px 0; cursor: pointer; font: 700 0.8125rem/1 var(--ui); letter-spacing: .02em; color: var(--muted); }
 .ros-switch .track { position: relative; width: 38px; height: 22px; border-radius: 999px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); transition: background .2s; }
