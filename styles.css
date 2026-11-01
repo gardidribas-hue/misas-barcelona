@@ -776,6 +776,12 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 .set-pop .langs button.on { background: var(--surface); box-shadow: inset 0 0 0 2px var(--gold); }
 .set-pop .langs svg { width: 34px !important; height: 34px !important; }
 .set-pop .modes button::after { display: none; }
+.icon-pick { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.icon-pick button { display: grid; place-items: center; aspect-ratio: 1; padding: 6px; border: 0; border-radius: 16px; background: none; cursor: pointer; transition: background .2s var(--ease), transform .15s var(--ease); }
+.icon-pick img { display: block; width: 100%; height: auto; border-radius: 22%; box-shadow: 0 0 0 1px var(--ring); }
+.icon-pick button.on { background: var(--surface); box-shadow: inset 0 0 0 2px var(--gold); }
+.icon-pick button:active { transform: scale(.94); }
+.icon-note { margin: 0 4px; font-size: 12px; line-height: 1.4; color: var(--muted); }
 
 /* ---------- Barra de abajo con 5 huecos (el chat sigue en Inicio) ---------- */
 @media (max-width: 860px) {
