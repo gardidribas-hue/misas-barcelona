@@ -190,28 +190,33 @@
   const calm = () => (A.calm ? A.calm() : false);
   const inner = () => $("wordScroll").querySelector(".dev-inner");
   const preload = () => { for (const d of [-1, 1]) loadDay(ymd(new Date(word.date.getTime() + d * 864e5))).catch(() => {}); };
+  // Solo se mueve lo que cambia de un día a otro (fecha, tiempo litúrgico, lecturas y fuente);
+  // el título «Palabra del día» y los botones se quedan quietos. Al deslizar con el dedo se mueve la página entera.
+  const movers = () => ["wordDate", "wordLit", "reading", "wordFoot"].map($);
+  const anim = (els, frames, opt) => els.map((e) => e.animate(frames, opt));
   let sliding = false;
   async function slideDay(d, fromX = 0) {
-    const el = inner();
-    if (calm() || !el.animate) { shiftDay(d); return; }
+    const swipe = fromX !== 0, els = swipe ? [inner()] : movers();
+    if (calm() || !els[0].animate) { shiftDay(d); return; }
     if (sliding) return; sliding = true;
-    const w = $("wordcol").clientWidth || 360;
-    const out = el.animate([{ transform: `translateX(${fromX}px)`, opacity: Math.max(0.25, 1 - Math.abs(fromX) / w) }, { transform: `translateX(${-d * w * 0.45}px)`, opacity: 0 }], { duration: 200, easing: "cubic-bezier(.4,0,1,1)", fill: "forwards" });
-    el.style.transform = ""; el.style.opacity = "";
-    await out.finished.catch(() => {});
+    const w = $("wordcol").clientWidth || 360, far = swipe ? 0.45 : 0.12, near = swipe ? 0.35 : 0.08;
+    const out = anim(els, [{ transform: `translateX(${fromX}px)`, opacity: Math.max(0.25, 1 - Math.abs(fromX) / w) }, { transform: `translateX(${-d * w * far}px)`, opacity: 0 }], { duration: 200, easing: "cubic-bezier(.4,0,1,1)", fill: "forwards" });
+    if (swipe) { els[0].style.transform = ""; els[0].style.opacity = ""; }
+    await Promise.all(out.map((a) => a.finished.catch(() => {})));
     word.date = new Date(word.date.getTime() + d * 864e5); $("wordScroll").scrollTop = 0;
     await renderWord();
-    out.cancel();
-    el.animate([{ transform: `translateX(${d * w * 0.35}px)`, opacity: 0 }, { transform: "none", opacity: 1 }], { duration: 380, easing: "cubic-bezier(.22,1,.36,1)" });
+    out.forEach((a) => a.cancel());
+    anim(els, [{ transform: `translateX(${d * w * near}px)`, opacity: 0 }, { transform: "none", opacity: 1 }], { duration: 380, easing: "cubic-bezier(.22,1,.36,1)" });
     sliding = false; preload();
   }
   async function fadeTo(date) {
-    const el = inner();
-    if (calm() || !el.animate) { word.date = date; renderWord(); return; }
-    await el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 160, fill: "forwards" }).finished.catch(() => {});
+    const els = movers();
+    if (calm() || !els[0].animate) { word.date = date; renderWord(); return; }
+    const out = anim(els, [{ opacity: 1 }, { opacity: 0 }], { duration: 160, fill: "forwards" });
+    await Promise.all(out.map((a) => a.finished.catch(() => {})));
     word.date = date; $("wordScroll").scrollTop = 0; await renderWord();
-    el.getAnimations().forEach((x) => x.cancel());
-    el.animate([{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 320, easing: "cubic-bezier(.22,1,.36,1)" });
+    out.forEach((a) => a.cancel());
+    anim(els, [{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 320, easing: "cubic-bezier(.22,1,.36,1)" });
     preload();
   }
   $("wordPrev").onclick = () => slideDay(-1);
