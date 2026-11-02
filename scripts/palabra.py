@@ -106,8 +106,11 @@ def santo(day):
     párrafo largo que le sigue, su reseña. Si la página cambia, se queda sin tarjeta."""
     url = f"https://www.vaticannews.va/es/santos/{day:%m/%d}.html"
     s = get(url)
-    h2 = next((h for h in s.find_all("h2") if len(clean(h.get_text(" "))) > 3
-               and not re.search(r"(?i)otros eventos|santo del d[ií]a|vatican news", h.get_text(" "))), None)
+    # Vatican News escribe los santos como «s. Carlos Borromeo», «ss. Vitale y Agrícola», «b. …»;
+    # así se salta el «Menu» y los demás <h2> de la cabecera.
+    pref = re.compile(r"^(ss?|bb?|sta|beat[ao]s?)\.\s+\S", re.I)
+    h2s = [h for h in s.find_all("h2") if not h.find_parent(["nav", "header", "footer"])]
+    h2 = next((h for h in h2s if pref.match(clean(h.get_text(" ")))), None)
     if h2 is None:
         raise ValueError("sin santo")
     name = clean(h2.get_text(" "))
@@ -272,6 +275,10 @@ def main():
             for lang in ("es", "ca"):
                 if lang in data and (old.get(lang) or {}).get("saint"):
                     data[lang]["saint"] = old[lang]["saint"]
+        for lang in ("es", "ca"):  # restos de la primera versión, que leía la cabecera de la página
+            sn = ((data.get(lang) or {}).get("saint") or {}).get("name", "")
+            if re.match(r"(?i)menu$|el sant[o]? del d[ií]a", sn):
+                data[lang].pop("saint")
         rk = key(data.get("es", {}).get("reflection"))
         if rk and rk in seen:
             print(day, "reflexión repetida de otro día: se quita")
