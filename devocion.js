@@ -188,20 +188,19 @@
 
   // Cambio de día con deslizamiento: la lectura sale hacia un lado y la nueva entra por el otro.
   const calm = () => (A.calm ? A.calm() : false);
-  const inner = () => $("wordScroll").querySelector(".dev-inner");
   const preload = () => { for (const d of [-1, 1]) loadDay(ymd(new Date(word.date.getTime() + d * 864e5))).catch(() => {}); };
   // Solo se mueve lo que cambia de un día a otro (fecha, tiempo litúrgico, lecturas y fuente);
-  // el título «Palabra del día» y los botones se quedan quietos. Al deslizar con el dedo se mueve la página entera.
+  // el título «Palabra del día» y los botones se quedan quietos, también al deslizar con el dedo en el móvil.
   const movers = () => ["wordDate", "wordLit", "reading", "wordFoot"].map($);
   const anim = (els, frames, opt) => els.map((e) => e.animate(frames, opt));
   let sliding = false;
   async function slideDay(d, fromX = 0) {
-    const swipe = fromX !== 0, els = swipe ? [inner()] : movers();
+    const swipe = fromX !== 0, els = movers();
     if (calm() || !els[0].animate) { shiftDay(d); return; }
     if (sliding) return; sliding = true;
     const w = $("wordcol").clientWidth || 360, far = swipe ? 0.45 : 0.12, near = swipe ? 0.35 : 0.08;
     const out = anim(els, [{ transform: `translateX(${fromX}px)`, opacity: Math.max(0.25, 1 - Math.abs(fromX) / w) }, { transform: `translateX(${-d * w * far}px)`, opacity: 0 }], { duration: 200, easing: "cubic-bezier(.4,0,1,1)", fill: "forwards" });
-    if (swipe) { els[0].style.transform = ""; els[0].style.opacity = ""; }
+    if (swipe) els.forEach((e) => { e.style.transform = ""; e.style.opacity = ""; });
     await Promise.all(out.map((a) => a.finished.catch(() => {})));
     word.date = new Date(word.date.getTime() + d * 864e5); $("wordScroll").scrollTop = 0;
     await renderWord();
@@ -235,16 +234,15 @@
       if (g.mode !== "h") return;
       e.preventDefault();
       g.dx = dx; g.pts.push([p.clientX, e.timeStamp]); if (g.pts.length > 5) g.pts.shift();
-      const el = inner(); el.style.transform = `translateX(${dx * 0.85}px)`; el.style.opacity = String(1 - Math.min(0.5, Math.abs(dx) / 700));
+      movers().forEach((el) => { el.style.transform = `translateX(${dx * 0.85}px)`; el.style.opacity = String(1 - Math.min(0.5, Math.abs(dx) / 700)); });
     }, { passive: false });
     const end = (e) => {
       if (!g || g.mode !== "h") { g = null; return; }
-      const was = g; g = null; const el = inner(), x = was.dx * 0.85;
+      const was = g; g = null; const els = movers(), x = was.dx * 0.85;
       const [a, b] = [was.pts[0], was.pts[was.pts.length - 1]];
       const v = b[1] > a[1] && e.timeStamp - b[1] < 90 ? (b[0] - a[0]) / (b[1] - a[1]) : 0;
       if (Math.abs(was.dx) > 80 || (Math.abs(v) > 0.45 && Math.abs(was.dx) > 25)) { slideDay(was.dx < 0 ? 1 : -1, x); return; }
-      el.style.transform = ""; el.style.opacity = "";
-      if (el.animate) el.animate([{ transform: `translateX(${x}px)` }, { transform: "none" }], { duration: 320, easing: "cubic-bezier(.22,1,.36,1)" });
+      els.forEach((el) => { el.style.transform = ""; el.style.opacity = ""; if (el.animate) el.animate([{ transform: `translateX(${x}px)` }, { transform: "none" }], { duration: 320, easing: "cubic-bezier(.22,1,.36,1)" }); });
     };
     area.addEventListener("touchend", end, { passive: true });
     area.addEventListener("touchcancel", end, { passive: true });
