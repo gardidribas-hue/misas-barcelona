@@ -24,10 +24,10 @@
       kindMass: "Misa", kindConf: "Confesión", kindAdor: "Adoración",
       lblDay: "Día", lblFrom: "Desde", lblTo: "Hasta", lblMun: "Municipio", lblLang: "Idioma", lblDist: "Distritos",
       langAny: "Cualquiera", langCa: "Catalán", langEs: "Castellano", langOther: "Otros idiomas",
-      searchPh: "Nombre de la parroquia o calle", upNext: "Próximas misas", upNextAll: "Ver todas en el mapa", quick: { now: "Ahora", evening: "Esta tarde", tomorrow: "Mañana", sun: "Domingo" }, quickLbl: "Filtros rápidos", reset: "Quitar filtros", filtersList: "Filtros y lista",
+      searchPh: "Nombre de la parroquia o calle", upNext: "Próximas misas", upNextAll: "Ver todas en el mapa", newSearch: "Nueva búsqueda", favHome: "Tus parroquias", favToday: "hoy", favNoMore: "hoy ya no hay más", fontNormal: "Letra normal", fontBig: "Letra más grande", saintsToday: "Santos del día", saintMore: "Leer más", quick: { now: "Ahora", evening: "Esta tarde", tomorrow: "Mañana", sun: "Domingo" }, quickLbl: "Filtros rápidos", reset: "Quitar filtros", filtersList: "Filtros y lista",
       nearMe: "Cerca de mí", resetMap: "Restablecer mapa", toTop: "Volver arriba", switchTo: "Canviar a català", loading: "Cargando parroquias…",
       days: { mon: "lunes", tue: "martes", wed: "miércoles", thu: "jueves", fri: "viernes", sat: "sábado", sun: "domingo" },
-      dayShort: { mon: "L", tue: "M", wed: "X", thu: "J", fri: "V", sat: "S", sun: "D", hol: "F" }, dayAbbr: { mon: "Lun", tue: "Mar", wed: "Mié", thu: "Jue", fri: "Vie", sat: "Sáb", sun: "Dom", hol: "Festivos" }, holidays: "Festivos", sunL: "Domingo",
+      dayShort: { mon: "L", tue: "M", wed: "X", thu: "J", fri: "V", sat: "S", sun: "D", hol: "F" }, dayAbbr: { mon: "Lun", tue: "Mar", wed: "Mié", thu: "Jue", fri: "Vie", sat: "Sáb", sun: "Dom", hol: "Festivos" }, holidays: "Festivos", sunL: "Domingo", andHol: "y festivos",
       todayOpt: "Hoy ({d})", tomorrow: "Mañana", sunHol: "Domingo y festivos", anyDay: "Cualquier día",
       allMun: "Todos los municipios", byDist: " · por distritos", allBcn: "Toda Barcelona",
       kindPl: { mass: "misas", confession: "confesiones", adoration: "adoración" },
@@ -63,10 +63,10 @@
       kindMass: "Missa", kindConf: "Confessió", kindAdor: "Adoració",
       lblDay: "Dia", lblFrom: "Des de", lblTo: "Fins a", lblMun: "Municipi", lblLang: "Idioma", lblDist: "Districtes",
       langAny: "Qualsevol", langCa: "Català", langEs: "Castellà", langOther: "Altres idiomes",
-      searchPh: "Nom de la parròquia o carrer", upNext: "Properes misses", upNextAll: "Veure-les totes al mapa", quick: { now: "Ara", evening: "Aquesta tarda", tomorrow: "Demà", sun: "Diumenge" }, quickLbl: "Filtres ràpids", reset: "Treure filtres", filtersList: "Filtres i llista",
+      searchPh: "Nom de la parròquia o carrer", upNext: "Properes misses", upNextAll: "Veure-les totes al mapa", newSearch: "Nova cerca", favHome: "Les teves parròquies", favToday: "avui", favNoMore: "avui ja no n'hi ha més", fontNormal: "Lletra normal", fontBig: "Lletra més gran", saintsToday: "Sants del dia", saintMore: "Llegir-ne més", quick: { now: "Ara", evening: "Aquesta tarda", tomorrow: "Demà", sun: "Diumenge" }, quickLbl: "Filtres ràpids", reset: "Treure filtres", filtersList: "Filtres i llista",
       nearMe: "A prop meu", resetMap: "Restablir el mapa", toTop: "Tornar a dalt", switchTo: "Cambiar a castellano", loading: "Carregant parròquies…",
       days: { mon: "dilluns", tue: "dimarts", wed: "dimecres", thu: "dijous", fri: "divendres", sat: "dissabte", sun: "diumenge" },
-      dayShort: { mon: "Dl", tue: "Dt", wed: "Dc", thu: "Dj", fri: "Dv", sat: "Ds", sun: "Dg", hol: "F" }, dayAbbr: { mon: "Dl", tue: "Dt", wed: "Dc", thu: "Dj", fri: "Dv", sat: "Ds", sun: "Dg", hol: "Festius" }, holidays: "Festius", sunL: "Diumenge",
+      dayShort: { mon: "Dl", tue: "Dt", wed: "Dc", thu: "Dj", fri: "Dv", sat: "Ds", sun: "Dg", hol: "F" }, dayAbbr: { mon: "Dl", tue: "Dt", wed: "Dc", thu: "Dj", fri: "Dv", sat: "Ds", sun: "Dg", hol: "Festius" }, holidays: "Festius", sunL: "Diumenge", andHol: "i festius",
       todayOpt: "Avui ({d})", tomorrow: "Demà", sunHol: "Diumenge i festius", anyDay: "Qualsevol dia",
       allMun: "Tots els municipis", byDist: " · per districtes", allBcn: "Tot Barcelona",
       kindPl: { mass: "misses", confession: "confessions", adoration: "adoració" },
@@ -475,7 +475,7 @@
       state.mode = mode;
       $("stage").dataset.mode = mode;
       document.body.dataset.tone = DEVOTION.includes(mode) ? mode : state.kind;
-      document.querySelectorAll(".tabs button, .extras button, .bottomnav button, .x-faq").forEach((b) => { const on = b.dataset.go === mode; b.classList.toggle("on", on); if (on) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
+      document.querySelectorAll(".tabs button, .extras button, .bottomnav button, .x-faq").forEach((b) => { const on = b.dataset.go === mode || (mode === "chat" && b.dataset.go === "home" && !!b.closest(".bottomnav")); b.classList.toggle("on", on); if (on) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
       setTitle();
       announce(mode);
       document.dispatchEvent(new Event("misas:mode"));
@@ -523,7 +523,21 @@
   function toggleFav(id) {
     if (FAVS.has(id)) FAVS.delete(id); else FAVS.add(id);
     try { localStorage.setItem("misas-favs", JSON.stringify([...FAVS])); } catch (e) { /* sin almacenamiento */ }
+    renderFavs();
     return FAVS.has(id);
+  }
+  // Inicio: tus parroquias con estrella y su próxima misa de hoy (solo si tienes alguna).
+  function renderFavs() {
+    const box = $("favRow"); if (!box) return;
+    if (!FAVS.size) { box.innerHTML = ""; return; }
+    const f = initialFilters(), res = computeResults(f, null);
+    const list = [...FAVS].map((id) => DATA.find((p) => p.id === id)).filter(Boolean).slice(0, 4);
+    box.innerHTML = `<p class="fav-h">${STAR}${t("favHome")}</p>` + list.map((p) => {
+      const r = res.find((x) => x.p.id === p.id), next = r && !r.soft && r.hits.length ? r.hits[0].start : null;
+      return `<button type="button" class="fav-c" data-id="${esc(p.id)}"><span class="fav-n">${esc(p.name)}<small>${esc(p.distrito || p.municipio || "")}</small></span>` +
+        (next ? `<span class="t hit">${next}</span>` : `<span class="fav-none">${t("favNoMore")}</span>`) + `</button>`;
+    }).join("");
+    box.querySelectorAll(".fav-c").forEach((b) => b.onclick = () => { showOnMap(f, null, res); openDetail(b.dataset.id); });
   }
   const STAR = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6-4.5-4.2 6.1-.8z"/></svg>`;
   function cardHtml(r, kind, day) {
@@ -712,21 +726,36 @@
   }
 
   // ---------- Ficha ----------
+  // Horario de la ficha: cada día una sola vez, de lunes a domingo, con todas sus horas.
+  // Los días seguidos con las mismas horas se juntan (Lun–Vie, Cada día…); los festivos van con el domingo si coinciden.
   function schedule(evs) {
     if (!evs.length) return "";
-    const groups = new Map();
-    for (const ev of dedupe(evs)) { const k = ev.days.join(","); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(ev); }
-    const wk = ["mon", "tue", "wed", "thu", "fri"];
-    return `<dl class="sched">${[...groups].map(([k, list]) => {
-      const d = k.split(",");
-      const label = wk.every((x) => d.includes(x)) && d.includes("sat") && d.includes("sun") ? t("everyDay")
-        : wk.every((x) => d.includes(x)) && d.includes("sat") && !d.includes("sun") ? t("monSat")
-        : wk.every((x) => d.includes(x)) && d.length === 5 ? t("monFri")
-        : d.includes("sun") && d.every((x) => x === "sun" || x === "hol") ? t("sunL")
-        : d.length === 1 || (d.length === 2 && d.includes("hol")) ? (d[0] === "hol" ? t("holidays") : cap(t("days")[d[0]]))
-        : d.map((x) => t("dayAbbr")[x]).join(", ");
-      return `<dt>${label}</dt><dd>${list.map((ev) => `<span class="t" ${ev.note ? `title="${esc(ev.note)}"` : ""}>${ev.start}${ev.end ? "–" + ev.end : ""}${ev.lang ? `<small>${LANG[ev.lang] || (ev.lang === "other" ? t("langOtherShort") : ev.lang)}</small>` : ""}</span>`).join("")}</dd>`;
-    }).join("")}</dl>`;
+    const ORD = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], per = {};
+    for (const d of ORD.concat("hol")) per[d] = new Map();
+    for (const ev of evs) for (const d of ev.days) if (per[d]) { const k = ev.start + "|" + (ev.end || "") + "|" + (ev.lang || ""); if (!per[d].has(k)) per[d].set(k, ev); }
+    const sig = (d) => [...per[d].keys()].sort().join(",");
+    const groups = [];
+    for (const d of ORD) {
+      if (!per[d].size) continue;
+      const g = groups[groups.length - 1], last = g && g.days[g.days.length - 1];
+      if (g && sig(last) === sig(d) && ORD.indexOf(last) === ORD.indexOf(d) - 1) g.days.push(d); else groups.push({ days: [d] });
+    }
+    if (per.hol.size) {
+      const sun = groups.find((g) => g.days.includes("sun"));
+      if (sun && sig("sun") === sig("hol")) sun.hol = true; else groups.push({ days: ["hol"] });
+    }
+    const label = (g) => {
+      const d = g.days, a = d[0], z = d[d.length - 1];
+      let l = a === "hol" ? t("holidays")
+        : d.length === 7 ? t("everyDay")
+        : d.length === 5 && a === "mon" && z === "fri" ? t("monFri")
+        : d.length === 6 && a === "mon" && z === "sat" ? t("monSat")
+        : d.length === 1 ? cap(t("days")[a])
+        : t("dayAbbr")[a] + "–" + t("dayAbbr")[z];
+      return g.hol ? l + " " + t("andHol") : l;
+    };
+    const span = (ev) => `<span class="t" ${ev.note ? `title="${esc(ev.note)}"` : ""}>${ev.start}${ev.end ? "–" + ev.end : ""}${ev.lang ? `<small>${LANG[ev.lang] || (ev.lang === "other" ? t("langOtherShort") : ev.lang)}</small>` : ""}</span>`;
+    return `<dl class="sched">${groups.map((g) => `<dt>${label(g)}</dt><dd>${[...per[g.days[0]].values()].sort((x, y) => x.start.localeCompare(y.start)).map(span).join("")}</dd>`).join("")}</dl>`;
   }
 
   // Fuente del horario (horarios automáticos): enlace, fecha de comprobación, fiabilidad y aviso de festivos.
@@ -815,7 +844,7 @@
       ${p.adoration.length || p.adoration_text ? `<h3>${t("hAdor")}</h3>${schedule(p.adoration)}${p.adoration_text ? `<p class="note">${esc(p.adoration_text)}</p>` : ""}` : ""}
       ${p.other ? `<h3>${t("hOther")}</h3><p class="note">${esc(p.other)}</p>` : ""}
       ${sourceBox(p)}`;
-    box.hidden = false; state.detailId = id; box.style.removeProperty("--sy"); box.scrollTop = 0;
+    box.classList.remove("closing"); box.hidden = false; state.detailId = id; box.style.removeProperty("--sy"); box.scrollTop = 0;
     pushRoute("parroquia/" + id, { detail: id }); setTitle();
     observeReveal(box.querySelectorAll("h3, .sched, .note"));
     $("filters").hidden = true; $("summary").hidden = true; $("list").hidden = true;
@@ -835,7 +864,15 @@
     if (focus && MapView.focus) MapView.focus(p);
   }
   function closeDetail() {
-    $("detail").hidden = true; state.detailId = null; $("detail").style.removeProperty("--sy");
+    const box = $("detail");
+    // En el móvil la hoja baja deslizándose; la lista ya se ve debajo mientras baja.
+    if (!box.hidden && !calm() && state.mode === "map" && matchMedia("(max-width: 860px)").matches) {
+      box.classList.add("closing");
+      const done = () => { if (!box.classList.contains("closing")) return; box.classList.remove("closing"); if (!state.detailId) { box.hidden = true; box.style.removeProperty("--sy"); } };
+      box.addEventListener("animationend", function end(e) { if (e.target !== box) return; box.removeEventListener("animationend", end); done(); });
+      setTimeout(done, 600);
+    } else { box.hidden = true; box.style.removeProperty("--sy"); }
+    state.detailId = null;
     if (!routing && location.hash.startsWith("#parroquia/")) history.replaceState(null, "", "#mapa");
     setTitle();
     $("filters").hidden = false; $("summary").hidden = false; $("list").hidden = false;
@@ -891,8 +928,19 @@
     const cur = document.documentElement.dataset.theme || (darkMQ && darkMQ.matches ? "dark" : "light");
     document.querySelectorAll("#modes button").forEach((b) => { b.classList.toggle("on", b.dataset.mode === cur); b.setAttribute("aria-pressed", b.dataset.mode === cur); });
   }
-  function setTheme(m) {
-    document.documentElement.dataset.theme = m;
+  function setTheme(m, from) {
+    const html = document.documentElement;
+    if (from && document.startViewTransition && !calm() && html.dataset.theme !== m) {
+      const r = from.getBoundingClientRect(), x = r.left + r.width / 2, y = r.top + r.height / 2;
+      const R = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+      html.classList.add("vt-theme");
+      const vt = document.startViewTransition(() => setTheme(m));
+      vt.ready.then(() => html.animate({ clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${R}px at ${x}px ${y}px)`] },
+        { duration: 620, easing: "cubic-bezier(.3,.7,.2,1)", pseudoElement: "::view-transition-new(root)" })).catch(() => {});
+      vt.finished.catch(() => {}).then(() => html.classList.remove("vt-theme"));
+      return;
+    }
+    html.dataset.theme = m;
     // La barra de estado del móvil sigue al modo elegido
     document.querySelectorAll('meta[name="theme-color"]').forEach((el) => { el.removeAttribute("media"); el.content = m === "dark" ? "#0e0b0c" : "#ffffff"; });
     try { localStorage.setItem("misas-theme", m); } catch (e) { /* sin almacenamiento */ }
@@ -917,7 +965,7 @@
       applyLang(); fillSelects(); syncControls(); renderList(); showOnMapLabel();
       if (state.detailId) { routing = true; openDetail(state.detailId, false); routing = false; }
       setTitle();
-      setPh(true); renderUpNext();
+      setPh(true); renderUpNext(); renderFavs();
       langListeners.forEach((fn) => fn(LNG));
     };
     // Fundido suave de un idioma a otro (el texto viejo se desvanece mientras aparece el nuevo).
@@ -1117,29 +1165,67 @@
     const pick = (e) => { const c = e.target.closest(".card"); if (c) openDetail(c.dataset.id); };
     $("list").addEventListener("click", pick);
     $("list").addEventListener("keydown", (e) => { if (e.key === "Enter") pick(e); });
-    $("modes").onclick = (e) => { const b = e.target.closest("button"); if (b) setTheme(b.dataset.mode); };
+    $("modes").onclick = (e) => { const b = e.target.closest("button"); if (b) setTheme(b.dataset.mode, b); };
     $("iconPick").onclick = (e) => { const b = e.target.closest("button"); if (b) setIcon(b.dataset.icon); };
     $("langs").onclick = (e) => { const b = e.target.closest("button"); if (b && b.dataset.lang !== LNG) setLang(b.dataset.lang); };
     $("nearBtn").onclick = nearMe;
     // Menú de ajustes (modo e idioma) en un solo botón
     const setBtn = $("setBtn"), setPop = $("setPop");
-    const openSet = (o) => { setPop.hidden = !o; setBtn.setAttribute("aria-expanded", o); setBtn.classList.toggle("on", o); };
-    setBtn.onclick = (e) => { e.stopPropagation(); openSet(setPop.hidden); };
-    document.addEventListener("click", (e) => { if (!setPop.hidden && !e.target.closest(".settings")) openSet(false); });
+    const sheet = () => matchMedia("(max-width: 860px)").matches && !calm();
+    const openSet = (o) => {
+      setBtn.setAttribute("aria-expanded", o); setBtn.classList.toggle("on", o);
+      if (o) { setPop.classList.remove("closing"); setPop.hidden = false; return; }
+      if (setPop.hidden) return;
+      if (!sheet()) { setPop.hidden = true; return; }
+      // En el móvil la hoja baja y el fondo se aclara antes de esconderse
+      setPop.classList.add("closing");
+      setTimeout(() => { if (setPop.classList.contains("closing")) { setPop.classList.remove("closing"); setPop.hidden = true; } }, 260);
+    };
+    setBtn.onclick = (e) => { e.stopPropagation(); openSet(setPop.hidden || setPop.classList.contains("closing")); };
+    // Fuera del menú (o en el fondo oscurecido del móvil, que es parte de .settings) se cierra
+    document.addEventListener("click", (e) => { if (!setPop.hidden && (!e.target.closest(".settings") || e.target.classList.contains("settings"))) openSet(false); });
     document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !setPop.hidden) { openSet(false); setBtn.focus(); } });
     $("quick").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; Object.assign(state, QUICK[b.dataset.q]()); applyFilters(); };
     $("resetMap").onclick = resetMap;
+    // 6: «Nueva búsqueda» borra la conversación y vuelve a la portada del chat
+    $("newQ").onclick = () => {
+      $("thread").innerHTML = ""; $("stage").classList.remove("has-thread"); setPh(true);
+      if (matchMedia("(max-width: 860px)").matches) setMode("home");
+      setTimeout(() => $("chatInput").focus({ preventScroll: true }), 60);
+    };
+    // 8: tamaño de la letra de las lecturas (se recuerda en este móvil u ordenador)
+    const fs = (big) => { $("reading").classList.toggle("big", big); document.querySelectorAll("#fsz button").forEach((b) => { const on = (b.dataset.fs === "big") === big; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); }); };
+    let big = false; try { big = localStorage.getItem("misas-font") === "big"; } catch (e) { /* sin almacenamiento */ }
+    fs(big);
+    $("fsz").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; fs(b.dataset.fs === "big"); try { localStorage.setItem("misas-font", b.dataset.fs); } catch (e2) { /* sin almacenamiento */ } };
+    // 15: en iPhone, Safari solo enseña el efecto de pulsar (:active) si la página escucha los toques
+    document.addEventListener("touchstart", () => {}, { passive: true });
+    // 17: las preguntas y oraciones plegables se abren y se cierran con suavidad
+    document.addEventListener("click", (e) => {
+      const sm = e.target.closest("details > summary"); if (!sm || calm()) return;
+      const d = sm.parentElement; if (d.classList.contains("off") || d._anim) return;
+      e.preventDefault();
+      const ease = "cubic-bezier(.22,1,.36,1)", closedH = sm.offsetHeight + (d.offsetHeight - d.clientHeight);
+      const run = (from, to, ms, end) => {
+        d.style.overflow = "hidden";
+        d._anim = d.animate({ height: [from + "px", to + "px"] }, { duration: ms, easing: ease });
+        d._anim.onfinish = d._anim.oncancel = () => { d._anim = null; d.style.overflow = ""; if (end) end(); };
+      };
+      if (!d.open) { const from = d.offsetHeight; d.open = true; run(from, d.offsetHeight, 380); }
+      else run(d.offsetHeight, Math.max(closedH, sm.offsetHeight), 280, () => { d.open = false; });
+    });
     bindToTop();
   }
 
   function hideSplash() {
     if (!document.body.classList.contains("loading")) return;
     document.body.classList.remove("loading");
-    // La barra termina de llenarse y entonces se desvanece la pantalla.
-    const sp = $("splash"), bar = sp.querySelector(".splash-bar i");
-    bar.style.width = getComputedStyle(bar).width; bar.style.animation = "none"; void bar.offsetWidth;
-    bar.style.transition = "width .35s ease-out"; bar.style.width = "100%";
-    setTimeout(() => { sp.classList.add("out"); setTimeout(() => sp.remove(), 700); }, calm() ? 0 : 380);
+    // La Sagrada termina de levantarse (más deprisa si el mapa ya está) y entonces se desvanece la pantalla.
+    const sp = $("splash"), art = sp.querySelector(".splash-art svg");
+    const out = () => { sp.classList.add("out"); setTimeout(() => sp.remove(), 700); };
+    const anim = art && art.getAnimations ? art.getAnimations()[0] : null;
+    if (anim && !calm() && anim.playState === "running") { anim.playbackRate = 2.5; anim.finished.then(() => setTimeout(out, 220), out); }
+    else setTimeout(out, calm() ? 0 : 200);
   }
 
   async function start() {
@@ -1152,7 +1238,7 @@
     // Vista inicial: misas de hoy desde ahora en el mapa.
     const f = Object.assign({}, BLANK, { from: nowBcn().min });
     showOnMap(f, null, computeResults(f, null));
-    renderUpNext();
+    renderUpNext(); renderFavs();
     if (!window.maplibregl && !CFG.googleMapsApiKey) hideSplash();
     if (location.hash.length > 1) applyRoute(); // entrar por un enlace: abre esa vista o esa parroquia
   }
