@@ -1,0 +1,30 @@
+[
+ {
+  "comprobado": "2026-10-29",
+  "fuente": "F1",
+  "url": "https://lesplanesparroquia.blogspot.com/",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Tots els diumenges a les 12h, a la Parròquia Santuari Mare de Déu de la Salut (c/ Mas Guimbau 29, 08017 Barcelona)",
+    "fuente": "F1",
+    "url": "https://lesplanesparroquia.blogspot.com/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   }
+  ]
+ }
+]

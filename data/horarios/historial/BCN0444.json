@@ -154,5 +154,118 @@
     "confianza": "baja"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-29",
+  "fuente": "F1",
+  "url": "https://parroquies3viles.com/san-vicenc-de-montalt/",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners 20 h. (excepte dilluns i dijous).",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/san-vicenc-de-montalt/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dissabtes 20 h.",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/san-vicenc-de-montalt/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges 10 h. i 19:30 h. (cast). En l’horari d’estiu* missa vespertina a les 20 h.",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/san-vicenc-de-montalt/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges 10 h. i 19:30 h. (cast). En l’horari d’estiu* missa vespertina a les 20 h.",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/san-vicenc-de-montalt/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "30 min. abans de les misses.",
+    "relativa_a_misa": {
+     "minutos_antes": 30
+    },
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/san-vicenc-de-montalt/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [
+     2
+    ],
+    "notas": "Col·laboració: missa dominical de les 19.30 h",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/san-vicenc-de-montalt/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   }
+  ]
  }
 ]

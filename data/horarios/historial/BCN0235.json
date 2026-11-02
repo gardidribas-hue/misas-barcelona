@@ -122,5 +122,117 @@
     "confianza": "baja"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-29",
+  "fuente": "F1",
+  "url": "https://parroquiasantllorens.org/horaris/",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dimarts a Dissabte: 19.30h (català)",
+    "fuente": "F1",
+    "url": "https://parroquiasantllorens.org/horaris/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenge: 11.00h (català), 13.00h (castellà)",
+    "fuente": "F1",
+    "url": "https://parroquiasantllorens.org/horaris/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenge: 11.00h (català), 13.00h (castellà)",
+    "fuente": "F1",
+    "url": "https://parroquiasantllorens.org/horaris/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "18:30",
+    "fin": "19:15",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "De dimarts a dissabte de 18:30h a 19:15h",
+    "fuente": "F1",
+    "url": "https://parroquiasantllorens.org/horaris/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:00",
+    "fin": "12:45",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenge de 12.00h a 12.45h",
+    "fuente": "F1",
+    "url": "https://parroquiasantllorens.org/horaris/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "20:00",
+    "fin": "20:30",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Cada dijous, de les 20.00h a les 20.30h, després de la celebració de la missa, hi ha adoració eucarística amb exposició solemne del Santíssim Sagrament. També el dia de Corpus dediquem, a la tarda, un",
+    "fuente": "F1",
+    "url": "https://parroquiasantllorens.org/horaris/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   }
+  ]
  }
 ]

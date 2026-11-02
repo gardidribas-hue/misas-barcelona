@@ -1,0 +1,29 @@
+# https://esglesia.barcelona/es/parroquies/sant-vicenc/
+# 2026-11-02 · formato: html
+
+Horario de misas
+Horario invierno
+Laborables:
+08:00h.
+10:00h.
+20:15h.
+Vísperas de festivo:
+19:15h.
+Domingos y Festivos:
+08:30h.
+10:00h.
+11:30h.
+13:00h.
+20:15h.
+Horario verano
+Laborables:
+08:00h.
+10:00h.
+20:15h.
+Vísperas de festivo:
+19:15h.
+Domingos y Festivos:
+10:00h.
+11:30h.
+13:00h.
+20:15h.

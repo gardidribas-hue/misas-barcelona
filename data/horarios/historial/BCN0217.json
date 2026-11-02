@@ -1,0 +1,159 @@
+[
+ {
+  "comprobado": "2026-10-29",
+  "fuente": "F1",
+  "url": "https://sanfelixafricano.org/horarios-de-misas-san-felix/",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "09:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "06-01",
+     "fin": "09-30"
+    },
+    "semanas_mes": [],
+    "notas": "De lunes a viernes: misa a las 9.30 h.",
+    "fuente": "F1",
+    "url": "https://sanfelixafricano.org/horarios-de-misas-san-felix/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "06-01",
+     "fin": "09-30"
+    },
+    "semanas_mes": [],
+    "notas": "Sábados: 19.30 h. NO hay misa en julio y agosto.",
+    "fuente": "F1",
+    "url": "https://sanfelixafricano.org/horarios-de-misas-san-felix/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "06-01",
+     "fin": "09-30"
+    },
+    "semanas_mes": [],
+    "notas": "Domingos y días de precepto: misa a las 12.30 h.",
+    "fuente": "F1",
+    "url": "https://sanfelixafricano.org/horarios-de-misas-san-felix/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "miercoles",
+     "jueves"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Lunes, miércoles y jueves: misa a las 19.30 h.",
+    "fuente": "F1",
+    "url": "https://sanfelixafricano.org/horarios-de-misas-san-felix/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "martes",
+     "viernes"
+    ],
+    "inicio": "09:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Martes y viernes: misa a las 9.30 h.",
+    "fuente": "F1",
+    "url": "https://sanfelixafricano.org/horarios-de-misas-san-felix/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Sábados: misa a las 19.30 h.",
+    "fuente": "F1",
+    "url": "https://sanfelixafricano.org/horarios-de-misas-san-felix/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Domingos y fiestas de precepto: misa a las 12.30 h.",
+    "fuente": "F1",
+    "url": "https://sanfelixafricano.org/horarios-de-misas-san-felix/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   }
+  ]
+ }
+]

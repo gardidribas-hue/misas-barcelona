@@ -1,0 +1,367 @@
+[
+ {
+  "comprobado": "2026-10-29",
+  "fuente": "F1",
+  "url": "https://www.santoleguer.es/horarios-parroquia/",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "confesion",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "08:00",
+    "fin": "20:30",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "De lunes a sábado: 08:00 – 20:30",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "09:00",
+    "fin": "13:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos: 09:00 – 13:00",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "17:30",
+    "fin": "19:30",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "y 17:30 – 19:30",
+    "dias_deducidos": true,
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "10-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "De lunes a sábado: 20h",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "10-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Domingos: 12h, 19h",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "10-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Domingos: 12h, 19h",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-30"
+    },
+    "semanas_mes": [],
+    "notas": "De lunes a sábado: 20h",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-30"
+    },
+    "semanas_mes": [],
+    "notas": "Domingos: 19h",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-30"
+    },
+    "semanas_mes": [],
+    "notas": "Jueves: 20h",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-30"
+    },
+    "semanas_mes": [],
+    "notas": "Sábados: 20h",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-30"
+    },
+    "semanas_mes": [],
+    "notas": "De lunes a viernes: 20h",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-30"
+    },
+    "semanas_mes": [],
+    "notas": "Domingos: 12h, 19h",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "09-30"
+    },
+    "semanas_mes": [],
+    "notas": "Domingos: 12h, 19h",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo"
+    ],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Cada día, 30 min antes de misa.",
+    "relativa_a_misa": {
+     "minutos_antes": 30
+    },
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Jueves: 19:00 (Castellano)",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "17:00",
+    "fin": "20:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Todos los jueves por la tarde de 17h a 20h",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "martes"
+    ],
+    "inicio": "20:30",
+    "fin": "21:15",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Los martes, de 20:30h a 21:15h, adoración del grupo de jóvenes Effetá",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "miercoles"
+    ],
+    "inicio": "20:30",
+    "fin": "21:30",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Los miércoles de 20:30h a 21:30h, adoración del grupo Emaús Mujeres",
+    "fuente": "F1",
+    "url": "https://www.santoleguer.es/horarios-parroquia/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   }
+  ]
+ }
+]

@@ -1,0 +1,9 @@
+# https://www.openstreetmap.org/way/966711412
+# 2026-11-02 · formato: osm
+
+{
+ "check_date": "2024-08-23",
+ "name": "M.D. del Pilar",
+ "name:ca": "M.D. del Pilar",
+ "service_times": "Su 11:00"
+}

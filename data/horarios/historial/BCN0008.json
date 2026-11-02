@@ -38,5 +38,29 @@
     "confianza": "baja"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-29",
+  "fuente": "F1",
+  "url": "https://basilicasantjust.cat/horari/",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenge a les 11 h.",
+    "fuente": "F1",
+    "url": "https://basilicasantjust.cat/horari/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   }
+  ]
  }
 ]

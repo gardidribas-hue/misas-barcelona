@@ -196,5 +196,222 @@
     "confianza": "baja"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-29",
+  "fuente": "F1",
+  "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners 19 h. (excepte dimecres, que és a les 10 h a la Capella dels Germans Franciscans de la Creu Blanca. En l’horari d’estiu* la missa es celebra a la Parròquia).",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners 19 h. (excepte dimecres, que és a les 10 h a la Capella dels Germans Franciscans de la Creu Blanca. En l’horari d’estiu* la missa es celebra a la Parròquia).",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dissabtes 19 h.",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges 11 h., 13 h. (a l’Església de Sant Pere. En l’horari d’estiu* a les 9:30 h.) i 19 h (cast).",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges 11 h., 13 h. (a l’Església de Sant Pere. En l’horari d’estiu* a les 9:30 h.) i 19 h (cast).",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "25 min. abans de les misses.",
+    "relativa_a_misa": {
+     "minutos_antes": 25
+    },
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "17:45",
+    "fin": "19:00",
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "10-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [
+     1
+    ],
+    "notas": "1r Divendres (octubre a juny), de 17:45 a 19 h.",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "19:30",
+    "fin": "20:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dijous, de 19:30 a 20 h.",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "10:00",
+    "fin": "19:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "2n i 4rt divendres, de 10 a 19 h.",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "10:45",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [
+     3
+    ],
+    "notas": "3r dissabte (nocturna), de 20 a 10:45 h.",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges de 10 a 12 h. (participant a la missa dominical)",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "17:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges de 17:15 a 20 h. (participant a la missa dominical)",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   }
+  ]
  }
 ]

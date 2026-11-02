@@ -1,0 +1,545 @@
+[
+ {
+  "comprobado": "2026-10-29",
+  "fuente": "F1",
+  "url": "https://www.sanfranciscodepaula.org/horarios",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "18:15",
+    "fin": null,
+    "idioma": "otro",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "De lunes a sábado 18:15",
+    "idioma_detalle": "francés",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "10:30",
+    "fin": null,
+    "idioma": "otro",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos 10:30",
+    "idioma_detalle": "francés",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "De Lunes a Sábado: 19:00",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingo y Solemnidades: 11:15",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "martes",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "09:00",
+    "fin": "14:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "de 9:00 a 14:00",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "19:30",
+    "fin": "20:30",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [
+     1
+    ],
+    "notas": "de 19:30 a 20:30",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "17:00",
+    "fin": "18:30",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Lunes a Sábado de 17:00 a 18:30",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "10:00",
+    "fin": "11:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos de 10:00 a 11:00",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "lunes",
+     "miercoles"
+    ],
+    "inicio": "17:30",
+    "fin": "18:30",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "de 17:30 a 18:30",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "martes",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "10:00",
+    "fin": "13:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "de 10:00 a 13:00 y de 17:00 a 18:30",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "martes",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "17:00",
+    "fin": "18:30",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "de 10:00 a 13:00 y de 17:00 a 18:30",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "martes",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "09:00",
+    "fin": "14:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "de 9:00 a 14:00",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "martes",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "17:00",
+    "fin": "20:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "de 17:00 a 20:00",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "sabado",
+     "domingo"
+    ],
+    "inicio": "10:00",
+    "fin": "13:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "de 10:00 a 13:00",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "sabado",
+     "domingo"
+    ],
+    "inicio": "17:00",
+    "fin": "20:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "de 17:00 a 20:00",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "23:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Vigilia de Navidad: 24 de diciembre - 23:00h",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "11:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Natividad del Señor: 25 de diciembre - 11:15h",
+    "dias_deducidos": true,
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "11:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Misa del día: 31 de diciembre - 11:15h",
+    "dias_deducidos": true,
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Misa de vigilia: 5 de enero - 19:00h",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "10:45",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "10:45 (Bendición, Procesión y Misa)",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "19:00 (Cena del Señor)",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "21:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "21:00 (Hora Santa)",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "11:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "11:15 (Vía Crucis)",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "17:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "17:00 (Pasión del Señor)",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "22:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "22:00 (Vigilia Pascual)",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "11:15 (Misa)",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "19:30",
+    "fin": "21:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [
+     1
+    ],
+    "notas": "Nocturna: Primer viernes de mes 19:30 a 21:00",
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Antes de cada misa.",
+    "relativa_a_misa": {
+     "antes": true
+    },
+    "fuente": "F1",
+    "url": "https://www.sanfranciscodepaula.org/horarios",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   }
+  ]
+ }
+]

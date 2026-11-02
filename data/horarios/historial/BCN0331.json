@@ -1,0 +1,824 @@
+[
+ {
+  "comprobado": "2026-10-29",
+  "fuente": "F1",
+  "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dies feiners i dissabtes: 11 i 20 h",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dies feiners i dissabtes: 11 i 20 h",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "07:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Monestir de la Providència: dies feiners 7.30 h, dissabtes 8.00 h",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Monestir de la Providència: dies feiners 7.30 h, dissabtes 8.00 h",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "09:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges: 9, 11, 12.30 i 20 h",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges: 9, 11, 12.30 i 20 h",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges: 9, 11, 12.30 i 20 h",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges: 9, 11, 12.30 i 20 h",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Monestir de la Providència: 10 h",
+    "dias_deducidos": true,
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "martes"
+    ],
+    "inicio": "17:00",
+    "fin": "20:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dimarts de 17 a 20 h, i mitja hora abans de cada missa.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Cada dijous a continuació de la missa de les 20 h hi ha un temps de",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Els dissabtes d’Advent i Quaresma hi ha exposició des de la missa de les 11",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "h fins a les 20 h.",
+    "dias_deducidos": true,
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "17:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [
+     3
+    ],
+    "notas": "Se celebren el primer i el tercer dissabte (17 h) o diumenge (13.30 h) de",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "13:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [
+     3
+    ],
+    "notas": "Se celebren el primer i el tercer dissabte (17 h) o diumenge (13.30 h) de",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "martes",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Celebrem misses de difunts els dimarts i divendres a les 20 h, quan s’han",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "martes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "17 a 20 h. Si no és de difunts, l’eucaristia de les 20 h es fa juntament amb",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "domingo"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Al final de la missa diària de les 11 h.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [
+     1
+    ],
+    "notas": "la missa de les 20 h i els altres dies a les 19.45 h. Els dissabtes d’exposició",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "19:45",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [
+     1
+    ],
+    "notas": "la missa de les 20 h i els altres dies a les 19.45 h. Els dissabtes d’exposició",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "divendres a les 19.30 h, i el dissabte en acabar la missa de les 11 h.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "divendres a les 19.30 h, i el dissabte en acabar la missa de les 11 h.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "20:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Celebració comunitària del perdó. Uns dies abans del Nadal a les 20.30 h.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "un any de casats. Quan la solemnitat cau en diumenge ho fem a la missa de les 11",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "h i, quan cau entre setmana, en la missa de les 20 h.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "jueves",
+     "sabado"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "més dels dijous, els dissabtes programats des de la missa de les 11 fins a les",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "jueves",
+     "sabado"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "19.30 h. S’acaba amb les vespres.",
+    "dias_deducidos": true,
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "dilluns a divendres: el dimarts a la missa de les 20 h i els altres dies a les",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "de la missa de les 11 h i, els diumenges, amb el rosari a les 18 h.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "martes"
+    ],
+    "inicio": "20:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dimarts Sant, a les 20.30 h.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "adoracion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "benedicció popular a la plaça del Dr. Rifé es fa a les 12.30 h amb la",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "martes"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "11 h. Missa Crismal a la Catedral.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "09:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "9 h. Pregària de laudes",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "19:30 h. MISSA DE LA CENA DEL SENYOR.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "21:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "21 h. Processó del Dijous Sant",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "23:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "23 h. Vetlla de pregària: Hora Santa.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Misses a les 11 i 20 h",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Misses a les 11 i 20 h",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Diumenge de Rams. 10 h Benedicció dels Rams i missa.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Dijous Sant. 19 h Missa de la Cena del Senyor.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "16:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Divendres Sant. 16.30 h Celebració passió i mort del Senyor.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "21:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Dissabte Sant. 21 h VETLLA PASQUAL / Diumenge de Pasqua 10 h Missa",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "dilluns a divendres: el dimarts a la missa de les 20 h i els altres dies a les",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Semana Santa",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "missa de les 11 h.",
+    "fuente": "F1",
+    "url": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   }
+  ]
+ }
+]

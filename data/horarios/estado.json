@@ -6,7 +6,7 @@
   },
   "F1": {
    "hash": "0232a9268a0d4085",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   },
   "F1_texto": "0232a9268a0d4085",
   "F1_desde": "https://www.parroquiaconcepciobcn.org/horaris/"
@@ -20,14 +20,14 @@
  "BCN0212": {
   "F3": {
    "hash": "13e9b566ea852e22",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   },
   "F3_texto": "13e9b566ea852e22"
  },
  "BCN0213": {
   "F1": {
    "hash": "3e66315c154a3d33",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   },
   "F1_texto": "3e66315c154a3d33",
   "F3_texto": "b9a4d7b7c6fb753f",
@@ -45,7 +45,7 @@
   },
   "F1": {
    "hash": "1cb0fecfb2c8a75b",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   },
   "F1_texto": "1cb0fecfb2c8a75b",
   "F1_desde": "https://www.arxiprestatdegracia.cat/misses"
@@ -56,14 +56,15 @@
   "F3_texto": "752aa4bc02a2aa63",
   "F3": {
    "hash": "752aa4bc02a2aa63",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.basilicadelamerce.com/es/02-horarios.html"
  },
  "BCN0004": {
   "F3_texto": "a5c8ed1466f970c0",
   "F3": {
    "hash": "a5c8ed1466f970c0",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0005": {
@@ -71,43 +72,48 @@
   "F3_texto": "fb9d3f24e190cca2",
   "F3": {
    "hash": "fb9d3f24e190cca2",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.santamariadelmarbarcelona.org/"
  },
  "BCN0006": {
   "F3_texto": "cb5cc9f3fac76e82",
   "F3": {
    "hash": "07c1c60b4a036914",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://basilicadelpi.cat/es/presentacion"
  },
  "BCN0007": {
   "F1_texto": "2955633a3a931a68",
-  "F3_texto": "e8c323bae0a13dbc"
+  "F3_texto": "e8c323bae0a13dbc",
+  "F1_desde": "https://tibidabo.salesianos.edu/schedules/"
  },
  "BCN0008": {
-  "F3_texto": "515686c34c88065e",
+  "F3_texto": "196e64f894c01bd1",
   "F3": {
-   "hash": "515686c34c88065e",
-   "ultimo_ok": "2026-10-22"
+   "hash": "196e64f894c01bd1",
+   "ultimo_ok": "2026-11-02"
   },
   "F1_url_descubierta": "https://basilicasantjust.cat/horari/",
   "F1_texto": "02d313a5d068f76d",
   "F1": {
    "hash": "02d313a5d068f76d",
    "ultimo_ok": "2026-10-29"
-  }
+  },
+  "F1_desde": "https://basilicasantjust.cat"
  },
  "BCN0009": {
   "F1_url_descubierta": "https://www.santamariadelmar.barcelona/es/horarios-y-tarifas",
-  "F1_texto": "a9971bbc31a952a8"
+  "F1_texto": "a9971bbc31a952a8",
+  "F1_desde": "https://www.santamariadelmar.barcelona/es/rezar-en-comunidad"
  },
  "BCN0010": {},
  "BCN0011": {
-  "F3_texto": "f84e69c26aff7c47",
+  "F3_texto": "3e4538bfa8dafed5",
   "F3": {
-   "hash": "f84e69c26aff7c47",
-   "ultimo_ok": "2026-10-29"
+   "hash": "3e4538bfa8dafed5",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0012": {
@@ -115,10 +121,15 @@
  },
  "BCN0013": {
   "F1_url_descubierta": "https://hospitalitat.org/missa-a-la-catedral-11-de-febrer/",
-  "F1_texto": "02f1134fdef15ac4"
+  "F1_texto": "02f1134fdef15ac4",
+  "F1_desde": "http://www.hospitalitat.org"
  },
- "BCN0014": {},
- "BCN0015": {},
+ "BCN0014": {
+  "F1_desde": "https://www.balmesiana.org"
+ },
+ "BCN0015": {
+  "F1_desde": "https://comunidaddelcordero.org/fraternidades/hermanitas-del-cordero/fraternidad-de-barcelona-2"
+ },
  "BCN0016": {},
  "BCN0017": {},
  "BCN0018": {
@@ -126,76 +137,118 @@
   "F1_texto": "7a2c72bddc7d2f49",
   "F1": {
    "hash": "7a2c72bddc7d2f49",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://www.parroquiamarededeudelsangels.com"
  },
  "BCN0019": {},
  "BCN0020": {},
  "BCN0021": {},
  "BCN0022": {},
  "BCN0023": {},
- "BCN0024": {},
+ "BCN0024": {
+  "F1_desde": "http://www.madresdedesamparados.org"
+ },
  "BCN0025": {},
  "BCN0026": {},
  "BCN0027": {},
- "BCN0028": {},
+ "BCN0028": {
+  "F1_desde": "http://www.stellamarisbarcelona.org/servicios-religiosos"
+ },
  "BCN0029": {},
  "BCN0030": {},
  "BCN0031": {
   "F1_url_descubierta": "https://misatradicional.es/laforja/#horarios",
-  "F1_texto": "544988b112fdb642",
+  "F1_texto": "95bc70a702378ec0",
   "F1": {
-   "hash": "544988b112fdb642",
-   "ultimo_ok": "2026-10-29"
-  }
+   "hash": "95bc70a702378ec0",
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://misatradicional.es"
  },
- "BCN0032": {},
+ "BCN0032": {
+  "F1_desde": "https://caputxins.cat/on-som/convent-de-sarria"
+ },
  "BCN0033": {},
  "BCN0034": {},
  "BCN0035": {
   "F1_url_descubierta": "https://casalloiola.org/que-oferim/#ocic",
-  "F1_texto": "4bcd86109b3cb66e",
+  "F1_texto": "e37e93feebfd9ff2",
   "F1": {
    "hash": "4bcd86109b3cb66e",
    "ultimo_ok": "2026-10-29"
-  }
+  },
+  "F1_desde": "https://casalloiola.org"
  },
  "BCN0036": {
   "F1_texto": "49f97760d5744233",
-  "F3_texto": "d228de88240660b2"
+  "F3_texto": "c107a5c0089eb15a",
+  "F1_desde": "https://catedralbcn.org/culte-i-pregaria/misses/"
  },
- "BCN0037": {},
+ "BCN0037": {
+  "F1_desde": "http://www.bcn.es/tjussana/ccu/welcome.htm"
+ },
  "BCN0038": {
   "F1_url_descubierta": "https://www.hospitaldelmar.cat/es/informacion-practica-horarios-accesos-y-visitas/",
-  "F1_texto": "0293ae99b645ae71"
+  "F1_texto": "0293ae99b645ae71",
+  "F1_desde": "http://www.parcdesalutmar.cat/hospitals/centre-forum/es_index.html"
  },
  "BCN0039": {},
  "BCN0040": {},
- "BCN0041": {},
+ "BCN0041": {
+  "F1_desde": "https://www.centrepassatge.org"
+ },
  "BCN0042": {},
- "BCN0043": {},
- "BCN0044": {},
- "BCN0045": {},
- "BCN0046": {},
- "BCN0047": {},
+ "BCN0043": {
+  "F1_desde": "https://misionerasdelsantisimosacramento.org"
+ },
+ "BCN0044": {
+  "F1_desde": "http://www.teknon.es"
+ },
+ "BCN0045": {
+  "F1_desde": "http://www.barraquer.com/es.html"
+ },
+ "BCN0046": {
+  "F1_desde": "https://www.clinicasagradafamilia.com/es/informacion-practica/servicios/#menu"
+ },
+ "BCN0047": {
+  "F1_desde": "http://www.clinicaremei.org"
+ },
  "BCN0048": {},
  "BCN0049": {},
- "BCN0050": {},
- "BCN0051": {},
- "BCN0052": {},
- "BCN0053": {},
- "BCN0054": {},
- "BCN0055": {},
- "BCN0056": {},
+ "BCN0050": {
+  "F1_desde": "http://monterols.es"
+ },
+ "BCN0051": {
+  "F1_desde": "http://www.catmarianistes.com"
+ },
+ "BCN0052": {
+  "F1_desde": "http://marywardbarcelona.net"
+ },
+ "BCN0053": {
+  "F1_desde": "http://www.salesianshorta.org"
+ },
+ "BCN0054": {
+  "F1_desde": "http://www.stignasi.es"
+ },
+ "BCN0055": {
+  "F1_desde": "http://www.santpereclaver.cat"
+ },
+ "BCN0056": {
+  "F1_desde": "http://comunitatdejesus.net"
+ },
  "BCN0057": {},
- "BCN0058": {},
+ "BCN0058": {
+  "F1_desde": "https://estrellajerusalen.wixsite.com/productos"
+ },
  "BCN0059": {
   "F1_url_descubierta": "https://barcelona.dominicos.org/ca/horaris-4/",
-  "F1_texto": "c406202149a0f672",
+  "F1_texto": "378a206dabd47634",
   "F1": {
-   "hash": "c406202149a0f672",
-   "ultimo_ok": "2026-10-22"
-  }
+   "hash": "378a206dabd47634",
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://barcelona.dominicos.org"
  },
  "BCN0060": {},
  "BCN0061": {
@@ -204,15 +257,18 @@
   "F3_texto": "17a39d42e2e319b0",
   "F3": {
    "hash": "17a39d42e2e319b0",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.arxiprestatdegracia.cat/misses"
  },
- "BCN0062": {},
+ "BCN0062": {
+  "F1_desde": "http://www.cottolengopalegre.org"
+ },
  "BCN0063": {
   "F3_texto": "a412d393b7fa0d01",
   "F3": {
    "hash": "a412d393b7fa0d01",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0064": {
@@ -225,14 +281,15 @@
   "F1_texto": "528e48772cd3547e",
   "F1": {
    "hash": "528e48772cd3547e",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://www.cristrei.cat"
  },
  "BCN0065": {
   "F3_texto": "c2856baf495b8de7",
   "F3": {
    "hash": "c2856baf495b8de7",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0066": {},
@@ -240,7 +297,9 @@
  "BCN0068": {},
  "BCN0069": {},
  "BCN0070": {},
- "BCN0071": {},
+ "BCN0071": {
+  "F1_desde": "http://www.safahorta.net"
+ },
  "BCN0072": {},
  "BCN0073": {},
  "BCN0074": {},
@@ -249,18 +308,27 @@
  "BCN0077": {},
  "BCN0078": {
   "F1_url_descubierta": "https://dominiquesbarcelona.com/horaris/",
-  "F1_texto": "8d665705b59f5618"
+  "F1_texto": "8d665705b59f5618",
+  "F1_desde": "https://dominiquesbarcelona.com"
  },
- "BCN0079": {},
+ "BCN0079": {
+  "F1_desde": "https://manyanet.org"
+ },
  "BCN0080": {},
  "BCN0081": {},
  "BCN0082": {},
  "BCN0083": {},
- "BCN0084": {},
- "BCN0085": {},
+ "BCN0084": {
+  "F1_desde": "http://www.caputxins.cat/fraternitats/pompeia"
+ },
+ "BCN0085": {
+  "F1_desde": "https://franciscanosconventuales.es"
+ },
  "BCN0086": {},
  "BCN0087": {},
- "BCN0088": {},
+ "BCN0088": {
+  "F1_desde": "http://www.kapelania-barcelona.pl"
+ },
  "BCN0089": {},
  "BCN0090": {
   "F1_url_descubierta": "https://www.capellasantllatzer.cat/?page_id=48",
@@ -268,136 +336,174 @@
   "F1": {
    "hash": "451683b456d7c30e",
    "ultimo_ok": "2026-10-29"
-  }
+  },
+  "F1_desde": "https://www.capellasantllatzer.cat"
  },
  "BCN0091": {
   "F1_url_descubierta": "https://catedralbcn.org/culte-i-pregaria/",
-  "F1_texto": "86577bed7114bcf0"
+  "F1_texto": "86577bed7114bcf0",
+  "F1_desde": "http://www.catedralbcn.org/index.php?option=com_content&amp;view=article&amp;id=42&amp;Itemid=91&amp;lang=ca"
  },
  "BCN0093": {
   "F1_texto": "b66b861e3e8c6761",
   "F1": {
    "hash": "b66b861e3e8c6761",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.montalegre.org/es/horarios/misas/"
  },
  "BCN0094": {},
  "BCN0095": {},
  "BCN0096": {},
  "BCN0097": {
-  "F1_texto": "6d0751c6e499b0fc",
+  "F1_texto": "b741153080873332",
   "F1": {
-   "hash": "6d0751c6e499b0fc",
-   "ultimo_ok": "2026-10-29"
-  }
+   "hash": "b741153080873332",
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://jesuites.net/es/agenda-esglesies"
  },
  "BCN0098": {},
- "BCN0099": {},
+ "BCN0099": {
+  "F1_desde": "https://www.camilos.es"
+ },
  "BCN0100": {},
  "BCN0101": {
-  "F3_texto": "de285a709335e62a"
+  "F3_texto": "aa89bb3103ee2d86"
  },
  "BCN0102": {
   "F1_texto": "8d4a3080ef2fb047",
   "F1": {
    "hash": "8d4a3080ef2fb047",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.parroquiaesperitsant.org/p/horarios-de-misas.html"
  },
  "BCN0103": {},
- "BCN0104": {},
+ "BCN0104": {
+  "F1_desde": "https://comunidaddelcordero.org/fraternidades/hermanitas-del-cordero"
+ },
  "BCN0105": {},
  "BCN0106": {},
- "BCN0107": {},
+ "BCN0107": {
+  "F1_desde": "https://hhjesuspaciente.fortunecity.ws"
+ },
  "BCN0108": {},
  "BCN0109": {
   "F1_url_descubierta": "https://www.scias.com/ca/lassemblea-general-scias-reuneix-socis-socies-compromissaris",
-  "F1_texto": "abd31918bf50b77a"
+  "F1_texto": "abd31918bf50b77a",
+  "F1_desde": "http://www.scias.com"
  },
  "BCN0110": {},
- "BCN0111": {},
- "BCN0112": {},
+ "BCN0111": {
+  "F1_desde": "http://www.hhscjmerced.com/"
+ },
+ "BCN0112": {
+  "F1_desde": "http://www.santpau.es"
+ },
  "BCN0113": {},
  "BCN0114": {
   "F1_url_descubierta": "https://www.hospitaldelmar.cat/es/informacion-practica-horarios-accesos-y-visitas/",
-  "F1_texto": "0293ae99b645ae71"
+  "F1_texto": "0293ae99b645ae71",
+  "F1_desde": "https://www.hospitaldelmar.cat/es/hospitals/hospital-del-mar/ingrhmar"
  },
- "BCN0115": {},
+ "BCN0115": {
+  "F1_desde": "http://www.hospitaldelfos.es"
+ },
  "BCN0116": {},
- "BCN0117": {},
+ "BCN0117": {
+  "F1_desde": "https://www.fundaciohospitalariesbarcelona.org/atencion-espiritual"
+ },
  "BCN0118": {},
- "BCN0119": {},
+ "BCN0119": {
+  "F1_desde": "https://esglesia.barcelona/es/parroquies/ciutat-sanitaria-vall-dhebron"
+ },
  "BCN0120": {},
- "BCN0121": {},
- "BCN0122": {},
+ "BCN0121": {
+  "F1_desde": "http://www.iese.edu/es/IESE/Chaplaincy/Chaplaincy.asp"
+ },
+ "BCN0122": {
+  "F1_desde": "http://www.iese.edu/es/IESE/Chaplaincy/Chaplaincy.asp"
+ },
  "BCN0123": {
   "F1_texto": "520aaace5d57bc54",
   "F1": {
    "hash": "520aaace5d57bc54",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://perpetuosocorro.org/horarios/"
  },
  "BCN0124": {},
  "BCN0125": {
   "F3_texto": "4393025b74ba72a6",
   "F3": {
    "hash": "4393025b74ba72a6",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0126": {
   "F3_texto": "cc93e8f158a38d3b",
   "F3": {
    "hash": "cc93e8f158a38d3b",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://cordemariasanttomas.org/#horari"
  },
- "BCN0127": {},
- "BCN0128": {},
+ "BCN0127": {
+  "F1_desde": "https://residenciadesertsarria.com"
+ },
+ "BCN0128": {
+  "F1_desde": "https://www.hijascaridadee.org/es/que-hacemos/comunidades-de-hermanas-mayores"
+ },
  "BCN0129": {
   "F1_url_descubierta": "https://misas.org/p/parroquia-de-la-mare-de-deu-de-betlem-barcelona",
   "F1_texto": "a565a2373a3095c5",
   "F3_texto": "18bae2511e55ef3b",
   "F3": {
    "hash": "18bae2511e55ef3b",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.mdbetlem.com"
  },
  "BCN0130": {
   "F3_texto": "2ae82aed341a6f9e",
   "F3": {
    "hash": "2ae82aed341a6f9e",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://marededeudefatima.parroquias.net/"
  },
  "BCN0131": {
   "F3_texto": "a3cdd9327ff3e775",
   "F3": {
    "hash": "a3cdd9327ff3e775",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0132": {
   "F1_texto": "790c003b48aca1a2",
   "F1": {
    "hash": "790c003b48aca1a2",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.medallamiraculosa.org/es/parroquia/"
  },
  "BCN0133": {
   "F3_texto": "5b354096f88c1af1",
   "F3": {
    "hash": "5b354096f88c1af1",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiesdegracia.wordpress.com/horaris/"
  },
  "BCN0134": {
   "F1_texto": "e37e93feebfd9ff2",
   "F3_texto": "9e98fc45c93a716c",
   "F3": {
    "hash": "9e98fc45c93a716c",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://barcelonecatholique.fr/les-messes/"
  },
  "BCN0135": {
   "F1_url_descubierta": "https://drive.google.com/file/d/1ITt1phgdeAzaXsGasG4WeUTrJ4qxHp1J/view?usp=drive_link",
@@ -405,21 +511,22 @@
   "F3_texto": "dc7f0769e33cc2be",
   "F3": {
    "hash": "dc7f0769e33cc2be",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiespoblesec.blogspot.com"
  },
  "BCN0136": {
   "F3_texto": "6a17814f40ebe247",
   "F3": {
    "hash": "6a17814f40ebe247",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0137": {
   "F3_texto": "e8a88a18ab361026",
   "F3": {
    "hash": "e8a88a18ab361026",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0138": {
@@ -428,15 +535,17 @@
   "F3_texto": "11fdf854cdea29fa",
   "F3": {
    "hash": "11fdf854cdea29fa",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiamdnuriabcn.blogspot.com"
  },
  "BCN0139": {
   "F3_texto": "846255c434102cef",
   "F3": {
    "hash": "846255c434102cef",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.pqelcarme.com"
  },
  "BCN0140": {
   "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/parroquies/la-salut",
@@ -444,8 +553,9 @@
   "F3_texto": "fea669b49a336b38",
   "F3": {
    "hash": "fea669b49a336b38",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.arxiprestatdegracia.cat/misses"
  },
  "BCN0141": {
   "F1_url_descubierta": "https://parroquiapilarsanteugeni.com/misses/",
@@ -453,102 +563,127 @@
   "F3_texto": "6ba8da3ce6ee03c6",
   "F3": {
    "hash": "6ba8da3ce6ee03c6",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://parroquiapilarsanteugeni.com"
  },
  "BCN0142": {
   "F3_texto": "5eda4b92bf9a1ca3",
   "F3": {
    "hash": "5eda4b92bf9a1ca3",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0143": {
   "F3_texto": "432e4b410746c216",
   "F3": {
    "hash": "432e4b410746c216",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.parroquiadelpilarbcn.org"
  },
  "BCN0144": {
   "F1_texto": "ecd17e7ca9c0527a",
   "F1": {
    "hash": "ecd17e7ca9c0527a",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiadelsdolorsnet.wordpress.com/contacte/"
  },
  "BCN0145": {
   "F1_url_descubierta": "https://parroquiamarededeudelsangels.com/horarios",
   "F1_texto": "7a2c72bddc7d2f49",
   "F1": {
    "hash": "7a2c72bddc7d2f49",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.parroquiamarededeudelsangels.com"
  },
  "BCN0146": {
   "F1_texto": "8019140185bacab3",
   "F1": {
    "hash": "8019140185bacab3",
    "ultimo_ok": "2026-10-29"
-  }
+  },
+  "F1_desde": "https://mariaauxiliadora.org/sagraments/",
+  "F3_texto": "59d6c96bbf2d0618"
  },
  "BCN0147": {
   "F1_texto": "939019f2a4b12d72",
   "F1": {
    "hash": "939019f2a4b12d72",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.mariamitjancera.cat/es/horario_misas"
  },
  "BCN0148": {
   "F1_texto": "89f706e0d05e7ba5",
   "F1": {
    "hash": "89f706e0d05e7ba5",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://mariareina.barcelona"
  },
- "BCN0149": {},
+ "BCN0149": {
+  "F1_desde": "https://mariaemiliariquelme.com"
+ },
  "BCN0150": {},
- "BCN0151": {},
+ "BCN0151": {
+  "F1_desde": "https://adoratricesperpetuasdelstmosacramento.blogspot.com"
+ },
  "BCN0152": {},
  "BCN0153": {},
  "BCN0154": {},
- "BCN0155": {},
+ "BCN0155": {
+  "F1_desde": "http://www.monasteriosvisitacion.com"
+ },
  "BCN0156": {},
  "BCN0157": {
   "F1_url_descubierta": "https://www.benedictinessantperepuelles.cat/horari.html",
-  "F1_texto": "ab58b3e6b5093a46"
+  "F1_texto": "ab58b3e6b5093a46",
+  "F1_desde": "http://www.benedictinessantperepuelles.cat"
  },
  "BCN0158": {
   "F1_url_descubierta": "https://mariareina.barcelona/#Horario",
   "F1_texto": "89f706e0d05e7ba5",
   "F1": {
    "hash": "89f706e0d05e7ba5",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://mariareina.barcelona"
  },
  "BCN0159": {
   "F1_url_descubierta": "https://valldonzella.cat/horaris-liturgics-monestir-valldonzella/",
   "F1_texto": "e1ad94f3278e2573",
   "F1": {
    "hash": "e1ad94f3278e2573",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://www.valldonzella.cat"
  },
  "BCN0160": {},
  "BCN0161": {},
- "BCN0162": {},
- "BCN0163": {},
- "BCN0164": {},
+ "BCN0162": {
+  "F1_desde": "http://www.santpau.es"
+ },
+ "BCN0163": {
+  "F1_desde": "https://apostoladodeladivinamisericordia.es"
+ },
+ "BCN0164": {
+  "F1_desde": "https://oratoribarcelona.com"
+ },
  "BCN0165": {
   "F1_url_descubierta": "https://oratorigracia.com/event/missa-de-difuns-de-loratori-de-gracia-i-del-centre-de-gracia/",
-  "F1_texto": "d25e0cc6a1377a91"
+  "F1_texto": "d25e0cc6a1377a91",
+  "F1_desde": "https://oratorigracia.com"
  },
  "BCN0166": {
   "F1_texto": "07772f9618c15399",
   "F1": {
    "hash": "07772f9618c15399",
    "ultimo_ok": "2026-10-29"
-  }
+  },
+  "F1_desde": "https://oratoribonaigua.org/ca/celebracions/"
  },
  "BCN0167": {},
  "BCN0168": {},
@@ -556,7 +691,7 @@
   "F3_texto": "69151c52403746f5",
   "F3": {
    "hash": "69151c52403746f5",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0170": {
@@ -564,73 +699,97 @@
   "F1_texto": "9938e37cfd4a7f11",
   "F1": {
    "hash": "9938e37cfd4a7f11",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiasagradafamilia.cat"
  },
- "BCN0171": {},
- "BCN0172": {},
- "BCN0173": {},
+ "BCN0171": {
+  "F1_desde": "http://www.parroquiavirgendenazaret.org"
+ },
+ "BCN0172": {
+  "F1_desde": "https://www.kg-barcelona.de"
+ },
+ "BCN0173": {
+  "F1_desde": "https://calassans1976.blogspot.com"
+ },
  "BCN0174": {
   "F1_url_descubierta": "https://www.parroquiasantfrancescassis.com/horaris",
   "F1_texto": "be167fa756c84bb8",
   "F1": {
    "hash": "be167fa756c84bb8",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.parroquiasantfrancescassis.com/patriarca-abraham"
  },
  "BCN0175": {
   "F1_url_descubierta": "https://barcelonecatholique.fr/faire-un-don/",
-  "F1_texto": "e37e93feebfd9ff2"
+  "F1_texto": "e37e93feebfd9ff2",
+  "F1_desde": "https://www.barcelonecatholique.fr"
  },
  "BCN0176": {},
  "BCN0177": {
   "F3_texto": "9b74250f507e3bde",
   "F3": {
    "hash": "9b74250f507e3bde",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0178": {},
  "BCN0179": {
   "F1_url_descubierta": "https://monestir.org/misas-y-adoraciones/",
-  "F1_texto": "72d0c61274e42d93"
+  "F1_texto": "72d0c61274e42d93",
+  "F1_desde": "https://monestir.org"
  },
- "BCN0180": {},
+ "BCN0180": {
+  "F1_desde": "https://santuariosanjose.org/en/timetable-of-saint-joseph-of-mountain-shrine/"
+ },
  "BCN0181": {},
- "BCN0182": {},
+ "BCN0182": {
+  "F1_desde": "https://betaniabarcelona.wixsite.com/residencia"
+ },
  "BCN0183": {},
  "BCN0184": {},
  "BCN0185": {},
- "BCN0186": {},
+ "BCN0186": {
+  "F1_desde": "http://residenciesgrupatlantida.cat"
+ },
  "BCN0187": {},
  "BCN0188": {},
  "BCN0189": {},
  "BCN0190": {},
- "BCN0191": {},
+ "BCN0191": {
+  "F1_desde": "https://www.hermanasjosefinas.es/index.php/residencia-madre-caterina"
+ },
  "BCN0192": {},
- "BCN0193": {},
- "BCN0194": {},
+ "BCN0193": {
+  "F1_desde": "http://www.reinadelapau.com"
+ },
+ "BCN0194": {
+  "F1_desde": "https://residenciasacerdotalbarcelona.org"
+ },
  "BCN0195": {},
  "BCN0196": {
   "F1_texto": "a1eacfa6ebea77d2",
   "F1": {
    "hash": "a1eacfa6ebea77d2",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiasagradafamilia.cat/es/celebrar-la-fe/horarios/"
  },
  "BCN0197": {
   "F1_texto": "983fc15ea12e8d7f",
   "F3_texto": "3d72df5ed8c3e056",
   "F3": {
    "hash": "d03d44fb23dd23d4",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.esglesiapoblenou.cat/images/HorarisComunitatPastoral.pdf"
  },
  "BCN0198": {
   "F3_texto": "890ff0869e10dceb",
   "F3": {
    "hash": "890ff0869e10dceb",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0199": {
@@ -638,35 +797,42 @@
   "F3_texto": "bbf45ece2e8920ee",
   "F3": {
    "hash": "bbf45ece2e8920ee",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.kg-barcelona.de/programm"
  },
  "BCN0200": {
   "F3_texto": "b75122e19f6f976c",
   "F3": {
    "hash": "b75122e19f6f976c",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0201": {
-  "F1_texto": "883beb8d75a3771a",
+  "F1_texto": "e37e93feebfd9ff2",
   "F1": {
    "hash": "883beb8d75a3771a",
    "ultimo_ok": "2026-10-29"
+  },
+  "F1_desde": "https://parroquiasantandreupalomar.cat/",
+  "F3_texto": "e6832b2822b31bb6",
+  "F3": {
+   "hash": "e6832b2822b31bb6",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0202": {
   "F3_texto": "6096b20c3ce1e647",
   "F3": {
    "hash": "6096b20c3ce1e647",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0203": {
   "F3_texto": "5027183f7ba5eb59",
   "F3": {
    "hash": "5027183f7ba5eb59",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0204": {
@@ -674,49 +840,51 @@
   "F1_texto": "dfd1be0f0fe65d2c",
   "F1": {
    "hash": "dfd1be0f0fe65d2c",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://santbernat.salesians.cat"
  },
  "BCN0205": {
   "F3_texto": "b6fd0f44d01d99e7",
   "F3": {
    "hash": "b6fd0f44d01d99e7",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiesdegracia.wordpress.com/horaris/"
  },
  "BCN0206": {
   "F3_texto": "4c42771833f54755",
   "F3": {
    "hash": "4c42771833f54755",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0207": {
-  "F3_texto": "e5c66492a423d38d",
+  "F3_texto": "7991bfd4dea6f9f0",
   "F3": {
-   "hash": "e5c66492a423d38d",
-   "ultimo_ok": "2026-10-29"
+   "hash": "7991bfd4dea6f9f0",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0208": {
   "F3_texto": "b2ae2b916fe36ab3",
   "F3": {
    "hash": "b2ae2b916fe36ab3",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0209": {
   "F3_texto": "a59c83e34e1277f7",
   "F3": {
    "hash": "a59c83e34e1277f7",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0210": {
   "F3_texto": "0d6e99fac5e94326",
   "F3": {
    "hash": "0d6e99fac5e94326",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0211": {
@@ -725,43 +893,53 @@
   "F3_texto": "66953dd96ebc3177",
   "F3": {
    "hash": "66953dd96ebc3177",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://parroquiapilarsanteugeni.com"
  },
  "BCN0214": {
-  "F1_texto": "ef3468b837004c00",
+  "F1_texto": "c777316a24f7f2db",
   "F1": {
-   "hash": "ef3468b837004c00",
-   "ultimo_ok": "2026-10-29"
-  }
+   "hash": "c777316a24f7f2db",
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.sanfranciscodepaula.org/horarios"
  },
  "BCN0215": {
   "F1_url_descubierta": "https://www.parroquiaconcepciobcn.org/misses/",
   "F1_texto": "2cfbcf757fae8175",
   "F1": {
    "hash": "2cfbcf757fae8175",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.parroquiaconcepciobcn.org"
  },
  "BCN0216": {
   "F3_texto": "9af8bb3766537f5b",
   "F3": {
    "hash": "9af8bb3766537f5b",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://www.santfrancescxavier.com"
  },
  "BCN0217": {
-  "F1_texto": "9f47bf9376f83007",
+  "F1_texto": "e37e93feebfd9ff2",
   "F1": {
    "hash": "9f47bf9376f83007",
    "ultimo_ok": "2026-10-29"
+  },
+  "F1_desde": "https://sanfelixafricano.org/horarios-de-misas-san-felix/",
+  "F3_texto": "29e03403d04263ad",
+  "F3": {
+   "hash": "29e03403d04263ad",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0218": {
   "F3_texto": "d23973df88346cbe",
   "F3": {
    "hash": "d23973df88346cbe",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0219": {
@@ -774,63 +952,67 @@
   "F1_texto": "ceb0de3467800e98",
   "F1": {
    "hash": "ceb0de3467800e98",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://santgregoritaumaturg.blogspot.com"
  },
  "BCN0220": {
   "F3_texto": "0a562d7d8712949b",
   "F3": {
    "hash": "0a562d7d8712949b",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://www.santignasi.cat"
  },
  "BCN0221": {
   "F3_texto": "46e433e2c9cc9b5e",
   "F3": {
    "hash": "46e433e2c9cc9b5e",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0222": {
   "F3_texto": "ff8181a602f2210a",
   "F3": {
    "hash": "ff8181a602f2210a",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0223": {
   "F1_texto": "0d341ee34d59ac9d",
   "F1": {
    "hash": "0d341ee34d59ac9d",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://donbosconavas.salesians.cat/horario-misas/"
  },
  "BCN0224": {
   "F3_texto": "0e53a0cfbc3ba09b",
   "F3": {
    "hash": "0e53a0cfbc3ba09b",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0225": {
   "F3_texto": "9da47c1002141b85",
   "F3": {
    "hash": "9da47c1002141b85",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.sjdeavila.net"
  },
  "BCN0227": {
   "F3_texto": "48f94efbd5b3ffaa",
   "F3": {
    "hash": "48f94efbd5b3ffaa",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0228": {
   "F3_texto": "c382b46568f6ab24",
   "F3": {
    "hash": "c382b46568f6ab24",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0229": {
@@ -838,8 +1020,9 @@
   "F1_texto": "51dac078c82ebcde",
   "F1": {
    "hash": "51dac078c82ebcde",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.santjoanmariavianney.com"
  },
  "BCN0230": {
   "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/parroquies/sant-jordi",
@@ -847,139 +1030,151 @@
   "F3_texto": "850721e99fd252fd",
   "F3": {
    "hash": "850721e99fd252fd",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.arxiprestatdegracia.cat/misses"
  },
  "BCN0231": {
   "F3_texto": "3fe3a9be6552aa4c",
   "F3": {
    "hash": "3fe3a9be6552aa4c",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0232": {
   "F3_texto": "c88b5fe05774fefc",
   "F3": {
    "hash": "c88b5fe05774fefc",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0233": {
   "F3_texto": "f16e4e37b4682921",
   "F3": {
    "hash": "f16e4e37b4682921",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0234": {
   "F3_texto": "7959caa3b7f567ea",
   "F3": {
    "hash": "7959caa3b7f567ea",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0235": {
-  "F3_texto": "0299bbbdd8dc4e85",
+  "F3_texto": "788ad206ee0d9401",
   "F3": {
-   "hash": "0299bbbdd8dc4e85",
-   "ultimo_ok": "2026-10-22"
+   "hash": "788ad206ee0d9401",
+   "ultimo_ok": "2026-11-02"
   },
   "F1_texto": "f13d00558011f29b",
   "F1": {
    "hash": "f13d00558011f29b",
    "ultimo_ok": "2026-10-29"
-  }
+  },
+  "F1_desde": "https://parroquiasantllorens.org/horaris/"
  },
  "BCN0236": {
   "F3_texto": "a6590ccab483c617",
   "F3": {
    "hash": "a6590ccab483c617",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0237": {
   "F3_texto": "8bc845ca93efeee3",
   "F3": {
    "hash": "8bc845ca93efeee3",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0238": {
   "F3_texto": "ba86e903d1ffd1b1",
   "F3": {
    "hash": "ba86e903d1ffd1b1",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0239": {
   "F3_texto": "26f8cff27bca036e",
   "F3": {
    "hash": "26f8cff27bca036e",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0240": {
   "F3_texto": "9e60265389404da4",
   "F3": {
    "hash": "4fc0cc1250fa898b",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://santmartidelclot.cat"
  },
  "BCN0241": {
   "F3_texto": "497be4d65759b794",
   "F3": {
    "hash": "497be4d65759b794",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0242": {
   "F3_texto": "3b81c911eae93331",
   "F3": {
    "hash": "3b81c911eae93331",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://parroquiasantmedir.cat"
  },
  "BCN0243": {
   "F3_texto": "49876310e291cab7",
   "F3": {
    "hash": "49876310e291cab7",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://santmiqueldelport.org"
  },
  "BCN0244": {
   "F3_texto": "127aa5013f371a73",
   "F3": {
    "hash": "127aa5013f371a73",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiesdegracia.wordpress.com/horaris/"
  },
  "BCN0245": {
   "F3_texto": "408b5e76d0dc6f7f",
   "F3": {
    "hash": "408b5e76d0dc6f7f",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0246": {
   "F1_url_descubierta": "https://www.santoleguer.es/horarios-parroquia/",
-  "F1_texto": "d18df504fc250240",
+  "F1_texto": "e37e93feebfd9ff2",
   "F1": {
    "hash": "d18df504fc250240",
    "ultimo_ok": "2026-10-29"
+  },
+  "F1_desde": "https://www.santoleguer.es",
+  "F3_texto": "3194f1eef0017797",
+  "F3": {
+   "hash": "3194f1eef0017797",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0247": {
   "F3_texto": "89bf019a3f052250",
   "F3": {
    "hash": "89bf019a3f052250",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0248": {
   "F3_texto": "1f9cf9bb8993a243",
   "F3": {
    "hash": "1f9cf9bb8993a243",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0249": {
@@ -987,21 +1182,23 @@
   "F3_texto": "9461e7d4e5ed422c",
   "F3": {
    "hash": "9461e7d4e5ed422c",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.esglesiapoblenou.cat/images/HorarisComunitatPastoral.pdf"
  },
  "BCN0250": {
   "F3_texto": "aa0b714bc375f8fa",
   "F3": {
    "hash": "aa0b714bc375f8fa",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.santpaudelcamp.cat"
  },
  "BCN0251": {
   "F3_texto": "070baa5fa9dddffd",
   "F3": {
    "hash": "070baa5fa9dddffd",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0252": {
@@ -1010,57 +1207,68 @@
   "F3_texto": "2f057608bf2a0f9c",
   "F3": {
    "hash": "2f057608bf2a0f9c",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiespoblesec.blogspot.com"
  },
  "BCN0253": {
   "F1_texto": "e887c29441b3180d",
   "F1": {
    "hash": "e887c29441b3180d",
    "ultimo_ok": "2026-10-29"
+  },
+  "F1_desde": "https://www.parroquiadesantperedelespuelles.org/horarios/",
+  "F3_texto": "cafb93db2c8fd72a",
+  "F3": {
+   "hash": "cafb93db2c8fd72a",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0254": {
   "F3_texto": "8917ec2103a1e2a2",
   "F3": {
    "hash": "8917ec2103a1e2a2",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0255": {
   "F3_texto": "c58e616e88eec8db",
   "F3": {
    "hash": "c58e616e88eec8db",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0256": {
   "F3_texto": "a7878d9c845ddf45",
   "F3": {
    "hash": "a7878d9c845ddf45",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.santpiusx.net"
  },
  "BCN0257": {
   "F3_texto": "1272be955ef90ce5",
   "F3": {
    "hash": "1272be955ef90ce5",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.sanrafael.cat"
  },
  "BCN0258": {
   "F1_texto": "04d030fca71edcfc",
   "F1": {
    "hash": "04d030fca71edcfc",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.santramondepenyafort.cat/es/horarios-de-misa/"
  },
  "BCN0259": {
-  "F1_texto": "f4afe4bd695f7a2f",
+  "F1_texto": "ac6b6a5a27986fb9",
   "F1": {
-   "hash": "f4afe4bd695f7a2f",
-   "ultimo_ok": "2026-10-29"
-  }
+   "hash": "ac6b6a5a27986fb9",
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://santramonnonat.wordpress.com/horaris/"
  },
  "BCN0260": {
   "F1_url_descubierta": "https://drive.google.com/file/d/1ITt1phgdeAzaXsGasG4WeUTrJ4qxHp1J/view?usp=drive_link",
@@ -1068,106 +1276,122 @@
   "F3_texto": "925f87e194a28a62",
   "F3": {
    "hash": "925f87e194a28a62",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiespoblesec.blogspot.com"
  },
  "BCN0261": {
   "F3_texto": "06166a6bbf15faa7",
   "F3": {
    "hash": "06166a6bbf15faa7",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://parroquiasantsebastia.es.tl/Home.htm"
  },
  "BCN0262": {
   "F3_texto": "53de5dbbb1209249",
   "F3": {
    "hash": "53de5dbbb1209249",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   },
   "F1_url_descubierta": "https://cordemariasanttomas.org#tomas",
-  "F1_texto": "27aa9f9369f74db3"
+  "F1_texto": "27aa9f9369f74db3",
+  "F1_desde": "https://cordemariasanttomas.org/#horari"
  },
  "BCN0263": {
   "F1_url_descubierta": "http://www.parroquiasarria.net/la-parroquia/horaris/",
-  "F1_texto": "f802c0a873a0a87c",
+  "F1_texto": "e37e93feebfd9ff2",
   "F1": {
    "hash": "f802c0a873a0a87c",
    "ultimo_ok": "2026-10-29"
+  },
+  "F1_desde": "http://www.parroquiasarria.net",
+  "F3_texto": "8a593f6364e2c2e7",
+  "F3": {
+   "hash": "8a593f6364e2c2e7",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0264": {
   "F3_texto": "5bb04bc6455779ca",
   "F3": {
    "hash": "5bb04bc6455779ca",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiasantadorotea.org/"
  },
  "BCN0265": {
   "F1_texto": "7083416ac425156b",
   "F1": {
    "hash": "7083416ac425156b",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.santaagnes.com/EsglesiaCatolica.php?pg=Horari+de+Misses&lg=SP"
  },
  "BCN0266": {
   "F3_texto": "24b5cd77966f465f",
   "F3": {
    "hash": "24b5cd77966f465f",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.parroquiasantaanna.org"
  },
  "BCN0267": {
   "F3_texto": "943bbf65e59271a6",
   "F3": {
    "hash": "943bbf65e59271a6",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0268": {
   "F3_texto": "b954b4197b96b736",
   "F3": {
    "hash": "b954b4197b96b736",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0269": {
-  "F3_texto": "8e4b4f9be09196cd"
+  "F3_texto": "c694fcf9b25b00cc"
  },
  "BCN0270": {
   "F3_texto": "1144c7865a3ce086",
   "F3": {
    "hash": "1144c7865a3ce086",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiasantadorotea.org/"
  },
  "BCN0271": {
   "F3_texto": "f9363c49abe9d78f",
   "F3": {
    "hash": "f9363c49abe9d78f",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0272": {
-  "F1_texto": "d7117b79afb56d18",
+  "F1_texto": "f78deca502a00f7d",
   "F1": {
-   "hash": "d7117b79afb56d18",
-   "ultimo_ok": "2026-10-29"
-  }
+   "hash": "f78deca502a00f7d",
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://staeulaliavilapicina.com/horaris/"
  },
  "BCN0273": {
   "F3_texto": "5a7237f663c54d86",
   "F3": {
    "hash": "5a7237f663c54d86",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.santaisabelysanjoaquin.org"
  },
  "BCN0274": {
   "F1_url_descubierta": "https://www.santajoaquinabcn.com/horarios/",
   "F1_texto": "7935794d56586d49",
   "F1": {
    "hash": "7935794d56586d49",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://santajoaquinabcn.com"
  },
  "BCN0275": {
   "F1_url_descubierta": "https://drive.google.com/file/d/1ITt1phgdeAzaXsGasG4WeUTrJ4qxHp1J/view?usp=drive_link",
@@ -1175,8 +1399,9 @@
   "F3_texto": "ac86ff07a55ef907",
   "F3": {
    "hash": "ac86ff07a55ef907",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiespoblesec.blogspot.com"
  },
  "BCN0276": {
   "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/parroquies/santa-maria-de-gracia",
@@ -1184,28 +1409,29 @@
   "F3_texto": "45a048222a848fa9",
   "F3": {
    "hash": "45a048222a848fa9",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.arxiprestatdegracia.cat/misses"
  },
  "BCN0277": {
   "F3_texto": "4bd233860ea70cd5",
   "F3": {
    "hash": "4bd233860ea70cd5",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0278": {
-  "F3_texto": "05c8c6536737408b",
+  "F3_texto": "a6d60e198fb651d1",
   "F3": {
-   "hash": "05c8c6536737408b",
-   "ultimo_ok": "2026-10-29"
+   "hash": "a6d60e198fb651d1",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0279": {
   "F3_texto": "6002febd6a27e900",
   "F3": {
    "hash": "6002febd6a27e900",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0280": {
@@ -1213,260 +1439,321 @@
   "F3_texto": "d37ae742ee43c553",
   "F3": {
    "hash": "d37ae742ee43c553",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.esglesiapoblenou.cat/images/HorarisComunitatPastoral.pdf"
  },
  "BCN0281": {
   "F3_texto": "bc64fa4086700133",
   "F3": {
    "hash": "bc64fa4086700133",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0282": {
   "F3_texto": "4453963f2201f93b",
   "F3": {
    "hash": "4453963f2201f93b",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://santateclabcn.blogspot.com/"
  },
  "BCN0283": {
   "F3_texto": "8db8841a1d97060f",
   "F3": {
    "hash": "8db8841a1d97060f",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://www.parroquiasantateresabcn.org"
  },
  "BCN0284": {
   "F3_texto": "5eb1b2c8fa531777",
   "F3": {
    "hash": "55347c7b9472e32b",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.arxiprestatdegracia.cat/misses"
  },
  "BCN0285": {
   "F1_texto": "412872bf390044d4",
   "F1": {
    "hash": "412872bf390044d4",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiabonanova.com/horarios/"
  },
- "BCN0286": {},
+ "BCN0286": {
+  "F1_desde": "https://caputxins.cat/on-som/santuari-de-la-mare-de-deu-de-ajuda"
+ },
  "BCN0287": {
   "F1_texto": "729ffc1a6e456ed9",
   "F1": {
    "hash": "729ffc1a6e456ed9",
    "ultimo_ok": "2026-10-29"
+  },
+  "F1_desde": "https://lesplanesparroquia.blogspot.com/",
+  "F3_texto": "f3039d30f017d40c",
+  "F3": {
+   "hash": "f3039d30f017d40c",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0288": {},
- "BCN0289": {},
+ "BCN0289": {
+  "F1_desde": "http://www.carmelcat.cat/barcelona/liturgia.html"
+ },
  "BCN0290": {},
  "BCN0291": {
   "F1_url_descubierta": "https://santuarisantaeulalia.cat/celebracions/misses/",
   "F1_texto": "1f3b3755b930c04f",
   "F1": {
    "hash": "1f3b3755b930c04f",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://santuarisantaeulalia.cat"
  },
  "BCN0292": {
-  "F1_texto": "84260d4e67a7a53c"
+  "F1_texto": "84260d4e67a7a53c",
+  "F1_desde": "http://www.santagemabcn.org/"
  },
  "BCN0293": {
   "F1_texto": "228fb0723cd30ecd",
   "F1": {
    "hash": "228fb0723cd30ecd",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://padesantantoni.com/horaris-de-misses"
  },
  "BCN0294": {
   "F3_texto": "3d371f5e8ebd5ee7",
   "F3": {
    "hash": "3d371f5e8ebd5ee7",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0295": {
   "F3_texto": "2e046c3bc8884cfe",
   "F3": {
    "hash": "2e046c3bc8884cfe",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0296": {},
- "BCN0297": {},
+ "BCN0297": {
+  "F1_desde": "https://seminaribarcelona.cat"
+ },
  "BCN0298": {},
- "BCN0299": {},
- "BCN0300": {},
+ "BCN0299": {
+  "F1_desde": "https://www.uic.es/es/universidad/servicios/capellania/actividades"
+ },
+ "BCN0300": {
+  "F1_desde": "http://www.uic.es"
+ },
  "BCN0301": {
   "F1_url_descubierta": "https://www.arxiprestatdegracia.cat/parroquies/josepets",
   "F1_texto": "413f878e47ad6f08",
   "F3_texto": "af180007f5d76b9a",
   "F3": {
    "hash": "af180007f5d76b9a",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.arxiprestatdegracia.cat/misses"
  },
  "BCN0302": {
   "F1_url_descubierta": "https://www.parroquiavergedelapau.com/horaris",
   "F1_texto": "5ebb98ddf5fa60a8",
   "F1": {
    "hash": "5ebb98ddf5fa60a8",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://www.parroquiavergedelapau.com"
  },
  "BCN0303": {
   "F3_texto": "46a5b961d850be8b",
   "F3": {
    "hash": "46a5b961d850be8b",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
- "BCN0304": {},
+ "BCN0304": {
+  "F1_desde": "http://www.fundacioaymaripuig.org"
+ },
  "BCN0305": {
   "F3_texto": "2f3b0f115313a127",
   "F3": {
    "hash": "2f3b0f115313a127",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://esglesiadalella.org"
  },
  "BCN0306": {},
  "BCN0307": {},
  "BCN0308": {},
- "BCN0309": {},
+ "BCN0309": {
+  "F1_desde": "http://llarsantaanna.net"
+ },
  "BCN0310": {},
  "BCN0311": {
   "F3_texto": "d547761bc2d4f05e",
   "F3": {
    "hash": "d547761bc2d4f05e",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0312": {},
  "BCN0313": {},
  "BCN0314": {},
- "BCN0315": {},
+ "BCN0315": {
+  "F1_desde": "http://www.carmelcat.cat/badalona"
+ },
  "BCN0316": {},
  "BCN0317": {},
  "BCN0318": {
   "F1_url_descubierta": "https://www.hospitalgermanstrias.cat/web/guest/horaris",
-  "F1_texto": "dc5baa5ee6bc4424"
+  "F1_texto": "dc5baa5ee6bc4424",
+  "F1_desde": "http://www.gencat.cat/ics/germanstrias"
  },
- "BCN0319": {},
+ "BCN0319": {
+  "F1_desde": "http://www.guttmann.com"
+ },
  "BCN0320": {
   "F1_texto": "c7dad2b3a947571d",
   "F1": {
    "hash": "c7dad2b3a947571d",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://mdd-salut-bdn.blogspot.com/"
  },
  "BCN0321": {
   "F3_texto": "48a3d140a009433e",
   "F3": {
    "hash": "48a3d140a009433e",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://esglesiabadalona.org"
  },
  "BCN0322": {
   "F3_texto": "e85a081314806769",
   "F3": {
    "hash": "e85a081314806769",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiamontserratbadalona.org"
  },
  "BCN0323": {
   "F1_texto": "ff662c85f0d2e3f4",
   "F3_texto": "e38f30d93cb1aa0d",
   "F3": {
    "hash": "e38f30d93cb1aa0d",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://marededeudelroserbadalona.jimdofree.com/"
  },
  "BCN0324": {},
- "BCN0325": {},
- "BCN0326": {},
+ "BCN0325": {
+  "F1_desde": "https://lamurtra.cat"
+ },
+ "BCN0326": {
+  "F1_desde": "http://www.rocaipi.cat"
+ },
  "BCN0327": {
   "F3_texto": "d69a7b471a776f00",
   "F3": {
    "hash": "d69a7b471a776f00",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0328": {
   "F3_texto": "6d59e14bcf78f657",
   "F3": {
    "hash": "6d59e14bcf78f657",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://parroquiabufala.cat/www/p-sant-crist-de-canyet/"
  },
  "BCN0329": {
   "F3_texto": "305037c47824b969",
   "F3": {
    "hash": "305037c47824b969",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.parroquiabufala.cat"
  },
  "BCN0330": {
   "F3_texto": "a86ff01903cd068d",
   "F3": {
    "hash": "a86ff01903cd068d",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   },
-  "F1_texto": "bd4328724ca3da64"
+  "F1_texto": "bd4328724ca3da64",
+  "F1_desde": "http://parroquia-sant-jaume.blogspot.com/"
  },
  "BCN0331": {
   "F1_texto": "7c13daf85601d514",
   "F1": {
    "hash": "7c13daf85601d514",
    "ultimo_ok": "2026-10-29"
+  },
+  "F1_desde": "https://www.santjosepbadalona.cat/p/informacio-general.html",
+  "F3_texto": "6144b2bb7d114bff",
+  "F3": {
+   "hash": "6144b2bb7d114bff",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0332": {
   "F3_texto": "a40223357cf20ecd",
   "F3": {
    "hash": "a40223357cf20ecd",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0333": {
   "F3_texto": "1e5cad7769dfd19d",
   "F3": {
    "hash": "1e5cad7769dfd19d",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0334": {
   "F1_texto": "756ea92e63448160",
   "F1": {
    "hash": "756ea92e63448160",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.psantsebastia.org/horarios"
  },
  "BCN0335": {
   "F3_texto": "cdd5cf378a3ec76a",
   "F3": {
    "hash": "cdd5cf378a3ec76a",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://esglesiabadalona.org"
  },
  "BCN0336": {
   "F3_texto": "57cd554d7b14ba82",
   "F3": {
    "hash": "57cd554d7b14ba82",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://esglesiabadalona.org"
  },
- "BCN0337": {},
+ "BCN0337": {
+  "F1_desde": "http://www.salesians.info"
+ },
  "BCN0338": {},
- "BCN0339": {},
+ "BCN0339": {
+  "F1_desde": "http://parroquiasantfeliudecabrera.blogspot.com"
+ },
  "BCN0340": {},
  "BCN0341": {
   "F3_texto": "4410f49e018b9bad",
   "F3": {
    "hash": "4410f49e018b9bad",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://dedaltidemar.org/eucaristia/"
  },
  "BCN0342": {},
  "BCN0343": {},
@@ -1474,85 +1761,93 @@
   "F3_texto": "1ef5232e4b4596cc",
   "F3": {
    "hash": "1ef5232e4b4596cc",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://dedaltidemar.org/eucaristia/"
  },
  "BCN0345": {
   "F1_url_descubierta": "https://parroquies3viles.com/horaris-de-missa/",
-  "F1_texto": "f2eb3a855e0c95c7"
+  "F1_texto": "f2eb3a855e0c95c7",
+  "F1_desde": "https://parroquies3viles.com"
  },
  "BCN0346": {
   "F1_url_descubierta": "https://parroquies3viles.com/horaris-de-missa/",
-  "F1_texto": "f2eb3a855e0c95c7"
+  "F1_texto": "f2eb3a855e0c95c7",
+  "F1_desde": "https://parroquies3viles.com"
  },
  "BCN0347": {
-  "F3_texto": "76f7ee1ae4c11705",
+  "F3_texto": "38c50b46ca8af78e",
   "F3": {
-   "hash": "76f7ee1ae4c11705",
-   "ultimo_ok": "2026-10-22"
+   "hash": "38c50b46ca8af78e",
+   "ultimo_ok": "2026-11-02"
   },
   "F1_url_descubierta": "https://parroquies3viles.com/santa-maria-destrac/",
   "F1_texto": "10a691814539a988",
   "F1": {
    "hash": "10a691814539a988",
    "ultimo_ok": "2026-10-29"
-  }
+  },
+  "F1_desde": "https://parroquies3viles.com/horaris-de-missa/"
  },
- "BCN0348": {},
- "BCN0349": {},
+ "BCN0348": {
+  "F1_desde": "http://www.hermanasdebetania.es"
+ },
+ "BCN0349": {
+  "F1_desde": "http://www3.planalfa.es/safac/"
+ },
  "BCN0350": {},
  "BCN0351": {},
  "BCN0352": {
   "F3_texto": "05f18ed85682b831",
   "F3": {
    "hash": "05f18ed85682b831",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0353": {
   "F3_texto": "a4520e979752fc68",
   "F3": {
    "hash": "a4520e979752fc68",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0354": {
   "F3_texto": "57a8f6e06bfa25b4",
   "F3": {
    "hash": "57a8f6e06bfa25b4",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0355": {
   "F3_texto": "573012620e44a6a7",
   "F3": {
    "hash": "573012620e44a6a7",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0356": {
   "F3_texto": "27499db886f226b9",
   "F3": {
    "hash": "27499db886f226b9",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0357": {},
  "BCN0358": {
-  "F3_texto": "8e4b4f9be09196cd"
+  "F3_texto": "c694fcf9b25b00cc"
  },
  "BCN0359": {
-  "F3_texto": "e39627ff23865b2d",
+  "F3_texto": "26b1142edebdf123",
   "F3": {
-   "hash": "e39627ff23865b2d",
-   "ultimo_ok": "2026-10-29"
+   "hash": "26b1142edebdf123",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0360": {
   "F3_texto": "2dc1561004dc1dee",
   "F3": {
    "hash": "2dc1561004dc1dee",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0361": {},
@@ -1560,14 +1855,14 @@
  "BCN0363": {
   "OSM": {
    "hash": "c19411ea647f1af7",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0364": {
   "F3_texto": "b06bf0e3e02ec805",
   "F3": {
-   "hash": "b06bf0e3e02ec805",
-   "ultimo_ok": "2026-10-29"
+   "hash": "8d84749e665c000f",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0365": {},
@@ -1575,47 +1870,59 @@
   "F3_texto": "d4eadd05f2475f4b"
  },
  "BCN0367": {},
- "BCN0368": {},
+ "BCN0368": {
+  "F1_desde": "https://www.esplugues.com/monestir-de-santa-maria-de-montsio-desplugues"
+ },
  "BCN0369": {},
  "BCN0370": {
   "F1_url_descubierta": "https://www.parroquiasantamagdalena.org/horaris/",
-  "F1_texto": "16a80ba89a182461"
+  "F1_texto": "e5fb85811d34b664",
+  "F1_desde": "https://www.parroquiasantamagdalena.org"
  },
  "BCN0371": {
   "F3_texto": "69151c52403746f5",
   "F3": {
    "hash": "69151c52403746f5",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
- "BCN0372": {},
+ "BCN0372": {
+  "F1_desde": "http://www.teclasala.cat"
+ },
  "BCN0373": {
   "F1_url_descubierta": "http://www.xaloc.org/ca/collegi/informacio-general/horari-escolar",
-  "F1_texto": "2632046e46d939c0"
+  "F1_texto": "2632046e46d939c0",
+  "F1_desde": "http://www.xaloc.org"
  },
- "BCN0374": {},
- "BCN0375": {},
+ "BCN0374": {
+  "F1_desde": "https://sites.google.com/site/parroquiesbellvitgegornal/ermita-de-bellvitge"
+ },
+ "BCN0375": {
+  "F1_desde": "http://parroquiasantaeulalia.org"
+ },
  "BCN0376": {},
  "BCN0377": {},
  "BCN0378": {
   "F3_texto": "0c20ffc39cf30084",
   "F3": {
    "hash": "0c20ffc39cf30084",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://pinmaculadalh.org"
  },
  "BCN0379": {
   "F3_texto": "ce81c21b43a4892d",
   "F3": {
    "hash": "ce81c21b43a4892d",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://sites.google.com/site/parroquiesbellvitgegornal/mare-de-deu-de-bellvitge"
  },
  "BCN0380": {
   "F3_texto": "b966dd992703617e",
   "F3": {
    "hash": "b966dd992703617e",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0381": {
@@ -1624,37 +1931,41 @@
   "F3_texto": "7c20073690df83cc",
   "F3": {
    "hash": "7c20073690df83cc",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.desemparats.org"
  },
  "BCN0382": {},
  "BCN0383": {
-  "F3_texto": "8e4b4f9be09196cd"
+  "F3_texto": "c694fcf9b25b00cc"
  },
  "BCN0384": {
-  "F3_texto": "8f54ebd758c4726c"
+  "F3_texto": "cf7b9cba393c604f"
  },
  "BCN0385": {
   "F3_texto": "b0d62c75308d4f09",
   "F3": {
    "hash": "b0d62c75308d4f09",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://santenric.org"
  },
  "BCN0386": {
-  "F1_texto": "22e3a291a8c9ddb8",
+  "F1_texto": "e37e93feebfd9ff2",
   "F3_texto": "d2e55ec2e1714c1f",
   "F3": {
    "hash": "d2e55ec2e1714c1f",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.parroquiasantisidre.org/horario-de-misas/"
  },
  "BCN0387": {
   "F3_texto": "a5ee97fdcbb47305",
   "F3": {
    "hash": "a5ee97fdcbb47305",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://sites.google.com/site/parroquiesbellvitgegornal/sant-joan-evangelista"
  },
  "BCN0388": {
   "F3_texto": "9ada8a8b42f2d089"
@@ -1664,40 +1975,43 @@
   "F1_texto": "45480beb81de864a",
   "F1": {
    "hash": "45480beb81de864a",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   },
   "F3_texto": "3a5e270880b0107a",
   "F3": {
    "hash": "3a5e270880b0107a",
    "ultimo_ok": "2026-10-22"
-  }
+  },
+  "F1_desde": "http://santaeulaliadelcentre.blog.cat"
  },
  "BCN0390": {
   "F1_texto": "94d1f30b173931a8",
   "F1": {
    "hash": "94d1f30b173931a8",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.parroquiasantaeulalia.org/"
  },
  "BCN0391": {
   "F3_texto": "251673250a980dcd",
   "F3": {
    "hash": "251673250a980dcd",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0392": {
   "F3_texto": "764d1c1c0f6b852d",
   "F3": {
    "hash": "764d1c1c0f6b852d",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://sites.google.com/site/parroquiesbellvitgegornal/santa-maria-del-gornal"
  },
  "BCN0393": {
   "F3_texto": "eb161a5c729dabae",
   "F3": {
    "hash": "eb161a5c729dabae",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0394": {},
@@ -1706,58 +2020,66 @@
  "BCN0397": {},
  "BCN0398": {},
  "BCN0399": {},
- "BCN0400": {},
+ "BCN0400": {
+  "F1_desde": "http://www.santjosepfranciscanes.es"
+ },
  "BCN0401": {},
  "BCN0402": {},
  "BCN0403": {},
- "BCN0404": {},
+ "BCN0404": {
+  "F1_desde": "http://mataro.escolapia.cat"
+ },
  "BCN0405": {},
  "BCN0406": {},
  "BCN0407": {},
- "BCN0408": {},
+ "BCN0408": {
+  "F1_desde": "http://www.csdm.es"
+ },
  "BCN0409": {
   "F3_texto": "d7aca877b2dc508d",
   "F3": {
    "hash": "d7aca877b2dc508d",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0410": {
-  "F3_texto": "0b430cfa67854cb8",
+  "F3_texto": "ce29ad953ef66c51",
   "F3": {
-   "hash": "0b430cfa67854cb8",
-   "ultimo_ok": "2026-10-29"
+   "hash": "ce29ad953ef66c51",
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0411": {
   "F3_texto": "024dd9252b710c9f",
   "F3": {
    "hash": "024dd9252b710c9f",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0412": {},
- "BCN0413": {},
+ "BCN0413": {
+  "F1_desde": "http://www.carmel-mataro.net"
+ },
  "BCN0414": {},
  "BCN0415": {
   "F3_texto": "5a69c3d4556ab953",
   "F3": {
    "hash": "5a69c3d4556ab953",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0416": {
   "F3_texto": "5e53d4a8be2d6144",
   "F3": {
    "hash": "5e53d4a8be2d6144",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0417": {
   "F3_texto": "27b96c47e951b308",
   "F3": {
    "hash": "27b96c47e951b308",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0418": {},
@@ -1767,8 +2089,9 @@
   "F3_texto": "e0702a8e75499959",
   "F3": {
    "hash": "e0702a8e75499959",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://www.parroquiademontgat.es"
  },
  "BCN0422": {},
  "BCN0423": {},
@@ -1777,213 +2100,242 @@
   "F3_texto": "85610d650e2d14c9",
   "F3": {
    "hash": "85610d650e2d14c9",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0426": {},
- "BCN0427": {},
+ "BCN0427": {
+  "F1_desde": "http://www.elcasal.org"
+ },
  "BCN0428": {
   "F3_texto": "793b8188ac93049c",
   "F3": {
    "hash": "793b8188ac93049c",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0429": {
   "F3_texto": "702aa89fa39ee1a9",
   "F3": {
    "hash": "702aa89fa39ee1a9",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0430": {
   "F3_texto": "d496a5609729e004",
   "F3": {
    "hash": "d496a5609729e004",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://salesianos.edu/contenido.asp?conte=967&amp;1"
  },
  "BCN0431": {
   "F3_texto": "f5c3d56cb234b99d",
   "F3": {
    "hash": "f5c3d56cb234b99d",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://www.barnabitas.org"
  },
  "BCN0432": {
   "F3_texto": "d946a47c202de041",
   "F3": {
    "hash": "d946a47c202de041",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "http://www.barnabitas.org"
  },
  "BCN0433": {
   "F3_texto": "0e8df2206fb944d0",
   "F3": {
    "hash": "0e8df2206fb944d0",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
- "BCN0434": {},
+ "BCN0434": {
+  "F1_desde": "http://www.cruzblanca.org"
+ },
  "BCN0435": {
   "F1_url_descubierta": "https://parroquies3viles.com/horaris-de-missa/",
-  "F1_texto": "f2eb3a855e0c95c7"
+  "F1_texto": "f2eb3a855e0c95c7",
+  "F1_desde": "https://parroquies3viles.com"
  },
  "BCN0436": {
   "F1_url_descubierta": "https://parroquies3viles.com/horaris-de-missa/",
-  "F1_texto": "f2eb3a855e0c95c7"
+  "F1_texto": "f2eb3a855e0c95c7",
+  "F1_desde": "https://parroquies3viles.com"
  },
  "BCN0437": {
   "F1_url_descubierta": "https://parroquies3viles.com/horaris-de-missa/",
-  "F1_texto": "f2eb3a855e0c95c7"
+  "F1_texto": "f2eb3a855e0c95c7",
+  "F1_desde": "https://parroquies3viles.com"
  },
  "BCN0438": {
-  "F3_texto": "f1bb8657e938b4e4",
+  "F3_texto": "c89704ad43a522c9",
   "F3": {
-   "hash": "f1bb8657e938b4e4",
-   "ultimo_ok": "2026-10-22"
+   "hash": "c89704ad43a522c9",
+   "ultimo_ok": "2026-11-02"
   },
   "F1_url_descubierta": "https://parroquies3viles.com/sant-andreu-de-llavaneres/",
   "F1_texto": "336e46597728aaf3",
   "F1": {
    "hash": "336e46597728aaf3",
    "ultimo_ok": "2026-10-29"
-  }
+  },
+  "F1_desde": "https://parroquies3viles.com/horaris-de-missa/"
  },
- "BCN0439": {},
+ "BCN0439": {
+  "F1_desde": "http://www.parroquiasantjoandespi.com"
+ },
  "BCN0440": {},
  "BCN0441": {},
  "BCN0442": {
   "F3_texto": "d4d9966380598ba1",
   "F3": {
    "hash": "d4d9966380598ba1",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0443": {},
  "BCN0444": {
-  "F3_texto": "7529c14b83025995",
+  "F3_texto": "0ffc9d58fc8745f4",
   "F3": {
-   "hash": "7529c14b83025995",
-   "ultimo_ok": "2026-10-22"
+   "hash": "0ffc9d58fc8745f4",
+   "ultimo_ok": "2026-11-02"
   },
   "F1_url_descubierta": "https://parroquies3viles.com/san-vicenc-de-montalt/",
   "F1_texto": "e7d43e914a0e310a",
   "F1": {
    "hash": "e7d43e914a0e310a",
    "ultimo_ok": "2026-10-29"
-  }
+  },
+  "F1_desde": "https://parroquies3viles.com/horaris-de-missa/"
  },
  "BCN0445": {},
- "BCN0446": {},
+ "BCN0446": {
+  "F1_desde": "http://www.hospitalesperitsant.com"
+ },
  "BCN0447": {
   "F3_texto": "70dd3d05393610cc",
   "F3": {
    "hash": "70dd3d05393610cc",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0448": {
   "F3_texto": "514afe2e010e94ba",
   "F3": {
    "hash": "514afe2e010e94ba",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0449": {
   "F3_texto": "74e79ca78fe42bfe",
   "F3": {
    "hash": "74e79ca78fe42bfe",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0450": {
   "F3_texto": "47443cb63f7f0225",
   "F3": {
    "hash": "47443cb63f7f0225",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0451": {
   "F3_texto": "ddd1a79930cf031a",
   "F3": {
    "hash": "ddd1a79930cf031a",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0452": {
   "F3_texto": "0259348b4748502d",
   "F3": {
    "hash": "0259348b4748502d",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://www.santacolomajove.com"
  },
  "BCN0453": {
   "F3_texto": "2c9fbb3edd6e310d",
   "F3": {
    "hash": "2c9fbb3edd6e310d",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0454": {
   "F3_texto": "5ffe2cad917c71b6",
   "F3": {
    "hash": "5ffe2cad917c71b6",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
- "BCN0455": {},
+ "BCN0455": {
+  "F1_desde": "http://www.somascos.org/espanol/espanol.htm"
+ },
  "BCN0456": {
   "F3_texto": "cbcd7701e86fb5d6",
   "F3": {
    "hash": "cbcd7701e86fb5d6",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0457": {},
- "BCN0458": {},
+ "BCN0458": {
+  "F1_desde": "https://www.cartoixamontalegre.com"
+ },
  "BCN0459": {
   "F1_url_descubierta": "https://franciscanasdelossagradoscorazones.org/ceremonia-de-bendicion/",
-  "F1_texto": "862d67beedc9ebe1"
+  "F1_texto": "e37e93feebfd9ff2",
+  "F1_desde": "https://franciscanasdelossagradoscorazones.org"
  },
  "BCN0460": {},
  "BCN0461": {},
- "BCN0462": {},
+ "BCN0462": {
+  "F1_desde": "http://www.santcebria.net"
+ },
  "BCN0463": {
   "F3_texto": "b2c972cb580caa7a",
   "F3": {
    "hash": "b2c972cb580caa7a",
-   "ultimo_ok": "2026-10-29"
+   "ultimo_ok": "2026-11-02"
   }
  },
  "BCN0464": {},
  "BCN0465": {
   "F1_url_descubierta": "https://parroquiadesantgenisdevilassar.blogspot.com/feeds/posts/default",
-  "F1_texto": "669552a541d9efaa"
+  "F1_texto": "669552a541d9efaa",
+  "F1_desde": "https://parroquiadesantgenisdevilassar.blogspot.com"
  },
  "BCN0466": {},
  "BCN0467": {
   "F3_texto": "15b121b14f2174a2",
   "F3": {
    "hash": "15b121b14f2174a2",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://dedaltidemar.org/eucaristia/"
  },
  "BCN0468": {},
  "BCN0469": {
   "F3_texto": "f44f5de956cbab6c",
   "F3": {
    "hash": "f44f5de956cbab6c",
-   "ultimo_ok": "2026-10-29"
-  }
+   "ultimo_ok": "2026-11-02"
+  },
+  "F1_desde": "https://dedaltidemar.org/eucaristia/"
  },
  "BCN0470": {},
- "BCN0471": {},
+ "BCN0471": {
+  "F1_desde": "http://www.santperedeclara.net/ca/capella.htm"
+ },
  "BCN0472": {
-  "F3_texto": "9cb866a50a54395a",
+  "F3_texto": "5042b7b98c50195f",
   "F3": {
-   "hash": "9cb866a50a54395a",
-   "ultimo_ok": "2026-10-29"
+   "hash": "5042b7b98c50195f",
+   "ultimo_ok": "2026-11-02"
   }
  }
 }

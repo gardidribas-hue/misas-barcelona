@@ -55,5 +55,78 @@
     "confianza": "baja"
    }
   ]
+ },
+ {
+  "comprobado": "2026-10-29",
+  "fuente": "F1",
+  "url": "https://parroquies3viles.com/santa-maria-destrac/",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "jueves"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners Dijous a les 10 h.",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/santa-maria-destrac/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges 12 h. (Capella del Carme). A les festes solemnes la Missa se celebra a la parròquia.",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/santa-maria-destrac/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "30 min. abans de les misses.",
+    "relativa_a_misa": {
+     "minutos_antes": 30
+    },
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/santa-maria-destrac/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "17:15",
+    "fin": "20:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges de 17:15 a 20 h. (participant a la missa dominical).",
+    "fuente": "F1",
+    "url": "https://parroquies3viles.com/santa-maria-destrac/",
+    "comprobado": "2026-10-29",
+    "confianza": "media"
+   }
+  ]
  }
 ]

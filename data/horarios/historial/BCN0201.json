@@ -1,0 +1,103 @@
+[
+ {
+  "comprobado": "2026-10-29",
+  "fuente": "F1",
+  "url": "https://parroquiasantandreupalomar.cat/",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Feiners a les 19.30 h.",
+    "fuente": "F1",
+    "url": "https://parroquiasantandreupalomar.cat/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Dissabtes – Missa Familiar a les 19.30 h",
+    "fuente": "F1",
+    "url": "https://parroquiasantandreupalomar.cat/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Diumenges i festius a les 12.30 h.",
+    "fuente": "F1",
+    "url": "https://parroquiasantandreupalomar.cat/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "martes"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "Dimarts de 18 a 20 h.",
+    "fuente": "F1",
+    "url": "https://parroquiasantandreupalomar.cat/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "martes"
+    ],
+    "inicio": "18:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Julio",
+     "inicio": "07-01",
+     "fin": "07-31"
+    },
+    "semanas_mes": [],
+    "notas": "Dimarts de 18.30 a 19.30 h.",
+    "fuente": "F1",
+    "url": "https://parroquiasantandreupalomar.cat/",
+    "comprobado": "2026-10-29",
+    "confianza": "alta"
+   }
+  ]
+ }
+]
