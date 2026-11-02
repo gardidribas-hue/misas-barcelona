@@ -982,3 +982,123 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 html.vt-lang::view-transition-old(*), html.vt-lang::view-transition-old(root) { display: block; animation: vt-fade-out .22s ease both; }
 html.vt-lang::view-transition-new(*), html.vt-lang::view-transition-new(root) { animation: vt-fade-in .34s ease .08s both; }
 html.vt-lang::view-transition-group(*) { animation-duration: .34s; }
+
+/* =====================================================================
+   Auditoría 2 (2-11-2026)
+   ===================================================================== */
+
+/* 20 y 19: pantalla de carga con la Sagrada Família del icono, sin el fondo rojo.
+   Rojo en modo claro y blanco en modo oscuro; remates y cruz dorados. Se levanta de abajo arriba mientras carga. */
+.splash { --sf: #c8323a; --sf1: var(--sf); --sf2: var(--sf); --sf-gold: #e0a91b; }
+.splash[data-art="c"] { --sf1: #ec9a9c; --sf2: #dd6166; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .splash { --sf: #f4ebe9; --sf-gold: #f5c542; }
+  :root:not([data-theme="light"]) .splash[data-art="c"] { --sf1: #6d6264; --sf2: #a89c9e; }
+}
+:root[data-theme="dark"] .splash { --sf: #f4ebe9; --sf-gold: #f5c542; }
+:root[data-theme="dark"] .splash[data-art="c"] { --sf1: #6d6264; --sf2: #a89c9e; }
+.splash-in { gap: 16px; }
+.splash-art { display: block; width: 168px; height: 168px; }
+.splash-art svg { display: block; width: 100%; height: 100%; overflow: hidden; animation: sfRise 1.7s cubic-bezier(.3,.7,.2,1) both; }
+.splash-art .t1 { fill: var(--sf1); } .splash-art .t2 { fill: var(--sf2); } .splash-art .t3 { fill: var(--sf); }
+.splash-art .h { fill: var(--backdrop); } .splash-art .g { fill: var(--sf-gold); } .splash-art .gs { stroke: var(--sf-gold); fill: none; }
+@keyframes sfRise { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
+.splash-logo { font-size: 2rem; animation: fadein .6s var(--ease) .5s both; }
+.splash-in { animation: none; }
+@media (max-width: 860px) { .splash-logo { font-size: 1.75rem; } .splash-art { width: 150px; height: 150px; } }
+@media (prefers-reduced-motion: reduce) { .splash-art svg, .splash-logo { animation: none; } }
+
+/* 3: Palabra del día: los versos van seguidos, sin un hueco grande entre línea y línea */
+.reading .rd-block { gap: 6px; }
+.reading .rd-kind { margin: 0; }
+.reading .rd-block h2 { margin-top: 2px; }
+.reading .rd-ref { margin: 0 0 12px; }
+.reading .rd-block p { line-height: 1.62; }
+
+/* 8: tamaño de la letra de las lecturas */
+.daynav { align-items: center; }
+.fsz { margin-left: auto; display: flex; gap: 2px; background: var(--surface); border-radius: 999px; padding: 3px; }
+.fsz button { border: 0; background: none; border-radius: 999px; min-width: 42px; height: 36px; font: 700 15px/1 var(--read); color: var(--muted); cursor: pointer; transition: background .2s var(--ease), color .2s var(--ease), transform .15s var(--ease); }
+.fsz button[data-fs="big"] { font-size: 21px; }
+.fsz button.on { background: var(--bg); color: var(--ink); box-shadow: var(--shadow); }
+.fsz button:active { transform: scale(.92); }
+.reading.big { font-size: 1.5625rem; }
+.reading.big h2 { font-size: 1.9375rem; }
+@media (max-width: 860px) { .reading.big { font-size: 1.40625rem; } .reading.big h2 { font-size: 1.6875rem; } }
+
+/* 9: santos del día, en una tarjeta verde encima de las lecturas */
+.saint { display: grid; gap: 6px; padding: 16px 18px; border-radius: 20px; background: var(--accent-soft); box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--accent) 30%, transparent); font: 400 1rem/1.5 var(--ui); }
+.saint .k { font: 800 11px/1 var(--ui); letter-spacing: .1em; text-transform: uppercase; color: var(--accent-strong); }
+.saint .n { margin: 0; font: 700 1.1875rem/1.3 var(--read); color: var(--ink); }
+.saint p { margin: 0; font-size: .9375rem; color: var(--muted); }
+.saint a { justify-self: start; font: 700 .875rem/1 var(--ui); color: var(--accent-strong); text-decoration: none; padding: 4px 0; }
+.saint a::after { content: " ›"; }
+
+/* 6: «Nueva búsqueda» encima de la caja del chat (solo cuando ya hay conversación) */
+.newq { display: none; align-self: center; align-items: center; gap: 6px; border: 0; background: var(--surface); border-radius: 999px; padding: 9px 15px; font: 700 13.5px/1 var(--ui); color: var(--muted); cursor: pointer; }
+.newq svg { width: 15px; height: 15px; }
+.stage.has-thread .newq { display: inline-flex; animation: rise .35s var(--ease) both; }
+@media (hover: hover) { .newq:hover { background: var(--accent-soft); color: var(--accent-strong); } }
+.newq:active { transform: scale(.94); }
+
+/* 10: tus parroquias favoritas en Inicio */
+.favrow { display: grid; gap: 8px; }
+.favrow:empty, .stage.has-thread .favrow { display: none; }
+.fav-h { margin: 4px 2px 0; display: flex; align-items: center; gap: 6px; font: 800 11px/1 var(--ui); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.fav-h svg { width: 13px; height: 13px; fill: #c98a00; }
+.fav-c { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; text-align: left; border: 0; cursor: pointer; padding: 11px 14px; border-radius: 16px; background: var(--surface); color: var(--ink); transition: background .2s var(--ease), transform .15s var(--ease); }
+.fav-c:active { transform: scale(.985); }
+@media (hover: hover) { .fav-c:hover { background: var(--accent-soft); } }
+.fav-n { display: grid; gap: 1px; font: 800 15px/1.25 var(--ui); min-width: 0; }
+.fav-n small { font: italic 500 12.5px/1.3 var(--ui); color: var(--muted); }
+.fav-c .t { flex: none; }
+.fav-none { flex: none; font-size: 12.5px; color: var(--muted); font-style: italic; }
+:root[data-theme="dark"] .fav-h svg { fill: #f2c14e; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .fav-h svg { fill: #f2c14e; } }
+
+/* 7: en el móvil, los ajustes suben desde abajo como una hoja, con el fondo oscurecido */
+@media (max-width: 860px) {
+  .set-pop { position: fixed; left: 0; right: 0; top: auto; bottom: 0; width: auto; z-index: 80; border-radius: 26px 26px 0 0; padding: 28px 18px calc(24px + env(safe-area-inset-bottom, 0px)); gap: 10px; animation: sheetup .38s cubic-bezier(.22,1,.36,1) both; box-shadow: 0 -12px 40px rgba(0,0,0,.25); }
+  .set-pop::before { content: ""; position: absolute; top: 9px; left: 50%; width: 42px; height: 5px; margin-left: -21px; border-radius: 9px; background: var(--line); }
+  .set-pop .langs { flex-direction: row; }
+  .set-pop .langs button { flex: 1; min-width: 0; }
+  .icon-pick { grid-template-columns: repeat(3, 76px); justify-content: start; }
+  .top:has(.set-pop:not([hidden])) { z-index: 90; }
+  .settings:has(.set-pop:not([hidden]))::after { content: ""; position: fixed; inset: 0; z-index: 70; background: rgba(20,10,12,.38); animation: fadein .3s both; }
+  .set-pop.closing { animation: sheetdown .26s cubic-bezier(.4,0,1,1) both; }
+  .settings:has(.set-pop.closing)::after { animation: vt-fade-out .26s both; }
+}
+
+/* 16: la ficha baja deslizándose al cerrarla (móvil) */
+@keyframes sheetdown { to { transform: translateY(100%); opacity: .6; } }
+@media (max-width: 860px) {
+  .stage[data-mode="map"] .detail.closing:not([hidden]) { animation: sheetdown .32s cubic-bezier(.4,0,1,1) both; pointer-events: none; }
+}
+
+/* 18: al cambiar de modo, el nuevo se abre en círculo desde el botón (solo se anima la página entera) */
+html.vt-theme * { view-transition-name: none !important; }
+html.vt-theme::view-transition-old(root), html.vt-theme::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+html.vt-theme body, html.vt-theme .brand .b-arch { transition: none !important; }
+
+/* 15: en pantallas táctiles nada se queda «encendido» después de tocarlo (el :hover se queda pegado) */
+@media (hover: none) {
+  .tabs button:hover { color: var(--backdrop-muted); }
+  .send:hover { background: var(--accent); color: var(--accent-ink); transform: none; }
+  .card:hover:not(.sel) { background: var(--surface); transform: none; box-shadow: none; }
+  .card:hover:not(.sel) .name { color: inherit; }
+  .pill:hover { background: var(--surface); transform: none; }
+  .pill.accent:hover, .daynav .pill.on:hover { background: var(--accent); color: var(--accent-ink); }
+  .floatbar .pill:hover { background: var(--bg); }
+  .chips button:hover:not(.on) { background: var(--surface); }
+  .btn:hover { background: var(--surface); }
+  .btn.primary:hover { background: var(--accent); color: var(--accent-ink); }
+  .extras button:hover { color: var(--backdrop-muted); }
+  .extras button:hover .ico { transform: none; }
+  .x-faq:hover:not(.on) { background: color-mix(in srgb, var(--accent) 18%, var(--chip)); }
+  .fold summary:hover .chev { background: var(--surface); }
+  .mys-tab summary:hover .chev { background: color-mix(in srgb, var(--accent-ink) 18%, transparent); }
+  .ideas button:hover { color: var(--muted); }
+  /* el efecto de pulsar sigue funcionando */
+  .pill:active, .chips button:active, .btn:active { transform: scale(.95); }
+  .card:hover:active { transform: scale(.985); }
+}

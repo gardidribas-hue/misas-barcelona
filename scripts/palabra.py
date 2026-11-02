@@ -1,6 +1,6 @@
 """Descarga las lecturas de la misa y las guarda en data/palabra/AAAA-MM-DD.json.
 
-Castellano: Vatican News (Palabra del día).
+Castellano: Vatican News (Palabra del día y santos del día).
 Català: las mismas citas en la Bíblia Catalana Interconfessional (bible.com, ver bci.py).
 Lo único que se traduce es el nombre del día y la reflexión de los Papas: Google Translate (si falla,
 Apertium) y después se pasan los nombres propios a su forma catalana y se quitan las marcas y
@@ -86,6 +86,45 @@ def vatican(day):
     if reflection:
         out["reflection"] = reflection
     return out
+
+
+def short(text, limit=300):
+    """Las dos primeras frases, sin pasar de unos 300 caracteres."""
+    parts = re.split(r"(?<=[.!?»])\s+", clean(text))
+    out = ""
+    for p in parts:
+        if out and len(out) + len(p) > limit:
+            break
+        out = (out + " " + p).strip()
+        if len(out) > 120:
+            break
+    return out if len(out) <= limit + 80 else out[:limit].rsplit(" ", 1)[0] + "…"
+
+
+def santo(day):
+    """Santo del día de Vatican News: el primer <h2> de la página es el santo principal y el primer
+    párrafo largo que le sigue, su reseña. Si la página cambia, se queda sin tarjeta."""
+    url = f"https://www.vaticannews.va/es/santos/{day:%m/%d}.html"
+    s = get(url)
+    # Vatican News escribe los santos como «s. Carlos Borromeo», «ss. Vitale y Agrícola», «b. …»;
+    # así se salta el «Menu» y los demás <h2> de la cabecera.
+    pref = re.compile(r"^(ss?|bb?|sta|beat[ao]s?)\.\s+\S", re.I)
+    h2s = [h for h in s.find_all("h2") if not h.find_parent(["nav", "header", "footer"])]
+    h2 = next((h for h in h2s if pref.match(clean(h.get_text(" ")))), None)
+    if h2 is None:
+        raise ValueError("sin santo")
+    name = clean(h2.get_text(" "))
+    name = re.sub(r"^(ss?|bb?|sta|beat[ao]s?)\.\s*", "", name)  # «s. Carlos Borromeo» -> «Carlos Borromeo»
+    name = name[:1].upper() + name[1:]
+    text = ""
+    for el in h2.find_all_next(["p", "h2"]):
+        if el.name == "h2":
+            break
+        t = clean(el.get_text(" "))
+        if len(t) > 60 and "©" not in t and not re.match(r"(?i)leer todo", t):
+            text = t
+            break
+    return {"name": name, "text": short(text), "url": url}
 
 
 def translate_ca(paras):
@@ -219,6 +258,27 @@ def main():
                 print(day, lang, "ERROR", e)
                 if lang in old:
                     data[lang] = old[lang]
+        # Santos del día (Vatican News); en catalán, traducidos como la reflexión de los Papas.
+        try:
+            sa = santo(day)
+            print(day, "santo:", sa["name"], "|", sa["text"][:60])
+            if "es" in data:
+                data["es"]["saint"] = sa
+            if "ca" in data:
+                try:
+                    (n, tx), engine = translate_ca([sa["name"], sa["text"] or sa["name"]])
+                    data["ca"]["saint"] = {"name": n, "text": tx if sa["text"] else "", "url": sa["url"], "translated": engine}
+                except Exception as e:
+                    print(day, "santo ca ERROR", e)
+        except Exception as e:
+            print(day, "santo ERROR", e)
+            for lang in ("es", "ca"):
+                if lang in data and (old.get(lang) or {}).get("saint"):
+                    data[lang]["saint"] = old[lang]["saint"]
+        for lang in ("es", "ca"):  # restos de la primera versión, que leía la cabecera de la página
+            sn = ((data.get(lang) or {}).get("saint") or {}).get("name", "")
+            if re.match(r"(?i)menu$|el sant[o]? del d[ií]a", sn):
+                data[lang].pop("saint")
         rk = key(data.get("es", {}).get("reflection"))
         if rk and rk in seen:
             print(day, "reflexión repetida de otro día: se quita")
