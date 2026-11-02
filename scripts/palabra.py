@@ -102,27 +102,26 @@ def short(text, limit=300):
 
 
 def santo(day):
-    """Santo del día de Vatican News: nombre, dos frases y enlace. Si la página cambia, se queda sin tarjeta."""
+    """Santo del día de Vatican News: el primer <h2> de la página es el santo principal y el primer
+    párrafo largo que le sigue, su reseña. Si la página cambia, se queda sin tarjeta."""
     url = f"https://www.vaticannews.va/es/santos/{day:%m/%d}.html"
     s = get(url)
-    meta = lambda k: (s.find("meta", attrs={"property": k}) or s.find("meta", attrs={"name": k}) or {}).get("content", "")
-    name = ""
-    for el in (s.select_one("main h1"), s.select_one("h1"), None):
-        if el is not None and clean(el.get_text(" ")):
-            name = clean(el.get_text(" "))
-            break
-    if not name or re.fullmatch(r"(?i)santos?( del d[ií]a)?|vatican news", name):
-        name = re.sub(r"\s*[-|–]\s*Vatican News.*$", "", clean(meta("og:title")))
+    h2 = next((h for h in s.find_all("h2") if len(clean(h.get_text(" "))) > 3
+               and not re.search(r"(?i)otros eventos|santo del d[ií]a|vatican news", h.get_text(" "))), None)
+    if h2 is None:
+        raise ValueError("sin santo")
+    name = clean(h2.get_text(" "))
+    name = re.sub(r"^(ss?|bb?|sta|beat[ao]s?)\.\s*", "", name)  # «s. Carlos Borromeo» -> «Carlos Borromeo»
+    name = name[:1].upper() + name[1:]
     text = ""
-    for p in s.select("main p, article p, section p"):
-        t = clean(p.get_text(" "))
-        if len(t) > 80 and "cookie" not in t.lower():
+    for el in h2.find_all_next(["p", "h2"]):
+        if el.name == "h2":
+            break
+        t = clean(el.get_text(" "))
+        if len(t) > 60 and "©" not in t and not re.match(r"(?i)leer todo", t):
             text = t
             break
-    text = short(text or meta("og:description") or meta("description"))
-    if not name or re.search(r"(?i)p[aá]gina no encontrada|404", name):
-        raise ValueError("sin santo")
-    return {"name": name, "text": text, "url": url}
+    return {"name": name, "text": short(text), "url": url}
 
 
 def translate_ca(paras):
