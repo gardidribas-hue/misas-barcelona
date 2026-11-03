@@ -8,7 +8,9 @@ Archidiócesis de Barcelona, con mapa, filtros y un asistente tipo chat.
 | Archivo | Para qué |
 |---|---|
 | `index.html`, `styles.css`, `app.js` | La web (estática: no necesita servidor ni base de datos) |
-| `config.js` | Clave de Google Maps (opcional) y centro del mapa |
+| `config.js` | Clave de Google Maps (opcional), centro del mapa, responsable y correo (aviso legal), formulario de avisos de horarios y GoatCounter |
+| `legal.html` | Aviso legal y política de privacidad (castellano y catalán); toma el nombre y el correo de `config.js` |
+| `fonts/`, `vendor/maplibre-gl/` | Letras y MapLibre alojados en la propia web (sin Google Fonts ni unpkg) |
 | `zonas.js` | Barrios con coordenadas aproximadas para el asistente |
 | `data/parroquias.json` / `.js` | Datos de las parroquias que usa la web |
 | `data/comunitats_pastorals.json` | Las 43 comunidades pastorales y 7 arciprestazgos (decreto de 2025) |
