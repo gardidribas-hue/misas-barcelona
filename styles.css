@@ -73,16 +73,16 @@ button, input, select, textarea { font: inherit; color: inherit; }
 /* ---------- Barra superior (sobre el fondo oscuro) ---------- */
 .top { height: var(--top); flex: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-inline: max(22px, env(safe-area-inset-left, 0px)) max(22px, env(safe-area-inset-right, 0px)); color: var(--backdrop-ink); }
 .brand { border: 0; background: none; padding: 0; cursor: pointer; font: 400 28px/1 var(--display); white-space: nowrap; color: var(--backdrop-ink); }
-/* Logotipo: «Misas» | ARCHIDIÓCESIS DE / Barcelona, separados por un filete fino */
-.brand { display: inline-flex; align-items: last baseline; gap: 7px; font-size: 40px; }
-.brand .b-main { line-height: 1; padding-bottom: .06em; }
-.brand .b-stack { --k: .28; font-size: 34px; display: flex; flex-direction: column; align-items: flex-end; padding-left: 7px; border-left: 1px solid color-mix(in srgb, var(--backdrop-ink) 22%, transparent); }
+/* Logotipo: «Misas», la Sagrada Família de la pantalla de carga y «Barcelona» en cursiva rosa */
+.brand { --sf: #c8323a; --sf1: #ec9a9c; --sf2: #dd6166; --sf-gold: #e0a91b; display: inline-flex; align-items: last baseline; gap: .16em; font-size: 40px; }
+.brand .b-main, .brand .b-city { line-height: 1; }
 .brand em { color: var(--logo-rose); }
-/* Calcado del logotipo del Arzobispado: versalitas doradas espaciadas encima de «Barcelona» en cursiva rosa, montadas sobre la cursiva.
-   La franja de fondo bajo las versalitas corta el asta de la «l», como en el original. Las medidas van en proporción a «Barcelona» (--k). */
-.brand .b-arch { position: relative; z-index: 1; color: var(--logo-gold); background: var(--backdrop); font: 600 calc(var(--k) * 1em)/1 "Montserrat", var(--ui); font-style: normal; letter-spacing: .17em; text-transform: uppercase; padding-bottom: calc(.07em / var(--k)); margin-bottom: calc(-.294em / var(--k)); transition: background-color .6s var(--ease); }
-html[lang="es"] .brand .b-stack { --k: .238; } /* «ARCHIDIÓCESIS DE» es más larga: misma anchura, letra algo menor */
-.brand .b-city { font-size: 1em; line-height: 1; }
+.brand .b-sf { display: inline-block; align-self: flex-end; width: 1.35em; height: 1.35em; margin: 0 -.02em .08em; }
+.brand .b-sf svg { display: block; width: 100%; height: 100%; overflow: hidden; }
+.brand .b-sf .t1 { fill: var(--sf1); } .brand .b-sf .t2 { fill: var(--sf2); } .brand .b-sf .t3 { fill: var(--sf); }
+.brand .b-sf .h { fill: var(--backdrop); transition: fill .6s var(--ease); } .brand .b-sf .g { fill: var(--sf-gold); } .brand .b-sf .gs { stroke: var(--sf-gold); fill: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .brand { --sf: #f4ebe9; --sf1: #6d6264; --sf2: #a89c9e; --sf-gold: #f5c542; } }
+:root[data-theme="dark"] .brand { --sf: #f4ebe9; --sf1: #6d6264; --sf2: #a89c9e; --sf-gold: #f5c542; }
 .tabs { display: flex; gap: 2px; background: var(--chip); border-radius: 999px; padding: 4px; }
 .tabs button { border: 0; background: none; border-radius: 999px; padding: 7px 16px; font-weight: 700; font-size: 0.875rem; color: var(--backdrop-muted); cursor: pointer; transition: background .25s var(--ease), color .25s var(--ease); }
 .tabs button:hover { color: var(--backdrop-ink); }
@@ -242,8 +242,7 @@ h1 em { color: var(--accent-strong); }
 /* ---------- Móvil ---------- */
 @media (max-width: 860px) {
   :root { --top: 64px; --radius: 24px; --gap: 10px; }
-  .brand { font-size: 28px; gap: 5px; }
-  .brand .b-stack { padding-left: 5px; font-size: 24px; }
+  .brand { font-size: 28px; }
   .tabs button { padding: 6px 11px; }
   .stage[data-mode="home"] { grid-template-columns: 1fr; grid-template-rows: auto 46vh; overflow-y: auto; }
   .stage[data-mode="home"] .chatcol { min-height: auto; overflow: visible; }
@@ -435,8 +434,7 @@ button, .btn, .card { -webkit-tap-highlight-color: transparent; }
   .splash-logo { font-size: 3rem; }
 }
 @media (max-width: 380px) {
-  .brand { font-size: 25px; gap: 5px; }
-  .brand .b-stack { font-size: 21px; padding-left: 5px; }
+  .brand { font-size: 25px; }
   .ideas button { font-size: 0.9375rem; }
 }
 @media (min-width: 861px) and (max-width: 1100px) {
@@ -716,8 +714,7 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 /* Con el botón «?» la cabecera del móvil va más justa */
 @media (max-width: 430px) {
   .top { padding-inline: max(14px, env(safe-area-inset-left, 0px)) max(14px, env(safe-area-inset-right, 0px)); }
-  .brand { font-size: 26px; gap: 5px; }
-  .brand .b-stack { font-size: 22px; padding-left: 5px; }
+  .brand { font-size: 26px; }
   .langs { padding: 3px; }
   .langs svg { width: 25px; height: 25px; }
   .x-faq { width: 34px; height: 34px; }
@@ -725,8 +722,7 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 @media (max-width: 380px) {
   .top { padding-inline: max(10px, env(safe-area-inset-left, 0px)) max(10px, env(safe-area-inset-right, 0px)); }
   .top-right { gap: 4px; }
-  .brand { font-size: 23px; gap: 4px; }
-  .brand .b-stack { font-size: 19px; padding-left: 4px; }
+  .brand { font-size: 23px; }
   .langs svg { width: 22px; height: 22px; }
   .x-faq { width: 30px; height: 30px; }
   .x-faq svg { width: 18px; height: 18px; }
@@ -834,8 +830,7 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 @media (max-width: 359px) {
   .top { gap: 6px; padding-inline: 12px; }
   .top-right { gap: 4px; min-width: 0; }
-  .brand { font-size: 23px; gap: 4px; }
-  .brand .b-stack { font-size: 19px; padding-left: 4px; }
+  .brand { font-size: 23px; }
   .langs { padding: 3px; gap: 2px; }
   .langs button { padding: 2px !important; }
   .langs svg { width: 25px !important; height: 25px !important; }
@@ -848,7 +843,6 @@ body[data-tone="faq"] { background: color-mix(in srgb, var(--backdrop) var(--ton
 }
 @media (max-width: 359px) {
   .brand { font-size: 21px; }
-  .brand .b-stack { font-size: 17px; }
   .top-right { gap: 3px; }
   .langs { padding: 2px; }
   .langs svg { width: 24px !important; height: 24px !important; }
@@ -1078,7 +1072,7 @@ html.vt-lang::view-transition-group(*) { animation-duration: .34s; }
 /* 18: al cambiar de modo, el nuevo se abre en círculo desde el botón (solo se anima la página entera) */
 html.vt-theme * { view-transition-name: none !important; }
 html.vt-theme::view-transition-old(root), html.vt-theme::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
-html.vt-theme body, html.vt-theme .brand .b-arch { transition: none !important; }
+html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important; }
 
 /* 15: en pantallas táctiles nada se queda «encendido» después de tocarlo (el :hover se queda pegado) */
 @media (hover: none) {
@@ -1102,3 +1096,12 @@ html.vt-theme body, html.vt-theme .brand .b-arch { transition: none !important; 
   .pill:active, .chips button:active, .btn:active { transform: scale(.95); }
   .card:hover:active { transform: scale(.985); }
 }
+
+/* «¿Horario mal?» al final de la ficha */
+.fixbox { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 14px; margin-top: 12px; padding: 14px 16px; border-radius: 18px; background: var(--surface); }
+.fixbox p { margin: 0; flex: 1 1 220px; font-size: 0.875rem; color: var(--muted); }
+.fixbox p b { color: var(--ink); }
+.fixbox .btn { background: var(--accent-soft); color: var(--accent-strong); }
+/* Pie de «Sobre nosotros»: no oficial, aviso legal y privacidad */
+.faq-foot { margin: 18px 4px 0; font-size: 0.8125rem; line-height: 1.5; color: var(--muted); }
+.faq-foot a { color: var(--accent-strong); font-weight: 700; }
