@@ -155,5 +155,82 @@
     "confianza": "alta"
    }
   ]
+ },
+ {
+  "comprobado": "2026-11-02",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-felix/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "miercoles",
+     "jueves"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Lunes, miércoles y jueves: 19.30 h",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-felix/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "martes",
+     "viernes"
+    ],
+    "inicio": "09:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Martes y viernes: 9.30 h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-felix/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Sábados y vísperas: 19.30 h.",
+    "vespertina_dominical": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-felix/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos: 12:30 h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-felix/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   }
+  ]
  }
 ]

@@ -91,5 +91,84 @@
     "confianza": "alta"
    }
   ]
+ },
+ {
+  "comprobado": "2026-11-02",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-pere-de-les-puelles/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "19:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "De lunes a viernes: 19 h",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-pere-de-les-puelles/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "18:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Sábados: 18 h",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-pere-de-les-puelles/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:00",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos y fiestas de precepto: 11 h (en catalán) | 12 h (en castellano)",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-pere-de-les-puelles/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos y fiestas de precepto: 11 h (en catalán) | 12 h (en castellano)",
+    "dias_deducidos": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-pere-de-les-puelles/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   }
+  ]
  }
 ]

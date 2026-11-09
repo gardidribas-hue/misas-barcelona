@@ -1,16 +1,17 @@
 # https://parroquiabonanova.com/horarios/
-# 2026-11-02 · formato: html
+# 2026-11-09 · formato: html
 
 y Santuario de la Virgen de la Bonanova
 MISAS
 LABORABLES
-CATCAT20:00CAT
+DE LUNES A VIERNES
+08:00CAT12:00CAT20:00CAT
 SÁBADOS
 12:00CAT20:00 (vigilia)CAT
 FESTIVOS
 LENGUA
 DOMINGO
-09:00CASTCAT12:00CASTCATBILINGÜE20:30CAT
+09:00CAST10:30CAT12:00CAST13:00CAT19:00BILINGÜE20:30CAT
 CONFESIONES
 Durante el domingo de 11:00h a 13:00h, y de 20:00h a 21:00h
 Entre semana, antes de las misas.

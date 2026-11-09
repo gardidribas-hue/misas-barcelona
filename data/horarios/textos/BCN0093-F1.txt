@@ -1,5 +1,5 @@
 # https://www.montalegre.org/es/horarios/misas/
-# 2026-11-02 · formato: html
+# 2026-11-09 · formato: html
 
 Misas - Montalegre
 ca

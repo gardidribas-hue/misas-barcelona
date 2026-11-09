@@ -363,5 +363,66 @@
     "confianza": "media"
    }
   ]
+ },
+ {
+  "comprobado": "2026-11-02",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-oleguer-bisbe/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "12:00 h i 20:00 h",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-oleguer-bisbe/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "12:00 h i 20:00 h",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-oleguer-bisbe/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "20 h. (castellà)",
+    "vespertina_dominical": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-oleguer-bisbe/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   }
+  ]
  }
 ]

@@ -1,0 +1,120 @@
+[
+ {
+  "comprobado": "2026-11-02",
+  "fuente": "F1",
+  "url": "https://parroquiabonanova.com/horarios/",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "CATCAT20:00CAT",
+    "fuente": "F1",
+    "url": "https://parroquiabonanova.com/horarios/",
+    "comprobado": "2026-11-02",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "12:00CAT20:00 (vigilia)CAT",
+    "fuente": "F1",
+    "url": "https://parroquiabonanova.com/horarios/",
+    "comprobado": "2026-11-02",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "20:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "12:00CAT20:00 (vigilia)CAT",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "https://parroquiabonanova.com/horarios/",
+    "comprobado": "2026-11-02",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "11:00",
+    "fin": "13:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Durante el domingo de 11:00h a 13:00h, y de 20:00h a 21:00h",
+    "fuente": "F1",
+    "url": "https://parroquiabonanova.com/horarios/",
+    "comprobado": "2026-11-02",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "20:00",
+    "fin": "21:00",
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Durante el domingo de 11:00h a 13:00h, y de 20:00h a 21:00h",
+    "fuente": "F1",
+    "url": "https://parroquiabonanova.com/horarios/",
+    "comprobado": "2026-11-02",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Entre semana, antes de las misas.",
+    "relativa_a_misa": {
+     "antes": true
+    },
+    "fuente": "F1",
+    "url": "https://parroquiabonanova.com/horarios/",
+    "comprobado": "2026-11-02",
+    "confianza": "alta"
+   }
+  ]
+ }
+]

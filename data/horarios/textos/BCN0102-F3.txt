@@ -1,0 +1,11 @@
+# https://esglesia.barcelona/es/parroquies/esperit-sant/
+# 2026-11-09 · formato: html
+
+Horario de misas
+festivos:
+9 y 12h (castellano) y 19:30h (bilingüe).
+vigiliares:
+20h (castellano)
+laborables:
+8.30h (catalán), 20h (castellano).
+El templo permanece abierto de las 7.45h hasta las 12h, y, por la tarde, de las 18 a las 20.45h.

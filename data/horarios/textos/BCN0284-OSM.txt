@@ -1,5 +1,5 @@
 # https://www.openstreetmap.org/relation/9157966
-# 2026-11-02 · formato: osm
+# 2026-11-09 · formato: osm
 
 {
  "name": "Parròquia de Santa Teresa del Nen Jesús",

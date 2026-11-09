@@ -26,5 +26,29 @@
     "confianza": "media"
    }
   ]
+ },
+ {
+  "comprobado": "2026-11-02",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/parroquia-de-la-mare-de-deu-de-la-salut-2/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos: 12:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/parroquia-de-la-mare-de-deu-de-la-salut-2/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   }
+  ]
  }
 ]

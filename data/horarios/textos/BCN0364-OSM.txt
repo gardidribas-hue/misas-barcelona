@@ -1,5 +1,5 @@
 # https://www.openstreetmap.org/way/966711412
-# 2026-11-02 · formato: osm
+# 2026-11-09 · formato: osm
 
 {
  "check_date": "2024-08-23",

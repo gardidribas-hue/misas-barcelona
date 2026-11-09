@@ -1,9 +1,9 @@
-# Estado de los horarios · 2026-11-02
+# Estado de los horarios · 2026-11-09
 
 - Templos: 472; con horario: 217; sin horario: 255
 - Parroquias: 209; con horario: 193
-- Fuente del horario: Arzobispado 172, web propia 44, OpenStreetMap 1
-- Confianza: alta 28, media 16, baja 173
+- Fuente del horario: Arzobispado 168, web propia 48, OpenStreetMap 1
+- Confianza: alta 33, media 15, baja 169
 - Ocultos por defecto («Sin horario conocido» en el Excel): 73
 
 ## Datos sospechosos (5)
@@ -25,17 +25,19 @@
 - Capella de Sant Josep (BCN0024) · F1: <urlopen error [Errno 111] Connection refused>
 - Centre Cristià dels Universitaris (CCU) (BCN0037) · F1: <urlopen error [Errno -5] No address associated with hostname>
 - Centro Médico Teknon (BCN0044) · F1: HTTP Error 403: Forbidden
+- Clínica Nostra Senyora del Remei (BCN0047) · F1: HTTP Error 403: Forbidden
 - Col·legi Salesià Sant Joan Bosco (Horta) (BCN0053) · F1: <urlopen error [Errno -2] Name or service not known>
 - Església de Sant Llàtzer (BCN0090) · F1: Remote end closed connection without response
+- Esperit Sant (BCN0102) · F1: HTTP Error 429: Too Many Requests
 - Hospital de la Mare de Déu de la Mercè (BCN0111) · F1: HTTP Error 522: <none>
 - Hospital de la Santa Creu i Sant Pau (BCN0112) · F1: <urlopen error timed out>
 - Hospital Delfos (BCN0115) · F1: <urlopen error timed out>
-- Immaculat Cor de Maria (BCN0126) · F1: <urlopen error [Errno -3] Temporary failure in name resolution>
+- Immaculat Cor de Maria (BCN0126) · F1: HTTP Error 503: Service Temporarily Unavailable
 - Mare de Déu de Fàtima (BCN0130) · F1: <urlopen error [Errno -2] Name or service not known>
 - Mare de Déu del Pilar (BCN0141) · F1: Remote end closed connection without response
 - Mare de Déu del Roser (BCN0143) · F1: <urlopen error [Errno -2] Name or service not known>
-- Maria Auxiliadora (Sarrià, Santuari) (BCN0146) · F1: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>
 - Misioneras del Santísimo Sacramento y de María Inmaculada (BCN0149) · F1: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mariaemiliariquelme.com'. (_ssl.c:1081)>
+- Monestir de l'Adoració Perpètua (BCN0151) · F1: HTTP Error 429: Too Many Requests
 - Monestir de la Visitació de Santa Maria (Saleses) (BCN0155) · F1: <urlopen error [Errno -2] Name or service not known>
 - Nou Hospital de la Santa Creu i Sant Pau (BCN0162) · F1: <urlopen error timed out>
 - Oratori de Santa Maria de Bonaigua (BCN0166) · F1: Remote end closed connection without response
@@ -47,12 +49,10 @@
 - Sant Joan d'Àvila (BCN0225) · F1: <urlopen error [Errno -2] Name or service not known>
 - Sant Llorenç (BCN0235) · F1: Remote end closed connection without response
 - Sant Pau del Camp (BCN0250) · F1: <urlopen error [Errno 111] Connection refused>
-- Sant Pere de les Puel·les (BCN0253) · F1: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>
-- Sant Tomàs d'Aquino (BCN0262) · F1: <urlopen error [Errno -3] Temporary failure in name resolution>
-- Santa Tecla (BCN0282) · F1: HTTP Error 429: Too Many Requests
-- Santuari de la Mare de Déu de la Salut (Les Planes) (BCN0287) · F1: HTTP Error 429: Too Many Requests
+- Sant Tomàs d'Aquino (BCN0262) · F1: HTTP Error 503: Service Temporarily Unavailable
+- Santa Tecla (BCN0282) · F1: HTTP Error 404: Not Found
 - Sant Feliu (BCN0305) · F1: <urlopen error [Errno -2] Name or service not known>
-- La Nostra Llar Santa Anna (BCN0309) · F1: The read operation timed out
+- Mare de Déu de la Salut (BCN0320) · F1: HTTP Error 429: Too Many Requests
 - Mare de Déu de Lourdes (BCN0321) · F1: <urlopen error [Errno -2] Name or service not known>
 - Mare de Déu de Montserrat (BCN0322) · F1: <urlopen error [Errno -2] Name or service not known>
 - Residència Roca i Pi (BCN0326) · F1: Remote end closed connection without response
@@ -101,7 +101,7 @@
 - Centro Médico Teknon (BCN0044): F1: error: HTTP Error 403: Forbidden; OSM: no está en OpenStreetMap
 - Clínica Barraquer (BCN0045): F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap
 - Clínica de la Sagrada Familia (BCN0046): F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap
-- Clínica Nostra Senyora del Remei (BCN0047): F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap
+- Clínica Nostra Senyora del Remei (BCN0047): F1: error: HTTP Error 403: Forbidden; OSM: no está en OpenStreetMap
 - Clínica Nuestra Señora del Pilar (BCN0048): OSM: no está en OpenStreetMap
 - Clínica Solarium (BCN0049): OSM: no está en OpenStreetMap
 - CMU Monterols (BCN0050): F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap
@@ -155,7 +155,7 @@
 - Universitat de Barcelona (BCN0298): OSM: no está en OpenStreetMap
 - Universitat Internacional de Catalunya (Edificio Beta) (BCN0299): F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap
 - Universitat Internacional de Catalunya (Edificio Gamma/Delta) (BCN0300): F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap
-- La Nostra Llar Santa Anna (BCN0309): F1: error: The read operation timed out; OSM: no está en OpenStreetMap
+- La Nostra Llar Santa Anna (BCN0309): F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap
 - Església de Nostra Senyora del Carme (BCN0315): F1: robots.txt no permite leerla; OSM: OpenStreetMap no tiene horario de misas para este templo
 - Església de Sant Lluís de Manresà (BCN0316): OSM: OpenStreetMap no tiene horario de misas para este templo
 - Centre Cívic Pla de l'Avellà (BCN0340): OSM: no está en OpenStreetMap
@@ -277,7 +277,7 @@
 - Convent de Santa Maria de Jerusalem (Clarisas) (BCN0058): F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap
 - Convento de Santa Margarida la Reial (Clarisas Capuchinas) (BCN0060): OSM: no está en OpenStreetMap
 - Monestir de Jesús i María (Mínimes de Sant Francesc de Paula) (BCN0150): OSM: no está en OpenStreetMap
-- Monestir de l'Adoració Perpètua (BCN0151): F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap
+- Monestir de l'Adoració Perpètua (BCN0151): F1: error: HTTP Error 429: Too Many Requests; OSM: no está en OpenStreetMap
 - Monestir de l'Encarnació (Madres Carmelitas) (BCN0152): OSM: OpenStreetMap no tiene horario de misas para este templo
 - Monestir de la Immaculada (Carmelitas Descalzas) (BCN0153): OSM: no está en OpenStreetMap
 - Monestir de la Mare de Déu de la Divina Providència (Clarisses) (BCN0154): OSM: no está en OpenStreetMap
@@ -320,18 +320,18 @@
 
 ### Parroquia (15)
 - Església de les Operaries Parroquials (BCN0082): OSM: no está en OpenStreetMap
-- Església Romànica del Poble Espanyol (BCN0101): F3: no se reconoce ningún horario de misa; OSM: OpenStreetMap no tiene horario de misas para este templo
+- Església Romànica del Poble Espanyol (BCN0101): F3: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: OpenStreetMap no tiene horario de misas para este templo
 - Parròquia de la Verge de Natzaret (BCN0171): F1: error: <urlopen error [Errno -2] Name or service not known>; OSM: no está en OpenStreetMap
 - Parròquia de Sant Albert Magne (St. Albertus Magnus) (BCN0172): F1: no se encuentra el enlace al horario; OSM: no está en OpenStreetMap
 - Parròquia de Sant Josep de Calassanç (BCN0173): F1: error: HTTP Error 429: Too Many Requests; OSM: OpenStreetMap no tiene horario de misas para este templo
 - Parròquia francesa de la Mare de Déu de Lourdes (BCN0175): F1: no se reconoce ningún horario de misa; OSM: OpenStreetMap no tiene horario de misas para este templo
-- Santa Creu d'Olorda (BCN0269): F3: no se reconoce ningún horario de misa; OSM: OpenStreetMap no tiene horario de misas para este templo
-- Sant Andreu d'Alfar (BCN0358): F3: no se reconoce ningún horario de misa; OSM: OpenStreetMap no tiene horario de misas para este templo
+- Santa Creu d'Olorda (BCN0269): F3: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: OpenStreetMap no tiene horario de misas para este templo
+- Sant Andreu d'Alfar (BCN0358): F3: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: OpenStreetMap no tiene horario de misas para este templo
 - Sant Pere (BCN0366): F3: no se reconoce ningún horario de misa (5 líneas dudosas); OSM: OpenStreetMap no tiene horario de misas para este templo
 - Parròquia de Sant Mateu (BCN0369): OSM: OpenStreetMap no tiene horario de misas para este templo
 - Parròquia de Santa Magdalena (BCN0370): F1: no se reconoce ningún horario de misa; OSM: OpenStreetMap no tiene horario de misas para este templo
-- Sant Albert Magne (BCN0383): F3: no se reconoce ningún horario de misa; OSM: no está en OpenStreetMap
-- Sant Benet (BCN0384): F3: no se reconoce ningún horario de misa; OSM: no está en OpenStreetMap
+- Sant Albert Magne (BCN0383): F3: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: no está en OpenStreetMap
+- Sant Benet (BCN0384): F3: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: no está en OpenStreetMap
 - Sant Josep (BCN0388): F3: no se reconoce ningún horario de misa; OSM: no está en OpenStreetMap
 - Parròquia de Sant Joan Baptista (BCN0443): OSM: OpenStreetMap no tiene horario de misas para este templo
 
@@ -359,13 +359,13 @@
 - Església de Sant Antoni Abat (Escolapios) (BCN0086): OSM: no está en OpenStreetMap
 
 ### Basílica (1)
-- Basílica del Sagrat Cor de Jesús del Tibidabo (BCN0007): F1: no se reconoce ningún horario de misa (25 líneas dudosas); F3: no se reconoce ningún horario de misa; OSM: OpenStreetMap no tiene horario de misas para este templo
+- Basílica del Sagrat Cor de Jesús del Tibidabo (BCN0007): F1: no se reconoce ningún horario de misa; F3: no se reconoce ningún horario de misa; OSM: OpenStreetMap no tiene horario de misas para este templo
 
 ### Capilla de hospital (parroquia) (1)
 - Capella de l'Hospital Universitari Vall d'Hebron (BCN0012): F3: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: no está en OpenStreetMap
 
 ### Catedral (1)
-- Catedral Basílica de Barcelona (BCN0036): F1: no se reconoce ningún horario de misa (6 líneas dudosas); F3: no se reconoce ningún horario de misa; OSM: OpenStreetMap no tiene horario de misas para este templo
+- Catedral Basílica de Barcelona (BCN0036): F1: no se reconoce ningún horario de misa (6 líneas dudosas); F3: no se reconoce ningún horario de misa (1 líneas dudosas); OSM: OpenStreetMap no tiene horario de misas para este templo
 
 ## Con horario (217)
 - Basílica de la Puríssima Concepció (BCN0003): 37 celebraciones · web propia · confianza media
@@ -379,7 +379,7 @@
 - Basílica dels Sants Just i Pastor (BCN0008): 2 celebraciones · Arzobispado · confianza baja
 - Capella de l'Hospital Clínic (BCN0011): 3 celebraciones · Arzobispado · confianza baja
 - Capella de la Mare de Déu dels Àngels (BCN0018): 7 celebraciones · web propia · confianza alta
-- Capilla de Nuestra Señora de la Merced y San Pedro Apóstol (BCN0031): 5 celebraciones · web propia · confianza media
+- Capilla de Nuestra Señora de la Merced y San Pedro Apóstol (BCN0031): 3 celebraciones · web propia · confianza alta
 - Casal Loiola (BCN0035): 1 celebraciones · web propia · confianza media
 - Convento de Santa Catalina (Dominicos) (BCN0059): 11 celebraciones · web propia · confianza alta
 - Corpus Christi (BCN0061): 7 celebraciones · Arzobispado · confianza baja
@@ -388,8 +388,8 @@
 - El Bon Pastor (BCN0065): 3 celebraciones · Arzobispado · confianza baja
 - Església de Sant Llàtzer (BCN0090): 3 celebraciones · web propia · confianza alta
 - Església de Santa Maria de Montalegre (BCN0093): 14 celebraciones · web propia · confianza media
-- Església del Sagrat Cor de Jesús (Jesuites) (BCN0097): 8 celebraciones · web propia · confianza alta
-- Esperit Sant (BCN0102): 10 celebraciones · web propia · confianza media
+- Església del Sagrat Cor de Jesús (Jesuites) (BCN0097): 7 celebraciones · web propia · confianza alta
+- Esperit Sant (BCN0102): 6 celebraciones · Arzobispado · confianza baja
 - Iglesia del Perpetuo Socorro (Redentoristas) (BCN0123): 16 celebraciones · web propia · confianza alta
 - Immaculada Concepció i Sant Lorenzo Ruiz (parroquia filipina) (BCN0125): 5 celebraciones · Arzobispado · confianza baja
 - Immaculat Cor de Maria (BCN0126): 8 celebraciones · Arzobispado · confianza baja
@@ -425,7 +425,7 @@
 - Sant Agustí (BCN0198): 17 celebraciones · Arzobispado · confianza baja
 - Sant Albert Magne (parroquia alemana) (BCN0199): 1 celebraciones · Arzobispado · confianza baja
 - Sant Ambrós (BCN0200): 9 celebraciones · Arzobispado · confianza baja
-- Sant Andreu de Palomar (BCN0201): 3 celebraciones · Arzobispado · confianza baja
+- Sant Andreu de Palomar (BCN0201): 5 celebraciones · web propia · confianza alta
 - Sant Antoni de Pàdua (BCN0202): 4 celebraciones · Arzobispado · confianza baja
 - Sant Bartomeu (BCN0203): 11 celebraciones · Arzobispado · confianza baja
 - Sant Bernat de Claravall (BCN0204): 13 celebraciones · web propia · confianza alta
@@ -439,7 +439,7 @@
 - Sant Francesc de Pàola (BCN0214): 11 celebraciones · web propia · confianza alta
 - Sant Francesc de Sales (les Saleses) (BCN0215): 33 celebraciones · web propia · confianza alta
 - Sant Francesc Xavier (BCN0216): 5 celebraciones · Arzobispado · confianza baja
-- Sant Fèlix (BCN0217): 4 celebraciones · Arzobispado · confianza baja
+- Sant Fèlix (BCN0217): 7 celebraciones · web propia · confianza alta
 - Sant Genís dels Agudells (BCN0218): 1 celebraciones · Arzobispado · confianza baja
 - Sant Gregori Taumaturg (BCN0219): 12 celebraciones · web propia · confianza alta
 - Sant Ignasi de Loiola (BCN0220): 5 celebraciones · Arzobispado · confianza baja
@@ -467,24 +467,24 @@
 - Sant Miquel del Port (BCN0243): 10 celebraciones · Arzobispado · confianza baja
 - Sant Miquel dels Sants (BCN0244): 6 celebraciones · Arzobispado · confianza baja
 - Sant Narcís (BCN0245): 4 celebraciones · Arzobispado · confianza baja
-- Sant Oleguer, bisbe (BCN0246): 3 celebraciones · Arzobispado · confianza baja
+- Sant Oleguer, bisbe (BCN0246): 18 celebraciones · web propia · confianza media
 - Sant Ot (BCN0247): 8 celebraciones · Arzobispado · confianza baja
 - Sant Pacià (BCN0248): 5 celebraciones · Arzobispado · confianza baja
 - Sant Pancraç (BCN0249): 1 celebraciones · Arzobispado · confianza baja
 - Sant Pau del Camp (BCN0250): 2 celebraciones · Arzobispado · confianza baja
 - Sant Paulí de Nola (BCN0251): 5 celebraciones · Arzobispado · confianza baja
 - Sant Pere Claver (BCN0252): 2 celebraciones · Arzobispado · confianza baja
-- Sant Pere de les Puel·les (BCN0253): 4 celebraciones · Arzobispado · confianza baja
+- Sant Pere de les Puel·les (BCN0253): 5 celebraciones · web propia · confianza alta
 - Sant Pere Ermengol (BCN0254): 1 celebraciones · Arzobispado · confianza baja
 - Sant Pere Nolasc (BCN0255): 8 celebraciones · Arzobispado · confianza baja
 - Sant Pius X (BCN0256): 9 celebraciones · Arzobispado · confianza baja
 - Sant Rafael (BCN0257): 6 celebraciones · Arzobispado · confianza baja
 - Sant Ramon de Penyafort (BCN0258): 11 celebraciones · web propia · confianza alta
-- Sant Ramon Nonat (BCN0259): 9 celebraciones · web propia · confianza alta
+- Sant Ramon Nonat (BCN0259): 8 celebraciones · web propia · confianza alta
 - Sant Salvador d'Horta (BCN0260): 1 celebraciones · Arzobispado · confianza baja
 - Sant Sebastià (BCN0261): 2 celebraciones · Arzobispado · confianza baja
 - Sant Tomàs d'Aquino (BCN0262): 5 celebraciones · Arzobispado · confianza baja
-- Sant Vicenç de Sarrià (BCN0263): 17 celebraciones · Arzobispado · confianza baja
+- Sant Vicenç de Sarrià (BCN0263): 28 celebraciones · web propia · confianza alta
 - Sant Àngel Custodi (BCN0264): 4 celebraciones · Arzobispado · confianza baja
 - Santa Agnès (BCN0265): 6 celebraciones · web propia · confianza media
 - Santa Anna (BCN0266): 9 celebraciones · Arzobispado · confianza baja
@@ -505,8 +505,8 @@
 - Santa Tecla (BCN0282): 6 celebraciones · Arzobispado · confianza baja
 - Santa Teresa de Jesús (BCN0283): 4 celebraciones · Arzobispado · confianza baja
 - Santa Teresa de l'Infant Jesús (BCN0284): 7 celebraciones · Arzobispado · confianza baja
-- Sants Gervasi i Protasi (Mare de Déu de la Bonanova) (BCN0285): 6 celebraciones · web propia · confianza alta
-- Santuari de la Mare de Déu de la Salut (Les Planes) (BCN0287): 1 celebraciones · Arzobispado · confianza baja
+- Sants Gervasi i Protasi (Mare de Déu de la Bonanova) (BCN0285): 8 celebraciones · web propia · confianza alta
+- Santuari de la Mare de Déu de la Salut (Les Planes) (BCN0287): 1 celebraciones · web propia · confianza media
 - Santuari de Santa Eulàlia de Vilapicina (BCN0291): 1 celebraciones · web propia · confianza alta
 - Santuari Sant Antoni de Pàdua (BCN0293): 25 celebraciones · web propia · confianza alta
 - Santíssim Sagrament (BCN0294): 3 celebraciones · Arzobispado · confianza baja
@@ -516,7 +516,7 @@
 - Verge de Natzaret (BCN0303): 9 celebraciones · Arzobispado · confianza baja
 - Sant Feliu (BCN0305): 3 celebraciones · Arzobispado · confianza baja
 - Sant Julià (BCN0311): 5 celebraciones · Arzobispado · confianza baja
-- Mare de Déu de la Salut (BCN0320): 10 celebraciones · web propia · confianza media
+- Mare de Déu de la Salut (BCN0320): 5 celebraciones · Arzobispado · confianza baja
 - Mare de Déu de Lourdes (BCN0321): 5 celebraciones · Arzobispado · confianza baja
 - Mare de Déu de Montserrat (BCN0322): 4 celebraciones · Arzobispado · confianza baja
 - Mare de Déu del Roser (BCN0323): 4 celebraciones · Arzobispado · confianza baja

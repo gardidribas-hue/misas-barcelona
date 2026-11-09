@@ -99,5 +99,69 @@
     "confianza": "alta"
    }
   ]
+ },
+ {
+  "comprobado": "2026-11-02",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-andreu-2/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Laborables: 19:30h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-andreu-2/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Vísperas: 19:30h.",
+    "vespertina_dominical": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-andreu-2/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Domingos y festivos: 12:00 h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-andreu-2/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   }
+  ]
  }
 ]

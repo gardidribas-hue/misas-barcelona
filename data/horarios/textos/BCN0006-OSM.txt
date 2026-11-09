@@ -1,5 +1,5 @@
 # https://www.openstreetmap.org/way/625295824
-# 2026-11-02 · formato: osm
+# 2026-11-09 · formato: osm
 
 {
  "name": "Parròquia Basílica de Santa Maria del Pi",

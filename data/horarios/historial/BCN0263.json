@@ -558,5 +558,392 @@
     "confianza": "alta"
    }
   ]
+ },
+ {
+  "comprobado": "2026-11-02",
+  "fuente": "F3",
+  "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+  "confianza": "baja",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "08:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "10:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "20:15h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo",
+     "festivo_precepto"
+    ],
+    "inicio": "19:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "19:15h.",
+    "vespertina_dominical": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "08:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "08:30h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "10:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "11:30h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "13:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Curso",
+     "inicio": "09-01",
+     "fin": "06-30"
+    },
+    "semanas_mes": [],
+    "notas": "20:15h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "08:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "08:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "10:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes"
+    ],
+    "inicio": "20:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "20:15h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado",
+     "vispera_festivo",
+     "festivo_precepto"
+    ],
+    "inicio": "19:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "19:15h.",
+    "vespertina_dominical": true,
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "10:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "11:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "11:30h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "13:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "13:00h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "20:15",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Verano",
+     "inicio": "07-01",
+     "fin": "08-31"
+    },
+    "semanas_mes": [],
+    "notas": "20:15h.",
+    "fuente": "F3",
+    "url": "https://esglesia.barcelona/es/parroquies/sant-vicenc/",
+    "comprobado": "2026-11-02",
+    "confianza": "baja"
+   }
+  ]
  }
 ]
