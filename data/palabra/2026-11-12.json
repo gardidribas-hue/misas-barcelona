@@ -37,5 +37,47 @@
    "text": "En el siglo XVII, Josafat, obispo de Polotsk, Rutenia, región gobernada por el Rey de Polonia, dedicó su vida a buscar la unificación de la Iglesia Greco-Ortodoxa con la Iglesia Latina.",
    "url": "https://www.vaticannews.va/es/santos/11/12.html"
   }
+ },
+ "ca": {
+  "title": "Memòria de Sant Josafat, bisbe i màrtir",
+  "url": "https://www.bible.com/bible/335/LUK.17.BCI",
+  "source": "Bíblia Catalana Interconfessional",
+  "readings": [
+   {
+    "kind": "Primera lectura",
+    "title": "Lectura de la carta de sant Pau a Filèmon",
+    "ref": "Filèmon 7-20",
+    "text": [
+     "Germà, he tingut una gran alegria i un gran consol quan he sabut que el teu amor ha alleujat els cors dels sants fidels.",
+     "Per això, encara que tindria en el Crist tota la llibertat de manar-te el que has de fer, prefereixo demanar-t’ho en nom de l’amor. Jo, Pau, ancià com sóc, i ara, a més, presoner per causa de Jesucrist, et faig una súplica a favor d’Onèsim, el meu fill, que he engendrat en la fe estant a la presó. En altre temps ell et va ser inútil, però ara ens és ben útil a tu i a mi. Te’l torno a enviar, com si t’enviés el meu propi cor. M’hauria agradat de retenir-lo al meu costat, perquè em servís en lloc teu mentre sóc a la presó per causa de l’evangeli, però no he volgut fer res sense el teu consentiment: no desitjaria que fessis aquest favor per força, sinó de bon grat.",
+     "Qui sap si Onèsim es va separar un moment de tu perquè ara el recobris per sempre! I no ja com un esclau, sinó molt més que un esclau: com un germà estimat. Ho és moltíssim per a mi, i molt més ho ha de ser per a tu, tant humanament com en el Senyor.",
+     "Per tant, si em tens per company en la fe, rep-lo com si fos jo mateix. I si t’ha perjudicat o et deu alguna cosa, carrega-ho al meu compte. Jo, Pau, t’escric ara amb la meva pròpia mà: t’ho pagaré jo mateix, tot i que podria recordar-te el deute que tens amb mi, i que és la teva mateixa persona. Sí, germà, fes que en el Senyor pugui rebre de tu aquest benefici. Per amor de Crist, dóna al meu cor aquest descans!"
+    ]
+   },
+   {
+    "kind": "Evangeli",
+    "title": "Lectura de l'evangeli segons sant Lluc",
+    "ref": "Lluc 17, 20-25",
+    "text": [
+     "Els fariseus van preguntar a Jesús quan vindria el Regne de Déu. Ell els respongué:",
+     "– El Regne de Déu no vindrà en un moment previsible, ni tampoc podran dir: “És aquí” o “És allà”. El Regne de Déu és enmig vostre.",
+     "Després digué als deixebles:",
+     "– Vindran temps que desitjareu veure un de sol dels dies del Fill de l’home, però no el veureu. Us diran: “És aquí” o “És allà”. No correu pas a buscar-lo. Perquè igual com el llampec esclata i resplendeix d’un cap a l’altre del cel, així serà el Fill de l’home quan vingui el seu dia. Però primer cal que pateixi molt, i la gent d’aquesta generació l’ha de rebutjar."
+    ]
+   }
+  ],
+  "reflection": {
+   "heading": "Les paraules dels Papes",
+   "text": [
+    "D'altra banda, «el Senyor no diu mai que el regne de Déu és un espectacle». Cert, va explicar, «és una festa, però és diferent. És una festa bellíssima, una gran festa. I el cel serà una festa, però no un espectacle». Al contrari de l'espectacle, hi ha «la perseverança de molts cristians que porten endavant la família: homes, dones que es preocupen pels fills, que arriben a finals de mes amb menys d'un euro només, però preguen». I el regne de Déu «està allà, amagat en aquesta santedat de la vida quotidiana, aquesta santedat de cada dia». Perquè «el regne de Déu no és lluny de nosaltres, és a prop». Precisament la «proximitat és una de les característiques» del regne. Proximitat que vol dir «cada dia». «El regne de Déu és humil, com la llavor: humil; però es fa gran pel poder de l'Esperit Sant». I «a nosaltres ens toca deixar-lo créixer en nosaltres, sense gloriar-nos. Deixar que l'Esperit vingui, ens canviï l'ànima i ens tiri endavant en el silenci, la pau, la quietud, la proximitat a Déu, als altres, sense espectacles». (Papa Francesc – Homilia Santa Marta, 13 de novembre de 2014)"
+   ],
+   "translated": "Google Translate"
+  },
+  "saint": {
+   "name": "S. Josafat Kuncewicz, bisbe i màrtir",
+   "text": "Al segle XVII, Josafat, bisbe de Polotsk, Rutenia, regió governada pel Rei de Polònia, va dedicar la seva vida a buscar la unificació de l'Església Greco-Ortodoxa amb l'Església Llatina.",
+   "url": "https://www.vaticannews.va/es/santos/11/12.html",
+   "translated": "Google Translate"
+  }
  }
 }
