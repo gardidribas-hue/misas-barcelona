@@ -1109,13 +1109,6 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
 .faq-foot a { color: var(--accent-strong); font-weight: 700; }
 
 /* ===================== Detalles visuales (extras.js, noviembre de 2026) ===================== */
-:root { --x-conf: #c0661c; --x-ador: #2e6fd0; }
-:root[data-theme="dark"] { --x-conf: #f0a868; --x-ador: #8fb8f0; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --x-conf: #f0a868; --x-ador: #8fb8f0; } }
-
-/* 3. Título que cambia de palabra */
-.hero h1 em.xword { display: inline-block; transition: opacity .32s var(--ease), transform .32s var(--ease), filter .32s var(--ease), color .32s; }
-.hero h1 em.xword.out { opacity: 0; transform: translateY(-.18em); filter: blur(5px); }
 
 /* 9. Camino a pie */
 .x-walk > span { display: block; background: var(--ink); color: var(--bg); padding: 6px 12px; border-radius: 999px; font: 600 .8125rem/1.2 var(--ui); white-space: nowrap; box-shadow: 0 6px 18px rgba(0,0,0,.25); animation: fadein .4s var(--ease) both; }
@@ -1211,7 +1204,6 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
 
 @media (prefers-reduced-motion: reduce) {
   .x-glass::before, .x-candle .fl, .x-candle-art.lighting .fl, .x-stamps li.fresh .s, .x-beads, .x-walk > span { animation: none; }
-  .hero h1 em.xword { transition: none; }
   .cards .card.x-tilt, .x-tilt-dev .cards .card { transform: none; background-image: none; }
 }
 
