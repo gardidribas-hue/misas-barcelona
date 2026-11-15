@@ -81,6 +81,7 @@
     $("rosMode").setAttribute("aria-checked", ros.mode === "short");
     $("rosText").classList.toggle("short", ros.mode === "short");
     $("rosText").innerHTML = ros.mode === "short" ? rosarySummary(L) : rosaryText(L);
+    document.dispatchEvent(new CustomEvent("misas:rosary", { detail: { short: ros.mode === "short" } }));
   }
 
   // ---------- El rosario entero en un solo texto vertical ----------
@@ -141,6 +142,7 @@
   async function renderWord() {
     if (!word.date) word.date = todayBcnDate();
     const key = ymd(word.date), L = A.lang();
+    document.dispatchEvent(new CustomEvent("misas:wordday", { detail: { date: word.date } }));
     $("wordDate").textContent = new Intl.DateTimeFormat(L === "ca" ? "ca-ES" : "es-ES", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" }).format(word.date);
     $("wordToday").classList.toggle("on", key === ymd(todayBcnDate()));
     $("wordPrev").setAttribute("aria-label", t("prevDay")); $("wordNext").setAttribute("aria-label", t("nextDay"));

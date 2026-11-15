@@ -1,4 +1,5 @@
 {
+  "id": "./",
   "name": "Misas Barcelona",
   "short_name": "Misas BCN",
   "description": "Misas, confesiones y adoración en las parroquias de la Archidiócesis de Barcelona.",
@@ -9,8 +10,64 @@
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "icons": [
-    { "src": "icons/st1/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icons/st1/icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "icons/st1/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icons/st1/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/st1/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/st1/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": [
+    "lifestyle",
+    "travel",
+    "books"
+  ],
+  "shortcuts": [
+    {
+      "name": "Mapa de parroquias",
+      "short_name": "Mapa",
+      "url": "./#mapa",
+      "icons": [
+        {
+          "src": "icons/st1/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Palabra del día",
+      "short_name": "Palabra",
+      "url": "./#palabra",
+      "icons": [
+        {
+          "src": "icons/st1/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Rosario de hoy",
+      "short_name": "Rosario",
+      "url": "./#rosario",
+      "icons": [
+        {
+          "src": "icons/st1/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
   ]
 }

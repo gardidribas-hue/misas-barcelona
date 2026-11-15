@@ -41,6 +41,7 @@ jobs:
           # El Excel de revisión y la web se generan después de traer lo último, para no pisar una revisión subida mientras tanto.
           python scripts/horarios_excel.py generar
           python scripts/horarios_app.py
-          git add data/horarios
+          python scripts/paginas.py
+          git add data/horarios p sitemap.xml robots.txt
           if ! git diff --cached --quiet; then git commit -q -m "Excel de revisión y web de horarios ($(date -u +%F))"; fi
           git push origin "HEAD:${GITHUB_REF_NAME}"
