@@ -27,10 +27,9 @@
    },
    {
     "kind": "Evangelio",
-    "title": "Evangelio del día",
-    "ref": "Lectura del santo evangelio según san Mateo",
+    "title": "Lectura del santo evangelio según san Mateo",
+    "ref": "Mateo 25, 31-46",
     "text": [
-     "Mateo 25, 31-46",
      "En aquel tiempo, Jesús dijo a sus discípulos: \"Cuando venga el Hijo del hombre, rodeado de su gloria, acompañado de todos sus ángeles, se sentará en su trono de gloria. Entonces serán congregadas ante él todas las naciones, y él apartará a los unos de los otros, como aparta el pastor a las ovejas de los cabritos, y pondrá a las ovejas a su derecha y a los cabritos a su izquierda.",
      "Entonces dirá el rey a los de su derecha: 'Vengan, benditos de mi Padre; tomen posesión del Reino preparado para ustedes desde la creación del mundo; porque estuve hambriento y me dieron de comer, sediento y me dieron de beber, era forastero y me hospedaron, estuve desnudo y me vistieron, enfermo y me visitaron, encarcelado y fueron a verme'. Los justos le contestarán entonces: 'Señor, ¿cuándo te vimos hambriento y te dimos de comer, sediento y te dimos de beber? ¿Cuándo te vimos de forastero y te hospedamos, o desnudo y te vestimos? ¿Cuándo te vimos enfermo o encarcelado y te fuimos a ver?' Y el rey les dirá: 'Yo les aseguro que, cuando lo hicieron con el más insignificante de mis hermanos, conmigo lo hicieron'.",
      "Entonces dirá también a los de su izquierda: 'Apártense de mí, malditos; vayan al fuego eterno, preparado para el diablo y sus ángeles; porque estuve hambriento y no me dieron de comer, sediento y no me dieron de beber, era forastero y no me hospedaron, estuve desnudo y no me vistieron, enfermo y encarcelado y no me visitaron'.",
@@ -48,6 +47,65 @@
    "name": "Cecilia, virgen y mártir, en el cementerio de Calixto",
    "text": "Santa Cecilia es una santa que es celebrada en todo el mundo como patrona de la música, de los músicos y cantantes. La Iglesia la recuerda el 22 de noviembre.",
    "url": "https://www.vaticannews.va/es/santos/11/22.html"
+  }
+ },
+ "ca": {
+  "title": "Solemnitat de Nostre Senyor Jesucrist, Rei de l'Univers Darrer diumenge del Temps ordinari",
+  "url": "https://www.bible.com/bible/335/MAT.25.BCI",
+  "source": "Bíblia Catalana Interconfessional",
+  "readings": [
+   {
+    "kind": "Primera lectura",
+    "title": "Lectura del llibre d'Ezequiel",
+    "ref": "Ezequiel 34, 11-12. 15-17",
+    "text": [
+     "»Això us anuncia el Senyor Déu: Jo mateix buscaré les meves ovelles i en faré el recompte. Les comptaré com el pastor recompta el seu ramat un dia de núvols i foscor quan retroba les ovelles dispersades; jo les recolliré de tots els indrets on s’havien dispersat.",
+     "Jo mateix pasturaré les meves ovelles i jo mateix les duré a reposar. Ho dic jo, el Senyor Déu. Buscaré l’ovella perduda, recolliré l’esgarriada, embenaré la que s’havia trencat la pota i restabliré la malalta, però apartaré l’ovella massa forta i massa grassa. Pasturaré amb justícia el meu ramat.",
+     "»I a vosaltres, ovelles meves, això us anuncia el Senyor Déu: Mireu, jo jutjaré entre una ovella i una altra, entre els marrans i els bocs:"
+    ]
+   },
+   {
+    "kind": "Segona lectura",
+    "title": "Lectura de la primera carta de sant Pau als cristians de Corint",
+    "ref": "1 Corintis 15, 20-26. 28",
+    "text": [
+     "Però, de fet, Crist ha ressuscitat d’entre els morts, com a primícia de tots els qui han mort. Ja que la mort vingué per un home, també per un home vindrà la resurrecció dels morts: així com per la seva unió amb Adam tots moren, així també per la seva unió amb Crist tots tornaran a la vida. Però cadascú en el moment que li correspon: Crist, com a primícia; després, el dia que ell vindrà, els qui són de Crist. Llavors arribarà la fi, quan ell destituirà tota mena de potència, d’autoritat i de poder i posarà el Regne en mans de Déu, el Pare. Perquè Crist ha de regnar fins que Déu haurà posat tots els enemics sota els seus peus. El darrer enemic destituït serà la mort,",
+     "I quan tot li haurà estat sotmès, el Fill mateix se sotmetrà al qui li ho haurà sotmès tot. Així Déu serà tot en tots."
+    ]
+   },
+   {
+    "kind": "Evangeli",
+    "title": "Lectura de l'evangeli segons sant Mateu",
+    "ref": "Mateu 25, 31-46",
+    "text": [
+     "»Quan el Fill de l’home vindrà ple de glòria, acompanyat de tots els àngels, s’asseurà en el seu tron gloriós. Tots els pobles es reuniran davant seu, i ell destriarà la gent els uns dels altres, com un pastor destria les ovelles i les cabres, i posarà les ovelles a la seva dreta i les cabres a la seva esquerra. Aleshores el rei dirà als de la seva dreta:",
+     "»– Veniu, beneïts del meu Pare, rebeu en herència el Regne que ell us tenia preparat des de la creació del món. Perquè tenia fam, i em donàreu menjar; tenia set, i em donàreu beure; era foraster, i em vau acollir; anava despullat, i em vau vestir; estava malalt, i em vau visitar; era a la presó, i vinguéreu a veure’m.",
+     "»Llavors els justos li respondran:",
+     "»– Senyor, ¿quan et vam veure afamat, i et donàrem menjar; o que tenies set, i et donàrem beure? ¿Quan et vam veure foraster, i et vam acollir; o que anaves despullat, i et vam vestir? ¿Quan et vam veure malalt o a la presó, i vinguérem a veure’t?",
+     "»El rei els respondrà:",
+     "»– En veritat us ho dic: tot allò que fèieu a un d’aquests germans meus més petits, m’ho fèieu a mi.",
+     "»Després dirà als de la seva esquerra:",
+     "»– Aparteu-vos de mi, maleïts, aneu al foc etern, preparat per al diable i els seus àngels. Perquè tenia fam, i no em donàreu menjar; tenia set, i no em donàreu beure; era foraster, i no em vau acollir; anava despullat, i no em vau vestir; estava malalt o a la presó, i no em vau visitar.",
+     "»Llavors ells li respondran:",
+     "»– Senyor, ¿quan et vam veure afamat o assedegat, foraster o despullat, malalt o a la presó, i no et vam assistir?",
+     "»Ell els contestarà:",
+     "»– En veritat us ho dic: tot allò que deixàveu de fer a un d’aquests més petits, m’ho negàveu a mi.",
+     "»I aquests aniran al càstig etern, mentre que els justos aniran a la vida eterna."
+    ]
+   }
+  ],
+  "reflection": {
+   "heading": "Les paraules dels Papes",
+   "text": [
+    "El Fill de l'home a la seva glòria, envoltat pels seus àngels, es comporta com el pastor que separa les ovelles de les cabres i posa els justs a la dreta i els reprovs a l'esquerra. (…) És decisiu el criteri del judici. Aquest criteri és l'amor, la caritat concreta amb el proïsme, en particular amb els “petits”, amb les persones que travessen més dificultats: els que tenen gana i set, els forasters, els nus, els malalts, els presos. El rei declara solemnement a tothom que allò que han fet o no han fet a ells, ho han fet o no ho han fet a ell mateix. És a dir, Crist s'identifica amb els seus “germans més petits” i en el judici final s'adonarà del que ja es va fer a la vida terrenal. (…) Per això Jesús vol associar-nos a la seva reialesa; per això ens convida a col·laborar a la vinguda del seu regne d'amor, de justícia i de pau. Hem de respondre-li, no amb paraules, sinó amb obres: triant el camí de l'amor operant i generós al proïsme, li permetem estendre el seu senyoriu en el temps i l'espai. (Papa Benet XVI, Discurs als participants en el pelegrinatge de l'Arxidiòcesi d'Amalfi – Cava de Tireni, 22 de novembre de 2008)"
+   ],
+   "translated": "Google Translate"
+  },
+  "saint": {
+   "name": "Cecília, verge i màrtir, al cementiri de Calixt",
+   "text": "Santa Cecília és una santa que és celebrada a tot el món com a patrona de la música, dels músics i cantants. L?Església la recorda el 22 de novembre.",
+   "url": "https://www.vaticannews.va/es/santos/11/22.html",
+   "translated": "Google Translate"
   }
  }
 }
