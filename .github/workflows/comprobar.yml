@@ -23,8 +23,10 @@ jobs:
           python3 -m py_compile scripts/*.py
       - name: Navegador de prueba
         run: |
-          npm install --no-save --no-audit --no-fund playwright@1.55.0
-          npx playwright install --with-deps chromium
+          npm install --no-save --no-audit --no-fund playwright-core@1.63.0
+          # El servidor de GitHub ya trae Google Chrome: se usa ese y no hay que descargar navegadores.
+          export CHROME="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || command -v chromium-browser)"
+          echo "Navegador: $CHROME"
           python3 -m http.server 8000 >/dev/null 2>&1 &
           sleep 1
           node pruebas/humo.js

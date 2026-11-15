@@ -1,13 +1,14 @@
 /* Prueba de humo: abre la web en un móvil de mentira y comprueba que lo básico funciona.
    Uso (con la web servida en http://localhost:8000):  node pruebas/humo.js
    La lanza sola la acción «comprobar» en cada cambio. Si falla, dice qué. */
-const { chromium } = require("playwright");
+const { chromium } = require("playwright-core");
 const BASE = process.env.BASE || "http://localhost:8000/";
 const fallos = [];
 const ok = (cond, msg) => { console.log((cond ? "✓ " : "✗ ") + msg); if (!cond) fallos.push(msg); };
 
 (async () => {
-  const b = await chromium.launch();
+  // En GitHub Actions se usa el Chrome que ya trae el servidor (variable CHROME); en local, el de Playwright.
+  const b = await chromium.launch(process.env.CHROME ? { executablePath: process.env.CHROME, args: ["--no-sandbox"] } : {});
   const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, locale: "es-ES", timezoneId: "Europe/Madrid" });
   await ctx.route(/tiles\.openfreemap\.org|gc\.zgo\.at/, (r) => r.abort()); // sin mapa de fondo: no hace falta para probar
   const page = await ctx.newPage();

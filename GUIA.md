@@ -75,7 +75,7 @@ El contenedor de Claude no puede abrir las webs de las parroquias ni el mapa: po
 
 ```bash
 python3 -m http.server 8000          # en la carpeta del proyecto; abre http://localhost:8000
-node pruebas/humo.js                  # en otra terminal (necesita: npm i playwright)
+node pruebas/humo.js                  # en otra terminal (necesita: npm i playwright-core y CHROME=ruta del navegador)
 ```
 
 Comprueba siempre en el móvil (390 px de ancho), en modo claro y oscuro y en los dos idiomas.
