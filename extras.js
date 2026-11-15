@@ -28,7 +28,6 @@
 
   A.i18n("es", {
     xWords: ["misa", "confesarte", "adorar"],
-    xSoonLeg: "Late = misa en menos de 30 min",
     xWalk: "<b>{m} min</b> a pie",
     xWalkLeave: "<b>{m} min</b> a pie · sal antes de las {h}",
     xWalkNote: "Línea recta: el camino real puede ser algo más largo.",
@@ -60,7 +59,6 @@
   });
   A.i18n("ca", {
     xWords: ["missa", "confessar-te", "adorar"],
-    xSoonLeg: "Batega = missa en menys de 30 min",
     xWalk: "<b>{m} min</b> a peu",
     xWalkLeave: "<b>{m} min</b> a peu · surt abans de les {h}",
     xWalkNote: "Línia recta: el camí real pot ser una mica més llarg.",
@@ -116,42 +114,6 @@
     }
     setup();
     A.onLang(setup);
-  });
-
-  // ---------- 5. En el mapa laten las iglesias con misa en menos de 30 minutos ----------
-  safe("latido", () => {
-    const MV = A.MapView;
-    const legend = document.createElement("p");
-    legend.className = "soon-leg"; legend.hidden = true;
-    const wrap = document.querySelector(".mapwrap");
-    if (wrap) wrap.appendChild(legend);
-    function mark() {
-      if (!MV.markers) return;
-      const now = A.nowBcn();
-      let n = 0;
-      for (const [id, mk] of MV.markers) {
-        const el = mk.getElement ? mk.getElement() : mk.content;
-        if (!el || !el.classList) continue;
-        const p = A.DATA.find((x) => x.id === id), nx = p && nextMassToday(p);
-        const soon = !!nx && nx.min - now.min <= 30;
-        el.classList.toggle("soon", soon);
-        if (soon) n++;
-      }
-      legend.innerHTML = `<i></i>${tr("xSoonLeg")}`;
-      legend.hidden = !n;
-    }
-    const hook = () => {
-      if (!MV.setMarkers || MV.setMarkers.__x) return;
-      const orig = MV.setMarkers;
-      MV.setMarkers = function (list) { const r = orig.call(this, list); mark(); return r; };
-      MV.setMarkers.__x = true;
-      mark();
-    };
-    hook();
-    const iv = setInterval(() => { hook(); mark(); }, 60000);
-    document.addEventListener("misas:mode", () => { hook(); mark(); });
-    A.onLang(mark);
-    void iv;
   });
 
   // ---------- 9. Camino a pie hasta la parroquia que abres (si sabemos dónde estás) ----------

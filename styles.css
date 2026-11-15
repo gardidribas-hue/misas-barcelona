@@ -1117,17 +1117,6 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
 .hero h1 em.xword { display: inline-block; transition: opacity .32s var(--ease), transform .32s var(--ease), filter .32s var(--ease), color .32s; }
 .hero h1 em.xword.out { opacity: 0; transform: translateY(-.18em); filter: blur(5px); }
 
-/* 5. Iglesias que laten: misa en menos de 30 minutos, en su mismo rojo («scale» y no «transform»: MapLibre coloca los puntos con transform) */
-.pin.soon:not(.on):not(.me) { animation: x-beat 1.6s var(--ease) infinite; }
-@keyframes x-beat {
-  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent-strong) 55%, transparent), 0 1px 5px rgba(0,0,0,.3); scale: 1; }
-  18% { scale: 1.25; }
-  36% { scale: 1; }
-  70%, 100% { box-shadow: 0 0 0 14px transparent, 0 1px 5px rgba(0,0,0,.3); scale: 1; }
-}
-.soon-leg { position: absolute; left: 12px; bottom: 34px; z-index: 2; margin: 0; display: flex; align-items: center; gap: 8px; padding: 6px 12px 6px 9px; border-radius: 999px; background: color-mix(in srgb, var(--bg) 90%, transparent); box-shadow: 0 2px 10px rgba(0,0,0,.14); font: 700 .75rem/1.2 var(--ui); color: var(--ink); pointer-events: none; }
-.soon-leg i { width: 10px; height: 10px; border-radius: 50%; background: var(--accent-strong); border: 2px solid #fff; animation: x-beat 1.6s var(--ease) infinite; }
-
 /* 9. Camino a pie */
 .x-walk > span { display: block; background: var(--ink); color: var(--bg); padding: 6px 12px; border-radius: 999px; font: 600 .8125rem/1.2 var(--ui); white-space: nowrap; box-shadow: 0 6px 18px rgba(0,0,0,.25); animation: fadein .4s var(--ease) both; }
 .x-walk b { font-weight: 800; }
@@ -1221,7 +1210,6 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
 .x-tilt-dev .cards .card { transform: rotateX(var(--trx, 0deg)) rotateY(var(--try, 0deg)); background-image: linear-gradient(110deg, transparent calc(var(--tgx, 50%) - 30%), color-mix(in srgb, #fff 16%, transparent) var(--tgx, 50%), transparent calc(var(--tgx, 50%) + 30%)); }
 
 @media (prefers-reduced-motion: reduce) {
-  .pin.soon:not(.on):not(.me), .soon-leg i { animation: none; box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-strong) 35%, transparent); }
   .x-glass::before, .x-candle .fl, .x-candle-art.lighting .fl, .x-stamps li.fresh .s, .x-beads, .x-walk > span { animation: none; }
   .hero h1 em.xword { transition: none; }
   .cards .card.x-tilt, .x-tilt-dev .cards .card { transform: none; background-image: none; }
