@@ -299,7 +299,7 @@
   }
 
   function initMapLibre() {
-    const map = new maplibregl.Map({ container: "map", style: CFG.mapStyle, center: [CFG.center[1], CFG.center[0]], zoom: CFG.zoom, attributionControl: { compact: true } });
+    const map = MapView.map = new maplibregl.Map({ container: "map", style: CFG.mapStyle, center: [CFG.center[1], CFG.center[0]], zoom: CFG.zoom, attributionControl: { compact: true } });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
     let loaded = false, pending = [];
     const whenLoaded = (fn) => loaded ? fn() : pending.push(fn);
@@ -895,6 +895,7 @@
     $("favBtn").onclick = () => { const on = toggleFav(id), b = $("favBtn"); b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); b.title = t(on ? "favOff" : "favAdd"); b.setAttribute("aria-label", b.title); toast(t(on ? "favSaved" : "favRemoved")); renderList(); document.querySelectorAll("#list .card").forEach((c) => c.classList.toggle("sel", c.dataset.id === id)); };
     if ($("calBtn")) $("calBtn").onclick = () => { const h = nextHit(id); if (h) downloadIcs(p, h); };
     if (focus && MapView.focus) MapView.focus(p);
+    document.dispatchEvent(new CustomEvent("misas:detail", { detail: { p } }));
   }
   function closeDetail() {
     const box = $("detail");
@@ -910,6 +911,7 @@
     setTitle();
     $("filters").hidden = false; $("summary").hidden = false; $("list").hidden = false;
     if (MapView.highlight) MapView.highlight(null);
+    document.dispatchEvent(new CustomEvent("misas:detail", { detail: { p: null } }));
   }
 
   // ---------- Filtros ----------
@@ -1288,6 +1290,6 @@
   }
   const langListeners = [];
   window.MisasApp = { t, lang: () => LNG, onLang: (fn) => langListeners.push(fn), calm, nowBcn, esc, cap,
-    i18n: (lng, dict) => Object.assign(I18N[lng], dict), parseQuery, search, ask, setMode, state, DATA };
+    i18n: (lng, dict) => Object.assign(I18N[lng], dict), parseQuery, search, ask, setMode, state, DATA, MapView, toast, distKm, isFav, dayMatch, toMin };
   start();
 })();
