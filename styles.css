@@ -1223,3 +1223,13 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
   .hero h1 em.xword { transition: none; }
   .cards .card.x-tilt, .x-tilt-dev .cards .card { transform: none; background-image: none; }
 }
+
+/* 10. Etiqueta del tiempo litúrgico en su color (Palabra del día) */
+.x-littag { --c: #1f8a4c; --soft: #dcf2e3; display: inline-flex; align-items: center; gap: 8px; width: fit-content; margin: -4px 0 2px; padding: 6px 14px 6px 10px; border-radius: 999px; background: var(--soft); color: var(--c); font: 800 .8125rem/1.2 var(--ui); }
+.x-littag i { width: 10px; height: 10px; border-radius: 50%; background: currentColor; box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 22%, transparent); }
+.x-littag small { font-weight: 600; font-size: inherit; opacity: .8; }
+.x-littag[data-lc="v"] { --c: #6b3fa0; --soft: #ece3f6; }
+.x-littag[data-lc="w"] { --c: #9a6f08; --soft: #fbf1d3; }
+.x-littag[data-lc="r"] { --c: #c8323a; --soft: #fde3e2; }
+:root[data-theme="dark"] .x-littag { background: color-mix(in srgb, var(--c) 24%, transparent); color: color-mix(in srgb, var(--c) 50%, #fff); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .x-littag { background: color-mix(in srgb, var(--c) 24%, transparent); color: color-mix(in srgb, var(--c) 50%, #fff); } }

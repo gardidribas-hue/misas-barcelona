@@ -39,6 +39,7 @@
     xSeason: { adv: "Adviento", xmas: "Navidad", ord: "Tiempo ordinario", lent: "Cuaresma", holy: "Semana Santa", easter: "Pascua", pent: "Pentecostés" },
     xSeasonEnd: { adv: "Navidad", xmas: "el Bautismo del Señor", ord1: "el Miércoles de Ceniza", lent: "el Domingo de Ramos", holy: "el Domingo de Pascua", easter: "Pentecostés", ord2: "el Adviento" },
     xOrdLate: "Últimas semanas del tiempo ordinario",
+    xLitCol: { v: "morado", w: "blanco", g: "verde", r: "rojo" }, xLitColT: "Color litúrgico de este día",
     xCandleT: "Enciende una vela",
     xCandleP: "Has llegado al final del rosario. Deja una vela encendida por tu intención: se queda encendida hoy en este móvil.",
     xCandleBtn: "Encender la vela",
@@ -70,6 +71,7 @@
     xSeason: { adv: "Advent", xmas: "Nadal", ord: "Temps ordinari", lent: "Quaresma", holy: "Setmana Santa", easter: "Pasqua", pent: "Pentecosta" },
     xSeasonEnd: { adv: "Nadal", xmas: "el Baptisme del Senyor", ord1: "el Dimecres de Cendra", lent: "el Diumenge de Rams", holy: "el Diumenge de Pasqua", easter: "Pentecosta", ord2: "l'Advent" },
     xOrdLate: "Últimes setmanes del temps ordinari",
+    xLitCol: { v: "morat", w: "blanc", g: "verd", r: "vermell" }, xLitColT: "Color litúrgic d'aquest dia",
     xCandleT: "Encén una espelma",
     xCandleP: "Has arribat al final del rosari. Deixa una espelma encesa per la teva intenció: es queda encesa avui en aquest mòbil.",
     xCandleBtn: "Encendre l'espelma",
@@ -213,14 +215,14 @@
     const epi = D(Y, 0, 6), bapt = epi + (7 - new Date(epi).getUTCDay()) * DAYMS;
     const E = easter(Y), ash = E - 46 * DAYMS, palm = E - 7 * DAYMS, pent = E + 49 * DAYMS;
     const segs = [
-      { k: "adv", from: start, to: xmas, c: "#7a4bb0", end: "adv", next: xmas },
-      { k: "xmas", from: xmas, to: bapt + DAYMS, c: "#d9b23c", end: "xmas", next: bapt },
-      { k: "ord", from: bapt + DAYMS, to: ash, c: "#1f8a4c", end: "ord1", next: ash },
-      { k: "lent", from: ash, to: palm, c: "#7a4bb0", end: "lent", next: palm },
-      { k: "holy", from: palm, to: E, c: "#c8323a", end: "holy", next: E },
-      { k: "easter", from: E, to: pent, c: "#d9b23c", end: "easter", next: pent },
-      { k: "pent", from: pent, to: pent + DAYMS, c: "#c8323a", end: "ord2", next: end },
-      { k: "ord", from: pent + DAYMS, to: end, c: "#1f8a4c", end: "ord2", next: end, late: true },
+      { k: "adv", lc: "v", from: start, to: xmas, c: "#7a4bb0", end: "adv", next: xmas },
+      { k: "xmas", lc: "w", from: xmas, to: bapt + DAYMS, c: "#d9b23c", end: "xmas", next: bapt },
+      { k: "ord", lc: "g", from: bapt + DAYMS, to: ash, c: "#1f8a4c", end: "ord1", next: ash },
+      { k: "lent", lc: "v", from: ash, to: palm, c: "#7a4bb0", end: "lent", next: palm },
+      { k: "holy", lc: "r", from: palm, to: E, c: "#c8323a", end: "holy", next: E },
+      { k: "easter", lc: "w", from: E, to: pent, c: "#d9b23c", end: "easter", next: pent },
+      { k: "pent", lc: "r", from: pent, to: pent + DAYMS, c: "#c8323a", end: "ord2", next: end },
+      { k: "ord", lc: "g", from: pent + DAYMS, to: end, c: "#1f8a4c", end: "ord2", next: end, late: true },
     ];
     return { start, end, segs, king: end - 7 * DAYMS };
   }
@@ -256,6 +258,15 @@
       if (cur.late && Y.king > ms && Y.king - ms <= 14 * DAYMS) {
         const d = new Intl.DateTimeFormat(A.lang() === "ca" ? "ca-ES" : "es-ES", { day: "numeric", month: "long", timeZone: "UTC" }).format(new Date(Y.king));
         txt += " " + t("xLitKing", { d });
+      }
+      // 10. Etiqueta del tiempo litúrgico en su color (el resto de la página sigue igual)
+      const lit = $("wordLit");
+      if (lit) {
+        let tag = $("xLitTag");
+        if (!tag) { tag = document.createElement("p"); tag.id = "xLitTag"; tag.className = "x-littag"; lit.insertAdjacentElement("afterend", tag); }
+        tag.dataset.lc = cur.lc;
+        tag.title = tr("xLitColT");
+        tag.innerHTML = `<i aria-hidden="true"></i>${A.esc(S[cur.k])} <small>· ${A.esc(t("xLitCol")[cur.lc])}</small>`;
       }
       box.innerHTML = `${svg}<div><p class="k" style="--c:${cur.c}">${tr("xLitK")}</p><b>${A.esc(name)}</b><p>${A.esc(txt)}</p></div>`;
     }
