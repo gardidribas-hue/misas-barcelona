@@ -1,0 +1,30 @@
+name: comprobar
+# En cada cambio (y en cada PR): revisa que el código no tenga errores y abre la web en un navegador de prueba.
+# Si sale en rojo, no publiques (no fusiones) hasta arreglarlo: el registro dice qué ha fallado.
+on:
+  push:
+    branches: [main]
+    paths-ignore: [data/palabra/**]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Sintaxis de JavaScript, JSON y Python
+        run: |
+          for f in *.js data/*.js data/horarios/horarios_app.js pruebas/*.js; do node --check "$f" || exit 1; done
+          for f in *.webmanifest data/*.json data/palabra/*.json; do python3 -m json.tool "$f" > /dev/null || { echo "JSON roto: $f"; exit 1; }; done
+          python3 -m py_compile scripts/*.py
+      - name: Navegador de prueba
+        run: |
+          npm install --no-save --no-audit --no-fund playwright@1.55.0
+          npx playwright install --with-deps chromium
+          python3 -m http.server 8000 >/dev/null 2>&1 &
+          sleep 1
+          node pruebas/humo.js

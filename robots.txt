@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gardidribas-hue.github.io/misas-barcelona/sitemap.xml

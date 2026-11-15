@@ -237,6 +237,8 @@ h1 em { color: var(--accent-strong); }
 .pin:hover { box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-strong) 30%, transparent), 0 1px 5px rgba(0,0,0,.3); }
 .pin.on { width: auto; height: auto; border-radius: 999px; background: var(--accent); color: var(--accent-ink); padding: 5px 12px; font: 800 0.8125rem/1.2 var(--ui); white-space: nowrap; }
 .pin.me { background: #fff; width: 18px; height: 18px; border: 5px solid var(--accent-strong); box-shadow: 0 0 0 8px rgba(228,125,130,.25); }
+/* Zona de toque más grande que el punto (36 px): el dedo acierta la parroquia sin cambiar cómo se ve */
+.pin:not(.on)::after { content: ""; position: absolute; inset: -11px; border-radius: 50%; }
 .maplibregl-ctrl-attrib { font-size: 0.6875rem; border-radius: 10px 0 0 0; }
 
 /* ---------- Móvil ---------- */
