@@ -80,6 +80,11 @@ def vatican(day):
     readings = [r for r in readings if r["text"]]
     for r in readings:  # la letra capital va aparte en la página
         r["title"] = re.sub(r"^ectura\b", "Lectura", r["title"])
+        # A veces la página añade un rótulo («Evangelio del día») y todo baja un sitio: la cita queda en el texto.
+        cite = r"(?:[1-3]\s*)?[^\W\d][^\d,]{1,30}\s+\d+(?:\s*,\s*\d.*)?"
+        if not re.search(r"\d", r["ref"]) and r["text"] and len(r["text"][0]) < 60 and re.fullmatch(cite, r["text"][0]):
+            r["title"], r["ref"] = r["ref"], r["text"].pop(0)
+    readings = [r for r in readings if r["text"]]
     if not readings:
         raise ValueError("sin lecturas")
     out = {"title": title, "url": url, "source": "Vatican News", "readings": readings}

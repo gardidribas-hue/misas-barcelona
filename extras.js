@@ -306,7 +306,8 @@
       if (candle && candle.getBoundingClientRect().top < innerHeight - 60) { ring.hidden = true; last = -2; return; }
       // Al lado del botón de volver arriba, dentro de la columna del rosario
       const col = $("rosScroll").getBoundingClientRect(), nav = (document.querySelector(".bottomnav") || {}).offsetHeight || 0;
-      ring.style.left = Math.round(col.right - 62 - 12 - 76) + "px";
+      const txt = $("rosList").getBoundingClientRect();
+      ring.style.left = Math.round(Math.min(col.right - 62 - 12 - 76, txt.right + 32)) + "px";
       ring.style.top = Math.round(Math.min(col.bottom, innerHeight - nav) - 86 - 14) + "px";
       const mid = innerHeight * 0.55;
       let lit = 0, k = -1;

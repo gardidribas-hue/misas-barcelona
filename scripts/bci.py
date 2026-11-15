@@ -101,6 +101,12 @@ def norm(s):
 def parse_ref(ref):
     """«Efesios 4, 32–5, 8» -> ('efesios', '4, 32–5, 8', [(4, 32, 4, 999), (5, 1, 5, 8)])."""
     m = re.match(r"^\s*((?:[1-3]\s*)?[^\d,]+?)\s+(\d+)\s*,\s*(.+)$", ref)
+    one = re.match(r"^\s*((?:[1-3]\s*)?[^\d,]+?)\s+(\d[^,]*)$", ref)
+    if not m and one and book_key(norm(one.group(1))) in SINGLE:
+        # Libros de un solo capítulo («Filemón 7-20», «2 Juan 4-9»): la cita no lleva capítulo.
+        book, rest = norm(one.group(1)), one.group(2).strip()
+        _, _, ranges = parse_ref(f"{one.group(1)} 1, {rest}")
+        return book, rest, ranges
     if not m:
         raise ValueError(f"cita no reconocida: {ref}")
     book, chap, rest = norm(m.group(1)), int(m.group(2)), m.group(3)
@@ -127,6 +133,20 @@ def parse_ref(ref):
             a = int(x.group(1)); b = int(x.group(2) or a)
             ranges.append((chap, a, chap, b))
     return book, nums, ranges
+
+
+SINGLE = {"abdias", "filemon", "2 juan", "3 juan", "judas"}
+
+
+def book_key(book):
+    """Nombre del libro tal como está en BOOKS; tolera letras repetidas por error («1 TTesalonicenses»)."""
+    if book in BOOKS:
+        return book
+    squash = lambda s: re.sub(r"(\w)\1+", r"\1", s)
+    for k in BOOKS:
+        if squash(k) == squash(book):
+            return k
+    return book
 
 
 _cache = {}
@@ -184,6 +204,7 @@ def passage(usfm, ranges):
 def reading(es):
     """Lectura de Vatican News -> la misma en la BCI, con título y cita en catalán."""
     book, nums, ranges = parse_ref(es["ref"])
+    book = book_key(book)
     if book not in BOOKS:
         raise ValueError(f"libro desconocido: {book}")
     usfm, name, title = BOOKS[book]

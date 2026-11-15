@@ -1137,11 +1137,13 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
 #wordcol .dev-inner { position: relative; }
 #wordcol .dev-inner > :not(.x-glass) { position: relative; }
 .x-glass { position: absolute; left: -28px; right: -28px; top: -40px; height: 460px; pointer-events: none; overflow: hidden; border-radius: 28px 28px 0 0;
-  -webkit-mask: linear-gradient(180deg, #000 25%, transparent 92%); mask: linear-gradient(180deg, #000 25%, transparent 92%); }
-.x-glass::before { content: ""; position: absolute; inset: -40px -60px; filter: blur(6px);
-  background: radial-gradient(70px 100px at 14% 24%, rgba(236,90,95,.34), transparent 70%), radial-gradient(80px 120px at 34% 12%, rgba(245,197,66,.36), transparent 70%),
-    radial-gradient(70px 110px at 55% 26%, rgba(46,134,222,.28), transparent 70%), radial-gradient(80px 130px at 76% 14%, rgba(31,138,76,.26), transparent 70%),
-    radial-gradient(70px 100px at 92% 30%, rgba(155,89,182,.28), transparent 70%);
+  -webkit-mask: linear-gradient(180deg, #000 25%, transparent 92%), linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent); -webkit-mask-composite: source-in;
+  mask: linear-gradient(180deg, #000 25%, transparent 92%), linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent); mask-composite: intersect; }
+@media (min-width: 861px) { .x-glass { left: -120px; right: -120px; border-radius: 0; } }
+.x-glass::before { content: ""; position: absolute; inset: -40px -60px; filter: blur(14px);
+  background: radial-gradient(20% 55% at 12% 26%, rgba(236,90,95,.30), transparent 70%), radial-gradient(22% 62% at 32% 14%, rgba(245,197,66,.32), transparent 70%),
+    radial-gradient(20% 58% at 52% 28%, rgba(46,134,222,.24), transparent 70%), radial-gradient(22% 64% at 72% 16%, rgba(31,138,76,.22), transparent 70%),
+    radial-gradient(20% 55% at 90% 30%, rgba(155,89,182,.26), transparent 70%);
   animation: x-drift 26s ease-in-out infinite alternate; }
 .x-glass::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(115deg, transparent 0 26px, rgba(255,255,255,.28) 26px 28px); opacity: .45; }
 @keyframes x-drift { from { transform: translate3d(-18px, 0, 0); } to { transform: translate3d(22px, 10px, 0); } }
@@ -1208,7 +1210,8 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
 .x-progrow { display: flex; align-items: center; gap: 12px; margin: 22px 0 16px; font: 800 .8125rem var(--ui); color: var(--muted); white-space: nowrap; }
 .x-prog { flex: 1; height: 10px; border-radius: 9px; background: var(--line); overflow: hidden; }
 .x-prog i { display: block; height: 100%; border-radius: 9px; background: linear-gradient(90deg, #d9a21b, var(--accent-strong)); transition: width .6s var(--ease); }
-.x-here { width: 100%; justify-content: center; }
+.x-here { display: flex; width: 100%; max-width: 420px; margin: 0 auto; justify-content: center; }
+@media (min-width: 861px) { .x-stamps { max-width: 520px; margin: 0 auto; } .x-cred { padding: 28px 32px; } }
 
 /* 18. Tarjetas que se inclinan */
 .cards { perspective: 900px; }
