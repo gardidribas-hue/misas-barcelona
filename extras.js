@@ -134,13 +134,6 @@
     document.addEventListener("misas:detail", (e) => safe("camino", () => (e.detail && e.detail.p ? draw(e.detail.p) : clear())));
   });
 
-  // ---------- 11. Luz de vidriera sobre la Palabra del día ----------
-  safe("vitral", () => {
-    const inner = document.querySelector("#wordcol .dev-inner");
-    if (!inner || inner.querySelector(".x-glass")) return;
-    inner.insertAdjacentHTML("afterbegin", '<div class="x-glass" aria-hidden="true"></div>');
-  });
-
   // ---------- 12. El año litúrgico en un círculo (Palabra del día) ----------
   // Calendario romano: Adviento empieza el domingo entre el 27 de noviembre y el 3 de diciembre;
   // Navidad llega hasta el Bautismo del Señor; Pascua según el cómputo; Ceniza = Pascua − 46; Pentecostés = Pascua + 49.
