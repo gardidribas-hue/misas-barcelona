@@ -165,11 +165,8 @@
     const el = $("reading");
     el.classList.remove("swap"); void el.offsetWidth; el.classList.add("swap");
     // Sin salmo: solo lecturas y evangelio.
-    // Santos del día (Vatican News): encima de las lecturas, salvo que sea la misma fiesta que ya se ve en el título.
-    const norm = (x) => (x || "").toLowerCase().normalize("NFD").replace(/[^a-z]/g, "");
-    const sn = day.saint && day.saint.name && norm(day.saint.name) !== norm(day.title) ? day.saint : null;
-    el.innerHTML = (sn ? `<aside class="saint"><span class="k">${esc(t("saintsToday"))}</span><p class="n">${esc(sn.name)}</p>` +
-      (sn.text ? `<p>${esc(sn.text)}</p>` : "") + (sn.url ? `<a href="${esc(sn.url)}" target="_blank" rel="noopener">${esc(t("saintMore"))}</a>` : "") + `</aside>` : "") +
+    // El santo del día ya no va en un cuadro: extras.js pone una línea con los santos del calendario romano.
+    el.innerHTML =
       day.readings.filter((r) => !/^salm/i.test(r.kind)).map((r) => {
       const head = r.title
         ? `<p class="rd-kind">${esc(r.kind)}</p><h2>${esc(r.title)}</h2>`
