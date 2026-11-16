@@ -134,11 +134,80 @@
     document.addEventListener("misas:detail", (e) => safe("camino", () => (e.detail && e.detail.p ? draw(e.detail.p) : clear())));
   });
 
-  // ---------- 11. Luz de vidriera sobre la Palabra del día ----------
+  // ---------- 11. Luz de vidriera en toda la web, que sigue al sol de Barcelona ----------
+  // Una sola capa fija encima de todo (sin recibir toques). La posición del sol se calcula con la hora real:
+  // por la mañana la luz entra desde la izquierda, a mediodía cae casi recta y por la tarde desde la derecha.
+  // Con el sol bajo, la mancha es larga, tenue y dorada; con el sol alto, corta, más clara y blanca.
+  // De noche no hay sol: queda solo un resplandor de velas muy tenue. Se recalcula una vez por minuto (no hay animación continua).
   safe("vitral", () => {
-    const inner = document.querySelector("#wordcol .dev-inner");
-    if (!inner || inner.querySelector(".x-glass")) return;
-    inner.insertAdjacentHTML("afterbegin", '<div class="x-glass" aria-hidden="true"></div>');
+    const LAT = 41.3874, LON = 2.1686, R = Math.PI / 180;
+    // Altura y acimut del sol (fórmulas aproximadas de la NOAA, error de menos de 1°)
+    function sunPos(date) {
+      const d = date.getTime() / DAYMS + 2440587.5 - 2451545.0;
+      const g = (357.529 + 0.98560028 * d) * R, q = 280.459 + 0.98564736 * d;
+      const L = (q + 1.915 * Math.sin(g) + 0.020 * Math.sin(2 * g)) * R, e = (23.439 - 0.00000036 * d) * R;
+      const ra = Math.atan2(Math.cos(e) * Math.sin(L), Math.cos(L)), dec = Math.asin(Math.sin(e) * Math.sin(L));
+      const H = ((18.697374558 + 24.06570982441908 * d) * 15 + LON) * R - ra, la = LAT * R;
+      const alt = Math.asin(Math.sin(la) * Math.sin(dec) + Math.cos(la) * Math.cos(dec) * Math.cos(H));
+      const az = Math.atan2(-Math.sin(H), Math.tan(dec) * Math.cos(la) - Math.sin(la) * Math.cos(H));
+      return { alt: alt / R, az: ((az / R) + 360) % 360 };
+    }
+    const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+    const smooth = (a, b, x) => { const k = clamp((x - a) / (b - a), 0, 1); return k * k * (3 - 2 * k); };
+    const mix = (c1, c2, k) => c1.map((v, i) => Math.round(v + (c2[i] - v) * k));
+    const rgb = (c) => "rgb(" + c.join(",") + ")";
+    const PANES = [[224, 82, 90], [242, 196, 67], [61, 134, 216], [47, 154, 90], [154, 90, 184]];
+    // La vidriera: dos ventanales góticos y un rosetón, con vidrios de colores separados por el plomo
+    let cells = "", k = 0;
+    const lancet = (x) => {
+      for (let r = 0; r < 5; r++) for (let c = 0; c < 2; c++) {
+        cells += '<rect class="p' + (k++ % 5) + '" x="' + (x + c * 36) + '" y="' + (40 + r * 44) + '" width="34" height="42"/>';
+      }
+      return '<path d="M' + x + ' 260V60Q' + x + ' 0 ' + (x + 35) + ' 0Q' + (x + 70) + ' 0 ' + (x + 70) + ' 60V260Z"/>';
+    };
+    const clip = lancet(40) + lancet(190);
+    for (let i = 0; i < 8; i++) {
+      const a0 = i * Math.PI / 4, a1 = a0 + Math.PI / 4, cx = 145, cy = 30, rr = 26;
+      cells += '<path class="p' + ((i + 2) % 5) + '" d="M' + cx + " " + cy + "L" + (cx + rr * Math.cos(a0)).toFixed(1) + " " + (cy + rr * Math.sin(a0)).toFixed(1) +
+        "A" + rr + " " + rr + " 0 0 1 " + (cx + rr * Math.cos(a1)).toFixed(1) + " " + (cy + rr * Math.sin(a1)).toFixed(1) + 'Z"/>';
+    }
+    const svg = '<svg viewBox="0 0 300 260" preserveAspectRatio="none" aria-hidden="true">' +
+      '<defs><clipPath id="xSunClip">' + clip + '<circle cx="145" cy="30" r="26"/></clipPath><filter id="xSunBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4.5"/></filter></defs>' +
+      '<g clip-path="url(#xSunClip)" filter="url(#xSunBlur)">' + cells + "</g></svg>";
+    const layer = document.createElement("div");
+    layer.className = "x-sun";
+    layer.setAttribute("aria-hidden", "true");
+    layer.innerHTML = '<div class="x-sun-wash"></div><div class="x-sun-win">' + svg + '</div><div class="x-velas"><i></i><i></i><i></i></div>';
+    document.body.appendChild(layer);
+    const win = layer.querySelector(".x-sun-win"), panes = [0, 1, 2, 3, 4].map((i) => layer.querySelectorAll(".p" + i));
+    let fixed = null;
+
+    function render() {
+      const s = sunPos(fixed || new Date());
+      const rise = smooth(-1, 4, s.alt);                 // 0 de noche, 1 con el sol ya arriba
+      const high = clamp(Math.sin(Math.max(s.alt, 0) * R) / Math.sin(45 * R), 0, 1);
+      const side = clamp((s.az - 180) / 75, -1, 1);      // −1 mañana (este), 0 mediodía, +1 tarde (oeste)
+      const warm = 1 - smooth(4, 32, s.alt);             // cuánto más dorada es la luz con el sol bajo
+      // Tono del sol: blanco cálido a mediodía; dorado pálido por la mañana; ámbar por la tarde; rosado al ponerse
+      const low = side < 0 ? [255, 206, 150] : [255, 160, 80];
+      let sun = mix([255, 248, 232], low, warm);
+      if (s.alt < 3 && side > 0) sun = mix(sun, [250, 120, 110], smooth(3, -1, s.alt));
+      const a = rise * (0.6 + 0.4 * high);
+      layer.style.setProperty("--sun-a", a.toFixed(3));
+      layer.style.setProperty("--sun-c", sun.join(","));
+      layer.style.setProperty("--sun-x", (50 - side * 26).toFixed(1) + "%");
+      layer.style.setProperty("--candle", smooth(0, -7, s.alt).toFixed(3));
+      layer.classList.toggle("off", a < 0.01);
+      // Ángulo y largo: con el sol bajo la luz entra inclinada y se alarga hacia abajo
+      win.style.transform = "translateX(-50%) skewX(" + (-side * (18 + 22 * warm)).toFixed(1) + "deg) scaleY(" + (0.85 + 1.35 * (1 - high)).toFixed(3) + ")";
+      const k2 = 0.3 + 0.45 * warm; // el color del sol tiñe los vidrios
+      panes.forEach((list, i) => { const c = rgb(mix(PANES[i], sun, k2)); list.forEach((el) => el.setAttribute("fill", c)); });
+    }
+    render();
+    setInterval(() => { if (!fixed && !document.hidden) render(); }, 60000);
+    document.addEventListener("visibilitychange", () => { if (!document.hidden && !fixed) render(); });
+    // Para probar otra hora desde la consola: MisasApp.sunAt("2026-11-16T17:00:00+01:00"); MisasApp.sunAt() vuelve a la hora real.
+    A.sunAt = (when) => { fixed = when ? new Date(when) : null; render(); return sunPos(fixed || new Date()); };
   });
 
   // ---------- 12. El año litúrgico en un círculo (Palabra del día) ----------
