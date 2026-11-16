@@ -1,8 +1,6 @@
 # https://jesuites.net/es/agenda-esglesies
-# 2026-11-09 · formato: html
+# 2026-11-16 · formato: html
 
-Viernes
-Hora: 20:30
 Martes
 Hora: 19:00
 Miércoles

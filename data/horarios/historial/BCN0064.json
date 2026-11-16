@@ -156,5 +156,225 @@
     "confianza": "baja"
    }
   ]
+ },
+ {
+  "comprobado": "2026-11-09",
+  "fuente": "F1",
+  "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+  "confianza": "media",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "martes"
+    ],
+    "inicio": "16:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Dimarts: 16h a 21h",
+    "fuente": "F1",
+    "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+    "comprobado": "2026-11-09",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "miercoles",
+     "jueves"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Dimecres i dijous: 10h a 13h i 16h a 21h",
+    "fuente": "F1",
+    "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+    "comprobado": "2026-11-09",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "miercoles",
+     "jueves"
+    ],
+    "inicio": "16:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Dimecres i dijous: 10h a 13h i 16h a 21h",
+    "fuente": "F1",
+    "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+    "comprobado": "2026-11-09",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "viernes"
+    ],
+    "inicio": "17:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Divendres: 17h a 21h",
+    "fuente": "F1",
+    "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+    "comprobado": "2026-11-09",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Dissabtes: 10h a 12h i 16h a 19h",
+    "fuente": "F1",
+    "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+    "comprobado": "2026-11-09",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "sabado"
+    ],
+    "inicio": "16:00",
+    "fin": null,
+    "idioma": null,
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Dissabtes: 10h a 12h i 16h a 19h",
+    "fuente": "F1",
+    "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+    "comprobado": "2026-11-09",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "lunes",
+     "martes",
+     "miercoles",
+     "jueves",
+     "viernes",
+     "sabado",
+     "vispera_festivo"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Laborables, vigílies i dissabtes: 19h30 (català)",
+    "vespertina_dominical": true,
+    "fuente": "F1",
+    "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+    "comprobado": "2026-11-09",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "10:00",
+    "fin": null,
+    "idioma": "es",
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 10h (castellano), 12h30 (català) i 19h30 (bilingüe)",
+    "fuente": "F1",
+    "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+    "comprobado": "2026-11-09",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": "ca",
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 10h (castellano), 12h30 (català) i 19h30 (bilingüe)",
+    "fuente": "F1",
+    "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+    "comprobado": "2026-11-09",
+    "confianza": "media"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo",
+     "festivo_precepto"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": "bilingue",
+    "temporada": {
+     "nombre": "Navidad",
+     "inicio": null,
+     "fin": null
+    },
+    "semanas_mes": [],
+    "notas": "Diumenges i festius: 10h (castellano), 12h30 (català) i 19h30 (bilingüe)",
+    "fuente": "F1",
+    "url": "http://www.cristrei.cat/2024/12/horaris-nadal-2024.html",
+    "comprobado": "2026-11-09",
+    "confianza": "media"
+   }
+  ]
  }
 ]

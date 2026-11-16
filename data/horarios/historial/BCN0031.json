@@ -192,5 +192,62 @@
     "confianza": "media"
    }
   ]
+ },
+ {
+  "comprobado": "2026-11-09",
+  "fuente": "F1",
+  "url": "https://misatradicional.es/laforja/#horarios",
+  "confianza": "alta",
+  "celebraciones": [
+   {
+    "tipo": "misa",
+    "dias": [
+     "domingo"
+    ],
+    "inicio": "12:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Santa Misa cantada 12:30h",
+    "fuente": "F1",
+    "url": "https://misatradicional.es/laforja/#horarios",
+    "comprobado": "2026-11-09",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "misa",
+    "dias": [
+     "miercoles"
+    ],
+    "inicio": "19:30",
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Santa Misa rezada 19:30h",
+    "fuente": "F1",
+    "url": "https://misatradicional.es/laforja/#horarios",
+    "comprobado": "2026-11-09",
+    "confianza": "alta"
+   },
+   {
+    "tipo": "confesion",
+    "dias": [],
+    "inicio": null,
+    "fin": null,
+    "idioma": null,
+    "temporada": null,
+    "semanas_mes": [],
+    "notas": "Confesiones antes de Misa",
+    "relativa_a_misa": {
+     "antes": true
+    },
+    "fuente": "F1",
+    "url": "https://misatradicional.es/laforja/#horarios",
+    "comprobado": "2026-11-09",
+    "confianza": "alta"
+   }
+  ]
  }
 ]

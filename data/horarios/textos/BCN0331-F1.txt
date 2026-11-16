@@ -1,5 +1,5 @@
 # https://www.santjosepbadalona.cat/p/informacio-general.html
-# 2026-10-29 · formato: html
+# 2026-11-16 · formato: html
 
 Serveis i activitats
 Horari de misses
@@ -133,8 +133,7 @@ Carta Pastoral de l'Arquebisbe
 Misses des de casa
 Power Point de la
 missa del diumenge
-(4)
-Diumenge XXX de durant l'any
-Diumenge XXIX de durant l'any
-Diumenge XXVIII de durant l'any
-Diumenge XXVII de durant l'any
+(3)
+Diumenge XXXIII de durant l'any
+Diumenge XXXII de durant l'any
+Diumenge XXXI de durant l'any - Tots Sants
