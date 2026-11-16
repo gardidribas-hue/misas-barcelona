@@ -1127,25 +1127,6 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
 .x-walk b { font-weight: 800; }
 .x-walk { pointer-events: none; }
 
-/* 11. Luz de vidriera en toda la web, según el sol de Barcelona (extras.js calcula --sun-a, --sun-c, --sun-x y --candle) */
-.x-sun { position: fixed; inset: 0; z-index: 35; pointer-events: none; overflow: hidden; contain: strict; --sun-a: 0; --sun-c: 255,248,232; --sun-x: 50%; --candle: 0; --sun-k: 1; }
-.x-sun-win, .x-sun-wash { opacity: calc(var(--sun-a) * var(--sun-k)); }
-.x-sun-win { position: absolute; left: var(--sun-x); top: -4vh; width: clamp(320px, 72vw, 900px); height: 64vh; transform-origin: 50% 0; opacity: calc(var(--sun-a) * var(--sun-k) * .4);
-  -webkit-mask: linear-gradient(180deg, #000 30%, transparent 100%); mask: linear-gradient(180deg, #000 30%, transparent 100%); }
-.x-sun-win svg { width: 100%; height: 100%; display: block; }
-.x-sun-wash { position: absolute; inset: 0; background: radial-gradient(60% 55% at var(--sun-x) 18%, rgba(var(--sun-c), .16), transparent 72%); }
-.x-sun.off .x-sun-win, .x-sun.off .x-sun-wash { display: none; }
-/* De noche: resplandor de velas, cálido y tenue, desde abajo */
-.x-velas { position: absolute; inset: 0; opacity: calc(var(--candle) * var(--sun-k)); }
-.x-velas i { position: absolute; bottom: -18vh; width: 70vmax; height: 46vh; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,170,70,.16), rgba(255,140,50,.06) 55%, transparent); animation: x-vela 5.5s ease-in-out infinite alternate; }
-.x-velas i:nth-child(1) { left: -30vmax; }
-.x-velas i:nth-child(2) { right: -30vmax; animation-duration: 7s; animation-delay: -2s; }
-.x-velas i:nth-child(3) { left: 50%; margin-left: -20vmax; width: 40vmax; height: 26vh; bottom: -14vh; opacity: .7; animation-duration: 4.3s; animation-delay: -1s; }
-@keyframes x-vela { 0% { opacity: 1; } 35% { opacity: .82; } 60% { opacity: .95; } 100% { opacity: .78; } }
-/* En oscuro la luz es más suave para no deslumbrar */
-:root[data-theme="dark"] .x-sun { --sun-k: .7; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .x-sun { --sun-k: .7; } }
-
 /* 12. Año litúrgico en un círculo */
 .x-year { display: grid; grid-template-columns: 104px 1fr; gap: 16px; align-items: center; margin-top: 14px; padding: 14px 16px 14px 12px; border-radius: 22px; background: color-mix(in srgb, var(--surface) 88%, transparent); }
 .x-year svg { width: 104px; height: 104px; display: block; }
@@ -1212,7 +1193,7 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
 @media (min-width: 861px) { .x-stamps { max-width: 520px; margin: 0 auto; } .x-cred { padding: 28px 32px; } }
 
 @media (prefers-reduced-motion: reduce) {
-  .x-velas i, .x-candle .fl, .x-candle-art.lighting .fl, .x-stamps li.fresh .s, .x-beads, .x-walk > span { animation: none; }
+  .x-candle .fl, .x-candle-art.lighting .fl, .x-stamps li.fresh .s, .x-beads, .x-walk > span { animation: none; }
 }
 
 /* 10. Etiqueta del tiempo litúrgico en su color (Palabra del día) */
