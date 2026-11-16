@@ -27,7 +27,6 @@
   }
 
   A.i18n("es", {
-    xWords: ["misa", "confesarte", "adorar"],
     xWalk: "<b>{m} min</b> a pie",
     xWalkLeave: "<b>{m} min</b> a pie · sal antes de las {h}",
     xWalkNote: "Línea recta: el camino real puede ser algo más largo.",
@@ -58,7 +57,6 @@
     xCredDone: "¡Credencial completa! Has visitado los nueve templos.",
   });
   A.i18n("ca", {
-    xWords: ["missa", "confessar-te", "adorar"],
     xWalk: "<b>{m} min</b> a peu",
     xWalkLeave: "<b>{m} min</b> a peu · surt abans de les {h}",
     xWalkNote: "Línia recta: el camí real pot ser una mica més llarg.",
@@ -89,32 +87,6 @@
     xCredDone: "Credencial completa! Has visitat els nou temples.",
   });
   const tr = (k) => { const v = t(k); return v == null ? "" : v; };
-
-  // ---------- 3. El título de Inicio va cambiando: misa, confesarte, adorar ----------
-  safe("titulo", () => {
-    let timer = null, i = 0;
-    const COL = ["", "var(--x-conf)", "var(--x-ador)"];
-    function setup() {
-      clearInterval(timer); i = 0;
-      const h1 = document.querySelector(".hero h1"), em = h1 && h1.querySelector("em");
-      if (!em) return;
-      h1.setAttribute("aria-label", h1.textContent); // el lector de pantalla oye siempre la frase con «misa»
-      em.classList.add("xword"); em.setAttribute("aria-hidden", "true"); em.style.removeProperty("color");
-      if (A.calm()) return;
-      timer = setInterval(() => {
-        if (document.hidden || A.state.mode !== "home") return;
-        const words = t("xWords"); i = (i + 1) % words.length;
-        em.classList.add("out");
-        setTimeout(() => {
-          em.textContent = words[i];
-          if (COL[i]) em.style.color = COL[i]; else em.style.removeProperty("color");
-          em.classList.remove("out");
-        }, 320);
-      }, 3000);
-    }
-    setup();
-    A.onLang(setup);
-  });
 
   // ---------- 9. Camino a pie hasta la parroquia que abres (si sabemos dónde estás) ----------
   safe("camino", () => {

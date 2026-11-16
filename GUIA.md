@@ -34,7 +34,7 @@ desde la rama `main`: https://gardidribas-hue.github.io/misas-barcelona/.
 | `styles.css` | Todo el diseño. Colores en variables (`--accent`, `--bg`…) al principio, con su versión oscura. |
 | `app.js` | Chat, mapa, filtros, fichas, ajustes, idiomas (textos en `I18N`, castellano y catalán). |
 | `devocion.js` | Palabra del día y Rosario. |
-| `extras.js` | Detalles visuales: título que cambia, camino a pie, vidriera, año litúrgico, cuentas del rosario, vela, imagen para compartir, credencial del peregrino, tarjetas que se inclinan y vibración. Cada bloque es independiente. |
+| `extras.js` | Detalles visuales: camino a pie, vidriera, año litúrgico, cuentas del rosario, vela, imagen para compartir, credencial del peregrino, tarjetas que se inclinan y vibración. Cada bloque es independiente. |
 | `horarios.js` | Mete en los datos los horarios automáticos de `data/horarios/horarios_app.js`. |
 | `config.js` | Ajustes que puede cambiar Guillem: mapa, contacto, formulario de avisos, GoatCounter. |
 | `sw.js` | Service worker: la web abre al instante en visitas repetidas y funciona sin conexión. |
