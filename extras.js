@@ -494,46 +494,6 @@
     A.onLang(() => render());
   });
 
-  // ---------- 18. Tarjetas que se inclinan un poco (ratón o al mover el móvil) ----------
-  safe("inclinar", () => {
-    if (A.calm()) return;
-    const MAX = 4;
-    // Ordenador: cada tarjeta sigue al ratón
-    if (matchMedia("(hover: hover) and (pointer: fine)").matches) {
-      document.addEventListener("pointermove", (e) => {
-        const card = e.target.closest && e.target.closest(".cards .card");
-        document.querySelectorAll(".card.x-tilt").forEach((c) => { if (c !== card) { c.classList.remove("x-tilt"); c.style.removeProperty("--rx"); c.style.removeProperty("--ry"); } });
-        if (!card) return;
-        const b = card.getBoundingClientRect(), x = (e.clientX - b.left) / b.width - 0.5, y = (e.clientY - b.top) / b.height - 0.5;
-        card.classList.add("x-tilt");
-        card.style.setProperty("--rx", (-y * MAX).toFixed(2) + "deg");
-        card.style.setProperty("--ry", (x * MAX).toFixed(2) + "deg");
-        card.style.setProperty("--gx", ((x + 0.5) * 100).toFixed(0) + "%");
-        card.style.setProperty("--gy", ((y + 0.5) * 100).toFixed(0) + "%");
-      }, { passive: true });
-      return;
-    }
-    // Móvil Android: todas las tarjetas se inclinan a la vez con el móvil (en iPhone pediría permiso, así que no)
-    if (!("DeviceOrientationEvent" in window) || typeof DeviceOrientationEvent.requestPermission === "function") return;
-    let base = null, raf = 0, rx = 0, ry = 0;
-    const root = document.documentElement;
-    addEventListener("deviceorientation", (e) => {
-      if (e.beta == null || e.gamma == null || document.hidden) return;
-      if (!base) base = { b: e.beta, g: e.gamma };
-      const cl = (v) => Math.max(-MAX, Math.min(MAX, v));
-      rx = rx * 0.8 + cl(-(e.beta - base.b) * 0.25) * 0.2;
-      ry = ry * 0.8 + cl((e.gamma - base.g) * 0.25) * 0.2;
-      if (!raf) raf = requestAnimationFrame(() => {
-        raf = 0;
-        root.style.setProperty("--trx", rx.toFixed(2) + "deg");
-        root.style.setProperty("--try", ry.toFixed(2) + "deg");
-        root.style.setProperty("--tgx", (50 + ry * 10).toFixed(0) + "%");
-      });
-    }, { passive: true });
-    root.classList.add("x-tilt-dev");
-    document.addEventListener("visibilitychange", () => { if (!document.hidden) base = null; });
-  });
-
   // ---------- 19. Vibración suave al tocar los botones principales (solo móviles que lo permiten) ----------
   safe("vibrar", () => {
     if (!navigator.vibrate) return;
