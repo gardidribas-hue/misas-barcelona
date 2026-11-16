@@ -284,12 +284,23 @@
   const toFC = (areas) => ({ type: "FeatureCollection", features: areas.map((a) => ({ type: "Feature", properties: { name: a.name }, geometry: a.geometry })) });
   const MapView = { markers: new Map(), ready: false };
 
+  // Iconos del mapa: una iglesia pequeña para cada parroquia y la silueta propia de los tres templos más conocidos.
+  // Cada icono: [viewBox, cuerpo (color de la vista), detalles (puertas y ventanas, del color del borde)].
+  const CHURCH = {
+    small: ["-2 -2 28 31", "M11 0h2v1.8h2v1.8h-2V7h-2V3.6H9V1.8h2zM12 6l4 5v4.5H8V11zM2 27V17.5l10-5.5 10 5.5V27z", "M10 27v-3.6a2 2 0 0 1 4 0V27zM11.2 14.5v-1.6a.8.8 0 0 1 1.6 0v1.6z"],
+    "sagrada-familia": ["-2 -2 52 52", "M20.8 32V16.34Q20.8 7.7 24 5Q27.2 7.7 27.2 16.34V32ZM14.1 32V19.82Q14.1 13.1 16.6 11Q19.1 13.1 19.1 19.82V32ZM28.9 32V19.82Q28.9 13.1 31.4 11Q33.9 13.1 33.9 19.82V32ZM9.4 34V22.98Q9.4 16.9 11.5 15Q13.6 16.9 13.6 22.98V34ZM34.4 34V22.98Q34.4 16.9 36.5 15Q38.6 16.9 38.6 22.98V34ZM4.4 34V25.3Q4.4 20.5 6.4 19Q8.4 20.5 8.4 25.3V34ZM39.6 34V25.3Q39.6 20.5 41.6 19Q43.6 20.5 43.6 25.3V34ZM22.9 0h2.2v1.5h1.6v2h-1.6V6h-2.2V3.5h-1.6v-2h1.6zM3 46V32h42v14z", "M21.5 46v-5a2.5 2.5 0 0 1 5 0v5zM11 46v-4a2 2 0 0 1 4 0v4zM33 46v-4a2 2 0 0 1 4 0v4z"],
+    "catedral-basilica-de-barcelona": ["-2 -2 52 52", "M24 1L26.6 17H21.4ZM17 46V24L24 14.5L31 24V46ZM7 46V18H13V46ZM10 3L13 18H7ZM35 46V18H41V46ZM38 3L41 18H35ZM3 46V30H17V46ZM31 46V30H45V46ZM15 21L16.2 30H13.8ZM33 21L34.2 30H31.8ZM4.5 24L5.6 30H3.4ZM43.5 24L44.6 30H42.4Z", "M21 46V37Q21 32 24 30Q27 32 27 37V46ZM21.8 24.5a2.2 2.2 0 1 0 4.4 0a2.2 2.2 0 1 0-4.4 0ZM9.2 34v-4.5a.8.8 0 0 1 1.6 0V34ZM37.2 34v-4.5a.8.8 0 0 1 1.6 0V34Z"],
+    "santa-maria-del-mar-basilica": ["-2 -2 52 52", "M5 46V20H13V46ZM6 20V9H12V20ZM5 9V6.5H13V9ZM35 46V20H43V46ZM36 20V9H42V20ZM35 9V6.5H43V9ZM13 46V17L24 14L35 17V46Z", "M18.4 25a5.6 5.6 0 1 0 11.2 0a5.6 5.6 0 1 0-11.2 0ZM21.8 25a2.2 2.2 0 1 1 4.4 0a2.2 2.2 0 1 1-4.4 0ZM20.5 46V39Q20.5 34.5 24 33Q27.5 34.5 27.5 39V46ZM8.2 18v-5a.8.8 0 0 1 1.6 0v5ZM38.2 18v-5a.8.8 0 0 1 1.6 0v5Z"]
+  };
   function pinEl(p) {
-    const el = document.createElement("button");
-    el.type = "button"; el.className = "pin"; el.title = p.name; el.setAttribute("aria-label", p.name);
+    const el = document.createElement("button"), big = CHURCH[p.id], ic = big || CHURCH.small;
+    el.type = "button"; el.className = big ? "pin big" : "pin"; el.title = p.name; el.setAttribute("aria-label", p.name);
+    el.innerHTML = `<svg viewBox="${ic[0]}" aria-hidden="true" focusable="false"><path class="pb" d="${ic[1]}"/><path class="pd" fill-rule="evenodd" d="${ic[2]}"/></svg><span class="pl"></span>`;
     el.addEventListener("click", (e) => { e.stopPropagation(); openDetail(p.id, false); });
     return el;
   }
+  // Tamaño de las iglesias según lo cerca que esté el mapa: pequeñas al alejar para que no se tapen unas a otras
+  const zoomClass = (z) => $("map").dataset.z = z < 11.5 ? "far" : z < 13.5 ? "mid" : "near";
   function boundsOf(geoms) {
     let w = 180, s = 90, e = -180, n = -90;
     for (const g of geoms) for (const poly of g.coordinates) for (const c of poly[0]) {
@@ -301,6 +312,7 @@
   function initMapLibre() {
     const map = MapView.map = new maplibregl.Map({ container: "map", style: CFG.mapStyle, center: [CFG.center[1], CFG.center[0]], zoom: CFG.zoom, attributionControl: { compact: true } });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+    zoomClass(map.getZoom()); map.on("zoom", () => zoomClass(map.getZoom()));
     let loaded = false, pending = [];
     const whenLoaded = (fn) => loaded ? fn() : pending.push(fn);
     map.on("load", () => {
@@ -336,7 +348,7 @@
         for (const p of list) {
           if (p.lat == null || MapView.markers.has(p.id)) continue;
           const el = pinEl(p);
-          MapView.markers.set(p.id, new maplibregl.Marker({ element: el }).setLngLat([p.lng, p.lat]).addTo(map));
+          MapView.markers.set(p.id, new maplibregl.Marker({ element: el, anchor: "bottom" }).setLngLat([p.lng, p.lat]).addTo(map));
           el.setAttribute("aria-label", p.name); // MapLibre pone «Map marker»: que el lector de pantalla diga la parroquia
         }
       },
@@ -344,7 +356,7 @@
         for (const [pid, mk] of MapView.markers) {
           const el = mk.getElement(), on = pid === id;
           el.classList.toggle("on", on);
-          el.textContent = on ? DATA.find((x) => x.id === pid).name : "";
+          el.querySelector(".pl").textContent = on ? DATA.find((x) => x.id === pid).name : "";
         }
       },
       setArea(area, outlines) {
@@ -390,6 +402,7 @@
         area.setStyle({ fillColor: line, fillOpacity: 0.26, strokeColor: line, strokeWeight: 2.5, clickable: false });
       };
       MapView.recolor();
+      zoomClass(map.getZoom()); map.addListener("zoom_changed", () => zoomClass(map.getZoom()));
       google.maps.event.addListenerOnce(map, "tilesloaded", () => { $("map").classList.add("ready"); MapView.onLoad && MapView.onLoad(); });
       outlines.addListener("mouseover", (e) => outlines.overrideStyle(e.feature, { fillOpacity: 0.14 }));
       outlines.addListener("mouseout", () => outlines.revertStyle());
@@ -409,7 +422,7 @@
           for (const [pid, mk] of MapView.markers) {
             const el = mk.content, on = pid === id;
             el.classList.toggle("on", on);
-            el.textContent = on ? DATA.find((x) => x.id === pid).name : "";
+            el.querySelector(".pl").textContent = on ? DATA.find((x) => x.id === pid).name : "";
             mk.zIndex = on ? 10 : null;
           }
         },
