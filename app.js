@@ -284,12 +284,24 @@
   const toFC = (areas) => ({ type: "FeatureCollection", features: areas.map((a) => ({ type: "Feature", properties: { name: a.name }, geometry: a.geometry })) });
   const MapView = { markers: new Map(), ready: false };
 
+  // Iconos del mapa: una iglesia pequeña para cada parroquia y la silueta propia de los tres templos más conocidos.
+  // La Sagrada Família es el mismo dibujo del logo, simplificado.
+  // Cada icono: [viewBox, cuerpo (color de la vista), detalles (puertas y ventanas, del color del borde)].
+  const CHURCH = {
+    small: ["-2 -2 28 31", "M11 0h2v1.8h2v1.8h-2V7h-2V3.6H9V1.8h2zM12 6l4 5v4.5H8V11zM2 27V17.5l10-5.5 10 5.5V27z", "M10 27v-3.6a2 2 0 0 1 4 0V27zM11.2 14.5v-1.6a.8.8 0 0 1 1.6 0v1.6z"],
+    "sagrada-familia": ["2 8 508 600", "M215 587L226 294L228 272L230 252L232 232L234 214L236 196L238 179L240 163L242 147L245 132L247 118L251 104L261 104L265 118L267 132L270 147L272 163L274 179L276 196L278 214L280 232L282 252L284 272L286 294L297 587ZM99 587L133 340L136 321L140 303L143 286L147 270L150 254L153 238L157 223L160 209L164 195L168 182L172 169L181 169L183 182L184 195L185 209L185 223L185 238L186 254L185 270L185 286L185 303L185 321L185 340L166 587ZM346 587L327 340L327 321L327 303L327 286L327 270L326 254L327 238L327 223L327 209L328 195L329 182L331 169L340 169L344 182L348 195L352 209L355 223L359 238L362 254L365 270L369 286L372 303L376 321L379 340L413 587ZM50 587L86 384L90 368L94 353L97 339L101 324L104 311L108 297L112 284L115 272L119 259L123 248L128 236L137 236L138 248L139 259L139 272L139 284L138 297L138 311L137 324L137 339L136 353L135 368L134 384L109 587ZM403 587L378 384L377 368L376 353L375 339L375 324L374 311L374 297L373 284L373 272L373 259L374 248L375 236L384 236L389 248L393 259L397 272L400 284L404 297L408 311L411 324L415 339L418 353L422 368L426 384L462 587ZM150 587L170 370L173 353L175 337L178 321L180 306L182 292L185 278L187 264L190 251L193 238L196 226L200 214L208 214L210 226L212 238L213 251L214 264L214 278L215 292L216 306L216 321L217 337L217 353L217 370L209 587ZM303 587L295 370L295 353L295 337L296 321L296 306L297 292L298 278L298 264L299 251L300 238L302 226L304 214L312 214L316 226L319 238L322 251L325 264L327 278L330 292L332 306L334 321L337 337L339 353L342 370L362 587ZM256 34M232 56M22 587L44 478L126 440L187 452L256 404L325 452L386 440L468 478L490 587ZM124 219a11 11 0 1 0 21 0a11 11 0 1 0 -21 0ZM366 219a11 11 0 1 0 21 0a11 11 0 1 0 -21 0ZM195 197a10 10 0 1 0 21 0a10 10 0 1 0 -21 0ZM297 197a10 10 0 1 0 21 0a10 10 0 1 0 -21 0ZM168 153a11 11 0 1 0 22 0a11 11 0 1 0 -22 0ZM323 153a11 11 0 1 0 22 0a11 11 0 1 0 -22 0ZM245 92a11 11 0 1 0 22 0a11 11 0 1 0 -22 0ZM250 28h12v71h-12zM233 50h46v12h-46z", "M249 484L263 484L263 455L256 445L249 455ZM249 436L263 436L263 409L256 400L249 409ZM249 392L263 392L263 367L256 359L249 367ZM250 351L262 351L262 329L256 321L250 329ZM250 314L262 314L262 293L256 286L250 293ZM250 280L262 280L262 260L256 254L250 260ZM250 248L262 248L262 230L256 224L250 230ZM136 499L148 499L150 475L145 467L138 475ZM140 460L152 460L154 438L149 430L142 438ZM144 423L156 423L158 403L153 396L146 403ZM148 389L159 389L161 370L156 364L150 370ZM151 358L162 358L164 340L159 333L153 340ZM155 328L165 328L167 311L162 305L157 311ZM158 300L168 300L170 284L165 279L160 284ZM364 499L376 499L374 475L367 467L362 475ZM360 460L372 460L370 438L363 430L358 438ZM356 423L368 423L366 403L359 396L354 403ZM353 389L364 389L362 370L356 364L351 370ZM350 358L361 358L359 340L353 333L348 340ZM347 328L357 328L355 311L350 305L345 311ZM344 300L354 300L352 284L347 279L342 284ZM85 512L96 512L99 494L95 487L88 494ZM90 481L101 481L103 464L99 458L93 464ZM95 452L105 452L108 436L103 430L97 436ZM99 425L109 425L111 409L107 404L101 409ZM103 399L113 399L115 384L111 379L105 384ZM107 374L116 374L119 360L115 355L109 360ZM110 350L120 350L122 337L118 332L113 337ZM416 512L427 512L424 494L417 487L413 494ZM411 481L422 481L419 464L413 458L409 464ZM407 452L417 452L415 436L409 430L404 436ZM403 425L413 425L411 409L405 404L401 409ZM399 399L409 399L407 384L401 379L397 384ZM396 374L405 374L403 360L397 355L393 360ZM392 350L402 350L399 337L394 332L390 337ZM179 508L190 508L191 488L186 481L181 488ZM182 474L192 474L193 455L188 449L183 455ZM184 443L194 443L195 425L190 419L185 425ZM186 413L196 413L197 396L192 391L187 396ZM188 385L198 385L198 369L194 364L189 369ZM190 359L199 359L200 344L196 338L191 344ZM191 334L201 334L202 320L197 314L192 320ZM322 508L333 508L331 488L326 481L321 488ZM320 474L330 474L329 455L324 449L319 455ZM318 443L328 443L327 425L322 419L317 425ZM316 413L326 413L325 396L320 391L315 396ZM314 385L324 385L323 369L318 364L314 369ZM313 359L322 359L321 344L316 338L312 344ZM311 334L321 334L320 320L315 314L310 320ZM106 587L119 495L126 481L138 473L149 473L158 481L163 495L156 587ZM223 587L227 472L236 452L249 441L263 441L276 452L285 472L289 587ZM356 587L349 495L354 481L363 473L374 473L386 481L393 495L406 587Z"],
+    "catedral-basilica-de-barcelona": ["-2 -2 52 52", "M24 1L26.6 17H21.4ZM17 46V24L24 14.5L31 24V46ZM7 46V18H13V46ZM10 3L13 18H7ZM35 46V18H41V46ZM38 3L41 18H35ZM3 46V30H17V46ZM31 46V30H45V46ZM15 21L16.2 30H13.8ZM33 21L34.2 30H31.8ZM4.5 24L5.6 30H3.4ZM43.5 24L44.6 30H42.4Z", "M21 46V37Q21 32 24 30Q27 32 27 37V46ZM21.8 24.5a2.2 2.2 0 1 0 4.4 0a2.2 2.2 0 1 0-4.4 0ZM9.2 34v-4.5a.8.8 0 0 1 1.6 0V34ZM37.2 34v-4.5a.8.8 0 0 1 1.6 0V34Z"],
+    "santa-maria-del-mar-basilica": ["-2 -2 52 52", "M5 46V20H13V46ZM6 20V9H12V20ZM5 9V6.5H13V9ZM35 46V20H43V46ZM36 20V9H42V20ZM35 9V6.5H43V9ZM13 46V17L24 14L35 17V46Z", "M18.4 25a5.6 5.6 0 1 0 11.2 0a5.6 5.6 0 1 0-11.2 0ZM21.8 25a2.2 2.2 0 1 1 4.4 0a2.2 2.2 0 1 1-4.4 0ZM20.5 46V39Q20.5 34.5 24 33Q27.5 34.5 27.5 39V46ZM8.2 18v-5a.8.8 0 0 1 1.6 0v5ZM38.2 18v-5a.8.8 0 0 1 1.6 0v5Z"]
+  };
   function pinEl(p) {
-    const el = document.createElement("button");
-    el.type = "button"; el.className = "pin"; el.title = p.name; el.setAttribute("aria-label", p.name);
+    const el = document.createElement("button"), big = CHURCH[p.id], ic = big || CHURCH.small;
+    el.type = "button"; el.className = big ? "pin big" : "pin"; el.title = p.name; el.setAttribute("aria-label", p.name);
+    el.innerHTML = `<svg viewBox="${ic[0]}" aria-hidden="true" focusable="false"><path class="pb" d="${ic[1]}"/><path class="pd" fill-rule="evenodd" d="${ic[2]}"/></svg><span class="pl"></span>`;
     el.addEventListener("click", (e) => { e.stopPropagation(); openDetail(p.id, false); });
     return el;
   }
+  // Tamaño de las iglesias según lo cerca que esté el mapa: pequeñas al alejar para que no se tapen unas a otras
+  const zoomClass = (z) => $("map").dataset.z = z < 11.5 ? "far" : z < 13.5 ? "mid" : "near";
   function boundsOf(geoms) {
     let w = 180, s = 90, e = -180, n = -90;
     for (const g of geoms) for (const poly of g.coordinates) for (const c of poly[0]) {
@@ -301,6 +313,7 @@
   function initMapLibre() {
     const map = MapView.map = new maplibregl.Map({ container: "map", style: CFG.mapStyle, center: [CFG.center[1], CFG.center[0]], zoom: CFG.zoom, attributionControl: { compact: true } });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+    zoomClass(map.getZoom()); map.on("zoom", () => zoomClass(map.getZoom()));
     let loaded = false, pending = [];
     const whenLoaded = (fn) => loaded ? fn() : pending.push(fn);
     map.on("load", () => {
@@ -336,7 +349,7 @@
         for (const p of list) {
           if (p.lat == null || MapView.markers.has(p.id)) continue;
           const el = pinEl(p);
-          MapView.markers.set(p.id, new maplibregl.Marker({ element: el }).setLngLat([p.lng, p.lat]).addTo(map));
+          MapView.markers.set(p.id, new maplibregl.Marker({ element: el, anchor: "bottom" }).setLngLat([p.lng, p.lat]).addTo(map));
           el.setAttribute("aria-label", p.name); // MapLibre pone «Map marker»: que el lector de pantalla diga la parroquia
         }
       },
@@ -344,7 +357,7 @@
         for (const [pid, mk] of MapView.markers) {
           const el = mk.getElement(), on = pid === id;
           el.classList.toggle("on", on);
-          el.textContent = on ? DATA.find((x) => x.id === pid).name : "";
+          el.querySelector(".pl").textContent = on ? DATA.find((x) => x.id === pid).name : "";
         }
       },
       setArea(area, outlines) {
@@ -390,6 +403,7 @@
         area.setStyle({ fillColor: line, fillOpacity: 0.26, strokeColor: line, strokeWeight: 2.5, clickable: false });
       };
       MapView.recolor();
+      zoomClass(map.getZoom()); map.addListener("zoom_changed", () => zoomClass(map.getZoom()));
       google.maps.event.addListenerOnce(map, "tilesloaded", () => { $("map").classList.add("ready"); MapView.onLoad && MapView.onLoad(); });
       outlines.addListener("mouseover", (e) => outlines.overrideStyle(e.feature, { fillOpacity: 0.14 }));
       outlines.addListener("mouseout", () => outlines.revertStyle());
@@ -409,7 +423,7 @@
           for (const [pid, mk] of MapView.markers) {
             const el = mk.content, on = pid === id;
             el.classList.toggle("on", on);
-            el.textContent = on ? DATA.find((x) => x.id === pid).name : "";
+            el.querySelector(".pl").textContent = on ? DATA.find((x) => x.id === pid).name : "";
             mk.zIndex = on ? 10 : null;
           }
         },
