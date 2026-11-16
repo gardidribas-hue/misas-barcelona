@@ -1148,6 +1148,9 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
 .x-beads circle.cur { fill: #2e6fd0; filter: drop-shadow(0 0 2.5px #6aa0ff); }
 .x-beads .cr { stroke: var(--line); stroke-width: 2.4; stroke-linecap: round; fill: none; transition: stroke .3s; }
 .x-beads .cr.on { stroke: #d9a21b; }
+.x-beads .xc { fill: #111; }
+:root[data-theme="dark"] .x-beads .xc { fill: var(--ink); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .x-beads .xc { fill: var(--ink); } }
 .x-beads .n { font: 600 13px var(--display); fill: var(--ink); }
 .x-beads .u { font: 800 5.6px var(--ui); letter-spacing: .06em; fill: var(--muted); }
 

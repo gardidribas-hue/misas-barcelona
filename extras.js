@@ -277,11 +277,11 @@
       n++;
     }
     s += `<circle class="pd" cx="${cx}" cy="${cy + r + 6}" r="1.9"/><circle class="pd" cx="${cx}" cy="${cy + r + 11}" r="1.9"/><circle class="pd" cx="${cx}" cy="${cy + r + 16}" r="1.9"/>`;
-    s += `<path class="cr" d="M${cx} ${cy + r + 20}v10M${cx - 4} ${cy + r + 23}h8"/><text x="${cx}" y="${cy + 2}" text-anchor="middle" class="n"></text><text x="${cx}" y="${cy + 12}" text-anchor="middle" class="u"></text></svg>`;
+    s += `<path class="cr" d="M${cx} ${cy + r + 20}v10M${cx - 4} ${cy + r + 23}h8"/><path class="xc" d="M${cx - 1.5} ${cy - 11}h3v22h-3zM${cx - 7} ${cy - 5.5}h14v3h-14z"/><text x="${cx}" y="${cy + 2}" text-anchor="middle" class="n"></text><text x="${cx}" y="${cy + 12}" text-anchor="middle" class="u"></text></svg>`;
     ring.innerHTML = s;
     document.body.appendChild(ring);
     const dots = [...ring.querySelectorAll("[data-b]")], pend = [...ring.querySelectorAll(".pd, .cr")];
-    const num = ring.querySelector("text.n"), unit = ring.querySelector("text.u");
+    const num = ring.querySelector("text.n"), unit = ring.querySelector("text.u"), xc = ring.querySelector(".xc");
     let raf = 0, last = -2;
     function update() {
       raf = 0;
@@ -308,7 +308,9 @@
       last = lit;
       dots.forEach((c, i) => { c.classList.toggle("on", i < lit); c.classList.toggle("cur", i === lit - 1); });
       pend.forEach((c) => c.classList.toggle("on", k >= 0));
-      num.textContent = k >= 0 ? (A.lang() === "ca" ? ["1r", "2n", "3r", "4t", "5è"][k] : (k + 1) + ".º") : "✝";
+      num.textContent = k >= 0 ? (A.lang() === "ca" ? ["1r", "2n", "3r", "4t", "5è"][k] : (k + 1) + ".º") : "";
+      // Antes del primer misterio, una cruz dibujada (no un carácter: algunos móviles lo pintan como emoji)
+      xc.style.display = k >= 0 ? "none" : "";
       unit.textContent = k >= 0 ? (A.lang() === "ca" ? "MISTERI" : "MISTERIO") : "";
     }
     const queue = () => { if (!raf) raf = requestAnimationFrame(update); };
