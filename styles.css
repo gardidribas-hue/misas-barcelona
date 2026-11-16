@@ -236,7 +236,7 @@ h1 em { color: var(--accent-strong); }
    del color de la vista (misa, confesión, adoración) con un borde que la separa del mapa. */
 .pin { --halo: #fff; appearance: none; padding: 0; margin: 0; display: block; border: 0; background: none; color: var(--accent-strong); cursor: pointer; line-height: 0; }
 .pin svg { display: block; width: var(--pw, 22px); height: auto; overflow: visible; filter: drop-shadow(0 1px 1.5px rgba(0,0,0,.28)); transition: width .2s var(--ease); }
-.pin .pb { fill: currentColor; stroke: var(--halo); stroke-width: 2.4px; stroke-linejoin: round; paint-order: stroke; }
+.pin .pb { fill: currentColor; stroke: var(--halo); stroke-width: 2.6px; vector-effect: non-scaling-stroke; stroke-linejoin: round; paint-order: stroke; }
 .pin .pd { fill: var(--halo); }
 .pin.big { z-index: 2; --pw: 38px; }
 #map[data-z="far"] .pin { --pw: 13px; }
