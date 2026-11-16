@@ -38,6 +38,11 @@
     xSeasonEnd: { adv: "Navidad", xmas: "el Bautismo del Señor", ord1: "el Miércoles de Ceniza", lent: "el Domingo de Ramos", holy: "el Domingo de Pascua", easter: "Pentecostés", ord2: "el Adviento" },
     xOrdLate: "Últimas semanas del tiempo ordinario",
     xLitCol: { v: "morado", w: "blanco", g: "verde", r: "rojo" }, xLitColT: "Color litúrgico de este día",
+    xSantosK1: "Hoy se celebra", xSantosK: "Hoy se celebran", xSantosOn: "Se celebra el {d}", xSantosOnN: "Se celebran el {d}",
+    xRank: { S: "solemnidad", F: "fiesta", M: "memoria", m: "memoria libre", C: "conmemoración" },
+    xCat: { mar: "Mártir", doc: "Doctor de la Iglesia", doc_f: "Doctora de la Iglesia", apo: "Apóstol", eva: "Evangelista", pas: "Pastor", vir: "Virgen", rel: "Religioso", rel_f: "Religiosa", san: "Santo", san_f: "Santa", mar0: "Virgen María", sen: "Fiesta del Señor", ang: "Ángeles", dif: "Difuntos", ded: "Dedicación", tie: "Tiempo litúrgico" },
+    xSunday: "este año coincide con domingo y no se celebra",
+    xMov: { fam: "Sagrada Familia de Jesús, María y José", bapt: "Bautismo del Señor", ash: "Miércoles de Ceniza", palm: "Domingo de Ramos", thu: "Jueves Santo", fri: "Viernes Santo", sat: "Sábado Santo", easter: "Domingo de Pascua", asc: "Ascensión del Señor", pent: "Pentecostés", mother: "Santa María, Madre de la Iglesia", trin: "Santísima Trinidad", corpus: "Santísimo Cuerpo y Sangre de Cristo", heart: "Sagrado Corazón de Jesús", iheart: "Inmaculado Corazón de María", king: "Jesucristo, Rey del universo" },
     xCandleT: "Enciende una vela",
     xCandleP: "Has llegado al final del rosario. Deja una vela encendida por tu intención: se queda encendida hoy en este móvil.",
     xCandleBtn: "Encender la vela",
@@ -68,6 +73,11 @@
     xSeasonEnd: { adv: "Nadal", xmas: "el Baptisme del Senyor", ord1: "el Dimecres de Cendra", lent: "el Diumenge de Rams", holy: "el Diumenge de Pasqua", easter: "Pentecosta", ord2: "l'Advent" },
     xOrdLate: "Últimes setmanes del temps ordinari",
     xLitCol: { v: "morat", w: "blanc", g: "verd", r: "vermell" }, xLitColT: "Color litúrgic d'aquest dia",
+    xSantosK1: "Avui se celebra", xSantosK: "Avui se celebren", xSantosOn: "Se celebra el {d}", xSantosOnN: "Se celebren el {d}",
+    xRank: { S: "solemnitat", F: "festa", M: "memòria", m: "memòria lliure", C: "commemoració" },
+    xCat: { mar: "Màrtir", doc: "Doctor de l'Església", doc_f: "Doctora de l'Església", apo: "Apòstol", eva: "Evangelista", pas: "Pastor", vir: "Verge", rel: "Religiós", rel_f: "Religiosa", san: "Sant", san_f: "Santa", mar0: "Mare de Déu", sen: "Festa del Senyor", ang: "Àngels", dif: "Difunts", ded: "Dedicació", tie: "Temps litúrgic" },
+    xSunday: "enguany coincideix amb diumenge i no se celebra",
+    xMov: { fam: "Sagrada Família de Jesús, Maria i Josep", bapt: "Baptisme del Senyor", ash: "Dimecres de Cendra", palm: "Diumenge de Rams", thu: "Dijous Sant", fri: "Divendres Sant", sat: "Dissabte Sant", easter: "Diumenge de Pasqua", asc: "Ascensió del Senyor", pent: "Pentecosta", mother: "Santa Maria, Mare de l'Església", trin: "Santíssima Trinitat", corpus: "Santíssim Cos i Sang de Crist", heart: "Sagrat Cor de Jesús", iheart: "Immaculat Cor de Maria", king: "Jesucrist, Rei de l'univers" },
     xCandleT: "Encén una espelma",
     xCandleP: "Has arribat al final del rosari. Deixa una espelma encesa per la teva intenció: es queda encesa avui en aquest mòbil.",
     xCandleBtn: "Encendre l'espelma",
@@ -202,12 +212,57 @@
         tag.title = tr("xLitColT");
         tag.innerHTML = `<i aria-hidden="true"></i>${A.esc(S[cur.k])} <small>· ${A.esc(t("xLitCol")[cur.lc])}</small>`;
       }
+      safe("santos", () => renderSantos(ms));
       box.innerHTML = `${svg}<div><p class="k" style="--c:${cur.c}">${tr("xLitK")}</p><b>${A.esc(name)}</b><p>${A.esc(txt)}</p></div>`;
     }
     document.addEventListener("misas:wordday", (e) => safe("anillo", () => render(e.detail && e.detail.date)));
     A.onLang(() => render());
     render();
   });
+
+  // ---------- Santos del día según el Calendario Romano General (en su color litúrgico) ----------
+  // Las fijas salen de data/santoral.js; las móviles se calculan con la Pascua.
+  function movables(ms) {
+    const y = new Date(ms).getUTCFullYear(), E = easter(y), at = (d) => d === ms;
+    const out = [];
+    const add = (k, rank, cat, c) => out.push([rank, cat, c, t("xMov")[k], k]);
+    const xmas = D(y, 11, 25), xd = new Date(xmas).getUTCDay();
+    const fam = xd === 0 ? D(y, 11, 30) : xmas + (7 - xd) * DAYMS;
+    if (at(fam)) add("fam", "F", "sen", "w");
+    const epi = D(y, 0, 6), bapt = epi + (7 - new Date(epi).getUTCDay()) * DAYMS;
+    if (at(bapt)) add("bapt", "F", "sen", "w");
+    const L = [["ash", -46, "C", "tie", "v"], ["palm", -7, "C", "sen", "r"], ["thu", -3, "C", "sen", "w"], ["fri", -2, "C", "sen", "r"], ["sat", -1, "C", "sen", "v"],
+      ["easter", 0, "S", "sen", "w"], ["asc", 42, "S", "sen", "w"], ["pent", 49, "S", "sen", "r"], ["mother", 50, "M", "mar0", "w"],
+      ["trin", 56, "S", "sen", "w"], ["corpus", 63, "S", "sen", "w"], ["heart", 68, "S", "sen", "w"], ["iheart", 69, "M", "mar0", "w"]];
+    for (const [k, off, rank, cat, c] of L) if (at(E + off * DAYMS)) add(k, rank, cat, c);
+    if (at(advent1(y) - 7 * DAYMS)) add("king", "S", "sen", "w");
+    return out;
+  }
+  function renderSantos(ms) {
+    const lit = $("xLitTag") || $("wordLit");
+    if (!lit) return;
+    let box = $("xSantos");
+    if (!box) { box = document.createElement("div"); box.id = "xSantos"; box.className = "x-santos"; lit.insertAdjacentElement("afterend", box); }
+    const d = new Date(ms), key = String(d.getUTCMonth() + 1).padStart(2, "0") + "-" + String(d.getUTCDate()).padStart(2, "0");
+    const ca = A.lang() === "ca", fixed = ((window.MISAS_SANTORAL || {})[key] || []).map((x) => [x[0], x[1], x[2], ca ? x[4] : x[3]]);
+    const mov = movables(ms), sunday = d.getUTCDay() === 0;
+    const list = mov.concat(fixed);
+    if (!list.length) { box.hidden = true; return; }
+    box.hidden = false;
+    const today = ms === Date.UTC(...todayKey().split("-").map((n, i) => i === 1 ? n - 1 : +n));
+    const df = new Intl.DateTimeFormat(ca ? "ca-ES" : "es-ES", { day: "numeric", month: "long", timeZone: "UTC" }).format(d);
+    const head = today ? tr(list.length > 1 ? "xSantosK" : "xSantosK1") : t(list.length > 1 ? "xSantosOnN" : "xSantosOn", { d: df });
+    const C = t("xCat"), R = t("xRank"), COL = t("xLitCol");
+    box.innerHTML = `<p class="k">${A.esc(head)}</p><ul>${list.map(([rank, cat, c, text], idx) => {
+      const i = text.indexOf(", "), name = i > 0 ? text.slice(0, i) : text, desc = i > 0 ? text.slice(i + 2) : "";
+      const fem = /^(Santa|Santas|Santes)\b/.test(name) && !/ y san| i sant/.test(name);
+      const label = C[fem && C[cat + "_f"] ? cat + "_f" : cat] || "";
+      // En domingo no se celebran las memorias ni las fiestas de santos (sí las solemnidades y las fiestas del Señor).
+      const off = sunday && idx >= mov.length && ((rank === "M" || rank === "m") || (rank === "F" && cat !== "sen"));
+      return `<li class="x-santo${off ? " off" : ""}" data-c="${c}"><i aria-hidden="true"></i><span><b>${A.esc(name)}</b>${desc ? ", " + A.esc(desc) : ""}` +
+        `<small>${A.esc([label, R[rank], COL[c]].filter(Boolean).join(" · "))}${off ? " · " + A.esc(tr("xSunday")) : ""}</small></span></li>`;
+    }).join("")}</ul>`;
+  }
 
   // ---------- 13. Cuentas del rosario que se encienden al bajar ----------
   safe("cuentas", () => {
