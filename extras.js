@@ -41,7 +41,7 @@
     xSantosK1: "Hoy se celebra", xSantosK: "Hoy se celebran", xSantosOn: "Se celebra el {d}", xSantosOnN: "Se celebran el {d}",
     xRank: { S: "solemnidad", F: "fiesta", M: "memoria", m: "memoria libre", C: "conmemoración" },
     xCat: { mar: "Mártir", doc: "Doctor de la Iglesia", doc_f: "Doctora de la Iglesia", apo: "Apóstol", eva: "Evangelista", pas: "Pastor", vir: "Virgen", rel: "Religioso", rel_f: "Religiosa", san: "Santo", san_f: "Santa", mar0: "Virgen María", sen: "Fiesta del Señor", ang: "Ángeles", dif: "Difuntos", ded: "Dedicación", tie: "Tiempo litúrgico" },
-    xSunday: "este año coincide con domingo y no se celebra",
+    xSunday: "este año coincide con domingo y no se celebra", xMore: "Leer más", xLess: "Leer menos",
     xMov: { fam: "Sagrada Familia de Jesús, María y José", bapt: "Bautismo del Señor", ash: "Miércoles de Ceniza", palm: "Domingo de Ramos", thu: "Jueves Santo", fri: "Viernes Santo", sat: "Sábado Santo", easter: "Domingo de Pascua", asc: "Ascensión del Señor", pent: "Pentecostés", mother: "Santa María, Madre de la Iglesia", trin: "Santísima Trinidad", corpus: "Santísimo Cuerpo y Sangre de Cristo", heart: "Sagrado Corazón de Jesús", iheart: "Inmaculado Corazón de María", king: "Jesucristo, Rey del universo" },
     xCandleT: "Enciende una vela",
     xCandleP: "Has llegado al final del rosario. Deja una vela encendida por tu intención: se queda encendida hoy en este móvil.",
@@ -76,7 +76,7 @@
     xSantosK1: "Avui se celebra", xSantosK: "Avui se celebren", xSantosOn: "Se celebra el {d}", xSantosOnN: "Se celebren el {d}",
     xRank: { S: "solemnitat", F: "festa", M: "memòria", m: "memòria lliure", C: "commemoració" },
     xCat: { mar: "Màrtir", doc: "Doctor de l'Església", doc_f: "Doctora de l'Església", apo: "Apòstol", eva: "Evangelista", pas: "Pastor", vir: "Verge", rel: "Religiós", rel_f: "Religiosa", san: "Sant", san_f: "Santa", mar0: "Mare de Déu", sen: "Festa del Senyor", ang: "Àngels", dif: "Difunts", ded: "Dedicació", tie: "Temps litúrgic" },
-    xSunday: "enguany coincideix amb diumenge i no se celebra",
+    xSunday: "enguany coincideix amb diumenge i no se celebra", xMore: "Llegir més", xLess: "Llegir menys",
     xMov: { fam: "Sagrada Família de Jesús, Maria i Josep", bapt: "Baptisme del Senyor", ash: "Dimecres de Cendra", palm: "Diumenge de Rams", thu: "Dijous Sant", fri: "Divendres Sant", sat: "Dissabte Sant", easter: "Diumenge de Pasqua", asc: "Ascensió del Senyor", pent: "Pentecosta", mother: "Santa Maria, Mare de l'Església", trin: "Santíssima Trinitat", corpus: "Santíssim Cos i Sang de Crist", heart: "Sagrat Cor de Jesús", iheart: "Immaculat Cor de Maria", king: "Jesucrist, Rei de l'univers" },
     xCandleT: "Encén una espelma",
     xCandleP: "Has arribat al final del rosari. Deixa una espelma encesa per la teva intenció: es queda encesa avui en aquest mòbil.",
@@ -197,17 +197,28 @@
         txt += " " + t("xLitKing", { d });
       }
       // 10. Etiqueta del tiempo litúrgico en su color (el resto de la página sigue igual)
-      const lit = $("wordLit");
-      if (lit) {
-        let tag = $("xLitTag");
-        if (!tag) { tag = document.createElement("p"); tag.id = "xLitTag"; tag.className = "x-littag"; lit.insertAdjacentElement("afterend", tag); }
-        tag.dataset.lc = cur.lc;
-        tag.title = tr("xLitColT");
-        tag.innerHTML = `<i aria-hidden="true"></i>${A.esc(S[cur.k])} <small>· ${A.esc(t("xLitCol")[cur.lc])}</small>`;
-      }
+      tagCur = cur;
+      paintTag();
       safe("santos", () => renderSantos(ms));
       box.innerHTML = `${svg}<div><p class="k" style="--c:${cur.c}">${tr("xLitK")}</p><b>${A.esc(name)}</b><p>${A.esc(txt)}</p></div>`;
     }
+    // El nombre del día («Miércoles de la XXXIII semana…», «Memoria de…») va dentro de la etiqueta del tiempo,
+    // para que esté todo junto. devocion.js lo sigue escribiendo en #wordLit (oculto) y aquí se copia.
+    let tagCur = null;
+    function paintTag() {
+      const lit = $("wordLit");
+      if (!lit || !tagCur) return;
+      lit.hidden = true;
+      let tag = $("xLitTag");
+      if (!tag) { tag = document.createElement("p"); tag.id = "xLitTag"; tag.className = "x-littag"; lit.insertAdjacentElement("afterend", tag); }
+      const day = lit.textContent.trim();
+      tag.dataset.lc = tagCur.lc;
+      tag.title = tr("xLitColT");
+      tag.innerHTML = `<span class="x-lt1"><i aria-hidden="true"></i>${A.esc(t("xSeason")[tagCur.k])} <small>· ${A.esc(t("xLitCol")[tagCur.lc])}</small></span>` +
+        (day ? `<span class="x-lt2">${A.esc(day)}</span>` : "");
+    }
+    const litEl = $("wordLit");
+    if (litEl) new MutationObserver(() => safe("etiqueta", paintTag)).observe(litEl, { childList: true, characterData: true, subtree: true });
     document.addEventListener("misas:wordday", (e) => safe("anillo", () => render(e.detail && e.detail.date)));
     A.onLang(() => render());
     render();
@@ -237,7 +248,7 @@
     let box = $("xSantos");
     if (!box) { box = document.createElement("div"); box.id = "xSantos"; box.className = "x-santos"; lit.insertAdjacentElement("afterend", box); }
     const d = new Date(ms), key = String(d.getUTCMonth() + 1).padStart(2, "0") + "-" + String(d.getUTCDate()).padStart(2, "0");
-    const ca = A.lang() === "ca", fixed = ((window.MISAS_SANTORAL || {})[key] || []).map((x) => [x[0], x[1], x[2], ca ? x[4] : x[3]]);
+    const ca = A.lang() === "ca", fixed = ((window.MISAS_SANTORAL || {})[key] || []).map((x, i) => [x[0], x[1], x[2], ca ? x[4] : x[3], key + "#" + i]);
     const mov = movables(ms), sunday = d.getUTCDay() === 0;
     const list = mov.concat(fixed);
     if (!list.length) { box.hidden = true; return; }
@@ -245,15 +256,27 @@
     const today = ms === Date.UTC(...todayKey().split("-").map((n, i) => i === 1 ? n - 1 : +n));
     const df = new Intl.DateTimeFormat(ca ? "ca-ES" : "es-ES", { day: "numeric", month: "long", timeZone: "UTC" }).format(d);
     const head = today ? tr(list.length > 1 ? "xSantosK" : "xSantosK1") : t(list.length > 1 ? "xSantosOnN" : "xSantosOn", { d: df });
-    const C = t("xCat"), R = t("xRank"), COL = t("xLitCol");
-    box.innerHTML = `<p class="k">${A.esc(head)}</p><ul>${list.map(([rank, cat, c, text], idx) => {
+    // Debajo de cada nombre, un párrafo breve sobre su vida (data/santos-vidas.js) y «Leer más» con el resto.
+    // El archivo pesa (todo el año en dos idiomas): se carga solo al abrir la Palabra, y al llegar se vuelve a pintar.
+    if (!window.MISAS_VIDAS && !renderSantos.loading) {
+      renderSantos.loading = true;
+      const sc = document.createElement("script");
+      sc.src = "data/santos-vidas.js";
+      sc.onload = () => safe("santos", () => renderSantos(renderSantos.ms));
+      sc.onerror = () => { renderSantos.loading = false; };
+      document.head.appendChild(sc);
+    }
+    renderSantos.ms = ms;
+    const V = window.MISAS_VIDAS || {}, vida = (ref) => { const m = /^(\d\d-\d\d)#(\d+)$/.exec(ref); const v = m ? (V[m[1]] || [])[+m[2]] : V[ref]; return v ? (ca ? [v[2], v[3]] : [v[0], v[1]]) : null; };
+    box.innerHTML = `<p class="k">${A.esc(head)}</p><ul>${list.map(([rank, cat, c, text, ref], idx) => {
       const i = text.indexOf(", "), name = i > 0 ? text.slice(0, i) : text, desc = i > 0 ? text.slice(i + 2) : "";
-      const fem = /^(Santa|Santas|Santes)\b/.test(name) && !/ y san| i sant/.test(name);
-      const label = C[fem && C[cat + "_f"] ? cat + "_f" : cat] || "";
       // En domingo no se celebran las memorias ni las fiestas de santos (sí las solemnidades y las fiestas del Señor).
       const off = sunday && idx >= mov.length && ((rank === "M" || rank === "m") || (rank === "F" && cat !== "sen"));
+      const v = vida(ref), sun = tr("xSunday");
       return `<li class="x-santo${off ? " off" : ""}" data-c="${c}"><i aria-hidden="true"></i><span><b>${A.esc(name)}</b>${desc ? ", " + A.esc(desc) : ""}` +
-        `<small>${A.esc([label, R[rank], COL[c]].filter(Boolean).join(" · "))}${off ? " · " + A.esc(tr("xSunday")) : ""}</small></span></li>`;
+        (off ? `<small>${A.esc(sun.charAt(0).toUpperCase() + sun.slice(1))}</small>` : "") +
+        (v ? `<span class="x-vida">${A.esc(v[0])}</span>` + (v[1] ? `<details class="x-mas"><summary><span class="m">${A.esc(tr("xMore"))}</span><span class="l">${A.esc(tr("xLess"))}</span></summary><span class="x-vida">${A.esc(v[1])}</span></details>` : "") : "") +
+        `</span></li>`;
     }).join("")}</ul>`;
   }
 

@@ -7,11 +7,11 @@
    Si algún día hay que desactivarlo: cambia este archivo por uno que solo haga
    self.registration.unregister() (ver GUIA.md). Sube VERSION si cambias la lista de PRECACHE
    o actualizas algo de fonts/, vendor/ o icons/ (esas carpetas se guardan sin volver a mirar la red). */
-const VERSION = "2026-11-16b";
+const VERSION = "2026-11-17";
 const CORE = "misas-core-" + VERSION, STATIC = "misas-static-" + VERSION, TILES = "misas-tiles";
 const PRECACHE = [
   "./", "index.html", "styles.css", "app.js", "config.js", "zonas.js", "horarios.js", "devocion.js", "extras.js",
-  "data/parroquias.js", "data/geo.js", "data/citas.js", "data/oraciones.js", "data/santoral.js", "data/horarios/horarios_app.js",
+  "data/parroquias.js", "data/geo.js", "data/citas.js", "data/oraciones.js", "data/santoral.js", "data/santos-vidas.js", "data/horarios/horarios_app.js",
   "legal.html", "manifest.webmanifest"
 ];
 const STATIC_FILES = [
