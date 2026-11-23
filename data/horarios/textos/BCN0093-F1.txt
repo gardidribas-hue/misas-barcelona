@@ -1,5 +1,5 @@
 # https://www.montalegre.org/es/horarios/misas/
-# 2026-11-16 · formato: html
+# 2026-11-23 · formato: html
 
 Misas - Montalegre
 ca
@@ -20,8 +20,6 @@ Lunes a sábado | 12:00
 18:00 | 10:00
 19:00 |
 Descargar los horarios en PDF
-19
-A las 19:30h conferencia Entre el like y el amor al próximo. Desafíos éticos de la cultura digital, a cargo del Dr. Xavier Muñoz.
 8
 Celebración de la Novena de la Inmaculada en Montalegre del 30-11-26 al 8-12-26
 10

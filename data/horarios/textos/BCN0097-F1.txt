@@ -1,19 +1,22 @@
 # https://jesuites.net/es/agenda-esglesies
-# 2026-11-16 · formato: html
+# 2026-11-23 · formato: html
 
-Martes
-Hora: 19:00
-Miércoles
-Hora: 19:00
-Jueves
-Hora: 20:30
-En Adoració - Novembre 2026
-21 Nov
+28 Nov
 Sábado
-Hora: 20:30
+Hora: 17:00
+Martes
+Hora: 19:30
 13 Dec
 Domingo
 Hora: 19:00
+Miércoles
+Hora: 21:00
+Jueves
+Hora: 19:00
+Missa del pollet al Casal Loiola
+Jueves
+Hora: 23:30
+Missa del gall al Casal Loiola
 23 Jan
 Sábado
 Hora: 17:30
