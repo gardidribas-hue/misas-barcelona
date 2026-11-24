@@ -1,0 +1,26 @@
+{
+ "fecha": "2026-11-24",
+ "revisados": 5,
+ "actualizados": [],
+ "cambios": [],
+ "caidas": [],
+ "discrepancias": [],
+ "sin_horario": [
+  {
+   "id": "BCN0092",
+   "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
+  }
+ ],
+ "pendientes": [],
+ "sospechosos": [
+  {
+   "id": "BCN0003",
+   "nombre": "Basílica de la Puríssima Concepció",
+   "motivos": [
+    "hora fuera de 06:00–23:00: adoracion 01:00"
+   ]
+  }
+ ],
+ "osm": "OpenStreetMap: 540 iglesias católicas en la zona, 12 con horario de misas"
+}

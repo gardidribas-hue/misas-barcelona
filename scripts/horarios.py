@@ -47,15 +47,22 @@ FCOLS = {
 }
 
 
+def eliminados():
+    """IDs de los templos quitados a mano (data/horarios/eliminados.json): no se importan ni se muestran."""
+    f = OUT / "eliminados.json"
+    return set(json.loads(f.read_text("utf-8"))["templos"]) if f.exists() else set()
+
+
 def importar(xlsx):
     import openpyxl
+    fuera = eliminados()
     ws = openpyxl.load_workbook(xlsx, data_only=True)["Fuentes"]
     filas = list(ws.iter_rows(values_only=True))
     cab = filas[0]
     lugares = []
     for f in filas[1:]:
         r = dict(zip(cab, f))
-        if not r.get("ID"):
+        if not r.get("ID") or r.get("ID") in fuera:
             continue
         lug = {v: r.get(k) for k, v in COLS.items()}
         lug["cp"] = str(lug["cp"]) if lug["cp"] is not None else None
@@ -723,6 +730,9 @@ def actualizar(ids=None):
             lug["fuentes"]["F1"] = {"url": cambiadas[lug["id"]], "web_revisada": True}
     datos = cargar(OUT / "horarios.json", {"meta": {}, "templos": {}})
     estado = cargar(OUT / "estado.json", {})
+    for tid in eliminados():  # templos quitados a mano: fuera también de los horarios guardados
+        datos["templos"].pop(tid, None)
+        estado.pop(tid, None)
     informe = {k: [] for k in ("actualizados", "cambios", "caidas", "discrepancias", "sin_horario", "pendientes", "sospechosos")}
     sel = [l for l in lugares if not ids or l["id"] in ids]
     for n, lug in enumerate(sel, 1):
