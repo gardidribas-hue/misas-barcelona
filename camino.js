@@ -30,18 +30,22 @@
   .cm-pill .chev { color: var(--muted); font-size: 1rem; margin-left: 2px; }
   /* Panel «Tu camino» */
   .cm-panel { position: fixed; inset: 0; z-index: 90; background: var(--bg); color: var(--ink); overflow-y: auto; }
-  .cm-head { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; padding: 14px 18px 10px; background: var(--bg); }
+  .cm-head { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; padding: 26px 22px 18px; background: var(--bg); }
   .cm-head .k { margin: 0; font: 800 .6875rem/1 var(--ui); letter-spacing: .08em; text-transform: uppercase; color: var(--accent-strong); }
-  .cm-head h1 { margin: 2px 0 0; font: 400 2.25rem/1.05 var(--display); }
+  .cm-head h1 { margin: 0; font: 400 2.5rem/1.05 var(--display); }
   .cm-head h1 em { color: var(--accent); }
   .cm-x { width: 40px; height: 40px; border: 0; border-radius: 50%; background: var(--surface); color: var(--ink); display: grid; place-items: center; }
   .cm-x svg { width: 18px; height: 18px; }
-  .cm-road { margin: 0 14px; border-radius: 24px; overflow: hidden; background: var(--accent-soft); }
+  .cm-road { margin: 6px 14px 0; border-radius: 26px; overflow: hidden; background: var(--rd-sky);
+    --rd-sky: #f3ecfb; --rd-h1: #e3d4f5; --rd-h2: #d2bbee; --rd-h3: #bf9fe4; --rd-h4: #a985d6; --rd-road: #4a2a7a; --rd-line: #f5c542; --rd-post: #8a7aa3; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cm-road { --rd-sky: #221b30; --rd-h1: #2d2440; --rd-h2: #382c50; --rd-h3: #44355f; --rd-h4: #503f70; --rd-road: #120d1a; --rd-line: #e9c96e; --rd-post: #9d8cb8; } }
+  :root[data-theme="dark"] .cm-road { --rd-sky: #221b30; --rd-h1: #2d2440; --rd-h2: #382c50; --rd-h3: #44355f; --rd-h4: #503f70; --rd-road: #120d1a; --rd-line: #e9c96e; --rd-post: #9d8cb8; }
   .cm-road svg { display: block; width: 100%; height: auto; }
-  .cm-road .lb { font: 800 10px var(--ui); fill: var(--accent-strong); letter-spacing: .02em; }
+  .cm-road .lb { font: 800 10px var(--ui); fill: var(--accent-strong); letter-spacing: .02em; paint-order: stroke; stroke: var(--rd-sky); stroke-width: 3px; stroke-linejoin: round; }
+  .cm-road text[text-anchor="middle"] { stroke: none; }
   .cm-road .lb.off { fill: var(--muted); font-weight: 700; }
-  .cm-body { padding: 4px 18px 40px; }
-  .cm-sec { margin: 24px 0 10px; font: 800 .75rem/1 var(--ui); letter-spacing: .08em; text-transform: uppercase; color: var(--accent-strong); }
+  .cm-body { padding: 8px 20px 48px; }
+  .cm-sec { margin: 32px 0 12px; font: 800 .75rem/1 var(--ui); letter-spacing: .08em; text-transform: uppercase; color: var(--accent-strong); }
   .cm-card { padding: 16px; border-radius: 20px; background: var(--surface); margin-bottom: 10px; }
   .cm-card h3 { margin: 0; font: 600 1.125rem/1.25 var(--display); }
   .cm-card p { margin: 6px 0 0; font: 500 .8125rem/1.45 var(--ui); color: var(--muted); }
@@ -155,36 +159,44 @@
       `<text x="27" y="33" text-anchor="middle" style="font:500 ${num > 99 ? 15 : 18}px var(--display);fill:${done ? "#fff" : "var(--muted)"}">${num}</text></svg>`;
   }
 
-  // Camino que se pierde hacia el fondo, con los hitos a lo largo
+  // Camino entre colinas redondeadas que serpentea hasta el horizonte (sin sol: Guillem no quiere luces ni sol)
   function road() {
-    const W = 360, H = 230, hy = 52; // horizonte
-    // Centro del camino según la profundidad t (0 = cerca, 1 = horizonte), con una curva suave
-    const cx = (t) => 172 + 40 * Math.sin(t * 3.2) * (1 - t * 0.4);
-    const y = (t) => H - (H - hy) * (1 - Math.pow(1 - t, 1.8));
-    const half = (t) => 110 * (1 - t) + 3;
-    let L = [], R = [];
-    for (let i = 0; i <= 40; i++) { const t = i / 40; L.push([cx(t) - half(t), y(t)]); R.push([cx(t) + half(t), y(t)]); }
-    const poly = [...L, ...R.reverse()].map((p) => p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" L");
-    let dash = "";
-    for (let i = 0; i < 18; i++) { const t1 = i / 18, t2 = t1 + 0.022; if (t1 > 0.94) break; dash += `M${cx(t1).toFixed(1)} ${y(t1).toFixed(1)} L${cx(t2).toFixed(1)} ${y(t2).toFixed(1)} `; }
-    const hills = `<path d="M0 ${hy + 8} Q 60 ${hy - 18} 120 ${hy + 2} T 240 ${hy - 4} T 360 ${hy + 6} V ${H} H 0Z" fill="color-mix(in srgb, var(--accent) 16%, var(--bg))"/>` +
-      `<path d="M0 ${hy + 30} Q 90 ${hy + 6} 180 ${hy + 26} T 360 ${hy + 22} V ${H} H 0Z" fill="color-mix(in srgb, var(--accent) 8%, var(--bg))"/>`;
-    const miles = [[0.08, "Hoy · 12 días", 1, 1], [0.27, "7 días", 1, 0], [0.5, "40 días", 0, 0], [0.7, "50 días", 0, 0], [0.86, "100 días", 0, 0]];
+    const W = 360, H = 250;
+    const K = [[150, 292, 64], [214, 214, 42], [150, 158, 23], [206, 118, 11], [180, 92, 5], [190, 78, 1.4]];
+    const E = [[2 * K[0][0] - K[1][0], 2 * K[0][1] - K[1][1], K[0][2]], ...K, [2 * K[5][0] - K[4][0], 2 * K[5][1] - K[4][1], K[5][2]]];
+    const cr = (p0, p1, p2, p3, t) => 0.5 * (2 * p1 + (-p0 + p2) * t + (2 * p0 - 5 * p1 + 4 * p2 - p3) * t * t + (-p0 + 3 * p1 - 3 * p2 + p3) * t * t * t);
+    const S = [];
+    for (let i = 0; i < K.length - 1; i++) for (let j = 0; j < 20; j++) { const t = j / 20; S.push([0, 1, 2].map((k) => cr(E[i][k], E[i + 1][k], E[i + 2][k], E[i + 3][k], t))); }
+    S.push(K[K.length - 1]);
+    const L = [], R = [];
+    S.forEach(([x, y, w], i) => { const p = S[Math.max(0, i - 1)], q = S[Math.min(S.length - 1, i + 1)]; let dx = q[0] - p[0], dy = q[1] - p[1]; const n = Math.hypot(dx, dy) || 1; dx /= n; dy /= n; L.push([x + dy * w, y - dx * w]); R.push([x - dy * w, y + dx * w]); });
+    const P = (A) => A.map((p) => p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" L");
+    const fill = "M" + P(L) + " L" + P(R.slice().reverse()) + "Z";
+    const mid = "M" + P(S.slice(0, Math.round(S.length * .93)).map((p) => [p[0], p[1]]));
+    const at = (f) => S[Math.round(f * (S.length - 1))];
+    // Hitos: [posición en el camino, texto, conseguido, lado]
+    const miles = [[0.34, "7 días", 1, 1], [0.43, "40 días", 0, -1], [0.62, "50 días", 0, 1], [0.8, "100 días", 0, -1]];
     let m = "";
-    miles.forEach(([t, lb, ok, me], i) => {
-      const x = cx(t), yy = y(t), s = 1 - t * 0.75, side = i % 2 ? 1 : -1;
-      const px = x + side * (half(t) + 8 * s), r = 9 * s + 2;
-      if (me) {
-        m += `<circle cx="${x}" cy="${yy}" r="${11}" fill="var(--bg)" stroke="var(--accent-strong)" stroke-width="3"/><circle cx="${x}" cy="${yy}" r="4" fill="var(--accent-strong)"/>` +
-          `<text class="lb" x="${x + 18}" y="${yy + 4}">${lb}</text>`;
-      } else {
-        m += `<path d="M${px} ${yy} v${-26 * s}" stroke="${ok ? "var(--accent-strong)" : "var(--faint)"}" stroke-width="${1.6}" />` +
-          `<circle cx="${px}" cy="${yy - 26 * s - r}" r="${r}" fill="${ok ? "var(--accent)" : "var(--bg)"}" stroke="${ok ? "var(--accent)" : "var(--faint)"}" stroke-width="1.5"/>` +
-          (ok ? `<path d="M${px - r * .45} ${yy - 26 * s - r} l${r * .3} ${r * .32} l${r * .55} ${-r * .6}" fill="none" stroke="var(--accent-ink)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>` : "") +
-          `<text class="lb${ok ? "" : " off"}" x="${px + side * (r + 5)}" y="${yy - 26 * s - r + 3.5}" text-anchor="${side > 0 ? "start" : "end"}" style="font-size:${(10.5 * s + 2).toFixed(1)}px">${lb}</text>`;
-      }
+    miles.forEach(([f, lb, ok, side]) => {
+      const [x, y, w] = at(f), s = 0.45 + 0.55 * (y - 70) / 180, px = x + side * (w + 10 * s + 6), h = 22 * s, r = 8 * s + 1.5;
+      m += `<path d="M${px.toFixed(1)} ${y.toFixed(1)}v${(-h).toFixed(1)}" stroke="var(--rd-post)" stroke-width="1.6"/>` +
+        `<circle cx="${px.toFixed(1)}" cy="${(y - h - r).toFixed(1)}" r="${r.toFixed(1)}" fill="${ok ? "var(--accent)" : "var(--bg)"}" stroke="${ok ? "var(--accent)" : "var(--rd-post)"}" stroke-width="1.6"/>` +
+        (ok ? `<path d="M${(px - r * .45).toFixed(1)} ${(y - h - r).toFixed(1)}l${(r * .3).toFixed(1)} ${(r * .32).toFixed(1)}l${(r * .55).toFixed(1)} ${(-r * .6).toFixed(1)}" fill="none" stroke="var(--accent-ink)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>` : "") +
+        `<text class="lb${ok ? "" : " off"}" x="${(px + side * (r + 5)).toFixed(1)}" y="${(y - h - r + 3.5).toFixed(1)}" text-anchor="${side > 0 ? "start" : "end"}" style="font-size:${(9 + 3 * s).toFixed(1)}px">${lb}</text>`;
     });
-    return `<svg viewBox="0 0 ${W} ${H}">${hills}<path d="M${poly}Z" fill="var(--bg)"/><path d="${dash}" stroke="color-mix(in srgb, var(--accent) 55%, transparent)" stroke-width="2.5" stroke-linecap="round"/>${m}</svg>`;
+    const [hx, hy] = at(0.2);
+    const hills = `
+      <path d="M-10 96 C 30 60, 80 62, 120 84 C 150 66, 200 58, 236 80 C 270 62, 330 60, 370 90 V ${H} H -10Z" fill="var(--rd-h1)"/>
+      <path d="M-10 128 C 20 98, 90 92, 140 120 C 120 104, 100 110, 80 120Z" fill="var(--rd-h2)"/>
+      <path d="M-10 132 C 30 100, 100 100, 150 132 V ${H} H -10Z" fill="var(--rd-h2)"/>
+      <path d="M210 128 C 250 98, 320 96, 370 120 V ${H} H 210Z" fill="var(--rd-h2)"/>
+      <path d="M-10 182 C 30 150, 110 148, 150 186 V ${H} H -10Z" fill="var(--rd-h3)"/>
+      <path d="M230 176 C 270 146, 340 146, 370 168 V ${H} H 230Z" fill="var(--rd-h3)"/>`;
+    const front = `<path d="M-10 232 C 20 206, 70 204, 100 236 V ${H} H -10Z" fill="var(--rd-h4)"/><path d="M290 226 C 315 204, 350 204, 370 216 V ${H} H 290Z" fill="var(--rd-h4)"/>`;
+    return `<svg viewBox="0 0 ${W} ${H}">${hills}<path d="${fill}" fill="var(--rd-road)"/>
+      <path d="${mid}" fill="none" stroke="var(--rd-line)" stroke-width="2.4" stroke-dasharray="9 7" stroke-linecap="round"/>${front}${m}
+      <circle cx="${hx}" cy="${hy}" r="12" fill="var(--bg)" stroke="var(--accent-strong)" stroke-width="3"/><circle cx="${hx}" cy="${hy}" r="4.5" fill="var(--accent-strong)"/>
+      <rect x="${hx + 18}" y="${hy - 12}" width="96" height="24" rx="12" fill="var(--bg)"/><text class="lb" x="${hx + 66}" y="${hy + 4}" text-anchor="middle" style="font-size:12px">Hoy · 12 días</text></svg>`;
   }
 
   const strip = (cells) => `<div class="cm-days">${cells.map(([d, k], i) => `<span class="${i === 6 ? "t" : ""}"><i class="${k}">${k === "g" ? graceI : k === "o" ? "" : check}</i>${d}</span>`).join("")}</div>`;
@@ -221,7 +233,7 @@
   function panel() {
     const box = document.createElement("div");
     box.className = "cm-panel x-path";
-    box.innerHTML = `<header class="cm-head"><div><p class="k">Palabra y Rosario</p><h1>Tu <em>camino</em></h1></div><button class="cm-x" aria-label="Cerrar">${xI}</button></header>
+    box.innerHTML = `<header class="cm-head"><div><h1>Tu <em>camino</em></h1></div><button class="cm-x" aria-label="Cerrar">${xI}</button></header>
       <div class="cm-road">${road()}</div>
       <div class="cm-body">
         <p class="cm-sec">Rachas</p>
