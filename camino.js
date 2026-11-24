@@ -36,10 +36,10 @@
   .cm-head h1 em { color: var(--accent); }
   .cm-x { width: 40px; height: 40px; border: 0; border-radius: 50%; background: var(--surface); color: var(--ink); display: grid; place-items: center; }
   .cm-x svg { width: 18px; height: 18px; }
-  .cm-road { margin: 6px 14px 0; border-radius: 26px; overflow: hidden; background: var(--rd-sky);
-    --rd-sky: #f3ecfb; --rd-h1: #e3d4f5; --rd-h2: #d2bbee; --rd-h3: #bf9fe4; --rd-h4: #a985d6; --rd-road: #4a2a7a; --rd-line: #f5c542; --rd-post: #8a7aa3; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cm-road { --rd-sky: #221b30; --rd-h1: #2d2440; --rd-h2: #382c50; --rd-h3: #44355f; --rd-h4: #503f70; --rd-road: #120d1a; --rd-line: #e9c96e; --rd-post: #9d8cb8; } }
-  :root[data-theme="dark"] .cm-road { --rd-sky: #221b30; --rd-h1: #2d2440; --rd-h2: #382c50; --rd-h3: #44355f; --rd-h4: #503f70; --rd-road: #120d1a; --rd-line: #e9c96e; --rd-post: #9d8cb8; }
+  .cm-road { margin: 6px 14px 0; border-radius: 26px; overflow: hidden; background: var(--rd-sky2);
+    --rd-sky1: #f7f2fd; --rd-sky2: #ece2f8; --rd-h1: #e2d4f4; --rd-h2: #d1bbee; --rd-h3: #bd9fe3; --rd-h4: #a682d4; --rd-road: #3b2160; --rd-line: #f5c542; --rd-mk: #8f7aae; --rd-mkt: #5f3596; --rd-tr2: #bea2e4; --rd-tr3: #a585d4; --rd-tr4: #8c66c2; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cm-road { --rd-sky1: #1c1629; --rd-sky2: #261e38; --rd-h1: #2e2444; --rd-h2: #382c52; --rd-h3: #433461; --rd-h4: #4f3e71; --rd-road: #120c1c; --rd-line: #e9c96e; --rd-mk: #9d8cb8; --rd-mkt: #d4bdf2; --rd-tr2: #43355f; --rd-tr3: #4f3e70; --rd-tr4: #5d4a82; } }
+  :root[data-theme="dark"] .cm-road { --rd-sky1: #1c1629; --rd-sky2: #261e38; --rd-h1: #2e2444; --rd-h2: #382c52; --rd-h3: #433461; --rd-h4: #4f3e71; --rd-road: #120c1c; --rd-line: #e9c96e; --rd-mk: #9d8cb8; --rd-mkt: #d4bdf2; --rd-tr2: #43355f; --rd-tr3: #4f3e70; --rd-tr4: #5d4a82; }
   .cm-road svg { display: block; width: 100%; height: auto; }
   .cm-road .lb { font: 800 10px var(--ui); fill: var(--accent-strong); letter-spacing: .02em; paint-order: stroke; stroke: var(--rd-sky); stroke-width: 3px; stroke-linejoin: round; }
   .cm-road text[text-anchor="middle"] { stroke: none; }
@@ -61,9 +61,9 @@
   .cm-days i.g { background: none; color: var(--accent-strong); box-shadow: inset 0 0 0 1.5px var(--accent); }
   .cm-days i.o { background: var(--line); }
   .cm-days .t i { box-shadow: 0 0 0 2px var(--surface), 0 0 0 3.5px var(--accent); }
-  .cm-days i svg { width: 22px; height: 22px; } .cm-days i.g { --sh-bg: var(--surface); }
+  .cm-days i svg { width: 24px; height: 24px; } .cm-days i.g { --sh-bg: var(--surface); }
   .cm-note { display: flex; gap: 10px; align-items: flex-start; margin-top: 4px; padding: 12px 14px; border-radius: 16px; background: var(--accent-soft); font: 500 .8125rem/1.45 var(--ui); color: var(--ink); }
-  .cm-note { --sh-bg: var(--accent-soft); } .cm-note svg { flex: none; width: 26px; height: 26px; color: var(--accent-strong); margin-top: 1px; }
+  .cm-note { --sh-bg: var(--accent-soft); } .cm-note svg { flex: none; width: 30px; height: 30px; color: var(--accent-strong); margin-top: 1px; }
   .cm-miles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-top: 12px; text-align: center; font: 700 .75rem/1.25 var(--ui); }
   .cm-miles small { display: block; font-weight: 600; color: var(--muted); }
   .cm-miles svg { width: 54px; height: 54px; margin: 0 auto 4px; display: block; }
@@ -143,8 +143,8 @@
   let uid = 0;
   const roadIcon = () => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[iconN].replace(/\b(c|m)(a|b)\b/g, (x) => x + "-" + uid).replace(/#(c|m)(a|b)\)/g, (x, p, q) => "#" + p + q + "-" + uid + ")")}</svg>`.replace(/^/, () => (uid++, ""));
   const check = `<svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-  const graceI = `<svg viewBox="0 0 24 24"><g fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"><path d="M8.2 14.6C4.6 14.2 1.5 11.2.9 5.6c1.3 1.5 2.5 2.1 3.6 2.2C3.7 6.6 3.3 5.1 3.4 3.4c1.6 2.2 3.3 3.5 5 3.9Z"/><g transform="translate(24 0) scale(-1 1)"><path d="M8.2 14.6C4.6 14.2 1.5 11.2.9 5.6c1.3 1.5 2.5 2.1 3.6 2.2C3.7 6.6 3.3 5.1 3.4 3.4c1.6 2.2 3.3 3.5 5 3.9Z"/></g></g><circle cx="12" cy="1.9" r="1" fill="currentColor"/><path d="M12 2.8v2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M8.8 5h6.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M11.3 5.4h1.4v15.4L12 22.6l-.7-1.8Z" fill="currentColor"/><path d="M12 6.4l5.2 1.9v3.9c0 3.5-2.3 5.8-5.2 7.3-2.9-1.5-5.2-3.8-5.2-7.3V8.3L12 6.4Z" fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 9.2v6.8M9.6 11.6h4.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>`;
-  const shield = `<svg viewBox="0 0 24 24"><g fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"><path d="M8.2 14.6C4.6 14.2 1.5 11.2.9 5.6c1.3 1.5 2.5 2.1 3.6 2.2C3.7 6.6 3.3 5.1 3.4 3.4c1.6 2.2 3.3 3.5 5 3.9Z"/><g transform="translate(24 0) scale(-1 1)"><path d="M8.2 14.6C4.6 14.2 1.5 11.2.9 5.6c1.3 1.5 2.5 2.1 3.6 2.2C3.7 6.6 3.3 5.1 3.4 3.4c1.6 2.2 3.3 3.5 5 3.9Z"/></g></g><circle cx="12" cy="1.9" r="1" fill="currentColor"/><path d="M12 2.8v2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M8.8 5h6.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M11.3 5.4h1.4v15.4L12 22.6l-.7-1.8Z" fill="currentColor"/><path d="M12 6.4l5.2 1.9v3.9c0 3.5-2.3 5.8-5.2 7.3-2.9-1.5-5.2-3.8-5.2-7.3V8.3L12 6.4Z" fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 9.2v6.8M9.6 11.6h4.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>`;
+  const graceI = `<svg viewBox="0 0 24 24"><path d="M7 9C5.5 6.7 2.5 6.4 1.3 8.2c-.2 2.9.6 5.8 1.8 8.3l1-1.9.7 1.6.8-2.3.7 1.4.7-2.9Z" fill="currentColor" fill-opacity=".22" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/><path d="M2.3 9.5c1.5-.5 3-.2 4.4.7" fill="none" stroke="currentColor" stroke-width=".9" stroke-linecap="round"/><g transform="translate(24 0) scale(-1 1)"><path d="M7 9C5.5 6.7 2.5 6.4 1.3 8.2c-.2 2.9.6 5.8 1.8 8.3l1-1.9.7 1.6.8-2.3.7 1.4.7-2.9Z" fill="currentColor" fill-opacity=".22" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/><path d="M2.3 9.5c1.5-.5 3-.2 4.4.7" fill="none" stroke="currentColor" stroke-width=".9" stroke-linecap="round"/></g><circle cx="12" cy="3.4" r="1" fill="currentColor"/><path d="M12 4.2v1.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M9 5.7h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M10.75 6h2.5v14.1L12 22.3l-1.25-2.2Z" fill="currentColor"/><path d="M12 6.3l5.4 1.9v3.4c0 2.9-2.2 4.8-5.4 6-3.2-1.2-5.4-3.1-5.4-6V8.2L12 6.3Z" fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 18.2v2.5" stroke="var(--sh-bg, var(--bg))" stroke-width=".7" stroke-linecap="round"/><path d="M12 8.9v6.4M9.8 11.1h4.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`;
+  const shield = `<svg viewBox="0 0 24 24"><path d="M7 9C5.5 6.7 2.5 6.4 1.3 8.2c-.2 2.9.6 5.8 1.8 8.3l1-1.9.7 1.6.8-2.3.7 1.4.7-2.9Z" fill="currentColor" fill-opacity=".22" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/><path d="M2.3 9.5c1.5-.5 3-.2 4.4.7" fill="none" stroke="currentColor" stroke-width=".9" stroke-linecap="round"/><g transform="translate(24 0) scale(-1 1)"><path d="M7 9C5.5 6.7 2.5 6.4 1.3 8.2c-.2 2.9.6 5.8 1.8 8.3l1-1.9.7 1.6.8-2.3.7 1.4.7-2.9Z" fill="currentColor" fill-opacity=".22" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/><path d="M2.3 9.5c1.5-.5 3-.2 4.4.7" fill="none" stroke="currentColor" stroke-width=".9" stroke-linecap="round"/></g><circle cx="12" cy="3.4" r="1" fill="currentColor"/><path d="M12 4.2v1.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M9 5.7h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M10.75 6h2.5v14.1L12 22.3l-1.25-2.2Z" fill="currentColor"/><path d="M12 6.3l5.4 1.9v3.4c0 2.9-2.2 4.8-5.4 6-3.2-1.2-5.4-3.1-5.4-6V8.2L12 6.3Z" fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 18.2v2.5" stroke="var(--sh-bg, var(--bg))" stroke-width=".7" stroke-linecap="round"/><path d="M12 8.9v6.4M9.8 11.1h4.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`;
   const bookI = `<svg viewBox="0 0 24 24"><path d="M12 6.6C10.2 5.2 7.6 4.6 4.5 4.6v12.8c3.1 0 5.7.6 7.5 2 1.8-1.4 4.4-2 7.5-2V4.6c-3.1 0-5.7.6-7.5 2zM12 6.6v12.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>`;
   const rosI = `<svg viewBox="0 0 24 24"><g fill="currentColor"><circle cx="12" cy="3.4" r="1.3"/><circle cx="16.3" cy="5" r="1.3"/><circle cx="18" cy="9.2" r="1.3"/><circle cx="16.3" cy="13.4" r="1.3"/><circle cx="7.7" cy="5" r="1.3"/><circle cx="6" cy="9.2" r="1.3"/><circle cx="7.7" cy="13.4" r="1.3"/><circle cx="12" cy="15.2" r="1.6"/></g><path d="M12 17v5M10 19h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`;
   const book = `<svg viewBox="0 0 16 16"><path d="M8 4.2C6.6 3 4.6 2.8 2.5 3.2v8.6c2.1-.4 4.1-.2 5.5 1 1.4-1.2 3.4-1.4 5.5-1V3.2C11.4 2.8 9.4 3 8 4.2Zm0 0v8.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
@@ -159,43 +159,58 @@
       `<text x="27" y="33" text-anchor="middle" style="font:500 ${num > 99 ? 15 : 18}px var(--display);fill:${done ? "#fff" : "var(--muted)"}">${num}</text></svg>`;
   }
 
-  // Camino entre colinas redondeadas que serpentea hasta el horizonte (sin sol: Guillem no quiere luces ni sol)
+  // Dibujo de «Tu camino»: colinas por capas; el camino aparece en cada colina y se esconde tras la siguiente.
   function road() {
-    const W = 360, H = 250;
-    const K = [[156, 292, 60], [212, 214, 36], [150, 158, 23], [206, 118, 11], [180, 92, 5], [190, 78, 1.4]];
-    const E = [[2 * K[0][0] - K[1][0], 2 * K[0][1] - K[1][1], K[0][2]], ...K, [2 * K[5][0] - K[4][0], 2 * K[5][1] - K[4][1], K[5][2]]];
-    const cr = (p0, p1, p2, p3, t) => 0.5 * (2 * p1 + (-p0 + p2) * t + (2 * p0 - 5 * p1 + 4 * p2 - p3) * t * t + (-p0 + 3 * p1 - 3 * p2 + p3) * t * t * t);
-    const S = [];
-    for (let i = 0; i < K.length - 1; i++) for (let j = 0; j < 20; j++) { const t = j / 20; S.push([0, 1, 2].map((k) => cr(E[i][k], E[i + 1][k], E[i + 2][k], E[i + 3][k], t))); }
-    S.push(K[K.length - 1]);
-    const L = [], R = [];
-    S.forEach(([x, y, w], i) => { const p = S[Math.max(0, i - 1)], q = S[Math.min(S.length - 1, i + 1)]; let dx = q[0] - p[0], dy = q[1] - p[1]; const n = Math.hypot(dx, dy) || 1; dx /= n; dy /= n; L.push([x + dy * w, y - dx * w]); R.push([x - dy * w, y + dx * w]); });
-    const P = (A) => A.map((p) => p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" L");
-    const fill = "M" + P(L) + " L" + P(R.slice().reverse()) + "Z";
-    const mid = "M" + P(S.slice(0, Math.round(S.length * .93)).map((p) => [p[0], p[1]]));
-    const at = (f) => S[Math.round(f * (S.length - 1))];
-    // Hitos: [posición en el camino, texto, conseguido, lado]
-    const miles = [[0.34, "7 días", 1, 1], [0.43, "40 días", 0, -1], [0.62, "50 días", 0, 1], [0.8, "100 días", 0, -1]];
-    let m = "";
-    miles.forEach(([f, lb, ok, side]) => {
-      const [x, y, w] = at(f), s = 0.45 + 0.55 * (y - 70) / 180, px = x + side * (w + 10 * s + 6), h = 22 * s, r = 8 * s + 1.5;
-      m += `<path d="M${px.toFixed(1)} ${y.toFixed(1)}v${(-h).toFixed(1)}" stroke="var(--rd-post)" stroke-width="1.6"/>` +
-        `<circle cx="${px.toFixed(1)}" cy="${(y - h - r).toFixed(1)}" r="${r.toFixed(1)}" fill="${ok ? "var(--accent)" : "var(--bg)"}" stroke="${ok ? "var(--accent)" : "var(--rd-post)"}" stroke-width="1.6"/>` +
-        (ok ? `<path d="M${(px - r * .45).toFixed(1)} ${(y - h - r).toFixed(1)}l${(r * .3).toFixed(1)} ${(r * .32).toFixed(1)}l${(r * .55).toFixed(1)} ${(-r * .6).toFixed(1)}" fill="none" stroke="var(--accent-ink)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>` : "") +
-        `<text class="lb${ok ? "" : " off"}" x="${(px + side * (r + 5)).toFixed(1)}" y="${(y - h - r + 3.5).toFixed(1)}" text-anchor="${side > 0 ? "start" : "end"}" style="font-size:${(9 + 3 * s).toFixed(1)}px">${lb}</text>`;
+    const W = 360, H = 210;
+    const hills = [
+      ['M0 82 C 30 64, 80 60, 122 74 C 156 58, 212 56, 250 70 C 284 58, 332 60, 360 72 V210 H0Z', 'h1'],
+      ['M0 106 C 40 98, 92 92, 138 96 C 182 78, 262 76, 302 92 C 324 98, 346 98, 360 96 V210 H0Z', 'h2'],
+      ['M0 128 C 30 108, 108 102, 162 120 C 204 134, 300 132, 360 124 V210 H0Z', 'h3'],
+      ['M0 178 C 56 170, 124 150, 200 150 C 262 150, 322 160, 360 166 V210 H0Z', 'h4'],
+    ];
+    // Tramos del camino (uno por colina): bezier [x0,y0,x1,y1,x2,y2,x3,y3], ancho abajo, ancho arriba, raya, trazos
+    const segs = [
+      [[216, 100, 214, 86, 194, 78, 198, 60], 6, 1.2, 0.6, [1.8, 1.8]],
+      [[150, 134, 156, 112, 226, 112, 222, 82], 15, 7, 1.1, [4, 4]],
+      [[192, 176, 192, 146, 132, 150, 150, 110], 36, 17, 1.8, [8, 7]],
+      [[146, 232, 160, 196, 266, 190, 250, 116], 92, 30, 2.8, [13, 11]],
+    ];
+    const bz = (c, t) => { const u = 1 - t; return [u*u*u*c[0] + 3*u*u*t*c[2] + 3*u*t*t*c[4] + t*t*t*c[6], u*u*u*c[1] + 3*u*u*t*c[3] + 3*u*t*t*c[5] + t*t*t*c[7]]; };
+    const band = (c, w0, w1) => {
+      const L = [], R = [];
+      for (let i = 0; i <= 40; i++) {
+        const t = i / 40, p = bz(c, t), q = bz(c, Math.min(1, t + .01)), o = bz(c, Math.max(0, t - .01));
+        let dx = q[0] - o[0], dy = q[1] - o[1]; const n = Math.hypot(dx, dy); dx /= n; dy /= n;
+        const w = (w0 + (w1 - w0) * t) / 2;
+        L.push([p[0] + dy * w, p[1] - dx * w]); R.push([p[0] - dy * w, p[1] + dx * w]);
+      }
+      const P = (A) => A.map((p) => p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" L");
+      return "M" + P(L) + " L" + P(R.reverse()) + "Z";
+    };
+    let defs = `<linearGradient id="rdsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--rd-sky1)"/><stop offset="1" stop-color="var(--rd-sky2)"/></linearGradient>`;
+    let body = `<rect width="${W}" height="${H}" fill="url(#rdsky)"/>`;
+    hills.forEach(([d, c], i) => {
+      defs += `<clipPath id="rdh${i}"><path d="${d}"/></clipPath>`;
+      const [c3, w0, w1, lw, da] = segs[i];
+      const sd = `M${c3[0]} ${c3[1]} C ${c3[2]} ${c3[3]}, ${c3[4]} ${c3[5]}, ${c3[6]} ${c3[7]}`;
+      body += `<path d="${d}" fill="var(--rd-${c})"/><!--t${i + 1}-->` +
+        `<g clip-path="url(#rdh${i})"><path d="${band(c3, w0, w1)}" fill="var(--rd-road)"/>` +
+        `<path d="${sd}" fill="none" stroke="var(--rd-line)" stroke-width="${lw}" stroke-dasharray="${da.join(" ")}" stroke-linecap="round"/></g>`;
     });
-    const [hx, hy] = at(0.2);
-    const hills = `
-      <path d="M-10 96 C 30 60, 80 62, 120 84 C 150 66, 200 58, 236 80 C 270 62, 330 60, 370 90 V ${H} H -10Z" fill="var(--rd-h1)"/>
-      <path d="M-10 132 C 30 100, 100 100, 150 132 V ${H} H -10Z" fill="var(--rd-h2)"/>
-      <path d="M210 128 C 250 98, 320 96, 370 120 V ${H} H 210Z" fill="var(--rd-h2)"/>
-      <path d="M-10 182 C 30 150, 110 148, 150 186 V ${H} H -10Z" fill="var(--rd-h3)"/>
-      <path d="M230 176 C 270 146, 340 146, 370 168 V ${H} H 230Z" fill="var(--rd-h3)"/>`;
-    const front = `<path d="M-10 232 C 20 206, 70 204, 100 236 V ${H} H -10Z" fill="var(--rd-h4)"/><path d="M290 226 C 315 204, 350 204, 370 216 V ${H} H 290Z" fill="var(--rd-h4)"/>`;
-    return `<svg viewBox="0 0 ${W} ${H}">${hills}<path d="${fill}" fill="var(--rd-road)"/>
-      <path d="${mid}" fill="none" stroke="var(--rd-line)" stroke-width="2.4" stroke-dasharray="9 7" stroke-linecap="round"/>${front}${m}
-      <circle cx="${hx}" cy="${hy}" r="12" fill="var(--bg)" stroke="var(--accent-strong)" stroke-width="3"/><circle cx="${hx}" cy="${hy}" r="4.5" fill="var(--accent-strong)"/>
-      <rect x="${hx + 18}" y="${hy - 12}" width="96" height="24" rx="12" fill="var(--bg)"/><text class="lb" x="${hx + 66}" y="${hy + 4}" text-anchor="middle" style="font-size:12px">Hoy · 12 días</text></svg>`;
+    // Árboles sencillos (cipreses redondeados) para dar escala
+    const tree = (x, y, s, c) => `<path d="M${x} ${y}v${-3 * s}" stroke="var(--rd-${c})" stroke-width="${1.2 * s}" stroke-linecap="round"/><ellipse cx="${x}" cy="${y - 7 * s}" rx="${3.2 * s}" ry="${6 * s}" fill="var(--rd-${c})"/>`;
+    body = body.replace('<!--t2-->', tree(292, 90, .7, 'tr2') + tree(301, 92, .55, 'tr2'));
+    body = body.replace('<!--t3-->', tree(54, 118, 1, 'tr3') + tree(66, 116, .8, 'tr3') + tree(300, 134, .9, 'tr3'));
+    body = body.replace('<!--t4-->', tree(330, 172, 1.4, 'tr4') + tree(44, 182, 1.2, 'tr4'));
+    // Hitos: círculos con el número, más pequeños cuanto más lejos
+    const mk = (x, y, r, txt, ok) => `<g><circle cx="${x}" cy="${y}" r="${r}" fill="${ok ? "var(--accent)" : "var(--bg)"}" stroke="${ok ? "var(--accent)" : "var(--rd-mk)"}" stroke-width="${r > 10 ? 2 : 1.5}"/>` +
+      (ok ? `<path d="M${x - r * .42} ${y + .2}l${r * .28} ${r * .3}l${r * .55} ${-r * .58}" fill="none" stroke="var(--accent-ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`
+          : `<text x="${x}" y="${y + r * .36}" text-anchor="middle" style="font:800 ${(r * 0.95).toFixed(1)}px var(--ui);fill:var(--rd-mkt)">${txt}</text>`) + `</g>`;
+    body += mk(170, 124, 11, "40") + mk(212, 96, 8, "50") + mk(200, 68, 6, "100");
+    // Hoy, sobre el tramo más cercano
+    body += `<circle cx="203" cy="176" r="12" fill="var(--bg)" stroke="var(--accent-strong)" stroke-width="3"/><circle cx="203" cy="176" r="4.5" fill="var(--accent-strong)"/>` +
+      `<rect x="252" y="164" width="98" height="24" rx="12" fill="var(--bg)"/><text x="301" y="180" text-anchor="middle" style="font:800 12px var(--ui);fill:var(--accent-strong)">Hoy · 12 días</text>`;
+    return `<svg viewBox="0 28 ${W} ${H - 28}" role="img" aria-label="Tu camino"><defs>${defs}</defs>${body}</svg>`;
   }
 
   const strip = (cells) => `<div class="cm-days">${cells.map(([d, k], i) => `<span class="${i === 6 ? "t" : ""}"><i class="${k}">${k === "g" ? graceI : k === "o" ? "" : check}</i>${d}</span>`).join("")}</div>`;
