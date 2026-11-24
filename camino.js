@@ -61,9 +61,9 @@
   .cm-days i.g { background: none; color: var(--accent-strong); box-shadow: inset 0 0 0 1.5px var(--accent); }
   .cm-days i.o { background: var(--line); }
   .cm-days .t i { box-shadow: 0 0 0 2px var(--surface), 0 0 0 3.5px var(--accent); }
-  .cm-days i svg { width: 18px; height: 18px; } .cm-days i.g { --sh-bg: var(--surface); }
+  .cm-days i svg { width: 22px; height: 22px; } .cm-days i.g { --sh-bg: var(--surface); }
   .cm-note { display: flex; gap: 10px; align-items: flex-start; margin-top: 4px; padding: 12px 14px; border-radius: 16px; background: var(--accent-soft); font: 500 .8125rem/1.45 var(--ui); color: var(--ink); }
-  .cm-note { --sh-bg: var(--accent-soft); } .cm-note svg { flex: none; width: 22px; height: 22px; color: var(--accent-strong); margin-top: 1px; }
+  .cm-note { --sh-bg: var(--accent-soft); } .cm-note svg { flex: none; width: 26px; height: 26px; color: var(--accent-strong); margin-top: 1px; }
   .cm-miles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-top: 12px; text-align: center; font: 700 .75rem/1.25 var(--ui); }
   .cm-miles small { display: block; font-weight: 600; color: var(--muted); }
   .cm-miles svg { width: 54px; height: 54px; margin: 0 auto 4px; display: block; }
@@ -143,8 +143,8 @@
   let uid = 0;
   const roadIcon = () => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[iconN].replace(/\b(c|m)(a|b)\b/g, (x) => x + "-" + uid).replace(/#(c|m)(a|b)\)/g, (x, p, q) => "#" + p + q + "-" + uid + ")")}</svg>`.replace(/^/, () => (uid++, ""));
   const check = `<svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-  const graceI = `<svg viewBox="0 0 20 20"><path d="M10 1.8l6.4 2.3v4.8c0 4.2-2.9 7.1-6.4 8.9-3.5-1.8-6.4-4.7-6.4-8.9V4.1L10 1.8Z" fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="10" cy="4.6" r=".85" fill="currentColor"/><path d="M10 5.4v1.9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M6.7 7.6h6.6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M9.25 8.3h1.5v5.3L10 15.3l-.75-1.7Z" fill="currentColor"/></svg>`;
-  const shield = `<svg viewBox="0 0 20 20"><path d="M10 1.8l6.4 2.3v4.8c0 4.2-2.9 7.1-6.4 8.9-3.5-1.8-6.4-4.7-6.4-8.9V4.1L10 1.8Z" fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="10" cy="4.6" r=".85" fill="currentColor"/><path d="M10 5.4v1.9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M6.7 7.6h6.6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M9.25 8.3h1.5v5.3L10 15.3l-.75-1.7Z" fill="currentColor"/></svg>`;
+  const graceI = `<svg viewBox="0 0 24 24"><g fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"><path d="M8.2 14.6C4.6 14.2 1.5 11.2.9 5.6c1.3 1.5 2.5 2.1 3.6 2.2C3.7 6.6 3.3 5.1 3.4 3.4c1.6 2.2 3.3 3.5 5 3.9Z"/><g transform="translate(24 0) scale(-1 1)"><path d="M8.2 14.6C4.6 14.2 1.5 11.2.9 5.6c1.3 1.5 2.5 2.1 3.6 2.2C3.7 6.6 3.3 5.1 3.4 3.4c1.6 2.2 3.3 3.5 5 3.9Z"/></g></g><circle cx="12" cy="1.9" r="1" fill="currentColor"/><path d="M12 2.8v2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M8.8 5h6.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M11.3 5.4h1.4v15.4L12 22.6l-.7-1.8Z" fill="currentColor"/><path d="M12 6.4l5.2 1.9v3.9c0 3.5-2.3 5.8-5.2 7.3-2.9-1.5-5.2-3.8-5.2-7.3V8.3L12 6.4Z" fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 9.2v6.8M9.6 11.6h4.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>`;
+  const shield = `<svg viewBox="0 0 24 24"><g fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"><path d="M8.2 14.6C4.6 14.2 1.5 11.2.9 5.6c1.3 1.5 2.5 2.1 3.6 2.2C3.7 6.6 3.3 5.1 3.4 3.4c1.6 2.2 3.3 3.5 5 3.9Z"/><g transform="translate(24 0) scale(-1 1)"><path d="M8.2 14.6C4.6 14.2 1.5 11.2.9 5.6c1.3 1.5 2.5 2.1 3.6 2.2C3.7 6.6 3.3 5.1 3.4 3.4c1.6 2.2 3.3 3.5 5 3.9Z"/></g></g><circle cx="12" cy="1.9" r="1" fill="currentColor"/><path d="M12 2.8v2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M8.8 5h6.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M11.3 5.4h1.4v15.4L12 22.6l-.7-1.8Z" fill="currentColor"/><path d="M12 6.4l5.2 1.9v3.9c0 3.5-2.3 5.8-5.2 7.3-2.9-1.5-5.2-3.8-5.2-7.3V8.3L12 6.4Z" fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 9.2v6.8M9.6 11.6h4.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>`;
   const bookI = `<svg viewBox="0 0 24 24"><path d="M12 6.6C10.2 5.2 7.6 4.6 4.5 4.6v12.8c3.1 0 5.7.6 7.5 2 1.8-1.4 4.4-2 7.5-2V4.6c-3.1 0-5.7.6-7.5 2zM12 6.6v12.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>`;
   const rosI = `<svg viewBox="0 0 24 24"><g fill="currentColor"><circle cx="12" cy="3.4" r="1.3"/><circle cx="16.3" cy="5" r="1.3"/><circle cx="18" cy="9.2" r="1.3"/><circle cx="16.3" cy="13.4" r="1.3"/><circle cx="7.7" cy="5" r="1.3"/><circle cx="6" cy="9.2" r="1.3"/><circle cx="7.7" cy="13.4" r="1.3"/><circle cx="12" cy="15.2" r="1.6"/></g><path d="M12 17v5M10 19h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`;
   const book = `<svg viewBox="0 0 16 16"><path d="M8 4.2C6.6 3 4.6 2.8 2.5 3.2v8.6c2.1-.4 4.1-.2 5.5 1 1.4-1.2 3.4-1.4 5.5-1V3.2C11.4 2.8 9.4 3 8 4.2Zm0 0v8.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
@@ -162,7 +162,7 @@
   // Camino entre colinas redondeadas que serpentea hasta el horizonte (sin sol: Guillem no quiere luces ni sol)
   function road() {
     const W = 360, H = 250;
-    const K = [[150, 292, 64], [214, 214, 42], [150, 158, 23], [206, 118, 11], [180, 92, 5], [190, 78, 1.4]];
+    const K = [[156, 292, 60], [212, 214, 36], [150, 158, 23], [206, 118, 11], [180, 92, 5], [190, 78, 1.4]];
     const E = [[2 * K[0][0] - K[1][0], 2 * K[0][1] - K[1][1], K[0][2]], ...K, [2 * K[5][0] - K[4][0], 2 * K[5][1] - K[4][1], K[5][2]]];
     const cr = (p0, p1, p2, p3, t) => 0.5 * (2 * p1 + (-p0 + p2) * t + (2 * p0 - 5 * p1 + 4 * p2 - p3) * t * t + (-p0 + 3 * p1 - 3 * p2 + p3) * t * t * t);
     const S = [];
@@ -187,7 +187,6 @@
     const [hx, hy] = at(0.2);
     const hills = `
       <path d="M-10 96 C 30 60, 80 62, 120 84 C 150 66, 200 58, 236 80 C 270 62, 330 60, 370 90 V ${H} H -10Z" fill="var(--rd-h1)"/>
-      <path d="M-10 128 C 20 98, 90 92, 140 120 C 120 104, 100 110, 80 120Z" fill="var(--rd-h2)"/>
       <path d="M-10 132 C 30 100, 100 100, 150 132 V ${H} H -10Z" fill="var(--rd-h2)"/>
       <path d="M210 128 C 250 98, 320 96, 370 120 V ${H} H 210Z" fill="var(--rd-h2)"/>
       <path d="M-10 182 C 30 150, 110 148, 150 186 V ${H} H -10Z" fill="var(--rd-h3)"/>
