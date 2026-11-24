@@ -16,12 +16,12 @@
   /* Botón de arriba, junto a los interrogantes */
   .cm-top { position: relative; flex: none; width: 40px; height: 40px; border: 0; border-radius: 50%; display: grid; place-items: center; padding: 0; cursor: pointer;
     background: color-mix(in srgb, var(--accent) 18%, var(--chip)); color: var(--accent-strong); font: 800 .9375rem/1 var(--ui); }
-  .cm-top svg { width: 22px; height: 22px; }
+  .cm-top svg { width: 32px; height: 32px; }
   .cm-top span { position: absolute; right: -5px; top: -4px; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 99px; background: var(--accent); color: var(--accent-ink); font: 800 .6875rem/20px var(--ui); box-shadow: 0 0 0 2px var(--backdrop); }
   /* Racha pequeña dentro de Palabra y Rosario */
   .cm-pill { width: fit-content; display: flex; align-items: center; gap: 8px; margin-top: 14px; padding: 6px 10px 6px 6px; border: 0; border-radius: 999px; background: var(--accent-soft); color: var(--ink); font: 600 .8125rem/1 var(--ui); cursor: pointer; }
   .cm-pill .ic { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: var(--bg); color: var(--accent-strong); }
-  .cm-pill .ic svg { width: 16px; height: 16px; }
+  .cm-pill .ic svg { width: 22px; height: 22px; }
   .cm-pill b { font-weight: 800; }
   .cm-pill .cm-dots { display: inline-flex; gap: 3px; margin-left: 2px; }
   .cm-pill .cm-dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
@@ -57,9 +57,9 @@
   .cm-days i.g { background: none; color: var(--accent-strong); box-shadow: inset 0 0 0 1.5px var(--accent); }
   .cm-days i.o { background: var(--line); }
   .cm-days .t i { box-shadow: 0 0 0 2px var(--surface), 0 0 0 3.5px var(--accent); }
-  .cm-days i svg { width: 14px; height: 14px; }
+  .cm-days i svg { width: 18px; height: 18px; } .cm-days i.g { --sh-bg: var(--surface); }
   .cm-note { display: flex; gap: 10px; align-items: flex-start; margin-top: 4px; padding: 12px 14px; border-radius: 16px; background: var(--accent-soft); font: 500 .8125rem/1.45 var(--ui); color: var(--ink); }
-  .cm-note svg { flex: none; width: 18px; height: 18px; color: var(--accent-strong); margin-top: 1px; }
+  .cm-note { --sh-bg: var(--accent-soft); } .cm-note svg { flex: none; width: 22px; height: 22px; color: var(--accent-strong); margin-top: 1px; }
   .cm-miles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-top: 12px; text-align: center; font: 700 .75rem/1.25 var(--ui); }
   .cm-miles small { display: block; font-weight: 600; color: var(--muted); }
   .cm-miles svg { width: 54px; height: 54px; margin: 0 auto 4px; display: block; }
@@ -104,14 +104,43 @@
   .cm-cal .d.read::after { content: ""; position: absolute; bottom: 3px; width: 14px; height: 2px; border-radius: 2px; background: var(--faint); }
   .cm-sheet .foot { margin-top: 12px; padding: 12px 14px; border-radius: 16px; background: var(--surface); font: 500 .8125rem/1.45 var(--ui); color: var(--muted); }
   .cm-sheet .foot b { color: var(--ink); }
+
+  /* Tu año mes a mes */
+  .cm-chart { display: grid; grid-template-columns: repeat(12, 1fr); gap: 4px; align-items: end; height: 132px; margin-top: 14px; }
+  .cm-chart span { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 100%; gap: 2px; font: 700 .625rem/1 var(--ui); color: var(--muted); border-radius: 8px; padding: 0 0 4px; }
+  .cm-chart span.on { background: var(--bg); color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--accent); }
+  .cm-chart i { width: 62%; border-radius: 3px; }
+  .cm-chart i.w { background: #2fb565; } .cm-chart i.r { background: #3d82ec; }
+  .cm-chart em { font-style: normal; margin-top: 3px; }
+  .cm-chart span.fut em { color: var(--faint); }
+  .cm-month { margin-top: 12px; padding: 12px 14px; border-radius: 16px; background: var(--bg); }
+  .cm-month .mh { display: flex; align-items: center; justify-content: space-between; }
+  .cm-month .mh b { font: 600 1.25rem/1.2 var(--display); }
+  .cm-month .mh small { display: block; font: 800 .625rem/1.2 var(--ui); letter-spacing: .08em; text-transform: uppercase; color: var(--accent-strong); }
+  .cm-month .arr { display: flex; gap: 6px; }
+  .cm-month .arr span { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: var(--surface); font: 700 1rem/1 var(--ui); color: var(--ink); }
+  .cm-month .row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 10px; font: 600 .6875rem/1.3 var(--ui); color: var(--muted); }
+  .cm-month .row b { display: block; font: 500 1.5rem/1.1 var(--display); color: var(--ink); }
+  .cm-best { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  .cm-best li { display: grid; grid-template-columns: 38px 1fr auto; gap: 12px; align-items: center; padding: 10px 12px; border-radius: 14px; background: var(--bg); font: 600 .8125rem/1.3 var(--ui); color: var(--muted); }
+  .cm-best li .ic { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: var(--c); color: #fff; }
+  .cm-best li .ic svg { width: 20px; height: 20px; }
+  .cm-best li b { display: block; font: 600 1.0625rem/1.2 var(--display); color: var(--ink); }
+  .cm-best li .v { font: 500 1.375rem/1 var(--display); color: var(--ink); text-align: right; }
+  .cm-best li .v small { display: block; font: 700 .625rem/1.3 var(--ui); color: var(--muted); }
+  .cm-best li.top { box-shadow: inset 0 0 0 1.5px var(--accent); }
   `;
   const st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
 
   // ---------- Dibujos ----------
-  const roadIcon = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.6 4.5 4.5 19.5M14.4 4.5l5.1 15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M12 6.5v2.2M12 11.4v2.6M12 16.9v2.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>`;
+  // Icono: paisaje en un círculo con un camino de tierra que serpentea hacia el horizonte (?icono=1 o 2)
+  const ICONS = {"1":"<defs><clipPath id=\"ca\"><circle cx=\"12\" cy=\"12\" r=\"10.2\"/></clipPath><mask id=\"ma\"><rect width=\"24\" height=\"24\" fill=\"#fff\"/><path d=\"M5.2 22.6L5.45 22.38L5.78 22.09L6.18 21.76L6.62 21.39L7.1 20.98L7.6 20.55L8.1 20.11L8.58 19.66L9.03 19.22L9.42 18.79L9.75 18.38L10 18L10.16 17.64L10.26 17.28L10.29 16.92L10.29 16.57L10.25 16.21L10.18 15.87L10.11 15.53L10.04 15.2L9.98 14.88L9.95 14.57L9.95 14.28L10 14L10.1 13.74L10.22 13.48L10.38 13.24L10.55 13.01L10.73 12.79L10.92 12.58L11.12 12.38L11.3 12.19L11.48 12.01L11.64 11.83L11.77 11.66L11.88 11.5L11.96 11.35L12.02 11.2L12.07 11.06L12.1 10.93L12.12 10.81L12.13 10.69L12.14 10.59L12.14 10.49L12.14 10.41L12.14 10.33L12.14 10.26L12.15 10.2L12.45 10.2L12.48 10.26L12.53 10.33L12.59 10.41L12.65 10.49L12.72 10.59L12.79 10.69L12.86 10.81L12.93 10.93L12.99 11.06L13.05 11.2L13.09 11.35L13.12 11.5L13.13 11.66L13.11 11.83L13.07 12.01L13.02 12.19L12.97 12.38L12.91 12.58L12.87 12.79L12.84 13.01L12.83 13.24L12.85 13.48L12.9 13.74L13 14L13.15 14.28L13.35 14.57L13.59 14.88L13.87 15.2L14.16 15.53L14.47 15.87L14.78 16.21L15.08 16.57L15.36 16.92L15.61 17.28L15.83 17.64L16 18L16.13 18.38L16.22 18.79L16.29 19.22L16.34 19.66L16.37 20.11L16.39 20.55L16.39 20.98L16.39 21.39L16.39 21.76L16.39 22.09L16.39 22.38L16.4 22.6Z\" fill=\"#000\"/></mask></defs><g clip-path=\"url(#ca)\"><path d=\"M1 10.5Q5 8.6 9 10.2Q12 10.799999999999999 15 10Q19 8.799999999999999 23 10.5V24H1Z\" fill=\"currentColor\" mask=\"url(#ma)\"/></g><circle cx=\"12\" cy=\"12\" r=\"10.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>","2":"<defs><clipPath id=\"cb\"><circle cx=\"12\" cy=\"12\" r=\"10.2\"/></clipPath><mask id=\"mb\"><rect width=\"24\" height=\"24\" fill=\"#fff\"/><path d=\"M5.2 22.6L5.45 22.38L5.78 22.09L6.18 21.76L6.62 21.39L7.1 20.98L7.6 20.55L8.1 20.11L8.58 19.66L9.03 19.22L9.42 18.79L9.75 18.38L10 18L10.16 17.64L10.26 17.28L10.29 16.92L10.29 16.57L10.25 16.21L10.18 15.87L10.11 15.53L10.04 15.2L9.98 14.88L9.95 14.57L9.95 14.28L10 14L10.1 13.74L10.22 13.48L10.38 13.24L10.55 13.01L10.73 12.79L10.92 12.58L11.12 12.38L11.3 12.19L11.48 12.01L11.64 11.83L11.77 11.66L11.88 11.5L11.96 11.35L12.02 11.2L12.07 11.06L12.1 10.93L12.12 10.81L12.13 10.69L12.14 10.59L12.14 10.49L12.14 10.41L12.14 10.33L12.14 10.26L12.15 10.2L12.45 10.2L12.48 10.26L12.53 10.33L12.59 10.41L12.65 10.49L12.72 10.59L12.79 10.69L12.86 10.81L12.93 10.93L12.99 11.06L13.05 11.2L13.09 11.35L13.12 11.5L13.13 11.66L13.11 11.83L13.07 12.01L13.02 12.19L12.97 12.38L12.91 12.58L12.87 12.79L12.84 13.01L12.83 13.24L12.85 13.48L12.9 13.74L13 14L13.15 14.28L13.35 14.57L13.59 14.88L13.87 15.2L14.16 15.53L14.47 15.87L14.78 16.21L15.08 16.57L15.36 16.92L15.61 17.28L15.83 17.64L16 18L16.13 18.38L16.22 18.79L16.29 19.22L16.34 19.66L16.37 20.11L16.39 20.55L16.39 20.98L16.39 21.39L16.39 21.76L16.39 22.09L16.39 22.38L16.4 22.6Z\" fill=\"#000\"/></mask></defs><g clip-path=\"url(#cb)\"><path d=\"M1 10.5Q5 8.6 9 10.2Q12 10.799999999999999 15 10Q19 8.799999999999999 23 10.5V24H1Z\" fill=\"currentColor\"/><path d=\"M5.2 22.6L5.45 22.38L5.78 22.09L6.18 21.76L6.62 21.39L7.1 20.98L7.6 20.55L8.1 20.11L8.58 19.66L9.03 19.22L9.42 18.79L9.75 18.38L10 18L10.16 17.64L10.26 17.28L10.29 16.92L10.29 16.57L10.25 16.21L10.18 15.87L10.11 15.53L10.04 15.2L9.98 14.88L9.95 14.57L9.95 14.28L10 14L10.1 13.74L10.22 13.48L10.38 13.24L10.55 13.01L10.73 12.79L10.92 12.58L11.12 12.38L11.3 12.19L11.48 12.01L11.64 11.83L11.77 11.66L11.88 11.5L11.96 11.35L12.02 11.2L12.07 11.06L12.1 10.93L12.12 10.81L12.13 10.69L12.14 10.59L12.14 10.49L12.14 10.41L12.14 10.33L12.14 10.26L12.15 10.2L12.45 10.2L12.48 10.26L12.53 10.33L12.59 10.41L12.65 10.49L12.72 10.59L12.79 10.69L12.86 10.81L12.93 10.93L12.99 11.06L13.05 11.2L13.09 11.35L13.12 11.5L13.13 11.66L13.11 11.83L13.07 12.01L13.02 12.19L12.97 12.38L12.91 12.58L12.87 12.79L12.84 13.01L12.83 13.24L12.85 13.48L12.9 13.74L13 14L13.15 14.28L13.35 14.57L13.59 14.88L13.87 15.2L14.16 15.53L14.47 15.87L14.78 16.21L15.08 16.57L15.36 16.92L15.61 17.28L15.83 17.64L16 18L16.13 18.38L16.22 18.79L16.29 19.22L16.34 19.66L16.37 20.11L16.39 20.55L16.39 20.98L16.39 21.39L16.39 21.76L16.39 22.09L16.39 22.38L16.4 22.6Z\" fill=\"#d3a466\"/><path d=\"M8.67 22.6L8.84 22.38L9.07 22.09L9.34 21.76L9.65 21.39L9.98 20.98L10.32 20.55L10.66 20.11L10.98 19.66L11.28 19.22L11.53 18.79L11.73 18.38L11.86 18L11.92 17.64L11.92 17.28L11.86 16.92L11.77 16.57L11.65 16.21L11.51 15.87L11.37 15.53L11.22 15.2L11.1 14.88L11 14.57L10.94 14.28L10.93 14L10.97 13.74L11.04 13.48L11.14 13.24L11.26 13.01L11.39 12.79L11.54 12.58L11.69 12.38L11.84 12.19L11.97 12.01L12.09 11.83L12.19 11.66L12.26 11.5L12.31 11.35M12.93 22.6L13 22.38L13.1 22.09L13.22 21.76L13.36 21.39L13.51 20.98L13.66 20.55L13.81 20.11L13.93 19.66L14.04 19.22L14.11 18.79L14.15 18.38L14.14 18L14.07 17.64L13.95 17.28L13.79 16.92L13.59 16.57L13.37 16.21L13.14 15.87L12.9 15.53L12.68 15.2L12.47 14.88L12.29 14.57L12.16 14.28L12.07 14L12.03 13.74L12.03 13.48L12.07 13.24L12.13 13.01L12.21 12.79L12.3 12.58L12.39 12.38L12.49 12.19L12.58 12.01L12.65 11.83L12.71 11.66L12.74 11.5L12.74 11.35\" fill=\"none\" stroke=\"#9c6f35\" stroke-width=\".45\" opacity=\".7\" stroke-linecap=\"round\"/></g><circle cx=\"12\" cy=\"12\" r=\"10.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>"};
+  const iconN = +(new URLSearchParams(location.search).get("icono") || 1);
+  let uid = 0;
+  const roadIcon = () => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[iconN].replace(/\b(c|m)(a|b)\b/g, (x) => x + "-" + uid).replace(/#(c|m)(a|b)\)/g, (x, p, q) => "#" + p + q + "-" + uid + ")")}</svg>`.replace(/^/, () => (uid++, ""));
   const check = `<svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-  const graceI = `<svg viewBox="0 0 16 16"><path d="M8 2.2l4.6 1.8v3.6c0 3-2 5.2-4.6 6.5C5.4 12.8 3.4 10.6 3.4 7.6V4L8 2.2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
-  const shield = `<svg viewBox="0 0 20 20"><path d="M10 2.2l6 2.3v4.7c0 4-2.7 6.9-6 8.6-3.3-1.7-6-4.6-6-8.6V4.5l6-2.3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M7.2 10l2 2 3.8-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  const graceI = `<svg viewBox="0 0 20 20"><path d="M2.6 17.4 17.6 2.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M3.2 13.6l3.2 3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M10 4l5.2 1.9v4.1c0 3.4-2.3 5.8-5.2 7.3-2.9-1.5-5.2-3.9-5.2-7.3V5.9L10 4Z" fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 6.8v7.4M7.6 9.4h4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`;
+  const shield = `<svg viewBox="0 0 20 20"><path d="M2.6 17.4 17.6 2.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M3.2 13.6l3.2 3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M10 4l5.2 1.9v4.1c0 3.4-2.3 5.8-5.2 7.3-2.9-1.5-5.2-3.9-5.2-7.3V5.9L10 4Z" fill="var(--sh-bg, var(--bg))" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 6.8v7.4M7.6 9.4h4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`;
   const bookI = `<svg viewBox="0 0 24 24"><path d="M12 6.6C10.2 5.2 7.6 4.6 4.5 4.6v12.8c3.1 0 5.7.6 7.5 2 1.8-1.4 4.4-2 7.5-2V4.6c-3.1 0-5.7.6-7.5 2zM12 6.6v12.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>`;
   const rosI = `<svg viewBox="0 0 24 24"><g fill="currentColor"><circle cx="12" cy="3.4" r="1.3"/><circle cx="16.3" cy="5" r="1.3"/><circle cx="18" cy="9.2" r="1.3"/><circle cx="16.3" cy="13.4" r="1.3"/><circle cx="7.7" cy="5" r="1.3"/><circle cx="6" cy="9.2" r="1.3"/><circle cx="7.7" cy="13.4" r="1.3"/><circle cx="12" cy="15.2" r="1.6"/></g><path d="M12 17v5M10 19h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`;
   const book = `<svg viewBox="0 0 16 16"><path d="M8 4.2C6.6 3 4.6 2.8 2.5 3.2v8.6c2.1-.4 4.1-.2 5.5 1 1.4-1.2 3.4-1.4 5.5-1V3.2C11.4 2.8 9.4 3 8 4.2Zm0 0v8.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
@@ -160,6 +189,35 @@
 
   const strip = (cells) => `<div class="cm-days">${cells.map(([d, k], i) => `<span class="${i === 6 ? "t" : ""}"><i class="${k}">${k === "g" ? graceI : k === "o" ? "" : check}</i>${d}</span>`).join("")}</div>`;
 
+  // Tu año: barras de cada mes (Palabra en verde, Rosario en azul), el mes elegido y, al final, lo mejor del año
+  function yearHTML() {
+    const M = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    const W = [18, 19, 22, 20, 21, 18, 13, 14, 19, 30, 20, 0], R = [6, 5, 6, 5, 27, 5, 4, 3, 6, 23, 6, 0], sel = 9;
+    const max = Math.max(...W.map((w, i) => w + R[i]));
+    const bars = M.map((m, i) => `<span class="${i === sel ? "on" : ""}${i > 10 ? " fut" : ""}"><i class="r" style="height:${R[i] / max * 92}px"></i><i class="w" style="height:${W[i] / max * 92}px"></i><em>${m[0]}</em></span>`).join("");
+    const ic = (svg, c) => `<span class="ic" style="--c:${c}">${svg}</span>`;
+    const star = `<svg viewBox="0 0 24 24"><path d="M12 4v16M4 12h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>`;
+    const streak = `<svg viewBox="0 0 24 24"><path d="M5 18c3-1 4-4 7-6s5-3 7-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="5" cy="18" r="1.8" fill="currentColor"/><circle cx="19" cy="6" r="1.8" fill="currentColor"/></svg>`;
+    return `<div class="cm-card"><h3>Mes a mes</h3><p>Toca un mes para verlo. El borde marca el mes elegido.</p>
+        <div class="cm-chart">${bars}</div>
+        <div class="cm-legend"><span><i style="--c:#2fb565"></i>Días con la Palabra</span><span><i style="--c:#3d82ec"></i>Rosarios</span></div>
+        <div class="cm-month"><div class="mh"><div><small>Tu mes más fructífero</small><b>Octubre</b></div><div class="arr"><span>‹</span><span>›</span></div></div>
+          <div class="row"><div><b>30</b>días con la Palabra</div><div><b>23</b>rosarios</div><div><b>24</b>días de racha</div></div></div>
+      </div>
+      <div class="cm-card"><h3>Un año de oración</h3><p>Se completa el 31 de diciembre.</p>
+        <div class="cm-stats"><div><b>214</b>días con la Palabra</div><div><b>96</b>rosarios</div><div><b>31</b>días, tu racha más larga</div><div><b>Gloriosos</b>los misterios que más rezaste</div></div>
+      </div>
+      <p class="cm-sec">Lo mejor de tu año</p>
+      <div class="cm-card"><h3>Tus meses</h3>
+        <ul class="cm-best">
+          <li class="top">${ic(roadIcon(), "#7a4bb0")}<div><b>Octubre</b>El mes más fructífero</div><span class="v">53<small>en total</small></span></li>
+          <li>${ic(bookI, "#2fb565")}<div><b>Octubre</b>El mes con más Palabra</div><span class="v">30<small>días</small></span></li>
+          <li>${ic(rosI, "#3d82ec")}<div><b>Mayo</b>El mes con más rosarios</div><span class="v">27<small>rosarios</small></span></li>
+          <li>${ic(streak, "#c48b00")}<div><b>Septiembre y octubre</b>Tu racha más larga</div><span class="v">31<small>días</small></span></li>
+        </ul>
+      </div>`;
+  }
+
   function panel() {
     const box = document.createElement("div");
     box.className = "cm-panel x-path";
@@ -171,7 +229,7 @@
           ${strip([["X", ""], ["J", ""], ["V", ""], ["S", ""], ["D", "g"], ["L", ""], ["M", ""]])}</div>
         <div class="cm-card x-ros"><div class="cm-sr"><span class="ic">${rosI}</span><div><h3>Rosario</h3><p style="margin-top:2px">Tu mejor racha: 18 días</p></div><span class="num">5<small>días seguidos</small></span></div>
           ${strip([["X", "o"], ["J", "o"], ["V", ""], ["S", ""], ["D", ""], ["L", ""], ["M", ""]])}</div>
-        <div class="cm-note">${shield}<span>El domingo no leíste la Palabra, pero se usó tu <b>día de gracia</b> y la racha sigue. Tienes uno cada semana; el próximo, a partir del lunes.</span></div>
+        <div class="cm-note">${shield}<span>El domingo no leíste la Palabra, pero <b>el escudo de san Miguel</b> protegió tu racha. Tienes uno cada semana; el próximo, a partir del lunes.</span></div>
 
         <p class="cm-sec">Hitos y estampas</p>
         <div class="cm-card x-word"><h3>Palabra</h3>
@@ -191,8 +249,7 @@
           <div class="cm-bars">${[["L", 1, 1], ["M", 1, 1], ["X", 1, 0], ["J", 1, 1], ["V", 1, 1], ["S", 0, 1], ["D", 1, 0]].map(([l, w, r]) => `<span><i class="${w ? "w" : ""}">${w ? book : ""}</i><i class="${r ? "r" : ""}">${r ? crossI : ""}</i>${l}</span>`).join("")}</div>
           <div class="cm-legend"><span><i style="--c:#2fb565"></i>Palabra</span><span><i style="--c:#3d82ec"></i>Rosario</span></div></div>
         <p class="cm-sec">Tu año 2026</p>
-        <div class="cm-card"><h3>Un año de oración</h3><p>Se completa el 31 de diciembre.</p>
-          <div class="cm-stats"><div><b>214</b>días con la Palabra</div><div><b>96</b>rosarios</div><div><b>31</b>días, tu racha más larga</div><div><b>Gloriosos</b>los misterios que más rezaste</div></div></div>
+        ${yearHTML()}
       </div>`;
     document.body.appendChild(box);
     return box;
@@ -201,7 +258,7 @@
   function pill(where, kind, txt, dots) {
     const b = document.createElement("button");
     b.type = "button"; b.className = "cm-pill " + kind;
-    b.innerHTML = `<span class="ic">${roadIcon}</span><span><b>${txt}</b></span><span class="cm-dots">${dots.map((d) => `<i class="${d}"></i>`).join("")}</span><span class="chev">›</span>`;
+    b.innerHTML = `<span class="ic">${roadIcon()}</span><span><b>${txt}</b></span><span class="cm-dots">${dots.map((d) => `<i class="${d}"></i>`).join("")}</span><span class="chev">›</span>`;
     where.insertAdjacentElement("afterend", b);
   }
 
@@ -228,7 +285,7 @@
     const faq = document.querySelector(".top .x-faq");
     const top = document.createElement("button");
     top.type = "button"; top.className = "cm-top x-path"; top.setAttribute("aria-label", "Tu camino");
-    top.innerHTML = `${roadIcon}<span>12</span>`;
+    top.innerHTML = `${roadIcon()}<span>12</span>`;
     faq.insertAdjacentElement("beforebegin", top);
     if (n === 1 || n === 6) pill(document.querySelector("#wordcol .daynav"), "x-word", "12 días seguidos", ["", "", "", "", "g", "", ""]);
     if (n === 2) pill(document.querySelector("#rosList .ros-tools"), "x-ros", "5 días seguidos", ["o", "o", "", "", "", "", ""]);
