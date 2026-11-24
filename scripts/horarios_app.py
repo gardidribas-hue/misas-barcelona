@@ -151,8 +151,11 @@ def convertir(fecha):
     md = fecha[5:]
     lugares = {l["id"]: l for l in json.loads((H / "lugares.json").read_text("utf-8"))["lugares"]}
     rev = horarios_excel.leer()
+    fuera = set(json.loads((H / "eliminados.json").read_text("utf-8"))["templos"]) if (H / "eliminados.json").exists() else set()
     out = {}
     for tid, t in datos["templos"].items():
+        if tid in fuera or tid not in lugares:
+            continue
         cels = t.get("celebraciones") or []
         rec = {"bcn_id": tid, "name": t["nombre"], "tipo": t.get("tipo"), "address": t.get("direccion"),
                "municipio": t.get("municipio"), "lat": t.get("lat"), "lng": t.get("lng"), "web": t.get("web"),

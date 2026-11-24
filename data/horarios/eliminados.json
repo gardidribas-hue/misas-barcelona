@@ -1,0 +1,57 @@
+{
+ "nota": "Templos quitados del Excel de fuentes y de la web: ya no tienen misa, estaban repetidos o son de otra diócesis. horarios.py importar los salta. Decidido con Guillem el 2026-11-24.",
+ "templos": {
+  "BCN0082": {
+   "nombre": "Església de les Operaries Parroquials",
+   "motivo": "no es parroquia (no está en el Arzobispado) y no hay web ni ningún indicio de misa"
+  },
+  "BCN0112": {
+   "nombre": "Hospital de la Santa Creu i Sant Pau",
+   "motivo": "el recinto antiguo de Sant Pau ya no es hospital (es el Recinte Modernista); no hay ningún indicio de misa. Se mantiene el Nou Hospital de Sant Pau"
+  },
+  "BCN0158": {
+   "nombre": "Monestir de Santa Maria de Pedralbes (Clarisas)",
+   "motivo": "no hay misa habitual: la web de Maria Reina solo cita el Vía Crucis de Viernes Santo en el Monestir (el horario que tenía era el de Maria Reina)"
+  },
+  "BCN0170": {
+   "nombre": "Parròquia de la Sagrada Família",
+   "motivo": "fila repetida de «Sagrada Família (parroquia, cripta)»"
+  },
+  "BCN0171": {
+   "nombre": "Parròquia de la Verge de Natzaret",
+   "motivo": "fila repetida de «Verge de Natzaret»"
+  },
+  "BCN0172": {
+   "nombre": "Parròquia de Sant Albert Magne (St. Albertus Magnus)",
+   "motivo": "fila repetida de «Sant Albert Magne (parroquia alemana)»"
+  },
+  "BCN0173": {
+   "nombre": "Parròquia de Sant Josep de Calassanç",
+   "motivo": "la iglesia de Joan de Peguera 20 está cerrada desde el 1-7-2022; las misas son en el Casal Calassanç (fila Sant Josep de Calassanç, C/ Sant Quintí 19)"
+  },
+  "BCN0174": {
+   "nombre": "Parròquia del Patriarca Abraham",
+   "motivo": "unificada con Sant Francesc d'Assís (Poblenou); ya no tiene misa propia (web parroquiasantfrancescassis.com)"
+  },
+  "BCN0175": {
+   "nombre": "Parròquia francesa de la Mare de Déu de Lourdes",
+   "motivo": "fila repetida de «Mare de Déu de Lourdes (parroquia francesa)»"
+  },
+  "BCN0369": {
+   "nombre": "Parròquia de Sant Mateu",
+   "motivo": "es de la diócesis de Sant Feliu de Llobregat, no de Barcelona (no está en el Arzobispado; gcatholic.org la sitúa en Sant Feliu)"
+  },
+  "BCN0370": {
+   "nombre": "Parròquia de Santa Magdalena",
+   "motivo": "es de la diócesis de Sant Feliu de Llobregat, no de Barcelona (no está en el Arzobispado; gcatholic.org la sitúa en Sant Feliu)"
+  },
+  "BCN0375": {
+   "nombre": "Ermita de Santa Eulàlia de Provençana",
+   "motivo": "misma dirección que la parroquia Santa Eulàlia de Provençana; no hay ningún indicio de misa propia en la ermita"
+  },
+  "BCN0443": {
+   "nombre": "Parròquia de Sant Joan Baptista",
+   "motivo": "es de la diócesis de Sant Feliu de Llobregat, no de Barcelona (no está en el Arzobispado; gcatholic.org la sitúa en Sant Feliu)"
+  }
+ }
+}
