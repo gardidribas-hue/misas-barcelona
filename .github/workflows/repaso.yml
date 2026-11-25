@@ -1,0 +1,25 @@
+name: repaso
+# Temporal (25-nov-2026): descarga el texto de las webs para el repaso de horarios. Solo corre en esta rama.
+on:
+  push:
+    branches: [claude/project-thread-kw3bix]
+    paths: [scripts/repaso_descarga.py, .github/workflows/repaso.yml]
+permissions:
+  contents: write
+jobs:
+  descargar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-cat tesseract-ocr-spa poppler-utils >/dev/null
+          pip install -q beautifulsoup4 pypdf openpyxl
+      - run: python scripts/repaso_descarga.py
+      - run: |
+          git config user.name "misas-barcelona bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add repaso
+          git commit -q -m "Textos para el repaso ($(date -u +%F))"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
