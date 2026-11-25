@@ -272,9 +272,15 @@
       topBtn.onclick = () => openPanel(topBtn);
       faq.insertAdjacentElement("beforebegin", topBtn);
     }
-    const n = Math.max(analyze("w").cur, analyze("r").cur);
-    topBtn.setAttribute("aria-label", t("cmBtn")); topBtn.title = t("cmBtn");
-    topBtn.innerHTML = `${roadIcon()}<span${n ? "" : " hidden"}>${n}</span>`;
+    // El número va en un fuego (naranja) o, si hoy la racha la sostiene el escudo de san Miguel, en un escudo morado
+    const aw = analyze("w"), ar = analyze("r"), a = aw.cur >= ar.cur ? aw : ar, n = a.cur;
+    const yest = keyOf(msOf(todayKey()) - DAY), held = n && !a.todayDone && a.shield[yest];
+    const lab = t("cmBtn") + (n ? " · " + (n === 1 ? t("cmPill1") : t("cmPillN", { n })) : "");
+    topBtn.setAttribute("aria-label", lab); topBtn.title = lab;
+    const shape = held
+      ? `<path d="M12 1.4l9.2 3.3v6.9c0 6-4.1 10.3-9.2 12.8-5.1-2.5-9.2-6.8-9.2-12.8V4.7L12 1.4Z" fill="var(--accent)"/>`
+      : `<defs><linearGradient id="cmFire" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#f0602a"/><stop offset="1" stop-color="#f7b23b"/></linearGradient></defs><path d="M11.2 1C12.6 4.6 16.2 6.6 17.9 10.2c.9-1 1.4-2.3 1.4-3.7 1.9 2.1 3 4.9 3 7.9 0 6.1-4.6 10.6-10.3 10.6S1.7 20.5 1.7 14.4c0-3.1 1.3-5.9 3.4-7.9-.1 1.7.5 3.2 1.6 4.2C6.6 7.2 8.6 3.7 11.2 1Z" fill="url(#cmFire)"/>`;
+    topBtn.innerHTML = roadIcon() + (n ? `<span class="cm-badge${held ? " held" : ""}" aria-hidden="true"><svg viewBox="0 0 24 26">${shape.replace(/<path /, '<path stroke="var(--backdrop)" stroke-width="2.4" stroke-linejoin="round" paint-order="stroke" ')}<text x="12" y="${held ? 14.6 : 18.6}" text-anchor="middle" fill="${held ? "var(--accent-ink)" : "#fff"}" style="font-size:${n > 99 ? 7.2 : 9.5}px">${n}</text></svg></span>` : "");
   }
 
   // ---------- Panel «Tu camino» ----------
