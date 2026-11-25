@@ -99,19 +99,19 @@ def resumen_temporada(cs):
 
 
 def aplicar_revision(rec, t, rev, md):
-    """Columna D del Excel de revisión: estado de fiabilidad (columna E) y, si manda la revisión, su horario."""
+    """Columnas D y E del Excel de revisión: estado de fiabilidad (columna F) y, si se muestra una lectura revisada, su horario."""
     cels = (t.get("celebraciones") or []) if t.get("estado") in ("ok", "pendiente de verificar") else []
     c = horarios_excel.horario_txt(cels, md) if cels else ""
     fuente = horarios_excel.FUENTE.get(t.get("fuente"), "") if c else ""
     r = rev.get(rec["bcn_id"]) or {}
-    codigo, muestra = horarios_excel.estado(c, r.get("revisado", ""), fuente, r.get("web", ""))
+    codigo, muestra = horarios_excel.estado(c, r.get("revisado", ""), r.get("tercera", ""), fuente, r.get("web", ""))
     if codigo == "sin_horario" and cels:  # algo leído que no cabe en el texto (p. ej. solo «primer domingo»)
         codigo = "sin_revisar" if t.get("fuente") == "F1" else "sin_revisar_otra"
     h = rec["horario"]
     h["revision"] = codigo
-    if muestra != "D":
+    if muestra not in ("D", "E"):
         return
-    revisadas, libres = horarios_excel.leer_horario(r.get("revisado", ""))
+    revisadas, libres = horarios_excel.leer_horario(r.get("revisado" if muestra == "D" else "tercera", ""))
     for campo in TIPO.values():
         rec[campo], rec[campo + "_text"] = [], ""
     for c_ in revisadas:

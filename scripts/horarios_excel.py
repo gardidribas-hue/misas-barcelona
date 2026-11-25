@@ -1,11 +1,13 @@
 """Excel de revisión de horarios (data/horarios/Horarios_revision.xlsx).
 
 Una hoja por distrito de Barcelona y por municipio (parroquias), y otra por tipo de templo. Columnas:
-    A Nombre · B Web · C Horario de la fuente (automático) · D Horario revisado (segunda lectura) · E Fiabilidad (fórmula)
-    F Fuente de la columna C · G Municipio · H ID
-C es el horario que se ha leído (web propia; si no hay, Arzobispado u OpenStreetMap). D es una segunda lectura de la misma fuente, hecha aparte (a mano o por otra IA) y comprobada.
-E compara C y D, y la web pública muestra el mismo aviso (horarios_app.py llama a estado()).
-    python scripts/horarios_excel.py generar     reescribe el Excel con la columna C al día y conserva B y D
+    A Nombre · B Web · C Horario leído (automático) · D Segunda lectura · E Tercera lectura · F Fiabilidad (fórmula)
+    G Fuente de la columna C · H Municipio · I ID
+C es el horario que lee el programa (web propia; si no hay, Arzobispado u OpenStreetMap). D es una segunda lectura de la
+misma fuente, hecha aparte y comprobada. E es una tercera lectura, hecha a ciegas, cuando D no coincide con C.
+Verde («Fiable») solo si hay doble verificación: dos lecturas que coinciden (C = D, D = E o C = E). F lo calcula con
+fórmula y la web pública muestra el mismo aviso (horarios_app.py llama a estado()).
+    python scripts/horarios_excel.py generar     reescribe el Excel con la columna C al día y conserva B, D y E
 """
 import json, pathlib, re, sys, unicodedata
 
@@ -20,51 +22,65 @@ HOJA_TIPO = {"Santuario": "Santuarios", "Basílica": "Basílicas", "Iglesia": "I
              "Ermita": "Ermitas", "Monasterio / convento": "Monasterios y conventos", "Oratorio": "Oratorios"}
 MUNICIPIO_HOJA = 4  # con menos parroquias, el municipio va a la hoja «Otros municipios»
 CAB = ["Nombre", "Web (parroquia o comunidad pastoral)", "Horario leído (automático)", "Horario revisado (segunda lectura)",
-       "Fiabilidad (automática)", "Fuente de la columna C", "Municipio", "ID"]
+       "Tercera lectura", "Fiabilidad (automática)", "Fuente de la columna C", "Municipio", "ID"]
 
-# Estados de la columna E: (código, texto que empieza la celda, color). La web usa el código.
+# Estados de la columna F: (texto que empieza la celda, color). La web usa el código. El color va por la primera palabra:
+# «Fiable» verde, «Sin verificar» amarillo, «No coinciden» rojo, «Sin horario» gris.
+VERDE, AMARILLO, ROJO, GRIS = "D9F2D9", "FFF2CC", "F4CCCC", "EDEDED"
 ESTADOS = {
-    "sin_horario": ("Sin horario · no sale en la web", "EDEDED"),
-    "sin_web": ("Sin web · se muestra la revisión; puede cambiar, confírmalo", "FFF2CC"),
-    "sin_lectura": ("Solo revisión · su web no se ha podido leer; puede cambiar, confírmalo", "FFF2CC"),
-    "sin_revisar": ("Sin revisar · fiabilidad media", "FFF2CC"),
-    "sin_revisar_otra": ("Sin revisar · no es de la web de la parroquia, confírmalo", "FFF2CC"),
-    "fiable": ("Fiable · la lectura automática y la segunda lectura coinciden", "D9F2D9"),
-    "no_coinciden": ("Corregido · la lectura automática de su web no cuadraba; se muestra la revisión", "FCE4D6"),
-    "revisado": ("Revisado · se muestra la revisión (la fuente dice otra cosa)", "FFF2CC"),
+    "sin_horario": ("Sin horario · no sale en la web", GRIS),
+    "fiable": ("Fiable · la lectura automática (C) y la segunda lectura (D) coinciden", VERDE),
+    "fiable_de": ("Fiable · la segunda (D) y la tercera lectura (E) coinciden; se muestra D", VERDE),
+    "fiable_ce": ("Fiable · la lectura automática (C) y la tercera lectura (E) coinciden", VERDE),
+    "sin_revisar": ("Sin verificar · solo hay la lectura automática de su web", AMARILLO),
+    "sin_revisar_otra": ("Sin verificar · solo hay la lectura automática, y no es de la web de la parroquia", AMARILLO),
+    "sin_web": ("Sin verificar · no tiene web y solo hay una lectura", AMARILLO),
+    "sin_lectura": ("Sin verificar · su web no se ha podido leer y solo hay una lectura", AMARILLO),
+    "pendiente": ("Sin verificar · la segunda lectura (D) cambia el horario y falta la tercera (E); se muestra D", AMARILLO),
+    "no_coinciden": ("No coinciden · ninguna lectura coincide con otra; se muestra D, confírmalo", ROJO),
 }
+COLOR_WEB = {VERDE: "verde", AMARILLO: "amarillo", ROJO: "rojo", GRIS: None}
 
 
 def igual(a, b):
-    """La misma comparación que la fórmula de la columna E: sin espacios ni saltos de línea, sin mayúsculas, – = -."""
+    """La misma comparación que la fórmula de la columna F: sin espacios ni saltos de línea, sin mayúsculas, – = -."""
     f = lambda s: re.sub(r"[ \n\r]", "", (s or "")).replace("–", "-").lower()
     return f(a) == f(b)
 
 
-def estado(c, d, fuente, web=""):
-    """Código del estado y qué horario se muestra en la web: "C", "D" o None."""
-    c, d = (c or "").strip(), (d or "").strip()
-    if not c and not d:
+def estado(c, d, e="", fuente="", web=""):
+    """Código del estado y qué lectura se muestra en la web: "C", "D", "E" o None.
+
+    Verde solo con doble verificación (dos lecturas iguales). Con una sola lectura, o si D cambia C y aún no hay E:
+    amarillo. Si hay varias lecturas y ninguna coincide con otra: rojo."""
+    c, d, e = (c or "").strip(), (d or "").strip(), (e or "").strip()
+    if not (c or d or e):
         return "sin_horario", None
-    if not c:
-        return ("sin_lectura" if (web or "").strip() else "sin_web"), "D"
-    if not d:
-        return ("sin_revisar" if fuente == FUENTE["F1"] else "sin_revisar_otra"), "C"
-    if igual(c, d):
+    if c and d and igual(c, d):
         return "fiable", "C"
-    # D es una segunda lectura comprobada de la misma fuente: si no coincide con la lectura automática, manda D.
-    return ("no_coinciden", "D") if fuente == FUENTE["F1"] else ("revisado", "D")
+    if d and e and igual(d, e):
+        return "fiable_de", "D"
+    if c and e and igual(c, e):
+        return "fiable_ce", "C"
+    if sum(map(bool, (c, d, e))) >= 2:
+        return ("pendiente" if not e else "no_coinciden"), ("D" if d else "E")
+    if c:
+        return ("sin_revisar" if fuente == FUENTE["F1"] else "sin_revisar_otra"), "C"
+    return ("sin_lectura" if (web or "").strip() else "sin_web"), ("D" if d else "E")
 
 
 def formula(i):
     n = lambda col: f'LOWER(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE({col}{i}," ",""),CHAR(10),""),CHAR(13),""),"–","-"))'
-    e = {k: f'"{v[0]}"' for k, v in ESTADOS.items()}
-    web = f'F{i}="{FUENTE["F1"]}"'
-    return (f'=IF(AND(TRIM(C{i})="",TRIM(D{i})=""),{e["sin_horario"]},'
-            f'IF(TRIM(C{i})="",IF(TRIM(B{i})="",{e["sin_web"]},{e["sin_lectura"]}),'
-            f'IF(TRIM(D{i})="",IF({web},{e["sin_revisar"]},{e["sin_revisar_otra"]}),'
-            f'IF({n("C")}={n("D")},{e["fiable"]},'
-            f'IF({web},{e["no_coinciden"]},{e["revisado"]})))))')
+    v = lambda col: f'TRIM({col}{i})<>""'
+    e = {k: f'"{x[0]}"' for k, x in ESTADOS.items()}
+    web = f'G{i}="{FUENTE["F1"]}"'
+    return (f'=IF(AND(TRIM(C{i})="",TRIM(D{i})="",TRIM(E{i})=""),{e["sin_horario"]},'
+            f'IF(AND({v("C")},{v("D")},{n("C")}={n("D")}),{e["fiable"]},'
+            f'IF(AND({v("D")},{v("E")},{n("D")}={n("E")}),{e["fiable_de"]},'
+            f'IF(AND({v("C")},{v("E")},{n("C")}={n("E")}),{e["fiable_ce"]},'
+            f'IF(({v("C")})+({v("D")})+({v("E")})>=2,IF(TRIM(E{i})="",{e["pendiente"]},{e["no_coinciden"]}),'
+            f'IF({v("C")},IF({web},{e["sin_revisar"]},{e["sin_revisar_otra"]}),'
+            f'IF(TRIM(B{i})="",{e["sin_web"]},{e["sin_lectura"]})))))))')
 
 
 # --- De celebraciones a texto y de texto a celebraciones ------------------------------------------
@@ -204,7 +220,9 @@ def web_por_defecto(lug):
 
 
 def leer(xlsx=XLSX):
-    """{ID: {"web": B, "revisado": D}} de todas las hojas del Excel de revisión (vacío si no existe)."""
+    """{ID: {"web": B, "revisado": D, "tercera": E}} de todas las hojas del Excel de revisión (vacío si no existe).
+
+    Las columnas se buscan por su cabecera. Un Excel antiguo sin «Tercera lectura» se lee igual (E vacía)."""
     if not pathlib.Path(xlsx).exists():
         return {}
     import openpyxl
@@ -215,10 +233,12 @@ def leer(xlsx=XLSX):
         if "ID" not in cab:
             continue
         i_id, i_web, i_rev = cab.index("ID"), cab.index(CAB[1]) if CAB[1] in cab else 1, cab.index(CAB[3]) if CAB[3] in cab else 3
+        i_ter = cab.index(CAB[4]) if CAB[4] in cab else None
+        val = lambda f, j: str(f[j] or "").strip() if j is not None and len(f) > j else ""
         for f in filas:
             tid = f[i_id] if len(f) > i_id else None
             if tid:
-                out[str(tid).strip()] = {"web": str(f[i_web] or "").strip(), "revisado": str(f[i_rev] or "").strip()}
+                out[str(tid).strip()] = {"web": val(f, i_web), "revisado": val(f, i_rev), "tercera": val(f, i_ter)}
     return out
 
 
@@ -233,7 +253,7 @@ def fila(lug, t, rev, md):
     c = horario_txt(t.get("celebraciones") or [], md) if t.get("estado") in ("ok", "pendiente de verificar") else ""
     fuente = FUENTE.get(t.get("fuente"), "") if c else ""
     r = rev.get(lug["id"], {})
-    return {"nombre": lug["nombre"], "web": r.get("web") or web_por_defecto(lug), "c": c, "d": r.get("revisado", ""),
+    return {"nombre": lug["nombre"], "web": r.get("web") or web_por_defecto(lug), "c": c, "d": r.get("revisado", ""), "e": r.get("tercera", ""),
             "fuente": fuente, "municipio": lug["municipio"], "id": lug["id"]}
 
 
@@ -274,24 +294,23 @@ def generar(xlsx=XLSX, fecha=None):
         ("A · Nombre del templo.", False, None),
         ("B · Web de la parroquia o de su comunidad pastoral. Si la cambias, el programa leerá el horario de la web nueva el lunes siguiente.", False, None),
         ("C · Horario leído: lo rellena el programa cada lunes. Si la parroquia no tiene web propia (o no se puede leer), es el del Arzobispado. No lo toques.", False, None),
-        ("D · Horario revisado: una segunda lectura de la misma fuente, hecha aparte y comprobada. Va con el mismo formato que la columna C (lo más fácil es copiar C y corregir).", False, None),
-        ("E · Fiabilidad: automática, no la toques. Cambia al momento cuando editas D, y la web pública muestra el mismo aviso.", False, None),
-        ("F · De dónde sale la columna C: Web propia, Arzobispado u OpenStreetMap. G · Municipio. H · ID: código fijo del templo, no lo cambies.", False, None),
-        ("", False, None), ("Fiabilidad (columna E) y qué sale en la web pública", True, None),
-        ("Verde · Fiable: la lectura automática (C) y la segunda lectura (D) coinciden.", False, ESTADOS["fiable"][1]),
-        ("Naranja · Corregido: la lectura automática de la web de la parroquia no cuadraba con la segunda lectura. Se muestra la segunda lectura (D), con aviso de confirmarlo.", False, ESTADOS["no_coinciden"][1]),
-        ("Amarillo · Sin revisar: hay horario leído pero aún no se ha revisado. Se muestra con fiabilidad media (o, si viene del Arzobispado, pidiendo confirmarlo).", False, ESTADOS["sin_revisar"][1]),
-        ("Amarillo · Sin web: solo está la revisión. Se muestra esa, avisando de que la parroquia no tiene web y puede cambiar.", False, ESTADOS["sin_web"][1]),
-        ("Amarillo · Solo revisión: tiene web pero no se ha podido leer. Se muestra la revisión, avisando de que puede cambiar.", False, ESTADOS["sin_lectura"][1]),
-        ("Amarillo · Revisado: el Arzobispado dice otra cosa que la revisión. Se muestra la revisión.", False, ESTADOS["revisado"][1]),
-        ("Gris · Sin horario: ni horario leído ni revisión. No sale en la web pública.", False, ESTADOS["sin_horario"][1]),
+        ("D · Segunda lectura: otra lectura de la misma fuente, hecha aparte y comprobada. Va con el mismo formato que la columna C (lo más fácil es copiar C y corregir).", False, None),
+        ("E · Tercera lectura: solo hace falta si D no coincide con C. Se hace a ciegas (sin mirar C ni D) y sirve para desempatar.", False, None),
+        ("F · Fiabilidad: automática, no la toques. Cambia al momento cuando editas D o E, y la web pública muestra el mismo aviso.", False, None),
+        ("G · De dónde sale la columna C: Web propia, Arzobispado u OpenStreetMap. H · Municipio. I · ID: código fijo del templo, no lo cambies.", False, None),
+        ("", False, None), ("Fiabilidad (columna F) y qué sale en la web pública", True, None),
+        ("Verde · Fiable: hay doble verificación, es decir, dos lecturas que dicen exactamente lo mismo: C = D, o D = E (si la segunda lectura cambió el horario, la tercera lo confirma), o C = E.", False, VERDE),
+        ("Amarillo · Sin verificar: solo hay una lectura (sin web, web que no se puede leer, o aún sin segunda lectura), o la segunda lectura cambió el horario y falta la tercera. Se muestra con aviso de confirmarlo.", False, AMARILLO),
+        ("Rojo · No coinciden: hay dos o tres lecturas y ninguna coincide con otra. Se muestra la segunda lectura (D), con aviso claro de confirmarlo con la parroquia.", False, ROJO),
+        ("Gris · Sin horario: no hay ninguna lectura. No sale en la web pública.", False, GRIS),
+        ("Ojo: la comparación es literal (no cuentan los espacios, los saltos de línea ni las mayúsculas). «Dom» y «Dom y festivos» son distintos.", False, None),
         ("", False, None), ("Formato del horario", True, None),
         ("Una línea por tipo: «Misas: …», «Confesiones: …», «Adoración: …». Grupos separados por punto y coma.", False, None),
         ("Días: Lun, Mar, Mié, Jue, Vie, Sáb, Dom; intervalos con guion (Lun–Vie); «Dom y festivos», «Sáb y vísperas», «Cada día». Horas en 24 h separadas por comas; un intervalo con guion (18:00–19:00).", False, None),
         ("Ejemplo: Misas: Lun–Vie 8:00, 19:00; Sáb y vísperas 20:00; Dom y festivos 11:00, 12:30", False, None),
         ("", False, None), ("Cómo se actualiza la web", True, None),
         ("Sube el Excel cambiado a GitHub (data/horarios/Horarios_revision.xlsx, con el mismo nombre) y la web se actualiza en unos minutos. "
-         "Cada lunes el programa vuelve a leer las webs, reescribe la columna C y conserva lo que haya en B y D.", False, None),
+         "Cada lunes el programa vuelve a leer las webs, reescribe la columna C y conserva lo que haya en B, D y E.", False, None),
     ]
     for i, (t_, b, color) in enumerate(txt, 1):
         c = ex.cell(row=i, column=1, value=t_)
@@ -311,10 +330,10 @@ def generar(xlsx=XLSX, fecha=None):
             c.fill = PatternFill("solid", fgColor="7F3B3B")
             c.alignment = Alignment(wrap_text=True, vertical="center")
         for i, r in enumerate(filas, 2):
-            vals = [r["nombre"], r["web"] or None, r["c"] or None, r["d"] or None, formula(i), r["fuente"] or None, r["municipio"], r["id"]]
+            vals = [r["nombre"], r["web"] or None, r["c"] or None, r["d"] or None, r["e"] or None, formula(i), r["fuente"] or None, r["municipio"], r["id"]]
             for j, v in enumerate(vals, 1):
                 c = ws.cell(row=i, column=j, value=v)
-                c.font = Font(name=F, color="999999") if j in (6, 7, 8) else Font(name=F)
+                c.font = Font(name=F, color="999999") if j in (7, 8, 9) else Font(name=F)
                 c.alignment = Alignment(wrap_text=True, vertical="top")
                 c.border = Border(bottom=thin)
             if r["web"].startswith("http"):
@@ -322,13 +341,12 @@ def generar(xlsx=XLSX, fecha=None):
                 ws.cell(row=i, column=2).font = Font(name=F, color="0563C1", underline="single")
             ws.cell(row=i, column=3).fill = PatternFill("solid", fgColor="F5F5F5")
         last = len(filas) + 1
-        for codigo, (texto, color) in ESTADOS.items():
-            pref = texto.split(" · ")[0]
-            ws.conditional_formatting.add(f"E2:E{last}", FormulaRule(formula=[f'LEFT(E2,{len(pref)})="{pref}"'], fill=PatternFill("solid", fgColor=color)))
-        for col, w in zip("ABCDEFGH", (34, 34, 46, 46, 30, 14, 16, 9)):
+        for pref, color in {x[0].split(" · ")[0]: x[1] for x in ESTADOS.values()}.items():
+            ws.conditional_formatting.add(f"F2:F{last}", FormulaRule(formula=[f'LEFT(F2,{len(pref)})="{pref}"'], fill=PatternFill("solid", fgColor=color)))
+        for col, w in zip("ABCDEFGHI", (34, 34, 46, 46, 46, 30, 14, 16, 9)):
             ws.column_dimensions[col].width = w
         ws.freeze_panes = "B2"
-        ws.auto_filter.ref = f"A1:H{last}"
+        ws.auto_filter.ref = f"A1:I{last}"
         resumen.append((nombre, len(filas)))
     wb.active = 1
     wb.save(xlsx)
