@@ -58,6 +58,7 @@
     cmStartOn: "El {d} {x}.",
     cmWd: ["L", "M", "X", "J", "V", "S", "D"],
     cmCalOpen: "Abrir el calendario litúrgico",
+    cmLegC: { g: "Tiempo ordinario", w: "Navidad, Pascua y fiestas del Señor, de la Virgen y de los santos", r: "Mártires, apóstoles y Espíritu Santo", v: "Adviento, Cuaresma y difuntos" },
   });
   A.i18n("ca", {
     cmBtn: "El teu camí", cmTitle: "El teu <em>camí</em>", cmClose: "Tancar",
@@ -95,6 +96,7 @@
     cmStartOn: "El {d} {x}.",
     cmWd: ["Dl", "Dt", "Dc", "Dj", "Dv", "Ds", "Dg"],
     cmCalOpen: "Obrir el calendari litúrgic",
+    cmLegC: { g: "Temps ordinari", w: "Nadal, Pasqua i festes del Senyor, de la Mare de Déu i dels sants", r: "Màrtirs, apòstols i Esperit Sant", v: "Advent, Quaresma i difunts" },
   });
   const daysTxt = (n) => (n === 1 ? t("cmDay1") : t("cmDaysN", { n }));
 
@@ -394,7 +396,11 @@
 
   function panelHTML() {
     const aw = analyze("w"), ar = analyze("r"), cur = Math.max(aw.cur, ar.cur);
-    return `<div class="cm-wrap"><header class="cm-head"><div><h1>${t("cmTitle")}</h1></div><button type="button" class="cm-x" aria-label="${esc(t("cmClose"))}">${xI}</button></header>
+    // En ordenador, con el mismo formato que las demás secciones (ventana, título grande y columna de 720 px)
+    const head = wide()
+      ? `<header class="dev-head cm-dhead"><h1>${t("cmTitle")}</h1><button type="button" class="cm-x" aria-label="${esc(t("cmClose"))}">${xI}</button></header>`
+      : `<header class="cm-head"><div><h1>${t("cmTitle")}</h1></div><button type="button" class="cm-x" aria-label="${esc(t("cmClose"))}">${xI}</button></header>`;
+    return `<div class="${wide() ? "dev-inner" : "cm-wrap"}">${head}
       <div class="cm-road">${road(cur)}</div>
       <div class="cm-body">
         <p class="cm-sec">${esc(t("cmStreaks"))}</p>
@@ -408,26 +414,49 @@
   }
   function renderPanel() {
     if (!panelEl) return;
-    const y = panelEl.scrollTop;
-    panelEl.innerHTML = panelHTML();
-    panelEl.scrollTop = y;
+    const sc = scroller(), y = sc.scrollTop;
+    fill();
+    scroller().scrollTop = y;
   }
+  const wideMQ = matchMedia("(min-width: 861px)"), wide = () => wideMQ.matches;
+  const scroller = () => (panelEl && panelEl.querySelector(".dev-scroll")) || panelEl;
+  function fill() {
+    panelEl.classList.toggle("cm-win", wide()); panelEl.classList.toggle("win", wide());
+    panelEl.innerHTML = wide() ? `<div class="dev-scroll">${panelHTML()}</div>` : panelHTML();
+  }
+  // En ordenador la ventana ocupa el mismo sitio que la de la sección abierta, y la barra de arriba sigue a la vista
+  function place() {
+    if (!panelEl) return;
+    const st = panelEl.style;
+    if (!wide()) { st.left = st.top = st.width = st.height = ""; return; }
+    const wins = [...document.querySelectorAll("#stage > .win, #stage > * > .win")].filter((e) => e.offsetParent && e !== panelEl);
+    const rs = wins.length ? wins.map((e) => e.getBoundingClientRect()) : [$("stage").getBoundingClientRect()];
+    const l = Math.min(...rs.map((r) => r.left)), tp = Math.min(...rs.map((r) => r.top)), r = Math.max(...rs.map((r) => r.right)), b = Math.max(...rs.map((r) => r.bottom));
+    Object.assign(st, { left: l + "px", top: tp + "px", width: r - l + "px", height: b - tp + "px" });
+  }
+  let wasWide = wide();
+  addEventListener("resize", () => { if (!panelEl) return; if (wide() !== wasWide) { wasWide = wide(); renderPanel(); } place(); });
+  // Si se cambia de sección con la barra de arriba, «Tu camino» se cierra
+  document.addEventListener("misas:mode", () => { if (!panelEl && !calEl) return; closeView(); closePanel(); closeCal(); steps.length = 0; });
   // Al abrir se añade un paso al historial: el botón «atrás» del móvil cierra el panel en vez de salir de la web.
   function openPanel(from) {
     if (panelEl) return;
     panelFrom = from || null; yearSel = null;
     panelEl = document.createElement("div");
-    panelEl.className = "cm-panel x-path";
+    panelEl.className = "cm-panel x-path" + (wide() ? " cm-win win" : "");
     panelEl.setAttribute("role", "dialog"); panelEl.setAttribute("aria-modal", "true"); panelEl.setAttribute("aria-label", t("cmBtn"));
-    panelEl.innerHTML = panelHTML();
+    fill();
     panelEl.addEventListener("click", onPanelClick);
     document.body.appendChild(panelEl);
+    place();
+    if (topBtn) topBtn.classList.add("on");
     pushStep("panel");
     panelEl.tabIndex = -1; panelEl.focus({ preventScroll: true });
   }
   function closePanel() {
     if (!panelEl) return;
     panelEl.remove(); panelEl = null;
+    if (topBtn) topBtn.classList.remove("on");
     if (panelFrom && panelFrom.isConnected) panelFrom.focus({ preventScroll: true });
   }
   function onPanelClick(e) {
@@ -487,7 +516,7 @@
     const head = monthName(y, m) + (y !== +todayKey().slice(0, 4) ? " " + y : "");
     return `<div class="hd"><div><p>${esc(t("xLitK"))}</p><h2>${esc(head)}</h2></div><div class="nav"><button type="button" data-cm="-1" aria-label="${esc(t("cmPrevM"))}">‹</button><button type="button" data-cm="1" aria-label="${esc(t("cmNextM"))}">›</button></div></div>
       <div class="cm-cal">${cells}</div>
-      <div class="cm-legend"><span><i style="--c:${LC.g}"></i>${esc(capF(col.g || ""))}</span><span><i class="w"></i>${esc(capF(col.w || ""))}</span><span><i style="--c:${LC.r}"></i>${esc(capF(col.r || ""))}</span><span><i style="--c:${LC.v}"></i>${esc(capF(col.v || ""))}</span></div>
+      <ul class="cm-leg2">${["g", "w", "r", "v"].map((k) => `<li><i class="${k === "w" ? "w" : ""}" style="--c:${LC[k]}" title="${esc(capF(col[k] || ""))}"></i>${esc(t("cmLegC")[k])}</li>`).join("")}</ul>
       <div class="foot">${esc(t("cmCalFoot"))}${start}</div>`;
   }
   function openCal(from) {

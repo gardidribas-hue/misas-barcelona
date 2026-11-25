@@ -1399,3 +1399,30 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
 }
 @keyframes cmIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 .cm-panel:focus, .cm-sheet:focus { outline: none; }
+/* Tu camino en ordenador: el mismo formato que las demás secciones (ventana bajo la barra de arriba, título grande y columna de 720 px) */
+.cm-top.on { background: var(--accent); color: var(--accent-ink); }
+.cm-panel.cm-win { z-index: 20; display: flex; flex-direction: column; overflow: hidden; }
+.cm-win .cm-dhead { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.cm-win .cm-dhead .cm-x { flex: none; margin-top: 8px; width: 44px; height: 44px; }
+.cm-win .cm-road { margin: 0; border-radius: 28px; }
+.cm-win .cm-body { padding: 0; }
+.cm-win .cm-sec { margin-top: 36px; font-size: .8125rem; }
+.cm-win .cm-hint { font-size: .9375rem; }
+.cm-win .cm-card { padding: 20px 22px; border-radius: 24px; margin-bottom: 12px; }
+.cm-win .cm-card h3 { font-size: 1.375rem; }
+.cm-win .cm-card p, .cm-win .cm-note { font-size: .9375rem; }
+.cm-win .cm-sr .ic { width: 48px; height: 48px; }
+.cm-win .cm-sr .num { font-size: 2.5rem; }
+.cm-win .cm-days i { width: 36px; height: 36px; }
+.cm-win .cm-days i.g svg { width: 19px; height: 19px; }
+.cm-win .cm-days span { font-size: .8125rem; }
+.cm-win .cm-miles svg { width: 72px; height: 72px; }
+.cm-win .cm-miles { font-size: .875rem; }
+.cm-win .cm-stamps { grid-template-columns: repeat(4, 1fr); }
+.cm-win .cm-chart { height: 180px; }
+.cm-win .cm-bars i { width: 30px; height: 30px; }
+/* Leyenda del calendario: qué representa cada color */
+.cm-leg2 { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; font: 500 .8125rem/1.35 var(--ui); color: var(--muted); }
+.cm-leg2 li { display: grid; grid-template-columns: 10px 1fr; gap: 10px; align-items: start; }
+.cm-leg2 i { width: 10px; height: 10px; margin-top: 3px; border-radius: 50%; background: var(--c); }
+.cm-leg2 i.w { background: #fff; box-shadow: inset 0 0 0 1.5px #c9a227; }
