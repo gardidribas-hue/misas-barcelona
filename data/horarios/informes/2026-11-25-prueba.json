@@ -1,9 +1,31 @@
 {
  "fecha": "2026-11-25",
  "revisados": 5,
- "actualizados": [],
- "cambios": [],
- "caidas": [],
+ "actualizados": [
+  {
+   "id": "BCN0213",
+   "nombre": "Sant Francesc d'Assís",
+   "fuente": "F3",
+   "celebraciones": 6
+  }
+ ],
+ "cambios": [
+  {
+   "id": "BCN0213",
+   "nombre": "Sant Francesc d'Assís",
+   "fuente": "F3",
+   "antes": 8,
+   "ahora": 6
+  }
+ ],
+ "caidas": [
+  {
+   "id": "BCN0213",
+   "nombre": "Sant Francesc d'Assís",
+   "fuente": "F1",
+   "error": "<urlopen error timed out>"
+  }
+ ],
  "discrepancias": [],
  "sin_horario": [
   {
