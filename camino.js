@@ -61,7 +61,7 @@
   .cm-days i.g { background: none; color: var(--accent-strong); box-shadow: inset 0 0 0 1.5px var(--accent); }
   .cm-days i.o { background: var(--line); }
   .cm-days .t i { box-shadow: 0 0 0 2px var(--surface), 0 0 0 3.5px var(--accent); }
-  .cm-days i svg { width: 24px; height: 24px; } .cm-days i.g { --sh-bg: var(--surface); }
+  .cm-days i svg { width: 24px; height: 24px; } .cm-days i.g { --sh-bg: var(--surface); } .cm-days i.g svg { width: 15px; height: 15px; }
   .cm-note { display: flex; gap: 10px; align-items: flex-start; margin-top: 4px; padding: 12px 14px; border-radius: 16px; background: var(--accent-soft); font: 500 .8125rem/1.45 var(--ui); color: var(--ink); }
   .cm-note { --sh-bg: var(--accent-soft); } .cm-note svg { flex: none; width: 30px; height: 30px; color: var(--accent-strong); margin-top: 1px; }
   .cm-miles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-top: 12px; text-align: center; font: 700 .75rem/1.25 var(--ui); }
