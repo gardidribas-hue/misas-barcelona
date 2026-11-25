@@ -1,55 +1,15 @@
 {
  "fecha": "2026-11-25",
  "revisados": 5,
- "actualizados": [
-  {
-   "id": "BCN0003",
-   "nombre": "Basílica de la Puríssima Concepció",
-   "fuente": "F1",
-   "celebraciones": 37
-  },
-  {
-   "id": "BCN0212",
-   "nombre": "Sant Ferran",
-   "fuente": "F3",
-   "celebraciones": 3
-  },
-  {
-   "id": "BCN0213",
-   "nombre": "Sant Francesc d'Assís",
-   "fuente": "F1",
-   "celebraciones": 8
-  },
-  {
-   "id": "BCN0226",
-   "nombre": "Sant Joan de Gràcia",
-   "fuente": "F1",
-   "celebraciones": 3
-  }
- ],
- "cambios": [
-  {
-   "id": "BCN0213",
-   "nombre": "Sant Francesc d'Assís",
-   "fuente": "F1",
-   "antes": 6,
-   "ahora": 8
-  }
- ],
- "caidas": [
-  {
-   "id": "BCN0092",
-   "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
-   "fuente": "OSM",
-   "error": "Overpass no responde: https://overpass-api.de/api/interpreter: 502 b'# 502 Gateway Timeout\\n\\nThis Overpass API server is currently at capacity. All query workers are busy\\nand the request queue is full.\\n\\n## What to do\\n\\nRe' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<html>\\r\\n<head><title>504 Gateway Time-out</title></head>\\r\\n<body>\\r\\n<center><h1>504 Gateway Time-out</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r' | https://overpass-api.de/api/interpreter: 502 b'# 502 Gateway T"
-  }
- ],
+ "actualizados": [],
+ "cambios": [],
+ "caidas": [],
  "discrepancias": [],
  "sin_horario": [
   {
    "id": "BCN0092",
    "nombre": "Església de Sant Sever i Sant Vicenç de Paül",
-   "motivo": "OSM: error: Overpass no responde: https://overpass-api.de/api/interpreter: 502 b'# 502 Gateway Timeout\\n\\nThis Overpass API server is currently at capacity. All query workers are busy\\nand the request queue is full.\\n\\n## What to do\\n\\nRe' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<html>\\r\\n<head><title>504 Gateway Time-out</title></head>\\r\\n<body>\\r\\n<center><h1>504 Gateway Time-out</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r' | https://overpass-api.de/api/interpreter: 502 b'# 502 Ga"
+   "motivo": "OSM: OpenStreetMap no tiene horario de misas para este templo"
   }
  ],
  "pendientes": [],
