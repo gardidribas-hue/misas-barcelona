@@ -35,6 +35,7 @@ desde la rama `main`: https://gardidribas-hue.github.io/misas-barcelona/.
 | `app.js` | Chat, mapa, filtros, fichas, ajustes, idiomas (textos en `I18N`, castellano y catalán). |
 | `devocion.js` | Palabra del día y Rosario. |
 | `extras.js` | Detalles visuales: camino a pie, año litúrgico, santos del día (calendario romano, con `data/santoral.js`, y una vida breve con «Leer más» en `data/santos-vidas.js`, que se edita a mano y va en el mismo orden que `santoral.js`), cuentas del rosario, vela, imagen para compartir, credencial del peregrino y vibración. Cada bloque es independiente. |
+| `camino.js` | «Tu camino»: rachas de Palabra y Rosario con el escudo de san Miguel (un día de gracia por semana), hitos con estampa, resumen de la semana y del año, y el calendario litúrgico que se abre al tocar el año litúrgico. Todo se guarda solo en el navegador (`localStorage` «misas-camino»). Un día de Palabra cuenta con el evangelio de hoy 5 s a la vista; uno de Rosario, al llegar al final (o abrir los cinco misterios del resumen, o encender la vela). |
 | `horarios.js` | Mete en los datos los horarios automáticos de `data/horarios/horarios_app.js`. |
 | `config.js` | Ajustes que puede cambiar Guillem: mapa, contacto, formulario de avisos, GoatCounter. |
 | `sw.js` | Service worker: la web abre al instante en visitas repetidas y funciona sin conexión. |
