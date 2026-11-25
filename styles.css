@@ -198,6 +198,7 @@ h1 em { color: var(--accent-strong); }
 .link { justify-self: start; border: 0; background: none; padding: 0; color: var(--muted); text-decoration: underline; cursor: pointer; font-size: 0.875rem; }
 .summary { padding: 6px 20px 10px; font-size: 0.875rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
 .summary strong { color: var(--ink); }
+.summary .verified { display: block; margin-top: 2px; font-size: 0.8125rem; }
 .list { padding: 0 14px 20px; }
 .list .card { animation: rise .35s var(--ease) both; }
 

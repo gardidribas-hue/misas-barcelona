@@ -1489,19 +1489,13 @@
    "cp": "08035",
    "lat": 41.436275,
    "lng": 2.149415,
-   "web": "http://www.salesianshorta.org",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org",
    "en_arzobispado": "No",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "http://www.salesianshorta.org",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/collegi-salesia-sant-joan-bosco-horta-barcelona",
      "pagina": "https://misas.org/p/collegi-salesia-sant-joan-bosco-horta-barcelona",
@@ -3558,19 +3552,13 @@
    "cp": "08042",
    "lat": 41.432095,
    "lng": 2.171038,
-   "web": "https://marededeudefatima.parroquias.net",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Sin verificar a fondo",
+   "notas": "Sin verificar a fondo · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://marededeudefatima.parroquias.net/",
-     "tipo": "Web propia (página de horario)",
-     "formato": "HTML",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-la-mare-de-deu-de-fatima-barcelona",
      "pagina": "https://misas.org/p/parroquia-de-la-mare-de-deu-de-fatima-barcelona",
@@ -3778,19 +3766,13 @@
    "cp": "08041",
    "lat": 41.417544,
    "lng": 2.171497,
-   "web": "https://parroquiamarededeudemontserrat.cat",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "robots.txt bloquea lectores automáticos",
+   "notas": "robots.txt bloquea lectores automáticos · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "http://www.parroquiamarededeudemontserrat.cat/UDP-54376/",
-     "tipo": "Web propia (página de horario)",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-la-mare-de-deu-de-montserrat-barcelona",
      "pagina": "https://misas.org/p/parroquia-de-la-mare-de-deu-de-montserrat-barcelona",
@@ -3977,19 +3959,13 @@
    "cp": "08013",
    "lat": 41.400101,
    "lng": 2.18294,
-   "web": "https://www.parroquiadelpilarbcn.org",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://www.parroquiadelpilarbcn.org",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-la-mare-de-deu-del-roser-barcelona",
      "pagina": "https://misas.org/p/parroquia-de-la-mare-de-deu-del-roser-barcelona",
@@ -4344,19 +4320,13 @@
    "cp": "08035",
    "lat": 41.435034,
    "lng": 2.150524,
-   "web": "http://www.monasteriosvisitacion.com",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org",
    "en_arzobispado": "No",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "http://www.monasteriosvisitacion.com",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/monestir-de-la-visitacio-de-santa-maria-saleses-barcelona",
      "pagina": "https://misas.org/p/monestir-de-la-visitacio-de-santa-maria-saleses-barcelona",
@@ -5897,19 +5867,13 @@
    "cp": "08031",
    "lat": 41.434718,
    "lng": 2.16413,
-   "web": "http://www.santfrancescxavier.com",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "http://www.santfrancescxavier.com",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-francesc-xavier-barcelona",
      "pagina": "https://misas.org/p/parroquia-de-sant-francesc-xavier-barcelona",
@@ -6184,19 +6148,13 @@
    "cp": "08020",
    "lat": 41.425514,
    "lng": 2.201097,
-   "web": "https://www.sjdeavila.net",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://www.sjdeavila.net",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-joan-davila-barcelona",
      "pagina": "https://misas.org/p/parroquia-de-sant-joan-davila-barcelona",
@@ -8716,19 +8674,13 @@
    "cp": "08328",
    "lat": 41.49364,
    "lng": 2.295169,
-   "web": "https://esglesiadalella.org",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://esglesiadalella.org",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-feliu-alella",
      "pagina": "https://misas.org/p/parroquia-de-sant-feliu-alella",
@@ -8750,19 +8702,13 @@
    "cp": "08310",
    "lat": 41.53163,
    "lng": 2.419712,
-   "web": "http://arxiprestatdemataro.org/parroquies-i-esglesies/item/centre-de-culte-del-barri-del-cros.html",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org",
    "en_arzobispado": "No",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "http://arxiprestatdemataro.org/parroquies-i-esglesies/item/centre-de-culte-del-barri-del-cros.html",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/capella-de-santa-maria-del-cros-argentona",
      "pagina": "https://misas.org/p/capella-de-santa-maria-del-cros-argentona",
@@ -8882,19 +8828,13 @@
    "cp": "08310",
    "lat": 41.55378,
    "lng": 2.40127,
-   "web": "https://arxiprestatdemataro.org/parroquies-i-esglesies/item/parroquia-de-sant-julia.html",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos",
+   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://arxiprestatdemataro.org/categoria/parroquies/",
-     "tipo": "Web del arciprestazgo / comunidad pastoral",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-julia-argentona",
      "pagina": "https://misas.org/p/parroquia-de-sant-julia-argentona",
@@ -9163,19 +9103,13 @@
    "cp": "08911",
    "lat": 41.454153,
    "lng": 2.252522,
-   "web": "https://esglesiabadalona.org",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://esglesiabadalona.org",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-la-mare-de-deu-de-lourdes-badalona",
      "pagina": "https://misas.org/p/parroquia-de-la-mare-de-deu-de-lourdes-badalona",
@@ -9198,19 +9132,13 @@
    "cp": "08917",
    "lat": 41.451341,
    "lng": 2.237769,
-   "web": "https://parroquiamontserratbadalona.org",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://parroquiamontserratbadalona.org",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-la-mare-de-deu-de-montserrat-badalona",
      "pagina": "https://misas.org/p/parroquia-de-la-mare-de-deu-de-montserrat-badalona",
@@ -9379,19 +9307,13 @@
    "cp": "08916",
    "lat": 41.470252,
    "lng": 2.233776,
-   "web": "http://www.parroquiabufala.cat",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Sant Crist de Canyet (Badalona), dentro de la web de Bufalà",
+   "notas": "Sant Crist de Canyet (Badalona), dentro de la web de Bufalà · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://parroquiabufala.cat/www/p-sant-crist-de-canyet/",
-     "tipo": "Web propia (página de horario)",
-     "formato": "HTML",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-del-sant-crist-canyet-badalona",
      "pagina": "https://misas.org/p/parroquia-del-sant-crist-canyet-badalona",
@@ -9413,19 +9335,13 @@
    "cp": "08917",
    "lat": 41.457256,
    "lng": 2.237451,
-   "web": "https://www.parroquiabufala.cat",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://www.parroquiabufala.cat",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-francesc-dassis-badalona",
      "pagina": "https://misas.org/p/parroquia-de-sant-francesc-dassis-badalona",
@@ -9607,19 +9523,13 @@
    "cp": "08915",
    "lat": 41.462199,
    "lng": 2.246326,
-   "web": "https://esglesiabadalona.org",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://esglesiabadalona.org",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-santa-clara-badalona",
      "pagina": "https://misas.org/p/parroquia-de-santa-clara-badalona",
@@ -9642,19 +9552,13 @@
    "cp": "08911",
    "lat": 41.452788,
    "lng": 2.246041,
-   "web": "https://esglesiabadalona.org",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://esglesiabadalona.org",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-santa-maria-badalona",
      "pagina": "https://misas.org/p/parroquia-de-santa-maria-badalona",
@@ -10268,19 +10172,13 @@
    "cp": "08319",
    "lat": 41.623868,
    "lng": 2.435569,
-   "web": "https://arxiprestatdemataro.org/parroquies-i-esglesies/item/sant-andreu-d-alfar-dosrius.html",
+   "web": null,
    "prioridad": "1-Web > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos; misas.org no tiene misas registradas para este lugar",
+   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos; misas.org no tiene misas registradas para este lugar · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://arxiprestatdemataro.org/categoria/parroquies/",
-     "tipo": "Web del arciprestazgo / comunidad pastoral",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-andreu-dalfar-dosrius",
      "pagina": "https://misas.org/p/parroquia-de-sant-andreu-dalfar-dosrius",
@@ -10305,15 +10203,9 @@
    "prioridad": "1-Web > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos",
+   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://arxiprestatdemataro.org/categoria/parroquies/",
-     "tipo": "Web del arciprestazgo / comunidad pastoral",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F3": {
      "url": "https://esglesia.barcelona/es/parroquies/sant-esteve-2/"
     }
@@ -10332,15 +10224,9 @@
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos",
+   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://arxiprestatdemataro.org/categoria/parroquies/",
-     "tipo": "Web del arciprestazgo / comunidad pastoral",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-iscle-i-santa-victoria-dosrius",
      "pagina": "https://misas.org/p/parroquia-de-sant-iscle-i-santa-victoria-dosrius",
@@ -10737,19 +10623,13 @@
    "cp": "08906",
    "lat": 41.365382,
    "lng": 2.091701,
-   "web": "http://pinmaculadalh.org",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "http://pinmaculadalh.org",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-la-immaculada-concepcio-lhospitalet-de-llobregat",
      "pagina": "https://misas.org/p/parroquia-de-la-immaculada-concepcio-lhospitalet-de-llobregat",
@@ -11222,15 +11102,9 @@
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos",
+   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://arxiprestatdemataro.org/categoria/parroquies/",
-     "tipo": "Web del arciprestazgo / comunidad pastoral",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/basilica-parroquial-de-santa-maria-mataro",
      "pagina": "https://misas.org/p/basilica-parroquial-de-santa-maria-mataro",
@@ -11277,19 +11151,13 @@
    "cp": "08304",
    "lat": 41.569132,
    "lng": 2.463703,
-   "web": "http://arxiprestatdemataro.org/parroquies-i-esglesies/item/sant-miquel-de-mata.html",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org",
    "en_arzobispado": "No",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "http://arxiprestatdemataro.org/parroquies-i-esglesies/item/sant-miquel-de-mata.html",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/ermita-de-sant-miquel-de-mata-mataro",
      "pagina": "https://misas.org/p/ermita-de-sant-miquel-de-mata-mataro",
@@ -11331,19 +11199,13 @@
    "cp": "08304",
    "lat": 41.561679,
    "lng": 2.43427,
-   "web": "http://arxiprestatdemataro.org/parroquies-i-esglesies/item/santa.html",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org",
    "en_arzobispado": "No",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "http://arxiprestatdemataro.org/parroquies-i-esglesies/item/santa.html",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/ermita-de-santa-maria-de-cirera-mataro",
      "pagina": "https://misas.org/p/ermita-de-santa-maria-de-cirera-mataro",
@@ -11361,19 +11223,13 @@
    "cp": "08304",
    "lat": 41.564702,
    "lng": 2.446442,
-   "web": "http://arxiprestatdemataro.org/parroquies-i-esglesies/item/santa-rita.html",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org",
    "en_arzobispado": "No",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "http://arxiprestatdemataro.org/parroquies-i-esglesies/item/santa-rita.html",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/ermita-de-santa-rita-valldeix-mataro",
      "pagina": "https://misas.org/p/ermita-de-santa-rita-valldeix-mataro",
@@ -11657,15 +11513,9 @@
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos",
+   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://arxiprestatdemataro.org/categoria/parroquies/",
-     "tipo": "Web del arciprestazgo / comunidad pastoral",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-la-mare-de-deu-de-lesperanca-mataro",
      "pagina": "https://misas.org/p/parroquia-de-la-mare-de-deu-de-lesperanca-mataro",
@@ -11691,15 +11541,9 @@
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos",
+   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://arxiprestatdemataro.org/categoria/parroquies/",
-     "tipo": "Web del arciprestazgo / comunidad pastoral",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-la-mare-de-deu-de-montserrat-mataro",
      "pagina": "https://misas.org/p/parroquia-de-la-mare-de-deu-de-montserrat-mataro",
@@ -11724,15 +11568,9 @@
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos",
+   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://arxiprestatdemataro.org/categoria/parroquies/",
-     "tipo": "Web del arciprestazgo / comunidad pastoral",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-maria-auxiliadora-mataro",
      "pagina": "https://misas.org/p/parroquia-de-maria-auxiliadora-mataro",
@@ -11837,15 +11675,9 @@
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos",
+   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://arxiprestatdemataro.org/categoria/parroquies/",
-     "tipo": "Web del arciprestazgo / comunidad pastoral",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-la-sagrada-familia-mataro",
      "pagina": "https://misas.org/p/parroquia-de-la-sagrada-familia-mataro",
@@ -11872,15 +11704,9 @@
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos",
+   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://arxiprestatdemataro.org/categoria/parroquies/",
-     "tipo": "Web del arciprestazgo / comunidad pastoral",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-josep-mataro",
      "pagina": "https://misas.org/p/parroquia-de-sant-josep-mataro",
@@ -11906,15 +11732,9 @@
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos",
+   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://arxiprestatdemataro.org/categoria/parroquies/",
-     "tipo": "Web del arciprestazgo / comunidad pastoral",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-simo-i-sant-pau-mataro",
      "pagina": "https://misas.org/p/parroquia-de-sant-simo-i-sant-pau-mataro",
@@ -12008,19 +11828,13 @@
    "cp": "08390",
    "lat": 41.467156,
    "lng": 2.281688,
-   "web": "http://www.parroquiademontgat.es",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "http://www.parroquiademontgat.es",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-joan-montgat",
      "pagina": "https://misas.org/p/parroquia-de-sant-joan-montgat",
@@ -12210,19 +12024,13 @@
    "cp": "08330",
    "lat": 41.489995,
    "lng": 2.356232,
-   "web": "https://www.santcristofolpremia.cat",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://www.santcristofolpremia.cat",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-cristofol-premia-de-mar",
      "pagina": "https://misas.org/p/parroquia-de-sant-cristofol-premia-de-mar",
@@ -12898,19 +12706,13 @@
    "cp": "08921",
    "lat": 41.45346,
    "lng": 2.21186,
-   "web": "https://www.santacolomajove.com",
+   "web": null,
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": null,
+   "notas": "web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://www.santacolomajove.com",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-santa-coloma-esglesia-major-santa-coloma-de-gramenet",
      "pagina": "https://misas.org/p/parroquia-de-santa-coloma-esglesia-major-santa-coloma-de-gramenet",
@@ -13465,15 +13267,9 @@
    "prioridad": "1-Web > 2-misas.org > 3-Arzobispado",
    "en_arzobispado": "Sí",
    "estado_excel": null,
-   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos",
+   "notas": "Arciprestazgo de Mataró: ficha por parroquia y ermita; robots.txt bloquea lectores automáticos · web quitada el 2026-11-25: el dominio no existe (NXDOMAIN en Google y Cloudflare)",
    "comprobado_excel": "2026-10-21",
    "fuentes": {
-    "F1": {
-     "url": "https://arxiprestatdemataro.org/categoria/parroquies/",
-     "tipo": "Web del arciprestazgo / comunidad pastoral",
-     "formato": "HTML",
-     "bloquea_bots": "Sí"
-    },
     "F2": {
      "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-andreu-orrius",
      "pagina": "https://misas.org/p/parroquia-de-sant-andreu-orrius",

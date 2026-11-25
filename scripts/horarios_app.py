@@ -147,6 +147,12 @@ def distrito_de(lat, lng, geo):
     return None
 
 
+def verificado():
+    """Fecha de la última lectura semanal completa de las fuentes (la escribe fuentes_texto.py cada lunes)."""
+    f = H / "verificacion.json"
+    return json.loads(f.read_text("utf-8")).get("ultima") if f.exists() else None
+
+
 def convertir(fecha):
     datos = json.loads((H / "horarios.json").read_text("utf-8"))
     parroquias = json.loads((ROOT / "data" / "parroquias.json").read_text("utf-8"))["parroquias"]
@@ -223,7 +229,8 @@ def convertir(fecha):
         if rec["lat"] and not rec["parroquia_id"] and rec["municipio"] == "Barcelona":
             rec["distrito"] = distrito_de(rec["lat"], rec["lng"], geo)
         out[tid] = rec
-    meta = {"generado": dt.date.today().isoformat(), "fecha_temporada": fecha, "templos": len(out), "aviso": datos["meta"].get("aviso")}
+    meta = {"generado": dt.date.today().isoformat(), "fecha_temporada": fecha, "templos": len(out), "aviso": datos["meta"].get("aviso"),
+            "verificado": verificado()}
     (H / "horarios_app.js").write_text("window.MISAS_HORARIOS = " + json.dumps({"meta": meta, "templos": out}, ensure_ascii=False) + ";\n", "utf-8")
     print(f"{len(out)} templos en {H / 'horarios_app.js'}")
 

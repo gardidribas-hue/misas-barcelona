@@ -16,6 +16,7 @@ from horarios_excel import leer, web_por_defecto
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DEST = ROOT / "fuentes"
 HUELLAS = ROOT / "data" / "horarios" / "huellas.json"
+VERIFICACION = ROOT / "data" / "horarios" / "verificacion.json"
 import threading, urllib.parse
 _locks, _glock, _orig = {}, threading.Lock(), h.descargar
 
@@ -188,6 +189,9 @@ def guardar_huellas(carpeta, fecha=None):
         r["web"] = web_github(texto, lugares[f.stem])
         r["c2"] = lectura_2(texto, t.get("fuente"), fecha[5:]) if t.get("estado") in ("ok", "pendiente de verificar") else ""
     HUELLAS.write_text(json.dumps(datos, ensure_ascii=False, indent=1, sort_keys=True) + "\n", "utf-8")
+    n = len(list(pathlib.Path(carpeta).glob("BCN*.txt")))
+    if n:  # la web enseña esta fecha como «Última verificación de los datos»
+        VERIFICACION.write_text(json.dumps({"ultima": fecha, "fuentes": n}, ensure_ascii=False, indent=1) + "\n", "utf-8")
     return datos
 
 
