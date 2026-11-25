@@ -21,8 +21,7 @@
 - Santa Teresa de l'Infant Jesús (BCN0284)
 - Mare de Déu del Pilar (BCN0364)
 
-## Webs que fallan (60)
-- Església de Sant Sever i Sant Vicenç de Paül (BCN0092) · OSM: Overpass no responde: https://overpass-api.de/api/interpreter: 502 b'# 502 Gateway Timeout\n\nThis Overpass API server is currently at capacity. All query workers are busy\nand the request queue is full.\n\n## What to do\n\nRe' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r' | https://overpass-api.de/api/interpreter: 502 b'# 502 Ga
+## Webs que fallan (59)
 - Basílica dels Sants Just i Pastor (BCN0008) · F1: Remote end closed connection without response
 - Capella de Sant Josep (BCN0024) · F1: <urlopen error [Errno 111] Connection refused>
 - Centre Cristià dels Universitaris (CCU) (BCN0037) · F1: <urlopen error [Errno -5] No address associated with hostname>
@@ -86,7 +85,7 @@
 ## Templos sin horario (245)
 
 ### Iglesia (94)
-- Església de Sant Sever i Sant Vicenç de Paül (BCN0092): OSM: error: Overpass no responde: https://overpass-api.de/api/interpreter: 502 b'# 502 Gateway Timeout\n\nThis Overpass API server is currently at capacity. All query workers are busy\nand the request queue is full.\n\n## What to do\n\nRe' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r' | https://overpass-api.de/api/interpreter: 502 b'# 502 Ga
+- Església de Sant Sever i Sant Vicenç de Paül (BCN0092): OSM: OpenStreetMap no tiene horario de misas para este templo
 - Associació Cultural Catòlica Cristiana  i Social Conesti (BCN0001): OSM: no está en OpenStreetMap
 - Caputxins de Sarrià (BCN0032): F1: no se encuentra el enlace al horario; OSM: OpenStreetMap no tiene horario de misas para este templo
 - Casa Asil de Sant Andreu (BCN0033): OSM: no está en OpenStreetMap
