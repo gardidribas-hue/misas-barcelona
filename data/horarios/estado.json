@@ -6,7 +6,7 @@
   },
   "F1": {
    "hash": "0232a9268a0d4085",
-   "ultimo_ok": "2026-11-23"
+   "ultimo_ok": "2026-11-24"
   },
   "F1_texto": "0232a9268a0d4085",
   "F1_desde": "https://www.parroquiaconcepciobcn.org/horaris/"
@@ -20,14 +20,14 @@
  "BCN0212": {
   "F3": {
    "hash": "13e9b566ea852e22",
-   "ultimo_ok": "2026-11-23"
+   "ultimo_ok": "2026-11-24"
   },
   "F3_texto": "13e9b566ea852e22"
  },
  "BCN0213": {
   "F1": {
    "hash": "3e66315c154a3d33",
-   "ultimo_ok": "2026-11-23"
+   "ultimo_ok": "2026-11-24"
   },
   "F1_texto": "3e66315c154a3d33",
   "F3_texto": "b9a4d7b7c6fb753f",
@@ -45,7 +45,7 @@
   },
   "F1": {
    "hash": "1cb0fecfb2c8a75b",
-   "ultimo_ok": "2026-11-23"
+   "ultimo_ok": "2026-11-24"
   },
   "F1_texto": "1cb0fecfb2c8a75b",
   "F1_desde": "https://www.arxiprestatdegracia.cat/misses"
@@ -316,7 +316,6 @@
  },
  "BCN0080": {},
  "BCN0081": {},
- "BCN0082": {},
  "BCN0083": {},
  "BCN0084": {
   "F1_desde": "http://www.caputxins.cat/fraternitats/pompeia"
@@ -402,9 +401,6 @@
  "BCN0110": {},
  "BCN0111": {
   "F1_desde": "http://www.hhscjmerced.com/"
- },
- "BCN0112": {
-  "F1_desde": "http://www.santpau.es"
  },
  "BCN0113": {},
  "BCN0114": {
@@ -650,15 +646,6 @@
   "F1_texto": "ab58b3e6b5093a46",
   "F1_desde": "http://www.benedictinessantperepuelles.cat"
  },
- "BCN0158": {
-  "F1_url_descubierta": "https://mariareina.barcelona/#Horario",
-  "F1_texto": "89f706e0d05e7ba5",
-  "F1": {
-   "hash": "89f706e0d05e7ba5",
-   "ultimo_ok": "2026-11-23"
-  },
-  "F1_desde": "https://mariareina.barcelona"
- },
  "BCN0159": {
   "F1_url_descubierta": "https://valldonzella.cat/horaris-liturgics-monestir-valldonzella/",
   "F1_texto": "e1ad94f3278e2573",
@@ -700,38 +687,6 @@
    "hash": "69151c52403746f5",
    "ultimo_ok": "2026-11-23"
   }
- },
- "BCN0170": {
-  "F1_url_descubierta": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-  "F1_texto": "71dcfc5e6d6ecdbb",
-  "F1": {
-   "hash": "71dcfc5e6d6ecdbb",
-   "ultimo_ok": "2026-11-23"
-  },
-  "F1_desde": "https://parroquiasagradafamilia.cat"
- },
- "BCN0171": {
-  "F1_desde": "http://www.parroquiavirgendenazaret.org"
- },
- "BCN0172": {
-  "F1_desde": "https://www.kg-barcelona.de"
- },
- "BCN0173": {
-  "F1_desde": "https://calassans1976.blogspot.com"
- },
- "BCN0174": {
-  "F1_url_descubierta": "https://www.parroquiasantfrancescassis.com/horaris",
-  "F1_texto": "be167fa756c84bb8",
-  "F1": {
-   "hash": "be167fa756c84bb8",
-   "ultimo_ok": "2026-11-23"
-  },
-  "F1_desde": "https://www.parroquiasantfrancescassis.com/patriarca-abraham"
- },
- "BCN0175": {
-  "F1_url_descubierta": "https://barcelonecatholique.fr/faire-un-don/",
-  "F1_texto": "e37e93feebfd9ff2",
-  "F1_desde": "https://www.barcelonecatholique.fr"
  },
  "BCN0176": {},
  "BCN0177": {
@@ -1885,12 +1840,6 @@
  "BCN0368": {
   "F1_desde": "https://www.esplugues.com/monestir-de-santa-maria-de-montsio-desplugues"
  },
- "BCN0369": {},
- "BCN0370": {
-  "F1_url_descubierta": "https://www.parroquiasantamagdalena.org/horaris/",
-  "F1_texto": "e37e93feebfd9ff2",
-  "F1_desde": "https://www.parroquiasantamagdalena.org"
- },
  "BCN0371": {
   "F3_texto": "69151c52403746f5",
   "F3": {
@@ -1908,9 +1857,6 @@
  },
  "BCN0374": {
   "F1_desde": "https://sites.google.com/site/parroquiesbellvitgegornal/ermita-de-bellvitge"
- },
- "BCN0375": {
-  "F1_desde": "http://parroquiasantaeulalia.org"
  },
  "BCN0376": {},
  "BCN0377": {},
@@ -2208,7 +2154,6 @@
    "ultimo_ok": "2026-11-23"
   }
  },
- "BCN0443": {},
  "BCN0444": {
   "F3_texto": "0ffc9d58fc8745f4",
   "F3": {

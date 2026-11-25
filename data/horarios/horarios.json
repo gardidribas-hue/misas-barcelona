@@ -1,7 +1,7 @@
 {
  "meta": {
-  "actualizado": "2026-11-23",
-  "templos": 472,
+  "actualizado": "2026-11-24",
+  "templos": 459,
   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
   "fuentes": {
    "F1": "web de la parroquia o del arciprestazgo",
@@ -26,7 +26,7 @@
    "fuente": "F1",
    "url": "https://www.parroquiaconcepciobcn.org/horaris/",
    "formato": "html",
-   "comprobado": "2026-11-23",
+   "comprobado": "2026-11-24",
    "confianza": "media",
    "celebraciones": [
     {
@@ -50,7 +50,7 @@
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -74,7 +74,7 @@
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -98,7 +98,7 @@
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -122,7 +122,7 @@
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -146,7 +146,7 @@
      "notas": "Feiners: 8h, 10h, 11h, 19h i 20’15",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -167,7 +167,7 @@
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -188,7 +188,7 @@
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -209,7 +209,7 @@
      "notas": "Dissabtes i vigílies: 8h, 10h, 11h, 18h, 20h",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -231,7 +231,7 @@
      "vespertina_dominical": true,
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -253,7 +253,7 @@
      "vespertina_dominical": true,
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -274,7 +274,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -295,7 +295,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -316,7 +316,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -337,7 +337,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -358,7 +358,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -379,7 +379,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -400,7 +400,7 @@
      "notas": "Diumenges i festius: 8h, 10h*, 11.30 (Missa Major), 13h, 18h*, 20h, 20’30 (Missa Jove durant el curs escolar universitari d’octubre a juny, a la capella del Santíssim)",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -422,7 +422,7 @@
      "notas": "MISSA FAMILIAR: Primers diumenges de mes, a les 13:00. Missa participada per a infants i els seus pares.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -444,7 +444,7 @@
      "notas": "MISSA PER DEMANAR LA FE PER ALS QUI ESTIMEM: Darrers diumenges de mes, a les 13:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -468,7 +468,7 @@
      "notas": "Dies feiners: 8:00, 10:00, 11:00, 19:00 (de dilluns a dissabte matí).",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -492,7 +492,7 @@
      "notas": "Dies feiners: 8:00, 10:00, 11:00, 19:00 (de dilluns a dissabte matí).",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -516,7 +516,7 @@
      "notas": "Dies feiners: 8:00, 10:00, 11:00, 19:00 (de dilluns a dissabte matí).",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -540,7 +540,7 @@
      "notas": "Dies feiners: 8:00, 10:00, 11:00, 19:00 (de dilluns a dissabte matí).",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -562,7 +562,7 @@
      "vespertina_dominical": true,
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -584,7 +584,7 @@
      "vespertina_dominical": true,
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -605,7 +605,7 @@
      "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -626,7 +626,7 @@
      "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -647,7 +647,7 @@
      "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -668,7 +668,7 @@
      "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -689,7 +689,7 @@
      "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -710,7 +710,7 @@
      "notas": "Diumenges i festius: 8:00, 10:00*, 11:30 (Missa Major), 13:00 (agost no), 18:00* i 20:00.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -732,7 +732,7 @@
      "notas": "Cada dia de 8 a 13h i de 18 a 21, abans i després de les Misses.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -754,7 +754,7 @@
      "notas": "Cada dia de 8 a 13h i de 18 a 21, abans i després de les Misses.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -774,7 +774,7 @@
      "notas": "De dilluns a divendres, de 18h a 19h.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -794,7 +794,7 @@
      "notas": "Hora Santa Joves, els dimecres durant els curs escolar a les 21h.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -812,7 +812,7 @@
      "notas": "De 18:00 a 19:00, exposició major del Santíssim a l’altar del Sagrat Cor i acte de consagració al Cor de Jesús.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -830,7 +830,7 @@
      "notas": "De 22:00 a 1:00, adoració eucarística a la capella de Montserrat.",
      "fuente": "F1",
      "url": "https://www.parroquiaconcepciobcn.org/horaris/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     }
    ],
@@ -892,7 +892,7 @@
    "fuente": "F3",
    "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
    "formato": "html",
-   "comprobado": "2026-11-23",
+   "comprobado": "2026-11-24",
    "confianza": "baja",
    "celebraciones": [
     {
@@ -910,7 +910,7 @@
      "vespertina_dominical": true,
      "fuente": "F3",
      "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "baja"
     },
     {
@@ -927,7 +927,7 @@
      "notas": "Domingos y Festivos : 12,30 en Castellano",
      "fuente": "F3",
      "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "baja"
     },
     {
@@ -942,7 +942,7 @@
      "a_peticion": true,
      "fuente": "F3",
      "url": "https://esglesia.barcelona/es/parroquies/sant-ferran/",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "baja"
     }
    ],
@@ -970,7 +970,7 @@
    "fuente": "F1",
    "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
    "formato": "pdf",
-   "comprobado": "2026-11-23",
+   "comprobado": "2026-11-24",
    "confianza": "media",
    "celebraciones": [
     {
@@ -990,7 +990,7 @@
      "notas": "Dilluns a divendres: 20h S. Francesc",
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -1006,7 +1006,7 @@
      "notas": "Dissabtes: 20h S. Francesc",
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -1023,7 +1023,7 @@
      "notas": "Diumenges i festius: 11:30h S. Francesc",
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -1042,7 +1042,7 @@
      "idioma_incierto": true,
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media",
      "idioma_detalle": "italiano",
      "corregido": {
@@ -1067,7 +1067,7 @@
      "idioma_incierto": true,
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -1083,7 +1083,7 @@
      "notas": "Divendres: de 17:30h a 19:45h S. Francesc d’Assís",
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -1100,7 +1100,7 @@
      },
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     },
     {
@@ -1116,7 +1116,7 @@
      "notas": "Dimecres: de 18:15h a 19h S. Francesc d’Assís",
      "fuente": "F1",
      "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "media"
     }
    ],
@@ -1144,7 +1144,7 @@
    "fuente": "F1",
    "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
    "formato": "html",
-   "comprobado": "2026-11-23",
+   "comprobado": "2026-11-24",
    "confianza": "alta",
    "celebraciones": [
     {
@@ -1165,7 +1165,7 @@
      "notas": "Horari de missa: de dilluns a dissabte a les 19.00h. Diumeges a les 11h (català) i a les 13h (castellà)",
      "fuente": "F1",
      "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "alta"
     },
     {
@@ -1181,7 +1181,7 @@
      "notas": "Horari de missa: de dilluns a dissabte a les 19.00h. Diumeges a les 11h (català) i a les 13h (castellà)",
      "fuente": "F1",
      "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "alta"
     },
     {
@@ -1197,7 +1197,7 @@
      "notas": "Horari de missa: de dilluns a dissabte a les 19.00h. Diumeges a les 11h (català) i a les 13h (castellà)",
      "fuente": "F1",
      "url": "https://www.arxiprestatdegracia.cat/parroquies/sant-joan-de-gracia",
-     "comprobado": "2026-11-23",
+     "comprobado": "2026-11-24",
      "confianza": "alta"
     }
    ],
@@ -4765,27 +4765,6 @@
    "web": null,
    "oculto_por_defecto": false
   },
-  "BCN0082": {
-   "id": "BCN0082",
-   "nombre": "Església de les Operaries Parroquials",
-   "intentos": [
-    {
-     "fuente": "OSM",
-     "resultado": "no está en OpenStreetMap"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "estado": "sin horario",
-   "celebraciones": [],
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Sant Pere Claver, 2",
-   "cp": "08017",
-   "lat": 41.406116,
-   "lng": 2.117541,
-   "web": null,
-   "oculto_por_defecto": false
-  },
   "BCN0083": {
    "id": "BCN0083",
    "nombre": "Església de Nostra Senyora de la Visitació",
@@ -6014,31 +5993,6 @@
    "lat": 41.437613,
    "lng": 2.161642,
    "web": "http://www.hhscjmerced.com/",
-   "oculto_por_defecto": false
-  },
-  "BCN0112": {
-   "id": "BCN0112",
-   "nombre": "Hospital de la Santa Creu i Sant Pau",
-   "intentos": [
-    {
-     "fuente": "F1",
-     "resultado": "error: <urlopen error timed out>"
-    },
-    {
-     "fuente": "OSM",
-     "resultado": "no está en OpenStreetMap"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "estado": "sin horario",
-   "celebraciones": [],
-   "tipo": "Capilla de hospital",
-   "municipio": "Barcelona",
-   "direccion": "Avinguda Sant Antoni Maria Claret, 167",
-   "cp": "08025",
-   "lat": 41.413348,
-   "lng": 2.176623,
-   "web": "http://www.santpau.es",
    "oculto_por_defecto": false
   },
   "BCN0113": {
@@ -10805,510 +10759,6 @@
    "web": "http://www.benedictinessantperepuelles.cat",
    "oculto_por_defecto": false
   },
-  "BCN0158": {
-   "id": "BCN0158",
-   "nombre": "Monestir de Santa Maria de Pedralbes (Clarisas)",
-   "intentos": [
-    {
-     "fuente": "F1",
-     "resultado": "ok"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "lectura": "reglas",
-   "estado": "ok",
-   "fuente": "F1",
-   "url": "https://mariareina.barcelona/#Horario",
-   "formato": "html",
-   "comprobado": "2026-11-23",
-   "confianza": "media",
-   "celebraciones": [
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo"
-     ],
-     "inicio": "10:30",
-     "fin": null,
-     "idioma": "otro",
-     "temporada": {
-      "nombre": "Semana Santa",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "10:30h English Mass and blessing of palms",
-     "idioma_detalle": "inglés",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo"
-     ],
-     "inicio": "12:30",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Semana Santa",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "12:30h Santa Misa y bendición de ramos",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Semana Santa",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "20:00h Santa Misa",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "18:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Semana Santa",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "18:00h Oficio de la Cena del Señor",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "22:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Semana Santa",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "22:00h Hora Santa y adoración por turnos toda la noche",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "12:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Semana Santa",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "12:00h Via Crucis procesional con el Cos de Portants y Oficio de la Pasión en el Monestir",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "18:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Semana Santa",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "18:00h Oficio de la Pasión del Señor",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "sabado",
-      "vispera_festivo"
-     ],
-     "inicio": "22:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Semana Santa",
-      "inicio": null,
-      "fin": null
-     },
-     "semanas_mes": [],
-     "notas": "22:00h Solemne Vigilia Pascual",
-     "vespertina_dominical": true,
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
-     "semanas_mes": [],
-     "notas": "Lunes a Viernes, 20h",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "12:30",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
-     "semanas_mes": [],
-     "notas": "Domingos y días de precepto, 12:30h & 20h",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
-     "semanas_mes": [],
-     "notas": "Domingos y días de precepto, 12:30h & 20h",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "10:30",
-     "fin": null,
-     "idioma": "otro",
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
-     "semanas_mes": [],
-     "notas": "English Mass Sundays, 10:30h",
-     "idioma_detalle": "inglés",
-     "dias_deducidos": true,
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "12:30",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Verano",
-      "inicio": "07-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "Domingos y días de precepto, 12:30h",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Julio",
-      "inicio": "07-01",
-      "fin": "07-31"
-     },
-     "semanas_mes": [],
-     "notas": "Lunes a Viernes (solo 1-15 de Julio), 20h",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "confesion",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
-     ],
-     "inicio": null,
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "15min antes de la Misa, Lunes – Viernes",
-     "relativa_a_misa": {
-      "minutos_antes": 15
-     },
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
-     ],
-     "inicio": "07:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
-     "semanas_mes": [],
-     "notas": "Lunes a Viernes, 7h – 13:30h || 16h – 21h",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
-     ],
-     "inicio": "16:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
-     "semanas_mes": [],
-     "notas": "Lunes a Viernes, 7h – 13:30h || 16h – 21h",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "sabado"
-     ],
-     "inicio": "10:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
-     "semanas_mes": [],
-     "notas": "Sábados, 10h – 14h || 17h – 21h",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "sabado"
-     ],
-     "inicio": "17:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
-     "semanas_mes": [],
-     "notas": "Sábados, 10h – 14h || 17h – 21h",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "08:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
-     "semanas_mes": [],
-     "notas": "Domingos y días de precepto, 8h – 14h || 17h – 21h",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "17:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
-     "semanas_mes": [],
-     "notas": "Domingos y días de precepto, 8h – 14h || 17h – 21h",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo"
-     ],
-     "inicio": "10:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": {
-      "nombre": "Verano",
-      "inicio": "07-01",
-      "fin": "08-31"
-     },
-     "semanas_mes": [],
-     "notas": "Domingos, 10h – 14h",
-     "fuente": "F1",
-     "url": "https://mariareina.barcelona/#Horario",
-     "comprobado": "2026-11-23",
-     "confianza": "media"
-    }
-   ],
-   "notas_fuente": [
-    "página encontrada desde https://mariareina.barcelona"
-   ],
-   "lineas_dudosas": [
-    "Días lectivos escolares, 8h"
-   ],
-   "tipo": "Monasterio / convento",
-   "municipio": "Barcelona",
-   "direccion": "Plaça del Monestir, s/n",
-   "cp": "08034",
-   "lat": 41.395692,
-   "lng": 2.112679,
-   "web": "https://mariareina.barcelona",
-   "oculto_por_defecto": false
-  },
   "BCN0159": {
    "id": "BCN0159",
    "nombre": "Monestir de Santa Maria de Valldonzella (Madres Cistercienses)",
@@ -12119,501 +11569,6 @@
    "lat": 41.387005,
    "lng": 2.187919,
    "web": null,
-   "oculto_por_defecto": false
-  },
-  "BCN0170": {
-   "id": "BCN0170",
-   "nombre": "Parròquia de la Sagrada Família",
-   "intentos": [
-    {
-     "fuente": "F1",
-     "resultado": "ok"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "lectura": "reglas",
-   "estado": "ok",
-   "fuente": "F1",
-   "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-   "formato": "html",
-   "comprobado": "2026-11-23",
-   "confianza": "alta",
-   "celebraciones": [
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
-     ],
-     "inicio": "09:00",
-     "fin": null,
-     "idioma": "es",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "9:00 castellà",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
-     ],
-     "inicio": "10:00",
-     "fin": null,
-     "idioma": "otro",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "10:00 anglès",
-     "idioma_detalle": "inglés",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": "ca",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "20:00 català",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "sabado"
-     ],
-     "inicio": "09:00",
-     "fin": null,
-     "idioma": "es",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "9:00 castellà",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "sabado"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "20:00 Missa Internacional a la basílica (entrada pel carrer de Marina)",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "09:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "9:00 Missa internacional a la basílica (entrada pel carrer de Marina)",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "10:30",
-     "fin": null,
-     "idioma": "ca",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "10:30 català",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "11:45",
-     "fin": null,
-     "idioma": "es",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "11:45 castellà",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "13:00",
-     "fin": null,
-     "idioma": "ca",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "13:00 català",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "18:30",
-     "fin": null,
-     "idioma": "ca",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "18:30h català",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": "es",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "20:00 castellà",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "adoracion",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "20:30",
-     "fin": "21:30",
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Dijous, de 20:30 a 21:30h (el segon dijous de mes, de 20:30 a 22:30 h)",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "adoracion",
-     "dias": [
-      "jueves"
-     ],
-     "inicio": "20:30",
-     "fin": "22:30",
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Dijous, de 20:30 a 21:30h (el segon dijous de mes, de 20:30 a 22:30 h)",
-     "fuente": "F1",
-     "url": "https://parroquiasagradafamilia.cat/celebrar-la-fe/horaris/",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    }
-   ],
-   "notas_fuente": [
-    "página encontrada desde https://parroquiasagradafamilia.cat"
-   ],
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Sardenya, 318",
-   "cp": "08013",
-   "lat": 41.403145,
-   "lng": 2.173809,
-   "web": "https://parroquiasagradafamilia.cat",
-   "oculto_por_defecto": false
-  },
-  "BCN0171": {
-   "id": "BCN0171",
-   "nombre": "Parròquia de la Verge de Natzaret",
-   "intentos": [
-    {
-     "fuente": "F1",
-     "resultado": "error: <urlopen error [Errno -2] Name or service not known>"
-    },
-    {
-     "fuente": "OSM",
-     "resultado": "no está en OpenStreetMap"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "estado": "sin horario",
-   "celebraciones": [],
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Pare Mariana, 1",
-   "cp": "08035",
-   "lat": 41.430618,
-   "lng": 2.146386,
-   "web": "http://www.parroquiavirgendenazaret.org",
-   "oculto_por_defecto": false
-  },
-  "BCN0172": {
-   "id": "BCN0172",
-   "nombre": "Parròquia de Sant Albert Magne (St. Albertus Magnus)",
-   "intentos": [
-    {
-     "fuente": "F1",
-     "resultado": "no se encuentra el enlace al horario"
-    },
-    {
-     "fuente": "OSM",
-     "resultado": "no está en OpenStreetMap"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "estado": "sin horario",
-   "celebraciones": [],
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Viladomat, 78",
-   "cp": "08015",
-   "lat": 41.37838,
-   "lng": 2.15913,
-   "web": "https://www.kg-barcelona.de",
-   "oculto_por_defecto": false
-  },
-  "BCN0173": {
-   "id": "BCN0173",
-   "nombre": "Parròquia de Sant Josep de Calassanç",
-   "intentos": [
-    {
-     "fuente": "F1",
-     "resultado": "error: HTTP Error 429: Too Many Requests"
-    },
-    {
-     "fuente": "OSM",
-     "resultado": "OpenStreetMap no tiene horario de misas para este templo"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "estado": "sin horario",
-   "celebraciones": [],
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Joan de Peguera, 20",
-   "cp": "08026",
-   "lat": 41.41276,
-   "lng": 2.18161,
-   "web": "https://calassans1976.blogspot.com",
-   "oculto_por_defecto": false
-  },
-  "BCN0174": {
-   "id": "BCN0174",
-   "nombre": "Parròquia del Patriarca Abraham",
-   "intentos": [
-    {
-     "fuente": "F1",
-     "resultado": "ok"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "lectura": "reglas",
-   "estado": "ok",
-   "fuente": "F1",
-   "url": "https://www.parroquiasantfrancescassis.com/horaris",
-   "formato": "html",
-   "comprobado": "2026-11-23",
-   "confianza": "alta",
-   "celebraciones": [
-    {
-     "tipo": "misa",
-     "dias": [
-      "lunes",
-      "martes",
-      "miercoles",
-      "jueves",
-      "viernes",
-      "sabado"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Dilluns a dissabte | 20h (cat o cast) | Sant Francesc d'Assís",
-     "fuente": "F1",
-     "url": "https://www.parroquiasantfrancescassis.com/horaris",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "11:30",
-     "fin": null,
-     "idioma": "ca",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Diumenges i festius | 11:30h (cat) | 18:30h (italià) | 20h (cast) | Sant Francesc d'Assís",
-     "fuente": "F1",
-     "url": "https://www.parroquiasantfrancescassis.com/horaris",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "18:30",
-     "fin": null,
-     "idioma": "otro",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Diumenges i festius | 11:30h (cat) | 18:30h (italià) | 20h (cast) | Sant Francesc d'Assís",
-     "idioma_detalle": "italiano",
-     "fuente": "F1",
-     "url": "https://www.parroquiasantfrancescassis.com/horaris",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "misa",
-     "dias": [
-      "domingo",
-      "festivo_precepto"
-     ],
-     "inicio": "20:00",
-     "fin": null,
-     "idioma": "es",
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Diumenges i festius | 11:30h (cat) | 18:30h (italià) | 20h (cast) | Sant Francesc d'Assís",
-     "fuente": "F1",
-     "url": "https://www.parroquiasantfrancescassis.com/horaris",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "adoracion",
-     "dias": [
-      "viernes"
-     ],
-     "inicio": "17:30",
-     "fin": "19:30",
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "Divendres | de 17:30h a 19:30h | Sant Francesc d'Assís",
-     "fuente": "F1",
-     "url": "https://www.parroquiasantfrancescassis.com/horaris",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    },
-    {
-     "tipo": "confesion",
-     "dias": [],
-     "inicio": null,
-     "fin": null,
-     "idioma": null,
-     "temporada": null,
-     "semanas_mes": [],
-     "notas": "30 min. abans de cada missa i durant l’exposició del Santíssim",
-     "relativa_a_misa": {
-      "minutos_antes": 30
-     },
-     "fuente": "F1",
-     "url": "https://www.parroquiasantfrancescassis.com/horaris",
-     "comprobado": "2026-11-23",
-     "confianza": "alta"
-    }
-   ],
-   "notas_fuente": [
-    "página encontrada desde https://www.parroquiasantfrancescassis.com/patriarca-abraham"
-   ],
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Jaume Vicens i Vives, 6",
-   "cp": "08005",
-   "lat": 41.394212,
-   "lng": 2.201454,
-   "web": "https://www.parroquiasantfrancescassis.com/patriarca-abraham",
-   "oculto_por_defecto": false
-  },
-  "BCN0175": {
-   "id": "BCN0175",
-   "nombre": "Parròquia francesa de la Mare de Déu de Lourdes",
-   "intentos": [
-    {
-     "fuente": "F1",
-     "resultado": "no se reconoce ningún horario de misa"
-    },
-    {
-     "fuente": "OSM",
-     "resultado": "OpenStreetMap no tiene horario de misas para este templo"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "estado": "sin horario",
-   "celebraciones": [],
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Anglí, 15",
-   "cp": "08017",
-   "lat": 41.399512,
-   "lng": 2.126449,
-   "web": "https://www.barcelonecatholique.fr",
    "oculto_por_defecto": false
   },
   "BCN0176": {
@@ -32044,52 +30999,6 @@
    "web": "https://www.esplugues.com/monestir-de-santa-maria-de-montsio-desplugues",
    "oculto_por_defecto": true
   },
-  "BCN0369": {
-   "id": "BCN0369",
-   "nombre": "Parròquia de Sant Mateu",
-   "intentos": [
-    {
-     "fuente": "OSM",
-     "resultado": "OpenStreetMap no tiene horario de misas para este templo"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "estado": "sin horario",
-   "celebraciones": [],
-   "tipo": "Parroquia",
-   "municipio": "Esplugues de Llobregat",
-   "direccion": "Carrer del Carme, 30",
-   "cp": "08950",
-   "lat": 41.37191,
-   "lng": 2.085046,
-   "web": null,
-   "oculto_por_defecto": false
-  },
-  "BCN0370": {
-   "id": "BCN0370",
-   "nombre": "Parròquia de Santa Magdalena",
-   "intentos": [
-    {
-     "fuente": "F1",
-     "resultado": "no se reconoce ningún horario de misa"
-    },
-    {
-     "fuente": "OSM",
-     "resultado": "OpenStreetMap no tiene horario de misas para este templo"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "estado": "sin horario",
-   "celebraciones": [],
-   "tipo": "Parroquia",
-   "municipio": "Esplugues de Llobregat",
-   "direccion": "Plaça del Pare Miquel d'Esplugues, 1",
-   "cp": "08950",
-   "lat": 41.37978,
-   "lng": 2.089163,
-   "web": "https://www.parroquiasantamagdalena.org",
-   "oculto_por_defecto": false
-  },
   "BCN0371": {
    "id": "BCN0371",
    "nombre": "Sant Antoni de Pàdua",
@@ -32212,31 +31121,6 @@
    "lat": 41.347438,
    "lng": 2.109501,
    "web": "https://sites.google.com/site/parroquiesbellvitgegornal/ermita-de-bellvitge",
-   "oculto_por_defecto": false
-  },
-  "BCN0375": {
-   "id": "BCN0375",
-   "nombre": "Ermita de Santa Eulàlia de Provençana",
-   "intentos": [
-    {
-     "fuente": "F1",
-     "resultado": "no se encuentra el enlace al horario"
-    },
-    {
-     "fuente": "OSM",
-     "resultado": "OpenStreetMap no tiene horario de misas para este templo"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "estado": "sin horario",
-   "celebraciones": [],
-   "tipo": "Ermita",
-   "municipio": "L'Hospitalet de Llobregat",
-   "direccion": "Carrer Santa Eulàlia, 203",
-   "cp": "08902",
-   "lat": 41.365143,
-   "lng": 2.118591,
-   "web": "http://parroquiasantaeulalia.org",
    "oculto_por_defecto": false
   },
   "BCN0376": {
@@ -36502,27 +35386,6 @@
    "cp": "08970",
    "lat": 41.367575,
    "lng": 2.071967,
-   "web": null,
-   "oculto_por_defecto": false
-  },
-  "BCN0443": {
-   "id": "BCN0443",
-   "nombre": "Parròquia de Sant Joan Baptista",
-   "intentos": [
-    {
-     "fuente": "OSM",
-     "resultado": "OpenStreetMap no tiene horario de misas para este templo"
-    }
-   ],
-   "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
-   "estado": "sin horario",
-   "celebraciones": [],
-   "tipo": "Parroquia",
-   "municipio": "Sant Joan Despí",
-   "direccion": "Plaça de l'església, 1",
-   "cp": "08970",
-   "lat": 41.36707,
-   "lng": 2.055943,
    "web": null,
    "oculto_por_defecto": false
   },

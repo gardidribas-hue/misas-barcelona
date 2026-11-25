@@ -2,7 +2,7 @@
  "meta": {
   "origen": "Fuentes_horarios_misas_Arzobispado_Barcelona.xlsx",
   "importado": "2026-10-21",
-  "total": 472
+  "total": 459
  },
  "lugares": [
   {
@@ -2272,30 +2272,6 @@
    }
   },
   {
-   "id": "BCN0082",
-   "nombre": "Església de les Operaries Parroquials",
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Sant Pere Claver, 2",
-   "cp": "08017",
-   "lat": 41.406116,
-   "lng": 2.117541,
-   "web": null,
-   "prioridad": "2-misas.org",
-   "en_arzobispado": "No",
-   "estado_excel": null,
-   "notas": null,
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/esglesia-de-les-operaries-parroquials-barcelona",
-     "pagina": "https://misas.org/p/esglesia-de-les-operaries-parroquials-barcelona",
-     "revision": "2023-10-23",
-     "n_misas": 1
-    }
-   }
-  },
-  {
    "id": "BCN0083",
    "nombre": "Església de Nostra Senyora de la Visitació",
    "tipo": "Iglesia",
@@ -3078,37 +3054,6 @@
      "pagina": "https://misas.org/p/hospital-de-la-mare-de-deu-de-la-merce-barcelona",
      "revision": "2014-11-09",
      "n_misas": 1
-    }
-   }
-  },
-  {
-   "id": "BCN0112",
-   "nombre": "Hospital de la Santa Creu i Sant Pau",
-   "tipo": "Capilla de hospital",
-   "municipio": "Barcelona",
-   "direccion": "Avinguda Sant Antoni Maria Claret, 167",
-   "cp": "08025",
-   "lat": 41.413348,
-   "lng": 2.176623,
-   "web": "http://www.santpau.es",
-   "prioridad": "1-Web > 2-misas.org",
-   "en_arzobispado": "No",
-   "estado_excel": null,
-   "notas": null,
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F1": {
-     "url": "http://www.santpau.es",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/hospital-de-la-santa-creu-i-sant-pau-barcelona",
-     "pagina": "https://misas.org/p/hospital-de-la-santa-creu-i-sant-pau-barcelona",
-     "revision": "2025-07-29",
-     "n_misas": 8,
-     "adoracion": "Sí"
     }
    }
   },
@@ -4476,36 +4421,6 @@
    }
   },
   {
-   "id": "BCN0158",
-   "nombre": "Monestir de Santa Maria de Pedralbes (Clarisas)",
-   "tipo": "Monasterio / convento",
-   "municipio": "Barcelona",
-   "direccion": "Plaça del Monestir, s/n",
-   "cp": "08034",
-   "lat": 41.395692,
-   "lng": 2.112679,
-   "web": "https://mariareina.barcelona",
-   "prioridad": "1-Web > 2-misas.org",
-   "en_arzobispado": "No",
-   "estado_excel": null,
-   "notas": null,
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F1": {
-     "url": "https://mariareina.barcelona",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/monestir-de-santa-maria-de-pedralbes-clarisas-barcelona",
-     "pagina": "https://misas.org/p/monestir-de-santa-maria-de-pedralbes-clarisas-barcelona",
-     "revision": "2025-10-09",
-     "n_misas": 2
-    }
-   }
-  },
-  {
    "id": "BCN0159",
    "nombre": "Monestir de Santa Maria de Valldonzella (Madres Cistercienses)",
    "tipo": "Monasterio / convento",
@@ -4811,192 +4726,6 @@
     },
     "F3": {
      "url": "https://esglesia.barcelona/es/parroquies/parroquia-castrense-de-placa-personal/"
-    }
-   }
-  },
-  {
-   "id": "BCN0170",
-   "nombre": "Parròquia de la Sagrada Família",
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Sardenya, 318",
-   "cp": "08013",
-   "lat": 41.403145,
-   "lng": 2.173809,
-   "web": "https://parroquiasagradafamilia.cat",
-   "prioridad": "1-Web > 2-misas.org",
-   "en_arzobispado": "No",
-   "estado_excel": null,
-   "notas": null,
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F1": {
-     "url": "https://parroquiasagradafamilia.cat",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/parroquia-de-la-sagrada-familia-barcelona",
-     "pagina": "https://misas.org/p/parroquia-de-la-sagrada-familia-barcelona",
-     "revision": "2025-08-10",
-     "n_misas": 8,
-     "adoracion": "Sí",
-     "confesiones": "Sí"
-    }
-   }
-  },
-  {
-   "id": "BCN0171",
-   "nombre": "Parròquia de la Verge de Natzaret",
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Pare Mariana, 1",
-   "cp": "08035",
-   "lat": 41.430618,
-   "lng": 2.146386,
-   "web": "http://www.parroquiavirgendenazaret.org",
-   "prioridad": "1-Web > 2-misas.org",
-   "en_arzobispado": "No",
-   "estado_excel": null,
-   "notas": null,
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F1": {
-     "url": "http://www.parroquiavirgendenazaret.org",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/parroquia-de-la-verge-de-natzaret-barcelona",
-     "pagina": "https://misas.org/p/parroquia-de-la-verge-de-natzaret-barcelona",
-     "revision": "2017-02-16",
-     "n_misas": 11,
-     "adoracion": "Sí",
-     "confesiones": "Sí"
-    }
-   }
-  },
-  {
-   "id": "BCN0172",
-   "nombre": "Parròquia de Sant Albert Magne (St. Albertus Magnus)",
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Viladomat, 78",
-   "cp": "08015",
-   "lat": 41.37838,
-   "lng": 2.15913,
-   "web": "https://www.kg-barcelona.de",
-   "prioridad": "1-Web > 2-misas.org",
-   "en_arzobispado": "No",
-   "estado_excel": null,
-   "notas": null,
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F1": {
-     "url": "https://www.kg-barcelona.de",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-albert-magne-st-albertus-magnus-barcelona",
-     "pagina": "https://misas.org/p/parroquia-de-sant-albert-magne-st-albertus-magnus-barcelona",
-     "revision": "2025-04-12",
-     "n_misas": 1
-    }
-   }
-  },
-  {
-   "id": "BCN0173",
-   "nombre": "Parròquia de Sant Josep de Calassanç",
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Joan de Peguera, 20",
-   "cp": "08026",
-   "lat": 41.41276,
-   "lng": 2.18161,
-   "web": "https://calassans1976.blogspot.com",
-   "prioridad": "1-Web > 2-misas.org",
-   "en_arzobispado": "No",
-   "estado_excel": null,
-   "notas": null,
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F1": {
-     "url": "https://calassans1976.blogspot.com",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-josep-de-calassanc-barcelona",
-     "pagina": "https://misas.org/p/parroquia-de-sant-josep-de-calassanc-barcelona",
-     "revision": "2025-12-28",
-     "n_misas": 6,
-     "confesiones": "Sí"
-    }
-   }
-  },
-  {
-   "id": "BCN0174",
-   "nombre": "Parròquia del Patriarca Abraham",
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Jaume Vicens i Vives, 6",
-   "cp": "08005",
-   "lat": 41.394212,
-   "lng": 2.201454,
-   "web": "https://www.parroquiasantfrancescassis.com/patriarca-abraham",
-   "prioridad": "1-Web",
-   "en_arzobispado": "No",
-   "estado_excel": "Sin horario conocido",
-   "notas": "misas.org no tiene misas registradas para este lugar",
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F1": {
-     "url": "https://www.parroquiasantfrancescassis.com/patriarca-abraham",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/parroquia-del-patriarca-abraham-barcelona",
-     "pagina": "https://misas.org/p/parroquia-del-patriarca-abraham-barcelona",
-     "revision": "2026-06-21",
-     "n_misas": 0
-    }
-   }
-  },
-  {
-   "id": "BCN0175",
-   "nombre": "Parròquia francesa de la Mare de Déu de Lourdes",
-   "tipo": "Parroquia",
-   "municipio": "Barcelona",
-   "direccion": "Carrer Anglí, 15",
-   "cp": "08017",
-   "lat": 41.399512,
-   "lng": 2.126449,
-   "web": "https://www.barcelonecatholique.fr",
-   "prioridad": "1-Web > 2-misas.org",
-   "en_arzobispado": "No",
-   "estado_excel": null,
-   "notas": null,
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F1": {
-     "url": "https://www.barcelonecatholique.fr",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/parroquia-francesa-de-la-mare-de-deu-de-lourdes-barcelona",
-     "pagina": "https://misas.org/p/parroquia-francesa-de-la-mare-de-deu-de-lourdes-barcelona",
-     "revision": "2025-05-20",
-     "n_misas": 1,
-     "adoracion": "Sí"
     }
    }
   },
@@ -10835,62 +10564,6 @@
    }
   },
   {
-   "id": "BCN0369",
-   "nombre": "Parròquia de Sant Mateu",
-   "tipo": "Parroquia",
-   "municipio": "Esplugues de Llobregat",
-   "direccion": "Carrer del Carme, 30",
-   "cp": "08950",
-   "lat": 41.37191,
-   "lng": 2.085046,
-   "web": null,
-   "prioridad": "2-misas.org",
-   "en_arzobispado": "No",
-   "estado_excel": null,
-   "notas": "Municipio repartido con la diócesis de Sant Feliu de Llobregat: verificar diócesis",
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-mateu-esplugues-de-llobregat",
-     "pagina": "https://misas.org/p/parroquia-de-sant-mateu-esplugues-de-llobregat",
-     "revision": "2016-10-26",
-     "n_misas": 9,
-     "confesiones": "Sí"
-    }
-   }
-  },
-  {
-   "id": "BCN0370",
-   "nombre": "Parròquia de Santa Magdalena",
-   "tipo": "Parroquia",
-   "municipio": "Esplugues de Llobregat",
-   "direccion": "Plaça del Pare Miquel d'Esplugues, 1",
-   "cp": "08950",
-   "lat": 41.37978,
-   "lng": 2.089163,
-   "web": "https://www.parroquiasantamagdalena.org",
-   "prioridad": "1-Web > 2-misas.org",
-   "en_arzobispado": "No",
-   "estado_excel": null,
-   "notas": "Municipio repartido con la diócesis de Sant Feliu de Llobregat: verificar diócesis",
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F1": {
-     "url": "https://www.parroquiasantamagdalena.org",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/parroquia-de-santa-magdalena-esplugues-de-llobregat",
-     "pagina": "https://misas.org/p/parroquia-de-santa-magdalena-esplugues-de-llobregat",
-     "revision": "2026-04-01",
-     "n_misas": 7,
-     "confesiones": "Sí"
-    }
-   }
-  },
-  {
    "id": "BCN0371",
    "nombre": "Sant Antoni de Pàdua",
    "tipo": "Parroquia",
@@ -11003,36 +10676,6 @@
      "url": "https://misas.org/api/parishbyuri/ermita-de-bellvitge-lhospitalet-de-llobregat",
      "pagina": "https://misas.org/p/ermita-de-bellvitge-lhospitalet-de-llobregat",
      "revision": "2016-01-28",
-     "n_misas": 1
-    }
-   }
-  },
-  {
-   "id": "BCN0375",
-   "nombre": "Ermita de Santa Eulàlia de Provençana",
-   "tipo": "Ermita",
-   "municipio": "L'Hospitalet de Llobregat",
-   "direccion": "Carrer Santa Eulàlia, 203",
-   "cp": "08902",
-   "lat": 41.365143,
-   "lng": 2.118591,
-   "web": "http://parroquiasantaeulalia.org",
-   "prioridad": "1-Web > 2-misas.org",
-   "en_arzobispado": "No",
-   "estado_excel": null,
-   "notas": null,
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F1": {
-     "url": "http://parroquiasantaeulalia.org",
-     "tipo": "Web propia (portada; página de horario sin localizar)",
-     "formato": "Sin verificar",
-     "bloquea_bots": "No"
-    },
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/ermita-de-santa-eulalia-de-provencana-lhospitalet-de-llobregat",
-     "pagina": "https://misas.org/p/ermita-de-santa-eulalia-de-provencana-lhospitalet-de-llobregat",
-     "revision": "2021-11-02",
      "n_misas": 1
     }
    }
@@ -13018,32 +12661,6 @@
     },
     "F3": {
      "url": "https://esglesia.barcelona/es/parroquies/mare-de-deu-del-carme-2/"
-    }
-   }
-  },
-  {
-   "id": "BCN0443",
-   "nombre": "Parròquia de Sant Joan Baptista",
-   "tipo": "Parroquia",
-   "municipio": "Sant Joan Despí",
-   "direccion": "Plaça de l'església, 1",
-   "cp": "08970",
-   "lat": 41.36707,
-   "lng": 2.055943,
-   "web": null,
-   "prioridad": "2-misas.org",
-   "en_arzobispado": "No",
-   "estado_excel": null,
-   "notas": "Municipio repartido con la diócesis de Sant Feliu de Llobregat: verificar diócesis",
-   "comprobado_excel": "2026-10-21",
-   "fuentes": {
-    "F2": {
-     "url": "https://misas.org/api/parishbyuri/parroquia-de-sant-joan-baptista-sant-joan-despi",
-     "pagina": "https://misas.org/p/parroquia-de-sant-joan-baptista-sant-joan-despi",
-     "revision": "2017-12-18",
-     "n_misas": 2,
-     "adoracion": "Sí",
-     "confesiones": "Sí"
     }
    }
   },
