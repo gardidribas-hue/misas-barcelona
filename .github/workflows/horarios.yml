@@ -1,6 +1,7 @@
 name: horarios
 # Una vez por semana lee las fuentes de cada templo (web propia, Arzobispado, OpenStreetMap) y guarda
 # los horarios en data/horarios/ y en el Excel de revisión. Al tocar los scripts, solo prueba los 5 templos de ejemplo.
+# La lectura semanal guarda además el texto entero de cada fuente en la rama «fuentes» (ver scripts/fuentes_texto.py).
 on:
   schedule:
     - cron: "30 3 * * 1"
@@ -38,6 +39,14 @@ jobs:
           git add data/horarios
           if ! git diff --cached --quiet; then git commit -q -m "Horarios actualizados ($(date -u +%F))"; fi
           git pull --rebase -X theirs -q origin "${GITHUB_REF_NAME}"
+          # Lectura semanal completa: descarga entera de cada fuente (rama «fuentes»), comprobación de la web (K),
+          # segunda lectura automática (C2) y huellas (M). Las usan las lecturas de Claude (D, E, L): scripts/lecturas.py.
+          if [ "${{ github.event_name }}" = "schedule" ] || { [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -z "${{ github.event.inputs.ids }}" ]; }; then
+            python scripts/fuentes_texto.py /tmp/fuentes
+            if git fetch -q origin fuentes; then git worktree add -q /tmp/wt FETCH_HEAD; else git worktree add -q --orphan -b fuentes /tmp/wt; fi
+            rm -f /tmp/wt/fuentes/*.txt && mkdir -p /tmp/wt/fuentes && cp /tmp/fuentes/*.txt /tmp/wt/fuentes/
+            (cd /tmp/wt && git add -A fuentes && { git diff --cached --quiet || git commit -q -m "Texto de las fuentes ($(date -u +%F))"; } && git push -q origin HEAD:refs/heads/fuentes)
+          fi
           # El Excel de revisión y la web se generan después de traer lo último, para no pisar una revisión subida mientras tanto.
           python scripts/horarios_excel.py generar
           python scripts/horarios_app.py

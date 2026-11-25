@@ -5,10 +5,10 @@
    "ultimo_ok": "2026-10-21"
   },
   "F1": {
-   "hash": "0232a9268a0d4085",
+   "hash": "9c35c2073af9acac",
    "ultimo_ok": "2026-11-25"
   },
-  "F1_texto": "0232a9268a0d4085",
+  "F1_texto": "9c35c2073af9acac",
   "F1_desde": "https://www.parroquiaconcepciobcn.org/horaris/"
  },
  "BCN0092": {
@@ -19,20 +19,20 @@
  },
  "BCN0212": {
   "F3": {
-   "hash": "13e9b566ea852e22",
+   "hash": "1e71c3e2e2cd0c54",
    "ultimo_ok": "2026-11-25"
   },
-  "F3_texto": "13e9b566ea852e22"
+  "F3_texto": "1e71c3e2e2cd0c54"
  },
  "BCN0213": {
   "F1": {
-   "hash": "3e66315c154a3d33",
-   "ultimo_ok": "2026-11-24"
+   "hash": "02260cfc239a5571",
+   "ultimo_ok": "2026-11-25"
   },
-  "F1_texto": "3e66315c154a3d33",
-  "F3_texto": "b9a4d7b7c6fb753f",
+  "F1_texto": "02260cfc239a5571",
+  "F3_texto": "f7387a1e20f04170",
   "F3": {
-   "hash": "b9a4d7b7c6fb753f",
+   "hash": "f7387a1e20f04170",
    "ultimo_ok": "2026-11-25"
   },
   "F1_desde": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf"
@@ -44,10 +44,10 @@
    "ultimo_ok": "2026-10-21"
   },
   "F1": {
-   "hash": "1cb0fecfb2c8a75b",
+   "hash": "27659353f4ba727f",
    "ultimo_ok": "2026-11-25"
   },
-  "F1_texto": "1cb0fecfb2c8a75b",
+  "F1_texto": "27659353f4ba727f",
   "F1_desde": "https://www.arxiprestatdegracia.cat/misses"
  },
  "BCN0001": {},

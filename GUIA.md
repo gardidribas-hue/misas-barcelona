@@ -14,6 +14,11 @@ desde la rama `main`: https://gardidribas-hue.github.io/misas-barcelona/.
 
 - Todo con Guillem se habla y se escribe en **castellano**. La web está en castellano y catalán.
 - **Nada de IA en la web**: ni Gemini ni otra. El chat funciona con reglas (`parseQuery` en `app.js`) y **no se toca**.
+- **Repaso semanal con doble verificación** (25/11/2026, decisiones de Guillem). Cada lunes:
+  1. 4:30, GitHub (`horarios`): lectura automática **C**; descarga entera de cada fuente a la rama `fuentes` (`scripts/fuentes_texto.py`); segunda lectura automática **C2** (mismas reglas sobre la página entera); comprobación de la web **K** (salen la calle o el nombre); huella del texto: si cambia, **M** = «Sí».
+  2. 7:00, tarea programada de Claude (sesión 1): comprueba la web (**L**: Sí/No) y hace la segunda lectura **D** de los templos con la fuente cambiada (`scripts/lecturas.py`).
+  3. 9:00, tarea programada de Claude (sesión 2, distinta): tercera lectura **E** a ciegas (sin mirar C ni D).
+  - **Verde** solo con web comprobada dos veces (K = ok y L = Sí, salvo que no haya web) y dos lecturas iguales: D = E, o C = D (o C = E) con C = C2. Si la fuente cambió, D y E no cuentan hasta repetirlas. La fórmula de F y `horarios_excel.estado` son la misma regla (comprobado con LibreOffice).
 - **Fuentes de horarios**, por este orden: 1) web de la parroquia; 2) si no hay, Arzobispado y OpenStreetMap
   (si no coinciden, manda el Arzobispado, con aviso de confirmar). **misas.org no se usa.**
   Google Maps no da horarios de misa y sus condiciones no permiten guardarlos.
@@ -53,7 +58,7 @@ desde la rama `main`: https://gardidribas-hue.github.io/misas-barcelona/.
 | Acción | Cuándo | Qué hace |
 |---|---|---|
 | `horarios` | Lunes 03:30 UTC | Lee las fuentes de cada templo, actualiza `data/horarios/`, el Excel de revisión, la web de horarios y las páginas `p/`. |
-| `revision` | Cuando se sube `data/horarios/Horarios_revision.xlsx` | Aplica la columna D (horario revisado por Guillem) y regenera las páginas `p/`. |
+| `revision` | Cuando se sube `data/horarios/Horarios_revision.xlsx` | Aplica las columnas D y E (segunda y tercera lectura) y el semáforo de fiabilidad y regenera las páginas `p/`. |
 | `contenido` | Dos veces al día | Descarga las lecturas (`data/palabra/`) y las oraciones. |
 | `citas` | Al cambiar `scripts/citas.py` | Citas bíblicas de Voluntariado. |
 | `comprobar` | En cada PR y cada cambio en `main` | Revisa la sintaxis y abre la web en un navegador de prueba. **Si sale en rojo, no fusionar.** |
@@ -64,7 +69,7 @@ El contenedor de Claude no puede abrir las webs de las parroquias ni el mapa: po
 
 - **Cambiar un texto**: búscalo en `I18N` de `app.js` (castellano en `es`, catalán en `ca`). Cambia los dos idiomas.
 - **Cambiar un color**: variables al principio de `styles.css`. Hay tres bloques: claro, oscuro automático y oscuro elegido. Cambia los tres.
-- **Corregir un horario a mano**: en el Excel de revisión (columna D) o en `data/horarios/correcciones.json`.
+- **Corregir un horario a mano**: en el Excel de revisión (columnas D y E: si cambias D, pon lo mismo en E solo tras comprobarlo otra vez) o en `data/horarios/correcciones.json`.
 - **Cambiar de dominio**: `SITIO` en `scripts/paginas.py`, `og:url`, `og:image` y `canonical` en `index.html`,
   y un archivo `CNAME` con el dominio. Después lanza la acción `revision` a mano para regenerar `p/`.
 - **Actualizar MapLibre, letras o iconos**: además de cambiar los archivos, sube `VERSION` en `sw.js`
