@@ -19,37 +19,37 @@
  },
  "BCN0003": {
   "actual": "79f83bec5ea3",
-  "c2": "Misas: Lun–Vie 8:00, 10:00, 11:00, 19:00, 20:15; Sáb 8:00, 10:00, 11:00, 18:00, 20:00; Sáb y vísperas 8:00, 10:00, 11:00, 18:00, 20:00; Dom 20:30; Dom y festivos 8:00, 10:00, 11:30, 13:00, 18:00, 20:00, 20:30\nConfesiones: Cada día 8:00–13:00, 18:00–21:00\nAdoración: Lun–Vie 18:00–19:00; Mié 21:00",
+  "c2": "Misas: Lun–Vie 8:00 (cat), 10:00 (cat), 11:00 (cat), 19:00 (cat), 20:15 (cat); Sáb 8:00 (cat), 10:00 (cat), 11:00 (cat), 18:00 (cat), 20:00 (cat); Sáb y vísperas 8:00 (cat), 10:00 (cat), 11:00 (cat), 18:00 (cat), 20:00 (cat); Dom 20:30 (cat); Dom y festivos 8:00 (cast), 8:00 (cat), 10:00 (cast), 11:30 (cat), 13:00 (cat), 18:00 (cast), 20:00 (cat), 20:30 (cat)\nConfesiones: Cada día 8:00–13:00, 18:00–21:00\nAdoración: Lun–Vie 18:00–19:00; Mié 21:00",
   "d_hecha": "79f83bec5ea3",
   "desde": "2026-11-25",
-  "e_hecha": "79f83bec5ea3",
+  "e_hecha": "",
   "leida": "79f83bec5ea3",
   "web": "ok"
  },
  "BCN0004": {
   "actual": "bbd5d3191537",
-  "c2": "Misas: Lun–Vie 20:00; Sáb y vísperas 20:00; Dom y festivos 10:00, 12:00, 20:00",
+  "c2": "Misas: Lun–Vie 20:00; Sáb y vísperas 20:00; Dom y festivos 10:00 (cast), 12:00, 20:00",
   "d_hecha": "bbd5d3191537",
   "desde": "2026-11-25",
-  "e_hecha": "bbd5d3191537",
+  "e_hecha": "",
   "leida": "bbd5d3191537",
   "web": "no responde"
  },
  "BCN0005": {
   "actual": "e48981b66e69",
-  "c2": "Misas: Lun–Sáb 19:30; Mié 17:30; Dom y festivos 12:00, 19:30",
+  "c2": "Misas: Lun–Sáb 19:30 (cat); Mié 17:30; Dom y festivos 12:00 (cat), 19:30",
   "d_hecha": "e48981b66e69",
   "desde": "2026-11-25",
-  "e_hecha": "e48981b66e69",
+  "e_hecha": "",
   "leida": "e48981b66e69",
   "web": "sin texto"
  },
  "BCN0006": {
   "actual": "e50b5c9795be",
-  "c2": "Misas: Lun–Vie 19:00; Sáb 16:30, 18:30, 20:00; Dom y festivos 12:00, 13:00, 20:00",
+  "c2": "Misas: Lun–Vie 19:00 (cat); Sáb 16:30, 18:30, 20:00 (cat); Dom y festivos 12:00 (cat), 13:00 (cast), 20:00 (cat)",
   "d_hecha": "e50b5c9795be",
   "desde": "2026-11-25",
-  "e_hecha": "e50b5c9795be",
+  "e_hecha": "",
   "leida": "e50b5c9795be",
   "web": "no responde"
  },
@@ -58,16 +58,16 @@
   "c2": "",
   "d_hecha": "f2f0891a4b14",
   "desde": "2026-11-25",
-  "e_hecha": "f2f0891a4b14",
+  "e_hecha": "",
   "leida": "f2f0891a4b14",
   "web": "ok"
  },
  "BCN0008": {
   "actual": "e39ae352d109",
-  "c2": "Misas: Sáb 20:00; Dom 11:00",
+  "c2": "Misas: Sáb 20:00 (cat); Dom 11:00 (cat)",
   "d_hecha": "e39ae352d109",
   "desde": "2026-11-25",
-  "e_hecha": "e39ae352d109",
+  "e_hecha": "",
   "leida": "e39ae352d109",
   "web": "no responde"
  },
@@ -91,10 +91,10 @@
  },
  "BCN0011": {
   "actual": "eb81747a1ec4",
-  "c2": "Misas: Lun–Vie 11:00; Sáb y vísperas 20:00; Dom y festivos 11:00",
+  "c2": "Misas: Lun–Vie 11:00 (cat/cast); Sáb y vísperas 20:00 (cat/cast); Dom y festivos 11:00 (cast)",
   "d_hecha": "eb81747a1ec4",
   "desde": "2026-11-25",
-  "e_hecha": "eb81747a1ec4",
+  "e_hecha": "",
   "leida": "eb81747a1ec4",
   "web": "sin web"
  },
@@ -154,7 +154,7 @@
  },
  "BCN0018": {
   "actual": "9613a4241336",
-  "c2": "Misas: Lun–Vie 13:00, 19:00, 19:30; Lun–Sáb 13:30; Sáb 13:00; Dom y festivos 11:30, 19:30",
+  "c2": "Misas: Lun–Vie 13:00, 19:00, 19:30; Lun–Sáb 13:30; Sáb 13:00 (pt); Dom y festivos 11:30, 19:30",
   "d_hecha": "9613a4241336",
   "desde": "2026-11-25",
   "e_hecha": "9613a4241336",
@@ -319,7 +319,7 @@
   "c2": "",
   "d_hecha": "231a4a3daaff",
   "desde": "2026-11-25",
-  "e_hecha": "231a4a3daaff",
+  "e_hecha": "",
   "leida": "231a4a3daaff",
   "web": "ok"
  },
@@ -523,10 +523,10 @@
  },
  "BCN0059": {
   "actual": "6eb28ebb7bf5",
-  "c2": "Misas: Lun–Vie 8:00, 18:00, 19:30, 20:00; Sáb y vísperas 8:00, 18:00, 19:30; Dom 17:30; Dom y festivos 10:00, 12:00, 13:00, 20:00\nConfesiones: antes de misa",
+  "c2": "Misas: Lun–Vie 8:00, 18:00, 19:30 (cat/cast), 20:00; Sáb y vísperas 8:00, 18:00, 19:30 (cat/cast); Dom 17:30; Dom y festivos 10:00, 12:00 (cat), 13:00, 20:00\nConfesiones: antes de misa",
   "d_hecha": "6eb28ebb7bf5",
   "desde": "2026-11-25",
-  "e_hecha": "6eb28ebb7bf5",
+  "e_hecha": "",
   "leida": "6eb28ebb7bf5",
   "web": "ok"
  },
@@ -541,10 +541,10 @@
  },
  "BCN0061": {
   "actual": "3a58d5829b4e",
-  "c2": "Misas: Lun–Vie 9:00, 19:30; Sáb y vísperas 20:00; Dom y festivos 10:30, 12:00, 13:00, 20:45",
+  "c2": "Misas: Lun–Vie 9:00 (cast), 19:30; Sáb y vísperas 20:00; Dom y festivos 10:30, 12:00 (cast), 13:00, 20:45",
   "d_hecha": "3a58d5829b4e",
   "desde": "2026-11-25",
-  "e_hecha": "3a58d5829b4e",
+  "e_hecha": "",
   "leida": "3a58d5829b4e",
   "web": "no coincide"
  },
@@ -562,7 +562,7 @@
   "c2": "Misas: Lun–Vie 18:30; Sáb 18:30; Dom 11:30, 19:30\nConfesiones: antes de misa",
   "d_hecha": "346ee9c1d5b2",
   "desde": "2026-11-25",
-  "e_hecha": "346ee9c1d5b2",
+  "e_hecha": "",
   "leida": "346ee9c1d5b2",
   "web": "sin web"
  },
@@ -571,7 +571,7 @@
   "c2": "",
   "d_hecha": "956c5beb0194",
   "desde": "2026-11-25",
-  "e_hecha": "956c5beb0194",
+  "e_hecha": "",
   "leida": "956c5beb0194",
   "web": "ok"
  },
@@ -820,10 +820,10 @@
  },
  "BCN0093": {
   "actual": "e98fe069edf3",
-  "c2": "Misas: Lun–Sáb 10:00, 12:00, 18:00, 19:00; Dom y festivos 11:00, 12:00, 18:00, 19:00; festivos 10:00, 11:00, 12:00, 18:00, 19:00",
+  "c2": "Misas: Lun–Sáb 10:00 (cat), 12:00 (cat), 18:00 (cat), 19:00 (cat); Dom y festivos 11:00 (cat), 12:00 (cat), 18:00 (cat), 19:00 (cat); festivos 10:00 (cat), 11:00 (cat), 12:00 (cat), 18:00 (cat), 19:00 (cat)",
   "d_hecha": "e98fe069edf3",
   "desde": "2026-11-25",
-  "e_hecha": "e98fe069edf3",
+  "e_hecha": "",
   "leida": "e98fe069edf3",
   "web": "ok"
  },
@@ -901,10 +901,10 @@
  },
  "BCN0102": {
   "actual": "2744ce4617f7",
-  "c2": "Misas: Lun–Sáb 8:30, 20:00; Jue 19:45, 20:00; Sáb y vísperas 20:00; Dom y festivos 9:00, 12:00, 19:30\nAdoración: Mié 8:30, 9:00",
+  "c2": "Misas: Lun–Sáb 8:30 (cat), 20:00 (cast); Jue 19:45, 20:00; Sáb y vísperas 20:00; Dom y festivos 9:00 (cat), 12:00 (cast), 19:30 (cat/cast)\nAdoración: Mié 8:30, 9:00",
   "d_hecha": "2744ce4617f7",
   "desde": "2026-11-25",
-  "e_hecha": "2744ce4617f7",
+  "e_hecha": "",
   "leida": "2744ce4617f7",
   "web": "ok"
  },
@@ -1108,10 +1108,10 @@
  },
  "BCN0126": {
   "actual": "27e3fb149612",
-  "c2": "Misas: Lun–Vie 8:00, 9:00; Sáb 20:00; Sáb y vísperas 20:00; Dom y festivos 9:00, 11:45, 13:00, 19:30, 20:00",
+  "c2": "Misas: Lun–Vie 8:00, 9:00; Sáb 20:00; Sáb y vísperas 20:00; Dom y festivos 9:00, 11:45, 13:00 (cast), 19:30, 20:00",
   "d_hecha": "27e3fb149612",
   "desde": "2026-11-25",
-  "e_hecha": "27e3fb149612",
+  "e_hecha": "",
   "leida": "27e3fb149612",
   "web": "no responde"
  },
@@ -1135,19 +1135,19 @@
  },
  "BCN0129": {
   "actual": "d59322b3ba3f",
-  "c2": "Misas: Lun–Vie 9:00, 11:00, 13:00, 20:00; Sáb y vísperas 11:00, 13:00, 19:00, 20:00; Dom y festivos 9:30, 11:00, 12:00, 13:00, 19:00, 20:00",
+  "c2": "Misas: Lun–Vie 9:00 (cat), 11:00 (cast), 13:00 (cat), 20:00 (cat); Sáb y vísperas 11:00 (cast), 13:00 (cat), 19:00 (cast), 20:00 (cat); Dom y festivos 9:30 (cat), 11:00 (cast), 12:00 (cat), 13:00 (cast), 19:00 (cat), 20:00 (cast)",
   "d_hecha": "d59322b3ba3f",
   "desde": "2026-11-25",
-  "e_hecha": "d59322b3ba3f",
+  "e_hecha": "",
   "leida": "d59322b3ba3f",
   "web": "ok"
  },
  "BCN0130": {
   "actual": "3fa67ccc0d1d",
-  "c2": "Misas: Cada día 10:00, 19:30; Sáb y vísperas 10:00, 19:30; Dom y festivos 10:30, 12:00, 19:30",
+  "c2": "Misas: Cada día 10:00 (cast), 19:30 (cast); Sáb y vísperas 10:00 (cast), 19:30 (cast); Dom y festivos 10:30 (cat), 12:00 (cast), 19:30 (cast)",
   "d_hecha": "3fa67ccc0d1d",
   "desde": "2026-11-25",
-  "e_hecha": "3fa67ccc0d1d",
+  "e_hecha": "",
   "leida": "3fa67ccc0d1d",
   "web": "no existe"
  },
@@ -1189,10 +1189,10 @@
  },
  "BCN0135": {
   "actual": "cd2372d9fa8d",
-  "c2": "Misas: Mar, Mié, Vie 19:00; Dom 11:00, 13:00",
+  "c2": "Misas: Mar, Mié, Vie 19:00; Dom 11:00 (cat), 13:00 (cast)",
   "d_hecha": "cd2372d9fa8d",
   "desde": "2026-11-25",
-  "e_hecha": "cd2372d9fa8d",
+  "e_hecha": "",
   "leida": "cd2372d9fa8d",
   "web": "ok"
  },
@@ -1207,10 +1207,10 @@
  },
  "BCN0137": {
   "actual": "6b32aeaa801e",
-  "c2": "Misas: Lun–Sáb y vísperas 20:00; Dom 11:30, 13:00",
+  "c2": "Misas: Lun–Sáb y vísperas 20:00; Dom 11:30 (cat), 13:00 (cast)",
   "d_hecha": "6b32aeaa801e",
   "desde": "2026-11-25",
-  "e_hecha": "6b32aeaa801e",
+  "e_hecha": "",
   "leida": "6b32aeaa801e",
   "web": "no existe"
  },
@@ -1234,19 +1234,19 @@
  },
  "BCN0140": {
   "actual": "e5e50ef1cb41",
-  "c2": "Misas: Lun–Vie 20:00; Sáb y vísperas 20:00; Dom y festivos 11:00, 13:00, 20:00",
+  "c2": "Misas: Lun–Vie 20:00; Sáb y vísperas 20:00 (cast); Dom y festivos 11:00, 13:00 (cast), 20:00 (cast)",
   "d_hecha": "e5e50ef1cb41",
   "desde": "2026-11-25",
-  "e_hecha": "e5e50ef1cb41",
+  "e_hecha": "",
   "leida": "e5e50ef1cb41",
   "web": "no coincide"
  },
  "BCN0141": {
   "actual": "a8eb324a9ea3",
-  "c2": "Misas: Lun–Sáb 19:00; Sáb y vísperas 19:00; Dom y festivos 10:00, 12:00",
+  "c2": "Misas: Lun–Sáb 19:00; Sáb y vísperas 19:00; Dom y festivos 10:00 (cat), 12:00 (cast)",
   "d_hecha": "a8eb324a9ea3",
   "desde": "2026-11-25",
-  "e_hecha": "a8eb324a9ea3",
+  "e_hecha": "",
   "leida": "a8eb324a9ea3",
   "web": "no responde"
  },
@@ -1261,28 +1261,28 @@
  },
  "BCN0143": {
   "actual": "d77e09e1bca9",
-  "c2": "Misas: Lun–Vie 9:00, 20:00; Sáb y festivos 9:00, 20:00; Dom y festivos 9:00, 12:00, 13:00, 20:00\nConfesiones: antes de misa",
+  "c2": "Misas: Lun–Vie 9:00 (cast), 20:00 (cat); Sáb y festivos 9:00, 20:00 (cat); Dom y festivos 9:00, 12:00, 13:00 (cast), 20:00 (cat)\nConfesiones: antes de misa",
   "d_hecha": "d77e09e1bca9",
   "desde": "2026-11-25",
-  "e_hecha": "d77e09e1bca9",
+  "e_hecha": "",
   "leida": "d77e09e1bca9",
   "web": "no existe"
  },
  "BCN0144": {
   "actual": "28f8e1a3a1e0",
-  "c2": "Misas: Lun–Vie 20:00; Sáb 19:00; Dom 11:30, 13:00\nConfesiones: antes de misa\nAdoración: Jue 9:00–20:00",
+  "c2": "Misas: Lun–Vie 20:00; Sáb 19:00; Dom 11:30 (cat), 13:00 (cast)\nConfesiones: antes de misa\nAdoración: Jue 9:00–20:00",
   "d_hecha": "28f8e1a3a1e0",
   "desde": "2026-11-25",
-  "e_hecha": "28f8e1a3a1e0",
+  "e_hecha": "",
   "leida": "28f8e1a3a1e0",
   "web": "ok"
  },
  "BCN0145": {
   "actual": "18efdbbaad4a",
-  "c2": "Misas: Lun–Vie 13:00, 19:00, 19:30; Lun–Sáb 13:30; Sáb 13:00; Dom y festivos 11:30, 19:30",
+  "c2": "Misas: Lun–Vie 13:00, 19:00, 19:30; Lun–Sáb 13:30; Sáb 13:00 (pt); Dom y festivos 11:30, 19:30",
   "d_hecha": "18efdbbaad4a",
   "desde": "2026-11-25",
-  "e_hecha": "18efdbbaad4a",
+  "e_hecha": "",
   "leida": "18efdbbaad4a",
   "web": "ok"
  },
@@ -1297,19 +1297,19 @@
  },
  "BCN0147": {
   "actual": "7e40b97b45a8",
-  "c2": "Misas: Lun–Vie 7:30, 8:00, 19:00, 20:00; Sáb 13:00, 19:00, 20:00; Sáb y festivos 12:00; Dom y festivos 10:00, 11:00, 13:00, 19:00, 20:00; festivos 13:00, 20:00",
+  "c2": "Misas: Lun–Vie 7:30, 8:00 (cat), 19:00, 20:00 (cast); Sáb 13:00 (cast), 19:00, 20:00 (cat); Sáb y festivos 12:00; Dom y festivos 10:00, 11:00 (cat), 13:00 (cast), 19:00, 20:00 (cat/cast); festivos 13:00 (cat), 20:00 (cast)",
   "d_hecha": "7e40b97b45a8",
   "desde": "2026-11-25",
-  "e_hecha": "7e40b97b45a8",
+  "e_hecha": "",
   "leida": "7e40b97b45a8",
   "web": "ok"
  },
  "BCN0148": {
   "actual": "ce3ffe54a156",
-  "c2": "Misas: Lun–Vie 7:00, 16:00, 20:00; Sáb 10:00, 17:00; Dom y festivos 8:00, 10:30, 12:30, 17:00, 20:00\nConfesiones: antes de misa",
+  "c2": "Misas: Lun–Vie 7:00, 16:00, 20:00; Sáb 10:00, 17:00; Dom y festivos 8:00, 10:30 (en), 12:30, 17:00, 20:00\nConfesiones: antes de misa",
   "d_hecha": "ce3ffe54a156",
   "desde": "2026-11-25",
-  "e_hecha": "ce3ffe54a156",
+  "e_hecha": "",
   "leida": "ce3ffe54a156",
   "web": "ok"
  },
@@ -1444,7 +1444,7 @@
   "c2": "",
   "d_hecha": "2947f5680656",
   "desde": "2026-11-25",
-  "e_hecha": "2947f5680656",
+  "e_hecha": "",
   "leida": "2947f5680656",
   "web": "ok"
  },
@@ -1486,10 +1486,10 @@
  },
  "BCN0169": {
   "actual": "eb36bda61d0c",
-  "c2": "Misas: Dom y festivos 12:00",
+  "c2": "Misas: Dom y festivos 12:00 (cast)",
   "d_hecha": "eb36bda61d0c",
   "desde": "2026-11-25",
-  "e_hecha": "eb36bda61d0c",
+  "e_hecha": "",
   "leida": "eb36bda61d0c",
   "web": "sin web"
  },
@@ -1504,10 +1504,10 @@
  },
  "BCN0177": {
   "actual": "83009526ba42",
-  "c2": "Misas: Sáb y vísperas 20:00; Dom y festivos 10:00; festivos 10:00, 12:00",
+  "c2": "Misas: Sáb y vísperas 20:00; Dom y festivos 10:00 (cat); festivos 10:00, 12:00",
   "d_hecha": "83009526ba42",
   "desde": "2026-11-25",
-  "e_hecha": "83009526ba42",
+  "e_hecha": "",
   "leida": "83009526ba42",
   "web": "sin web"
  },
@@ -1675,10 +1675,10 @@
  },
  "BCN0196": {
   "actual": "b9b1c0a828c3",
-  "c2": "Misas: Lun–Vie 9:00, 10:00, 20:00; Lun–Sáb y festivos 10:00; Sáb 9:00, 20:00; Dom 9:00, 10:30, 11:45, 13:00, 18:30, 20:00; Dom y festivos 9:00, 10:30, 11:45, 13:00, 18:30, 20:00\nConfesiones: antes de misa\nAdoración: Jue 20:30–22:30, 20:30–21:30",
+  "c2": "Misas: Lun–Vie 9:00 (cast), 10:00 (en), 20:00 (cat); Lun–Sáb y festivos 10:00; Sáb 9:00 (cast), 20:00; Dom 9:00, 10:30 (cat), 11:45 (cast), 13:00 (cat), 18:30 (cat), 20:00 (cast); Dom y festivos 9:00, 10:30 (cat), 11:45 (cast), 13:00 (cat), 18:30 (cat), 20:00 (cast)\nConfesiones: antes de misa\nAdoración: Jue 20:30–21:30, 20:30–22:30",
   "d_hecha": "b9b1c0a828c3",
   "desde": "2026-11-25",
-  "e_hecha": "b9b1c0a828c3",
+  "e_hecha": "",
   "leida": "b9b1c0a828c3",
   "web": "ok"
  },
@@ -1693,10 +1693,10 @@
  },
  "BCN0198": {
   "actual": "6a04d32abca6",
-  "c2": "Misas: Cada día 10:00, 16:00; Vie 19:00, 19:30; Sáb 19:00; Dom y festivos 10:00, 11:30, 12:45, 16:00, 18:00\nAdoración: Mié 19:30; Jue 18:00, 19:00",
+  "c2": "Misas: Cada día 10:00 (tl), 16:00 (tl); Vie 19:00 (cast), 19:00, 19:30, 19:30 (tl); Sáb 19:00 (cast), 19:00; Dom y festivos 10:00 (tl), 11:30 (cast), 12:45 (cast), 16:00 (en), 16:00, 18:00, 18:00 (tl)\nAdoración: Mié 19:30; Jue 18:00, 19:00 (cast), 19:00",
   "d_hecha": "6a04d32abca6",
   "desde": "2026-11-25",
-  "e_hecha": "6a04d32abca6",
+  "e_hecha": "",
   "leida": "6a04d32abca6",
   "web": "sin web"
  },
@@ -1729,10 +1729,10 @@
  },
  "BCN0202": {
   "actual": "4c8668dd3428",
-  "c2": "Misas: Mar–Jue 19:30; Sáb y vísperas 20:00; Dom y festivos 10:30, 12:00",
+  "c2": "Misas: Mar–Jue 19:30; Sáb y vísperas 20:00 (cat); Dom y festivos 10:30 (cast), 12:00 (cat)",
   "d_hecha": "4c8668dd3428",
   "desde": "2026-11-25",
-  "e_hecha": "4c8668dd3428",
+  "e_hecha": "",
   "leida": "4c8668dd3428",
   "web": "sin web"
  },
@@ -1774,10 +1774,10 @@
  },
  "BCN0207": {
   "actual": "360c887fd525",
-  "c2": "Misas: Lun–Vie 9:30; Sáb y vísperas 19:00; Dom y festivos 11:30, 13:00",
+  "c2": "Misas: Lun–Vie 9:30; Sáb y vísperas 19:00; Dom y festivos 11:30, 13:00 (cast)",
   "d_hecha": "360c887fd525",
   "desde": "2026-11-25",
-  "e_hecha": "360c887fd525",
+  "e_hecha": "",
   "leida": "360c887fd525",
   "web": "sin web"
  },
@@ -1792,10 +1792,10 @@
  },
  "BCN0209": {
   "actual": "53d916536c12",
-  "c2": "Misas: Lun–Sáb 9:30; Sáb y vísperas 19:00; Dom y festivos 11:00; festivos 11:00",
+  "c2": "Misas: Lun–Sáb 9:30; Sáb y vísperas 19:00; Dom y festivos 11:00 (cat); festivos 11:00",
   "d_hecha": "53d916536c12",
   "desde": "2026-11-25",
-  "e_hecha": "53d916536c12",
+  "e_hecha": "",
   "leida": "53d916536c12",
   "web": "sin web"
  },
@@ -1810,19 +1810,19 @@
  },
  "BCN0211": {
   "actual": "ca9db868ccb0",
-  "c2": "Misas: Lun, Mié, Vie 20:00; Mar, Jue 20:00; Sáb y vísperas 20:00; Dom y festivos 11:00, 13:00, 20:00",
+  "c2": "Misas: Lun, Mié, Vie 20:00 (cast); Mar, Jue 20:00 (cat); Sáb y vísperas 20:00 (cat/cast); Dom y festivos 11:00, 13:00 (cast), 20:00 (cast)",
   "d_hecha": "ca9db868ccb0",
   "desde": "2026-11-25",
-  "e_hecha": "ca9db868ccb0",
+  "e_hecha": "",
   "leida": "ca9db868ccb0",
   "web": "no responde"
  },
  "BCN0212": {
   "actual": "ae1cb3576667",
-  "c2": "Misas: Sáb y vísperas 20:15; Dom y festivos 12:30\nConfesiones: a petición",
+  "c2": "Misas: Sáb y vísperas 20:15 (cat); Dom y festivos 12:30 (cast)\nConfesiones: a petición",
   "d_hecha": "ae1cb3576667",
   "desde": "2026-11-25",
-  "e_hecha": "ae1cb3576667",
+  "e_hecha": "",
   "leida": "ae1cb3576667",
   "web": "sin web"
  },
@@ -1831,7 +1831,7 @@
   "c2": "Misas: Lun–Vie 20:00; Sáb 20:00; Dom y festivos 11:30, 18:30, 20:00\nConfesiones: antes de misa\nAdoración: Vie 17:30–19:45",
   "d_hecha": "2a58eb0b10c6",
   "desde": "2026-11-25",
-  "e_hecha": "2a58eb0b10c6",
+  "e_hecha": "",
   "leida": "2a58eb0b10c6",
   "web": "ok"
  },
@@ -1846,7 +1846,7 @@
  },
  "BCN0215": {
   "actual": "d949b1058698",
-  "c2": "Misas: Lun–Vie 8:00, 10:00, 11:00, 19:00, 20:15; Sáb 8:00, 10:00, 11:00, 18:00, 20:00; Sáb y vísperas 8:00, 10:00, 11:00, 18:00, 20:00; Dom 20:30; Dom y festivos 8:00, 10:00, 11:30, 13:00, 18:00, 20:00, 20:30\nConfesiones: Cada día 8:00–13:00, 18:00–21:00\nAdoración: Lun–Vie 18:00–19:00; Mié 21:00",
+  "c2": "Misas: Lun–Vie 8:00 (cat), 10:00 (cat), 11:00 (cat), 19:00 (cat), 20:15 (cat); Sáb 8:00 (cat), 10:00 (cat), 11:00 (cat), 18:00 (cat), 20:00 (cat); Sáb y vísperas 8:00 (cat), 10:00 (cat), 11:00 (cat), 18:00 (cat), 20:00 (cat); Dom 20:30 (cat); Dom y festivos 8:00 (cast), 8:00 (cat), 10:00 (cast), 11:30 (cat), 13:00 (cat), 18:00 (cast), 20:00 (cat), 20:30 (cat)\nConfesiones: Cada día 8:00–13:00, 18:00–21:00\nAdoración: Lun–Vie 18:00–19:00; Mié 21:00",
   "d_hecha": "d949b1058698",
   "desde": "2026-11-25",
   "e_hecha": "d949b1058698",
@@ -1855,10 +1855,10 @@
  },
  "BCN0216": {
   "actual": "adc253008e34",
-  "c2": "Misas: Mar–Vie 20:00; Sáb y vísperas 20:00, 21:30; Dom y festivos 10:00, 12:00",
+  "c2": "Misas: Mar–Vie 20:00 (cast); Sáb y vísperas 20:00 (cast), 21:30; Dom y festivos 10:00 (cast), 12:00 (cast)",
   "d_hecha": "adc253008e34",
   "desde": "2026-11-25",
-  "e_hecha": "adc253008e34",
+  "e_hecha": "",
   "leida": "adc253008e34",
   "web": "no existe"
  },
@@ -1885,16 +1885,16 @@
   "c2": "",
   "d_hecha": "3676b14c99fd",
   "desde": "2026-11-25",
-  "e_hecha": "3676b14c99fd",
+  "e_hecha": "",
   "leida": "3676b14c99fd",
   "web": "no responde"
  },
  "BCN0220": {
   "actual": "eeba4ab8810b",
-  "c2": "Misas: Lun–Vie 9:30, 20:00; Sáb 20:00; Sáb y vísperas 20:00; Dom y festivos 9:30, 20:00",
+  "c2": "Misas: Lun–Vie 9:30, 20:00; Sáb 20:00; Sáb y vísperas 20:00; Dom y festivos 9:30 (cast), 20:00",
   "d_hecha": "eeba4ab8810b",
   "desde": "2026-11-25",
-  "e_hecha": "eeba4ab8810b",
+  "e_hecha": "",
   "leida": "eeba4ab8810b",
   "web": "sin texto"
  },
@@ -1912,25 +1912,25 @@
   "c2": "Misas: Lun–Sáb 19:30; Sáb y vísperas 20:00; Dom y festivos 11:00, 12:30",
   "d_hecha": "9a7b89636463",
   "desde": "2026-11-25",
-  "e_hecha": "9a7b89636463",
+  "e_hecha": "",
   "leida": "9a7b89636463",
   "web": "sin web"
  },
  "BCN0223": {
   "actual": "e2353b8505b4",
-  "c2": "Misas: Lun–Sáb 12:00; Mar, Jue, Sáb 19:00; Dom y festivos 10:30, 12:00, 19:00",
+  "c2": "Misas: Lun–Sáb 12:00 (cat); Mar, Jue, Sáb 19:00 (cat); Dom y festivos 10:30 (cast), 12:00 (cat), 19:00 (cat/cast)",
   "d_hecha": "e2353b8505b4",
   "desde": "2026-11-25",
-  "e_hecha": "e2353b8505b4",
+  "e_hecha": "",
   "leida": "e2353b8505b4",
   "web": "ok"
  },
  "BCN0224": {
   "actual": "7f968e4157ba",
-  "c2": "Misas: Lun–Vie 19:30; Sáb y vísperas 19:30; Dom 11:00, 12:30",
+  "c2": "Misas: Lun–Vie 19:30 (cat); Sáb y vísperas 19:30 (cat); Dom 11:00 (cat), 12:30 (cast)",
   "d_hecha": "7f968e4157ba",
   "desde": "2026-11-25",
-  "e_hecha": "7f968e4157ba",
+  "e_hecha": "",
   "leida": "7f968e4157ba",
   "web": "sin web"
  },
@@ -1948,7 +1948,7 @@
   "c2": "",
   "d_hecha": "7e1dad5910a4",
   "desde": "2026-11-25",
-  "e_hecha": "7e1dad5910a4",
+  "e_hecha": "",
   "leida": "7e1dad5910a4",
   "web": "ok"
  },
@@ -1963,10 +1963,10 @@
  },
  "BCN0228": {
   "actual": "41aa717111d3",
-  "c2": "Misas: Lun–Sáb 20:00; Dom y festivos 11:00, 12:30, 20:00",
+  "c2": "Misas: Lun–Sáb 20:00 (cast); Dom y festivos 11:00 (cast), 12:30 (cast), 20:00 (cat)",
   "d_hecha": "41aa717111d3",
   "desde": "2026-11-25",
-  "e_hecha": "41aa717111d3",
+  "e_hecha": "",
   "leida": "41aa717111d3",
   "web": "sin web"
  },
@@ -1984,25 +1984,25 @@
   "c2": "Misas: Jue 18:00; Vie 9:00, 19:30; Sáb 19:30\nConfesiones: antes de misa",
   "d_hecha": "c5a51b16fa41",
   "desde": "2026-11-25",
-  "e_hecha": "c5a51b16fa41",
+  "e_hecha": "",
   "leida": "c5a51b16fa41",
   "web": "no coincide"
  },
  "BCN0231": {
   "actual": "0f34adc2bb37",
-  "c2": "Misas: Lun–Sáb 20:00; Dom y festivos 11:00, 12:30",
+  "c2": "Misas: Lun–Sáb 20:00; Dom y festivos 11:00 (cast), 12:30 (cat)",
   "d_hecha": "0f34adc2bb37",
   "desde": "2026-11-25",
-  "e_hecha": "0f34adc2bb37",
+  "e_hecha": "",
   "leida": "0f34adc2bb37",
   "web": "no responde"
  },
  "BCN0232": {
   "actual": "150cf52ffcd3",
-  "c2": "Misas: Dom y festivos 10:00, 13:00, 20:00",
+  "c2": "Misas: Dom y festivos 10:00 (uk), 13:00, 20:00 (cast)",
   "d_hecha": "150cf52ffcd3",
   "desde": "2026-11-25",
-  "e_hecha": "150cf52ffcd3",
+  "e_hecha": "",
   "leida": "150cf52ffcd3",
   "web": "sin web"
  },
@@ -2026,10 +2026,10 @@
  },
  "BCN0235": {
   "actual": "b6b14255f9fb",
-  "c2": "Misas: Lun–Sáb 19:30; festivos 11:00, 13:00\nConfesiones: Sáb 19:00–19:30; Dom 12:00–13:00",
+  "c2": "Misas: Lun–Sáb 19:30 (cat); festivos 11:00 (cat), 13:00\nConfesiones: Sáb 19:00–19:30; Dom 12:00–13:00",
   "d_hecha": "b6b14255f9fb",
   "desde": "2026-11-25",
-  "e_hecha": "b6b14255f9fb",
+  "e_hecha": "",
   "leida": "b6b14255f9fb",
   "web": "no responde"
  },
@@ -2044,19 +2044,19 @@
  },
  "BCN0237": {
   "actual": "fad01fa9c718",
-  "c2": "Misas: Dom y festivos 12:15",
+  "c2": "Misas: Dom y festivos 12:15 (cast)",
   "d_hecha": "fad01fa9c718",
   "desde": "2026-11-25",
-  "e_hecha": "fad01fa9c718",
+  "e_hecha": "",
   "leida": "fad01fa9c718",
   "web": "sin web"
  },
  "BCN0238": {
   "actual": "2ea65a46a5d1",
-  "c2": "Misas: Lun–Vie 19:00; Vie 21:00; Sáb y vísperas 19:00; Dom y festivos 10:30, 12:00",
+  "c2": "Misas: Lun–Vie 19:00 (cat); Vie 21:00; Sáb y vísperas 19:00 (cat); Dom y festivos 10:30 (cat), 12:00 (cast)",
   "d_hecha": "2ea65a46a5d1",
   "desde": "2026-11-25",
-  "e_hecha": "2ea65a46a5d1",
+  "e_hecha": "",
   "leida": "2ea65a46a5d1",
   "web": "sin web"
  },
@@ -2071,10 +2071,10 @@
  },
  "BCN0240": {
   "actual": "14ab2cecf074",
-  "c2": "Misas: Mar–Vie 19:00; Sáb 19:00; Dom 10:00, 11:00, 12:30, 20:00",
+  "c2": "Misas: Mar–Vie 19:00; Sáb 19:00; Dom 10:00, 11:00 (cast), 12:30, 20:00",
   "d_hecha": "14ab2cecf074",
   "desde": "2026-11-25",
-  "e_hecha": "14ab2cecf074",
+  "e_hecha": "",
   "leida": "14ab2cecf074",
   "web": "ok"
  },
@@ -2098,10 +2098,10 @@
  },
  "BCN0243": {
   "actual": "4a5bcf622551",
-  "c2": "Misas: Lun 10:00; Mar–Vie 10:00, 19:30; Mar, Jue, Vie 18:00, 19:00; Jue 19:30; Sáb 10:00, 18:30; Dom 11:00\nConfesiones: Jue 12:00–13:00\nAdoración: Jue 10:30–13:00, 20:00–21:00",
+  "c2": "Misas: Lun 10:00 (cat); Mar–Vie 10:00 (cat), 19:30 (cat); Mar, Jue, Vie 18:00, 19:00; Jue 19:30; Sáb 10:00 (cast), 18:30 (cast); Dom 11:00 (cat/cast)\nConfesiones: Jue 12:00–13:00\nAdoración: Jue 10:30–13:00, 20:00–21:00",
   "d_hecha": "4a5bcf622551",
   "desde": "2026-11-25",
-  "e_hecha": "4a5bcf622551",
+  "e_hecha": "",
   "leida": "4a5bcf622551",
   "web": "ok"
  },
@@ -2125,19 +2125,19 @@
  },
  "BCN0246": {
   "actual": "8902e5bdca23",
-  "c2": "Misas: Lun–Vie 20:00; Lun–Sáb 20:00; Jue 20:00; Sáb 18:00, 20:00; Dom 12:00, 19:00\nConfesiones: Lun–Sáb 8:00–20:30; Dom 9:00–13:00, 17:30–19:30; antes de misa\nAdoración: Mar 20:30–21:15; Mié 20:30–21:30; Jue 17:00–20:00",
+  "c2": "Misas: Lun–Vie 20:00 (cat); Lun–Sáb 20:00; Jue 20:00 (cast); Sáb 18:00, 20:00 (cast), 20:00; Dom 12:00, 19:00 (cat), 19:00\nConfesiones: Lun–Sáb 8:00–20:30; Dom 9:00–13:00, 17:30–19:30; antes de misa\nAdoración: Mar 20:30–21:15; Mié 20:30–21:30; Jue 17:00–20:00",
   "d_hecha": "8902e5bdca23",
   "desde": "2026-11-25",
-  "e_hecha": "8902e5bdca23",
+  "e_hecha": "",
   "leida": "8902e5bdca23",
   "web": "ok"
  },
  "BCN0247": {
   "actual": "9d6a6c5bee76",
-  "c2": "Misas: Lun–Vie 8:30, 20:00; Sáb y vísperas 19:00; Dom 11:30, 12:30, 13:30, 19:00\nConfesiones: antes de misa",
+  "c2": "Misas: Lun–Vie 8:30, 20:00 (cast); Sáb y vísperas 19:00 (cast); Dom 11:30, 12:30 (cat), 13:30 (cast), 19:00 (cast)\nConfesiones: antes de misa",
   "d_hecha": "9d6a6c5bee76",
   "desde": "2026-11-25",
-  "e_hecha": "9d6a6c5bee76",
+  "e_hecha": "",
   "leida": "9d6a6c5bee76",
   "web": "sin web"
  },
@@ -2152,46 +2152,46 @@
  },
  "BCN0249": {
   "actual": "1e789155aedb",
-  "c2": "Misas: Sáb 20:00; Dom 11:30, 12:00; Dom y festivos 12:00",
+  "c2": "Misas: Sáb 20:00 (pt); Dom 11:30, 12:00; Dom y festivos 12:00",
   "d_hecha": "1e789155aedb",
   "desde": "2026-11-25",
-  "e_hecha": "1e789155aedb",
+  "e_hecha": "",
   "leida": "1e789155aedb",
   "web": "ok"
  },
  "BCN0250": {
   "actual": "c16a470fe8d0",
-  "c2": "Misas: Sáb 19:00; Dom 12:00\nConfesiones: antes de misa",
+  "c2": "Misas: Sáb 19:00 (cast); Dom 12:00 (cat)\nConfesiones: antes de misa",
   "d_hecha": "c16a470fe8d0",
   "desde": "2026-11-25",
-  "e_hecha": "c16a470fe8d0",
+  "e_hecha": "",
   "leida": "c16a470fe8d0",
   "web": "no responde"
  },
  "BCN0251": {
   "actual": "c2324cc7effb",
-  "c2": "Misas: Lun–Jue 19:30; Vie 20:00; Sáb 20:00; Dom 9:00, 12:30",
+  "c2": "Misas: Lun–Jue 19:30; Vie 20:00; Sáb 20:00 (cat); Dom 9:00, 12:30",
   "d_hecha": "c2324cc7effb",
   "desde": "2026-11-25",
-  "e_hecha": "c2324cc7effb",
+  "e_hecha": "",
   "leida": "c2324cc7effb",
   "web": "sin web"
  },
  "BCN0252": {
   "actual": "a5aa603dbe65",
-  "c2": "Misas: Lun, Mié 19:00; Dom 11:00",
+  "c2": "Misas: Lun, Mié 19:00; Dom 11:00 (cat/cast)",
   "d_hecha": "a5aa603dbe65",
   "desde": "2026-11-25",
-  "e_hecha": "a5aa603dbe65",
+  "e_hecha": "",
   "leida": "a5aa603dbe65",
   "web": "ok"
  },
  "BCN0253": {
   "actual": "a5e0dd4d1359",
-  "c2": "Misas: Lun–Vie 19:00; Sáb 18:00; Dom 11:00, 12:00\nConfesiones: antes de misa",
+  "c2": "Misas: Lun–Vie 19:00 (cat/cast); Sáb 18:00 (cat/cast); Dom 11:00 (cat), 12:00 (cast)\nConfesiones: antes de misa",
   "d_hecha": "a5e0dd4d1359",
   "desde": "2026-11-25",
-  "e_hecha": "a5e0dd4d1359",
+  "e_hecha": "",
   "leida": "a5e0dd4d1359",
   "web": "ok"
  },
@@ -2206,46 +2206,46 @@
  },
  "BCN0255": {
   "actual": "977d6480cd01",
-  "c2": "Misas: Lun–Vie 8:30, 18:30; Sáb y vísperas 8:30, 19:30; Dom y festivos 9:00, 11:00, 12:00, 19:30",
+  "c2": "Misas: Lun–Vie 8:30 (cat), 18:30 (cast); Sáb y vísperas 8:30 (cat), 19:30 (cast); Dom y festivos 9:00 (cat), 11:00 (cast), 12:00 (cat/cast), 19:30 (cast)",
   "d_hecha": "977d6480cd01",
   "desde": "2026-11-25",
-  "e_hecha": "977d6480cd01",
+  "e_hecha": "",
   "leida": "977d6480cd01",
   "web": "sin web"
  },
  "BCN0256": {
   "actual": "32b29dac197a",
-  "c2": "Misas: Lun 17:00; Lun, Mié, Vie 9:00, 20:00; Mar, Jue, Sáb 9:00, 20:00; Dom y festivos 8:00, 9:00, 11:30, 13:00, 17:30\nConfesiones: antes de misa\nAdoración: Jue 18:00–20:00",
+  "c2": "Misas: Lun 17:00; Lun, Mié, Vie 9:00 (cat), 20:00 (cast); Mar, Jue, Sáb 9:00 (cast), 20:00 (cat); Dom y festivos 8:00, 9:00, 11:30, 13:00, 17:30\nConfesiones: antes de misa\nAdoración: Jue 18:00–20:00",
   "d_hecha": "32b29dac197a",
   "desde": "2026-11-25",
-  "e_hecha": "32b29dac197a",
+  "e_hecha": "",
   "leida": "32b29dac197a",
   "web": "no responde"
  },
  "BCN0257": {
   "actual": "b864b6feb16f",
-  "c2": "Misas: Lun–Vie 9:30; Lun, Mié, Vie 9:30, 20:00; Mar, Jue, Sáb 20:00; Sáb y vísperas 19:00; Dom y festivos 12:00",
+  "c2": "Misas: Lun–Vie 9:30; Lun, Mié, Vie 9:30, 20:00; Mar, Jue, Sáb 20:00 (cast); Sáb y vísperas 19:00; Dom y festivos 12:00",
   "d_hecha": "b864b6feb16f",
   "desde": "2026-11-25",
-  "e_hecha": "b864b6feb16f",
+  "e_hecha": "",
   "leida": "b864b6feb16f",
   "web": "ok"
  },
  "BCN0258": {
   "actual": "83785b9fc3df",
-  "c2": "Misas: Lun–Vie 11:30, 14:10, 19:00; Sáb y vísperas 11:30, 19:00; Dom y festivos 12:00, 13:15, 19:00, 20:00\nConfesiones: Cada día 18:00–18:55; Dom 18:00, 18:30, 18:55; antes de misa\nAdoración: Jue 18:00–19:00",
+  "c2": "Misas: Lun–Vie 11:30 (cat), 14:10 (cast), 19:00 (cat); Sáb y vísperas 11:30 (cat), 19:00 (cast); Dom y festivos 12:00 (cat), 13:15 (cast), 19:00 (cast), 20:00 (cat)\nConfesiones: Cada día 18:00–18:55; Dom 18:00, 18:30, 18:55; antes de misa\nAdoración: Jue 18:00–19:00",
   "d_hecha": "83785b9fc3df",
   "desde": "2026-11-25",
-  "e_hecha": "83785b9fc3df",
+  "e_hecha": "",
   "leida": "83785b9fc3df",
   "web": "ok"
  },
  "BCN0259": {
   "actual": "48b81ff634f1",
-  "c2": "Misas: Lun–Sáb 9:00; Lun, Mié, Vie 20:00; Dom y festivos 12:00, 13:00\nConfesiones: Vie 9:30–10:15\nAdoración: Jue 19:00",
+  "c2": "Misas: Lun–Sáb 9:00 (cat); Lun, Mié, Vie 20:00 (cast); Dom y festivos 12:00 (cast), 13:00 (cat)\nConfesiones: Vie 9:30–10:15\nAdoración: Jue 19:00",
   "d_hecha": "48b81ff634f1",
   "desde": "2026-11-25",
-  "e_hecha": "48b81ff634f1",
+  "e_hecha": "",
   "leida": "48b81ff634f1",
   "web": "ok"
  },
@@ -2278,10 +2278,10 @@
  },
  "BCN0263": {
   "actual": "5e1c0d31e1ab",
-  "c2": "Misas: Lun–Vie 8:00, 8:30, 10:00, 20:15; Sáb 8:00, 10:00, 19:15; Sáb y vísperas 19:15; Dom 8:30, 10:00, 11:30, 13:00, 20:15\nConfesiones: Lun–Vie 8:30–10:00, 19:45–20:15; antes de misa\nAdoración: Lun–Vie 8:30–20:00",
+  "c2": "Misas: Lun–Vie 8:00, 8:30, 10:00, 20:15; Sáb 8:00, 10:00, 19:15; Sáb y vísperas 19:15; Dom 8:30 (fr), 10:00, 11:30, 13:00, 20:15 (cast), 20:15\nConfesiones: Lun–Vie 8:30–10:00, 19:45–20:15; antes de misa\nAdoración: Lun–Vie 8:30–20:00",
   "d_hecha": "5e1c0d31e1ab",
   "desde": "2026-11-25",
-  "e_hecha": "5e1c0d31e1ab",
+  "e_hecha": "",
   "leida": "5e1c0d31e1ab",
   "web": "ok"
  },
@@ -2299,16 +2299,16 @@
   "c2": "Misas: Lun–Vie 19:00; Dom 19:45",
   "d_hecha": "caad19c23e9a",
   "desde": "2026-11-25",
-  "e_hecha": "caad19c23e9a",
+  "e_hecha": "",
   "leida": "caad19c23e9a",
   "web": "no coincide"
  },
  "BCN0266": {
   "actual": "a2010b0c4064",
-  "c2": "Misas: Lun–Sáb 10:00, 11:00, 12:00, 20:00; Sáb y vísperas 20:00; Dom y festivos 10:00, 11:00, 12:00, 13:00, 20:00",
+  "c2": "Misas: Lun–Sáb 10:00, 11:00, 12:00, 20:00 (cat); Sáb y vísperas 20:00; Dom y festivos 10:00, 11:00, 12:00, 13:00 (cat), 20:00 (cat)",
   "d_hecha": "a2010b0c4064",
   "desde": "2026-11-25",
-  "e_hecha": "a2010b0c4064",
+  "e_hecha": "",
   "leida": "a2010b0c4064",
   "web": "sin texto"
  },
@@ -2317,16 +2317,16 @@
   "c2": "Misas: Dom y festivos 11:00",
   "d_hecha": "00ca1c84c697",
   "desde": "2026-11-25",
-  "e_hecha": "00ca1c84c697",
+  "e_hecha": "",
   "leida": "00ca1c84c697",
   "web": "sin web"
  },
  "BCN0268": {
   "actual": "b9ddb39b2f72",
-  "c2": "Misas: Lun–Sáb 12:30, 19:00; Dom y festivos 10:30, 12:30, 19:00\nConfesiones: antes de misa",
+  "c2": "Misas: Lun–Sáb 12:30, 19:00; Dom y festivos 10:30 (cast), 12:30, 19:00\nConfesiones: antes de misa",
   "d_hecha": "b9ddb39b2f72",
   "desde": "2026-11-25",
-  "e_hecha": "b9ddb39b2f72",
+  "e_hecha": "",
   "leida": "b9ddb39b2f72",
   "web": "sin web"
  },
@@ -2359,10 +2359,10 @@
  },
  "BCN0272": {
   "actual": "c1be9e60b1d9",
-  "c2": "Misas: Lun–Vie 8:00, 11:00, 19:30; Sáb y vísperas 19:30; Dom 8:30, 11:30, 13:00, 19:30; Dom y festivos 8:30, 10:00, 11:30, 19:30\nConfesiones: antes de misa",
+  "c2": "Misas: Lun–Vie 8:00 (cat), 11:00 (cast), 19:30; Sáb y vísperas 19:30 (cast); Dom 8:30 (cast), 11:30 (cast), 13:00 (cast), 19:30 (cast); Dom y festivos 8:30 (cast), 10:00 (cat), 11:30 (cast), 19:30 (cast)\nConfesiones: antes de misa",
   "d_hecha": "c1be9e60b1d9",
   "desde": "2026-11-25",
-  "e_hecha": "c1be9e60b1d9",
+  "e_hecha": "",
   "leida": "c1be9e60b1d9",
   "web": "ok"
  },
@@ -2377,37 +2377,37 @@
  },
  "BCN0274": {
   "actual": "01542a1882de",
-  "c2": "Misas: Vie 12:00; Sáb 12:00\nConfesiones: Sáb 10:00–12:00",
+  "c2": "Misas: Vie 12:00; Sáb 12:00\nConfesiones: Sáb 10:00–12:00 (cast)",
   "d_hecha": "01542a1882de",
   "desde": "2026-11-25",
-  "e_hecha": "01542a1882de",
+  "e_hecha": "",
   "leida": "01542a1882de",
   "web": "ok"
  },
  "BCN0275": {
   "actual": "80e9ef939c8f",
-  "c2": "Misas: Mar, Jue 19:00; Sáb y vísperas 19:00; Dom 12:00",
+  "c2": "Misas: Mar, Jue 19:00; Sáb y vísperas 19:00; Dom 12:00 (cat/cast)",
   "d_hecha": "80e9ef939c8f",
   "desde": "2026-11-25",
-  "e_hecha": "80e9ef939c8f",
+  "e_hecha": "",
   "leida": "80e9ef939c8f",
   "web": "no responde"
  },
  "BCN0276": {
   "actual": "d49e0962325f",
-  "c2": "Misas: Lun–Vie 8:15, 19:30; Sáb y vísperas 12:30, 19:30; Dom 11:30, 12:30; festivos 12:30\nConfesiones: antes de misa\nAdoración: Lun–Vie 18:00–19:30; Jue 8:45–19:30",
+  "c2": "Misas: Lun–Vie 8:15 (cat), 19:30 (cast); Sáb y vísperas 12:30, 19:30 (cat/cast); Dom 11:30, 12:30; festivos 12:30\nConfesiones: antes de misa\nAdoración: Lun–Vie 18:00–19:30; Jue 8:45–19:30",
   "d_hecha": "d49e0962325f",
   "desde": "2026-11-25",
-  "e_hecha": "d49e0962325f",
+  "e_hecha": "",
   "leida": "d49e0962325f",
   "web": "ok"
  },
  "BCN0277": {
   "actual": "b2025232bec7",
-  "c2": "Misas: Lun–Vie 20:00; Sáb y vísperas 19:30; Dom y festivos 11:00, 12:15",
+  "c2": "Misas: Lun–Vie 20:00; Sáb y vísperas 19:30; Dom y festivos 11:00 (cast), 12:15 (cat)",
   "d_hecha": "b2025232bec7",
   "desde": "2026-11-25",
-  "e_hecha": "b2025232bec7",
+  "e_hecha": "",
   "leida": "b2025232bec7",
   "web": "sin web"
  },
@@ -2422,10 +2422,10 @@
  },
  "BCN0279": {
   "actual": "731d34ead22a",
-  "c2": "Misas: Lun–Vie 9:00, 20:00; Sáb y vísperas y festivos 9:00, 19:00; Dom y festivos 10:00, 12:00, 20:00",
+  "c2": "Misas: Lun–Vie 9:00, 20:00; Sáb y vísperas y festivos 9:00, 19:00; Dom y festivos 10:00, 12:00 (cast), 20:00",
   "d_hecha": "731d34ead22a",
   "desde": "2026-11-25",
-  "e_hecha": "731d34ead22a",
+  "e_hecha": "",
   "leida": "731d34ead22a",
   "web": "no responde"
  },
@@ -2449,10 +2449,10 @@
  },
  "BCN0282": {
   "actual": "df1847a12cf1",
-  "c2": "Misas: Lun–Vie 9:30, 20:15; Mar–Jue 18:00; Mié 20:45; Sáb 9:30; Sáb y vísperas 9:30; Dom 19:00; Dom y festivos 10:11\nConfesiones: Mié 10:00–13:00, 17:30–18:30\nAdoración: Mié 19:00–20:00",
+  "c2": "Misas: Lun–Vie 9:30 (cat), 9:30, 20:15, 20:15 (cat/cast); Mar–Jue 18:00; Mié 20:45; Sáb 9:30; Sáb y vísperas 9:30 (cat); Dom 19:00; Dom y festivos 10:11\nConfesiones: Mié 10:00–13:00, 17:30–18:30\nAdoración: Mié 19:00–20:00",
   "d_hecha": "df1847a12cf1",
   "desde": "2026-11-25",
-  "e_hecha": "df1847a12cf1",
+  "e_hecha": "",
   "leida": "df1847a12cf1",
   "web": "no responde"
  },
@@ -2467,10 +2467,10 @@
  },
  "BCN0284": {
   "actual": "a85413f31a99",
-  "c2": "Misas: Lun–Vie 7:30; Lun–Sáb 10:00, 20:00; Sáb 18:30; Dom y festivos 11:00, 12:00, 20:00",
+  "c2": "Misas: Lun–Vie 7:30 (cast); Lun–Sáb 10:00 (cat), 20:00 (cat); Sáb 18:30, 18:30 (cast); Dom y festivos 11:00 (cast), 12:00, 20:00 (cat)",
   "d_hecha": "a85413f31a99",
   "desde": "2026-11-25",
-  "e_hecha": "a85413f31a99",
+  "e_hecha": "",
   "leida": "a85413f31a99",
   "web": "no coincide"
  },
@@ -2479,7 +2479,7 @@
   "c2": "Confesiones: Dom 11:00–13:00, 20:00–21:00; antes de misa",
   "d_hecha": "78fd81f78203",
   "desde": "2026-11-25",
-  "e_hecha": "78fd81f78203",
+  "e_hecha": "",
   "leida": "78fd81f78203",
   "web": "ok"
  },
@@ -2629,10 +2629,10 @@
  },
  "BCN0302": {
   "actual": "85dbfb22b62f",
-  "c2": "Misas: Lun–Vie 11:30, 20:00; Sáb 11:30; Sáb y vísperas 20:00; Dom y festivos 11:00, 12:00, 13:00, 19:30\nAdoración: Jue 19:00–19:45",
+  "c2": "Misas: Lun–Vie 11:30 (cast), 20:00 (cat); Sáb 11:30 (cast); Sáb y vísperas 20:00 (cat); Dom y festivos 11:00 (cat), 12:00 (cast), 13:00 (cat), 19:30 (cat/cast)\nAdoración: Jue 19:00–19:45",
   "d_hecha": "85dbfb22b62f",
   "desde": "2026-11-25",
-  "e_hecha": "85dbfb22b62f",
+  "e_hecha": "",
   "leida": "85dbfb22b62f",
   "web": "no coincide"
  },
@@ -2854,10 +2854,10 @@
  },
  "BCN0327": {
   "actual": "35ebe12e4e73",
-  "c2": "Misas: Lun–Vie 19:00; Sáb y vísperas 19:00; Dom y festivos 9:00, 12:00",
+  "c2": "Misas: Lun–Vie 19:00 (cast); Sáb y vísperas 19:00; Dom y festivos 9:00 (cast), 12:00 (cat/cast)",
   "d_hecha": "35ebe12e4e73",
   "desde": "2026-11-25",
-  "e_hecha": "35ebe12e4e73",
+  "e_hecha": "",
   "leida": "35ebe12e4e73",
   "web": "sin web"
  },
@@ -2890,19 +2890,19 @@
  },
  "BCN0331": {
   "actual": "413604d15313",
-  "c2": "Misas: Cada día 11:00, 20:00; Dom 9:00, 11:00, 12:30, 20:00",
+  "c2": "Misas: Cada día 11:00, 20:00; Dom 9:00, 11:00, 12:30, 12:30 (cat), 20:00",
   "d_hecha": "413604d15313",
   "desde": "2026-11-25",
-  "e_hecha": "413604d15313",
+  "e_hecha": "",
   "leida": "413604d15313",
   "web": "no responde"
  },
  "BCN0332": {
   "actual": "1ca41761450d",
-  "c2": "Misas: Lun–Vie 8:30; Sáb y vísperas 19:30; Dom y festivos 11:00, 12:00",
+  "c2": "Misas: Lun–Vie 8:30; Sáb y vísperas 19:30; Dom y festivos 11:00 (cast), 12:00 (cat)",
   "d_hecha": "1ca41761450d",
   "desde": "2026-11-25",
-  "e_hecha": "1ca41761450d",
+  "e_hecha": "",
   "leida": "1ca41761450d",
   "web": "sin web"
  },
@@ -3034,10 +3034,10 @@
  },
  "BCN0347": {
   "actual": "42f8d9f19002",
-  "c2": "Misas: Jue 10:00; Sáb 10:00; Dom y festivos 12:00",
+  "c2": "Misas: Jue 10:00 (cat/cast); Sáb 10:00 (cat/cast); Dom y festivos 12:00 (cat/cast)",
   "d_hecha": "42f8d9f19002",
   "desde": "2026-11-25",
-  "e_hecha": "42f8d9f19002",
+  "e_hecha": "",
   "leida": "42f8d9f19002",
   "web": "no responde"
  },
@@ -3079,19 +3079,19 @@
  },
  "BCN0352": {
   "actual": "abf4103eef0f",
-  "c2": "Misas: Lun–Vie 20:30; Dom y festivos 10:00, 12:00",
+  "c2": "Misas: Lun–Vie 20:30 (cast); Dom y festivos 10:00, 12:00 (cast)",
   "d_hecha": "abf4103eef0f",
   "desde": "2026-11-25",
-  "e_hecha": "abf4103eef0f",
+  "e_hecha": "",
   "leida": "abf4103eef0f",
   "web": "sin web"
  },
  "BCN0353": {
   "actual": "4c062f16e371",
-  "c2": "Misas: Lun–Sáb 19:00; Dom y festivos 12:00",
+  "c2": "Misas: Lun–Sáb 19:00 (cast); Dom y festivos 12:00 (cast)",
   "d_hecha": "4c062f16e371",
   "desde": "2026-11-25",
-  "e_hecha": "4c062f16e371",
+  "e_hecha": "",
   "leida": "4c062f16e371",
   "web": "sin web"
  },
@@ -3106,7 +3106,7 @@
  },
  "BCN0355": {
   "actual": "bb46371d6e31",
-  "c2": "Misas: Lun 7:24; Mar 7:10, 18:00, 20:00; Mié, Jue 18:00, 20:00; Sáb 20:00, 21:00; Dom 7:10, 20:00; Dom y festivos 10:00, 12:00, 20:00",
+  "c2": "Misas: Lun 7:24; Mar 7:10, 18:00, 20:00, 20:00 (cat); Mié, Jue 18:00 (cat), 20:00 (cat); Sáb 20:00, 21:00; Dom 7:10, 20:00 (cast); Dom y festivos 10:00, 12:00, 20:00",
   "d_hecha": "bb46371d6e31",
   "desde": "2026-11-25",
   "e_hecha": "bb46371d6e31",
@@ -3142,10 +3142,10 @@
  },
  "BCN0359": {
   "actual": "ef98dab1892f",
-  "c2": "Misas: Dom y festivos 12:00",
+  "c2": "Misas: Dom y festivos 12:00 (cat)",
   "d_hecha": "ef98dab1892f",
   "desde": "2026-11-25",
-  "e_hecha": "ef98dab1892f",
+  "e_hecha": "",
   "leida": "ef98dab1892f",
   "web": "no existe"
  },
@@ -3232,10 +3232,10 @@
  },
  "BCN0371": {
   "actual": "57d223346095",
-  "c2": "Misas: Dom y festivos 12:00",
+  "c2": "Misas: Dom y festivos 12:00 (cast)",
   "d_hecha": "57d223346095",
   "desde": "2026-11-25",
-  "e_hecha": "57d223346095",
+  "e_hecha": "",
   "leida": "57d223346095",
   "web": "sin web"
  },
@@ -3313,10 +3313,10 @@
  },
  "BCN0381": {
   "actual": "96e83bf5491d",
-  "c2": "Misas: Lun–Vie 8:15, 19:00, 20:00; Cada día 7:55; Lun–Sáb y vísperas 19:45; Sáb 8:15; Sáb, Dom y vísperas 19:00, 20:00; Dom 8:30, 11:00, 12:00, 13:00, 20:00\nConfesiones: a petición\nAdoración: Jue 18:00–19:00; Vie 20:30–22:00",
+  "c2": "Misas: Lun–Vie 8:15 (cat), 19:00 (cast), 20:00 (cast); Cada día 7:55; Lun–Sáb y vísperas 19:45; Sáb 8:15 (cat); Sáb, Dom y vísperas 19:00 (cat/cast), 20:00 (cast); Dom 8:30 (cast), 11:00 (cat), 12:00 (cast), 13:00 (cast), 20:00 (cast)\nConfesiones: a petición\nAdoración: Jue 18:00–19:00; Vie 20:30–22:00",
   "d_hecha": "96e83bf5491d",
   "desde": "2026-11-25",
-  "e_hecha": "96e83bf5491d",
+  "e_hecha": "",
   "leida": "96e83bf5491d",
   "web": "ok"
  },
@@ -3358,10 +3358,10 @@
  },
  "BCN0386": {
   "actual": "3b21ee32c7e4",
-  "c2": "Misas: Lun–Sáb 10:00, 19:00; Mar, Mié 12:30; Jue 19:00; Vie 19:00; Sáb 11:00; Dom y festivos 11:00, 12:30, 19:00\nConfesiones: Mar, Mié 17:30–18:30; antes de misa\nAdoración: Jue 10:00",
+  "c2": "Misas: Lun–Sáb 10:00 (cast), 19:00 (cast); Mar, Mié 12:30; Jue 19:00 (cat); Vie 19:00; Sáb 11:00; Dom y festivos 11:00 (cat), 12:30 (cat), 19:00 (cast)\nConfesiones: Mar, Mié 17:30–18:30; antes de misa\nAdoración: Jue 10:00",
   "d_hecha": "3b21ee32c7e4",
   "desde": "2026-11-25",
-  "e_hecha": "3b21ee32c7e4",
+  "e_hecha": "",
   "leida": "3b21ee32c7e4",
   "web": "ok"
  },
@@ -3388,16 +3388,16 @@
   "c2": "",
   "d_hecha": "bc5dbace5906",
   "desde": "2026-11-25",
-  "e_hecha": "bc5dbace5906",
+  "e_hecha": "",
   "leida": "bc5dbace5906",
   "web": "ok"
  },
  "BCN0390": {
   "actual": "99f39b99827d",
-  "c2": "Misas: Lun–Vie 11:30, 19:45; Jue 19:00; Sáb y vísperas 11:30, 19:45; Dom y festivos 11:30, 19:45\nConfesiones: antes de misa\nAdoración: Jue 19:00",
+  "c2": "Misas: Lun–Vie 11:30, 19:45; Jue 19:00; Sáb y vísperas 11:30, 19:45 (cast); Dom y festivos 11:30 (cat), 19:45 (cast)\nConfesiones: antes de misa\nAdoración: Jue 19:00",
   "d_hecha": "99f39b99827d",
   "desde": "2026-11-25",
-  "e_hecha": "99f39b99827d",
+  "e_hecha": "",
   "leida": "99f39b99827d",
   "web": "ok"
  },
@@ -3628,10 +3628,10 @@
  },
  "BCN0416": {
   "actual": "3c2a78fa57f2",
-  "c2": "Misas: Lun–Vie 9:00; Sáb y vísperas 9:00, 20:00; Dom y festivos 9:00, 11:00, 20:00",
+  "c2": "Misas: Lun–Vie 9:00; Sáb y vísperas 9:00, 20:00; Dom y festivos 9:00 (cat), 11:00 (cast), 20:00 (cat)",
   "d_hecha": "3c2a78fa57f2",
   "desde": "2026-11-25",
-  "e_hecha": "3c2a78fa57f2",
+  "e_hecha": "",
   "leida": "3c2a78fa57f2",
   "web": "no existe"
  },
@@ -3736,10 +3736,10 @@
  },
  "BCN0428": {
   "actual": "0dc429765fbb",
-  "c2": "Misas: Lun 9:00, 15:00; Lun–Sáb 20:00; Dom 11:00, 20:00",
+  "c2": "Misas: Lun 9:00, 15:00; Lun–Sáb 20:00; Dom 11:00, 20:00 (cast)",
   "d_hecha": "0dc429765fbb",
   "desde": "2026-11-25",
-  "e_hecha": "0dc429765fbb",
+  "e_hecha": "",
   "leida": "0dc429765fbb",
   "web": "no existe"
  },
@@ -3763,10 +3763,10 @@
  },
  "BCN0431": {
   "actual": "e2ff9832c2eb",
-  "c2": "Misas: Lun–Sáb 9:00, 19:30; Sáb y vísperas 19:30; Dom 9:00, 10:45, 19:30; festivos 12:30",
+  "c2": "Misas: Lun–Sáb 9:00, 19:30; Sáb y vísperas 19:30; Dom 9:00, 10:45, 19:30 (cast); festivos 12:30 (cat/cast)",
   "d_hecha": "e2ff9832c2eb",
   "desde": "2026-11-25",
-  "e_hecha": "e2ff9832c2eb",
+  "e_hecha": "",
   "leida": "e2ff9832c2eb",
   "web": "sin texto"
  },
@@ -3826,10 +3826,10 @@
  },
  "BCN0438": {
   "actual": "c96db57a30b8",
-  "c2": "Misas: Lun–Vie 10:00, 19:00; Sáb y vísperas 19:00; Dom y festivos 11:00, 19:00",
+  "c2": "Misas: Lun–Vie 10:00, 19:00; Sáb y vísperas 19:00; Dom y festivos 11:00, 19:00 (cast)",
   "d_hecha": "c96db57a30b8",
   "desde": "2026-11-25",
-  "e_hecha": "c96db57a30b8",
+  "e_hecha": "",
   "leida": "c96db57a30b8",
   "web": "no responde"
  },
@@ -3871,10 +3871,10 @@
  },
  "BCN0444": {
   "actual": "2b68a689d081",
-  "c2": "Misas: Mar, Mié, Vie 20:00; Sáb y vísperas 20:00; Dom y festivos 10:00, 20:00",
+  "c2": "Misas: Mar, Mié, Vie 20:00 (cast); Sáb y vísperas 20:00; Dom y festivos 10:00, 20:00 (cast)",
   "d_hecha": "2b68a689d081",
   "desde": "2026-11-25",
-  "e_hecha": "2b68a689d081",
+  "e_hecha": "",
   "leida": "2b68a689d081",
   "web": "no responde"
  },
@@ -3907,10 +3907,10 @@
  },
  "BCN0448": {
   "actual": "2a9d2e7031c2",
-  "c2": "Misas: Lun–Vie 20:00; Sáb y vísperas 20:00; Dom y festivos 10:00, 12:00",
+  "c2": "Misas: Lun–Vie 20:00; Sáb y vísperas 20:00; Dom y festivos 10:00, 12:00 (lat)",
   "d_hecha": "2a9d2e7031c2",
   "desde": "2026-11-25",
-  "e_hecha": "2a9d2e7031c2",
+  "e_hecha": "",
   "leida": "2a9d2e7031c2",
   "web": "sin web"
  },
@@ -3925,10 +3925,10 @@
  },
  "BCN0450": {
   "actual": "37d554404634",
-  "c2": "Misas: Lun, Mié, Vie 19:00; Mar, Jue 11:00; Sáb y vísperas 19:00; Dom y festivos 10:00, 12:00",
+  "c2": "Misas: Lun, Mié, Vie 19:00; Mar, Jue 11:00; Sáb y vísperas 19:00; Dom y festivos 10:00 (cat), 12:00",
   "d_hecha": "37d554404634",
   "desde": "2026-11-25",
-  "e_hecha": "37d554404634",
+  "e_hecha": "",
   "leida": "37d554404634",
   "web": "sin web"
  },
@@ -4096,10 +4096,10 @@
  },
  "BCN0469": {
   "actual": "b16db1459be3",
-  "c2": "Misas: Lun–Vie 19:00; Sáb y vísperas 18:30; Dom y festivos 10:00, 20:00",
+  "c2": "Misas: Lun–Vie 19:00; Sáb y vísperas 18:30; Dom y festivos 10:00 (cat/cast), 20:00",
   "d_hecha": "b16db1459be3",
   "desde": "2026-11-25",
-  "e_hecha": "b16db1459be3",
+  "e_hecha": "",
   "leida": "b16db1459be3",
   "web": "no responde"
  },
