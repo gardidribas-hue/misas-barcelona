@@ -143,6 +143,36 @@ def hora(h):
     return re.sub(r"^0(\d)", r"\1", h)
 
 
+# Idioma de cada hora, entre paréntesis detrás de ella: «Dom 12:00 (cat), 19:30 (cast)». Solo si la fuente lo dice.
+IDI_TXT = {"ca": "cat", "es": "cast", "bilingue": "cat/cast", "inglés": "en", "francés": "fr", "alemán": "de",
+           "italiano": "it", "polaco": "pl", "ucraniano": "uk", "portugués": "pt", "latín": "lat", "tagalo": "tl",
+           "griego": "gr", "chino": "zh", "rumano": "ro", "coreano": "ko"}
+TXT_IDI = {"cat": "cat", "catala": "cat", "catalan": "cat", "ca": "cat",
+           "cast": "cast", "castella": "cast", "castellano": "cast", "es": "cast", "esp": "cast", "espanol": "cast",
+           "cat/cast": "cat/cast", "cast/cat": "cat/cast", "cat-cast": "cat/cast", "bilingue": "cat/cast",
+           "en": "en", "eng": "en", "ingles": "en", "angles": "en", "english": "en", "fr": "fr", "frances": "fr",
+           "de": "de", "al": "de", "aleman": "de", "alemany": "de", "it": "it", "ita": "it", "italiano": "it", "italia": "it",
+           "pl": "pl", "polaco": "pl", "polones": "pl", "uk": "uk", "ucraniano": "uk", "ucraines": "uk", "pt": "pt",
+           "portugues": "pt", "lat": "lat", "latin": "lat", "llati": "lat", "tl": "tl", "tagalo": "tl", "gr": "gr",
+           "griego": "gr", "grec": "gr", "zh": "zh", "chino": "zh", "xines": "zh", "ro": "ro", "rumano": "ro", "romanes": "ro",
+           "ko": "ko", "coreano": "ko"}
+# Código de la web (app.js: LANG y el filtro de idioma)
+WEB_IDI = {"cat": "ca", "cast": "es", "cat/cast": "ca-es", "en": "en", "fr": "fr", "de": "de", "it": "it", "pl": "pl"}
+
+
+def idioma_txt(c):
+    """«(cat)», «(cast)»… de una celebración leída por las reglas, o "" si la fuente no lo dice."""
+    if c.get("idioma_incierto") or not c.get("idioma"):
+        return ""
+    k = IDI_TXT.get(c.get("idioma_detalle") if c["idioma"] == "otro" else c["idioma"])
+    return f" ({k})" if k else ""
+
+
+def idioma_web(txt):
+    """«cat» → «ca» para la web; un idioma sin código propio en la web → «other»."""
+    return WEB_IDI.get(txt, "other") if txt else None
+
+
 def horario_txt(cels, md):
     """«Misas: Lun–Vie 8:00, 19:00; Sáb y vísperas 20:00; Dom y festivos 11:00» (una línea por tipo, temporada de hoy)."""
     from horarios_app import en_temporada
@@ -157,7 +187,8 @@ def horario_txt(cels, md):
             elif c.get("a_peticion"):
                 libres.append("a petición")
             elif c.get("inicio") and c.get("dias") and not c.get("semanas_mes"):
-                grupos.setdefault(tuple(d for d in ORD if d in c["dias"]), set()).add(hora(c["inicio"]) + (f"–{hora(c['fin'])}" if c.get("fin") else ""))
+                grupos.setdefault(tuple(d for d in ORD if d in c["dias"]), set()).add(
+                    hora(c["inicio"]) + (f"–{hora(c['fin'])}" if c.get("fin") else "") + idioma_txt(c))
         clave_h = lambda h: tuple(int(x) for x in re.findall(r"\d+", h)[:2])
         partes = [f"{dias_txt(k)} {', '.join(sorted(v, key=clave_h))}" for k, v in sorted(grupos.items(), key=lambda kv: [ORD.index(d) for d in kv[0]])]
         partes += sorted(set(libres))
@@ -233,10 +264,13 @@ def leer_horario(texto):
             if not dias or not horas:
                 libres.setdefault(tipo, []).append(grupo[0].upper() + grupo[1:])
                 continue
+            resto = grupo[m.start():]
             for h in horas:
                 ini = f"{int(h.group(1)):02d}:{h.group(2) or '00'}"
                 fin = f"{int(h.group(3)):02d}:{h.group(4) or '00'}" if h.group(3) else None
-                cels.append({"tipo": tipo, "dias": dias, "inicio": ini, "fin": fin})
+                mi = re.match(r"\s*\(([^)]*)\)", resto[h.end():])
+                idi = TXT_IDI.get(re.sub(r"\s+", "", _sin_acentos(mi.group(1))).strip(".")) if mi else None
+                cels.append({"tipo": tipo, "dias": dias, "inicio": ini, "fin": fin, "idioma": idi})
     return cels, libres
 
 

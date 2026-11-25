@@ -9,7 +9,7 @@ aparte las líneas con horas que no ha sabido interpretar, para revisarlas.
 """
 import re, unicodedata
 
-VERSION = 12  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
+VERSION = 13  # súbela al cambiar las reglas: obliga a volver a extraer aunque el texto de la fuente no cambie
 
 DIAS = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
 VISPERA, FESTIVO = "vispera_festivo", "festivo_precepto"
@@ -145,9 +145,9 @@ def horas_de(t):
 
 # --- Idioma, tipo y temporada -------------------------------------------------------------------
 IDIOMAS = [
-    (r"bilingue|catala\s*(i|y|-|/)\s*castella|catalan\s*y\s*castellano", "bilingue", None),
+    (r"bilingue|bilingual|catala\s*(i|y|-|/)\s*castella|catalan\s*y\s*castellano", "bilingue", None),
     (r"\bcatala\b|\bcatalan\b|\(cat\.?\)|\bcat\.|en catala", "ca", None),
-    (r"castella|castellano|espanol|\(cast\.?\)|\bcast\.|\(esp\.?\)", "es", None),
+    (r"castella|castellano|espanol|spanish|\(cast\.?\)|\bcast\.|\(esp\.?\)", "es", None),
     (r"italia|italiano", "otro", "italiano"), (r"angles|ingles|english", "otro", "inglés"),
     (r"frances|francais", "otro", "francés"), (r"alemany|aleman|deutsch", "otro", "alemán"),
     (r"polones|polaco", "otro", "polaco"), (r"ucraines|ucraniano", "otro", "ucraniano"),
