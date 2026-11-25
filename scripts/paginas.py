@@ -26,6 +26,14 @@ FUENTE = {"REV": "revisión a mano", "F1": "web de la parroquia", "F3": "Arzobis
 e = html.escape
 
 
+VERIFICADO = None  # meta.verificado de horarios_app.js: última lectura semanal completa de las fuentes
+MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+
+
+def fecha_larga(d):
+    return f"{int(d[8:10])} de {MESES[int(d[5:7]) - 1]} de {d[:4]}"
+
+
 def cargar():
     """Las parroquias tal y como las ve la web (lo mismo que hace horarios.js en el navegador)."""
     with open(os.path.join(RAIZ, "data/parroquias.json"), encoding="utf-8") as f:
@@ -194,6 +202,8 @@ def pagina(p, hoy):
     if h.get("fuente"):
         cuando = f", comprobado el {h['comprobado']}" if h.get("comprobado") else ""
         out.append(f'<p class="note">Fuente del horario: {e(FUENTE.get(h["fuente"], h["fuente"]))}{e(cuando)}.</p>')
+    if VERIFICADO:
+        out.append(f'<p class="note">Última verificación de los datos: {e(fecha_larga(VERIFICADO))}.</p>')
     for o in h.get("otras_temporadas") or []:
         out.append(f'<p class="note"><strong>{e(o.get("nombre", ""))}:</strong> {e(o.get("texto", ""))}</p>')
     out.append(PIE)
@@ -202,6 +212,8 @@ def pagina(p, hoy):
 
 def main():
     parroquias, meta = cargar()
+    global VERIFICADO
+    VERIFICADO = meta.get("verificado")
     hoy = date.today().isoformat()
     destino = os.path.join(RAIZ, "p")
     shutil.rmtree(destino, ignore_errors=True)

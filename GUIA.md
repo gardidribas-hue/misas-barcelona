@@ -18,6 +18,9 @@ desde la rama `main`: https://gardidribas-hue.github.io/misas-barcelona/.
   1. 4:30, GitHub (`horarios`): lectura automática **C**; descarga entera de cada fuente a la rama `fuentes` (`scripts/fuentes_texto.py`); segunda lectura automática **C2** (mismas reglas sobre la página entera); comprobación de la web **K** (salen la calle o el nombre); huella del texto: si cambia, **M** = «Sí».
   2. 7:00, tarea programada de Claude (sesión 1): comprueba la web (**L**: Sí/No) y hace la segunda lectura **D** de los templos con la fuente cambiada (`scripts/lecturas.py`).
   3. 9:00, tarea programada de Claude (sesión 2, distinta): tercera lectura **E** a ciegas (sin mirar C ni D).
+  4. La sesión 2 **publica sola** (fusiona la PR a `main`; Guillem no tiene que decir «publica»). Amarillos y rojos no frenan la publicación: la web ya los muestra como «sin verificar».
+  - La web enseña «Última verificación de los datos: …» (lista y ficha, también en `p/`). La fecha la escribe `fuentes_texto.py` en `data/horarios/verificacion.json` cada lunes al releer todas las fuentes, y llega a la web como `meta.verificado` de `horarios_app.js`.
+  - Webs que **no existen** (el dominio da NXDOMAIN en Google y Cloudflare) se quitan de `lugares.json` (web y F1) y de la columna B; queda una nota en `notas`. Hecho el 25/11/2026 con 16 dominios (34 templos). Un dominio que existe pero no carga se deja.
   - **Verde** solo con web comprobada dos veces (K = ok y L = Sí, salvo que no haya web) y dos lecturas iguales: D = E, o C = D (o C = E) con C = C2. Si la fuente cambió, D y E no cuentan hasta repetirlas. La fórmula de F y `horarios_excel.estado` son la misma regla (comprobado con LibreOffice).
 - **Fuentes de horarios**, por este orden: 1) web de la parroquia; 2) si no hay, Arzobispado y OpenStreetMap
   (si no coinciden, manda el Arzobispado, con aviso de confirmar). **misas.org no se usa.**
