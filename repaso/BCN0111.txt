@@ -1,4 +1,0 @@
-### BCN0111 · Hospital de la Mare de Déu de la Mercè · Passeig Universal, 34 · Barcelona
-### web: http://www.hhscjmerced.com/
-### f3: -
-=== WEB http://www.hhscjmerced.com/: error: HTTP Error 522: <none>

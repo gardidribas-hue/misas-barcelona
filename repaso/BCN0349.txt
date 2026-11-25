@@ -1,4 +1,0 @@
-### BCN0349 · Església de la Sagrada Família · Carrer Doctor Carulla, 23 · Cornellà de Llobregat
-### web: http://www3.planalfa.es/safac/
-### f3: -
-=== WEB http://www3.planalfa.es/safac/: error: HTTP Error 404: Not Found

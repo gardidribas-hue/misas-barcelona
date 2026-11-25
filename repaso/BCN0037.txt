@@ -1,4 +1,0 @@
-### BCN0037 · Centre Cristià dels Universitaris (CCU) · Carrer Villarroel, 81, bajo · Barcelona
-### web: http://www.bcn.es/tjussana/ccu/welcome.htm
-### f3: -
-=== WEB http://www.bcn.es/tjussana/ccu/welcome.htm: error: <urlopen error [Errno -5] No address associated with hostname>

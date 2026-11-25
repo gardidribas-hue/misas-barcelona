@@ -1,4 +1,0 @@
-### BCN0346 · Església del Carme · Carrer del Carme, s/n · Caldes d'Estrac
-### web: https://parroquies3viles.com
-### f3: -
-=== WEB https://parroquies3viles.com: error: Remote end closed connection without response

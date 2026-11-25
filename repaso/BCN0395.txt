@@ -1,4 +1,0 @@
-### BCN0395 · Ermita de Sant Miquel de Mata · Carretera Llavaneres, Km. 3,8 · Mataró
-### web: http://arxiprestatdemataro.org/parroquies-i-esglesies/item/sant-miquel-de-mata.html
-### f3: -
-=== WEB http://arxiprestatdemataro.org/parroquies-i-esglesies/item/sant-miquel-de-mata.html: error: <urlopen error [Errno -2] Name or service not known>

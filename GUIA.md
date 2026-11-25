@@ -14,6 +14,7 @@ desde la rama `main`: https://gardidribas-hue.github.io/misas-barcelona/.
 
 - Todo con Guillem se habla y se escribe en **castellano**. La web está en castellano y catalán.
 - **Nada de IA en la web**: ni Gemini ni otra. El chat funciona con reglas (`parseQuery` en `app.js`) y **no se toca**.
+- **Columna D del Excel** (25/11/2026): la rellena una segunda lectura de cada web hecha aparte por IA y comprobada; si no coincide con la lectura automática (C), la web muestra D.
 - **Fuentes de horarios**, por este orden: 1) web de la parroquia; 2) si no hay, Arzobispado y OpenStreetMap
   (si no coinciden, manda el Arzobispado, con aviso de confirmar). **misas.org no se usa.**
   Google Maps no da horarios de misa y sus condiciones no permiten guardarlos.
@@ -53,7 +54,7 @@ desde la rama `main`: https://gardidribas-hue.github.io/misas-barcelona/.
 | Acción | Cuándo | Qué hace |
 |---|---|---|
 | `horarios` | Lunes 03:30 UTC | Lee las fuentes de cada templo, actualiza `data/horarios/`, el Excel de revisión, la web de horarios y las páginas `p/`. |
-| `revision` | Cuando se sube `data/horarios/Horarios_revision.xlsx` | Aplica la columna D (horario revisado por Guillem) y regenera las páginas `p/`. |
+| `revision` | Cuando se sube `data/horarios/Horarios_revision.xlsx` | Aplica la columna D (horario revisado: segunda lectura comprobada) y regenera las páginas `p/`. |
 | `contenido` | Dos veces al día | Descarga las lecturas (`data/palabra/`) y las oraciones. |
 | `citas` | Al cambiar `scripts/citas.py` | Citas bíblicas de Voluntariado. |
 | `comprobar` | En cada PR y cada cambio en `main` | Revisa la sintaxis y abre la web en un navegador de prueba. **Si sale en rojo, no fusionar.** |

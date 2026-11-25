@@ -1,4 +1,0 @@
-### BCN0090 · Església de Sant Llàtzer · Plaça del Pedrò, 1 · Barcelona
-### web: https://www.capellasantllatzer.cat
-### f3: -
-=== WEB https://www.capellasantllatzer.cat: error: Remote end closed connection without response

@@ -1,4 +1,0 @@
-### BCN0348 · Capella de Betània · Carrer Bonavista, 37 · Cornellà de Llobregat
-### web: http://www.hermanasdebetania.es
-### f3: -
-=== WEB http://www.hermanasdebetania.es: error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>

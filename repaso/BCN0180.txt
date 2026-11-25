@@ -1,4 +1,0 @@
-### BCN0180 · Reial Santuari de Sant Josep de la Muntanya · Avinguda Santuari de Sant Josep de la Muntanya, 25 · Barcelona
-### web: https://santuariosanjose.org/en/timetable-of-saint-joseph-of-mountain-shrine/
-### f3: -
-=== WEB https://santuariosanjose.org/en/timetable-of-saint-joseph-of-mountain-shrine/: error: HTTP Error 404: Not Found

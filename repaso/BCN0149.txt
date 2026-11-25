@@ -1,4 +1,0 @@
-### BCN0149 · Misioneras del Santísimo Sacramento y de María Inmaculada · Carrer Aribau, 290 · Barcelona
-### web: https://mariaemiliariquelme.com
-### f3: -
-=== WEB https://mariaemiliariquelme.com: error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mariaemiliariquelme.com'. (_ssl.c:1081)>

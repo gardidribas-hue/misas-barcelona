@@ -1,4 +1,0 @@
-### BCN0155 · Monestir de la Visitació de Santa Maria (Saleses) · Passeig Vall d'Hebron, 256 · Barcelona
-### web: http://www.monasteriosvisitacion.com
-### f3: -
-=== WEB http://www.monasteriosvisitacion.com: error: <urlopen error [Errno -2] Name or service not known>

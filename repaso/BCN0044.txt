@@ -1,4 +1,0 @@
-### BCN0044 · Centro Médico Teknon · Carrer Vilana, 12 · Barcelona
-### web: http://www.teknon.es
-### f3: -
-=== WEB http://www.teknon.es: error: HTTP Error 403: Forbidden

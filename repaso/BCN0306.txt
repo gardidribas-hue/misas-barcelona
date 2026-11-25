@@ -1,4 +1,0 @@
-### BCN0306 · Capella de Santa Maria del Cros · Avinguda Mediterrani, Bloque 4, bajos · Argentona
-### web: http://arxiprestatdemataro.org/parroquies-i-esglesies/item/centre-de-culte-del-barri-del-cros.html
-### f3: -
-=== WEB http://arxiprestatdemataro.org/parroquies-i-esglesies/item/centre-de-culte-del-barri-del-cros.html: error: <urlopen error [Errno -2] Name or service not known>

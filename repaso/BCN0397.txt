@@ -1,4 +1,0 @@
-### BCN0397 · Ermita de Santa Maria de Cirera · Camí de la Capella, s/n · Mataró
-### web: http://arxiprestatdemataro.org/parroquies-i-esglesies/item/santa.html
-### f3: -
-=== WEB http://arxiprestatdemataro.org/parroquies-i-esglesies/item/santa.html: error: <urlopen error [Errno -2] Name or service not known>

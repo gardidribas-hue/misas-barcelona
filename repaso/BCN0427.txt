@@ -1,4 +1,0 @@
-### BCN0427 · Casal Benèfic Premianenc · Carrer Sant Miquel, 90 · Premià de Mar
-### web: http://www.elcasal.org
-### f3: -
-=== WEB http://www.elcasal.org: error: HTTP Error 403: Forbidden

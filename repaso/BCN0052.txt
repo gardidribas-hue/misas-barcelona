@@ -1,4 +1,0 @@
-### BCN0052 · Col·legi Mary Ward · Carrer Copèrnic, 55 · Barcelona
-### web: http://marywardbarcelona.net
-### f3: -
-=== WEB http://marywardbarcelona.net: error: <urlopen error [Errno -5] No address associated with hostname>

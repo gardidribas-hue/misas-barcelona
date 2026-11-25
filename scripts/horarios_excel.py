@@ -1,9 +1,9 @@
 """Excel de revisión de horarios (data/horarios/Horarios_revision.xlsx).
 
 Una hoja por distrito de Barcelona y por municipio (parroquias), y otra por tipo de templo. Columnas:
-    A Nombre · B Web · C Horario de la fuente (automático) · D Horario revisado (Guillem) · E Fiabilidad (fórmula)
+    A Nombre · B Web · C Horario de la fuente (automático) · D Horario revisado (segunda lectura) · E Fiabilidad (fórmula)
     F Fuente de la columna C · G Municipio · H ID
-C es el horario que se ha leído (web propia; si no hay, Arzobispado u OpenStreetMap). D lo escribe Guillem a mano.
+C es el horario que se ha leído (web propia; si no hay, Arzobispado u OpenStreetMap). D es una segunda lectura de la misma fuente, hecha aparte (a mano o por otra IA) y comprobada.
 E compara C y D, y la web pública muestra el mismo aviso (horarios_app.py llama a estado()).
     python scripts/horarios_excel.py generar     reescribe el Excel con la columna C al día y conserva B y D
 """
@@ -19,19 +19,19 @@ HOJA_TIPO = {"Santuario": "Santuarios", "Basílica": "Basílicas", "Iglesia": "I
              "Capilla de hospital (parroquia)": "Capillas de hospital", "Capilla de residencia": "Capillas de residencia",
              "Ermita": "Ermitas", "Monasterio / convento": "Monasterios y conventos", "Oratorio": "Oratorios"}
 MUNICIPIO_HOJA = 4  # con menos parroquias, el municipio va a la hoja «Otros municipios»
-CAB = ["Nombre", "Web (parroquia o comunidad pastoral)", "Horario leído (automático)", "Horario revisado (Guillem)",
+CAB = ["Nombre", "Web (parroquia o comunidad pastoral)", "Horario leído (automático)", "Horario revisado (segunda lectura)",
        "Fiabilidad (automática)", "Fuente de la columna C", "Municipio", "ID"]
 
 # Estados de la columna E: (código, texto que empieza la celda, color). La web usa el código.
 ESTADOS = {
     "sin_horario": ("Sin horario · no sale en la web", "EDEDED"),
-    "sin_web": ("Sin web · se muestra tu horario; puede cambiar, confírmalo", "FFF2CC"),
-    "sin_lectura": ("Solo tu horario · su web no se ha podido leer; puede cambiar, confírmalo", "FFF2CC"),
+    "sin_web": ("Sin web · se muestra la revisión; puede cambiar, confírmalo", "FFF2CC"),
+    "sin_lectura": ("Solo revisión · su web no se ha podido leer; puede cambiar, confírmalo", "FFF2CC"),
     "sin_revisar": ("Sin revisar · fiabilidad media", "FFF2CC"),
     "sin_revisar_otra": ("Sin revisar · no es de la web de la parroquia, confírmalo", "FFF2CC"),
-    "fiable": ("Fiable · el horario leído y tu revisión coinciden", "D9F2D9"),
-    "no_coinciden": ("No coinciden · se muestra el de la web; revisa web y horario", "F8D7DA"),
-    "revisado": ("Revisado · se muestra tu horario (la fuente dice otra cosa)", "FFF2CC"),
+    "fiable": ("Fiable · la lectura automática y la segunda lectura coinciden", "D9F2D9"),
+    "no_coinciden": ("Corregido · la lectura automática de su web no cuadraba; se muestra la revisión", "FCE4D6"),
+    "revisado": ("Revisado · se muestra la revisión (la fuente dice otra cosa)", "FFF2CC"),
 }
 
 
@@ -52,8 +52,8 @@ def estado(c, d, fuente, web=""):
         return ("sin_revisar" if fuente == FUENTE["F1"] else "sin_revisar_otra"), "C"
     if igual(c, d):
         return "fiable", "C"
-    # Manda la web de la parroquia; frente al Arzobispado u OpenStreetMap, manda la revisión.
-    return ("no_coinciden", "C") if fuente == FUENTE["F1"] else ("revisado", "D")
+    # D es una segunda lectura comprobada de la misma fuente: si no coincide con la lectura automática, manda D.
+    return ("no_coinciden", "D") if fuente == FUENTE["F1"] else ("revisado", "D")
 
 
 def formula(i):
@@ -274,16 +274,16 @@ def generar(xlsx=XLSX, fecha=None):
         ("A · Nombre del templo.", False, None),
         ("B · Web de la parroquia o de su comunidad pastoral. Si la cambias, el programa leerá el horario de la web nueva el lunes siguiente.", False, None),
         ("C · Horario leído: lo rellena el programa cada lunes. Si la parroquia no tiene web propia (o no se puede leer), es el del Arzobispado. No lo toques.", False, None),
-        ("D · Horario revisado: el tuyo. Escríbelo con el mismo formato que la columna C (lo más fácil es copiar C y corregir).", False, None),
+        ("D · Horario revisado: una segunda lectura de la misma fuente, hecha aparte y comprobada. Va con el mismo formato que la columna C (lo más fácil es copiar C y corregir).", False, None),
         ("E · Fiabilidad: automática, no la toques. Cambia al momento cuando editas D, y la web pública muestra el mismo aviso.", False, None),
         ("F · De dónde sale la columna C: Web propia, Arzobispado u OpenStreetMap. G · Municipio. H · ID: código fijo del templo, no lo cambies.", False, None),
         ("", False, None), ("Fiabilidad (columna E) y qué sale en la web pública", True, None),
-        ("Verde · Fiable: el horario leído y tu revisión coinciden.", False, ESTADOS["fiable"][1]),
-        ("Rojo · No coinciden: la web de la parroquia dice otra cosa que tu revisión. Se muestra el de la web, con aviso de que no es fiable.", False, ESTADOS["no_coinciden"][1]),
-        ("Amarillo · Sin revisar: hay horario leído pero aún no lo has revisado. Se muestra con fiabilidad media (o, si viene del Arzobispado, pidiendo confirmarlo).", False, ESTADOS["sin_revisar"][1]),
-        ("Amarillo · Sin web: solo está tu horario. Se muestra el tuyo, avisando de que la parroquia no tiene web y puede cambiar.", False, ESTADOS["sin_web"][1]),
-        ("Amarillo · Solo tu horario: tiene web pero no se ha podido leer. Se muestra el tuyo, avisando de que puede cambiar.", False, ESTADOS["sin_lectura"][1]),
-        ("Amarillo · Revisado: el Arzobispado dice otra cosa que tu revisión. Se muestra el tuyo, porque frente al Arzobispado manda tu revisión.", False, ESTADOS["revisado"][1]),
+        ("Verde · Fiable: la lectura automática (C) y la segunda lectura (D) coinciden.", False, ESTADOS["fiable"][1]),
+        ("Naranja · Corregido: la lectura automática de la web de la parroquia no cuadraba con la segunda lectura. Se muestra la segunda lectura (D), con aviso de confirmarlo.", False, ESTADOS["no_coinciden"][1]),
+        ("Amarillo · Sin revisar: hay horario leído pero aún no se ha revisado. Se muestra con fiabilidad media (o, si viene del Arzobispado, pidiendo confirmarlo).", False, ESTADOS["sin_revisar"][1]),
+        ("Amarillo · Sin web: solo está la revisión. Se muestra esa, avisando de que la parroquia no tiene web y puede cambiar.", False, ESTADOS["sin_web"][1]),
+        ("Amarillo · Solo revisión: tiene web pero no se ha podido leer. Se muestra la revisión, avisando de que puede cambiar.", False, ESTADOS["sin_lectura"][1]),
+        ("Amarillo · Revisado: el Arzobispado dice otra cosa que la revisión. Se muestra la revisión.", False, ESTADOS["revisado"][1]),
         ("Gris · Sin horario: ni horario leído ni revisión. No sale en la web pública.", False, ESTADOS["sin_horario"][1]),
         ("", False, None), ("Formato del horario", True, None),
         ("Una línea por tipo: «Misas: …», «Confesiones: …», «Adoración: …». Grupos separados por punto y coma.", False, None),
@@ -291,7 +291,7 @@ def generar(xlsx=XLSX, fecha=None):
         ("Ejemplo: Misas: Lun–Vie 8:00, 19:00; Sáb y vísperas 20:00; Dom y festivos 11:00, 12:30", False, None),
         ("", False, None), ("Cómo se actualiza la web", True, None),
         ("Sube el Excel cambiado a GitHub (data/horarios/Horarios_revision.xlsx, con el mismo nombre) y la web se actualiza en unos minutos. "
-         "Cada lunes el programa vuelve a leer las webs, reescribe la columna C y conserva lo que hayas puesto en B y D.", False, None),
+         "Cada lunes el programa vuelve a leer las webs, reescribe la columna C y conserva lo que haya en B y D.", False, None),
     ]
     for i, (t_, b, color) in enumerate(txt, 1):
         c = ex.cell(row=i, column=1, value=t_)

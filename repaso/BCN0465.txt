@@ -1,4 +1,0 @@
-### BCN0465 · Ermita de Sant Sebastià · Carrer de Sant Sebastià, s/n · Vilassar de Dalt
-### web: https://parroquiadesantgenisdevilassar.blogspot.com
-### f3: -
-=== WEB https://parroquiadesantgenisdevilassar.blogspot.com: error: HTTP Error 429: Too Many Requests
