@@ -8,13 +8,17 @@ Un templo está pendiente si el texto de su fuente ha cambiado desde la última 
     python scripts/lecturas.py pendientes D|E          IDs que hay que leer esta semana
     python scripts/lecturas.py texto <ID> [carpeta]     texto de la fuente (por defecto, carpeta fuentes/ de la rama «fuentes»)
     python scripts/lecturas.py ficha <ID>               nombre, dirección y web (B) del templo, sin C ni D ni E
-    python scripts/lecturas.py poner D|E <ID> <horario> guarda la lectura (en el horario, «/» separa las líneas)
+    python scripts/lecturas.py poner D|E <ID> <horario> guarda la lectura (en el horario, « / » separa las líneas)
+
+Formato del horario: «Misas: Lun–Vie 8:00 (cat), 19:00 (cast); Sáb y vísperas 20:00; Dom y festivos 11:00 (cat/cast) / Confesiones: …».
+El idioma va entre paréntesis detrás de cada hora, solo si la fuente lo dice: cat, cast, cat/cast (bilingüe), en, fr, it,
+de, pl, pt, uk (ucraniano), lat (latín), tl (tagalo)…
     python scripts/lecturas.py web <ID> Sí|No           guarda la comprobación de la web (columna L)
 
 «poner» y «web» escriben en el Excel y en data/horarios/huellas.json. Cuando un templo tiene D y E hechas con la huella
 actual, su «leida» pasa a ser la actual y la columna M («Fuente cambiada») se vacía en el próximo «generar».
 """
-import json, pathlib, sys
+import json, pathlib, re, sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import horarios_excel as hx
@@ -59,7 +63,8 @@ def _escribir(tid, col, valor):
 
 
 def poner(cual, tid, texto):
-    texto = "\n".join(x.strip() for x in texto.split("/") if x.strip()) if "/" in texto and "\n" not in texto else texto.strip()
+    # « / » (con espacios) separa las líneas; «cat/cast» (sin espacios) es el idioma bilingüe
+    texto = "\n".join(x.strip() for x in re.split(r"\s+/\s+", texto) if x.strip()) if "\n" not in texto else texto.strip()
     if texto:
         cels, libres = hx.leer_horario(texto)
         if not cels and not libres:

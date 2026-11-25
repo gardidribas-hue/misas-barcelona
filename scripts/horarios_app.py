@@ -122,6 +122,8 @@ def aplicar_revision(rec, t, rev, md):
         ev = {"days": [DIA[x] for x in c_["dias"] if x in DIA], "start": c_["inicio"]}
         if c_["tipo"] != "misa" and c_.get("fin"):
             ev["end"] = c_["fin"]
+        if horarios_excel.idioma_web(c_.get("idioma")):
+            ev["lang"] = horarios_excel.idioma_web(c_["idioma"])
         if ev["days"]:
             rec[TIPO[c_["tipo"]]].append(ev)
     for tipo, textos in libres.items():
