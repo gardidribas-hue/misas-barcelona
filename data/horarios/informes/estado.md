@@ -1,9 +1,9 @@
-# Estado de los horarios · 2026-11-24
+# Estado de los horarios · 2026-11-25
 
 - Templos: 459; con horario: 214; sin horario: 245
 - Parroquias: 199; con horario: 191
-- Fuente del horario: Arzobispado 167, web propia 46, OpenStreetMap 1
-- Confianza: alta 30, media 16, baja 168
+- Fuente del horario: Arzobispado 168, web propia 45, OpenStreetMap 1
+- Confianza: alta 30, media 15, baja 169
 - Ocultos por defecto («Sin horario conocido» en el Excel): 73
 
 ## Datos sospechosos (6)
@@ -21,7 +21,8 @@
 - Santa Teresa de l'Infant Jesús (BCN0284)
 - Mare de Déu del Pilar (BCN0364)
 
-## Webs que fallan (59)
+## Webs que fallan (60)
+- Sant Francesc d'Assís (BCN0213) · F1: <urlopen error timed out>
 - Basílica dels Sants Just i Pastor (BCN0008) · F1: Remote end closed connection without response
 - Capella de Sant Josep (BCN0024) · F1: <urlopen error [Errno 111] Connection refused>
 - Centre Cristià dels Universitaris (CCU) (BCN0037) · F1: <urlopen error [Errno -5] No address associated with hostname>
@@ -358,7 +359,7 @@
 ## Con horario (214)
 - Basílica de la Puríssima Concepció (BCN0003): 37 celebraciones · web propia · confianza media
 - Sant Ferran (BCN0212): 3 celebraciones · Arzobispado · confianza baja
-- Sant Francesc d'Assís (BCN0213): 8 celebraciones · web propia · confianza media
+- Sant Francesc d'Assís (BCN0213): 6 celebraciones · Arzobispado · confianza baja
 - Sant Joan de Gràcia (BCN0226): 3 celebraciones · web propia · confianza alta
 - Basílica de la Mare de Déu de la Mercè (BCN0002): 7 celebraciones · Arzobispado · confianza baja
 - Basílica de Sant Josep Oriol (BCN0004): 5 celebraciones · Arzobispado · confianza baja
