@@ -1,0 +1,25 @@
+name: webs_muertas
+# Temporal (25-nov-2026): comprueba si los dominios que no respondieron existen de verdad. Solo corre en esta rama.
+on:
+  push:
+    branches: [claude/project-thread-kw3bix]
+    paths: [.github/workflows/webs_muertas.yml]
+permissions:
+  contents: write
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          for d in arxiprestatdemataro.org esglesiabadalona.org esglesiadalella.org marededeudefatima.parroquias.net marywardbarcelona.net parroquiabufala.cat parroquiamontserratbadalona.org pinmaculadalh.org www.bcn.es www.monasteriosvisitacion.com www.parroquiabufala.cat www.parroquiadelpilarbcn.org www.parroquiademontgat.es www.parroquiamarededeudemontserrat.cat www.salesianshorta.org www.santacolomajove.com www.santcristofolpremia.cat www.santfrancescxavier.com www.sjdeavila.net ; do
+            g=$(dig +short "$d" A @8.8.8.8 | head -1); c=$(dig +short "$d" A @1.1.1.1 | head -1)
+            st=$(dig "$d" A @8.8.8.8 | grep -o 'status: [A-Z]*' | head -1)
+            dom=$(echo "$d" | sed 's/^www\.//'); sd=$(dig "$dom" SOA @8.8.8.8 | grep -o 'status: [A-Z]*' | head -1)
+            h=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 -L "https://$d/" || true); h2=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 -L "http://$d/" || true)
+            echo "$d | google=$g | cloudflare=$c | $st | dominio $dom $sd | https=$h | http=$h2"
+          done | tee webs_muertas.txt
+      - run: |
+          git config user.name "misas-barcelona bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add webs_muertas.txt && git commit -q -m "Comprobación de webs muertas" && git push origin "HEAD:${GITHUB_REF_NAME}"
