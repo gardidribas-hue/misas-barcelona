@@ -1445,3 +1445,14 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
   .stage[data-mode="home"] { grid-template-rows: auto minmax(300px, 1fr); }
   .stage[data-mode="home"] .mapcol { min-height: 300px; }
 }
+
+/* ---------- Móvil: cabecera fija y nítida ----------
+   En el iPhone (Safari de iOS 26) la parte de arriba de la pantalla difumina lo que hay debajo
+   de la hora y la batería, y se comía «Misas Barcelona» y los botones. Con la cabecera fija,
+   de color sólido (el mismo fondo de cada sección) y respetando la zona de la hora,
+   Safari la trata como barra de la web y deja de difuminarla. */
+@media (max-width: 860px) {
+  body { padding-top: calc(var(--top) + env(safe-area-inset-top, 0px)); }
+  .top { position: fixed; top: 0; left: 0; right: 0; height: calc(var(--top) + env(safe-area-inset-top, 0px)); padding-top: env(safe-area-inset-top, 0px); background: inherit; }
+  .stage[data-mode="map"] .detail:not([hidden]) { top: calc(var(--top) + env(safe-area-inset-top, 0px) + 6px + var(--sy, 34vh)); }
+}
