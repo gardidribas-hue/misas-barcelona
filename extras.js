@@ -280,6 +280,27 @@
     }).join("")}</ul>`;
   }
 
+  // ---------- Color litúrgico de cada día (lo usa el calendario de camino.js) ----------
+  // El del tiempo litúrgico, salvo solemnidades, fiestas y memorias obligatorias. En domingo solo cuentan
+  // las solemnidades y las fiestas del Señor; en Adviento y Cuaresma, las memorias quedan en conmemoración.
+  function litColor(ms) {
+    const Y = litYear(ms), seg = Y.segs.find((s) => ms >= s.from && ms < s.to) || Y.segs[0];
+    const mov = movables(ms);
+    if (mov.length) return mov[0][2];
+    const d = new Date(ms), sunday = d.getUTCDay() === 0, strong = seg.k === "adv" || seg.k === "lent";
+    const key = String(d.getUTCMonth() + 1).padStart(2, "0") + "-" + String(d.getUTCDate()).padStart(2, "0");
+    const W = { S: 3, F: 2, M: 1 };
+    let best = null;
+    for (const x of (window.MISAS_SANTORAL || {})[key] || []) {
+      if (x[1] === "dif") return x[2]; // Fieles difuntos: tiene precedencia incluso en domingo
+      const w = W[x[0]] || 0;
+      if (!w || (sunday && !(x[0] === "S" || (x[0] === "F" && x[1] === "sen"))) || (strong && w < 2) || (seg.k === "holy" && w < 3)) continue;
+      if (!best || w > W[best[0]]) best = x;
+    }
+    return best ? best[2] : seg.lc;
+  }
+  A.lit = { year: litYear, color: litColor };
+
   // ---------- 13. Cuentas del rosario que se encienden al bajar ----------
   safe("cuentas", () => {
     const ring = document.createElement("div");

@@ -188,6 +188,13 @@
     if (mode === "rosary" && !rosReady) { rosReady = true; renderRosary(); }
   }
   document.addEventListener("misas:mode", onMode);
+  // Abrir la Palabra de un día concreto (lo usa el calendario litúrgico de camino.js): { key: "2026-11-29" }
+  document.addEventListener("misas:goword", (e) => {
+    const d = new Date(e.detail.key + "T12:00:00Z");
+    if (!wordReady) { word.date = d; A.setMode("word"); return; }
+    if ($("stage").dataset.mode !== "word") A.setMode("word");
+    fadeTo(d);
+  });
   A.onLang(() => { ros.pl = null; if (wordReady) renderWord(); if (rosReady) renderRosary(); });
 
   // Cambio de día con deslizamiento: la lectura sale hacia un lado y la nueva entra por el otro.
