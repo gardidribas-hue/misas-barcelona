@@ -1,0 +1,4 @@
+### BCN0047 · Clínica Nostra Senyora del Remei · Carrer Escorial, 148 · Barcelona
+### web: http://www.clinicaremei.org
+### f3: -
+=== WEB http://www.clinicaremei.org: error: HTTP Error 403: Forbidden

@@ -1,0 +1,7 @@
+### BCN0374 · Ermita de Bellvitge · Carrer Ermita de Bellvitge, 2 · L'Hospitalet de Llobregat
+### web: https://sites.google.com/site/parroquiesbellvitgegornal/ermita-de-bellvitge
+### f3: -
+=== WEB https://accounts.google.com/v3/signin/identifier?continue=https://sites.google.com/site/parroquiesbellvitgegornal/ermita-de-bellvitge&followup=https://sites.google.com/site/parroquiesbellvitgegornal/ermita-de-bellvitge&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-1139482034:1795606328038157 (html)
+Google Drive: inici de sessió
+Inicia la sessió
+Ves a Google Drive

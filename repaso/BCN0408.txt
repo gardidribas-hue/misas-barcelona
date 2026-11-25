@@ -1,0 +1,4 @@
+### BCN0408 · Hospital de Mataró · Carretera de Cirera, s/n · Mataró
+### web: http://www.csdm.es
+### f3: -
+=== WEB http://www.csdm.es: error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.csdm.es'. (_ssl.c:1081)>

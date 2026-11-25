@@ -1,0 +1,4 @@
+### BCN0151 · Monestir de l'Adoració Perpètua · Carrer Salses, 12 · Barcelona
+### web: https://adoratricesperpetuasdelstmosacramento.blogspot.com
+### f3: -
+=== WEB https://adoratricesperpetuasdelstmosacramento.blogspot.com: error: HTTP Error 429: Too Many Requests
