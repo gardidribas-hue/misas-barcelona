@@ -2,8 +2,8 @@
 
 - Templos: 459; con horario: 214; sin horario: 245
 - Parroquias: 199; con horario: 191
-- Fuente del horario: Arzobispado 168, web propia 45, OpenStreetMap 1
-- Confianza: alta 30, media 15, baja 169
+- Fuente del horario: Arzobispado 167, web propia 46, OpenStreetMap 1
+- Confianza: alta 30, media 16, baja 168
 - Ocultos por defecto («Sin horario conocido» en el Excel): 73
 
 ## Datos sospechosos (6)
@@ -22,7 +22,7 @@
 - Mare de Déu del Pilar (BCN0364)
 
 ## Webs que fallan (60)
-- Sant Francesc d'Assís (BCN0213) · F1: <urlopen error timed out>
+- Església de Sant Sever i Sant Vicenç de Paül (BCN0092) · OSM: Overpass no responde: https://overpass-api.de/api/interpreter: 502 b'# 502 Gateway Timeout\n\nThis Overpass API server is currently at capacity. All query workers are busy\nand the request queue is full.\n\n## What to do\n\nRe' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r' | https://overpass-api.de/api/interpreter: 502 b'# 502 Ga
 - Basílica dels Sants Just i Pastor (BCN0008) · F1: Remote end closed connection without response
 - Capella de Sant Josep (BCN0024) · F1: <urlopen error [Errno 111] Connection refused>
 - Centre Cristià dels Universitaris (CCU) (BCN0037) · F1: <urlopen error [Errno -5] No address associated with hostname>
@@ -86,7 +86,7 @@
 ## Templos sin horario (245)
 
 ### Iglesia (94)
-- Església de Sant Sever i Sant Vicenç de Paül (BCN0092): OSM: OpenStreetMap no tiene horario de misas para este templo
+- Església de Sant Sever i Sant Vicenç de Paül (BCN0092): OSM: error: Overpass no responde: https://overpass-api.de/api/interpreter: 502 b'# 502 Gateway Timeout\n\nThis Overpass API server is currently at capacity. All query workers are busy\nand the request queue is full.\n\n## What to do\n\nRe' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r' | https://overpass-api.de/api/interpreter: 502 b'# 502 Ga
 - Associació Cultural Catòlica Cristiana  i Social Conesti (BCN0001): OSM: no está en OpenStreetMap
 - Caputxins de Sarrià (BCN0032): F1: no se encuentra el enlace al horario; OSM: OpenStreetMap no tiene horario de misas para este templo
 - Casa Asil de Sant Andreu (BCN0033): OSM: no está en OpenStreetMap
@@ -359,7 +359,7 @@
 ## Con horario (214)
 - Basílica de la Puríssima Concepció (BCN0003): 37 celebraciones · web propia · confianza media
 - Sant Ferran (BCN0212): 3 celebraciones · Arzobispado · confianza baja
-- Sant Francesc d'Assís (BCN0213): 6 celebraciones · Arzobispado · confianza baja
+- Sant Francesc d'Assís (BCN0213): 8 celebraciones · web propia · confianza media
 - Sant Joan de Gràcia (BCN0226): 3 celebraciones · web propia · confianza alta
 - Basílica de la Mare de Déu de la Mercè (BCN0002): 7 celebraciones · Arzobispado · confianza baja
 - Basílica de Sant Josep Oriol (BCN0004): 5 celebraciones · Arzobispado · confianza baja

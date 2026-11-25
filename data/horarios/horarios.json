@@ -834,6 +834,11 @@
      "confianza": "media"
     }
    ],
+   "notas_fuente": [
+    "aviso: La missa de 20:15 se celebrarà després del dìa de la Mercè, el dia 25.",
+    "aviso: La missa de 13:00 dels diumenges se celebrarà des del dìa de la Mercè, el dia 24.",
+    "aviso: La missa de Joves dels diumenges a les 20:30 es tornarà a celebrar el darre diumenge de Setembre, el dia 27."
+   ],
    "lineas_dudosas": [
     "Les Misses són en català, excepte les marcades amb *, que són en castellà. A les Misses del dissabte a les 18’00 i del diumenge a les 11’30 i 13’00 s’utilitzen diverses llengües i es reparteixen els textos de la Missa segons la nacionalitat dels assistents.",
     "MISSA PER A JOVES: Durant el curs escolar, a les 20.30.",
@@ -858,7 +863,7 @@
    "intentos": [
     {
      "fuente": "OSM",
-     "resultado": "OpenStreetMap no tiene horario de misas para este templo"
+     "resultado": "error: Overpass no responde: https://overpass-api.de/api/interpreter: 502 b'# 502 Gateway Timeout\\n\\nThis Overpass API server is currently at capacity. All query workers are busy\\nand the request queue is full.\\n\\n## What to do\\n\\nRe' | https://overpass.private.coffee/api/interpreter: The read operation timed out | https://maps.mail.ru/osm/tools/overpass/api/interpreter: 504 b'<html>\\r\\n<head><title>504 Gateway Time-out</title></head>\\r\\n<body>\\r\\n<center><h1>504 Gateway Time-out</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r' | https://overpass-api.de/api/interpreter: 502 b'# 502 Ga"
     }
    ],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
@@ -961,25 +966,17 @@
    "intentos": [
     {
      "fuente": "F1",
-     "resultado": "error: <urlopen error timed out>"
-    },
-    {
-     "fuente": "F3",
      "resultado": "ok"
-    },
-    {
-     "fuente": "OSM",
-     "resultado": "OpenStreetMap no tiene horario de misas para este templo"
     }
    ],
    "aviso": "Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa. Confírmalos con la parroquia.",
    "lectura": "reglas",
    "estado": "ok",
-   "fuente": "F3",
-   "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
-   "formato": "html",
+   "fuente": "F1",
+   "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
+   "formato": "pdf",
    "comprobado": "2026-11-25",
-   "confianza": "baja",
+   "confianza": "media",
    "celebraciones": [
     {
      "tipo": "misa",
@@ -988,64 +985,71 @@
       "martes",
       "miercoles",
       "jueves",
-      "viernes",
+      "viernes"
+     ],
+     "inicio": "20:00",
+     "fin": null,
+     "idioma": null,
+     "temporada": null,
+     "semanas_mes": [],
+     "notas": "Dilluns a divendres: 20h S. Francesc",
+     "fuente": "F1",
+     "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
+     "comprobado": "2026-11-25",
+     "confianza": "media"
+    },
+    {
+     "tipo": "misa",
+     "dias": [
       "sabado"
      ],
      "inicio": "20:00",
      "fin": null,
      "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
+     "temporada": null,
      "semanas_mes": [],
-     "notas": "Lunes a sábado: 20h",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+     "notas": "Dissabtes: 20h S. Francesc",
+     "fuente": "F1",
+     "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
      "comprobado": "2026-11-25",
-     "confianza": "baja"
+     "confianza": "media"
     },
     {
      "tipo": "misa",
      "dias": [
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "11:30",
      "fin": null,
      "idioma": null,
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
+     "temporada": null,
      "semanas_mes": [],
-     "notas": "Domingo: 11:30h, 18:30h (italiano, no hay durante el verano) y 20:00h (castellano)",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+     "notas": "Diumenges i festius: 11:30h S. Francesc",
+     "fuente": "F1",
+     "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
      "comprobado": "2026-11-25",
-     "confianza": "baja"
+     "confianza": "media"
     },
     {
      "tipo": "misa",
      "dias": [
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "18:30",
      "fin": null,
      "idioma": "otro",
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
+     "temporada": null,
      "semanas_mes": [],
-     "notas": "Domingo: 11:30h, 18:30h (italiano, no hay durante el verano) y 20:00h (castellano)",
-     "idioma_detalle": "italiano",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+     "notas": "= Catalán * 18:30h S. Francesc",
+     "dias_deducidos": true,
+     "idioma_incierto": true,
+     "fuente": "F1",
+     "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
      "comprobado": "2026-11-25",
-     "confianza": "baja",
+     "confianza": "media",
+     "idioma_detalle": "italiano",
      "corregido": {
       "motivo": "La misa del domingo a las 18:30 es en italiano (el PDF lo indica con un símbolo)",
       "por": "Guillem",
@@ -1055,22 +1059,21 @@
     {
      "tipo": "misa",
      "dias": [
-      "domingo"
+      "domingo",
+      "festivo_precepto"
      ],
      "inicio": "20:00",
      "fin": null,
-     "idioma": "es",
-     "temporada": {
-      "nombre": "Curso",
-      "inicio": "09-01",
-      "fin": "06-30"
-     },
+     "idioma": null,
+     "temporada": null,
      "semanas_mes": [],
-     "notas": "Domingo: 11:30h, 18:30h (italiano, no hay durante el verano) y 20:00h (castellano)",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+     "notas": "= Castellano 20:00h S. Francesc",
+     "dias_deducidos": true,
+     "idioma_incierto": true,
+     "fuente": "F1",
+     "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
      "comprobado": "2026-11-25",
-     "confianza": "baja"
+     "confianza": "media"
     },
     {
      "tipo": "adoracion",
@@ -1078,15 +1081,15 @@
       "viernes"
      ],
      "inicio": "17:30",
-     "fin": null,
+     "fin": "19:45",
      "idioma": null,
      "temporada": null,
      "semanas_mes": [],
-     "notas": "Cada viernes: de 17:30h hasta la misa",
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+     "notas": "Divendres: de 17:30h a 19:45h S. Francesc d’Assís",
+     "fuente": "F1",
+     "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
      "comprobado": "2026-11-25",
-     "confianza": "baja"
+     "confianza": "media"
     },
     {
      "tipo": "confesion",
@@ -1096,14 +1099,30 @@
      "idioma": null,
      "temporada": null,
      "semanas_mes": [],
-     "notas": "Media hora antes de misa y durante la adoración",
+     "notas": "30 min. abans de missa i abans de la benedicció del Santíssim",
      "relativa_a_misa": {
       "minutos_antes": 30
      },
-     "fuente": "F3",
-     "url": "https://esglesia.barcelona/es/parroquies/sant-francesc-dassis-2/",
+     "fuente": "F1",
+     "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
      "comprobado": "2026-11-25",
-     "confianza": "baja"
+     "confianza": "media"
+    },
+    {
+     "tipo": "confesion",
+     "dias": [
+      "miercoles"
+     ],
+     "inicio": "18:15",
+     "fin": "19:00",
+     "idioma": null,
+     "temporada": null,
+     "semanas_mes": [],
+     "notas": "Dimecres: de 18:15h a 19h S. Francesc d’Assís",
+     "fuente": "F1",
+     "url": "https://www.esglesiapoblenou.cat/images/HorarisCelebracions2026.pdf",
+     "comprobado": "2026-11-25",
+     "confianza": "media"
     }
    ],
    "tipo": "Parroquia",
