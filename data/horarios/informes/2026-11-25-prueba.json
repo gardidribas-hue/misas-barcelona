@@ -5,27 +5,20 @@
   {
    "id": "BCN0213",
    "nombre": "Sant Francesc d'Assís",
-   "fuente": "F3",
-   "celebraciones": 6
+   "fuente": "F1",
+   "celebraciones": 8
   }
  ],
  "cambios": [
   {
    "id": "BCN0213",
    "nombre": "Sant Francesc d'Assís",
-   "fuente": "F3",
-   "antes": 8,
-   "ahora": 6
-  }
- ],
- "caidas": [
-  {
-   "id": "BCN0213",
-   "nombre": "Sant Francesc d'Assís",
    "fuente": "F1",
-   "error": "<urlopen error timed out>"
+   "antes": 6,
+   "ahora": 8
   }
  ],
+ "caidas": [],
  "discrepancias": [],
  "sin_horario": [
   {
