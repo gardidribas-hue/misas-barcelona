@@ -5,10 +5,10 @@
    "ultimo_ok": "2026-10-21"
   },
   "F1": {
-   "hash": "9c35c2073af9acac",
+   "hash": "68c43184251d0147",
    "ultimo_ok": "2026-11-25"
   },
-  "F1_texto": "9c35c2073af9acac",
+  "F1_texto": "68c43184251d0147",
   "F1_desde": "https://www.parroquiaconcepciobcn.org/horaris/"
  },
  "BCN0092": {
@@ -19,17 +19,17 @@
  },
  "BCN0212": {
   "F3": {
-   "hash": "1e71c3e2e2cd0c54",
+   "hash": "7aad112fc37849d1",
    "ultimo_ok": "2026-11-25"
   },
-  "F3_texto": "1e71c3e2e2cd0c54"
+  "F3_texto": "7aad112fc37849d1"
  },
  "BCN0213": {
   "F1": {
-   "hash": "02260cfc239a5571",
+   "hash": "9a1b4eca661aaca2",
    "ultimo_ok": "2026-11-25"
   },
-  "F1_texto": "02260cfc239a5571",
+  "F1_texto": "9a1b4eca661aaca2",
   "F3_texto": "f7387a1e20f04170",
   "F3": {
    "hash": "f7387a1e20f04170",
@@ -44,10 +44,10 @@
    "ultimo_ok": "2026-10-21"
   },
   "F1": {
-   "hash": "27659353f4ba727f",
+   "hash": "b6b429d0991674dc",
    "ultimo_ok": "2026-11-25"
   },
-  "F1_texto": "27659353f4ba727f",
+  "F1_texto": "b6b429d0991674dc",
   "F1_desde": "https://www.arxiprestatdegracia.cat/misses"
  },
  "BCN0001": {},
