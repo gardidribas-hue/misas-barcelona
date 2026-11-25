@@ -98,13 +98,17 @@ def resumen_temporada(cs):
     return " · ".join(f"{k[0].upper()}{k[1:]}: {', '.join(sorted(set(v)))}" for k, v in grupos.items())
 
 
+HS = None  # huellas.json (lo carga convertir)
+
+
 def aplicar_revision(rec, t, rev, md):
     """Columnas D y E del Excel de revisión: estado de fiabilidad (columna F) y, si se muestra una lectura revisada, su horario."""
     cels = (t.get("celebraciones") or []) if t.get("estado") in ("ok", "pendiente de verificar") else []
     c = horarios_excel.horario_txt(cels, md) if cels else ""
     fuente = horarios_excel.FUENTE.get(t.get("fuente"), "") if c else ""
     r = rev.get(rec["bcn_id"]) or {}
-    codigo, muestra = horarios_excel.estado(c, r.get("revisado", ""), r.get("tercera", ""), fuente, r.get("web", ""))
+    codigo, muestra = horarios_excel.estado(c, r.get("revisado", ""), r.get("tercera", ""), fuente, r.get("web", ""),
+                                            web_cl=r.get("web_claude", ""), **horarios_excel.extra(rec["bcn_id"], HS))
     if codigo == "sin_horario" and cels:  # algo leído que no cabe en el texto (p. ej. solo «primer domingo»)
         codigo = "sin_revisar" if t.get("fuente") == "F1" else "sin_revisar_otra"
     h = rec["horario"]
@@ -151,6 +155,8 @@ def convertir(fecha):
     md = fecha[5:]
     lugares = {l["id"]: l for l in json.loads((H / "lugares.json").read_text("utf-8"))["lugares"]}
     rev = horarios_excel.leer()
+    global HS
+    HS = horarios_excel.huellas()
     fuera = set(json.loads((H / "eliminados.json").read_text("utf-8"))["templos"]) if (H / "eliminados.json").exists() else set()
     out = {}
     for tid, t in datos["templos"].items():

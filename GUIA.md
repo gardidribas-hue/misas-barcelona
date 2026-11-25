@@ -14,7 +14,11 @@ desde la rama `main`: https://gardidribas-hue.github.io/misas-barcelona/.
 
 - Todo con Guillem se habla y se escribe en **castellano**. La web está en castellano y catalán.
 - **Nada de IA en la web**: ni Gemini ni otra. El chat funciona con reglas (`parseQuery` en `app.js`) y **no se toca**.
-- **Tres lecturas en el Excel** (25/11/2026, decisión de Guillem): C = lectura automática; D = segunda lectura hecha aparte (por IA, comprobada); E = tercera lectura a ciegas, solo donde D no coincide con C. **Verde solo con doble verificación** (C = D, D = E o C = E, comparación literal). Una sola lectura, o D distinta de C sin E: amarillo. Varias lecturas y ninguna coincide: rojo. La columna F (fórmula) y la web (`horarios_excel.estado`) usan la misma regla.
+- **Repaso semanal con doble verificación** (25/11/2026, decisiones de Guillem). Cada lunes:
+  1. 4:30, GitHub (`horarios`): lectura automática **C**; descarga entera de cada fuente a la rama `fuentes` (`scripts/fuentes_texto.py`); segunda lectura automática **C2** (mismas reglas sobre la página entera); comprobación de la web **K** (salen la calle o el nombre); huella del texto: si cambia, **M** = «Sí».
+  2. 7:00, tarea programada de Claude (sesión 1): comprueba la web (**L**: Sí/No) y hace la segunda lectura **D** de los templos con la fuente cambiada (`scripts/lecturas.py`).
+  3. 9:00, tarea programada de Claude (sesión 2, distinta): tercera lectura **E** a ciegas (sin mirar C ni D).
+  - **Verde** solo con web comprobada dos veces (K = ok y L = Sí, salvo que no haya web) y dos lecturas iguales: D = E, o C = D (o C = E) con C = C2. Si la fuente cambió, D y E no cuentan hasta repetirlas. La fórmula de F y `horarios_excel.estado` son la misma regla (comprobado con LibreOffice).
 - **Fuentes de horarios**, por este orden: 1) web de la parroquia; 2) si no hay, Arzobispado y OpenStreetMap
   (si no coinciden, manda el Arzobispado, con aviso de confirmar). **misas.org no se usa.**
   Google Maps no da horarios de misa y sus condiciones no permiten guardarlos.
