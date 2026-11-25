@@ -232,6 +232,8 @@ h1 em { color: var(--accent-strong); }
 .maplabel em { color: var(--accent-strong); font-family: var(--display); font-size: 1.2em; font-weight: 400; }
 .maplibregl-ctrl-group { border-radius: 14px !important; overflow: hidden; box-shadow: var(--shadow) !important; }
 .maplibregl-ctrl-top-right { top: 6px; right: 6px; }
+/* En pantallas táctiles, botones + y − de 40 px (los de MapLibre miden 29, poco para un dedo). */
+@media (pointer: coarse) { .maplibregl-ctrl-group button { width: 40px; height: 40px; } }
 
 /* Parroquias en el mapa: iglesia pequeña dibujada (y silueta propia en Catedral, Sagrada Família y Santa Maria del Mar),
    del color de la vista (misa, confesión, adoración) con un borde que la separa del mapa. */

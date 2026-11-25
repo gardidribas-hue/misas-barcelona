@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Página no encontrada · Misas Barcelona</title>
+<meta name="robots" content="noindex">
+<!-- GitHub Pages enseña esta página cuando una dirección no existe (también dentro de p/), así que los enlaces
+     se calculan desde la raíz de la web: sirve igual en github.io/misas-barcelona/ que con dominio propio. -->
+<script>
+try { var th = localStorage.getItem("misas-theme"); if (th === "light" || th === "dark") document.documentElement.dataset.theme = th; } catch (e) {}
+var BASE = location.pathname.indexOf("/misas-barcelona/") === 0 ? "/misas-barcelona/" : "/";
+document.write('<base href="' + BASE + '">');
+</script>
+<link rel="icon" href="icons/s1a/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root { --bg: #ffffff; --ink: #1d1718; --muted: #6b5f61; --accent: #b3262e; --rose: #d46464; --soft: #fbefee; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0e0b0c; --ink: #f3e9e7; --muted: #a39597; --accent: #f08a8f; --rose: #ea8a8a; --soft: #22191b; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #0e0b0c; --ink: #f3e9e7; --muted: #a39597; --accent: #f08a8f; --rose: #ea8a8a; --soft: #22191b; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--ink); font: 400 1rem/1.6 "Manrope", system-ui, sans-serif; text-align: center; }
+  .wrap { max-width: 460px; padding: 32px 16px; }
+  .home { font: 400 1.6rem/1 "Newsreader", Georgia, serif; color: var(--ink); text-decoration: none; }
+  .home em { color: var(--rose); }
+  h1 { font: 400 2rem/1.2 "Newsreader", Georgia, serif; margin: 28px 0 8px; }
+  p { color: var(--muted); margin: 0 0 24px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .btn { display: inline-block; padding: 12px 20px; border-radius: 999px; font-weight: 700; text-decoration: none; background: var(--accent); color: #fff; }
+  .btn.alt { background: var(--soft); color: var(--accent); }
+  [data-l]:not(.on) { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="home" href="./"><span data-l="es">Misas</span><span data-l="ca">Misses</span> <em>Barcelona</em></a>
+  <div data-l="es">
+    <h1>Esta página no existe</h1>
+    <p>Puede que el enlace esté mal escrito o que la página haya cambiado de sitio.</p>
+    <div class="btns"><a class="btn" href="./">Ir al inicio</a><a class="btn alt" href="p/">Todas las parroquias</a></div>
+  </div>
+  <div data-l="ca">
+    <h1>Aquesta pàgina no existeix</h1>
+    <p>Potser l'enllaç està mal escrit o la pàgina ha canviat de lloc.</p>
+    <div class="btns"><a class="btn" href="./">Anar a l'inici</a><a class="btn alt" href="p/">Totes les parròquies</a></div>
+  </div>
+</div>
+<script>
+(function () {
+  var l = "es";
+  try { var s = localStorage.getItem("misas-lang"); if (s === "es" || s === "ca") l = s; else if (/^ca\b/i.test(navigator.language || "")) l = "ca"; } catch (e) {}
+  document.documentElement.lang = l;
+  document.querySelectorAll('[data-l="' + l + '"]').forEach(function (el) { el.classList.add("on"); });
+})();
+</script>
+</body>
+</html>

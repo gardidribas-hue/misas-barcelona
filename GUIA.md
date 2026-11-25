@@ -51,6 +51,7 @@ desde la rama `main`: https://gardidribas-hue.github.io/misas-barcelona/.
 | `p/` | Una página por parroquia para Google (la genera `scripts/paginas.py`; no editar a mano). |
 | `sitemap.xml`, `robots.txt` | Para buscadores (los genera `scripts/paginas.py`). |
 | `legal.html` | Aviso legal y privacidad. |
+| `404.html` | Página de «no existe» con enlaces a Inicio y a todas las parroquias. |
 | `manifest*.webmanifest`, `icons/` | App instalable (tres iconos a elegir en Ajustes). |
 | `fonts/`, `vendor/maplibre-gl/` | Letras y librería del mapa alojadas en la propia web. |
 | `data/` | Datos: parroquias, límites de municipios y distritos, horarios, lecturas, oraciones, citas. |
@@ -74,8 +75,11 @@ El contenedor de Claude no puede abrir las webs de las parroquias ni el mapa: po
 - **Cambiar un texto**: búscalo en `I18N` de `app.js` (castellano en `es`, catalán en `ca`). Cambia los dos idiomas.
 - **Cambiar un color**: variables al principio de `styles.css`. Hay tres bloques: claro, oscuro automático y oscuro elegido. Cambia los tres.
 - **Corregir un horario a mano**: en el Excel de revisión (columnas D y E: si cambias D, pon lo mismo en E solo tras comprobarlo otra vez) o en `data/horarios/correcciones.json`.
-- **Cambiar de dominio**: `SITIO` en `scripts/paginas.py`, `og:url`, `og:image` y `canonical` en `index.html`,
-  y un archivo `CNAME` con el dominio. Después lanza la acción `revision` a mano para regenerar `p/`.
+- **Cambiar de dominio**: `python3 scripts/dominio.py https://nuevo-dominio/` cambia la dirección en `index.html`
+  (canonical, og:url, og:image), `scripts/paginas.py`, `palabra.py` y `oraciones.py`, escribe `CNAME` si es un dominio propio
+  y regenera `p/`, `sitemap.xml` y `robots.txt`. Después, PR y, al publicarla, poner el dominio en GitHub
+  (Settings > Pages > Custom domain, con «Enforce HTTPS»). GitHub redirige solo la dirección antigua de github.io a la nueva.
+- **Página 404**: `404.html` (castellano y catalán) sale en cualquier dirección que no exista; calcula sola la raíz de la web.
 - **Actualizar MapLibre, letras o iconos**: además de cambiar los archivos, sube `VERSION` en `sw.js`
   (esas carpetas se guardan en el móvil sin volver a mirar la red).
 - **Desactivar el service worker** (si diera problemas): sustituye `sw.js` por
