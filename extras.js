@@ -50,16 +50,6 @@
     xCandleOnP: "Queda encendida hasta mañana. Que la Virgen te acompañe.",
     xShareTop: "Misa hoy · {d}", xShareTopAny: "Horarios de misa",
     xShareImg: "Imagen de la parroquia para compartir",
-    xCredK: "Credencial del peregrino",
-    xCredT: "Ruta de los <em>templos</em>",
-    xCredP: "Visita los grandes templos de Barcelona. Cuando estés dentro, pulsa «Estoy aquí» y se pone el sello.",
-    xCredBtn: "Estoy aquí",
-    xCredOf: "{n} de {t} sellos",
-    xCredNew: "¡Sello de {x}!",
-    xCredHave: "Ya tienes el sello de {x}.",
-    xCredFar: "El templo más cercano, {x}, está a {d}. Acércate para el sello.",
-    xCredGeo: "No puedo saber dónde estás. Revisa el permiso de ubicación.",
-    xCredDone: "¡Credencial completa! Has visitado los nueve templos.",
   });
   A.i18n("ca", {
     xWalk: "<b>{m} min</b> a peu",
@@ -85,16 +75,6 @@
     xCandleOnP: "Es queda encesa fins demà. Que la Mare de Déu t'acompanyi.",
     xShareTop: "Missa avui · {d}", xShareTopAny: "Horaris de missa",
     xShareImg: "Imatge de la parròquia per compartir",
-    xCredK: "Credencial del pelegrí",
-    xCredT: "Ruta dels <em>temples</em>",
-    xCredP: "Visita els grans temples de Barcelona. Quan hi siguis a dins, prem «Sóc aquí» i es posa el segell.",
-    xCredBtn: "Sóc aquí",
-    xCredOf: "{n} de {t} segells",
-    xCredNew: "Segell de {x}!",
-    xCredHave: "Ja tens el segell de {x}.",
-    xCredFar: "El temple més proper, {x}, és a {d}. Apropa-t'hi per tenir el segell.",
-    xCredGeo: "No puc saber on ets. Revisa el permís d'ubicació.",
-    xCredDone: "Credencial completa! Has visitat els nou temples.",
   });
   const tr = (k) => { const v = t(k); return v == null ? "" : v; };
 
@@ -474,67 +454,10 @@
     }));
   });
 
-  // ---------- 16. Credencial del peregrino (Voluntariado) ----------
-  const TEMPLES = [
-    ["sf", "Sagrada Família", "SF", "#c8323a", 41.40363, 2.17436],
-    ["cat", "Catedral", "C", "#7a4bb0", 41.38398, 2.17623],
-    ["mar", "Santa Maria del Mar", "SM", "#2e6fd0", 41.38376, 2.18200],
-    ["merce", "La Mercè", "M", "#1f8a4c", 41.38009, 2.17972],
-    ["tibi", "Tibidabo", "T", "#b07a00", 41.42208, 2.11906],
-    ["pi", "Santa Maria del Pi", "Pi", "#c8323a", 41.38211, 2.17378],
-    ["pau", "Sant Pau del Camp", "SP", "#7a4bb0", 41.37628, 2.16937],
-    ["just", "Sants Just i Pastor", "JP", "#2e6fd0", 41.38281, 2.17752],
-    ["pedr", "Pedralbes", "P", "#1f8a4c", 41.39561, 2.11234],
-  ];
-  safe("credencial", () => {
-    const head = document.querySelector("#volcol .dev-head");
-    if (!head) return;
-    const box = document.createElement("section");
-    box.className = "x-cred";
-    head.insertAdjacentElement("afterend", box);
-    const load = () => { try { return JSON.parse(store("misas-credencial") || "{}") || {}; } catch (e) { return {}; } };
-    const ROT = [-8, 5, -3, 7, -6, 3, -4, 6, -2];
-    function render(fresh) {
-      const got = load(), n = TEMPLES.filter((x) => got[x[0]]).length;
-      const L = A.lang() === "ca" ? "ca-ES" : "es-ES";
-      box.innerHTML = `<p class="eyebrow">${A.esc(tr("xCredK"))}</p>
-        <h2>${tr("xCredT")}</h2><p class="sub">${A.esc(tr("xCredP"))}</p>
-        <ul class="x-stamps">${TEMPLES.map(([id, name, ab, col], i) => {
-          const d = got[id] ? new Intl.DateTimeFormat(L, { day: "numeric", month: "numeric" }).format(new Date(got[id] + "T12:00:00")) : "";
-          return `<li class="${got[id] ? "" : "off"}${fresh === id ? " fresh" : ""}"><span class="s" style="--c:${col};--r:${ROT[i]}deg"><i></i><b>${ab}</b><em>${d}</em></span>${A.esc(name)}</li>`;
-        }).join("")}</ul>
-        <div class="x-progrow"><div class="x-prog" role="progressbar" aria-label="${A.esc(t("xCredOf", { n, t: TEMPLES.length }))}" aria-valuemin="0" aria-valuemax="${TEMPLES.length}" aria-valuenow="${n}"><i style="width:${n / TEMPLES.length * 100}%"></i></div><span>${A.esc(t("xCredOf", { n, t: TEMPLES.length }))}</span></div>
-        <button type="button" class="btn primary x-here">${A.esc(tr("xCredBtn"))}</button>`;
-      box.querySelector(".x-here").onclick = here;
-    }
-    function here() {
-      if (!navigator.geolocation) { A.toast(tr("xCredGeo")); return; }
-      const btn = box.querySelector(".x-here"); btn.disabled = true;
-      navigator.geolocation.getCurrentPosition((pos) => {
-        btn.disabled = false;
-        const me = [pos.coords.latitude, pos.coords.longitude];
-        const near = TEMPLES.map((x) => ({ x, d: A.distKm(me, [x[4], x[5]]) })).sort((a, b) => a.d - b.d)[0];
-        const got = load(), [id, name] = near.x;
-        if (near.d > 0.3) {
-          const dist = near.d < 1 ? Math.round(near.d * 1000) + " m" : near.d.toFixed(1).replace(".", ",") + " km";
-          A.toast(t("xCredFar", { x: name, d: dist })); return;
-        }
-        if (got[id]) { A.toast(t("xCredHave", { x: name })); return; }
-        got[id] = todayKey(); store("misas-credencial", JSON.stringify(got));
-        if (navigator.vibrate) navigator.vibrate([12, 60, 18]);
-        render(id);
-        const all = TEMPLES.every((x) => got[x[0]]);
-        A.toast(all ? tr("xCredDone") : t("xCredNew", { x: name }));
-      }, () => { btn.disabled = false; A.toast(tr("xCredGeo")); }, { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 });
-    }
-    render();
-    A.onLang(() => render());
-  });
-
   // ---------- 19. Vibración suave al tocar los botones principales (solo móviles que lo permiten) ----------
   safe("vibrar", () => {
     if (!navigator.vibrate) return;
-    const SEL = "#favBtn, .send, #newQ, .seg button, .bottomnav button, .x-light, .x-here, .tabs button, .chips button";
+    const SEL = "#favBtn, .send, #newQ, .seg button, .bottomnav button, .x-light, .tabs button, .chips button";
     document.addEventListener("click", (e) => { if (e.target.closest && e.target.closest(SEL)) { try { navigator.vibrate(8); } catch (err) { /* nada */ } } }, { passive: true });
   });
 })();

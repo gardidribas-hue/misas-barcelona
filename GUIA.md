@@ -31,7 +31,7 @@ desde la rama `main`: https://misasbarcelona.github.io/.
 - Animaciones suaves y nítidas; nada de giros grandes que mareen. Siempre respetar `prefers-reduced-motion`.
 - Mejoras que ya rechazó (no volver a proponer): más contraste en la pestaña activa, barra inferior «corredera»,
   misterios del Rosario en una fila, filtros del mapa plegados en el móvil, aviso de fiesta de precepto,
-  Agenda como sección propia, Agenda y «Pide una oración» dentro de Voluntariado, pastilla de la barra que se desliza.
+  Agenda como sección propia, rachas, fuego, escudo, hitos o estampas en «Tu camino» y la ruta de los templos (26/11/2026: «no quiero que sea una red social»), Agenda y «Pide una oración» dentro de Voluntariado, pastilla de la barra que se desliza.
 - Pendientes de Guillem (no decidir por él): logo definitivo, nombre y correo de contacto (`config.js`),
   formulario de avisos (Google Forms), GoatCounter, dominio propio, repositorio privado.
 
@@ -43,8 +43,8 @@ desde la rama `main`: https://misasbarcelona.github.io/.
 | `styles.css` | Todo el diseño. Colores en variables (`--accent`, `--bg`…) al principio, con su versión oscura. |
 | `app.js` | Chat, mapa, filtros, fichas, ajustes, idiomas (textos en `I18N`, castellano y catalán). |
 | `devocion.js` | Palabra del día y Rosario. |
-| `extras.js` | Detalles visuales: camino a pie, año litúrgico, santos del día (calendario romano, con `data/santoral.js`, y una vida breve con «Leer más» en `data/santos-vidas.js`, que se edita a mano y va en el mismo orden que `santoral.js`), cuentas del rosario, vela, imagen para compartir, credencial del peregrino y vibración. Cada bloque es independiente. |
-| `camino.js` | «Tu camino»: rachas de Palabra y Rosario con el escudo de san Miguel (un día de gracia por semana), hitos con estampa, resumen de la semana y del año, y el calendario litúrgico que se abre al tocar el año litúrgico. Todo se guarda solo en el navegador (`localStorage` «misas-camino»). Un día de Palabra cuenta con el evangelio de hoy 5 s a la vista; uno de Rosario, al llegar al final (o abrir los cinco misterios del resumen, o encender la vela). |
+| `extras.js` | Detalles visuales: camino a pie, año litúrgico, santos del día (calendario romano, con `data/santoral.js`, y una vida breve con «Leer más» en `data/santos-vidas.js`, que se edita a mano y va en el mismo orden que `santoral.js`), cuentas del rosario, vela, imagen para compartir y vibración. Cada bloque es independiente. |
+| `camino.js` | «Tu camino» (el botón lila de arriba): solo los días en que has leído la Palabra y rezado el Rosario (la semana, el mes día a día y el total del año), y el calendario litúrgico que se abre al tocar el año litúrgico. Todo se guarda solo en el navegador (`localStorage` «misas-camino»). Un día de Palabra cuenta con el evangelio de hoy 5 s a la vista; uno de Rosario, al llegar al final (o abrir los cinco misterios del resumen, o encender la vela). |
 | `horarios.js` | Mete en los datos los horarios automáticos de `data/horarios/horarios_app.js`. |
 | `config.js` | Ajustes que puede cambiar Guillem: mapa, contacto, formulario de avisos, GoatCounter. |
 | `sw.js` | Service worker: la web abre al instante en visitas repetidas y funciona sin conexión. |
