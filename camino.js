@@ -1,5 +1,7 @@
-/* «Tu camino»: los días en que has leído la Palabra del día y rezado el Rosario (la semana, el mes y el año),
-   y el calendario litúrgico que se abre al tocar el año litúrgico. Sin rachas ni premios (decisión de Guillem, 26/11/2026).
+/* «Tu camino»: el dibujo del camino con una iglesia al final, los días en que has leído la Palabra del día y rezado
+   el Rosario (la semana, el mes y el año), hitos con estampa a los 7, 10, 40 y 100 días (seguidos o no), la ruta de los
+   templos (credencial del peregrino, de extras.js) y el calendario litúrgico que se abre al tocar el año litúrgico.
+   Sin rachas, ni fuego ni escudo (decisión de Guillem, 26/11/2026).
    Todo se guarda solo en este navegador (localStorage «misas-camino»); no hay cuentas ni se envía nada.
    - Cuenta un día de Palabra cuando el evangelio de hoy está a la vista unos segundos.
    - Cuenta un día de Rosario al llegar al final del rosario (o al abrir los cinco misterios en el resumen, o al encender la vela). */
@@ -24,6 +26,10 @@
     cmBtn: "Tu camino", cmTitle: "Tu <em>camino</em>", cmClose: "Cerrar",
     cmRos: "Rosario",
     cmHow: "Aquí ves los días en que has leído la Palabra y rezado el Rosario. Se guarda solo en este móvil.", cmMonthSec: "Día a día",
+    cmDaysN: "{n} días", cmDay1: "1 día", cmRoadN: "{n} días de oración", cmStart: "Empieza hoy",
+    cmMiles: "Hitos y estampas", cmMilesHow: "Al llegar a 7, 10, 40 y 100 días con la Palabra o con el Rosario (no hace falta que sean seguidos) consigues una estampa.",
+    cmGot: "Conseguido", cmOf: "{a} de {b}", cmLeft: "Faltan {n} días", cmLeft1: "Falta 1 día",
+    cmStampsN: "Tus estampas <b>({a} de {b})</b>. Toca una para verla en grande.", cmTemples: "Ruta de los templos",
     cmWeek: "Tu semana · del {a} al {b}",
     cmWeekT: "Has rezado {r} y has leído {w}", cmRosN: "{n} rosarios", cmRos1: "1 rosario", cmEvN: "{n} evangelios", cmEv1: "1 evangelio",
     cmWeek0: "Esta semana aún no hay nada. Hoy es un buen día para empezar.",
@@ -43,6 +49,10 @@
     cmBtn: "El teu camí", cmTitle: "El teu <em>camí</em>", cmClose: "Tancar",
     cmRos: "Rosari",
     cmHow: "Aquí veus els dies que has llegit la Paraula i resat el Rosari. Només es desa en aquest mòbil.", cmMonthSec: "Dia a dia",
+    cmDaysN: "{n} dies", cmDay1: "1 dia", cmRoadN: "{n} dies de pregària", cmStart: "Comença avui",
+    cmMiles: "Fites i estampes", cmMilesHow: "Quan arribes a 7, 10, 40 i 100 dies amb la Paraula o amb el Rosari (no cal que siguin seguits) aconsegueixes una estampa.",
+    cmGot: "Aconseguit", cmOf: "{a} de {b}", cmLeft: "Falten {n} dies", cmLeft1: "Falta 1 dia",
+    cmStampsN: "Les teves estampes <b>({a} de {b})</b>. Toca'n una per veure-la en gran.", cmTemples: "Ruta dels temples",
     cmWeek: "La teva setmana · del {a} al {b}",
     cmWeekT: "Has resat {r} i has llegit {w}", cmRosN: "{n} rosaris", cmRos1: "1 rosari", cmEvN: "{n} evangelis", cmEv1: "1 evangeli",
     cmWeek0: "Aquesta setmana encara no hi ha res. Avui és un bon dia per començar.",
@@ -59,6 +69,23 @@
     cmLegC: { g: "Temps ordinari", w: "Nadal, Pasqua i festes del Senyor, de la Mare de Déu i dels sants", r: "Màrtirs, apòstols i Esperit Sant", v: "Advent, Quaresma i difunts" },
   });
 
+  // ---------- Estampas: una cita de un santo por hito ----------
+  const MILES = [7, 10, 40, 100]; // días con la Palabra o con el Rosario, seguidos o no
+  const STAMPS = {
+    w: [
+      { es: ["Tarde te amé, hermosura tan antigua y tan nueva.", "San Agustín"], ca: ["Tard us he estimat, bellesa tan antiga i tan nova.", "Sant Agustí"] },
+      { es: ["Desconocer las Escrituras es desconocer a Cristo.", "San Jerónimo"], ca: ["Desconèixer les Escriptures és desconèixer Crist.", "Sant Jeroni"] },
+      { es: ["Aprende a conocer el corazón de Dios en las palabras de Dios.", "San Gregorio Magno"], ca: ["Aprèn a conèixer el cor de Déu en les paraules de Déu.", "Sant Gregori el Gran"] },
+      { es: ["Una palabra habló el Padre, que fue su Hijo, y esta habla siempre en eterno silencio.", "San Juan de la Cruz"], ca: ["Una paraula va dir el Pare, que fou el seu Fill, i la diu sempre en etern silenci.", "Sant Joan de la Creu"] },
+    ],
+    r: [
+      { es: ["El Rosario es mi oración predilecta.", "San Juan Pablo II"], ca: ["El Rosari és la meva pregària predilecta.", "Sant Joan Pau II"] },
+      { es: ["¡Amad a la Virgen y hacedla amar! Rezad siempre el Rosario.", "San Pío de Pietrelcina"], ca: ["Estimeu la Mare de Déu i feu-la estimar! Reseu sempre el Rosari.", "Sant Pius de Pietrelcina"] },
+      { es: ["El Santo Rosario es arma poderosa. Empléala con confianza.", "San Josemaría Escrivá"], ca: ["El Sant Rosari és arma poderosa. Fes-la servir amb confiança.", "Sant Josepmaria Escrivà"] },
+      { es: ["El Rosario, compendio de todo el Evangelio.", "San Pablo VI"], ca: ["El Rosari, compendi de tot l'Evangeli.", "Sant Pau VI"] },
+    ],
+  };
+  const daysTxt = (n) => (n === 1 ? t("cmDay1") : t("cmDaysN", { n }));
   const COL = { w: "#2fb565", r: "#3d82ec" };
 
   // ---------- Datos guardados ----------
@@ -80,7 +107,73 @@
   const roadIcon = () => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.6 4.5 4.5 19.5M14.4 4.5l5.1 15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M12 6.5v2.2M12 11.4v2.6M12 16.9v2.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>`;
   const book = `<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 4.2C6.6 3 4.6 2.8 2.5 3.2v8.6c2.1-.4 4.1-.2 5.5 1 1.4-1.2 3.4-1.4 5.5-1V3.2C11.4 2.8 9.4 3 8 4.2Zm0 0v8.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
   const crossI = `<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M4.5 6h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+  const orn = `<svg viewBox="0 0 44 22" aria-hidden="true"><path d="M2 11h12M30 11h12" stroke="#c9a227" stroke-width="1" stroke-linecap="round"/><path d="M22 3v16M17 8h10" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round"/><circle cx="16" cy="11" r="1.3" fill="#c9a227"/><circle cx="28" cy="11" r="1.3" fill="#c9a227"/></svg>`;
   const xI = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>`;
+
+  function medal(num, done, part, col) {
+    const R = 22, L = 2 * Math.PI * R;
+    return `<svg viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="${R}" fill="${done ? col : "var(--bg)"}" stroke="var(--line)" stroke-width="3"/>` +
+      (!done && part ? `<circle cx="27" cy="27" r="${R}" fill="none" stroke="${col}" stroke-width="3" stroke-linecap="round" stroke-dasharray="${(L * Math.min(1, part)).toFixed(1)} ${L.toFixed(1)}" transform="rotate(-90 27 27)"/>` : "") +
+      `<text x="27" y="33" text-anchor="middle" style="font:500 ${num > 99 ? 15 : 18}px var(--display);fill:${done ? "#fff" : "var(--muted)"}">${num}</text></svg>`;
+  }
+
+  // Dibujo de «Tu camino»: colinas por capas; el camino aparece en cada colina y se esconde tras la siguiente.
+  function road(cur) {
+    const W = 360, H = 210;
+    const hills = [
+      ['M0 82 C 30 64, 80 60, 122 74 C 156 58, 212 56, 250 70 C 284 58, 332 60, 360 72 V210 H0Z', 'h1'],
+      ['M0 106 C 40 98, 92 92, 138 96 C 182 78, 262 76, 302 92 C 324 98, 346 98, 360 96 V210 H0Z', 'h2'],
+      ['M0 128 C 30 108, 108 102, 162 120 C 204 134, 300 132, 360 124 V210 H0Z', 'h3'],
+      ['M0 178 C 56 170, 124 150, 200 150 C 262 150, 322 160, 360 166 V210 H0Z', 'h4'],
+    ];
+    // Tramos del camino (uno por colina): bezier [x0,y0,x1,y1,x2,y2,x3,y3], ancho abajo, ancho arriba, raya, trazos
+    const segs = [
+      [[216, 100, 214, 86, 194, 78, 198, 60], 6, 1.2, 0.6, [1.8, 1.8]],
+      [[150, 134, 156, 112, 226, 112, 222, 82], 15, 7, 1.1, [4, 4]],
+      [[192, 176, 192, 146, 132, 150, 150, 110], 36, 17, 1.8, [8, 7]],
+      [[146, 232, 160, 196, 266, 190, 250, 116], 92, 30, 2.8, [13, 11]],
+    ];
+    const bz = (c, t) => { const u = 1 - t; return [u*u*u*c[0] + 3*u*u*t*c[2] + 3*u*t*t*c[4] + t*t*t*c[6], u*u*u*c[1] + 3*u*u*t*c[3] + 3*u*t*t*c[5] + t*t*t*c[7]]; };
+    const band = (c, w0, w1) => {
+      const L = [], R = [];
+      for (let i = 0; i <= 40; i++) {
+        const t = i / 40, p = bz(c, t), q = bz(c, Math.min(1, t + .01)), o = bz(c, Math.max(0, t - .01));
+        let dx = q[0] - o[0], dy = q[1] - o[1]; const n = Math.hypot(dx, dy); dx /= n; dy /= n;
+        const w = (w0 + (w1 - w0) * t) / 2;
+        L.push([p[0] + dy * w, p[1] - dx * w]); R.push([p[0] - dy * w, p[1] + dx * w]);
+      }
+      const P = (A) => A.map((p) => p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" L");
+      return "M" + P(L) + " L" + P(R.reverse()) + "Z";
+    };
+    let defs = `<linearGradient id="rdsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--rd-sky1)"/><stop offset="1" stop-color="var(--rd-sky2)"/></linearGradient>`;
+    let body = `<rect width="${W}" height="${H}" fill="url(#rdsky)"/>`;
+    hills.forEach(([d, c], i) => {
+      defs += `<clipPath id="rdh${i}"><path d="${d}"/></clipPath>`;
+      const [c3, w0, w1, lw, da] = segs[i];
+      const sd = `M${c3[0]} ${c3[1]} C ${c3[2]} ${c3[3]}, ${c3[4]} ${c3[5]}, ${c3[6]} ${c3[7]}`;
+      body += `<path d="${d}" fill="var(--rd-${c})"/><!--t${i + 1}-->` +
+        `<g clip-path="url(#rdh${i})"><path d="${band(c3, w0, w1)}" fill="var(--rd-road)"/>` +
+        `<path d="${sd}" fill="none" stroke="var(--rd-line)" stroke-width="${lw}" stroke-dasharray="${da.join(" ")}" stroke-linecap="round"/></g>`;
+    });
+    // Árboles sencillos (cipreses redondeados) para dar escala
+    const tree = (x, y, s, c) => `<path d="M${x} ${y}v${-3 * s}" stroke="var(--rd-${c})" stroke-width="${1.2 * s}" stroke-linecap="round"/><ellipse cx="${x}" cy="${y - 7 * s}" rx="${3.2 * s}" ry="${6 * s}" fill="var(--rd-${c})"/>`;
+    body = body.replace('<!--t2-->', tree(292, 90, .7, 'tr2') + tree(301, 92, .55, 'tr2'));
+    body = body.replace('<!--t3-->', tree(54, 118, 1, 'tr3') + tree(66, 116, .8, 'tr3') + tree(300, 134, .9, 'tr3'));
+    body = body.replace('<!--t4-->', tree(330, 172, 1.4, 'tr4') + tree(44, 182, 1.2, 'tr4'));
+    // Hitos: círculos con el número, más pequeños cuanto más lejos
+    const mk = (x, y, r, txt, ok) => `<g><circle cx="${x}" cy="${y}" r="${r}" fill="${ok ? "var(--accent)" : "var(--bg)"}" stroke="${ok ? "var(--accent)" : "var(--rd-mk)"}" stroke-width="${r > 10 ? 2 : 1.5}"/>` +
+      (ok ? `<path d="M${x - r * .42} ${y + .2}l${r * .28} ${r * .3}l${r * .55} ${-r * .58}" fill="none" stroke="var(--accent-ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`
+          : `<text x="${x}" y="${y + r * .36}" text-anchor="middle" style="font:800 ${(r * 0.95).toFixed(1)}px var(--ui);fill:var(--rd-mkt)">${txt}</text>`) + `</g>`;
+    body += mk(170, 124, 11, "10", cur >= 10) + mk(212, 96, 8, "40", cur >= 40) + mk(204, 74, 6, "100", cur >= 100);
+    // Al final del camino, una iglesia pequeña
+    body += `<g transform="translate(198 62)" fill="var(--rd-mk)"><path d="M-6 0V-7.5L0-12.5 6-7.5V0Z"/><path d="M-1.6-12.5V-19.5h3.2v7Z"/><path d="M0-25v5M-1.8-23.2h3.6" stroke="var(--rd-mk)" stroke-width="1.1" stroke-linecap="round"/><path d="M-1.3 0v-3.6a1.3 1.3 0 0 1 2.6 0V0Z" fill="var(--rd-sky2)"/></g>`;
+    // Hoy, sobre el tramo más cercano
+    const lab = cur ? t("cmRoadN", { n: cur }) : t("cmStart"), lw = Math.max(78, lab.length * 6.6 + 22);
+    body += `<circle cx="203" cy="176" r="12" fill="var(--bg)" stroke="var(--accent-strong)" stroke-width="3"/><circle cx="203" cy="176" r="4.5" fill="var(--accent-strong)"/>` +
+      `<rect x="${350 - lw}" y="164" width="${lw}" height="24" rx="12" fill="var(--bg)"/><text x="${350 - lw / 2}" y="180" text-anchor="middle" style="font:800 12px var(--ui);fill:var(--accent-strong)">${esc(lab)}</text>`;
+    return `<svg viewBox="0 28 ${W} ${H - 28}" role="img" aria-label="${esc(t("cmBtn"))}"><defs>${defs}</defs>${body}</svg>`;
+  }
+
 
   // ---------- Botón de arriba, junto a los interrogantes ----------
   let topBtn = null;
@@ -100,6 +193,30 @@
 
   // ---------- Panel «Tu camino» ----------
   let panelEl = null, panelFrom = null, monSel = null;
+  function milesCard(kind, n) {
+    const cells = MILES.map((m) => {
+      const got = n >= m;
+      return `<div>${medal(m, got, n / m, COL[kind])}${esc(daysTxt(m))}<small>${esc(got ? t("cmGot") : t("cmOf", { a: n, b: m }))}</small></div>`;
+    }).join("");
+    return `<div class="cm-card ${kind === "w" ? "x-word" : "x-ros"}"><h3>${esc(t(kind === "w" ? "cmPal" : "cmRos"))}</h3><div class="cm-miles">${cells}</div></div>`;
+  }
+  const stampHTML = (kind, i, tag) => {
+    const q = STAMPS[kind][i][A.lang() === "ca" ? "ca" : "es"];
+    return `<${tag} ${tag === "button" ? 'type="button" ' : ""}class="cm-st" data-st="${kind}${i}"><div class="in">${orn}<q>${esc(q[0])}</q><cite>${esc(q[1])} · ${esc(t(kind === "w" ? "cmPal" : "cmRos"))}, ${esc(daysTxt(MILES[i]))}</cite></div></${tag}>`;
+  };
+  function stamps(nw, nr) {
+    const got = [], next = [];
+    for (const [kind, n] of [["w", nw], ["r", nr]]) {
+      MILES.forEach((m, i) => { if (n >= m) got.push(stampHTML(kind, i, "button")); });
+      const i = MILES.findIndex((m) => n < m);
+      if (i >= 0) {
+        const left = MILES[i] - n;
+        next.push(`<div class="cm-st off"><div class="in"><b>${MILES[i]}</b>${esc(t(kind === "w" ? "cmPal" : "cmRos"))}<br>${esc(left === 1 ? t("cmLeft1") : t("cmLeft", { n: left }))}</div></div>`);
+      }
+    }
+    return `<p class="cm-card" style="margin:0 0 10px;padding:12px 16px;background:none;box-shadow:inset 0 0 0 1px var(--line)"><span style="font:600 .8125rem/1.45 var(--ui);color:var(--muted)">${t("cmStampsN", { a: got.length, b: MILES.length * 2 })}</span></p>` +
+      `<div class="cm-stamps">${got.join("")}${next.join("")}</div>`;
+  }
   function week() {
     const T = msOf(todayKey()), mon = monday(T), sun = mon + 6 * DAY, W = t("cmWd");
     let nw = 0, nr = 0, bars = "";
@@ -149,18 +266,26 @@
         (topSet ? `<div><b>${esc(t("cmSets")[topSet[0]] || "")}</b>${esc(t("cmMys"))}</div>` : "") + `</div></div>`;
   }
   function panelHTML() {
+    // Días en total (seguidos o no): con la Palabra, con el Rosario y con alguna de las dos
+    const nw = Object.keys(S.w).length, nr = Object.keys(S.r).length, days = new Set(Object.keys(S.w).concat(Object.keys(S.r))).size;
     // En ordenador, con el mismo formato que las demás secciones (ventana, título grande y columna de 720 px)
     const head = wide()
       ? `<header class="dev-head cm-dhead"><h1>${t("cmTitle")}</h1><button type="button" class="cm-x" aria-label="${esc(t("cmClose"))}">${xI}</button></header>`
       : `<header class="cm-head"><div><h1>${t("cmTitle")}</h1></div><button type="button" class="cm-x" aria-label="${esc(t("cmClose"))}">${xI}</button></header>`;
     return `<div class="${wide() ? "dev-inner" : "cm-wrap"}">${head}
+      <div class="cm-road">${road(days)}</div>
       <div class="cm-body">
         <p class="cm-hint">${esc(t("cmHow"))}</p>
         ${week()}
         ${monthHTML()}
         ${yearHTML()}
+        <p class="cm-sec">${esc(t("cmMiles"))}</p>
+        <p class="cm-hint">${esc(t("cmMilesHow"))}</p>
+        ${milesCard("w", nw)}${milesCard("r", nr)}${stamps(nw, nr)}
+        ${A.credencial ? `<p class="cm-sec">${esc(t("cmTemples"))}</p>${A.credencial.html(credFresh)}` : ""}
       </div></div>`;
   }
+  let credFresh = "";
   function renderPanel() {
     if (!panelEl) return;
     const sc = scroller(), y = sc.scrollTop;
@@ -186,7 +311,7 @@
   let wasWide = wide();
   addEventListener("resize", () => { if (!panelEl) return; if (wide() !== wasWide) { wasWide = wide(); renderPanel(); } place(); });
   // Si se cambia de sección con la barra de arriba, «Tu camino» se cierra
-  document.addEventListener("misas:mode", () => { if (!panelEl && !calEl) return; closePanel(); closeCal(); steps.length = 0; });
+  document.addEventListener("misas:mode", () => { if (!panelEl && !calEl) return; closeView(); closePanel(); closeCal(); steps.length = 0; });
   // Al abrir se añade un paso al historial: el botón «atrás» del móvil cierra el panel en vez de salir de la web.
   function openPanel(from) {
     if (panelEl) return;
@@ -216,14 +341,32 @@
       if (m < 0) { m = 11; y--; } if (m > 11) { m = 0; y++; }
       monSel = { y, m }; renderPanel();
       const b = panelEl.querySelector(`[data-mm="${mm.dataset.mm}"]`); if (b && !b.disabled) b.focus({ preventScroll: true });
+      return;
     }
+    const here = e.target.closest(".x-here");
+    if (here && A.credencial) { A.credencial.here(here, (id) => { credFresh = id; renderPanel(); credFresh = ""; }); return; }
+    const sp = e.target.closest("button.cm-st");
+    if (sp) viewStamp(sp.dataset.st);
   }
+  let viewEl = null;
+  function viewStamp(id) {
+    viewEl = document.createElement("div");
+    viewEl.className = "cm-view x-path";
+    viewEl.setAttribute("role", "dialog"); viewEl.setAttribute("aria-modal", "true");
+    viewEl.innerHTML = stampHTML(id[0], +id.slice(1), "button");
+    viewEl.onclick = () => back();
+    document.body.appendChild(viewEl);
+    pushStep("stamp");
+    viewEl.querySelector("button").focus({ preventScroll: true });
+  }
+  function closeView() { if (viewEl) { viewEl.remove(); viewEl = null; } }
+
   // ---------- Historial: atrás cierra lo último que se abrió ----------
   const steps = [];
   function pushStep(name) { steps.push(name); try { history.pushState({ camino: name }, ""); } catch (e) { /* sin historial */ } }
   function closeTop() {
     const s = steps.pop();
-    if (s === "panel") closePanel(); else if (s === "cal") closeCal();
+    if (s === "stamp") closeView(); else if (s === "panel") closePanel(); else if (s === "cal") closeCal();
   }
   function back() { if (!steps.length) return; if (history.state && history.state.camino) history.back(); else closeTop(); }
   addEventListener("popstate", () => { if (steps.length) closeTop(); });
