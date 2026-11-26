@@ -46,7 +46,9 @@ window.misasIcon = function (id) {
   var ic = g("lnkIcon"); ic.type = id === "s1a" ? "image/svg+xml" : "image/png"; ic.href = d + (id === "s1a" ? "icon.svg" : "icon-192.png");
   return id;
 };
-try { var ico = localStorage.getItem("misas-icon"); if (ico) misasIcon(ico); } catch (e) {}</script>
+try { var ico = localStorage.getItem("misas-icon"); if (ico) misasIcon(ico); } catch (e) {}
+// Aviso de instalar del navegador (Android/Chrome): se guarda para el botón «Instalar la app» de Ajustes.
+addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); window.misasBIP = e; });</script>
 </head>
 <body class="loading">
 
@@ -83,6 +85,11 @@ try { var ico = localStorage.getItem("misas-icon"); if (ico) misasIcon(ico); } c
         <p class="set-h" data-i18n="lblLang">Idioma</p>
         <div class="langs" id="langs" role="group" aria-label="Idioma"><button type="button" data-lang="es" aria-label="Castellano" title="Castellano"></button><button type="button" data-lang="ca" aria-label="Català" title="Català"></button></div>
         <div class="icon-set">
+        <div class="install" id="install">
+          <button type="button" class="install-btn" id="installBtn" aria-expanded="false" aria-controls="installSteps"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5v7M9 11.8l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="installBtn">Instalar la app</span></button>
+          <ol class="install-steps" id="installSteps" hidden></ol>
+          <p class="icon-note" data-i18n="installNote">Sin pasar por ninguna tienda: ocupa muy poco, se actualiza sola y funciona sin conexión.</p>
+        </div>
         <p class="set-h" data-i18n="iconGroup">Icono de la app</p>
         <div class="icon-pick" id="iconPick" role="group" aria-label="Icono de la app"><button type="button" data-icon="s1a"><img src="icons/s1a/icon-192.png" alt="" width="56" height="56"></button><button type="button" data-icon="st1"><img src="icons/st1/icon-192.png" alt="" width="56" height="56"></button><button type="button" data-icon="st3"><img src="icons/st3/icon-192.png" alt="" width="56" height="56"></button></div>
         <p class="icon-note" data-i18n="iconNote">Se aplica al añadir la app a la pantalla de inicio. Si ya la tienes, quítala y vuelve a añadirla.</p>
@@ -252,6 +259,7 @@ try { var ico = localStorage.getItem("misas-icon"); if (ico) misasIcon(ico); } c
           <details><summary data-i18n="faqSrcQ">¿De dónde salen los horarios?</summary><div data-i18n-html="faqSrcA"></div></details>
           <details><summary data-i18n="faqFixQ">He visto un horario mal, ¿cómo aviso?</summary><div data-i18n-html="faqFixA"></div></details>
           <details class="off"><summary aria-disabled="true"><span data-i18n="faqDonQ">¿Puedo donar?</span><span class="soon" data-i18n="volSoon">Próximamente</span></summary><div data-i18n-html="faqDonA"></div></details>
+          <details><summary data-i18n="faqAppQ">¿Puedo tenerla como app en el móvil?</summary><div data-i18n-html="faqAppA"></div></details>
           <details><summary data-i18n="faqPrivQ">¿Guardáis mis datos?</summary><div data-i18n-html="faqPrivA"></div></details>
           <details><summary data-i18n="faqResQ">Recursos</summary><div data-i18n-html="faqResA"></div></details>
         </div>
