@@ -23,9 +23,9 @@ window.MISAS_CONFIG = {
   // hoja: la hoja de seguimiento de los avisos (solo para quien mantiene la web; la web no la usa).
   // Si no hay url, los enlaces abren un correo a contacto.correo.
   avisos: {
-    url: "",
-    campoParroquia: "",
-    hoja: ""
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSdsg0yraBH4mLLAHjh57_4GW4jQdxzxJ9P-ie6dT-RnJnBUJg/viewform",
+    campoParroquia: "entry.594515477",
+    hoja: "https://docs.google.com/spreadsheets/d/1dedcMiwdTa6avfkSe41eaQlBJmZqr-WR3QD4yOy-vYM/edit"
   },
 
   // Analítica sin cookies con GoatCounter: el nombre elegido al darse de alta (el de https://NOMBRE.goatcounter.com).
