@@ -1,4 +1,4 @@
-# Estado de los horarios · 2026-11-25
+# Estado de los horarios · 2026-11-26
 
 - Templos: 459; con horario: 214; sin horario: 245
 - Parroquias: 199; con horario: 191
