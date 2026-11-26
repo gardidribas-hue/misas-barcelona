@@ -486,26 +486,32 @@
     ["just", "Sants Just i Pastor", "JP", "#2e6fd0", 41.38281, 2.17752],
     ["pedr", "Pedralbes", "P", "#1f8a4c", 41.39561, 2.11234],
   ];
-  // Vive dentro de «Tu camino» (camino.js), como una sección más: A.credencial.html() y A.credencial.here(alTerminar)
   safe("credencial", () => {
+    const head = document.querySelector("#volcol .dev-head");
+    if (!head) return;
+    const box = document.createElement("section");
+    box.className = "x-cred";
+    head.insertAdjacentElement("afterend", box);
     const load = () => { try { return JSON.parse(store("misas-credencial") || "{}") || {}; } catch (e) { return {}; } };
     const ROT = [-8, 5, -3, 7, -6, 3, -4, 6, -2];
-    function html(fresh) {
+    function render(fresh) {
       const got = load(), n = TEMPLES.filter((x) => got[x[0]]).length;
       const L = A.lang() === "ca" ? "ca-ES" : "es-ES";
-      return `<div class="cm-card x-cred"><h3>${A.esc(tr("xCredK"))}</h3><p>${A.esc(tr("xCredP"))}</p>
+      box.innerHTML = `<p class="eyebrow">${A.esc(tr("xCredK"))}</p>
+        <h2>${tr("xCredT")}</h2><p class="sub">${A.esc(tr("xCredP"))}</p>
         <ul class="x-stamps">${TEMPLES.map(([id, name, ab, col], i) => {
           const d = got[id] ? new Intl.DateTimeFormat(L, { day: "numeric", month: "numeric" }).format(new Date(got[id] + "T12:00:00")) : "";
           return `<li class="${got[id] ? "" : "off"}${fresh === id ? " fresh" : ""}"><span class="s" style="--c:${col};--r:${ROT[i]}deg"><i></i><b>${ab}</b><em>${d}</em></span>${A.esc(name)}</li>`;
         }).join("")}</ul>
         <div class="x-progrow"><div class="x-prog" role="progressbar" aria-label="${A.esc(t("xCredOf", { n, t: TEMPLES.length }))}" aria-valuemin="0" aria-valuemax="${TEMPLES.length}" aria-valuenow="${n}"><i style="width:${n / TEMPLES.length * 100}%"></i></div><span>${A.esc(t("xCredOf", { n, t: TEMPLES.length }))}</span></div>
-        <button type="button" class="btn primary x-here">${A.esc(tr("xCredBtn"))}</button></div>`;
+        <button type="button" class="btn primary x-here">${A.esc(tr("xCredBtn"))}</button>`;
+      box.querySelector(".x-here").onclick = here;
     }
-    function here(btn, done) {
+    function here() {
       if (!navigator.geolocation) { A.toast(tr("xCredGeo")); return; }
-      if (btn) btn.disabled = true;
+      const btn = box.querySelector(".x-here"); btn.disabled = true;
       navigator.geolocation.getCurrentPosition((pos) => {
-        if (btn) btn.disabled = false;
+        btn.disabled = false;
         const me = [pos.coords.latitude, pos.coords.longitude];
         const near = TEMPLES.map((x) => ({ x, d: A.distKm(me, [x[4], x[5]]) })).sort((a, b) => a.d - b.d)[0];
         const got = load(), [id, name] = near.x;
@@ -516,12 +522,13 @@
         if (got[id]) { A.toast(t("xCredHave", { x: name })); return; }
         got[id] = todayKey(); store("misas-credencial", JSON.stringify(got));
         if (navigator.vibrate) navigator.vibrate([12, 60, 18]);
-        if (done) done(id);
+        render(id);
         const all = TEMPLES.every((x) => got[x[0]]);
         A.toast(all ? tr("xCredDone") : t("xCredNew", { x: name }));
-      }, () => { if (btn) btn.disabled = false; A.toast(tr("xCredGeo")); }, { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 });
+      }, () => { btn.disabled = false; A.toast(tr("xCredGeo")); }, { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 });
     }
-    A.credencial = { html, here };
+    render();
+    A.onLang(() => render());
   });
 
   // ---------- 19. Vibración suave al tocar los botones principales (solo móviles que lo permiten) ----------
