@@ -1,0 +1,958 @@
+[
+{
+"parroquia": "Basílica de la Puríssima Concepció i Assumpció de Nostra Senyora · Barcelona",
+"id": "purissima-concepcio"
+},
+{
+"parroquia": "Capella d'En Marcús · Barcelona",
+"id": "BCN0009"
+},
+{
+"parroquia": "Capella de la Mare de Déu dels Àngels · Barcelona",
+"id": "BCN0018"
+},
+{
+"parroquia": "Capilla de Nuestra Señora de la Merced y San Pedro Apóstol · Barcelona",
+"id": "BCN0031"
+},
+{
+"parroquia": "Caputxins de Sarrià · Barcelona",
+"id": "BCN0032"
+},
+{
+"parroquia": "Casal Loiola · Barcelona",
+"id": "BCN0035"
+},
+{
+"parroquia": "Catedral Basílica de Barcelona · Barcelona",
+"id": "catedral-basilica-de-barcelona"
+},
+{
+"parroquia": "Convento de Santa Catalina (Dominicos) · Barcelona",
+"id": "BCN0059"
+},
+{
+"parroquia": "Corpus Christi · Barcelona",
+"id": "corpus-christi"
+},
+{
+"parroquia": "Crist Redemptor · Barcelona",
+"id": "crist-redemptor"
+},
+{
+"parroquia": "Crist Rei · Barcelona",
+"id": "crist-rei"
+},
+{
+"parroquia": "El Bon Pastor · Barcelona",
+"id": "el-bon-pastor"
+},
+{
+"parroquia": "Església de Nostra Senyora de Pompeia (Caputxins) · Barcelona",
+"id": "BCN0084"
+},
+{
+"parroquia": "Església de Sant Llàtzer · Barcelona",
+"id": "BCN0090"
+},
+{
+"parroquia": "Església de Santa Maria de Maricel · El Masnou",
+"id": "BCN0363"
+},
+{
+"parroquia": "Església de Santa Maria de Montalegre · Barcelona",
+"id": "BCN0093"
+},
+{
+"parroquia": "Església del Sagrat Cor de Jesús (Jesuites) · Barcelona",
+"id": "BCN0097"
+},
+{
+"parroquia": "Església Romànica del Poble Espanyol · Barcelona",
+"id": "esglesia-romanica-del-poble-espanyol"
+},
+{
+"parroquia": "Esperit Sant · Barcelona",
+"id": "esperit-sant"
+},
+{
+"parroquia": "Fraternidad de la Comunidad del Cordero · Barcelona",
+"id": "BCN0104"
+},
+{
+"parroquia": "Hospital Clínic Provincial · Barcelona",
+"id": "hospital-clinic-provincial"
+},
+{
+"parroquia": "Hospital Sant Rafael · Barcelona",
+"id": "BCN0117"
+},
+{
+"parroquia": "Hospital Universitari Vall d'Hebron, de Barcelona · Barcelona",
+"id": "ciutat-sanitaria-vall-dhebron"
+},
+{
+"parroquia": "Iglesia del Perpetuo Socorro (Redentoristas) · Barcelona",
+"id": "BCN0123"
+},
+{
+"parroquia": "Immaculada Concepció i Sant Lorenzo Ruiz (Personal) · Barcelona",
+"id": "immaculada-concepcio-i-sant-lorenzo-ruiz-personal"
+},
+{
+"parroquia": "Immaculada Concepció, de L'Hospitalet de Llobregat · L'Hospitalet de Llobregat",
+"id": "immaculada-concepcio"
+},
+{
+"parroquia": "Immaculat Cor de Maria · Barcelona",
+"id": "immaculat-cor-de-maria"
+},
+{
+"parroquia": "Mare de Déu de Bellvitge · L'Hospitalet de Llobregat",
+"id": "mare-de-deu-de-bellvitge"
+},
+{
+"parroquia": "Mare de Déu de Betlem · Barcelona",
+"id": "mare-de-deu-de-betlem"
+},
+{
+"parroquia": "Mare de Déu de Fàtima · Barcelona",
+"id": "mare-de-deu-de-fatima"
+},
+{
+"parroquia": "Mare de Déu de l'Esperança · Barcelona",
+"id": "mare-de-deu-de-lesperanca"
+},
+{
+"parroquia": "Mare de Déu de l'Esperança, de Mataró · Mataró",
+"id": "mare-de-deu-de-lesperanca-2"
+},
+{
+"parroquia": "Mare de Déu de la Llum, de L'Hospitalet de Llobregat · L'Hospitalet de Llobregat",
+"id": "mare-de-deu-de-la-llum"
+},
+{
+"parroquia": "Mare de Déu de la Medalla Miraculosa · Barcelona",
+"id": "mare-de-deu-de-la-medalla-miraculosa"
+},
+{
+"parroquia": "Mare de Déu de la Mercè i Sant Miquel Arcàngel (Basílica) · Barcelona",
+"id": "mare-de-deu-de-la-merce-i-sant-miquel-arcangel-basilica"
+},
+{
+"parroquia": "Mare de Déu de la Salut · Badalona",
+"id": "mare-de-deu-de-la-salut"
+},
+{
+"parroquia": "Mare de Déu de la Salut · Barcelona",
+"id": "mare-de-deu-de-la-salut-2"
+},
+{
+"parroquia": "Mare de Déu de les Neus, de Sant Adrià de Besòs · Sant Adrià de Besòs",
+"id": "mare-de-deu-de-les-neus"
+},
+{
+"parroquia": "Mare de Déu de Lourdes · Badalona",
+"id": "mare-de-deu-de-lourdes"
+},
+{
+"parroquia": "Mare de Déu de Lourdes · Barcelona",
+"id": "mare-de-deu-de-lourdes-2"
+},
+{
+"parroquia": "Mare de Déu de Mont Carmel · Barcelona",
+"id": "mare-de-deu-de-mont-carmel"
+},
+{
+"parroquia": "Mare de Déu de Montserrat · Badalona",
+"id": "mare-de-deu-de-montserrat"
+},
+{
+"parroquia": "Mare de Déu de Montserrat · Barcelona",
+"id": "mare-de-deu-de-montserrat-2"
+},
+{
+"parroquia": "Mare de Déu de Montserrat, de Mataró · Mataró",
+"id": "mare-de-deu-de-montserrat-3"
+},
+{
+"parroquia": "Mare de Déu de Núria · Barcelona",
+"id": "mare-de-deu-de-nuria"
+},
+{
+"parroquia": "Mare de Déu de Port · Barcelona",
+"id": "mare-de-deu-de-port"
+},
+{
+"parroquia": "Mare de Déu del Carme · Barcelona",
+"id": "mare-de-deu-del-carme"
+},
+{
+"parroquia": "Mare de Déu del Carme, de Sant Joan Despí · Sant Joan Despí",
+"id": "mare-de-deu-del-carme-2"
+},
+{
+"parroquia": "Mare de Déu del Coll · Barcelona",
+"id": "mare-de-deu-del-coll"
+},
+{
+"parroquia": "Mare de Déu del Pilar · Barcelona",
+"id": "mare-de-deu-del-pilar"
+},
+{
+"parroquia": "Mare de Déu del Pilar, d'El Masnou · El Masnou",
+"id": "mare-de-deu-del-pilar-2"
+},
+{
+"parroquia": "Mare de Déu del Roser · Badalona",
+"id": "mare-de-deu-del-roser"
+},
+{
+"parroquia": "Mare de Déu del Roser · Barcelona",
+"id": "mare-de-deu-del-roser-2"
+},
+{
+"parroquia": "Mare de Déu dels Àngels · Barcelona",
+"id": "mare-de-deu-dels-angels"
+},
+{
+"parroquia": "Mare de Déu dels Desemparats · L'Hospitalet de Llobregat",
+"id": "mare-de-deu-dels-desemparats"
+},
+{
+"parroquia": "Mare de Déu dels Dolors · Barcelona",
+"id": "mare-de-deu-dels-dolors"
+},
+{
+"parroquia": "Maria Auxiliadora · Barcelona",
+"id": "maria-auxiliadora"
+},
+{
+"parroquia": "Maria Auxiliadora, de Mataró · Mataró",
+"id": "maria-auxiliadora-2"
+},
+{
+"parroquia": "Maria Mitjancera de totes les Gràcies · Barcelona",
+"id": "maria-mitjancera-de-totes-les-gracies"
+},
+{
+"parroquia": "Maria Reina · Barcelona",
+"id": "maria-reina"
+},
+{
+"parroquia": "Monestir de Sant Jeroni de la Murtra · Badalona",
+"id": "BCN0325"
+},
+{
+"parroquia": "Monestir de Sant Pere de les Puel·les (Benedictinas) · Barcelona",
+"id": "BCN0157"
+},
+{
+"parroquia": "Monestir de Santa Maria de Valldonzella (Madres Cistercienses) · Barcelona",
+"id": "BCN0159"
+},
+{
+"parroquia": "Nostra Senyora del Pilar, de Cornellà de Llobregat · Cornellà de Llobregat",
+"id": "verge-del-pilar"
+},
+{
+"parroquia": "Oratori de la Divina Misericòrdia · Barcelona",
+"id": "BCN0163"
+},
+{
+"parroquia": "Oratori de Sant Felip Neri · Barcelona",
+"id": "BCN0164"
+},
+{
+"parroquia": "Oratori de Santa Maria de Bonaigua · Barcelona",
+"id": "BCN0166"
+},
+{
+"parroquia": "Parròquia Castrense de Plaça (Personal) · Barcelona",
+"id": "parroquia-castrense-de-placa-personal"
+},
+{
+"parroquia": "Parròquia francesa de la Mare de Déu de Lourdes (Personal) · Barcelona",
+"id": "mare-de-deu-de-lourdes-personal"
+},
+{
+"parroquia": "Preciosíssima Sang de Nostre Senyor Jesucrist · Barcelona",
+"id": "preciosissima-sang-de-nostre-senyor-jesucrist"
+},
+{
+"parroquia": "Reial Monestir de Santa Isabel (Regnum Christi) · Barcelona",
+"id": "BCN0179"
+},
+{
+"parroquia": "Sagrada Família · Barcelona",
+"id": "sagrada-familia"
+},
+{
+"parroquia": "Sagrada Família, de Mataró · Mataró",
+"id": "sagrada-familia-2"
+},
+{
+"parroquia": "Sagrat Cor de Jesús · Barcelona",
+"id": "sagrat-cor-de-jesus"
+},
+{
+"parroquia": "Sagrat Cor de Jesús del Tibidabo, Basílica · Barcelona",
+"id": "sagrat-cor-de-jesus-del-tibidabo-basilica"
+},
+{
+"parroquia": "Sant Adrià, de Sant Adrià de Besòs · Sant Adrià de Besòs",
+"id": "sant-adria"
+},
+{
+"parroquia": "Sant Agustí · Barcelona",
+"id": "sant-agusti"
+},
+{
+"parroquia": "Sant Albert Magne (Capella Alemanya) · Barcelona",
+"id": "sant-albert-magne-personal"
+},
+{
+"parroquia": "Sant Albert Magne, de L'Hospitalet de Llobregat · L'Hospitalet de Llobregat",
+"id": "sant-albert-magne"
+},
+{
+"parroquia": "Sant Ambrós · Barcelona",
+"id": "sant-ambros"
+},
+{
+"parroquia": "Sant Andreu · Dosrius",
+"id": "sant-andreu"
+},
+{
+"parroquia": "Sant Andreu de Palomar · Barcelona",
+"id": "sant-andreu-2"
+},
+{
+"parroquia": "Sant Andreu, d'Òrrius · Òrrius",
+"id": "sant-andreu-3"
+},
+{
+"parroquia": "Sant Andreu, de Sant Andreu de Llavaneres · Sant Andreu de Llavaneres",
+"id": "sant-andreu-4"
+},
+{
+"parroquia": "Sant Àngel Custodi · Barcelona",
+"id": "sant-angel-custodi"
+},
+{
+"parroquia": "Sant Antoni de Pàdua · Badalona",
+"id": "sant-antoni-de-padua"
+},
+{
+"parroquia": "Sant Antoni de Pàdua · Barcelona",
+"id": "sant-antoni-de-padua-2"
+},
+{
+"parroquia": "Sant Antoni de Pàdua, d'Esplugues de Llobregat · Esplugues de Llobregat",
+"id": "sant-antoni-de-padua-3"
+},
+{
+"parroquia": "Sant Bartomeu · Barcelona",
+"id": "sant-bartomeu"
+},
+{
+"parroquia": "Sant Benet, de L'Hospitalet de Llobregat · L'Hospitalet de Llobregat",
+"id": "sant-benet"
+},
+{
+"parroquia": "Sant Bernat de Claravall · Barcelona",
+"id": "sant-bernat-de-claravall"
+},
+{
+"parroquia": "Sant Carles Borromeu · Barcelona",
+"id": "sant-carles-borromeu"
+},
+{
+"parroquia": "Sant Cebrià · Barcelona",
+"id": "sant-cebria"
+},
+{
+"parroquia": "Sant Cebrià · Tiana",
+"id": "BCN0463"
+},
+{
+"parroquia": "Sant Cebrià, de Tiana · Tiana",
+"id": "sant-cebria-tiana"
+},
+{
+"parroquia": "Sant Crist · Barcelona",
+"id": "sant-crist"
+},
+{
+"parroquia": "Sant Crist, de Badalona · Badalona",
+"id": "sant-crist-2"
+},
+{
+"parroquia": "Sant Cristòfol, de Premià de Mar · Premià de Mar",
+"id": "sant-cristofol"
+},
+{
+"parroquia": "Sant Cristòfor · Barcelona",
+"id": "sant-cristofor"
+},
+{
+"parroquia": "Sant Domènec de Guzmán · Barcelona",
+"id": "sant-domenec-guzman"
+},
+{
+"parroquia": "Sant Enric d'Ossó, de L'Hospitalet de Llobregat · L'Hospitalet de Llobregat",
+"id": "sant-enric-dosso"
+},
+{
+"parroquia": "Sant Esteve · Barcelona",
+"id": "sant-esteve"
+},
+{
+"parroquia": "Sant Esteve, de Canyamars (Dosrius) · Dosrius",
+"id": "sant-esteve-2"
+},
+{
+"parroquia": "Sant Eugeni I, Papa · Barcelona",
+"id": "sant-eugeni-i-papa"
+},
+{
+"parroquia": "Sant Feliu · Alella",
+"id": "sant-feliu"
+},
+{
+"parroquia": "Sant Feliu, de Cabrera de Mar · Cabrera de Mar",
+"id": "sant-feliu-2"
+},
+{
+"parroquia": "Sant Fèlix · Barcelona",
+"id": "sant-felix"
+},
+{
+"parroquia": "Sant Ferran, de Barcelona · Barcelona",
+"id": "sant-ferran"
+},
+{
+"parroquia": "Sant Francesc d'Assís · Badalona",
+"id": "sant-francesc-dassis"
+},
+{
+"parroquia": "Sant Francesc d'Assís · Barcelona",
+"id": "sant-francesc-dassis-2"
+},
+{
+"parroquia": "Sant Francesc de Pàola · Barcelona",
+"id": "sant-francesc-de-paola"
+},
+{
+"parroquia": "Sant Francesc de Sales · Barcelona",
+"id": "sant-francesc-de-sales"
+},
+{
+"parroquia": "Sant Francesc Xavier · Barcelona",
+"id": "sant-francesc-xavier"
+},
+{
+"parroquia": "Sant Genís dels Agudells · Barcelona",
+"id": "sant-genis-dels-agudells"
+},
+{
+"parroquia": "Sant Genís, de Vilassar de Dalt · Vilassar de Dalt",
+"id": "sant-genis"
+},
+{
+"parroquia": "Sant Gregori Taumaturg · Barcelona",
+"id": "sant-gregori-taumaturg"
+},
+{
+"parroquia": "Sant Ignasi de Loiola · Barcelona",
+"id": "sant-ignasi-de-loiola"
+},
+{
+"parroquia": "Sant Ildefons · Barcelona",
+"id": "sant-ildefons"
+},
+{
+"parroquia": "Sant Ildefons, de Cornellà de Llobregat · Cornellà de Llobregat",
+"id": "sant-ildefons-2"
+},
+{
+"parroquia": "Sant Iscle i Santa Victòria, de Dosrius · Dosrius",
+"id": "sant-iscle-i-santa-victoria"
+},
+{
+"parroquia": "Sant Isidre Llaurador · L'Hospitalet de Llobregat",
+"id": "sant-isidre"
+},
+{
+"parroquia": "Sant Jaume Apòstol · Badalona",
+"id": "sant-jaume-apostol"
+},
+{
+"parroquia": "Sant Jaume Apòstol, de Santa Coloma de Gramenet · Santa Coloma de Gramenet",
+"id": "sant-jaume-apostol-2"
+},
+{
+"parroquia": "Sant Jaume, de Cornellà de Llobregat · Cornellà de Llobregat",
+"id": "sant-jaume-2"
+},
+{
+"parroquia": "Sant Jeroni · Barcelona",
+"id": "sant-jeroni"
+},
+{
+"parroquia": "Sant Joan Baptista, de Sant Adrià de Besòs · Sant Adrià de Besòs",
+"id": "sant-joan-baptista"
+},
+{
+"parroquia": "Sant Joan Baptista, de Santa Coloma de Gramenet · Santa Coloma de Gramenet",
+"id": "sant-joan-baptista-2"
+},
+{
+"parroquia": "Sant Joan Bosco · Barcelona",
+"id": "sant-joan-bosco"
+},
+{
+"parroquia": "Sant Joan d'Àvila · Barcelona",
+"id": "sant-joan-davila"
+},
+{
+"parroquia": "Sant Joan d'Horta · Barcelona",
+"id": "sant-joan-dhorta"
+},
+{
+"parroquia": "Sant Joan de Gràcia · Barcelona",
+"id": "sant-joan-de-gracia"
+},
+{
+"parroquia": "Sant Joan de la Creu · Barcelona",
+"id": "sant-joan-de-la-creu"
+},
+{
+"parroquia": "Sant Joan de Mata · Barcelona",
+"id": "sant-joan-de-mata"
+},
+{
+"parroquia": "Sant Joan Evangelista, de L'Hospitalet de Llobregat · L'Hospitalet de Llobregat",
+"id": "sant-joan-evangelista"
+},
+{
+"parroquia": "Sant Joan M. Vianney · Barcelona",
+"id": "sant-joan-m-vianney"
+},
+{
+"parroquia": "Sant Joan, de Montgat · Montgat",
+"id": "sant-joan"
+},
+{
+"parroquia": "Sant Joan, de Vilassar de Mar · Vilassar de Mar",
+"id": "sant-joan-2"
+},
+{
+"parroquia": "Sant Joaquim, de Santa Coloma de Gramenet · Santa Coloma de Gramenet",
+"id": "sant-joaquim"
+},
+{
+"parroquia": "Sant Jordi · Barcelona",
+"id": "sant-jordi"
+},
+{
+"parroquia": "Sant Josep · Badalona",
+"id": "sant-josep"
+},
+{
+"parroquia": "Sant Josep de Calassanç · Barcelona",
+"id": "sant-josep-de-calassanc"
+},
+{
+"parroquia": "Sant Josep i Santa Mònica · Barcelona",
+"id": "sant-josep-santa-monica"
+},
+{
+"parroquia": "Sant Josep Manyanet · Barcelona",
+"id": "sant-josep-manyanet"
+},
+{
+"parroquia": "Sant Josep Obrer · Barcelona",
+"id": "sant-josep-obrer"
+},
+{
+"parroquia": "Sant Josep Oriol (Basílica) · Barcelona",
+"id": "sant-josep-oriol-basilica"
+},
+{
+"parroquia": "Sant Josep Oriol, de Santa Coloma de Gramenet · Santa Coloma de Gramenet",
+"id": "sant-josep-oriol"
+},
+{
+"parroquia": "Sant Josep, de L'Hospitalet de Llobregat · L'Hospitalet de Llobregat",
+"id": "sant-josep-2"
+},
+{
+"parroquia": "Sant Josep, de Mataró · Mataró",
+"id": "sant-josep-3"
+},
+{
+"parroquia": "Sant Julià · Argentona",
+"id": "sant-julia"
+},
+{
+"parroquia": "Sant Llorenç · Barcelona",
+"id": "sant-llorenc"
+},
+{
+"parroquia": "Sant Lluís Gonzaga · Barcelona",
+"id": "sant-lluis-gonzaga"
+},
+{
+"parroquia": "Sant Marc · Barcelona",
+"id": "sant-marc"
+},
+{
+"parroquia": "Sant Marcel, de Barcelona · Barcelona",
+"id": "sant-marcel"
+},
+{
+"parroquia": "Sant Martí de Provençals · Barcelona",
+"id": "sant-marti-de-provencals"
+},
+{
+"parroquia": "Sant Martí del Clot · Barcelona",
+"id": "sant-marti-del-clot"
+},
+{
+"parroquia": "Sant Martí, de Teià · Teià",
+"id": "sant-marti"
+},
+{
+"parroquia": "Sant Mateu · Barcelona",
+"id": "sant-mateu"
+},
+{
+"parroquia": "Sant Medir · Barcelona",
+"id": "sant-medir"
+},
+{
+"parroquia": "Sant Miquel Arcàngel, de Cornellà de Llobregat · Cornellà de Llobregat",
+"id": "sant-miquel-arcangel"
+},
+{
+"parroquia": "Sant Miquel Arcàngel, de Santa Coloma de Gramenet · Santa Coloma de Gramenet",
+"id": "sant-miquel-arcangel-2"
+},
+{
+"parroquia": "Sant Miquel del Port · Barcelona",
+"id": "sant-miquel-del-port"
+},
+{
+"parroquia": "Sant Miquel dels Sants · Barcelona",
+"id": "sant-miquel-dels-sants"
+},
+{
+"parroquia": "Sant Narcís · Barcelona",
+"id": "sant-narcis"
+},
+{
+"parroquia": "Sant Oleguer, bisbe · Barcelona",
+"id": "sant-oleguer-bisbe"
+},
+{
+"parroquia": "Sant Ot · Barcelona",
+"id": "sant-ot"
+},
+{
+"parroquia": "Sant Pacià · Barcelona",
+"id": "sant-pacia"
+},
+{
+"parroquia": "Sant Pancraç · Barcelona",
+"id": "sant-pancrac"
+},
+{
+"parroquia": "Sant Pau · Badalona",
+"id": "sant-pau"
+},
+{
+"parroquia": "Sant Pau (del Camp) · Barcelona",
+"id": "sant-pau-2"
+},
+{
+"parroquia": "Sant Paulí de Nola · Barcelona",
+"id": "sant-pauli-de-nola"
+},
+{
+"parroquia": "Sant Pere Claver · Barcelona",
+"id": "sant-pere-claver"
+},
+{
+"parroquia": "Sant Pere de les Puel·les · Barcelona",
+"id": "sant-pere-de-les-puelles"
+},
+{
+"parroquia": "Sant Pere Ermengol · Barcelona",
+"id": "sant-pere-ermengol"
+},
+{
+"parroquia": "Sant Pere Nolasc · Barcelona",
+"id": "sant-pere-nolasc"
+},
+{
+"parroquia": "Sant Pere, d'El Masnou · El Masnou",
+"id": "sant-pere"
+},
+{
+"parroquia": "Sant Pere, de Premià de Dalt · Premià de Dalt",
+"id": "sant-pere-2"
+},
+{
+"parroquia": "Sant Pius X · Barcelona",
+"id": "sant-pius-x"
+},
+{
+"parroquia": "Sant Rafael · Barcelona",
+"id": "sant-rafael"
+},
+{
+"parroquia": "Sant Ramon de Penyafort · Barcelona",
+"id": "sant-ramon-de-penyafort"
+},
+{
+"parroquia": "Sant Ramon Nonat · Barcelona",
+"id": "sant-ramon-nonat"
+},
+{
+"parroquia": "Sant Roc · Badalona",
+"id": "sant-roc"
+},
+{
+"parroquia": "Sant Salvador d'Horta · Barcelona",
+"id": "sant-salvador-dhorta"
+},
+{
+"parroquia": "Sant Sebastià · Badalona",
+"id": "sant-sebastia"
+},
+{
+"parroquia": "Sant Sebastià · Barcelona",
+"id": "sant-sebastia-2"
+},
+{
+"parroquia": "Sant Simó i Sant Pau, de Mataró · Mataró",
+"id": "sant-simo-i-sant-pau"
+},
+{
+"parroquia": "Sant Tomàs d'Aquino · Barcelona",
+"id": "sant-tomas-daquino"
+},
+{
+"parroquia": "Sant Vicenç de Sarrià · Barcelona",
+"id": "sant-vicenc"
+},
+{
+"parroquia": "Sant Vicenç, de Sant Vicenç de Montalt · Sant Vicenç de Montalt",
+"id": "sant-vicenc-2"
+},
+{
+"parroquia": "Santa Agnès, de Barcelona · Barcelona",
+"id": "santa-agnes"
+},
+{
+"parroquia": "Santa Anna · Barcelona",
+"id": "santa-anna"
+},
+{
+"parroquia": "Santa Bernardeta-Sant Lluc · Barcelona",
+"id": "santa-bernardeta"
+},
+{
+"parroquia": "Santa Cecília · Barcelona",
+"id": "santa-cecilia"
+},
+{
+"parroquia": "Santa Clara · Badalona",
+"id": "santa-clara"
+},
+{
+"parroquia": "Santa Coloma, de Santa Coloma de Gramenet (Església Major) · Santa Coloma de Gramenet",
+"id": "santa-coloma"
+},
+{
+"parroquia": "Santa Creu d'Olorda · Barcelona",
+"id": "santa-creu-dolorde"
+},
+{
+"parroquia": "Santa Creu, de Cabrils · Cabrils",
+"id": "santa-creu"
+},
+{
+"parroquia": "Santa Dorotea · Barcelona",
+"id": "santa-dorotea"
+},
+{
+"parroquia": "Santa Engràcia · Barcelona",
+"id": "santa-engracia"
+},
+{
+"parroquia": "Santa Eulàlia de Mèrida, de l'Hospitalet de Llobregat · L'Hospitalet de Llobregat",
+"id": "santa-eulalia-de-merida"
+},
+{
+"parroquia": "Santa Eulàlia de Provençana · L'Hospitalet de Llobregat",
+"id": "santa-eulalia-de-provencana"
+},
+{
+"parroquia": "Santa Eulàlia de Vilapicina · Barcelona",
+"id": "santa-eulalia-de-vilapicina"
+},
+{
+"parroquia": "Santa Gemma Galgani, de L'Hospitalet de Llobregat · L'Hospitalet de Llobregat",
+"id": "santa-gemma-galgani"
+},
+{
+"parroquia": "Santa Isabel d'Aragó i Sant Joaquim · Barcelona",
+"id": "santa-isabel-darago-i-sant-joaquim"
+},
+{
+"parroquia": "Santa Joaquima de Vedruna · Barcelona",
+"id": "santa-joaquima-de-vedruna"
+},
+{
+"parroquia": "Santa Madrona · Barcelona",
+"id": "santa-madrona"
+},
+{
+"parroquia": "Santa Maria · Badalona",
+"id": "santa-maria"
+},
+{
+"parroquia": "Santa Maria de Gornal · L'Hospitalet de Llobregat",
+"id": "santa-maria-de-gornal"
+},
+{
+"parroquia": "Santa Maria de Gràcia · Barcelona",
+"id": "santa-maria-de-gracia"
+},
+{
+"parroquia": "Santa Maria de Mataró, Basílica · Mataró",
+"id": "santa-maria-basilica"
+},
+{
+"parroquia": "Santa Maria de Sants · Barcelona",
+"id": "santa-maria-de-sants"
+},
+{
+"parroquia": "Santa Maria de Vallvidrera · Barcelona",
+"id": "santa-maria-de-vallvidrera"
+},
+{
+"parroquia": "Santa Maria del Mar (Basílica) · Barcelona",
+"id": "santa-maria-del-mar-basilica"
+},
+{
+"parroquia": "Santa Maria del Pi i Sant Jaume (Basílica) · Barcelona",
+"id": "santa-maria-del-pi-basilica"
+},
+{
+"parroquia": "Santa Maria del Remei · Barcelona",
+"id": "santa-maria-del-remei"
+},
+{
+"parroquia": "Santa Maria del Taulat i Sant Bernat Calbó · Barcelona",
+"id": "santa-maria-del-taulat-i-sant-bernat-calbo"
+},
+{
+"parroquia": "Santa Maria Magdalena · Barcelona",
+"id": "santa-maria-magdalena"
+},
+{
+"parroquia": "Santa Maria, de Caldes d'Estrac · Caldes d'Estrac",
+"id": "santa-maria-2"
+},
+{
+"parroquia": "Santa Maria, de Cornellà de Llobregat · Cornellà de Llobregat",
+"id": "santa-maria-3"
+},
+{
+"parroquia": "Santa Maria, de Premià de Mar · Premià de Mar",
+"id": "santa-maria-4"
+},
+{
+"parroquia": "Santa Maria, de Santa Coloma de Gramenet · Santa Coloma de Gramenet",
+"id": "santa-maria-5"
+},
+{
+"parroquia": "Santa Rosa, de Santa Coloma de Gramenet · Santa Coloma de Gramenet",
+"id": "santa-rosa"
+},
+{
+"parroquia": "Santa Tecla · Barcelona",
+"id": "santa-tecla"
+},
+{
+"parroquia": "Santa Teresa de Jesús · Barcelona",
+"id": "santa-teresa-de-jesus"
+},
+{
+"parroquia": "Santa Teresa de l'Infant Jesús · Barcelona",
+"id": "santa-teresa-de-linfant-jesus"
+},
+{
+"parroquia": "Santes Juliana i Semproniana, de Sant Adrià de Besòs · Sant Adrià de Besòs",
+"id": "santes-juliana-i-semproniana"
+},
+{
+"parroquia": "Santíssim Sagrament · Barcelona",
+"id": "santissim-sagrament"
+},
+{
+"parroquia": "Santíssima Trinitat · Barcelona",
+"id": "santissima-trinitat"
+},
+{
+"parroquia": "Sants Gervasi i Protasi (Mare de Déu de la Bonanova) · Barcelona",
+"id": "sants-gervasi-i-protasi-mare-de-deu-de-la-bonanova"
+},
+{
+"parroquia": "Sants Just i Pastor (Basílica) · Barcelona",
+"id": "sants-just-i-pastor-basilica"
+},
+{
+"parroquia": "Santuari de la Mare de Déu de l'Ajuda · Barcelona",
+"id": "BCN0286"
+},
+{
+"parroquia": "Santuari de la Mare de Déu de la Salut, de Barcelona (Les Planes) · Barcelona",
+"id": "parroquia-de-la-mare-de-deu-de-la-salut"
+},
+{
+"parroquia": "Santuari de Santa Eulàlia de Vilapicina · Barcelona",
+"id": "BCN0291"
+},
+{
+"parroquia": "Santuari de Santa Gemma (Padres Pasionistas) · Barcelona",
+"id": "BCN0292"
+},
+{
+"parroquia": "Santuari Sant Antoni de Pàdua · Barcelona",
+"id": "BCN0293"
+},
+{
+"parroquia": "Universitat Internacional de Catalunya (Edificio Beta) · Barcelona",
+"id": "BCN0299"
+},
+{
+"parroquia": "Universitat Internacional de Catalunya (Edificio Gamma/Delta) · Barcelona",
+"id": "BCN0300"
+},
+{
+"parroquia": "Verge de Gràcia i Sant Josep · Barcelona",
+"id": "verge-de-gracia-i-sant-josep"
+},
+{
+"parroquia": "Verge de la Pau · Barcelona",
+"id": "verge-de-la-pau"
+},
+{
+"parroquia": "Verge de Natzaret, de Barcelona · Barcelona",
+"id": "verge-de-natzaret"
+}
+]
