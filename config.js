@@ -11,8 +11,8 @@ window.MISAS_CONFIG = {
 
   // Responsable de la web: sale en el aviso legal y la política de privacidad (legal.html).
   contacto: {
-    nombre: "",   // p. ej. "Guillem …"
-    correo: ""    // p. ej. "misasbarcelona@gmail.com"; también recibe los avisos si no hay formulario
+    nombre: "Misas Barcelona",
+    correo: "misasbarcelona@gmail.com"   // también recibe los avisos si no hay formulario
   },
 
   // Botón «¿Horario mal? Avísanos» de cada ficha.
