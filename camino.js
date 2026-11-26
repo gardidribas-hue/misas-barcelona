@@ -33,7 +33,7 @@
     cmShieldInfo: "Si un día fallas, <b>el escudo de san Miguel</b> protege tu racha. Tienes uno cada semana.",
     cmMissW: "leíste la Palabra", cmMissR: "rezaste el Rosario", cmMissB: "leíste la Palabra ni rezaste el Rosario",
     cmYesterday: "Ayer", cmOn: "El {d}",
-    cmMiles: "Hitos y estampas", cmGot: "Conseguido", cmOf: "{a} de {b}",
+    cmMiles: "Hitos y estampas", cmTemples: "Ruta de los templos", cmGot: "Conseguido", cmOf: "{a} de {b}",
     cmStampsN: "Tus estampas <b>({a} de {b})</b>. Toca una para verla en grande.",
     cmLeft: "Faltan {n} días", cmLeft1: "Falta 1 día",
     cmWeek: "Tu semana · del {a} al {b}",
@@ -71,7 +71,7 @@
     cmShieldInfo: "Si un dia falles, <b>l'escut de sant Miquel</b> protegeix la teva ratxa. En tens un cada setmana.",
     cmMissW: "vas llegir la Paraula", cmMissR: "vas resar el Rosari", cmMissB: "vas llegir la Paraula ni resar el Rosari",
     cmYesterday: "Ahir", cmOn: "El {d}",
-    cmMiles: "Fites i estampes", cmGot: "Aconseguit", cmOf: "{a} de {b}",
+    cmMiles: "Fites i estampes", cmTemples: "Ruta dels temples", cmGot: "Aconseguit", cmOf: "{a} de {b}",
     cmStampsN: "Les teves estampes <b>({a} de {b})</b>. Toca'n una per veure-la en gran.",
     cmLeft: "Falten {n} dies", cmLeft1: "Falta 1 dia",
     cmWeek: "La teva setmana · del {a} al {b}",
@@ -414,10 +414,12 @@
         ${streakCard("w", aw)}${streakCard("r", ar)}${shieldNote(aw, ar)}
         <p class="cm-sec">${esc(t("cmMiles"))}</p>
         ${milesCard("w", aw)}${milesCard("r", ar)}${stamps(aw, ar)}
+        ${A.credencial ? `<p class="cm-sec">${esc(t("cmTemples"))}</p>${A.credencial.html(credFresh)}` : ""}
         ${week()}
         ${yearHTML(aw, ar)}
       </div></div>`;
   }
+  let credFresh = "";
   function renderPanel() {
     if (!panelEl) return;
     const sc = scroller(), y = sc.scrollTop;
@@ -471,6 +473,8 @@
     if (m) { yearSel = +m.dataset.m; renderPanel(); return; }
     const st = e.target.closest("[data-step]");
     if (st) { yearSel += +st.dataset.step; renderPanel(); const b = panelEl.querySelector(`[data-step="${st.dataset.step}"]`); if (b && !b.disabled) b.focus({ preventScroll: true }); return; }
+    const here = e.target.closest(".x-here");
+    if (here && A.credencial) { A.credencial.here(here, (id) => { credFresh = id; renderPanel(); credFresh = ""; }); return; }
     const sp = e.target.closest("button.cm-st");
     if (sp) viewStamp(sp.dataset.st);
   }
