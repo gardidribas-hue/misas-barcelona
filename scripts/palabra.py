@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 import bci, catala
 
 OUT = pathlib.Path(__file__).resolve().parent.parent / "data" / "palabra"
-UA = {"User-Agent": "Mozilla/5.0 (misas-barcelona; +https://gardidribas-hue.github.io/misas-barcelona/)"}
+UA = {"User-Agent": "Mozilla/5.0 (misas-barcelona; +https://misasbarcelona.github.io/)"}
 DAYS_BACK, DAYS_AHEAD, KEEP_DAYS = 3, 7, 30
 
 

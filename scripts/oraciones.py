@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 from pypdf import PdfReader
 
 OUT = pathlib.Path(__file__).resolve().parent.parent / "data" / "oraciones.js"
-UA = {"User-Agent": "Mozilla/5.0 (misas-barcelona; +https://gardidribas-hue.github.io/misas-barcelona/)"}
+UA = {"User-Agent": "Mozilla/5.0 (misas-barcelona; +https://misasbarcelona.github.io/)"}
 SRC = {
     "es": "https://www.ewtn.com/es/oracion/oraciones-del-rosario",
     "ca": "https://multimedia.opusdei.org/doc/pdf/Devocionari%20mobil%20-%20www.opusdei.cat20220314171720840413.pdf",

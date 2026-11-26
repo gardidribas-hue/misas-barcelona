@@ -16,7 +16,7 @@ import shutil
 from datetime import date
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITIO = os.environ.get("MISAS_SITIO", "https://gardidribas-hue.github.io/misas-barcelona/")
+SITIO = os.environ.get("MISAS_SITIO", "https://misasbarcelona.github.io/")
 
 DIAS = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
 NOMBRE = {"mon": "Lunes", "tue": "Martes", "wed": "Miércoles", "thu": "Jueves", "fri": "Viernes", "sat": "Sábado", "sun": "Domingo"}

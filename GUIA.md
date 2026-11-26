@@ -7,7 +7,7 @@ Si cambias algo importante, actualiza también esta guía.
 ## 1. Qué es, en una frase
 
 Una web estática (HTML, CSS y JavaScript, sin servidor ni base de datos) publicada en GitHub Pages
-desde la rama `main`: https://gardidribas-hue.github.io/misas-barcelona/.
+desde la rama `main`: https://misasbarcelona.github.io/.
 **Publicar = fusionar una PR en `main`.** GitHub Pages tarda 1 o 2 minutos en mostrar el cambio.
 
 ## 2. Decisiones de Guillem que no hay que cambiar sin preguntarle
