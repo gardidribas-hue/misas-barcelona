@@ -15,14 +15,17 @@ window.MISAS_CONFIG = {
     correo: "misasbarcelona@gmail.com"   // también recibe los avisos si no hay formulario
   },
 
-  // Botón «¿Horario mal? Avísanos» de cada ficha.
+  // «¿Horario mal? Avísanos» (al lado de las misas de cada ficha y en p/) y botón «Avisar de un error».
+  // Lo crea el script de Google /lanzamiento/formulario-avisos.gs, que imprime estos valores.
   // url: el enlace del Google Forms (el que acaba en /viewform).
-  // campoParroquia / campoCodigo: los «entry.123456789» del enlace prerrellenado del formulario,
-  // para que la parroquia ya salga escrita. Si no hay url, el botón abre un correo a contacto.correo.
+  // campoParroquia: el «entry.123456789» de la lista de parroquias, para que la de la ficha ya salga elegida
+  //   (las opciones son «Nombre · Municipio», las de data/avisos-parroquias.json).
+  // hoja: la hoja de seguimiento de los avisos (solo para quien mantiene la web; la web no la usa).
+  // Si no hay url, los enlaces abren un correo a contacto.correo.
   avisos: {
-    url: "",
-    campoParroquia: "",
-    campoCodigo: ""
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSdsg0yraBH4mLLAHjh57_4GW4jQdxzxJ9P-ie6dT-RnJnBUJg/viewform",
+    campoParroquia: "entry.594515477",
+    hoja: "https://docs.google.com/spreadsheets/d/1dedcMiwdTa6avfkSe41eaQlBJmZqr-WR3QD4yOy-vYM/edit"
   },
 
   // Analítica sin cookies con GoatCounter: el nombre elegido al darse de alta (el de https://NOMBRE.goatcounter.com).

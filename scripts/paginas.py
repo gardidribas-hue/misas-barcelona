@@ -13,6 +13,7 @@ import json
 import os
 import re
 import shutil
+from urllib.parse import quote
 from datetime import date
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -128,6 +129,7 @@ h1{font:500 clamp(1.9rem,6vw,2.6rem)/1.1 var(--display);margin:0 0 10px}h2{font:
 .sched{display:grid;grid-template-columns:max-content 1fr;gap:8px 18px;margin:0;padding:16px 18px;background:var(--surface);border-radius:18px}
 .sched dt{font-weight:800}.sched dd{margin:0;display:flex;flex-wrap:wrap;gap:6px 12px}.t small{margin-left:3px;color:var(--muted);font-size:.75em}
 .note{color:var(--muted);font-size:.9rem}.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+h2.hfix{display:flex;justify-content:space-between;align-items:baseline;gap:12px}h2.hfix .fix{font:700 .85rem/1.2 system-ui,sans-serif;text-decoration:none;padding:8px 0}
 ul.idx{list-style:none;padding:0;columns:2 260px;column-gap:24px}ul.idx li{break-inside:avoid;padding:3px 0}
 """
 
@@ -167,6 +169,33 @@ Los horarios pueden cambiar en festivos, en verano y en Navidad o Semana Santa: 
 """
 
 
+def config_avisos():
+    """Formulario de avisos y correo de contacto, leídos de config.js (lo mismo que usa la web)."""
+    with open(os.path.join(RAIZ, "config.js"), encoding="utf-8") as f:
+        txt = f.read()
+    def campo(bloque, k):
+        m = re.search(bloque + r"\s*:\s*\{([^}]*)\}", txt)
+        v = re.search(k + r'\s*:\s*"([^"]*)"', m.group(1)) if m else None
+        return v.group(1) if v else ""
+    return {"url": campo("avisos", "url"), "campo": campo("avisos", "campoParroquia"), "correo": campo("contacto", "correo")}
+
+
+AVISOS = None
+
+
+def aviso_url(p):
+    """«¿Horario mal? Avísanos»: el formulario con la parroquia ya elegida o, si no hay formulario, un correo."""
+    a = AVISOS or {}
+    etiqueta = f"{p['name']} · {p['municipio']}" if p.get("municipio") else p["name"]
+    if a.get("url"):
+        if not a.get("campo"):
+            return a["url"]
+        return f"{a['url']}?usp=pp_url&{a['campo']}={quote(etiqueta)}"
+    if a.get("correo"):
+        return f"mailto:{a['correo']}?subject={quote('Horario mal: ' + etiqueta)}"
+    return ""
+
+
 def pagina(p, hoy):
     url = f"{SITIO}p/{p['id']}.html"
     zona = " · ".join(x for x in [p.get("distrito"), p.get("municipio")] if x)
@@ -191,7 +220,9 @@ def pagina(p, hoy):
                f'<a class="btn" href="{llegar}" rel="noopener">Cómo llegar</a>'
                + (f'<a class="btn" href="tel:{e(re.sub(r"[^0-9+]", "", p["phone"]))}">Llamar</a>' if p.get("phone") else "")
                + (f'<a class="btn" href="{e(p["web"])}" rel="noopener">Web</a>' if p.get("web") else "") + "</div>")
-    out.append("<h2>Misas</h2>" + (misas or f'<p class="note">{e(p.get("masses_text") or "Esta parroquia no publica horario de misas.")}</p>'))
+    fix = aviso_url(p)
+    titulo = '<h2 class="hfix">Misas' + (f'<a class="fix" href="{e(fix)}" rel="noopener">¿Horario mal? Avísanos</a>' if fix else "") + "</h2>"
+    out.append(titulo + (misas or f'<p class="note">{e(p.get("masses_text") or "Esta parroquia no publica horario de misas.")}</p>'))
     conf = horario(p.get("confessions") or [])
     if conf or p.get("confessions_text"):
         out.append("<h2>Confesiones</h2>" + (conf or f'<p class="note">{e(p["confessions_text"])}</p>'))
@@ -210,9 +241,23 @@ def pagina(p, hoy):
     return "\n".join(out)
 
 
+def lista_avisos(parroquias):
+    """data/avisos-parroquias.json: la lista del formulario de avisos («Nombre · Municipio», por orden alfabético).
+    El formulario de Google la vuelve a leer cada semana, así que las parroquias nuevas salen solas."""
+    import unicodedata
+    def clave(t):
+        return unicodedata.normalize("NFD", t).encode("ascii", "ignore").decode().casefold()
+    lista = sorted(({"parroquia": f"{p['name']} · {p['municipio']}" if p.get("municipio") else p["name"], "id": p["id"]}
+                    for p in parroquias), key=lambda x: clave(x["parroquia"]))
+    with open(os.path.join(RAIZ, "data/avisos-parroquias.json"), "w", encoding="utf-8") as f:
+        json.dump(lista, f, ensure_ascii=False, indent=0)
+
+
 def main():
     parroquias, meta = cargar()
-    global VERIFICADO
+    global VERIFICADO, AVISOS
+    AVISOS = config_avisos()
+    lista_avisos(parroquias)
     VERIFICADO = meta.get("verificado")
     hoy = date.today().isoformat()
     destino = os.path.join(RAIZ, "p")
