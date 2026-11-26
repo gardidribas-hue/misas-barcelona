@@ -20,7 +20,7 @@ from horarios_texto import extraer, norm, DIAS, VISPERA, FESTIVO, VERSION
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "horarios"
-UA = "Mozilla/5.0 (compatible; misas-barcelona/1.0; +https://github.com/gardidribas-hue/misas-barcelona)"
+UA = "Mozilla/5.0 (compatible; misas-barcelona/1.0; +https://github.com/misasbarcelona/misasbarcelona.github.io)"
 HOY = dt.date.today().isoformat()
 USAR_MISAS_ORG = False  # Guillem (22/10/2026): misas.org no es fiable; orden web propia → Arzobispado
 F2_ANTIGUA = "2024-01-01"  # una revisión de misas.org anterior a esta fecha se considera poco fiable
@@ -382,7 +382,7 @@ def leer_f2(lug, f2):
 
 # OpenStreetMap: horarios de misa en las etiquetas mass_times / service_times de cada iglesia (licencia ODbL).
 USAR_OSM = True
-UA_OSM = "misas-barcelona/1.0 (horarios de misa; https://github.com/gardidribas-hue/misas-barcelona)"  # Overpass rechaza los «Mozilla/…»
+UA_OSM = "misas-barcelona/1.0 (horarios de misa; https://github.com/misasbarcelona/misasbarcelona.github.io)"  # Overpass rechaza los «Mozilla/…»
 OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.private.coffee/api/interpreter",
             "https://maps.mail.ru/osm/tools/overpass/api/interpreter"]
 BBOX = (41.30, 2.05, 41.72, 2.75)  # Barcelona, Llobregat y Maresme
