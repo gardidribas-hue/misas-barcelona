@@ -79,6 +79,10 @@ El contenedor de Claude no puede abrir las webs de las parroquias ni el mapa: po
   (canonical, og:url, og:image), `scripts/paginas.py`, `palabra.py` y `oraciones.py`, escribe `CNAME` si es un dominio propio
   y regenera `p/`, `sitemap.xml` y `robots.txt`. Después, PR y, al publicarla, poner el dominio en GitHub
   (Settings > Pages > Custom domain, con «Enforce HTTPS»). GitHub redirige solo la dirección antigua de github.io a la nueva.
+- **Avisos de horarios**: el formulario de Google lo crea `formulario-avisos.gs` (carpeta del proyecto `lanzamiento/`) con la cuenta misasbarcelona@gmail.com.
+  La lista de parroquias del formulario sale de `data/avisos-parroquias.json` (la genera `scripts/paginas.py`; el formulario la relee cada lunes).
+  Al cambiar `avisos` en `config.js`, vuelve a ejecutar `python3 scripts/paginas.py` para que las páginas `p/` usen el formulario.
+  Cada aviso llega por correo («Aviso», «Prioridad» con 2 pendientes de la misma parroquia, «URGENTE» con 3) y queda en la pestaña «Seguimiento» de la hoja.
 - **Página 404**: `404.html` (castellano y catalán) sale en cualquier dirección que no exista; calcula sola la raíz de la web.
 - **Actualizar MapLibre, letras o iconos**: además de cambiar los archivos, sube `VERSION` en `sw.js`
   (esas carpetas se guardan en el móvil sin volver a mirar la red).

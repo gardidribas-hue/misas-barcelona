@@ -1125,6 +1125,10 @@ html.vt-theme body, html.vt-theme .brand .b-sf .h { transition: none !important;
 .fixbox p { margin: 0; flex: 1 1 220px; font-size: 0.875rem; color: var(--muted); }
 .fixbox p b { color: var(--ink); }
 .fixbox .btn { background: var(--accent-soft); color: var(--accent-strong); }
+/* «¿Horario mal? Avísanos» al lado del título de las misas de la ficha */
+.h-fix { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.fix-mini { flex: none; text-transform: none; letter-spacing: 0; font: 700 0.8125rem/1.2 var(--ui); color: var(--accent-strong); text-decoration: none; padding: 8px 0; }
+.fix-mini:hover { text-decoration: underline; }
 /* Pie de «Sobre nosotros»: no oficial, aviso legal y privacidad */
 .faq-foot { margin: 18px 4px 0; font-size: 0.8125rem; line-height: 1.5; color: var(--muted); }
 .faq-foot a { color: var(--accent-strong); font-weight: 700; }
