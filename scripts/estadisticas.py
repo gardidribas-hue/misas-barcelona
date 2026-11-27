@@ -37,8 +37,20 @@ out = {"generado": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"
 
 # Visitas por día (12 semanas)
 t = seguro(lambda: get("stats/total", start=DESDE_DIAS, end=HASTA))
-out["por_dia"] = [{"dia": s.get("day"), "visitas": s.get("daily", 0)} for s in t.get("stats", [])] if "error" not in t else t
-out["total_12_semanas"] = t.get("total") if "error" not in t else None
+if "error" not in t:
+    out["por_dia"] = [{"dia": s.get("day"), "visitas": s.get("daily", 0)} for s in t.get("stats", [])]
+    out["total_12_semanas"] = t.get("total")
+else:  # sin datos, o si stats/total falla: se suman las páginas día a día
+    h12 = seguro(lambda: get("stats/hits", start=DESDE_DIAS, end=HASTA, limit=100))
+    dias = {}
+    for x in ([] if "error" in h12 else h12.get("hits", [])):
+        if x.get("event"):
+            continue
+        for s in x.get("stats", []):
+            dias[s.get("day")] = dias.get(s.get("day"), 0) + (s.get("daily") or 0)
+    out["por_dia"] = [{"dia": d, "visitas": n} for d, n in sorted(dias.items()) if d]
+    out["total_12_semanas"] = sum(dias.values())
+    out["aviso_total"] = t["error"]
 
 # Páginas y eventos más vistos (4 semanas): las fichas p/ y los clics «como-llegar», «avisar-error»...
 h = seguro(lambda: get("stats/hits", start=DESDE_LISTAS, end=HASTA, limit=100))
@@ -54,7 +66,7 @@ else:
 for clave, pagina in [("origen", "toprefs"), ("navegadores", "browsers"), ("sistemas", "systems"),
                       ("pantallas", "sizes"), ("zonas", "locations"), ("idiomas", "languages")]:
     r = seguro(lambda p=pagina: get(f"stats/{p}", start=DESDE_LISTAS, end=HASTA, limit=20))
-    out[clave] = r if "error" in r else [{"nombre": s.get("name") or "(desconocido)", "visitas": s.get("count", 0)} for s in r.get("stats", [])]
+    out[clave] = r if "error" in r else [{"nombre": s.get("name") or s.get("id") or "(desconocido)", "visitas": s.get("count", 0)} for s in r.get("stats", []) if s.get("count")]
 
 os.makedirs("data/estadisticas", exist_ok=True)
 with open("data/estadisticas/goatcounter.json", "w") as f:
