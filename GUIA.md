@@ -33,7 +33,7 @@ desde la rama `main`: https://misasbarcelona.github.io/.
   misterios del Rosario en una fila, filtros del mapa plegados en el móvil, aviso de fiesta de precepto,
   Agenda como sección propia, rachas («N días seguidos»), fuego y escudo en «Tu camino» (26/11/2026: «no quiero que sea una red social»; sí quiere las montañas, las estampas por días en total y la ruta de los templos, dentro de «Tu camino»), Agenda y «Pide una oración» dentro de Voluntariado, pastilla de la barra que se desliza.
 - Pendientes de Guillem (no decidir por él): logo definitivo, nombre y correo de contacto (`config.js`),
-  formulario de avisos (Google Forms), GoatCounter, dominio propio, repositorio privado.
+  formulario de avisos (Google Forms), dominio propio, repositorio privado.
 
 ## 3. Archivos
 
@@ -67,6 +67,7 @@ desde la rama `main`: https://misasbarcelona.github.io/.
 | `contenido` | Dos veces al día | Descarga las lecturas (`data/palabra/`) y las oraciones. |
 | `citas` | Al cambiar `scripts/citas.py` | Citas bíblicas de Voluntariado. |
 | `comprobar` | En cada PR y cada cambio en `main` | Revisa la sintaxis y abre la web en un navegador de prueba. **Si sale en rojo, no fusionar.** |
+| `estadisticas` | Cada día 03:00 UTC | Guarda los totales de GoatCounter (cuenta `misasbarcelona`, secreto `GOATCOUNTER_TOKEN` de solo lectura) en `data/estadisticas/goatcounter.json` para el panel del proyecto. Solo cifras agregadas. |
 
 El contenedor de Claude no puede abrir las webs de las parroquias ni el mapa: por eso los datos se descargan en GitHub Actions.
 

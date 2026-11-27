@@ -30,5 +30,5 @@ window.MISAS_CONFIG = {
 
   // Analítica sin cookies con GoatCounter: el nombre elegido al darse de alta (el de https://NOMBRE.goatcounter.com).
   // Vacío = sin analítica.
-  goatcounter: ""
+  goatcounter: "misasbarcelona"
 };
