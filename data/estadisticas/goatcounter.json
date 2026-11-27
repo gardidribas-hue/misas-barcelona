@@ -1,0 +1,45 @@
+{
+ "generado": "2026-11-27T10:53+00:00",
+ "sitio": "misasbarcelona",
+ "periodo_dias": [
+  "2026-09-04",
+  "2026-11-27"
+ ],
+ "periodo_listas": [
+  "2026-10-30",
+  "2026-11-27"
+ ],
+ "por_dia": {
+  "error": "HTTP Error 404: Not Found"
+ },
+ "total_12_semanas": null,
+ "paginas": [],
+ "eventos": [],
+ "origen": [],
+ "navegadores": [],
+ "sistemas": [],
+ "pantallas": [
+  {
+   "nombre": "(desconocido)",
+   "visitas": 0
+  },
+  {
+   "nombre": "(desconocido)",
+   "visitas": 0
+  },
+  {
+   "nombre": "(desconocido)",
+   "visitas": 0
+  },
+  {
+   "nombre": "(desconocido)",
+   "visitas": 0
+  },
+  {
+   "nombre": "(desconocido)",
+   "visitas": 0
+  }
+ ],
+ "zonas": [],
+ "idiomas": []
+}
