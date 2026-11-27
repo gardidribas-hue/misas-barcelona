@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T10:53+00:00",
+ "generado": "2026-11-27T10:58+00:00",
  "sitio": "misasbarcelona",
  "periodo_dias": [
   "2026-09-04",
@@ -9,37 +9,355 @@
   "2026-10-30",
   "2026-11-27"
  ],
- "por_dia": {
-  "error": "HTTP Error 404: Not Found"
- },
- "total_12_semanas": null,
+ "por_dia": [
+  {
+   "dia": "2026-09-04",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-05",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-06",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-07",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-08",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-09",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-10",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-11",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-12",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-13",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-14",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-15",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-16",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-17",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-18",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-19",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-20",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-21",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-22",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-23",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-24",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-25",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-26",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-27",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-28",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-29",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-09-30",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-01",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-02",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-03",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-04",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-05",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-06",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-07",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-08",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-09",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-10",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-11",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-12",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-13",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-14",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-15",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-16",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-17",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-18",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-19",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-20",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-21",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-22",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-23",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-24",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-25",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-26",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-27",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-28",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-29",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-30",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-31",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-01",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-02",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-03",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-04",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-05",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-06",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-07",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-08",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-09",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-10",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-11",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-12",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-13",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-14",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-15",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-16",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-17",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-18",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-19",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-20",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-21",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-22",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-23",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-24",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-25",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-26",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-11-27",
+   "visitas": 0
+  }
+ ],
+ "total_12_semanas": 0,
  "paginas": [],
  "eventos": [],
  "origen": [],
  "navegadores": [],
  "sistemas": [],
- "pantallas": [
-  {
-   "nombre": "(desconocido)",
-   "visitas": 0
-  },
-  {
-   "nombre": "(desconocido)",
-   "visitas": 0
-  },
-  {
-   "nombre": "(desconocido)",
-   "visitas": 0
-  },
-  {
-   "nombre": "(desconocido)",
-   "visitas": 0
-  },
-  {
-   "nombre": "(desconocido)",
-   "visitas": 0
-  }
- ],
+ "pantallas": [],
  "zonas": [],
  "idiomas": []
 }
