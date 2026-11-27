@@ -127,7 +127,7 @@ h1{font:500 clamp(1.9rem,6vw,2.6rem)/1.1 var(--display);margin:0 0 10px}h2{font:
 .btn{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:var(--surface);color:var(--ink);font-weight:700;text-decoration:none}
 .btn.main{background:var(--accent);color:#fff}@media (prefers-color-scheme:dark){.btn.main{color:#3a1518}}
 .sched{display:grid;grid-template-columns:max-content 1fr;gap:8px 18px;margin:0;padding:16px 18px;background:var(--surface);border-radius:18px}
-.sched dt{font-weight:800}.sched dd{margin:0;display:flex;flex-wrap:wrap;gap:6px 12px}.t small{margin-left:3px;color:var(--muted);font-size:.75em}
+.sched dt{font-weight:800}.sched dd{margin:0;display:flex;flex-wrap:wrap;align-items:flex-start;align-content:flex-start;gap:6px 12px}.t small{margin-left:3px;color:var(--muted);font-size:.75em}
 .note{color:var(--muted);font-size:.9rem}.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
 h2.hfix{display:flex;justify-content:space-between;align-items:baseline;gap:12px}h2.hfix .fix{font:700 .85rem/1.2 system-ui,sans-serif;text-decoration:none;padding:8px 0}
 ul.idx{list-style:none;padding:0;columns:2 260px;column-gap:24px}ul.idx li{break-inside:avoid;padding:3px 0}
