@@ -1,19 +1,15 @@
 {
- "generado": "2026-11-27T10:58+00:00",
+ "generado": "2026-11-28T11:10+00:00",
  "sitio": "misasbarcelona",
  "periodo_dias": [
-  "2026-09-04",
-  "2026-11-27"
+  "2026-09-05",
+  "2026-11-28"
  ],
  "periodo_listas": [
-  "2026-10-30",
-  "2026-11-27"
+  "2026-10-31",
+  "2026-11-28"
  ],
  "por_dia": [
-  {
-   "dia": "2026-09-04",
-   "visitas": 0
-  },
   {
    "dia": "2026-09-05",
    "visitas": 0
@@ -348,16 +344,73 @@
   },
   {
    "dia": "2026-11-27",
+   "visitas": 11
+  },
+  {
+   "dia": "2026-11-28",
    "visitas": 0
   }
  ],
- "total_12_semanas": 0,
- "paginas": [],
+ "total_12_semanas": 11,
+ "aviso_total": "HTTP Error 404: Not Found",
+ "paginas": [
+  {
+   "ruta": "/",
+   "titulo": "Misas Barcelona",
+   "visitas": 11
+  }
+ ],
  "eventos": [],
- "origen": [],
- "navegadores": [],
- "sistemas": [],
- "pantallas": [],
- "zonas": [],
- "idiomas": []
+ "origen": [
+  {
+   "nombre": "(desconocido)",
+   "visitas": 11
+  }
+ ],
+ "navegadores": [
+  {
+   "nombre": "Safari",
+   "visitas": 13
+  },
+  {
+   "nombre": "Chrome",
+   "visitas": 3
+  }
+ ],
+ "sistemas": [
+  {
+   "nombre": "iOS",
+   "visitas": 12
+  },
+  {
+   "nombre": "Android",
+   "visitas": 3
+  },
+  {
+   "nombre": "macOS",
+   "visitas": 1
+  }
+ ],
+ "pantallas": [
+  {
+   "nombre": "phone",
+   "visitas": 15
+  },
+  {
+   "nombre": "desktop",
+   "visitas": 1
+  }
+ ],
+ "zonas": [
+  {
+   "nombre": "Spain",
+   "visitas": 16
+  }
+ ],
+ "idiomas": [
+  {
+   "nombre": "(unknown)",
+   "visitas": 16
+  }
+ ]
 }
